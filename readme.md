@@ -1,4 +1,4 @@
-# dictionary
+# dictionaries
 
 Accessible and easily installable [hunspell](http://hunspell.sourceforge.net)
 dictionaries. Useful with, for example,

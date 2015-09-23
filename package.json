@@ -1,5 +1,5 @@
 {
-  "name": "dictionary",
+  "name": "dictionaries",
   "private": true,
   "description": "Hunspell dictionaries in UTF-8",
   "devDependencies": {
