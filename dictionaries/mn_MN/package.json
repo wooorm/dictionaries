@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-mn",
+  "version": "1.0.0",
+  "description": "Mongolian (Mongolia) spelling dictionary in UTF-8",
+  "license": "GPL-2.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "mongolian",
+    "mongolia"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

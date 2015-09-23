@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-en-au",
+  "version": "1.0.0",
+  "description": "English (Australia) spelling dictionary in UTF-8",
+  "license": "LGPL-2.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "english",
+    "australia"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

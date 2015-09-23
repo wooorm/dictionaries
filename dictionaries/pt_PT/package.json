@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-pt",
+  "version": "1.0.0",
+  "description": "Portuguese (Portugal) spelling dictionary in UTF-8",
+  "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "portuguese",
+    "portugal"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

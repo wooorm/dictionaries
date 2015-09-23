@@ -1,0 +1,23 @@
+{
+  "name": "dictionary-en-us",
+  "version": "1.0.0",
+  "description": "English (United States) spelling dictionary in UTF-8",
+  "license": "(MIT AND BSD)",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "english",
+    "united",
+    "states"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

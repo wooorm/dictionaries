@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-sr-rs",
+  "version": "1.0.0",
+  "description": "Serbian (Serbia) spelling dictionary in UTF-8",
+  "license": "LGPL-3.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "serbian",
+    "serbia"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

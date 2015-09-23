@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-sl-si",
+  "version": "1.0.0",
+  "description": "Slovene (Slovenia) spelling dictionary in UTF-8",
+  "license": "(GPL-3.0 OR LGPL-2.1)",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "slovene",
+    "slovenia"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

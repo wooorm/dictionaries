@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-bg",
+  "version": "1.0.0",
+  "description": "Bulgarian (Bulgaria) spelling dictionary in UTF-8",
+  "license": "LGPL-2.1",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "bulgarian",
+    "bulgaria"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

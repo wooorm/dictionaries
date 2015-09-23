@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-lb-lu",
+  "version": "1.0.0",
+  "description": "Luxembourgish (Luxembourg) spelling dictionary in UTF-8",
+  "license": "EUPL-1.1",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "luxembourgish",
+    "luxembourg"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

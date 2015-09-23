@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-it",
+  "version": "1.0.0",
+  "description": "Italian (Italy) spelling dictionary in UTF-8",
+  "license": "GPL-3.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "italian",
+    "italy"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-ru",
+  "version": "1.0.0",
+  "description": "Russian (Russian Federation) spelling dictionary in UTF-8",
+  "license": "BSD-2-Clause",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "russian",
+    "federation"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

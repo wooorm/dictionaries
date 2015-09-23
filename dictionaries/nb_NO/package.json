@@ -1,0 +1,23 @@
+{
+  "name": "dictionary-nb-no",
+  "version": "1.0.0",
+  "description": "Norwegian Bokmål (Norway) spelling dictionary in UTF-8",
+  "license": "GPL-2.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "norwegian",
+    "bokmål",
+    "norway"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

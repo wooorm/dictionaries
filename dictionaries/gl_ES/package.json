@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-gl-es",
+  "version": "1.0.0",
+  "description": "Galician (Spain) spelling dictionary in UTF-8",
+  "license": "GPL-3.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "galician",
+    "spain"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

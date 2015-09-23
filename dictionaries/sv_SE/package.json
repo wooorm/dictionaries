@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-sv-se",
+  "version": "1.0.0",
+  "description": "Swedish (Sweden) spelling dictionary in UTF-8",
+  "license": "LGPL-3.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "swedish",
+    "sweden"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

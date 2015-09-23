@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-pt-br",
+  "version": "1.0.0",
+  "description": "Portuguese (Brazil) spelling dictionary in UTF-8",
+  "license": "LGPL-2.1",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "portuguese",
+    "brazil"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

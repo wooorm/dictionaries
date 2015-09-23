@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-de",
+  "version": "1.0.0",
+  "description": "German (Germany) spelling dictionary in UTF-8",
+  "license": "(GPL-2.0 OR GPL-3.0)",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "german",
+    "germany"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

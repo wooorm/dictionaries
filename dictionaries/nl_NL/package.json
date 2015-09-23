@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-nl",
+  "version": "1.0.0",
+  "description": "Dutch (Netherlands) spelling dictionary in UTF-8",
+  "license": "(BSD-3-Clause OR CC-BY-3.0)",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "dutch",
+    "netherlands"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

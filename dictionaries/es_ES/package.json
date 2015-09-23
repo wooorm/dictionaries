@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-es",
+  "version": "1.0.0",
+  "description": "Spanish (Spain) spelling dictionary in UTF-8",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "spanish",
+    "spain"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}
