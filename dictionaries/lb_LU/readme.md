@@ -63,7 +63,7 @@ Dictionary and affix file: [EUPL-1.1][license]. Rest: MIT ©
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/lb_LU/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

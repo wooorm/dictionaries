@@ -63,7 +63,7 @@ Dictionary and affix file: [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)][license]. Rest: MI
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/pt_PT/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

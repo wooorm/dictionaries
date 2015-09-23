@@ -63,7 +63,7 @@ Dictionary and affix file: [(GPL-3.0 OR LGPL-2.1)][license]. Rest: MIT ©
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/sl_SI/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

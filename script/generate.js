@@ -79,15 +79,17 @@ function unique(key, index, parent) {
  * @param {Object} pack - Package file.
  * @param {string} source - Location of dictionary.
  * @param {string} variable - JavaScript name of module.
+ * @param {string} code - Short-code for dictionary.
  * @return {string} - Processed `file`.
  */
-function process(file, pack, source, variable) {
+function process(file, pack, source, variable, code) {
     return file
         .replace(/\{\{NAME\}\}/g, pack.name)
         .replace(/\{\{DESCRIPTION\}\}/g, pack.description)
         .replace(/\{\{SPDX\}\}/g, pack.license)
         .replace(/\{\{SOURCE\}\}/g, source)
-        .replace(/\{\{VAR\}\}/g, variable);
+        .replace(/\{\{VAR\}\}/g, variable)
+        .replace(/\{\{CODE\}\}/g, code);
 }
 
 /*
@@ -179,8 +181,8 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
         'index.dic'
     ];
 
-    readme = process(documentation, template, source, variable);
-    code = process(index, template, source, variable);
+    readme = process(documentation, template, source, variable, code);
+    code = process(index, template, source, variable, code);
 
     write(join(base, 'readme.md'), readme);
     write(join(base, 'index.js'), code);

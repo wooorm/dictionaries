@@ -63,7 +63,7 @@ Dictionary and affix file: [MPL-2.0][license]. Rest: MIT ©
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/fr_FR/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

@@ -63,7 +63,7 @@ Dictionary and affix file: [{{SPDX}}][license]. Rest: MIT ©
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/{{CODE}}/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

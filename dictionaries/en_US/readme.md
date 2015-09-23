@@ -63,7 +63,7 @@ Dictionary and affix file: [(MIT AND BSD)][license]. Rest: MIT ©
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/en_US/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 
