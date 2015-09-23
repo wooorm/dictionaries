@@ -6,8 +6,7 @@ dictionaries. Useful with, for example,
 
 ## Installation
 
-See each of the below packages for installation guidelines, they’re all the
-same! :smile:
+See each of the below packages for installation guidelines.
 
 ## Table of Dictionaries
 
