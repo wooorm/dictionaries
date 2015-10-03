@@ -57,6 +57,7 @@ function load(callback) {
             if (err) {
                 exception = err;
                 callback(err);
+                result = null;
 
                 return;
             }
@@ -65,6 +66,8 @@ function load(callback) {
 
             if (pos) {
                 callback(exception, !exception && result)
+                result = null;
+                exception = null;
             }
         });
     }
