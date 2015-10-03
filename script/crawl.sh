@@ -224,9 +224,9 @@ crawl "vietnamese" \
 generate "austrian" \
     "de_AT" \
     "(GPL-2.0 OR GPL-3.0)" \
-    "de_AT_igerman98/Copyright" \
-    "de_AT_igerman98/de_AT_igerman98.dic" \
-    "de_AT_igerman98/de_AT_igerman98.aff" \
+    "-" \
+    "de_AT_frami/de_AT_frami.dic" \
+    "de_AT_frami/de_AT_frami.aff" \
     "ISO8859-1"
 
 #
