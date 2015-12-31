@@ -50,24 +50,12 @@ function load(callback) {
         read(join(__dirname, 'index.' + name), function (err, doc) {
             pos++;
 
-            if (exception) {
-                return;
-            }
-
-            if (err) {
-                exception = err;
-                callback(err);
-                result = null;
-
-                return;
-            }
-
+            exception = exception || err;
             result[name] = doc;
 
             if (pos) {
-                callback(exception, !exception && result)
-                result = null;
-                exception = null;
+              callback(exception, !exception && result)
+              result = exception = null;
             }
         });
     }
