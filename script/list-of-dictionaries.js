@@ -14,7 +14,6 @@
 
 var fs = require('fs');
 var path = require('path');
-var escape = require('mdast-util-escape');
 var visit = require('unist-util-visit');
 var hidden = require('is-hidden');
 
@@ -82,7 +81,7 @@ table.children = table.children.concat(
             var url = 'dictionaries/' + name;
             var filePath = join(cwd, 'dictionaries', name, 'package.json');
             var pack = require(filePath);
-            var license = escape(pack.license);
+            var license = pack.license;
             var description = pack.description.replace(/\sspelling.+$/, '');
 
             if (exists(join(cwd, 'dictionaries', name, 'LICENSE'))) {
@@ -103,13 +102,13 @@ table.children = table.children.concat(
                             'children': [{
                                 'type': 'link',
                                 'href': url,
-                                'children': escape(pack.name)
+                                'children': pack.name
                             }]
                         }]
                     },
                     {
                         'type': 'tableCell',
-                        'children': escape(description)
+                        'children': description
                     },
                     {
                         'type': 'tableCell',

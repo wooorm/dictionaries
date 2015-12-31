@@ -11,9 +11,8 @@
     "jscs": "^2.1.1",
     "jscs-jsdoc": "^1.2.0",
     "langs": "^1.0.1",
-    "mdast": "^2.0.0",
-    "mdast-lint": "^1.1.1",
-    "mdast-util-escape": "^1.0.0",
+    "remark": "^3.0.0",
+    "remark-lint": "^2.0.0",
     "unist-util-visit": "^1.0.0"
   },
   "scripts": {
@@ -22,7 +21,7 @@
     "lint": "npm run lint-api && npm run lint-style",
     "crawl": "sh script/crawl.sh",
     "generate": "node script/generate.js",
-    "docs": "mdast .",
+    "docs": "remark .",
     "build": "npm run crawl && npm run generate"
   }
 }
