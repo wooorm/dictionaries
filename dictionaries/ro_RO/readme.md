@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)][license]. Rest: MIT ©
+Dictionary and affix file: [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/ro_RO/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)][license]. Rest: MI
 [source]: http://extensions.openoffice.org/en/project/romanian-dictionary-pack-spell-checker-hyphenation-thesaurus
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/ro_RO/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

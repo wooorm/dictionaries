@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [BSD-2-Clause][license]. Rest: MIT ©
+Dictionary and affix file: [BSD-2-Clause](https://github.com/wooorm/dictionaries/blob/master/dictionaries/ru_RU/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [BSD-2-Clause][license]. Rest: MIT ©
 [source]: http://extensions.openoffice.org/en/project/russian-dictionary
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/ru_RU/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

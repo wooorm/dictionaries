@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [MPL-2.0][license]. Rest: MIT ©
+Dictionary and affix file: [MPL-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/fr_FR/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [MPL-2.0][license]. Rest: MIT ©
 [source]: http://extensions.openoffice.org/en/project/french-dictionaries
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/fr_FR/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

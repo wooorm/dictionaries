@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [GPL-2.0][license]. Rest: MIT ©
+Dictionary and affix file: [GPL-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/nb_NO/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [GPL-2.0][license]. Rest: MIT ©
 [source]: http://extensions.openoffice.org/en/project/norwegian-dictionaries-spell-checker-thesaurus-and-hyphenation
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/nb_NO/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [LGPL-2.1][license]. Rest: MIT ©
+Dictionary and affix file: [LGPL-2.1](https://github.com/wooorm/dictionaries/blob/master/dictionaries/pt_BR/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [LGPL-2.1][license]. Rest: MIT ©
 [source]: http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/pt_BR/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

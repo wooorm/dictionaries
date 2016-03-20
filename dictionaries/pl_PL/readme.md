@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)][license]. Rest: MIT ©
+Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/pl_PL/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)][license]. Rest: MI
 [source]: http://extensions.openoffice.org/en/project/polish-dictionary-pack
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/pl_PL/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

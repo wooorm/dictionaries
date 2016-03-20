@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [{{SPDX}}][license]. Rest: MIT ©
+Dictionary and affix file: {{LICENSE}}. Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [{{SPDX}}][license]. Rest: MIT ©
 [source]: {{SOURCE}}
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/{{CODE}}/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

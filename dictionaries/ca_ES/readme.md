@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [LGPL-2.0][license]. Rest: MIT ©
+Dictionary and affix file: [LGPL-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/ca_ES/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [LGPL-2.0][license]. Rest: MIT ©
 [source]: http://extensions.openoffice.org/en/project/catalan-dictionary-pack-spell-checker-hyphenation-patterns-and-thesaurus
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/ca_ES/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 

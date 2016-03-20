@@ -82,21 +82,29 @@ function unique(key, index, parent) {
  * @param {string} code - Short-code for dictionary.
  * @return {string} - Processed `file`.
  */
-function process(file, pack, source, variable, code) {
+function process(file, pack, source, variable, code, hasLicense) {
+    var license = pack.license;
+
+    if (hasLicense) {
+      license = '[' + license + '](https://github.com/wooorm/' +
+        'dictionaries/blob/master/dictionaries/' + code + '/LICENSE)'
+    }
+
     return file
         .replace(/\{\{NAME\}\}/g, pack.name)
         .replace(/\{\{DESCRIPTION\}\}/g, pack.description)
         .replace(/\{\{SPDX\}\}/g, pack.license)
         .replace(/\{\{SOURCE\}\}/g, source)
         .replace(/\{\{VAR\}\}/g, variable)
-        .replace(/\{\{CODE\}\}/g, code);
+        .replace(/\{\{CODE\}\}/g, code)
+        .replace(/\{\{LICENSE\}\}/g, license);
 }
 
 /*
  * Constants.
  */
 
-var documentation = read(template('readme.md'), 'utf-8');
+var docs = read(template('readme.md'), 'utf-8');
 var index = read(template('index.js'), 'utf-8');
 
 /*
@@ -107,12 +115,13 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
     var base = dict(code);
     var template = {};
     var source = read(join(base, 'SOURCE'), 'utf-8').trim();
+    var hasLicense = exists(join(base, 'LICENSE'))
     var spdx = read(join(base, 'SPDX'), 'utf-8').trim();
     var segments = code.toLowerCase().replace(/[^a-z]+/g, '-').split('-');
     var lang = iso6391.where('1', segments[0]) || iso6392.get(segments[0]);
     var region = iso3166.getCountry(segments[1].toUpperCase());
     var rest = segments[2];
-    var script = rest && iso15924.get(rest);
+    var script;
     var variable;
     var readme;
     var pack;
@@ -120,6 +129,20 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
     var keywords;
     var description;
     var flag;
+    var pos;
+    var length;
+
+    if (rest) {
+      pos = -1;
+      length = iso15924.length;
+
+      while (++pos < length) {
+        if (iso15924[pos].code.toLowerCase() === rest.toLowerCase()) {
+          script = iso15924[pos];
+          break;
+        }
+      }
+    }
 
     if (exists(join(base, 'package.json'))) {
         pack = JSON.parse(read(join(base, 'package.json')));
@@ -128,7 +151,7 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
     }
 
     lang = lang ? lang.name : null;
-    script = script ? script.name : null;
+    rest = script ? script.code : rest || null;
 
     variable = segments[0];
 
@@ -156,7 +179,7 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
     keywords = keywords.concat(lang.toLowerCase().split(' '));
     keywords = keywords.concat(region.toLowerCase().split(' '));
 
-    flag = script || rest || '';
+    flag = (script && script.name) || rest || '';
 
     if (flag) {
         keywords.push(flag.toLowerCase());
@@ -181,8 +204,8 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
         'index.dic'
     ];
 
-    readme = process(documentation, template, source, variable, code);
-    code = process(index, template, source, variable, code);
+    readme = process(docs, template, source, variable, code, hasLicense);
+    code = process(index, template, source, variable, code, hasLicense);
 
     write(join(base, 'readme.md'), readme);
     write(join(base, 'index.js'), code);

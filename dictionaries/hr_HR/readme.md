@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [GPL-3.0][license]. Rest: MIT ©
+Dictionary and affix file: [GPL-3.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/hr_HR/LICENSE). Rest: MIT ©
 [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -62,8 +62,6 @@ Dictionary and affix file: [GPL-3.0][license]. Rest: MIT ©
 [source]: http://extensions.openoffice.org/en/project/croatian-dictionary-and-hyphenation-patterns
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[license]: https://github.com/wooorm/dictionaries/blob/master/dictionaries/hr_HR/LICENSE
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 
