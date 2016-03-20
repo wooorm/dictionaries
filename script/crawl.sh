@@ -49,7 +49,7 @@ crawl() {
     ARCHIVE_PATH="$ARCHIVES/$1.zip"
 
     if [ ! -e "$ARCHIVE_PATH" ]; then
-        curl -L "$3" > "$ARCHIVE_PATH"
+        wget "$3" -O "$ARCHIVE_PATH"
     fi
 
     unpack "$1" "$2"
@@ -215,7 +215,6 @@ crawl "vietnamese" \
 #####################################################################
 # DICTIONARIES ######################################################
 #####################################################################
-
 
 #
 # German (Austrian).
