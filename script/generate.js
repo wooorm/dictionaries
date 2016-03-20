@@ -195,8 +195,16 @@ dir('dictionaries').filter(visible).sort().forEach(function (code) {
     template.description = description;
     template.license = spdx;
     template.keywords = keywords;
-    template.repository = 'wooorm/dictionary';
-    template.author = 'Titus Wormer <tituswormer@gmail.com>';
+    template.repository = {
+      'type': 'git',
+      'url': 'https://github.com/wooorm/dictionaries'
+    };
+    template.bugs = 'https://github.com/wooorm/dictionaries/issues';
+    template.author = 'Titus Wormer <tituswormer@gmail.com> ' +
+      '(http://wooorm.com)';
+    template.contributors = [
+      'Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)'
+    ];
     template.main = 'index.js';
     template.files = [
         'index.js',

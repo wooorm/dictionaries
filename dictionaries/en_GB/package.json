@@ -12,8 +12,15 @@
     "united",
     "kingdom"
   ],
-  "repository": "wooorm/dictionary",
-  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/dictionaries"
+  },
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
   "main": "index.js",
   "files": [
     "index.js",
