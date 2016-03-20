@@ -222,7 +222,7 @@ crawl "vietnamese" \
 generate "austrian" \
     "de_AT" \
     "(GPL-2.0 OR GPL-3.0)" \
-    "-" \
+    "hyph_de_AT/README_hyph_de_AT.txt" \
     "de_AT_frami/de_AT_frami.dic" \
     "de_AT_frami/de_AT_frami.aff" \
     "ISO8859-1"

@@ -1,20 +1,36 @@
-igerman98 - dictionaries for German language
-Copyright (C) 1999-2010 Björn Jacke <bjoern@j3e.de>.
+Hyphenation dictionary "hyph_de_AT.dic"
+---------------------------------------
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License version 2 or 3 as
-    published by the Free Software Foundation.
+Language: German (de AT)
+		  according to the reform of 2006-08-01	(i.e. reformed or new spelling)
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+Version:  2013-12-06
+          Enhanced blacklist to improve the hyphenation module by Karl Zeiler
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+Origin:   Based on the TeX hyphenation tables "dehyphn.tex", revision level 31.
+          http://www.ctan.org/tex-archive/language/hyphenation/dehyphn.tex
+		  The TeX hyphenation tables are released under the LaTeX Project
+		  Public License (LPPL)
+
+License:  OpenOffice.org Adaptions of this package are licensed under the
+          GNU Lesser General Public License (LGPL 2 or later) and are under 
+		  Copyright by
+
+Author:   conversion author: Marco Huggenberger <marco@by-night.ch>
+          revised conversion and extensions: Daniel Naber <naber@danielnaber.de>
+		  improvements: Karl Zeiler <karl.zeiler@t-online.de>
+
+Note:	  This dictionary is based on syllable matching patterns
+		  and thus should be suitable under other variations of German:
+		  HYPH de AT hyph_de_DE
+		  HYPH de CH hyph_de_CH
 
 
-The hunspell dictionary releases are dual-licensed, the alternative
-license is the OASIS distribution license agreement, which can be
-found in the dictionary's archive.
+Trennmuster (hyph_de_AT.dic)
+----------------------------
+
+Die Trennmuster (hyph_de_AT.dic) basieren auf den TeX Trennmustern
+"dehyphn.tex", revision level 31.
+Lizenz der Trennmuster: LPPL. Die Anpassung der Trennmuster an
+den in OpenOffice.org benutzten "ALTLinux LibHnj Hyphenator" wurde
+mit dem Script substrings.pl durchgef
