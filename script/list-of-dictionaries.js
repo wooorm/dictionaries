@@ -40,7 +40,7 @@ var table = {
     'align': [],
     'children': [
         {
-            'type': 'tableHeader',
+            'type': 'tableRow',
             'children': [
                 {
                     'type': 'tableCell',
@@ -84,10 +84,15 @@ table.children = table.children.concat(
             var license = pack.license;
             var description = pack.description.replace(/\sspelling.+$/, '');
 
+            license = [{
+              'type': 'text',
+              'value': license
+            }];
+
             if (exists(join(cwd, 'dictionaries', name, 'LICENSE'))) {
                 license = [{
                     'type': 'link',
-                    'href': url + '/LICENSE',
+                    'url': url + '/LICENSE',
                     'children': license
                 }];
             }
@@ -101,14 +106,20 @@ table.children = table.children.concat(
                             'type': 'strong',
                             'children': [{
                                 'type': 'link',
-                                'href': url,
-                                'children': pack.name
+                                'url': url,
+                                'children': [{
+                                  'type': 'text',
+                                  'value': pack.name
+                                }]
                             }]
                         }]
                     },
                     {
                         'type': 'tableCell',
-                        'children': description
+                        'children': [{
+                          'type': 'text',
+                          'value': description
+                        }]
                     },
                     {
                         'type': 'tableCell',

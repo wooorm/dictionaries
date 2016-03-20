@@ -21,7 +21,7 @@
     "lint": "npm run lint-api && npm run lint-style",
     "crawl": "sh script/crawl.sh",
     "generate": "node script/generate.js",
-    "docs": "remark .",
+    "docs": "remark . --quiet --frail",
     "build": "npm run crawl && npm run generate"
   }
 }
