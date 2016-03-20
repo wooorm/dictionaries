@@ -201,10 +201,9 @@ crawl "swedish" \
 crawl "switzerland" \
     "http://extensions.openoffice.org/en/project/german-de-ch-igerman98-dictionaries" \
     "http://sourceforge.net/projects/aoo-extensions/files/1712/3/dict-de_ch-igerman98_2011-06-21.oxt/download"
-# Disabled due to unknown license.
-# crawl "turkish" \
-#     "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
-#     "http://sourceforge.net/projects/aoo-extensions/files/18079/3/oo-turkish-dict-v1.2.oxt/download"
+crawl "turkish" \
+    "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
+    "http://sourceforge.net/projects/aoo-extensions/files/18079/3/oo-turkish-dict-v1.2.oxt/download"
 crawl "ukrainian" \
     "http://extensions.openoffice.org/en/project/ukrainian-dictionary" \
     "http://sourceforge.net/projects/aoo-extensions/files/975/6/dict-uk_ua-1.7.1.oxt/download"
@@ -621,13 +620,13 @@ generate "switzerland" \
 #
 
 # Unknown license.
-# generate "turkish" \
-#     "tr-TR" \
-#     "MIT" \
-#     "LICENSES-en.txt" \
-#     "dictionaries/tr-TR.aff" \
-#     "dictionaries/tr-TR.dic" \
-#     "UTF-8"
+generate "turkish" \
+    "tr-TR" \
+    "MIT" \
+    "-" \
+    "dictionaries/tr-TR.aff" \
+    "dictionaries/tr-TR.dic" \
+    "UTF-8"
 
 #
 # Ukrainian.

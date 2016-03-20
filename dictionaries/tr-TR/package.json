@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-tr",
+  "version": "1.0.0",
+  "description": "Turkish (Turkey) spelling dictionary in UTF-8",
+  "license": "MIT",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "turkish",
+    "turkey"
+  ],
+  "repository": "wooorm/dictionary",
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}
