@@ -247,8 +247,8 @@ generate "bulgarian" \
     "bg_BG" \
     "LGPL-2.1" \
     "README.txt" \
-    "spell/bg_BG.aff" \
     "spell/bg_BG.dic" \
+    "spell/bg_BG.aff" \
     "CP1251"
 
 #
@@ -290,8 +290,8 @@ generate "czech" \
     "cs_CZ" \
     "GPL-2.0" \
     "README_en.txt" \
-    "cs_CZ.aff" \
     "cs_CZ.dic" \
+    "cs_CZ.aff" \
     "ISO8859-2"
 
 #
@@ -391,8 +391,8 @@ generate "galician" \
     "gl_ES" \
     "GPL-3.0" \
     "license.txt" \
-    "gl_ES.aff" \
     "gl_ES.dic" \
+    "gl_ES.aff" \
     "UTF-8"
 
 #
@@ -415,8 +415,8 @@ generate "greek" \
     "el_GR" \
     "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
     "README_el_GR.txt" \
-    "el_GR.aff" \
     "el_GR.dic" \
+    "el_GR.aff" \
     "ISO8859-7"
 
 #
@@ -531,8 +531,8 @@ generate "russian" \
     "ru_RU" \
     "BSD-2-Clause" \
     "LICENSE" \
-    "ru_RU.aff" \
     "ru_RU.dic" \
+    "ru_RU.aff" \
     "KOI8-R"
 
 #
@@ -624,8 +624,8 @@ generate "turkish" \
     "tr-TR" \
     "MIT" \
     "-" \
-    "dictionaries/tr-TR.aff" \
     "dictionaries/tr-TR.dic" \
+    "dictionaries/tr-TR.aff" \
     "UTF-8"
 
 #
@@ -636,8 +636,8 @@ generate "ukrainian" \
     "uk_UA" \
     "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
     "uk_UA/README_uk_UA.txt" \
-    "uk_UA/uk_UA.aff" \
     "uk_UA/uk_UA.dic" \
+    "uk_UA/uk_UA.aff" \
     "UTF-8"
 
 #
@@ -648,6 +648,6 @@ generate "vietnamese" \
     "vi_VN" \
     "GPL-2.0" \
     "LICENSES-en.txt" \
-    "dictionaries/vi_VN.aff" \
     "dictionaries/vi_VN.dic" \
+    "dictionaries/vi_VN.aff" \
     "UTF-8"
