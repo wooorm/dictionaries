@@ -1,7 +1,7 @@
 # dictionaries
 
 Accessible and easily installable [hunspell](http://hunspell.sourceforge.net)
-dictionaries. Useful with, for example,
+dictionaries.  Useful with, for example,
 [nodehun](https://github.com/nathanjsweet/nodehun).
 
 ## Installation
@@ -58,7 +58,7 @@ Each dictionary can be installed on OS X by following
 
 ## Contributing
 
-New dictionaries can be added quite easily. Most importantly, they must be
+New dictionaries can be added quite easily.  Most importantly, they must be
 licensed with an Open Source License, and they should be convertible by
 **iconv**(1) to UTF-8.
 

@@ -1,165 +1,74 @@
-/**
- * @author Titus Wormer
- * @copyright 2015 Titus Wormer
- * @license MIT
- * @module dictionary:list-of-dictionaries
- * @fileoverview Generate a list of dictionaries for the README.
- */
-
 'use strict';
 
-/*
- * Dependencies.
- */
+/* eslint-disable import/no-dynamic-require */
 
+/* Expose. */
+module.exports = listOfDictionaries;
+
+/* Dependencies. */
 var fs = require('fs');
 var path = require('path');
+var u = require('unist-builder');
 var visit = require('unist-util-visit');
 var hidden = require('is-hidden');
+var negate = require('negate');
 
-/*
- * Methods.
- */
-
+/* Methods. */
 var dir = fs.readdirSync;
 var exists = fs.existsSync;
 var join = path.join;
 
-/*
- * Values.
- */
-
+/* Values. */
 var cwd = process.cwd();
 
-/*
- * Table.
- */
-
-var table = {
-    'type': 'table',
-    'align': [],
-    'children': [
-        {
-            'type': 'tableRow',
-            'children': [
-                {
-                    'type': 'tableCell',
-                    'children': [{
-                        'type': 'text',
-                        'value': 'Name'
-                    }]
-                },
-                {
-                    'type': 'tableCell',
-                    'children': [{
-                        'type': 'text',
-                        'value': 'Description'
-                    }]
-                },
-                {
-                    'type': 'tableCell',
-                    'children': [{
-                        'type': 'text',
-                        'value': 'License'
-                    }]
-                }
-            ]
-        }
-    ]
+/* Add a list of dictionaries. */
+function listOfDictionaries() {
+  return transformer;
 }
 
-/*
- * Add the rows.
- */
-
-table.children = table.children.concat(
-    dir(join(cwd, 'dictionaries'))
-        .filter(function (fileName) {
-            return !hidden(fileName)
-        })
-        .map(function (name) {
-            var url = 'dictionaries/' + name;
-            var filePath = join(cwd, 'dictionaries', name, 'package.json');
-            var pack = require(filePath);
-            var license = pack.license;
-            var description = pack.description.replace(/\sspelling.+$/, '');
-
-            license = [{
-              'type': 'text',
-              'value': license
-            }];
-
-            if (exists(join(cwd, 'dictionaries', name, 'LICENSE'))) {
-                license = [{
-                    'type': 'link',
-                    'url': url + '/LICENSE',
-                    'children': license
-                }];
-            }
-
-            return {
-                'type': 'tableRow',
-                'children': [
-                    {
-                        'type': 'tableCell',
-                        'children': [{
-                            'type': 'strong',
-                            'children': [{
-                                'type': 'link',
-                                'url': url,
-                                'children': [{
-                                  'type': 'text',
-                                  'value': pack.name
-                                }]
-                            }]
-                        }]
-                    },
-                    {
-                        'type': 'tableCell',
-                        'children': [{
-                          'type': 'text',
-                          'value': description
-                        }]
-                    },
-                    {
-                        'type': 'tableCell',
-                        'children': license
-                    }
-                ]
-            };
-        })
-)
-
-/**
- * Transformer.
- *
- * Replaces the first `table` node in `readme.md`.
- *
- * @param {Node} tree - Syntax tree.
- * @param {VFile} file - Virtual file.
- */
+/* Replace the first `table` node in `readme.md`. */
 function transformer(tree, file) {
-    if (file.filePath() !== 'readme.md') {
-        return;
-    }
+  if (file.stem === 'readme') {
+    visit(tree, 'table', visitor);
+  }
 
-    visit(tree, 'table', function (node, index, parent) {
-        parent.children[index] = table;
-        return false;
-    });
+  function visitor(node, index, parent) {
+    /* Table. */
+    var table = u('table', [
+      u('tableRow', [
+        u('tableCell', [u('text', 'Name')]),
+        u('tableCell', [u('text', 'Description')]),
+        u('tableCell', [u('text', 'License')])
+      ])
+    ]);
+
+    /* Add the rows. */
+    table.children = table.children.concat(
+      dir(join(cwd, 'dictionaries'))
+        .filter(negate(hidden))
+        .map(function (name) {
+          var url = 'dictionaries/' + name;
+          var filePath = join(cwd, 'dictionaries', name, 'package.json');
+          var pack = require(filePath);
+          var license = [u('text', pack.license)];
+          var description = pack.description.replace(/\sspelling.+$/, '');
+
+          if (exists(join(cwd, 'dictionaries', name, 'LICENSE'))) {
+            license = [u('link', {url: url + '/LICENSE'}, license)];
+          }
+
+          return u('tableRow', [
+            u('tableCell', [u('strong', [
+              u('link', {url: url}, [u('text', pack.name)])
+            ])]),
+            u('tableCell', [u('text', description)]),
+            u('tableCell', license)
+          ]);
+        })
+    );
+
+    parent.children[index] = table;
+
+    return false;
+  }
 }
-
-/**
- * Attacher.
- *
- * @return {Function} - `transformer`.
- */
-function attacher() {
-    return transformer;
-}
-
-/*
- * Expose.
- */
-
-module.exports = attacher;

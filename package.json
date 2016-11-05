@@ -1,27 +1,51 @@
 {
   "name": "dictionaries",
   "private": true,
+  "version": "0.0.0",
   "description": "Hunspell dictionaries in UTF-8",
+  "license": "MIT",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary"
+  ],
+  "repository": "https://github.com/wooorm/dictionaries",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^2.4.0",
     "is-hidden": "^1.0.1",
     "iso-15924": "^2.0.0",
     "iso-3166-1-alpha-2": "^1.0.0",
-    "iso-639-2": "^0.2.0",
-    "jscs": "^2.1.1",
-    "jscs-jsdoc": "^1.2.0",
+    "iso-639-2": "^1.0.0",
     "langs": "^1.0.1",
-    "remark": "^4.0.0",
-    "remark-lint": "^3.0.0",
-    "unist-util-visit": "^1.0.0"
+    "negate": "^1.0.0",
+    "remark-cli": "^2.1.0",
+    "remark-preset-wooorm": "^1.0.0",
+    "unist-builder": "^1.0.2",
+    "unist-util-visit": "^1.0.0",
+    "xo": "^0.17.0"
   },
   "scripts": {
-    "lint-api": "eslint .",
-    "lint-style": "jscs --reporter inline .",
-    "lint": "npm run lint-api && npm run lint-style",
-    "crawl": "sh script/crawl.sh",
-    "generate": "node script/generate.js",
-    "docs": "remark . --quiet --frail",
-    "build": "npm run crawl && npm run generate"
+    "build-crawl": "sh script/crawl.sh",
+    "build-generate": "node script/generate",
+    "build-md": "remark *.md --quiet --frail --output",
+    "build": "npm run build-crawl && npm run build-generate && npm run build-md",
+    "lint": "xo",
+    "test": "npm run build && npm run lint"
+  },
+  "xo": {
+    "space": true
+  },
+  "remarkConfig": {
+    "presets": "wooorm",
+    "plugins": [
+      "./script/list-of-dictionaries"
+    ]
   }
 }

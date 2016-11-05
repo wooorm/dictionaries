@@ -1,221 +1,182 @@
-/**
- * @author Titus Wormer
- * @copyright 2015 Titus Wormer
- * @license MIT
- * @module dictionary:generate
- * @fileoverview Generate dictionary files.
- */
-
 'use strict';
 
-/*
- * Dependencies.
- */
+/* eslint-disable max-params */
 
+/* Dependencies. */
 var fs = require('fs');
 var path = require('path');
 var hidden = require('is-hidden');
+var negate = require('negate');
 var iso6391 = require('langs');
 var iso6392 = require('iso-639-2');
 var iso3166 = require('iso-3166-1-alpha-2');
 var iso15924 = require('iso-15924');
 
-/*
- * Methods.
- */
-
+/* Methods. */
 var dir = fs.readdirSync;
 var exists = fs.existsSync;
 var read = fs.readFileSync;
 var write = fs.writeFileSync;
 var join = path.join;
 
-/**
- * Access a template.
- *
- * @param {string} fileName - Name.
- * @return {string} - File-path.
- */
-function template(fileName) {
-    return join(__dirname, 'template', fileName);
-}
-
-/**
- * Access a dictionary.
- *
- * @param {string} code - Dictionary code.
- * @return {string} - File-path.
- */
-function dict(code) {
-    return join('dictionaries', code);
-}
-
-/**
- * Check if a file is visible.
- *
- * @param {string} fileName - Name.
- * @return {boolean} - Whether `fileName` is visible.
- */
-function visible(fileName) {
-    return !hidden(fileName);
-}
-
-/**
- * Check if value is not repeat after itself in its parent.
- *
- * @param {string} key - Value.
- * @param {number} index - Position of `key` in `parent`.
- * @param {Array.<*>} parent - Parent of `key`.
- * @return {boolean} - Whether `key` is unique in `parent`.
- */
-function unique(key, index, parent) {
-    return parent.indexOf(key, index + 1) === -1;
-}
-
-/**
- * Process a template.
- *
- * @param {string} file - File to process.
- * @param {Object} pack - Package file.
- * @param {string} source - Location of dictionary.
- * @param {string} variable - JavaScript name of module.
- * @param {string} code - Short-code for dictionary.
- * @return {string} - Processed `file`.
- */
-function process(file, pack, source, variable, code, hasLicense) {
-    var license = pack.license;
-
-    if (hasLicense) {
-      license = '[' + license + '](https://github.com/wooorm/' +
-        'dictionaries/blob/master/dictionaries/' + code + '/LICENSE)'
-    }
-
-    return file
-        .replace(/\{\{NAME\}\}/g, pack.name)
-        .replace(/\{\{DESCRIPTION\}\}/g, pack.description)
-        .replace(/\{\{SPDX\}\}/g, pack.license)
-        .replace(/\{\{SOURCE\}\}/g, source)
-        .replace(/\{\{VAR\}\}/g, variable)
-        .replace(/\{\{CODE\}\}/g, code)
-        .replace(/\{\{LICENSE\}\}/g, license);
-}
-
-/*
- * Constants.
- */
-
+/* Constants. */
 var docs = read(template('readme.md'), 'utf-8');
 var index = read(template('index.js'), 'utf-8');
 
-/*
- * Generate.
- */
+/* Generate. */
+dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
+  var base = dict(code);
+  var template = {};
+  var source = read(join(base, 'SOURCE'), 'utf-8').trim();
+  var hasLicense = exists(join(base, 'LICENSE'));
+  var spdx = read(join(base, 'SPDX'), 'utf-8').trim();
+  var segments = code.toLowerCase().replace(/[^a-z]+/g, '-').split('-');
+  var lang = iso6391.where('1', segments[0]) || find(iso6392, segments[0]);
+  var region = iso3166.getCountry(segments[1].toUpperCase());
+  var rest = segments[2];
+  var script;
+  var variable;
+  var readme;
+  var pack;
+  var name;
+  var keywords;
+  var description;
+  var flag;
+  var pos;
+  var length;
 
-dir('dictionaries').filter(visible).sort().forEach(function (code) {
-    var base = dict(code);
-    var template = {};
-    var source = read(join(base, 'SOURCE'), 'utf-8').trim();
-    var hasLicense = exists(join(base, 'LICENSE'))
-    var spdx = read(join(base, 'SPDX'), 'utf-8').trim();
-    var segments = code.toLowerCase().replace(/[^a-z]+/g, '-').split('-');
-    var lang = iso6391.where('1', segments[0]) || iso6392.get(segments[0]);
-    var region = iso3166.getCountry(segments[1].toUpperCase());
-    var rest = segments[2];
-    var script;
-    var variable;
-    var readme;
-    var pack;
-    var name;
-    var keywords;
-    var description;
-    var flag;
-    var pos;
-    var length;
+  if (rest) {
+    pos = -1;
+    length = iso15924.length;
 
-    if (rest) {
-      pos = -1;
-      length = iso15924.length;
-
-      while (++pos < length) {
-        if (iso15924[pos].code.toLowerCase() === rest.toLowerCase()) {
-          script = iso15924[pos];
-          break;
-        }
+    while (++pos < length) {
+      if (iso15924[pos].code.toLowerCase() === rest.toLowerCase()) {
+        script = iso15924[pos];
+        break;
       }
     }
+  }
 
-    if (exists(join(base, 'package.json'))) {
-        pack = JSON.parse(read(join(base, 'package.json')));
-    } else {
-        pack = {};
-    }
+  if (exists(join(base, 'package.json'))) {
+    pack = JSON.parse(read(join(base, 'package.json')));
+  } else {
+    pack = {};
+  }
 
-    lang = lang ? lang.name : null;
-    rest = script ? script.code : rest || null;
+  lang = lang ? lang.name : null;
+  rest = script ? script.code : rest || null;
 
-    variable = segments[0];
+  variable = segments[0];
 
-    if (segments[0] === segments[1]) {
-        segments.shift();
-    } else {
-        variable += segments[1].toUpperCase();
-    }
+  if (segments[0] === segments[1]) {
+    segments.shift();
+  } else {
+    variable += segments[1].toUpperCase();
+  }
 
-    name = 'dictionary-' + segments.join('-');
+  name = 'dictionary-' + segments.join('-');
 
-    if (rest) {
-        variable += rest.charAt(0).toUpperCase() + rest.slice(1);
-    }
+  if (rest) {
+    variable += rest.charAt(0).toUpperCase() + rest.slice(1);
+  }
 
-    description = lang + ' (' + region;
+  description = lang + ' (' + region;
 
-    keywords = [
-        'spelling',
-        'myspell',
-        'hunspell',
-        'dictionary'
-    ];
+  keywords = [
+    'spelling',
+    'myspell',
+    'hunspell',
+    'dictionary'
+  ];
 
-    keywords = keywords.concat(lang.toLowerCase().split(' '));
-    keywords = keywords.concat(region.toLowerCase().split(' '));
+  keywords = keywords.concat(lang.toLowerCase().split(' '));
+  keywords = keywords.concat(region.toLowerCase().split(' '));
 
-    flag = (script && script.name) || rest || '';
+  flag = (script && script.name) || rest || '';
 
-    if (flag) {
-        keywords.push(flag.toLowerCase());
-        description += ', ' + flag.charAt(0).toUpperCase() + flag.slice(1);
-    }
+  if (flag) {
+    keywords.push(flag.toLowerCase());
+    description += ', ' + flag.charAt(0).toUpperCase() + flag.slice(1);
+  }
 
-    description += ') spelling dictionary in UTF-8';
+  description += ') spelling dictionary in UTF-8';
 
-    keywords = keywords.filter(unique);
+  keywords = keywords.filter(unique);
 
-    template.name = name;
-    template.version = pack.version || '1.0.0';
-    template.description = description;
-    template.license = spdx;
-    template.keywords = keywords;
-    template.repository = {
-      'type': 'git',
-      'url': 'https://github.com/wooorm/dictionaries'
-    };
-    template.bugs = 'https://github.com/wooorm/dictionaries/issues';
-    template.author = 'Titus Wormer <tituswormer@gmail.com> ' +
-      '(http://wooorm.com)';
-    template.contributors = [
-      'Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)'
-    ];
-    template.main = 'index.js';
-    template.files = [
-        'index.js',
-        'index.aff',
-        'index.dic'
-    ];
+  template.name = name;
+  template.version = pack.version || '1.0.0';
+  template.description = description;
+  template.license = spdx;
+  template.keywords = keywords;
+  template.repository = {
+    type: 'git',
+    url: 'https://github.com/wooorm/dictionaries'
+  };
+  template.bugs = 'https://github.com/wooorm/dictionaries/issues';
+  template.author = 'Titus Wormer <tituswormer@gmail.com> ' +
+    '(http://wooorm.com)';
+  template.contributors = [
+    'Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)'
+  ];
+  template.main = 'index.js';
+  template.files = [
+    'index.js',
+    'index.aff',
+    'index.dic'
+  ];
 
-    readme = process(docs, template, source, variable, code, hasLicense);
-    code = process(index, template, source, variable, code, hasLicense);
+  readme = process(docs, template, source, variable, code, hasLicense);
+  code = process(index, template, source, variable, code, hasLicense);
 
-    write(join(base, 'readme.md'), readme);
-    write(join(base, 'index.js'), code);
-    write(join(base, 'package.json'), JSON.stringify(template, 0, 2) + '\n');
+  write(join(base, 'readme.md'), readme);
+  write(join(base, 'index.js'), code);
+  write(join(base, 'package.json'), JSON.stringify(template, 0, 2) + '\n');
 });
+
+/* Process a template. */
+function process(file, pack, source, variable, code, hasLicense) {
+  var license = pack.license;
+
+  if (hasLicense) {
+    license = '[' + license + '](https://github.com/wooorm/' +
+      'dictionaries/blob/master/dictionaries/' + code + '/LICENSE)';
+  }
+
+  return file
+    .replace(/\{\{NAME\}\}/g, pack.name)
+    .replace(/\{\{DESCRIPTION\}\}/g, pack.description)
+    .replace(/\{\{SPDX\}\}/g, pack.license)
+    .replace(/\{\{SOURCE\}\}/g, source)
+    .replace(/\{\{VAR\}\}/g, variable)
+    .replace(/\{\{CODE\}\}/g, code)
+    .replace(/\{\{LICENSE\}\}/g, license);
+}
+
+/* Access a template. */
+function template(fileName) {
+  return join(__dirname, 'template', fileName);
+}
+
+/* Access a dictionary. */
+function dict(code) {
+  return join('dictionaries', code);
+}
+
+/* Check if value is unique. */
+function unique(key, index, parent) {
+  return parent.indexOf(key, index + 1) === -1;
+}
+
+function find(data, code) {
+  var length = data.length;
+  var index = -1;
+  var entry;
+
+  while (++index < length) {
+    entry = data[index];
+
+    if (entry.iso6392B === code || entry.iso6392T === code) {
+      return entry;
+    }
+  }
+}

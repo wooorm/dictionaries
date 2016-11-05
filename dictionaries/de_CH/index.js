@@ -1,71 +1,29 @@
-/**
- * @author Titus Wormer
- * @copyright 2015 Titus Wormer
- * @license MIT
- * @module dictionary-de-ch
- * @fileoverview German (Switzerland) spelling dictionary in UTF-8.
- */
-
-/*
- * Dependencies.
- */
-
+/* Dependencies. */
 var read = require('fs').readFile;
 var join = require('path').join;
 
-/**
- * A dictionary.
- *
- * @typedef {Object} Dictionary
- * @property {Buffer} dic - Dictionary buffer in UTF-8.
- * @property {Buffer} add - Affix buffer in UTF-8.
- */
-
-/**
- * Callback invoked with a dictionary.
- *
- * @callback callback
- * @param {Error?} err - Error while reading the dictionary
- *   files.
- * @param {Dictionary?} dictionary - A dictionary.
- */
-
-/**
- * Load the dictionaries.
- *
- * @param {callback} callback
- */
-function load(callback) {
-    var pos = -1;
-    var exception = null;
-    var result = {};
-
-    /**
-     * Load a file.
-     *
-     * @param {string} name - Extension and type of file
-     *   to load.
-     */
-    function one(name) {
-        read(join(__dirname, 'index.' + name), function (err, doc) {
-            pos++;
-
-            exception = exception || err;
-            result[name] = doc;
-
-            if (pos) {
-              callback(exception, !exception && result)
-              result = exception = null;
-            }
-        });
-    }
-
-    one('aff');
-    one('dic');
-}
-
-/*
- * Expose.
- */
-
+/* Expose. */
 module.exports = load;
+
+/* Load the dictionary-de-ch dictionaries. */
+function load(callback) {
+  var pos = -1;
+  var exception = null;
+  var result = {};
+
+  one('aff');
+  one('dic');
+
+  function one(name) {
+    read(join(__dirname, 'index.' + name), function (err, doc) {
+      pos++;
+      exception = exception || err;
+      result[name] = doc;
+
+      if (pos) {
+        callback(exception, exception ? null : result);
+        result = exception = null;
+      }
+    });
+  }
+}

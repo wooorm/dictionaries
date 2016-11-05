@@ -1,7 +1,0 @@
-{
-  "output": true,
-  "plugins": [
-    "lint",
-    "script/list-of-dictionaries"
-  ]
-}
