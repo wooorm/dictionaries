@@ -22,7 +22,8 @@ function load(callback) {
 
       if (pos) {
         callback(exception, exception ? null : result);
-        result = exception = null;
+        exception = null;
+        result = null;
       }
     });
   }

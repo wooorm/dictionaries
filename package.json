@@ -23,13 +23,13 @@
     "iso-15924": "^2.0.0",
     "iso-3166-1-alpha-2": "^1.0.0",
     "iso-639-2": "^1.0.0",
-    "langs": "^1.0.1",
+    "langs": "^2.0.0",
     "negate": "^1.0.0",
-    "remark-cli": "^2.1.0",
-    "remark-preset-wooorm": "^1.0.0",
+    "remark-cli": "^3.0.0",
+    "remark-preset-wooorm": "^2.0.0",
     "unist-builder": "^1.0.2",
     "unist-util-visit": "^1.0.0",
-    "xo": "^0.17.0"
+    "xo": "^0.18.1"
   },
   "scripts": {
     "build-crawl": "sh script/crawl.sh",
@@ -40,11 +40,12 @@
     "test": "npm run build && npm run lint"
   },
   "xo": {
-    "space": true
+    "space": true,
+    "esnext": false
   },
   "remarkConfig": {
-    "presets": "wooorm",
     "plugins": [
+      "preset-wooorm",
       "./script/list-of-dictionaries"
     ]
   }
