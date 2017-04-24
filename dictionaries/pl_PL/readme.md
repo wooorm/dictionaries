@@ -23,15 +23,15 @@ npm install dictionary-pl
 var pl = require('dictionary-pl');
 
 pl(function (err, result) {
-    if (err) throw err;
-
-    console.log(result);
-    /*
-     * Yields:
-     * { dic: <Buffer>,
-     *   aff: <Buffer> }
-     */
+  console.log(err || result);
 });
+```
+
+Yields:
+
+```js
+{ dic: <Buffer>,
+  aff: <Buffer> }
 ```
 
 Where `dic` is a buffer for the dictionary file at `index.dic` (in UTF-8), and
@@ -50,8 +50,8 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/pl_PL/LICENSE).  Rest: MIT ©
-[Titus Wormer][home].
+Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/pl_PL/LICENSE).
+Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
 

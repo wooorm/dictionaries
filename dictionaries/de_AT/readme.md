@@ -23,15 +23,15 @@ npm install dictionary-de-at
 var deAT = require('dictionary-de-at');
 
 deAT(function (err, result) {
-    if (err) throw err;
-
-    console.log(result);
-    /*
-     * Yields:
-     * { dic: <Buffer>,
-     *   aff: <Buffer> }
-     */
+  console.log(err || result);
 });
+```
+
+Yields:
+
+```js
+{ dic: <Buffer>,
+  aff: <Buffer> }
 ```
 
 Where `dic` is a buffer for the dictionary file at `index.dic` (in UTF-8), and
@@ -50,8 +50,8 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [(GPL-2.0 OR GPL-3.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/de_AT/LICENSE).  Rest: MIT ©
-[Titus Wormer][home].
+Dictionary and affix file: [(GPL-2.0 OR GPL-3.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/de_AT/LICENSE).
+Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
 

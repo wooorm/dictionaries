@@ -23,15 +23,15 @@ npm install dictionary-nl
 var nl = require('dictionary-nl');
 
 nl(function (err, result) {
-    if (err) throw err;
-
-    console.log(result);
-    /*
-     * Yields:
-     * { dic: <Buffer>,
-     *   aff: <Buffer> }
-     */
+  console.log(err || result);
 });
+```
+
+Yields:
+
+```js
+{ dic: <Buffer>,
+  aff: <Buffer> }
 ```
 
 Where `dic` is a buffer for the dictionary file at `index.dic` (in UTF-8), and
@@ -50,8 +50,8 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [(BSD-3-Clause OR CC-BY-3.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/nl_NL/LICENSE).  Rest: MIT ©
-[Titus Wormer][home].
+Dictionary and affix file: [(BSD-3-Clause OR CC-BY-3.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/nl_NL/LICENSE).
+Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
 

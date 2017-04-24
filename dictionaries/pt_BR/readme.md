@@ -23,15 +23,15 @@ npm install dictionary-pt-br
 var ptBR = require('dictionary-pt-br');
 
 ptBR(function (err, result) {
-    if (err) throw err;
-
-    console.log(result);
-    /*
-     * Yields:
-     * { dic: <Buffer>,
-     *   aff: <Buffer> }
-     */
+  console.log(err || result);
 });
+```
+
+Yields:
+
+```js
+{ dic: <Buffer>,
+  aff: <Buffer> }
 ```
 
 Where `dic` is a buffer for the dictionary file at `index.dic` (in UTF-8), and
@@ -50,8 +50,8 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [LGPL-2.1](https://github.com/wooorm/dictionaries/blob/master/dictionaries/pt_BR/LICENSE).  Rest: MIT ©
-[Titus Wormer][home].
+Dictionary and affix file: [LGPL-2.1](https://github.com/wooorm/dictionaries/blob/master/dictionaries/pt_BR/LICENSE).
+Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
 

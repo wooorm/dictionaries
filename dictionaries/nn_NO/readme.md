@@ -23,15 +23,15 @@ npm install dictionary-nn-no
 var nnNO = require('dictionary-nn-no');
 
 nnNO(function (err, result) {
-    if (err) throw err;
-
-    console.log(result);
-    /*
-     * Yields:
-     * { dic: <Buffer>,
-     *   aff: <Buffer> }
-     */
+  console.log(err || result);
 });
+```
+
+Yields:
+
+```js
+{ dic: <Buffer>,
+  aff: <Buffer> }
 ```
 
 Where `dic` is a buffer for the dictionary file at `index.dic` (in UTF-8), and
@@ -50,8 +50,8 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [GPL-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/nn_NO/LICENSE).  Rest: MIT ©
-[Titus Wormer][home].
+Dictionary and affix file: [GPL-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/nn_NO/LICENSE).
+Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
 
