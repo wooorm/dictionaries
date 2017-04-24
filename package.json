@@ -44,6 +44,9 @@
     "esnext": false
   },
   "remarkConfig": {
+    "settings": {
+      "paddedTable": false
+    },
     "plugins": [
       "preset-wooorm",
       "./script/list-of-dictionaries"
