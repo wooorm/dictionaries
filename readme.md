@@ -2,7 +2,8 @@
 
 Accessible and easily installable [hunspell](http://hunspell.sourceforge.net)
 dictionaries.  Useful with, for example,
-[nodehun](https://github.com/nathanjsweet/nodehun).
+[nodehun](https://github.com/nathanjsweet/nodehun) and
+[nspell](https://github.com/wooorm/nspell).
 
 ## Installation
 
