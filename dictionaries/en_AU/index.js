@@ -1,11 +1,8 @@
-/* Dependencies. */
 var read = require('fs').readFile;
 var join = require('path').join;
 
-/* Expose. */
 module.exports = load;
 
-/* Load the dictionary-en-au dictionaries. */
 function load(callback) {
   var pos = -1;
   var exception = null;

@@ -2,7 +2,6 @@
 
 /* eslint-disable max-params */
 
-/* Dependencies. */
 var fs = require('fs');
 var path = require('path');
 var hidden = require('is-hidden');
@@ -12,18 +11,15 @@ var iso6392 = require('iso-639-2');
 var iso3166 = require('iso-3166-1-alpha-2');
 var iso15924 = require('iso-15924');
 
-/* Methods. */
 var dir = fs.readdirSync;
 var exists = fs.existsSync;
 var read = fs.readFileSync;
 var write = fs.writeFileSync;
 var join = path.join;
 
-/* Constants. */
 var docs = read(template('readme.md'), 'utf-8');
 var index = read(template('index.js'), 'utf-8');
 
-/* Generate. */
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   var base = dict(code);
   var template = {};
@@ -133,7 +129,6 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   write(join(base, 'package.json'), JSON.stringify(template, 0, 2) + '\n');
 });
 
-/* Process a template. */
 function process(file, pack, source, variable, code, hasLicense) {
   var license = pack.license;
 
@@ -152,17 +147,14 @@ function process(file, pack, source, variable, code, hasLicense) {
     .replace(/\{\{LICENSE\}\}/g, license);
 }
 
-/* Access a template. */
 function template(fileName) {
   return join(__dirname, 'template', fileName);
 }
 
-/* Access a dictionary. */
 function dict(code) {
   return join('dictionaries', code);
 }
 
-/* Check if value is unique. */
 function unique(key, index, parent) {
   return parent.indexOf(key, index + 1) === -1;
 }

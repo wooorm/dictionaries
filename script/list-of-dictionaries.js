@@ -2,10 +2,8 @@
 
 /* eslint-disable import/no-dynamic-require */
 
-/* Expose. */
 module.exports = listOfDictionaries;
 
-/* Dependencies. */
 var fs = require('fs');
 var path = require('path');
 var u = require('unist-builder');
@@ -13,15 +11,12 @@ var visit = require('unist-util-visit');
 var hidden = require('is-hidden');
 var negate = require('negate');
 
-/* Methods. */
 var dir = fs.readdirSync;
 var exists = fs.existsSync;
 var join = path.join;
 
-/* Values. */
 var cwd = process.cwd();
 
-/* Add a list of dictionaries. */
 function listOfDictionaries() {
   return transformer;
 }
@@ -33,7 +28,6 @@ function transformer(tree, file) {
   }
 
   function visitor(node, index, parent) {
-    /* Table. */
     var table = u('table', [
       u('tableRow', [
         u('tableCell', [u('text', 'Name')]),
@@ -42,7 +36,6 @@ function transformer(tree, file) {
       ])
     ]);
 
-    /* Add the rows. */
     table.children = table.children.concat(
       dir(join(cwd, 'dictionaries'))
         .filter(negate(hidden))
