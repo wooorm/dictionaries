@@ -10,7 +10,7 @@
     "hunspell",
     "dictionary"
   ],
-  "repository": "https://github.com/wooorm/dictionaries",
+  "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [

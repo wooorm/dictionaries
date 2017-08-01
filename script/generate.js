@@ -10,6 +10,7 @@ var iso6391 = require('langs');
 var iso6392 = require('iso-639-2');
 var iso3166 = require('iso-3166-1-alpha-2');
 var iso15924 = require('iso-15924');
+var pkg = require('../package.json');
 
 var dir = fs.readdirSync;
 var exists = fs.existsSync;
@@ -104,17 +105,10 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   template.description = description;
   template.license = spdx;
   template.keywords = keywords;
-  template.repository = {
-    type: 'git',
-    url: 'https://github.com/wooorm/dictionaries'
-  };
-  template.bugs = 'https://github.com/wooorm/dictionaries/issues';
-  template.author = 'Titus Wormer <tituswormer@gmail.com> ' +
-    '(http://wooorm.com)';
-  template.contributors = [
-    'Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)'
-  ];
-  template.main = 'index.js';
+  template.repository = pkg.repository;
+  template.bugs = pkg.bugs;
+  template.author = pkg.author;
+  template.contributors = pkg.contributors;
   template.files = [
     'index.js',
     'index.aff',
