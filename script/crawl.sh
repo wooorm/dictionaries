@@ -134,8 +134,8 @@ crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
   "http://sourceforge.net/projects/aoo-extensions/files/17102/19/dict-en.oxt/download"
 crawl "french" \
-  "http://extensions.openoffice.org/en/project/french-dictionaries" \
-  "http://sourceforge.net/projects/aoo-extensions/files/17340/5/lo-oo-ressources-linguistiques-fr-v5.3.oxt/download"
+  "https://www.dicollecte.org" \
+  "http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.5.18.oxt"
 crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
   "http://sourceforge.net/projects/aoo-extensions/files/5660/1/hunspell-gl-13.10.oxt/download"
@@ -371,8 +371,8 @@ generate "french" \
   "fr_FR" \
   "MPL-2.0" \
   "dictionaries/README_dict_fr.txt" \
-  "dictionaries/fr-moderne.dic" \
-  "dictionaries/fr-moderne.aff" \
+  "dictionaries/fr-classique.dic" \
+  "dictionaries/fr-classique.d" \
   "UTF-8"
 
 #

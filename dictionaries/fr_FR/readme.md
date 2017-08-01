@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/french-dictionaries
+[source]: https://www.dicollecte.org
 
 [npm]: https://docs.npmjs.com/cli/install
 
