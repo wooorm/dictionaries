@@ -174,8 +174,8 @@ crawl "german" \
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
   "https://www.j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
 crawl "greek" \
-  "http://extensions.openoffice.org/en/project/hellenic-greek-dictionary-spell-check-and-hyphenation" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1411/2/el_gr_v110.oxt/download"
+  "http://www.elspell.gr" \
+  "https://github.com/stevestavropoulos/elspell/archive/master.zip"
 # Disabled due to unknown encoding.
 # crawl "hungarian" \
 #    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
@@ -238,6 +238,10 @@ crawl "vietnamese" \
 cd "source/german"
 make hunspell-all
 cd ../..
+
+cd "source/greek/elspell-master"
+make
+cd ../../..
 
 #####################################################################
 # DICTIONARIES ######################################################
@@ -453,10 +457,11 @@ generate "german" \
 generate "greek" \
   "el_GR" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
-  "README_el_GR.txt" \
-  "el_GR.dic" \
-  "el_GR.aff" \
-  "ISO8859-7"
+  "elspell-master/myspell/README_el_GR.txt" \
+  "elspell-master/myspell/el_GR.dic" \
+  "elspell-master/myspell/el_GR.aff" \
+  "UTF-8" \
+  "UTF-8"
 
 #
 # Italian.

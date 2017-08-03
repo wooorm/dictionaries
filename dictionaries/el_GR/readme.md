@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/hellenic-greek-dictionary-spell-check-and-hyphenation
+[source]: http://www.elspell.gr
 
 [npm]: https://docs.npmjs.com/cli/install
 
