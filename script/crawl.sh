@@ -83,18 +83,19 @@ uncrawl() {
 # Generate a package from a crawled directory (at $1) and
 # the given settings.
 #
-# @param $1 - Name of source;
-# @param $2 - Language / region code;
-# @param $3 - SPDX license;
-# @param $4 - Path to lincese file. Should be `-` when not
-#   applicable;
-# @param $5 - Path to `.aff` file;
-# @param $6 - Path to `.dic` file;
-# @param $7 - Encoding of `.aff` and `.dic` file.
+# @param $1 - Name of source
+# @param $2 - Language / region code
+# @param $3 - SPDX license
+# @param $4 - Path to license file. Should be `-` when not applicable
+# @param $5 - Path to `.aff` file
+# @param $6 - Path to `.dic` file
+# @param $7 - Encoding of `.aff` and `.dic` file
 #
 generate() {
   SOURCE="$SOURCES/$1"
   dictionary="$DICTIONARIES/$2"
+  dicEnc="$7"
+  affEnc="$8"
 
   mkdir -p "$dictionary"
 
@@ -108,8 +109,12 @@ generate() {
     echo "Warning: Missing LICENSE file for $2"
   fi
 
-  (iconv -f "$7" -t "UTF-8" | sed "s/SET $8/SET UTF-8/" | tr -d '\r') < "$SOURCE/$5" > "$dictionary/index.dic"
-  (iconv -f "$7" -t "UTF-8" | sed "s/SET $7/SET UTF-8/" | tr -d '\r') < "$SOURCE/$6" > "$dictionary/index.aff"
+  if [ "$affEnc" = "" ]; then
+    affEnc="$dicEnc"
+  fi
+  
+  (iconv -f "$dicEnc" -t "UTF-8" | tr -d '\r') < "$SOURCE/$5" > "$dictionary/index.dic"
+  (iconv -f "$affEnc" -t "UTF-8" | sed "s/SET .*/SET UTF-8/" | tr -d '\r') < "$SOURCE/$6" > "$dictionary/index.aff"
 }
 
 #####################################################################
