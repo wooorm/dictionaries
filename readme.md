@@ -17,7 +17,7 @@ See each of the below packages for installation guidelines.
 | **[dictionary-ca-es](dictionaries/ca_ES)** | Catalan (Spain) | [LGPL-2.0](dictionaries/ca_ES/LICENSE) |
 | **[dictionary-ca-es-valencia](dictionaries/ca_ES-valencia)** | Catalan (Spain, Valencia) | [LGPL-2.0](dictionaries/ca_ES-valencia/LICENSE) |
 | **[dictionary-cs-cz](dictionaries/cs_CZ)** | Czech (Czech Republic) | [GPL-2.0](dictionaries/cs_CZ/LICENSE) |
-| **[dictionary-da-dk](dictionaries/da_DK)** | Danish (Denmark) | [(GPL-2.0 OR LGPL-2.0 OR MPL-1.1)](dictionaries/da_DK/LICENSE) |
+| **[dictionary-da-dk](dictionaries/da_DK)** | Danish (Denmark) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/da_DK/LICENSE) |
 | **[dictionary-de-at](dictionaries/de_AT)** | German (Austria) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de_AT/LICENSE) |
 | **[dictionary-de-ch](dictionaries/de_CH)** | German (Switzerland) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de_CH/LICENSE) |
 | **[dictionary-de](dictionaries/de_DE)** | German (Germany) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de_DE/LICENSE) |

@@ -128,8 +128,8 @@ crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
   "http://sourceforge.net/projects/aoo-extensions/files/1078/0/dict-cs-2.0.oxt/download"
 crawl "danish" \
-  "http://extensions.openoffice.org/en/project/danish-spellcheck-and-hyphenation-dictionaries" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1429/6/dict-da-current.oxt/download"
+  "http://www.stavekontrolden.dk" \
+  "http://www.stavekontrolden.dk/main/top/extension/dict-da-current.oxt"
 crawl "dutch" \
   "http://extensions.openoffice.org/en/project/dutch-spelling-and-hyphenation-dictionary" \
   "http://sourceforge.net/projects/aoo-extensions/files/1456/6/nl-dict-v2.00g.oxt/download"
@@ -307,7 +307,7 @@ generate "czech" \
 
 generate "danish" \
   "da_DK" \
-  "(GPL-2.0 OR LGPL-2.0 OR MPL-1.1)" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
   "README_da_DK.txt" \
   "da_DK.dic" \
   "da_DK.aff" \

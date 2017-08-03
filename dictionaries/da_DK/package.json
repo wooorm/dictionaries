@@ -2,7 +2,7 @@
   "name": "dictionary-da-dk",
   "version": "1.2.1",
   "description": "Danish (Denmark) spelling dictionary in UTF-8",
-  "license": "(GPL-2.0 OR LGPL-2.0 OR MPL-1.1)",
+  "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",
     "myspell",

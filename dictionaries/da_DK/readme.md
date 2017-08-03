@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [(GPL-2.0 OR LGPL-2.0 OR MPL-1.1)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/da_DK/LICENSE).
+Dictionary and affix file: [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/da_DK/LICENSE).
 Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/danish-spellcheck-and-hyphenation-dictionaries
+[source]: http://www.stavekontrolden.dk
 
 [npm]: https://docs.npmjs.com/cli/install
 
