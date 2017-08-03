@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice
+[source]: http://wordlist.aspell.net/dicts/
 
 [npm]: https://docs.npmjs.com/cli/install
 

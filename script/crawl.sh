@@ -132,7 +132,19 @@ crawl "dutch" \
   "http://sourceforge.net/projects/aoo-extensions/files/1456/6/nl-dict-v2.00g.oxt/download"
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "http://sourceforge.net/projects/aoo-extensions/files/17102/19/dict-en.oxt/download"
+  "https://sourceforge.net/projects/aoo-extensions/files/17102/35/dict-en-20170701.oxt/download"
+crawl "english-gb" \
+  "http://wordlist.aspell.net/dicts/" \
+  "https://downloads.sourceforge.net/project/wordlist/speller/2017.01.22/hunspell-en_GB-ise-2017.01.22.zip"
+crawl "english-american" \
+  "http://wordlist.aspell.net/dicts/" \
+  "https://downloads.sourceforge.net/project/wordlist/speller/2017.01.22/hunspell-en_US-2017.01.22.zip"
+crawl "english-canadian" \
+  "http://wordlist.aspell.net/dicts/" \
+  "https://downloads.sourceforge.net/project/wordlist/speller/2017.01.22/hunspell-en_CA-2017.01.22.zip"
+crawl "english-australian" \
+  "http://wordlist.aspell.net/dicts/" \
+  "https://downloads.sourceforge.net/project/wordlist/speller/2017.01.22/hunspell-en_AU-2017.01.22.zip"
 crawl "french" \
   "https://www.dicollecte.org" \
   "http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.5.18.oxt"
@@ -311,24 +323,8 @@ generate "dutch" \
   "UTF-8"
 
 #
-# English (Australian, Canadian, British, American, South African)
+# South African English.
 #
-
-generate "english" \
-  "en_AU" \
-  "LGPL-2.0" \
-  "README_en_AU.txt" \
-  "en_AU.dic" \
-  "en_AU.aff" \
-  "UTF-8"
-
-generate "english" \
-  "en_GB" \
-  "LGPL-2.0" \
-  "README_en_GB.txt" \
-  "en_GB.dic" \
-  "en_GB.aff" \
-  "UTF-8"
 
 generate "english" \
   "en_ZA" \
@@ -339,15 +335,14 @@ generate "english" \
   "UTF-8"
 
 #
-# Note that Canadian- and American English (“the Hunspell English
-# Dictionaries”) are very vaguely licensed.
+# Note that “the Hunspell English Dictionaries” are very vaguely licensed.
 # Read more in the license file. Note that the SPDX “(MIT AND BSD)”
 # comes from aspell’s description as “BSD/MIT-like”.
 #
 # See: http://wordlist.aspell.net/other-dicts/#official
 #
 
-generate "english" \
+generate "english-canadian" \
   "en_CA" \
   "(MIT AND BSD)" \
   "README_en_CA.txt" \
@@ -355,12 +350,28 @@ generate "english" \
   "en_CA.aff" \
   "UTF-8"
 
-generate "english" \
+generate "english-american" \
   "en_US" \
   "(MIT AND BSD)" \
   "README_en_US.txt" \
   "en_US.dic" \
   "en_US.aff" \
+  "UTF-8"
+
+generate "english-gb" \
+  "en_GB" \
+  "(MIT AND BSD)" \
+  "README_en_GB-ise.txt" \
+  "en_GB-ise.dic" \
+  "en_GB-ise.aff" \
+  "UTF-8"
+
+generate "english-australian" \
+  "en_AU" \
+  "(MIT AND BSD)" \
+  "README_en_AU.txt" \
+  "en_AU.dic" \
+  "en_AU.aff" \
   "UTF-8"
 
 #

@@ -22,9 +22,9 @@ See each of the below packages for installation guidelines.
 | **[dictionary-de-ch](dictionaries/de_CH)** | German (Switzerland) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de_CH/LICENSE) |
 | **[dictionary-de](dictionaries/de_DE)** | German (Germany) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de_DE/LICENSE) |
 | **[dictionary-el-gr](dictionaries/el_GR)** | Greek (Greece) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/el_GR/LICENSE) |
-| **[dictionary-en-au](dictionaries/en_AU)** | English (Australia) | [LGPL-2.0](dictionaries/en_AU/LICENSE) |
+| **[dictionary-en-au](dictionaries/en_AU)** | English (Australia) | [(MIT AND BSD)](dictionaries/en_AU/LICENSE) |
 | **[dictionary-en-ca](dictionaries/en_CA)** | English (Canada) | [(MIT AND BSD)](dictionaries/en_CA/LICENSE) |
-| **[dictionary-en-gb](dictionaries/en_GB)** | English (United Kingdom) | [LGPL-2.0](dictionaries/en_GB/LICENSE) |
+| **[dictionary-en-gb](dictionaries/en_GB)** | English (United Kingdom) | [(MIT AND BSD)](dictionaries/en_GB/LICENSE) |
 | **[dictionary-en-us](dictionaries/en_US)** | English (United States) | [(MIT AND BSD)](dictionaries/en_US/LICENSE) |
 | **[dictionary-en-za](dictionaries/en_ZA)** | English (South Africa) | [LGPL-2.1](dictionaries/en_ZA/LICENSE) |
 | **[dictionary-es](dictionaries/es_ES)** | Spanish (Spain) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es_ES/LICENSE) |
