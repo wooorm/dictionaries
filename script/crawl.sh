@@ -18,16 +18,24 @@ mkdir -p "$UNCRAWLABLES"
 #
 # @param $1 - Name of archive.
 # @param $2 - Page of source.
+# @param $3 - Path to archive.
 #
 unpack() {
-  ARCHIVE_PATH="$ARCHIVES/$1.zip"
-  SOURCE_PATH="$SOURCES/$1"
+  sourcePath="$SOURCES/$1"
 
-  if [ ! -e "$SOURCE_PATH" ]; then
-    unzip "$ARCHIVES/$1.zip" -d "$SOURCE_PATH"
+  if [ ! -e "$sourcePath" ]; then
+    filename=$(basename "$3")
+    extension="${filename#*.}"
+
+    if [ "$extension" = "tar.bz2" ]; then
+      mkdir -p "$sourcePath"
+      tar xvjf "$3" -C "$sourcePath" --strip-components=1
+    else
+      unzip "$3" -d "$sourcePath"
+    fi
+
+    echo "$2" > "$sourcePath/SOURCE"
   fi
-
-  echo "$2" > "$SOURCE_PATH/SOURCE"
 }
 
 #
@@ -38,13 +46,19 @@ unpack() {
 # @param $3 - URL to archive.
 #
 crawl() {
-  ARCHIVE_PATH="$ARCHIVES/$1.zip"
+  filename=$(basename "$3")
+  extension="${filename#*.}"
+  archivePath="$ARCHIVES/$1.zip"
 
-  if [ ! -e "$ARCHIVE_PATH" ]; then
-    wget "$3" -O "$ARCHIVE_PATH"
+  if [ "$extension" = "tar.bz2" ]; then
+    archivePath="$ARCHIVES/$1.tar.bz2"
   fi
 
-  unpack "$1" "$2"
+  if [ ! -e "$archivePath" ]; then
+    wget "$3" -O "$archivePath"
+  fi
+
+  unpack "$1" "$2" "$archivePath"
 }
 
 #
@@ -54,13 +68,13 @@ crawl() {
 # @param $2 - Page of source.
 #
 uncrawl() {
-  ARCHIVE_PATH="$ARCHIVES/$1.zip"
+  archivePath="$ARCHIVES/$1.zip"
 
-  if [ ! -e "$ARCHIVE_PATH" ]; then
-    cp "$UNCRAWLABLES/$1.zip" "$ARCHIVE_PATH"
+  if [ ! -e "$archivePath" ]; then
+    cp "$UNCRAWLABLES/$1.zip" "$archivePath"
   fi
 
-  unpack "$1" "$2"
+  unpack "$1" "$2" "$archivePath"
 
   echo "Warning: Loading local $1"
 }
@@ -109,9 +123,6 @@ generate() {
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
-crawl "austrian" \
-  "http://extensions.openoffice.org/en/project/german-de-frami-dictionaries" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1697/10/dict-de_at-frami_2013-12-06.oxt/download"
 crawl "basque" \
   "http://extensions.openoffice.org/en/project/xuxen-basque-spell-checking-dictionary" \
   "http://sourceforge.net/projects/aoo-extensions/files/1383/2/xuxen_4_ooo3.oxt/download"
@@ -155,8 +166,8 @@ crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
   "http://sourceforge.net/projects/aoo-extensions/files/5660/1/hunspell-gl-13.10.oxt/download"
 crawl "german" \
-  "http://extensions.openoffice.org/en/project/german-de-de-igerman98-dictionaries" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1050/4/dict-de_de-igerman98_2011-06-21.oxt/download"
+  "https://www.j3e.de/ispell/igerman98/index_en.html" \
+  "https://www.j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
 crawl "greek" \
   "http://extensions.openoffice.org/en/project/hellenic-greek-dictionary-spell-check-and-hyphenation" \
   "http://sourceforge.net/projects/aoo-extensions/files/1411/2/el_gr_v110.oxt/download"
@@ -205,9 +216,6 @@ crawl "spanish" \
 crawl "swedish" \
   "http://extensions.openoffice.org/en/project/swedish-dictionaries-apache-openoffice" \
   "http://sourceforge.net/projects/aoo-extensions/files/5959/1/dict-sv.oxt/download"
-crawl "switzerland" \
-  "http://extensions.openoffice.org/en/project/german-de-ch-igerman98-dictionaries" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1712/3/dict-de_ch-igerman98_2011-06-21.oxt/download"
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
   "http://sourceforge.net/projects/aoo-extensions/files/18079/3/oo-turkish-dict-v1.2.oxt/download"
@@ -219,6 +227,14 @@ crawl "vietnamese" \
   "http://sourceforge.net/projects/aoo-extensions/files/917/3/vi_spellchecker_ooo3.oxt/download"
 
 #####################################################################
+# BUILD #############################################################
+#####################################################################
+
+cd "source/german"
+make hunspell-all
+cd ../..
+
+#####################################################################
 # DICTIONARIES ######################################################
 #####################################################################
 
@@ -226,12 +242,12 @@ crawl "vietnamese" \
 # German (Austrian).
 #
 
-generate "austrian" \
+generate "german" \
   "de_AT" \
   "(GPL-2.0 OR GPL-3.0)" \
-  "hyph_de_AT/README_hyph_de_AT.txt" \
-  "de_AT_frami/de_AT_frami.dic" \
-  "de_AT_frami/de_AT_frami.aff" \
+  "hunspell/Copyright" \
+  "hunspell/de_AT.dic" \
+  "hunspell/de_AT.aff" \
   "ISO8859-1"
 
 #
@@ -420,9 +436,9 @@ generate "galician" \
 generate "german" \
   "de_DE" \
   "(GPL-2.0 OR GPL-3.0)" \
-  "de_DE_igerman98/Copyright" \
-  "de_DE_igerman98/de_DE_igerman98.dic" \
-  "de_DE_igerman98/de_DE_igerman98.aff" \
+  "hunspell/Copyright" \
+  "hunspell/de_DE.dic" \
+  "hunspell/de_DE.aff" \
   "ISO8859-1"
 
 #
@@ -625,12 +641,12 @@ generate "swedish" \
 # German (Switzerland).
 #
 
-generate "switzerland" \
+generate "german" \
   "de_CH" \
   "(GPL-2.0 OR GPL-3.0)" \
-  "de_CH_igerman98/Copyright" \
-  "de_CH_igerman98/de_CH_igerman98.dic" \
-  "de_CH_igerman98/de_CH_igerman98.aff" \
+  "hunspell/Copyright" \
+  "hunspell/de_CH.dic" \
+  "hunspell/de_CH.aff" \
   "ISO8859-1"
 
 #
