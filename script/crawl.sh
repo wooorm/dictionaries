@@ -106,6 +106,9 @@ generate() {
 # List of archives to crawl.
 #
 
+crawl "libreoffice" \
+  "https://github.com/LibreOffice/dictionaries" \
+  "https://github.com/LibreOffice/dictionaries/archive/master.zip"
 crawl "austrian" \
   "http://extensions.openoffice.org/en/project/german-de-frami-dictionaries" \
   "http://sourceforge.net/projects/aoo-extensions/files/1697/10/dict-de_at-frami_2013-12-06.oxt/download"
@@ -372,6 +375,18 @@ generate "english-australian" \
   "README_en_AU.txt" \
   "en_AU.dic" \
   "en_AU.aff" \
+  "UTF-8"
+
+#
+# Icelandic.
+#
+
+generate "libreoffice" \
+  "is_IS" \
+  "CC-BY-SA-3.0" \
+  "dictionaries-master/is/license.txt" \
+  "dictionaries-master/is/is.dic" \
+  "dictionaries-master/is/is.aff" \
   "UTF-8"
 
 #
