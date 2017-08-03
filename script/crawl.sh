@@ -372,7 +372,7 @@ generate "french" \
   "MPL-2.0" \
   "dictionaries/README_dict_fr.txt" \
   "dictionaries/fr-classique.dic" \
-  "dictionaries/fr-classique.d" \
+  "dictionaries/fr-classique.aff" \
   "UTF-8"
 
 #
