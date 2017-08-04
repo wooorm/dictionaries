@@ -87,9 +87,10 @@ uncrawl() {
 # @param $2 - Language / region code
 # @param $3 - SPDX license
 # @param $4 - Path to license file. Should be `-` when not applicable
-# @param $5 - Path to `.aff` file
-# @param $6 - Path to `.dic` file
-# @param $7 - Encoding of `.aff` and `.dic` file
+# @param $5 - Path to `.dic` file
+# @param $6 - Path to `.aff` file
+# @param $7 - Encoding of `.dic` file
+# @param $7 - Encoding of `.aff` file (defaults to $7)
 #
 generate() {
   SOURCE="$SOURCES/$1"
@@ -535,8 +536,8 @@ generate "mongolian" \
   "mn_MN" \
   "GPL-2.0" \
   "README_mn_MN.txt" \
-  "mn_MN.aff" \
   "mn_MN.dic" \
+  "mn_MN.aff" \
   "UTF-8"
 
 #
