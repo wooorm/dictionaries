@@ -30,6 +30,7 @@ See each of the below packages for installation guidelines.
 | **[dictionary-es](dictionaries/es_ES)** | Spanish (Spain) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es_ES/LICENSE) |
 | **[dictionary-eu-es](dictionaries/eu_ES)** | Basque (Spain) | GPL-2.0 |
 | **[dictionary-fr](dictionaries/fr_FR)** | French (France) | [MPL-2.0](dictionaries/fr_FR/LICENSE) |
+| **[dictionary-ga-ie](dictionaries/ga_IE)** | Irish (Ireland) | [GPL-2.0](dictionaries/ga_IE/LICENSE) |
 | **[dictionary-gl-es](dictionaries/gl_ES)** | Galician (Spain) | [GPL-3.0](dictionaries/gl_ES/LICENSE) |
 | **[dictionary-hr](dictionaries/hr_HR)** | Croatian (Croatia) | [GPL-3.0](dictionaries/hr_HR/LICENSE) |
 | **[dictionary-is](dictionaries/is_IS)** | Icelandic (Iceland) | [CC-BY-SA-3.0](dictionaries/is_IS/LICENSE) |

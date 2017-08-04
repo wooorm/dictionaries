@@ -180,6 +180,9 @@ crawl "greek" \
 # crawl "hungarian" \
 #    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
 #    "http://sourceforge.net/projects/aoo-extensions/files/1283/9/dict-hu.oxt/download"
+crawl "irish" \
+  "http://borel.slu.edu/ispell/index-en.html" \
+  "https://github.com/kscanne/gaelspell/archive/master.zip"
 crawl "italian" \
   "http://extensions.openoffice.org/en/project/italian-dictionary-thesaurus-hyphenation-patterns" \
   "http://sourceforge.net/projects/aoo-extensions/files/1204/13/dict-it.oxt/download"
@@ -241,6 +244,10 @@ cd ../..
 
 cd "source/greek/elspell-master"
 make
+cd ../../..
+
+cd "source/irish/gaelspell-master"
+make ga_IE.dic ga_IE.aff
 cd ../../..
 
 #####################################################################
@@ -460,6 +467,19 @@ generate "greek" \
   "elspell-master/myspell/README_el_GR.txt" \
   "elspell-master/myspell/el_GR.dic" \
   "elspell-master/myspell/el_GR.aff" \
+  "UTF-8" \
+  "UTF-8"
+
+#
+# Irish.
+#
+
+generate "irish" \
+  "ga_IE" \
+  "GPL-2.0" \
+  "gaelspell-master/LICENSES-en.txt" \
+  "gaelspell-master/ga_IE.dic" \
+  "gaelspell-master/ga_IE.aff" \
   "UTF-8" \
   "UTF-8"
 
