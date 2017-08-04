@@ -45,6 +45,7 @@ See each of the below packages for installation guidelines.
 | **[dictionary-pt](dictionaries/pt_PT)** | Portuguese (Portugal) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/pt_PT/LICENSE) |
 | **[dictionary-ro](dictionaries/ro_RO)** | Romanian (Romania) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/ro_RO/LICENSE) |
 | **[dictionary-ru](dictionaries/ru_RU)** | Russian (Russian Federation) | [BSD-2-Clause](dictionaries/ru_RU/LICENSE) |
+| **[dictionary-rw](dictionaries/rw_RW)** | Kinyarwanda (Rwanda) | [GPL-3.0](dictionaries/rw_RW/LICENSE) |
 | **[dictionary-sk](dictionaries/sk_SK)** | Slovak (Slovakia) | [GPL-2.0](dictionaries/sk_SK/LICENSE) |
 | **[dictionary-sl-si](dictionaries/sl_SI)** | Slovene (Slovenia) | [(GPL-3.0 OR LGPL-2.1)](dictionaries/sl_SI/LICENSE) |
 | **[dictionary-sr-rs](dictionaries/sr_RS)** | Serbian (Serbia) | [LGPL-3.0](dictionaries/sr_RS/LICENSE) |

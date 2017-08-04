@@ -186,6 +186,9 @@ crawl "irish" \
 crawl "italian" \
   "http://extensions.openoffice.org/en/project/italian-dictionary-thesaurus-hyphenation-patterns" \
   "http://sourceforge.net/projects/aoo-extensions/files/1204/13/dict-it.oxt/download"
+crawl "kinyarwanda" \
+  "https://github.com/kscanne/hunspell-rw" \
+  "https://github.com/kscanne/hunspell-rw/archive/master.zip"
 uncrawl "luxembourgish" \
   "http://extensions.openoffice.org/en/project/luxembourgish-dictionary-and-thesaurus"
 crawl "mongolian" \
@@ -248,6 +251,10 @@ cd ../../..
 
 cd "source/irish/gaelspell-master"
 make ga_IE.dic ga_IE.aff
+cd ../../..
+
+cd "source/kinyarwanda/hunspell-rw-master"
+make
 cd ../../..
 
 #####################################################################
@@ -494,6 +501,19 @@ generate "italian" \
   "dictionaries/it_IT.dic" \
   "dictionaries/it_IT.aff" \
   "ISO8859-15"
+
+#
+# Kinyarwanda.
+#
+
+generate "kinyarwanda" \
+  "rw_RW" \
+  "GPL-3.0" \
+  "hunspell-rw-master/LICENSE" \
+  "hunspell-rw-master/rw_RW.dic" \
+  "hunspell-rw-master/rw_RW.aff" \
+  "UTF-8" \
+  "ISO8859-1"
 
 #
 # Luxembourgish.
