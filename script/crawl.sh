@@ -129,6 +129,12 @@ generate() {
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
+crawl "armenian-eastern" \
+  "https://sites.google.com/site/araktransfer/home/spell-checkers" \
+  "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_e_1940_dict-1.1.oxt"
+crawl "armenian-western" \
+  "https://sites.google.com/site/araktransfer/home/spell-checkers" \
+  "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
 crawl "basque" \
   "http://extensions.openoffice.org/en/project/xuxen-basque-spell-checking-dictionary" \
   "http://sourceforge.net/projects/aoo-extensions/files/1383/2/xuxen_4_ooo3.oxt/download"
@@ -261,6 +267,26 @@ cd ../../..
 #####################################################################
 # DICTIONARIES ######################################################
 #####################################################################
+
+#
+# Armenian (Eastern).
+#
+
+generate "armenian-eastern" \
+  "hy-arevela" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
+  "COPYING" \
+  "hy_am_e_1940.dic" \
+  "hy_am_e_1940.aff" \
+  "UTF-8"
+
+generate "armenian-western" \
+  "hy-arevmda" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
+  "COPYING" \
+  "hy_AM_western.dic" \
+  "hy_AM_western.aff" \
+  "UTF-8"
 
 #
 # German (Austrian).
