@@ -114,8 +114,8 @@ generate() {
     affEnc="$dicEnc"
   fi
   
-  (iconv -f "$dicEnc" -t "UTF-8" | tr -d '\r') < "$SOURCE/$5" > "$dictionary/index.dic"
-  (iconv -f "$affEnc" -t "UTF-8" | sed "s/SET .*/SET UTF-8/" | tr -d '\r') < "$SOURCE/$6" > "$dictionary/index.aff"
+  (iconv -f "$dicEnc" -t "UTF-8" | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | tr -d '\r') < "$SOURCE/$5" > "$dictionary/index.dic"
+  (iconv -f "$affEnc" -t "UTF-8" | sed "s/SET .*/SET UTF-8/" | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | tr -d '\r') < "$SOURCE/$6" > "$dictionary/index.aff"
 }
 
 #####################################################################
