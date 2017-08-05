@@ -1,17 +1,15 @@
 {
-  "name": "dictionary-en-au",
-  "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "name": "dictionary-fr",
+  "version": "2.0.1",
+  "description": "French spelling dictionary in UTF-8",
+  "license": "MPL-2.0",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "fr",
+    "french"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

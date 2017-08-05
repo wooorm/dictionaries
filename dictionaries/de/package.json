@@ -1,17 +1,15 @@
 {
-  "name": "dictionary-en-au",
+  "name": "dictionary-de",
   "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "description": "German spelling dictionary in UTF-8",
+  "license": "(GPL-2.0 OR GPL-3.0)",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "de",
+    "german"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

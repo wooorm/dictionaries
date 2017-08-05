@@ -1,17 +1,15 @@
 {
-  "name": "dictionary-en-au",
-  "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "name": "dictionary-is",
+  "version": "1.0.0",
+  "description": "Icelandic spelling dictionary in UTF-8",
+  "license": "CC-BY-SA-3.0",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "is",
+    "icelandic"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

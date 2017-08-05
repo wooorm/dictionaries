@@ -6,10 +6,8 @@ var fs = require('fs');
 var path = require('path');
 var hidden = require('is-hidden');
 var negate = require('negate');
-var iso6391 = require('langs');
-var iso6392 = require('iso-639-2');
-var iso3166 = require('iso-3166-1-alpha-2');
-var iso15924 = require('iso-15924');
+var bcp47 = require('bcp-47');
+var tags = require('language-tags');
 var pkg = require('../package.json');
 
 var dir = fs.readdirSync;
@@ -21,106 +19,116 @@ var join = path.join;
 var docs = read(template('readme.md'), 'utf-8');
 var index = read(template('index.js'), 'utf-8');
 
+var types = {
+  variants: 'variant',
+  extensions: 'extlang'
+};
+
+var remove = {
+  ca: ['or Valencian', 'Valencian'],
+  'ca-valencia': ['or Valencian'],
+  el: ['(1453-)']
+};
+
+var replace = {
+  el: {
+    'Modern Greek (1453-)': 'Modern Greek'
+  }
+};
+
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   var base = dict(code);
-  var template = {};
   var source = read(join(base, 'SOURCE'), 'utf-8').trim();
   var hasLicense = exists(join(base, 'LICENSE'));
   var spdx = read(join(base, 'SPDX'), 'utf-8').trim();
-  var segments = code.toLowerCase().replace(/[^a-z]+/g, '-').split('-');
-  var lang = iso6391.where('1', segments[0]) || find(iso6392, segments[0]);
-  var region = iso3166.getCountry(segments[1].toUpperCase());
-  var rest = segments[2];
-  var script;
-  var variable;
-  var readme;
-  var pack;
-  var name;
-  var keywords;
+  var tag = bcp47.parse(code);
+  var variable = camelcase(code);
+  var parts = [];
+  var pack = {};
+  var keywords = ['spelling', 'myspell', 'hunspell', 'dictionary'];
   var description;
-  var flag;
-  var pos;
-  var length;
 
-  if (rest) {
-    pos = -1;
-    length = iso15924.length;
-
-    while (++pos < length) {
-      if (iso15924[pos].code.toLowerCase() === rest.toLowerCase()) {
-        script = iso15924[pos];
-        break;
-      }
-    }
-  }
-
-  if (exists(join(base, 'package.json'))) {
+  try {
     pack = JSON.parse(read(join(base, 'package.json')));
-  } else {
-    pack = {};
+  } catch (err) {}
+
+  keywords = keywords.concat(code.toLowerCase().split('-'));
+
+  Object.keys(tag).forEach(function (key) {
+    var label = types[key] || key;
+    var value = tag[key];
+
+    value = value && typeof value === 'object' ? value : [value];
+
+    value.forEach(function (subvalue) {
+      var subtag = subvalue ? tags.type(subvalue, label) : null;
+      var data = subtag ? subtag.data.record.Description : null;
+
+      if (data) {
+        keywords = keywords.concat(data.join(' ').toLowerCase().split(' '));
+
+        if (label === 'language') {
+          parts = [data[0]].concat(
+            data.slice(1).map(function (x) {
+              return 'or ' + x;
+            }),
+            parts
+          );
+        } else {
+          parts = parts.concat(data);
+        }
+      }
+    });
+  });
+
+  keywords = keywords.filter(Boolean).filter(unique).filter(ignore).map(change);
+  parts = parts.filter(Boolean).filter(unique).filter(ignore).map(change);
+
+  description = parts[0];
+
+  if (parts.length > 1) {
+    description += ' (' + parts.slice(1).join(', ') + ')';
   }
 
-  lang = lang ? lang.name : null;
-  rest = script ? script.code : rest || null;
+  pack = {
+    name: 'dictionary-' + code.toLowerCase(),
+    version: pack.version || '1.0.0',
+    description: description + ' spelling dictionary in UTF-8',
+    license: spdx,
+    keywords: keywords,
+    repository: pkg.repository,
+    bugs: pkg.bugs,
+    author: pkg.author,
+    contributors: pkg.contributors,
+    files: [
+      'index.js',
+      'index.aff',
+      'index.dic'
+    ]
+  };
 
-  variable = segments[0];
+  write(
+    join(base, 'readme.md'),
+    process(docs, pack, source, variable, code, hasLicense)
+  );
 
-  if (segments[0] === segments[1]) {
-    segments.shift();
-  } else {
-    variable += segments[1].toUpperCase();
+  write(
+    join(base, 'index.js'),
+    process(index, pack, source, variable, code, hasLicense)
+  );
+
+  write(
+    join(base, 'package.json'),
+    JSON.stringify(pack, 0, 2) + '\n'
+  );
+
+  function ignore(val) {
+    return remove[code] ? remove[code].indexOf(val) === -1 : true;
   }
 
-  name = 'dictionary-' + segments.join('-');
-
-  if (rest) {
-    variable += rest.charAt(0).toUpperCase() + rest.slice(1);
+  function change(val) {
+    return (replace[code] ? replace[code][val] : null) || val;
   }
-
-  description = lang + ' (' + region;
-
-  keywords = [
-    'spelling',
-    'myspell',
-    'hunspell',
-    'dictionary'
-  ];
-
-  keywords = keywords.concat(lang.toLowerCase().split(' '));
-  keywords = keywords.concat(region.toLowerCase().split(' '));
-
-  flag = (script && script.name) || rest || '';
-
-  if (flag) {
-    keywords.push(flag.toLowerCase());
-    description += ', ' + flag.charAt(0).toUpperCase() + flag.slice(1);
-  }
-
-  description += ') spelling dictionary in UTF-8';
-
-  keywords = keywords.filter(unique);
-
-  template.name = name;
-  template.version = pack.version || '1.0.0';
-  template.description = description;
-  template.license = spdx;
-  template.keywords = keywords;
-  template.repository = pkg.repository;
-  template.bugs = pkg.bugs;
-  template.author = pkg.author;
-  template.contributors = pkg.contributors;
-  template.files = [
-    'index.js',
-    'index.aff',
-    'index.dic'
-  ];
-
-  readme = process(docs, template, source, variable, code, hasLicense);
-  code = process(index, template, source, variable, code, hasLicense);
-
-  write(join(base, 'readme.md'), readme);
-  write(join(base, 'index.js'), code);
-  write(join(base, 'package.json'), JSON.stringify(template, 0, 2) + '\n');
 });
 
 function process(file, pack, source, variable, code, hasLicense) {
@@ -153,16 +161,9 @@ function unique(key, index, parent) {
   return parent.indexOf(key, index + 1) === -1;
 }
 
-function find(data, code) {
-  var length = data.length;
-  var index = -1;
-  var entry;
-
-  while (++index < length) {
-    entry = data[index];
-
-    if (entry.iso6392B === code || entry.iso6392T === code) {
-      return entry;
-    }
+function camelcase(value) {
+  return value.replace(/-[a-z]/gi, replace);
+  function replace(d) {
+    return d.charAt(1).toUpperCase();
   }
 }

@@ -1,17 +1,17 @@
 {
-  "name": "dictionary-en-au",
-  "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "name": "dictionary-sr-latn",
+  "version": "1.2.1",
+  "description": "Serbian (Latin) spelling dictionary in UTF-8",
+  "license": "LGPL-3.0",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "sr",
+    "latn",
+    "serbian",
+    "latin"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

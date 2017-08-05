@@ -1,17 +1,16 @@
 {
-  "name": "dictionary-en-au",
-  "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "name": "dictionary-es",
+  "version": "1.2.1",
+  "description": "Spanish (or Castilian) spelling dictionary in UTF-8",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "es",
+    "spanish",
+    "castilian"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

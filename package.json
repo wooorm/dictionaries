@@ -19,11 +19,9 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "bcp-47": "^1.0.3",
     "is-hidden": "^1.0.1",
-    "iso-15924": "^2.0.0",
-    "iso-3166-1-alpha-2": "^1.0.0",
-    "iso-639-2": "^1.0.0",
-    "langs": "^2.0.0",
+    "language-tags": "^1.0.5",
     "negate": "^1.0.0",
     "remark-cli": "^4.0.0",
     "remark-preset-wooorm": "^3.0.0",

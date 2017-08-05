@@ -204,7 +204,7 @@ crawl "polish" \
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
   "http://sourceforge.net/projects/aoo-extensions/files/1375/8/vero_pt_br_v208aoc.oxt/download"
-crawl "portuguese-eu" \
+crawl "portuguese" \
   "http://extensions.openoffice.org/en/project/european-portuguese-dictionaries" \
   "http://sourceforge.net/projects/aoo-extensions/files/1196/35/oo3x-pt-pt-15.7.4.1.oxt/download"
 crawl "romanian" \
@@ -279,7 +279,7 @@ generate "german" \
 #
 
 generate "basque" \
-  "eu-ES" \
+  "eu" \
   "GPL-2.0" \
   "-" \
   "dictionaries/eu.dic" \
@@ -291,7 +291,7 @@ generate "basque" \
 #
 
 generate "bulgarian" \
-  "bg-BG" \
+  "bg" \
   "LGPL-2.1" \
   "README.txt" \
   "spell/bg_BG.dic" \
@@ -303,7 +303,7 @@ generate "bulgarian" \
 #
 
 generate "catalan" \
-  "ca-ES" \
+  "ca" \
   "LGPL-2.0" \
   "LICENSES-en.txt" \
   "ca.dic" \
@@ -311,7 +311,7 @@ generate "catalan" \
   "UTF-8"
 
 generate "catalan" \
-  "ca-ES-valencia" \
+  "ca-valencia" \
   "LGPL-2.0" \
   "LICENSES-en.txt" \
   "ca-ES-valencia.dic" \
@@ -323,7 +323,7 @@ generate "catalan" \
 #
 
 generate "croatian" \
-  "hr-HR" \
+  "hr" \
   "GPL-3.0" \
   "registration/license_hr.txt" \
   "hr_HR.dic" \
@@ -334,7 +334,7 @@ generate "croatian" \
 #
 
 generate "czech" \
-  "cs-CZ" \
+  "cs" \
   "GPL-2.0" \
   "README_en.txt" \
   "cs_CZ.dic" \
@@ -346,7 +346,7 @@ generate "czech" \
 #
 
 generate "danish" \
-  "da-DK" \
+  "da" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
   "README_da_DK.txt" \
   "da_DK.dic" \
@@ -358,7 +358,7 @@ generate "danish" \
 #
 
 generate "dutch" \
-  "nl-NL" \
+  "nl" \
   "(BSD-3-Clause OR CC-BY-3.0)" \
   "license_en_EN.txt" \
   "nl_NL.dic" \
@@ -422,7 +422,7 @@ generate "english-australian" \
 #
 
 generate "libreoffice" \
-  "is-IS" \
+  "is" \
   "CC-BY-SA-3.0" \
   "dictionaries-master/is/license.txt" \
   "dictionaries-master/is/is.dic" \
@@ -434,7 +434,7 @@ generate "libreoffice" \
 #
 
 generate "french" \
-  "fr-FR" \
+  "fr" \
   "MPL-2.0" \
   "dictionaries/README_dict_fr.txt" \
   "dictionaries/fr-classique.dic" \
@@ -446,7 +446,7 @@ generate "french" \
 #
 
 generate "galician" \
-  "gl-ES" \
+  "gl" \
   "GPL-3.0" \
   "license.txt" \
   "gl_ES.dic" \
@@ -458,7 +458,7 @@ generate "galician" \
 #
 
 generate "german" \
-  "de-DE" \
+  "de" \
   "(GPL-2.0 OR GPL-3.0)" \
   "hunspell/Copyright" \
   "hunspell/de_DE.dic" \
@@ -470,7 +470,7 @@ generate "german" \
 #
 
 generate "greek" \
-  "el-GR" \
+  "el" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
   "elspell-master/myspell/README_el_GR.txt" \
   "elspell-master/myspell/el_GR.dic" \
@@ -483,7 +483,7 @@ generate "greek" \
 #
 
 generate "irish" \
-  "ga-IE" \
+  "ga" \
   "GPL-2.0" \
   "gaelspell-master/LICENSES-en.txt" \
   "gaelspell-master/ga_IE.dic" \
@@ -496,7 +496,7 @@ generate "irish" \
 #
 
 generate "italian" \
-  "it-IT" \
+  "it" \
   "GPL-3.0" \
   "dictionaries/README.txt" \
   "dictionaries/it_IT.dic" \
@@ -508,7 +508,7 @@ generate "italian" \
 #
 
 generate "kinyarwanda" \
-  "rw-RW" \
+  "rw" \
   "GPL-3.0" \
   "hunspell-rw-master/LICENSE" \
   "hunspell-rw-master/rw_RW.dic" \
@@ -521,7 +521,7 @@ generate "kinyarwanda" \
 #
 
 generate "luxembourgish" \
-  "lb-LU" \
+  "lb" \
   "EUPL-1.1" \
   "registration/README_lb_LU.txt" \
   "lb_LU.dic" \
@@ -533,7 +533,7 @@ generate "luxembourgish" \
 #
 
 generate "mongolian" \
-  "mn-MN" \
+  "mn" \
   "GPL-2.0" \
   "README_mn_MN.txt" \
   "mn_MN.dic" \
@@ -545,7 +545,7 @@ generate "mongolian" \
 #
 
 generate "norwegian" \
-  "nb-NO" \
+  "nb" \
   "GPL-2.0" \
   "COPYING" \
   "DICT/nb_NO.dic" \
@@ -553,7 +553,7 @@ generate "norwegian" \
   "ISO8859-1"
 
 generate "norwegian" \
-  "nn-NO" \
+  "nn" \
   "GPL-2.0" \
   "COPYING" \
   "DICT/nn_NO.dic" \
@@ -565,7 +565,7 @@ generate "norwegian" \
 #
 
 generate "polish" \
-  "pl-PL" \
+  "pl" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)" \
   "README_en.txt" \
   "pl_PL.dic" \
@@ -588,8 +588,8 @@ generate "portuguese-br" \
 # Portuguese (European).
 #
 
-generate "portuguese-eu" \
-  "pt-PT" \
+generate "portuguese" \
+  "pt" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
   "dictionaries/README_pt_PT.txt" \
   "dictionaries/pt_PT.dic" \
@@ -601,7 +601,7 @@ generate "portuguese-eu" \
 #
 
 generate "romanian" \
-  "ro-RO" \
+  "ro" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
   "README_EN.txt" \
   "ro_RO.dic" \
@@ -613,7 +613,7 @@ generate "romanian" \
 #
 
 generate "russian" \
-  "ru-RU" \
+  "ru" \
   "BSD-2-Clause" \
   "LICENSE" \
   "ru_RU.dic" \
@@ -625,7 +625,7 @@ generate "russian" \
 #
 
 generate "serbian" \
-  "sr-RS-Latn" \
+  "sr-Latn" \
   "LGPL-3.0" \
   "registration/license_en-US.txt" \
   "sr-Latn.dic" \
@@ -633,7 +633,7 @@ generate "serbian" \
   "UTF-8"
 
 generate "serbian" \
-  "sr-RS" \
+  "sr" \
   "LGPL-3.0" \
   "registration/license_en-US.txt" \
   "sr.dic" \
@@ -645,7 +645,7 @@ generate "serbian" \
 #
 
 generate "slovak" \
-  "sk-SK" \
+  "sk" \
   "GPL-2.0" \
   "LICENSE.txt" \
   "sk_SK/sk_SK.dic" \
@@ -657,7 +657,7 @@ generate "slovak" \
 #
 
 generate "slovenian" \
-  "sl-SI" \
+  "sl" \
   "(GPL-3.0 OR LGPL-2.1)" \
   "README_sl_SI.txt" \
   "sl_SI.dic" \
@@ -669,7 +669,7 @@ generate "slovenian" \
 #
 
 generate "spanish" \
-  "es-ES" \
+  "es" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" \
   "README.txt" \
   "es_ES.dic" \
@@ -681,7 +681,7 @@ generate "spanish" \
 #
 
 generate "swedish" \
-  "sv-SE" \
+  "sv" \
   "LGPL-3.0" \
   "LICENSE_en_US.txt" \
   "sv_SE.dic" \
@@ -706,7 +706,7 @@ generate "german" \
 
 # Unknown license.
 generate "turkish" \
-  "tr-TR" \
+  "tr" \
   "MIT" \
   "-" \
   "dictionaries/tr-TR.dic" \
@@ -718,7 +718,7 @@ generate "turkish" \
 #
 
 generate "ukrainian" \
-  "uk-UA" \
+  "uk" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
   "uk_UA/README_uk_UA.txt" \
   "uk_UA/uk_UA.dic" \
@@ -730,7 +730,7 @@ generate "ukrainian" \
 #
 
 generate "vietnamese" \
-  "vi-VN" \
+  "vi" \
   "GPL-2.0" \
   "LICENSES-en.txt" \
   "dictionaries/vi_VN.dic" \

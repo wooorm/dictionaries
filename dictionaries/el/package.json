@@ -1,17 +1,16 @@
 {
-  "name": "dictionary-en-au",
+  "name": "dictionary-el",
   "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "description": "Modern Greek spelling dictionary in UTF-8",
+  "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "el",
+    "modern",
+    "greek"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

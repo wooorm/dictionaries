@@ -1,17 +1,17 @@
 {
-  "name": "dictionary-en-au",
-  "version": "2.0.0",
-  "description": "English (Australia) spelling dictionary in UTF-8",
-  "license": "(MIT AND BSD)",
+  "name": "dictionary-ca-valencia",
+  "version": "1.2.1",
+  "description": "Catalan (Valencian) spelling dictionary in UTF-8",
+  "license": "LGPL-2.0",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "en",
-    "au",
-    "english",
-    "australia"
+    "ca",
+    "valencia",
+    "catalan",
+    "valencian"
   ],
   "repository": "wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
