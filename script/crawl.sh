@@ -1,13 +1,11 @@
 #!/bin/sh
 ARCHIVES="archive"
 SOURCES="source"
-UNCRAWLABLES="uncrawlable"
 DICTIONARIES="dictionaries"
 
 mkdir -p "$ARCHIVES"
 mkdir -p "$SOURCES"
 mkdir -p "$DICTIONARIES"
-mkdir -p "$UNCRAWLABLES"
 
 #####################################################################
 # METHODS ###########################################################
@@ -59,24 +57,6 @@ crawl() {
   fi
 
   unpack "$1" "$2" "$archivePath"
-}
-
-#
-# Copy a local archive and unpack it.
-#
-# @param $1 - Name of archive.
-# @param $2 - Page of source.
-#
-uncrawl() {
-  archivePath="$ARCHIVES/$1.zip"
-
-  if [ ! -e "$archivePath" ]; then
-    cp "$UNCRAWLABLES/$1.zip" "$archivePath"
-  fi
-
-  unpack "$1" "$2" "$archivePath"
-
-  echo "Warning: Loading local $1"
 }
 
 #
@@ -193,8 +173,9 @@ crawl "italian" \
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
-uncrawl "luxembourgish" \
-  "http://extensions.openoffice.org/en/project/luxembourgish-dictionary-and-thesaurus"
+crawl "luxembourgish" \
+  "https://github.com/spellchecker-lu/dictionary-lb-lu" \
+  "https://github.com/spellchecker-lu/dictionary-lb-lu/archive/master.zip"
 crawl "mongolian" \
   "http://extensions.openoffice.org/en/project/mongol-helniy-ugiyn-aldaa-shalgagch-ueer-taslagch-mongolian-spelling-and-hyphenation" \
   "http://sourceforge.net/projects/aoo-extensions/files/3204/2/dict-mn.oxt/download"
@@ -555,10 +536,10 @@ generate "kinyarwanda" \
 generate "luxembourgish" \
   "lb" \
   "EUPL-1.1" \
-  "registration/README_lb_LU.txt" \
-  "lb_LU.dic" \
-  "lb_LU.aff" \
-  "ISO8859-1"
+  "dictionary-lb-lu-master/LICENSE.txt" \
+  "dictionary-lb-lu-master/lb_LU.dic" \
+  "dictionary-lb-lu-master/lb_LU.aff" \
+  "UTF-8"
 
 #
 # Mongolian.
