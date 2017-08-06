@@ -135,9 +135,6 @@ crawl "armenian-eastern" \
 crawl "armenian-western" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
-crawl "basque" \
-  "http://extensions.openoffice.org/en/project/xuxen-basque-spell-checking-dictionary" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1383/2/xuxen_4_ooo3.oxt/download"
 crawl "bulgarian" \
   "http://extensions.openoffice.org/en/project/bulgarian-dictionaries-blgarski-rechnici" \
   "http://sourceforge.net/projects/aoo-extensions/files/744/8/dictionaries-bg.oxt/download"
@@ -248,19 +245,28 @@ crawl "vietnamese" \
 # BUILD #############################################################
 #####################################################################
 
-cd "source/german"
+mkdir -p "$SOURCES/basque"
+echo "http://xuxen.eus/eu/bertsioak" > "$SOURCES/basque/SOURCE"
+if [ ! -e "$SOURCES/basque/eu.aff" ]; then
+  wget "http://xuxen.eus/static/hunspell/eu_ES.aff" -O "$SOURCES/basque/eu.aff"
+fi
+if [ ! -e "$SOURCES/basque/eu.dic" ]; then
+  wget "http://xuxen.eus/static/hunspell/eu_ES.dic" -O "$SOURCES/basque/eu.dic"
+fi
+
+cd "$SOURCES/german"
 make hunspell-all
 cd ../..
 
-cd "source/greek/elspell-master"
+cd "$SOURCES/greek/elspell-master"
 make
 cd ../../..
 
-cd "source/irish/gaelspell-master"
+cd "$SOURCES/irish/gaelspell-master"
 make ga_IE.dic ga_IE.aff
 cd ../../..
 
-cd "source/kinyarwanda/hunspell-rw-master"
+cd "$SOURCES/kinyarwanda/hunspell-rw-master"
 make
 cd ../../..
 
@@ -308,9 +314,9 @@ generate "basque" \
   "eu" \
   "GPL-2.0" \
   "-" \
-  "dictionaries/eu.dic" \
-  "dictionaries/eu.aff" \
-  "ISO8859-1"
+  "eu.dic" \
+  "eu.aff" \
+  "UTF-8"
 
 #
 # Bulgarian.
