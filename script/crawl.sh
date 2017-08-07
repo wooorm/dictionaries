@@ -166,6 +166,9 @@ crawl "french" \
 crawl "frisian" \
   "https://taalweb.frl/downloads" \
   "https://www.fryske-akademy.nl/spell/oxt/fy_NL-20160722.oxt"
+crawl "friulian" \
+  "http://digilander.libero.it/paganf/coretors/dizionaris.html" \
+  "http://digilander.libero.it/paganf/coretors/myspell-fur-12092005.zip"
 crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
   "http://sourceforge.net/projects/aoo-extensions/files/5660/1/hunspell-gl-13.10.oxt/download"
@@ -538,6 +541,18 @@ generate "frisian" \
   "fy_NL.aff" \
   "CP1252" \
   "CP1252"
+
+#
+# Friulian.
+#
+
+generate "friulian" \
+  "fur" \
+  "GPL-2.0" \
+  "myspell-fur-12092005/COPYING.txt" \
+  "myspell-fur-12092005/fur_IT.dic" \
+  "myspell-fur-12092005/fur_IT.aff" \
+  "ISO8859-1"
 
 #
 # Galician.
