@@ -81,7 +81,7 @@ licensed with an Open Source License, and they should be convertible by
 
 ## License
 
-[MIT](LICENSE) © [Titus Wormer](https://wooorm.com)
+[MIT][] © [Titus Wormer][author]
 
 See `LICENSE` files in each dictionary for the licensing of `index.dic` and
 `index.aff` files.
@@ -93,3 +93,7 @@ See `LICENSE` files in each dictionary for the licensing of `index.dic` and
 [nspell]: https://github.com/wooorm/nspell
 
 [macos]: http://apple.stackexchange.com/a/11842
+
+[mit]: LICENSE
+
+[author]: https://wooorm.com
