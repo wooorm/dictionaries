@@ -2,7 +2,7 @@
   "name": "dictionary-ca",
   "version": "2.0.0",
   "description": "Catalan spelling dictionary in UTF-8",
-  "license": "LGPL-2.0",
+  "license": "(GPL-2.0 OR LGPL-2.1)",
   "keywords": [
     "spelling",
     "myspell",

@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [LGPL-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/ca-valencia/LICENSE).
+Dictionary and affix file: [(GPL-2.0 OR LGPL-2.1)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/ca-valencia/LICENSE).
 Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/catalan-dictionary-pack-spell-checker-hyphenation-patterns-and-thesaurus
+[source]: https://github.com/Softcatala/catalan-dict-tools
 
 [npm]: https://docs.npmjs.com/cli/install
 

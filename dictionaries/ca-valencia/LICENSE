@@ -1,4 +1,8 @@
-LICENSES :
-Spelling dictionary: LGPL, GPL
-Tesaurus: LGPL, GPL
-Hyphenation: LGPL, GPL
+Dual license:
+
+  * GNU General Public License, version 2 
+    https://www.gnu.org/licenses/gpl-2.0.txt
+
+  * GNU Lesser General Public License, version 2.1 
+    https://www.gnu.org/licenses/lgpl-2.1.txt
+

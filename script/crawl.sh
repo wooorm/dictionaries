@@ -122,8 +122,11 @@ crawl "bulgarian" \
   "http://extensions.openoffice.org/en/project/bulgarian-dictionaries-blgarski-rechnici" \
   "http://sourceforge.net/projects/aoo-extensions/files/744/8/dictionaries-bg.oxt/download"
 crawl "catalan" \
-  "http://extensions.openoffice.org/en/project/catalan-dictionary-pack-spell-checker-hyphenation-patterns-and-thesaurus" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1205/5/ca.3.0.0.oxt/download"
+  "https://github.com/Softcatala/catalan-dict-tools" \
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.2/ca.3.0.2-hunspell.zip"
+crawl "catalan-valencian" \
+  "https://github.com/Softcatala/catalan-dict-tools" \
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.2/ca-valencia.3.0.2-hunspell.zip"
 crawl "croatian" \
   "http://extensions.openoffice.org/en/project/croatian-dictionary-and-hyphenation-patterns" \
   "http://sourceforge.net/projects/aoo-extensions/files/1052/2/dict-hr.oxt/download"
@@ -332,18 +335,18 @@ generate "bulgarian" \
 
 generate "catalan" \
   "ca" \
-  "LGPL-2.0" \
-  "LICENSES-en.txt" \
-  "ca.dic" \
-  "ca.aff" \
+  "(GPL-2.0 OR LGPL-2.1)" \
+  "LICENSE" \
+  "catalan.dic" \
+  "catalan.aff" \
   "UTF-8"
 
-generate "catalan" \
+generate "catalan-valencian" \
   "ca-valencia" \
-  "LGPL-2.0" \
-  "LICENSES-en.txt" \
-  "ca-ES-valencia.dic" \
-  "ca-ES-valencia.aff" \
+  "(GPL-2.0 OR LGPL-2.1)" \
+  "LICENSE" \
+  "catalan-valencia.dic" \
+  "catalan-valencia.aff" \
   "UTF-8"
 
 #
