@@ -244,6 +244,15 @@ if [ ! -e "$SOURCES/basque/eu.dic" ]; then
   wget "http://xuxen.eus/static/hunspell/eu_ES.dic" -O "$SOURCES/basque/eu.dic"
 fi
 
+mkdir -p "$SOURCES/estonian"
+echo "http://www.meso.ee/~jjpp/speller" > "$SOURCES/estonian/SOURCE"
+if [ ! -e "$SOURCES/estonian/et.aff" ]; then
+  wget "http://www.meso.ee/~jjpp/speller/et_EE.aff" -O "$SOURCES/estonian/et.aff"
+fi
+if [ ! -e "$SOURCES/estonian/et.dic" ]; then
+  wget "http://www.meso.ee/~jjpp/speller/et_EE.dic" -O "$SOURCES/estonian/et.dic"
+fi
+
 cd "$SOURCES/german"
 make hunspell-all
 cd ../..
@@ -462,6 +471,18 @@ generate "esperanto" \
   "eo_ilo.dic" \
   "eo_ilo.aff" \
   "UTF-8"
+
+#
+# Estonian.
+#
+
+generate "estonian" \
+  "et" \
+  "LGPL-2.1" \
+  "-" \
+  "et.dic" \
+  "et.aff" \
+  "ISO8859-15"
 
 #
 # Icelandic.

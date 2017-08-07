@@ -30,6 +30,7 @@ See each of the below packages for installation guidelines.
 | **[dictionary-en-za](dictionaries/en-ZA)** | English (South Africa) | [LGPL-2.1](dictionaries/en-ZA/LICENSE) |
 | **[dictionary-eo](dictionaries/eo)** | Esperanto | [GPL-2.0](dictionaries/eo/LICENSE) |
 | **[dictionary-es](dictionaries/es)** | Spanish (or Castilian) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es/LICENSE) |
+| **[dictionary-et](dictionaries/et)** | Estonian | LGPL-2.1 |
 | **[dictionary-eu](dictionaries/eu)** | Basque | GPL-2.0 |
 | **[dictionary-fr](dictionaries/fr)** | French | [MPL-2.0](dictionaries/fr/LICENSE) |
 | **[dictionary-ga](dictionaries/ga)** | Irish | [GPL-2.0](dictionaries/ga/LICENSE) |
