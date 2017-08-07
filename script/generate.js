@@ -3,7 +3,9 @@
 /* eslint-disable max-params */
 
 var fs = require('fs');
+var url = require('url');
 var path = require('path');
+var xtend = require('xtend');
 var hidden = require('is-hidden');
 var negate = require('negate');
 var bcp47 = require('bcp-47');
@@ -39,10 +41,7 @@ var replace = {
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   var base = dict(code);
   var source = read(join(base, 'SOURCE'), 'utf-8').trim();
-  var hasLicense = exists(join(base, 'LICENSE'));
-  var spdx = read(join(base, 'SPDX'), 'utf-8').trim();
   var tag = bcp47.parse(code);
-  var variable = camelcase(code);
   var parts = [];
   var pack = {};
   var keywords = ['spelling', 'myspell', 'hunspell', 'dictionary'];
@@ -94,7 +93,7 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
     name: 'dictionary-' + code.toLowerCase(),
     version: pack.version || '1.0.0',
     description: description + ' spelling dictionary in UTF-8',
-    license: spdx,
+    license: read(join(base, 'SPDX'), 'utf-8').trim(),
     keywords: keywords,
     repository: pkg.repository,
     bugs: pkg.bugs,
@@ -109,13 +108,15 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
 
   write(
     join(base, 'readme.md'),
-    process(docs, pack, source, variable, code, hasLicense)
+    process(docs, xtend(pack, {
+      source: source,
+      variable: camelcase(code),
+      code: code,
+      hasLicense: exists(join(base, 'LICENSE'))
+    }))
   );
 
-  write(
-    join(base, 'index.js'),
-    process(index, pack, source, variable, code, hasLicense)
-  );
+  write(join(base, 'index.js'), index);
 
   write(
     join(base, 'package.json'),
@@ -131,21 +132,34 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   }
 });
 
-function process(file, pack, source, variable, code, hasLicense) {
-  var license = pack.license;
+function process(file, config) {
+  var license = config.license;
+  var source = config.source;
+  var uri = url.parse(source);
+  var sourceName = uri.host;
 
-  if (hasLicense) {
+  /* Clean name */
+  if (sourceName === 'github.com') {
+    sourceName = uri.path.slice(1);
+  } else if (sourceName === 'sites.google.com') {
+    sourceName = uri.path.split('/')[2];
+  } else if (sourceName.slice(0, 4) === 'www.') {
+    sourceName = sourceName.slice(4);
+  }
+
+  if (config.hasLicense) {
     license = '[' + license + '](https://github.com/wooorm/' +
-      'dictionaries/blob/master/dictionaries/' + code + '/LICENSE)';
+      'dictionaries/blob/master/dictionaries/' + config.code + '/LICENSE)';
   }
 
   return file
-    .replace(/\{\{NAME\}\}/g, pack.name)
-    .replace(/\{\{DESCRIPTION\}\}/g, pack.description)
-    .replace(/\{\{SPDX\}\}/g, pack.license)
+    .replace(/\{\{NAME\}\}/g, config.name)
+    .replace(/\{\{DESCRIPTION\}\}/g, config.description)
+    .replace(/\{\{SPDX\}\}/g, config.license)
     .replace(/\{\{SOURCE\}\}/g, source)
-    .replace(/\{\{VAR\}\}/g, variable)
-    .replace(/\{\{CODE\}\}/g, code)
+    .replace(/\{\{SOURCE_NAME\}\}/g, sourceName)
+    .replace(/\{\{VAR\}\}/g, config.variable)
+    .replace(/\{\{CODE\}\}/g, config.code)
     .replace(/\{\{LICENSE\}\}/g, license);
 }
 

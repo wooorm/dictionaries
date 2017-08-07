@@ -27,7 +27,8 @@
     "remark-cli": "^4.0.0",
     "remark-preset-wooorm": "^3.0.0",
     "unist-builder": "^1.0.2",
-    "xo": "^0.18.1"
+    "xo": "^0.18.1",
+    "xtend": "^4.0.1"
   },
   "scripts": {
     "build-crawl": "sh script/crawl.sh",
