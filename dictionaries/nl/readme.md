@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/dutch-spelling-and-hyphenation-dictionary
+[source]: https://github.com/OpenTaal/dutch
 
 [npm]: https://docs.npmjs.com/cli/install
 

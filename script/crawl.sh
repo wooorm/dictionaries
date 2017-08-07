@@ -137,8 +137,8 @@ crawl "danish" \
   "http://www.stavekontrolden.dk" \
   "http://www.stavekontrolden.dk/main/top/extension/dict-da-current.oxt"
 crawl "dutch" \
-  "http://extensions.openoffice.org/en/project/dutch-spelling-and-hyphenation-dictionary" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1456/6/nl-dict-v2.00g.oxt/download"
+  "https://github.com/OpenTaal/dutch" \
+  "https://github.com/OpenTaal/dutch/archive/master.zip"
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
   "https://sourceforge.net/projects/aoo-extensions/files/17102/35/dict-en-20170701.oxt/download"
@@ -391,9 +391,9 @@ generate "danish" \
 generate "dutch" \
   "nl" \
   "(BSD-3-Clause OR CC-BY-3.0)" \
-  "license_en_EN.txt" \
-  "nl_NL.dic" \
-  "nl_NL.aff" \
+  "dutch-master/LICENSE" \
+  "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.dic" \
+  "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" \
   "UTF-8"
 
 #
