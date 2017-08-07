@@ -181,6 +181,9 @@ crawl "german" \
 crawl "greek" \
   "http://www.elspell.gr" \
   "https://github.com/stevestavropoulos/elspell/archive/master.zip"
+crawl "greek-polyton" \
+  "https://thepolytonicproject.gr/spell" \
+  "https://sourceforge.net/projects/greekpolytonicsp/files/greek_polytonic_2.0.7.oxt/download"
 # Disabled due to unknown encoding.
 # crawl "hungarian" \
 #    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
@@ -608,6 +611,18 @@ generate "greek" \
   "elspell-master/myspell/el_GR.dic" \
   "elspell-master/myspell/el_GR.aff" \
   "UTF-8" \
+  "UTF-8"
+
+#
+# Greek (Polytonic).
+#
+
+generate "greek-polyton" \
+  "el-polyton" \
+  "GPL-3.0" \
+  "README_el_GR.txt" \
+  "el_GR.dic" \
+  "el_GR.aff" \
   "UTF-8"
 
 #

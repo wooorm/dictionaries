@@ -29,13 +29,13 @@ var types = {
 var remove = {
   ca: ['or Valencian', 'Valencian'],
   'ca-valencia': ['or Valencian'],
-  el: ['(1453-)']
+  el: ['(1453-)'],
+  'el-polyton': ['(1453-)']
 };
 
 var replace = {
-  el: {
-    'Modern Greek (1453-)': 'Modern Greek'
-  }
+  el: {'Modern Greek (1453-)': 'Modern Greek'},
+  'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'}
 };
 
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {

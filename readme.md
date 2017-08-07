@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total, 50 dictionaries are provided.
+In total, 51 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -25,6 +25,7 @@ In total, 50 dictionaries are provided.
 | [`dictionary-de-at`](dictionaries/de-AT) | German (Austria) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de-AT/LICENSE) |
 | [`dictionary-de-ch`](dictionaries/de-CH) | German (Switzerland) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de-CH/LICENSE) |
 | [`dictionary-el`](dictionaries/el) | Modern Greek | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/el/LICENSE) |
+| [`dictionary-el-polyton`](dictionaries/el-polyton) | Modern Greek (Polytonic Greek) | [GPL-3.0](dictionaries/el-polyton/LICENSE) |
 | [`dictionary-en-au`](dictionaries/en-AU) | English (Australia) | [(MIT AND BSD)](dictionaries/en-AU/LICENSE) |
 | [`dictionary-en-ca`](dictionaries/en-CA) | English (Canada) | [(MIT AND BSD)](dictionaries/en-CA/LICENSE) |
 | [`dictionary-en-gb`](dictionaries/en-GB) | English (United Kingdom) | [(MIT AND BSD)](dictionaries/en-GB/LICENSE) |
