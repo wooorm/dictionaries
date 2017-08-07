@@ -32,6 +32,7 @@ See each of the below packages for installation guidelines.
 | **[dictionary-es](dictionaries/es)** | Spanish (or Castilian) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es/LICENSE) |
 | **[dictionary-et](dictionaries/et)** | Estonian | LGPL-2.1 |
 | **[dictionary-eu](dictionaries/eu)** | Basque | GPL-2.0 |
+| **[dictionary-fo](dictionaries/fo)** | Faroese | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/fo/LICENSE) |
 | **[dictionary-fr](dictionaries/fr)** | French | [MPL-2.0](dictionaries/fr/LICENSE) |
 | **[dictionary-ga](dictionaries/ga)** | Irish | [GPL-2.0](dictionaries/ga/LICENSE) |
 | **[dictionary-gl](dictionaries/gl)** | Galician | [GPL-3.0](dictionaries/gl/LICENSE) |

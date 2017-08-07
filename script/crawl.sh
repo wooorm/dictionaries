@@ -157,6 +157,9 @@ crawl "english-australian" \
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
+crawl "faroese" \
+  "http://www.stava.fo" \
+  "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://www.dicollecte.org" \
   "http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.5.18.oxt"
@@ -495,6 +498,18 @@ generate "libreoffice" \
   "dictionaries-master/is/is.dic" \
   "dictionaries-master/is/is.aff" \
   "UTF-8"
+
+#
+# Faroese.
+#
+
+generate "faroese" \
+  "fo" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
+  "LICENSE_en_US.txt" \
+  "fo_FO.dic" \
+  "fo_FO.aff" \
+  "ISO8859-1"
 
 #
 # French.
