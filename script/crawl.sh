@@ -50,13 +50,19 @@ unpack() {
 #
 crawl() {
   filename=$(basename "$3")
+
+  if [ "$filename" = "download" ]; then
+    filename=$(basename "$(dirname "$3")")
+  fi
+
   extension="${filename#*.}"
   archivePath="$ARCHIVES/$1.zip"
 
   if [ "$extension" = "tar.bz2" ]; then
     archivePath="$ARCHIVES/$1.tar.bz2"
   fi
-  if [ "$extension" = "4.tar.gz" ]; then
+  # Normal GZipped tar, a hack for hebrew, and a hack for hungarian.
+  if [ "$extension" = "tar.gz" ] || [ "$extension" = "4.tar.gz" ] || [ "$extension" = "6.1.tar.gz" ]; then
     archivePath="$ARCHIVES/$1.tar.gz"
   fi
 
@@ -195,6 +201,9 @@ crawl "greek-polyton" \
 crawl "hebrew" \
   "http://hspell.ivrix.org.il" \
   "http://hspell.ivrix.org.il/hspell-1.4.tar.gz"
+crawl "hungarian" \
+  "http://magyarispell.sourceforge.net" \
+  "https://sourceforge.net/projects/magyarispell/files/Magyar%20Ispell/1.6.1/hu_HU-1.6.1.tar.gz/download"
 # Disabled due to unknown encoding.
 # crawl "hungarian" \
 #    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
@@ -654,6 +663,24 @@ generate "hebrew" \
   "he.dic" \
   "he.aff" \
   "UTF-8"
+
+#
+# Hungarian.
+#
+
+generate "hungarian" \
+  "hu" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
+  "README_hu_HU.txt" \
+  "hu_HU.dic" \
+  "hu_HU.aff" \
+  "ISO8859-2"
+
+# Hack around the broken affix file.
+if [ "$(head -n 1 "$DICTIONARIES/hu/index.aff")" = "AF 1263" ]; then
+  tail -n 23734 "$DICTIONARIES/hu/index.aff" > "$DICTIONARIES/hu/index-fixed.aff"
+  mv "$DICTIONARIES/hu/index-fixed.aff" "$DICTIONARIES/hu/index.aff"
+fi
 
 #
 # Irish.
