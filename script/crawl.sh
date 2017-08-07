@@ -169,6 +169,9 @@ crawl "frisian" \
 crawl "friulian" \
   "http://digilander.libero.it/paganf/coretors/dizionaris.html" \
   "http://digilander.libero.it/paganf/coretors/myspell-fur-12092005.zip"
+crawl "gaelic" \
+  "https://github.com/kscanne/hunspell-gd" \
+  "https://github.com/kscanne/hunspell-gd/archive/master.zip"
 crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
   "http://sourceforge.net/projects/aoo-extensions/files/5660/1/hunspell-gl-13.10.oxt/download"
@@ -262,6 +265,10 @@ if [ ! -e "$SOURCES/estonian/et.dic" ]; then
   wget "http://www.meso.ee/~jjpp/speller/et_EE.dic" -O "$SOURCES/estonian/et.dic"
 fi
 
+cd "$SOURCES/gaelic/hunspell-gd-master"
+make gd_GB.dic gd_GB.aff
+cd ../../..
+
 cd "$SOURCES/german"
 make hunspell-all
 cd ../..
@@ -300,6 +307,18 @@ generate "armenian-western" \
   "COPYING" \
   "hy_AM_western.dic" \
   "hy_AM_western.aff" \
+  "UTF-8"
+
+#
+# German (Austrian).
+#
+
+generate "gaelic" \
+  "gd" \
+  "GPL-3.0" \
+  "hunspell-gd-master/README_gd_GB.txt" \
+  "hunspell-gd-master/gd_GB.dic" \
+  "hunspell-gd-master/gd_GB.aff" \
   "UTF-8"
 
 #
