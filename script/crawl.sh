@@ -163,6 +163,9 @@ crawl "faroese" \
 crawl "french" \
   "https://www.dicollecte.org" \
   "http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.5.18.oxt"
+crawl "frisian" \
+  "https://taalweb.frl/downloads" \
+  "https://www.fryske-akademy.nl/spell/oxt/fy_NL-20160722.oxt"
 crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
   "http://sourceforge.net/projects/aoo-extensions/files/5660/1/hunspell-gl-13.10.oxt/download"
@@ -522,6 +525,19 @@ generate "french" \
   "dictionaries/fr-classique.dic" \
   "dictionaries/fr-classique.aff" \
   "UTF-8"
+
+#
+# Frisian.
+#
+
+generate "frisian" \
+  "fy" \
+  "GPL-3.0" \
+  "README" \
+  "fy_NL.dic" \
+  "fy_NL.aff" \
+  "CP1252" \
+  "CP1252"
 
 #
 # Galician.
