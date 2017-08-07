@@ -25,9 +25,14 @@ unpack() {
     filename=$(basename "$3")
     extension="${filename#*.}"
 
+    echo "$3, $extension"
+
     if [ "$extension" = "tar.bz2" ]; then
       mkdir -p "$sourcePath"
       tar xvjf "$3" -C "$sourcePath" --strip-components=1
+    elif [ "$extension" = "tar.gz" ]; then
+      mkdir -p "$sourcePath"
+      tar xzf "$3" -C "$sourcePath" --strip-components=1
     else
       unzip "$3" -d "$sourcePath"
     fi
@@ -50,6 +55,9 @@ crawl() {
 
   if [ "$extension" = "tar.bz2" ]; then
     archivePath="$ARCHIVES/$1.tar.bz2"
+  fi
+  if [ "$extension" = "4.tar.gz" ]; then
+    archivePath="$ARCHIVES/$1.tar.gz"
   fi
 
   if [ ! -e "$archivePath" ]; then
@@ -184,6 +192,9 @@ crawl "greek" \
 crawl "greek-polyton" \
   "https://thepolytonicproject.gr/spell" \
   "https://sourceforge.net/projects/greekpolytonicsp/files/greek_polytonic_2.0.7.oxt/download"
+crawl "hebrew" \
+  "http://hspell.ivrix.org.il" \
+  "http://hspell.ivrix.org.il/hspell-1.4.tar.gz"
 # Disabled due to unknown encoding.
 # crawl "hungarian" \
 #    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
@@ -287,6 +298,13 @@ cd ../../..
 cd "$SOURCES/kinyarwanda/hunspell-rw-master"
 make
 cd ../../..
+
+cd "$SOURCES/hebrew"
+if [ ! -e "Makefile" ]; then
+  ./configure
+fi
+PERL5LIB="$PERL5LIB:." make hunspell
+cd ../..
 
 #####################################################################
 # DICTIONARIES ######################################################
@@ -623,6 +641,18 @@ generate "greek-polyton" \
   "README_el_GR.txt" \
   "el_GR.dic" \
   "el_GR.aff" \
+  "UTF-8"
+
+#
+# Hebrew.
+#
+
+generate "hebrew" \
+  "he" \
+  "AGPL-3.0" \
+  "LICENSE" \
+  "he.dic" \
+  "he.aff" \
   "UTF-8"
 
 #

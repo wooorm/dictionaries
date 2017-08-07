@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total, 51 dictionaries are provided.
+In total, 52 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -42,6 +42,7 @@ In total, 51 dictionaries are provided.
 | [`dictionary-ga`](dictionaries/ga) | Irish | [GPL-2.0](dictionaries/ga/LICENSE) |
 | [`dictionary-gd`](dictionaries/gd) | Scottish Gaelic (or Gaelic) | [GPL-3.0](dictionaries/gd/LICENSE) |
 | [`dictionary-gl`](dictionaries/gl) | Galician | [GPL-3.0](dictionaries/gl/LICENSE) |
+| [`dictionary-he`](dictionaries/he) | Hebrew | [AGPL-3.0](dictionaries/he/LICENSE) |
 | [`dictionary-hr`](dictionaries/hr) | Croatian | [(LGPL-2.1 OR SISSL)](dictionaries/hr/LICENSE) |
 | [`dictionary-hy-arevela`](dictionaries/hy-arevela) | Armenian (Eastern Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevela/LICENSE) |
 | [`dictionary-hy-arevmda`](dictionaries/hy-arevmda) | Armenian (Western Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevmda/LICENSE) |
