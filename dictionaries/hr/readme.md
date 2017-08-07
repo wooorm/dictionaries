@@ -50,7 +50,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [GPL-3.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/hr/LICENSE).
+Dictionary and affix file: [(LGPL-2.1 OR SISSL)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/hr/LICENSE).
 Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.sourceforge.net
@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [osx]: https://github.com/wooorm/dictionaries#os-x
 
-[source]: http://extensions.openoffice.org/en/project/croatian-dictionary-and-hyphenation-patterns
+[source]: http://cvs.linux.hr/spell/
 
 [npm]: https://docs.npmjs.com/cli/install
 

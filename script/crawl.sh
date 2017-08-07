@@ -128,8 +128,8 @@ crawl "catalan-valencian" \
   "https://github.com/Softcatala/catalan-dict-tools" \
   "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.2/ca-valencia.3.0.2-hunspell.zip"
 crawl "croatian" \
-  "http://extensions.openoffice.org/en/project/croatian-dictionary-and-hyphenation-patterns" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1052/2/dict-hr.oxt/download"
+  "http://cvs.linux.hr/spell/" \
+  "http://cvs.linux.hr/spell/myspell/hr_HR.zip"
 crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
   "http://sourceforge.net/projects/aoo-extensions/files/1078/0/dict-cs-2.0.oxt/download"
@@ -355,8 +355,8 @@ generate "catalan-valencian" \
 
 generate "croatian" \
   "hr" \
-  "GPL-3.0" \
-  "registration/license_hr.txt" \
+  "(LGPL-2.1 OR SISSL)" \
+  "README_hr_HR.txt" \
   "hr_HR.dic" \
   "hr_HR.aff" \
   "ISO8859-2"

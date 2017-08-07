@@ -33,7 +33,7 @@ See each of the below packages for installation guidelines.
 | **[dictionary-fr](dictionaries/fr)** | French | [MPL-2.0](dictionaries/fr/LICENSE) |
 | **[dictionary-ga](dictionaries/ga)** | Irish | [GPL-2.0](dictionaries/ga/LICENSE) |
 | **[dictionary-gl](dictionaries/gl)** | Galician | [GPL-3.0](dictionaries/gl/LICENSE) |
-| **[dictionary-hr](dictionaries/hr)** | Croatian | [GPL-3.0](dictionaries/hr/LICENSE) |
+| **[dictionary-hr](dictionaries/hr)** | Croatian | [(LGPL-2.1 OR SISSL)](dictionaries/hr/LICENSE) |
 | **[dictionary-hy-arevela](dictionaries/hy-arevela)** | Armenian (Eastern Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevela/LICENSE) |
 | **[dictionary-hy-arevmda](dictionaries/hy-arevmda)** | Armenian (Western Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevmda/LICENSE) |
 | **[dictionary-is](dictionaries/is)** | Icelandic | [CC-BY-SA-3.0](dictionaries/is/LICENSE) |
