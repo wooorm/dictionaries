@@ -1,9 +1,7 @@
 # dictionaries
 
-Accessible and easily installable [hunspell](http://hunspell.sourceforge.net)
-dictionaries.  Useful with, for example,
-[nodehun](https://github.com/nathanjsweet/nodehun) and
-[nspell](https://github.com/wooorm/nspell).
+Accessible and easily installable [hunspell][] dictionaries.  Useful with, for
+example, [`nodehun`][nodehun] and [`nspell`][nspell].
 
 ## Installation
 
@@ -73,7 +71,7 @@ In total, 50 dictionaries are provided.
 ## OS X
 
 Each dictionary can be installed on OS X by following
-[this StackExchange answer](http://apple.stackexchange.com/a/11842).
+[this StackExchange answer][osx].
 
 ## Contributing
 
@@ -87,3 +85,11 @@ licensed with an Open Source License, and they should be convertible by
 
 See `LICENSE` files in each dictionary for the licensing of `index.dic` and
 `index.aff` files.
+
+[hunspell]: http://hunspell.github.io
+
+[nodehun]: https://github.com/nathanjsweet/nodehun
+
+[nspell]: https://github.com/wooorm/nspell
+
+[osx]: http://apple.stackexchange.com/a/11842
