@@ -154,6 +154,9 @@ crawl "english-canadian" \
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
   "https://downloads.sourceforge.net/project/wordlist/speller/2017.01.22/hunspell-en_AU-2017.01.22.zip"
+crawl "esperanto" \
+  "http://www.esperantilo.org/index_en.html" \
+  "http://www.esperantilo.org/evortaro.zip"
 crawl "french" \
   "https://www.dicollecte.org" \
   "http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.5.18.oxt"
@@ -446,6 +449,18 @@ generate "english-australian" \
   "README_en_AU.txt" \
   "en_AU.dic" \
   "en_AU.aff" \
+  "UTF-8"
+
+#
+# Esperanto.
+#
+
+generate "esperanto" \
+  "eo" \
+  "GPL-2.0" \
+  "LICENSE.txt" \
+  "eo_ilo.dic" \
+  "eo_ilo.aff" \
   "UTF-8"
 
 #
