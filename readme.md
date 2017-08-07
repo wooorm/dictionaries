@@ -14,6 +14,7 @@ See each of the below packages for installation guidelines.
 | Name | Description | License |
 | ---- | ----------- | ------- |
 | **[dictionary-bg](dictionaries/bg)** | Bulgarian | [LGPL-2.1](dictionaries/bg/LICENSE) |
+| **[dictionary-br](dictionaries/br)** | Breton | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/br/LICENSE) |
 | **[dictionary-ca](dictionaries/ca)** | Catalan | [LGPL-2.0](dictionaries/ca/LICENSE) |
 | **[dictionary-ca-valencia](dictionaries/ca-valencia)** | Catalan (Valencian) | [LGPL-2.0](dictionaries/ca-valencia/LICENSE) |
 | **[dictionary-cs](dictionaries/cs)** | Czech | [GPL-2.0](dictionaries/cs/LICENSE) |

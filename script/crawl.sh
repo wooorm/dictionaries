@@ -115,6 +115,9 @@ crawl "armenian-eastern" \
 crawl "armenian-western" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
+crawl "breton" \
+  "http://drouizig.org/index.php/br/binviou-br/difazier-hunspell" \
+  "http://drouizig.org/images/stories/difazier/hunspell/pakadaou/difazier-an-drouizig-0-14.zip"
 crawl "bulgarian" \
   "http://extensions.openoffice.org/en/project/bulgarian-dictionaries-blgarski-rechnici" \
   "http://sourceforge.net/projects/aoo-extensions/files/744/8/dictionaries-bg.oxt/download"
@@ -297,6 +300,18 @@ generate "basque" \
   "-" \
   "eu.dic" \
   "eu.aff" \
+  "UTF-8"
+
+#
+# Breton.
+#
+
+generate "breton" \
+  "br" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
+  "README.txt" \
+  "br_FR.dic" \
+  "br_FR.aff" \
   "UTF-8"
 
 #
