@@ -68,10 +68,10 @@ In total, 50 dictionaries are provided.
 
 <!--support end-->
 
-## OS X
+## macOS
 
 Each dictionary can be installed on OS X by following
-[this StackExchange answer][osx].
+[this StackExchange answer][macos].
 
 ## Contributing
 
@@ -92,4 +92,4 @@ See `LICENSE` files in each dictionary for the licensing of `index.dic` and
 
 [nspell]: https://github.com/wooorm/nspell
 
-[osx]: http://apple.stackexchange.com/a/11842
+[macos]: http://apple.stackexchange.com/a/11842
