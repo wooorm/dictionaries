@@ -22,11 +22,11 @@
     "bcp-47": "^1.0.3",
     "is-hidden": "^1.0.1",
     "language-tags": "^1.0.5",
+    "mdast-zone": "^3.0.1",
     "negate": "^1.0.0",
     "remark-cli": "^4.0.0",
     "remark-preset-wooorm": "^3.0.0",
     "unist-builder": "^1.0.2",
-    "unist-util-visit": "^1.0.0",
     "xo": "^0.18.1"
   },
   "scripts": {

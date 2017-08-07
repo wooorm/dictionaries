@@ -7,61 +7,55 @@ module.exports = listOfDictionaries;
 var fs = require('fs');
 var path = require('path');
 var u = require('unist-builder');
-var visit = require('unist-util-visit');
+var zone = require('mdast-zone');
 var hidden = require('is-hidden');
 var negate = require('negate');
 
-var dir = fs.readdirSync;
-var exists = fs.existsSync;
 var join = path.join;
 
-var cwd = process.cwd();
+var root = join(process.cwd(), 'dictionaries');
 
 function listOfDictionaries() {
   return transformer;
 }
 
-/* Replace the first `table` node in `readme.md`. */
-function transformer(tree, file) {
-  if (file.stem === 'readme') {
-    visit(tree, 'table', visitor);
-  }
+function transformer(tree) {
+  zone(tree, 'support', replace);
+}
 
-  function visitor(node, index, parent) {
-    var table = u('table', [
+function replace(start, nodes, end) {
+  var rows = fs
+    .readdirSync(root)
+    .filter(negate(hidden))
+    .map(row);
+
+  return [
+    start,
+    u('table', [
       u('tableRow', [
         u('tableCell', [u('text', 'Name')]),
         u('tableCell', [u('text', 'Description')]),
         u('tableCell', [u('text', 'License')])
       ])
-    ]);
+    ].concat(rows)),
+    end
+  ];
+}
 
-    table.children = table.children.concat(
-      dir(join(cwd, 'dictionaries'))
-        .filter(negate(hidden))
-        .map(function (name) {
-          var url = 'dictionaries/' + name;
-          var filePath = join(cwd, 'dictionaries', name, 'package.json');
-          var pack = require(filePath);
-          var license = [u('text', pack.license)];
-          var description = pack.description.replace(/\sspelling.+$/, '');
+function row(name) {
+  var url = 'dictionaries/' + name;
+  var base = join(root, name);
+  var pack = JSON.parse(fs.readFileSync(join(base, 'package.json')));
+  var license = [u('text', pack.license)];
+  var description = pack.description.replace(/\sspelling.+$/, '');
 
-          if (exists(join(cwd, 'dictionaries', name, 'LICENSE'))) {
-            license = [u('link', {url: url + '/LICENSE'}, license)];
-          }
-
-          return u('tableRow', [
-            u('tableCell', [u('strong', [
-              u('link', {url: url}, [u('text', pack.name)])
-            ])]),
-            u('tableCell', [u('text', description)]),
-            u('tableCell', license)
-          ]);
-        })
-    );
-
-    parent.children[index] = table;
-
-    return false;
+  if (fs.existsSync(join(base, 'LICENSE'))) {
+    license = [u('link', {url: url + '/LICENSE'}, license)];
   }
+
+  return u('tableRow', [
+    u('tableCell', [u('link', {url: url}, [u('inlineCode', pack.name)])]),
+    u('tableCell', [u('text', description)]),
+    u('tableCell', license)
+  ]);
 }
