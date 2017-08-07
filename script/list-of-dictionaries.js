@@ -31,6 +31,9 @@ function replace(start, nodes, end) {
 
   return [
     start,
+    u('paragraph', [
+      u('text', 'In total, ' + rows.length + ' dictionaries are provided.')
+    ]),
     u('table', [
       u('tableRow', [
         u('tableCell', [u('text', 'Name')]),

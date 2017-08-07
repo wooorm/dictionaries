@@ -13,6 +13,8 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
+In total, 47 dictionaries are provided.
+
 | Name | Description | License |
 | ---- | ----------- | ------- |
 | [`dictionary-bg`](dictionaries/bg) | Bulgarian | [LGPL-2.1](dictionaries/bg/LICENSE) |
