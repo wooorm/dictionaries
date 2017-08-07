@@ -53,7 +53,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 Dictionary and affix file: [(GPL-2.0 OR GPL-3.0)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/de/LICENSE).
 Rest: MIT © [Titus Wormer][home].
 
-[hunspell]: http://hunspell.sourceforge.net
+[hunspell]: http://hunspell.github.io
 
 [nodehun]: https://github.com/nathanjsweet/nodehun
 
