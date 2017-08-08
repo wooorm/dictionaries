@@ -151,9 +151,6 @@ generate() {
 printf "$(bold "Crawling")...\n"
 
 # List of archives to crawl.
-crawl "libreoffice" \
-  "https://github.com/LibreOffice/dictionaries" \
-  "https://github.com/LibreOffice/dictionaries/archive/master.zip"
 crawl "armenian-eastern" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_e_1940_dict-1.1.oxt"
@@ -250,6 +247,9 @@ crawl "italian" \
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
+crawl "libreoffice" \
+  "https://github.com/LibreOffice/dictionaries" \
+  "https://github.com/LibreOffice/dictionaries/archive/master.zip"
 crawl "luxembourgish" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu/archive/master.zip"
@@ -262,12 +262,12 @@ crawl "norwegian" \
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "http://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download"
-crawl "portuguese-br" \
-  "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1375/8/vero_pt_br_v208aoc.oxt/download"
 crawl "portuguese" \
   "http://extensions.openoffice.org/en/project/european-portuguese-dictionaries" \
   "http://sourceforge.net/projects/aoo-extensions/files/1196/35/oo3x-pt-pt-15.7.4.1.oxt/download"
+crawl "portuguese-br" \
+  "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
+  "http://sourceforge.net/projects/aoo-extensions/files/1375/8/vero_pt_br_v208aoc.oxt/download"
 crawl "romanian" \
   "http://extensions.openoffice.org/en/project/romanian-dictionary-pack-spell-checker-hyphenation-thesaurus" \
   "http://sourceforge.net/projects/aoo-extensions/files/1392/10/dict-ro.1.7.oxt/download"
@@ -368,281 +368,226 @@ printf "$(bold "Made")!\n\n"
 
 printf "$(bold "Generating")...\n"
 
-generate "hy-arevela" "armenian-eastern" \
-  "hy_am_e_1940.dic" "UTF-8" \
-  "hy_am_e_1940.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
-
-generate "hy-arevmda" "armenian-western" \
-  "hy_AM_western.dic" "UTF-8" \
-  "hy_AM_western.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
-
-generate "gd" "gaelic" \
-  "hunspell-gd-master/gd_GB.dic" "UTF-8" \
-  "hunspell-gd-master/gd_GB.aff" "UTF-8" \
-  "GPL-3.0" "hunspell-gd-master/README_gd_GB.txt" "UTF-8"
-
-generate "de-AT" "german" \
-  "hunspell/de_AT.dic" "ISO8859-1" \
-  "hunspell/de_AT.aff" "ISO8859-1" \
-  "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8" \
-
-generate "eu" "basque" \
-  "eu.dic" "UTF-8" \
-  "eu.aff" "UTF-8" \
-  "GPL-2.0"
-
-generate "br" "breton" \
-  "br_FR.dic" "UTF-8" \
-  "br_FR.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README.txt" "UTF-8"
-
 generate "bg" "bulgarian" \
   "spell/bg_BG.dic" "CP1251" \
   "spell/bg_BG.aff" "CP1251" \
   "LGPL-2.1" "README.txt" "UTF-8"
-
+generate "br" "breton" \
+  "br_FR.dic" "UTF-8" \
+  "br_FR.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README.txt" "UTF-8"
 generate "ca" "catalan" \
   "catalan.dic" "UTF-8" \
   "catalan.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1)" "LICENSE" "UTF-8"
-
 generate "ca-valencia" "catalan-valencian" \
   "catalan-valencia.dic" "UTF-8" \
   "catalan-valencia.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1)" "LICENSE" "UTF-8"
-
-generate "hr" "croatian" \
-  "hr_HR.dic" "ISO8859-2" \
-  "hr_HR.aff" "ISO8859-2" \
-  "(LGPL-2.1 OR SISSL)" "README_hr_HR.txt" "ISO8859-2"
-
 generate "cs" "czech" \
   "cs_CZ.dic" "ISO8859-2" \
   "cs_CZ.aff" "ISO8859-2" \
   "GPL-2.0" "README_en.txt" "UTF-8"
-
 generate "da" "danish" \
   "da_DK.dic" "UTF-8" \
   "da_DK.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_da_DK.txt" "UTF-8"
-
-generate "nl" "dutch" \
-  "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.dic" "UTF-8" \
-  "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" "UTF-8" \
-  "(BSD-3-Clause OR CC-BY-3.0)" "dutch-master/LICENSE" "UTF-8"
-
-# Note that “the Hunspell English Dictionaries” are very vaguely licensed.
-# Read more in the license file. Note that the SPDX “(MIT AND BSD)”
-# comes from aspell’s description as “BSD/MIT-like”.
-# See: http://wordlist.aspell.net/other-dicts/#official
-
-generate "en-ZA" "english" \
-  "en_ZA.dic" "UTF-8" \
-  "en_ZA.aff" "UTF-8" \
-  "LGPL-2.1" "README_en_ZA.txt" "UTF-8"
-
-generate "en-CA" "english-canadian" \
-  "en_CA.dic" "UTF-8" \
-  "en_CA.aff" "UTF-8" \
-  "(MIT AND BSD)" "README_en_CA.txt" "UTF-8"
-
-generate "en-US" "english-american" \
-  "en_US.dic" "UTF-8" \
-  "en_US.aff" "UTF-8" \
-  "(MIT AND BSD)" "README_en_US.txt" "UTF-8"
-
-generate "en-GB" "english-gb" \
-  "en_GB-ise.dic" "UTF-8" \
-  "en_GB-ise.aff" "UTF-8" \
-  "(MIT AND BSD)" "README_en_GB-ise.txt" "UTF-8"
-
-generate "en-AU" "english-australian" \
-  "en_AU.dic" "UTF-8" \
-  "en_AU.aff" "UTF-8" \
-  "(MIT AND BSD)" "README_en_AU.txt" "UTF-8"
-
-generate "eo" "esperanto" \
-  "eo_ilo.dic" "UTF-8" \
-  "eo_ilo.aff" "UTF-8" \
-  "GPL-2.0" "LICENSE.txt" "UTF-8"
-
-generate "et" "estonian" \
-  "et.dic" "ISO8859-15" \
-  "et.aff" "ISO8859-15" \
-  "LGPL-2.1"
-
-generate "is" "libreoffice" \
-  "dictionaries-master/is/is.dic" "UTF-8" \
-  "dictionaries-master/is/is.aff" "UTF-8" \
-  "CC-BY-SA-3.0" "dictionaries-master/is/license.txt" "UTF-8"
-
-generate "fo" "faroese" \
-  "fo_FO.dic" "ISO8859-1" \
-  "fo_FO.aff" "ISO8859-1" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
-
-generate "fr" "french" \
-  "dictionaries/fr-classique.dic" "UTF-8" \
-  "dictionaries/fr-classique.aff" "UTF-8" \
-  "MPL-2.0" "dictionaries/README_dict_fr.txt" "UTF-8"
-
-generate "fy" "frisian" \
-  "fy_NL.dic" "CP1252" \
-  "fy_NL.aff" "CP1252" \
-  "GPL-3.0" "README" "UTF-8"
-
-generate "fur" "friulian" \
-  "myspell-fur-12092005/fur_IT.dic" "ISO8859-1" \
-  "myspell-fur-12092005/fur_IT.aff" "ISO8859-1" \
-  "GPL-2.0" "myspell-fur-12092005/COPYING.txt" "ISO8859-1"
-
-generate "gl" "galician" \
-  "gl_ES.dic" "UTF-8" \
-  "gl_ES.aff" "UTF-8" \
-  "GPL-3.0" "license.txt" "UTF-8"
-
 generate "de" "german" \
   "hunspell/de_DE.dic" "ISO8859-1" \
   "hunspell/de_DE.aff" "ISO8859-1" \
   "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8" \
-
-generate "el" "greek" \
-  "elspell-master/myspell/el_GR.dic" "UTF-8" \
-  "elspell-master/myspell/el_GR.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "elspell-master/myspell/README_el_GR.txt" "UTF-8"
-
-generate "el-polyton" "greek-polyton" \
-  "el_GR.dic" "UTF-8" \
-  "el_GR.aff" "UTF-8" \
-  "GPL-3.0" "README_el_GR.txt" "UTF-8"
-
-generate "he" "hebrew" \
-  "he.dic" "UTF-8" \
-  "he.aff" "UTF-8" \
-  "AGPL-3.0" "LICENSE" "UTF-8"
-
-generate "hu" "hungarian" \
-  "hu_HU.dic" "ISO8859-2" \
-  "hu_HU.aff" "ISO8859-2" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_hu_HU.txt" "UTF-8"
-
-generate "ia" "interlingua" \
-  "dictionaries/ia.dic" "UTF-8" \
-  "dictionaries/ia.aff" "UTF-8" \
-  "GPL-3.0" "dictionaries/README_dict-ia.txt" "UTF-8"
-
-generate "ie" "interlingue" \
-  "hunspell-ie-master/ie.dic" "UTF-8" \
-  "hunspell-ie-master/ie.aff" "UTF-8" \
-  "Apache-2.0" "hunspell-ie-master/LICENSE" "UTF-8"
-
-generate "ga" "irish" \
-  "gaelspell-master/ga_IE.dic" "UTF-8" \
-  "gaelspell-master/ga_IE.aff" "UTF-8" \
-  "GPL-2.0" "gaelspell-master/LICENSES-en.txt" "UTF-8"
-
-generate "it" "italian" \
-  "dictionaries/it_IT.dic" "ISO8859-15" \
-  "dictionaries/it_IT.aff" "ISO8859-15" \
-  "GPL-3.0" "dictionaries/README.txt" "UTF-8"
-
-generate "rw" "kinyarwanda" \
-  "hunspell-rw-master/rw_RW.dic" "ISO8859-1" \
-  "hunspell-rw-master/rw_RW.aff" "ISO8859-1" \
-  "GPL-3.0" "hunspell-rw-master/LICENSE" "UTF-8" \
-
-generate "lb" "luxembourgish" \
-  "dictionary-lb-lu-master/lb_LU.dic" "UTF-8" \
-  "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
-  "EUPL-1.1" "dictionary-lb-lu-master/LICENSE.txt" "UTF-8"
-
-generate "mn" "mongolian" \
-  "mn_MN.dic" "UTF-8" \
-  "mn_MN.aff" "UTF-8" \
-  "GPL-2.0" "README_mn_MN.txt" "UTF-8"
-
-generate "nb" "norwegian" \
-  "DICT/nb_NO.dic" "ISO8859-1" \
-  "DICT/nb_NO.aff" "ISO8859-1" \
-  "GPL-2.0" "COPYING" "ISO8859-1"
-
-generate "nn" "norwegian" \
-  "DICT/nn_NO.dic" "ISO8859-1" \
-  "DICT/nn_NO.aff" "ISO8859-1" \
-  "GPL-2.0" "COPYING" "ISO8859-1"
-
-generate "pl" "polish" \
-  "pl_PL.dic" "ISO8859-2" \
-  "pl_PL.aff" "ISO8859-2" \
-  "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"
-
-generate "pt-BR" "portuguese-br" \
-  "pt_BR.dic" "ISO8859-1" \
-  "pt_BR.aff" "ISO8859-1" \
-  "LGPL-2.1" "README_en.TXT" "UTF-8"
-
-generate "pt" "portuguese" \
-  "dictionaries/pt_PT.dic" "UTF-8" \
-  "dictionaries/pt_PT.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "dictionaries/README_pt_PT.txt" "ISO8859-1"
-
-generate "ro" "romanian" \
-  "ro_RO.dic" "UTF-8" \
-  "ro_RO.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_EN.txt" "UTF-8"
-
-generate "ru" "russian" \
-  "ru_RU.dic" "KOI8-R" \
-  "ru_RU.aff" "KOI8-R" \
-  "BSD-2-Clause" "LICENSE" "UTF-8"
-
-generate "sr-Latn" "serbian" \
-  "sr-Latn.dic" "UTF-8" \
-  "sr-Latn.aff" "UTF-8" \
-  "LGPL-3.0" "registration/license_en-US.txt" "UTF-8"
-
-generate "sr" "serbian" \
-  "sr.dic" "UTF-8" \
-  "sr.aff" "UTF-8" \
-  "LGPL-3.0" "registration/license_en-US.txt" "UTF-8"
-
-generate "sk" "slovak" \
-  "sk_SK/sk_SK.dic" "UTF-8" \
-  "sk_SK/sk_SK.aff" "UTF-8" \
-  "GPL-2.0" "LICENSE.txt" "UTF-8"
-
-generate "sl" "slovenian" \
-  "sl_SI.dic" "ISO8859-2" \
-  "sl_SI.aff" "ISO8859-2" \
-  "(GPL-3.0 OR LGPL-2.1)" "README_sl_SI.txt" "UTF-8"
-
-generate "es" "spanish" \
-  "es_ES.dic" "ISO8859-1" \
-  "es_ES.aff" "ISO8859-1" \
-  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
-
-generate "sv" "swedish" \
-  "sv_SE.dic" "UTF-8" \
-  "sv_SE.aff" "UTF-8" \
-  "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
-
+generate "de-AT" "german" \
+  "hunspell/de_AT.dic" "ISO8859-1" \
+  "hunspell/de_AT.aff" "ISO8859-1" \
+  "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8" \
 generate "de-CH" "german" \
   "hunspell/de_CH.dic" "ISO8859-1" \
   "hunspell/de_CH.aff" "ISO8859-1" \
   "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8"
-
+generate "el" "greek" \
+  "elspell-master/myspell/el_GR.dic" "UTF-8" \
+  "elspell-master/myspell/el_GR.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "elspell-master/myspell/README_el_GR.txt" "UTF-8"
+generate "el-polyton" "greek-polyton" \
+  "el_GR.dic" "UTF-8" \
+  "el_GR.aff" "UTF-8" \
+  "GPL-3.0" "README_el_GR.txt" "UTF-8"
+# Note that “the Hunspell English Dictionaries” are very vaguely licensed.
+# Read more in the license file. Note that the SPDX “(MIT AND BSD)”
+# comes from aspell’s description as “BSD/MIT-like”.
+# See: http://wordlist.aspell.net/other-dicts/#official
+generate "en-AU" "english-australian" \
+  "en_AU.dic" "UTF-8" \
+  "en_AU.aff" "UTF-8" \
+  "(MIT AND BSD)" "README_en_AU.txt" "UTF-8"
+generate "en-CA" "english-canadian" \
+  "en_CA.dic" "UTF-8" \
+  "en_CA.aff" "UTF-8" \
+  "(MIT AND BSD)" "README_en_CA.txt" "UTF-8"
+generate "en-GB" "english-gb" \
+  "en_GB-ise.dic" "UTF-8" \
+  "en_GB-ise.aff" "UTF-8" \
+  "(MIT AND BSD)" "README_en_GB-ise.txt" "UTF-8"
+generate "en-US" "english-american" \
+  "en_US.dic" "UTF-8" \
+  "en_US.aff" "UTF-8" \
+  "(MIT AND BSD)" "README_en_US.txt" "UTF-8"
+generate "en-ZA" "english" \
+  "en_ZA.dic" "UTF-8" \
+  "en_ZA.aff" "UTF-8" \
+  "LGPL-2.1" "README_en_ZA.txt" "UTF-8"
+generate "eo" "esperanto" \
+  "eo_ilo.dic" "UTF-8" \
+  "eo_ilo.aff" "UTF-8" \
+  "GPL-2.0" "LICENSE.txt" "UTF-8"
+generate "es" "spanish" \
+  "es_ES.dic" "ISO8859-1" \
+  "es_ES.aff" "ISO8859-1" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "et" "estonian" \
+  "et.dic" "ISO8859-15" \
+  "et.aff" "ISO8859-15" \
+  "LGPL-2.1"
+generate "eu" "basque" \
+  "eu.dic" "UTF-8" \
+  "eu.aff" "UTF-8" \
+  "GPL-2.0"
+generate "fo" "faroese" \
+  "fo_FO.dic" "ISO8859-1" \
+  "fo_FO.aff" "ISO8859-1" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
+generate "fr" "french" \
+  "dictionaries/fr-classique.dic" "UTF-8" \
+  "dictionaries/fr-classique.aff" "UTF-8" \
+  "MPL-2.0" "dictionaries/README_dict_fr.txt" "UTF-8"
+generate "fur" "friulian" \
+  "myspell-fur-12092005/fur_IT.dic" "ISO8859-1" \
+  "myspell-fur-12092005/fur_IT.aff" "ISO8859-1" \
+  "GPL-2.0" "myspell-fur-12092005/COPYING.txt" "ISO8859-1"
+generate "fy" "frisian" \
+  "fy_NL.dic" "CP1252" \
+  "fy_NL.aff" "CP1252" \
+  "GPL-3.0" "README" "UTF-8"
+generate "ga" "irish" \
+  "gaelspell-master/ga_IE.dic" "UTF-8" \
+  "gaelspell-master/ga_IE.aff" "UTF-8" \
+  "GPL-2.0" "gaelspell-master/LICENSES-en.txt" "UTF-8"
+generate "gd" "gaelic" \
+  "hunspell-gd-master/gd_GB.dic" "UTF-8" \
+  "hunspell-gd-master/gd_GB.aff" "UTF-8" \
+  "GPL-3.0" "hunspell-gd-master/README_gd_GB.txt" "UTF-8"
+generate "gl" "galician" \
+  "gl_ES.dic" "UTF-8" \
+  "gl_ES.aff" "UTF-8" \
+  "GPL-3.0" "license.txt" "UTF-8"
+generate "he" "hebrew" \
+  "he.dic" "UTF-8" \
+  "he.aff" "UTF-8" \
+  "AGPL-3.0" "LICENSE" "UTF-8"
+generate "hr" "croatian" \
+  "hr_HR.dic" "ISO8859-2" \
+  "hr_HR.aff" "ISO8859-2" \
+  "(LGPL-2.1 OR SISSL)" "README_hr_HR.txt" "ISO8859-2"
+generate "hu" "hungarian" \
+  "hu_HU.dic" "ISO8859-2" \
+  "hu_HU.aff" "ISO8859-2" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_hu_HU.txt" "UTF-8"
+generate "hy-arevela" "armenian-eastern" \
+  "hy_am_e_1940.dic" "UTF-8" \
+  "hy_am_e_1940.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
+generate "hy-arevmda" "armenian-western" \
+  "hy_AM_western.dic" "UTF-8" \
+  "hy_AM_western.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
+generate "ia" "interlingua" \
+  "dictionaries/ia.dic" "UTF-8" \
+  "dictionaries/ia.aff" "UTF-8" \
+  "GPL-3.0" "dictionaries/README_dict-ia.txt" "UTF-8"
+generate "ie" "interlingue" \
+  "hunspell-ie-master/ie.dic" "UTF-8" \
+  "hunspell-ie-master/ie.aff" "UTF-8" \
+  "Apache-2.0" "hunspell-ie-master/LICENSE" "UTF-8"
+generate "is" "libreoffice" \
+  "dictionaries-master/is/is.dic" "UTF-8" \
+  "dictionaries-master/is/is.aff" "UTF-8" \
+  "CC-BY-SA-3.0" "dictionaries-master/is/license.txt" "UTF-8"
+generate "it" "italian" \
+  "dictionaries/it_IT.dic" "ISO8859-15" \
+  "dictionaries/it_IT.aff" "ISO8859-15" \
+  "GPL-3.0" "dictionaries/README.txt" "UTF-8"
+generate "lb" "luxembourgish" \
+  "dictionary-lb-lu-master/lb_LU.dic" "UTF-8" \
+  "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
+  "EUPL-1.1" "dictionary-lb-lu-master/LICENSE.txt" "UTF-8"
+generate "mn" "mongolian" \
+  "mn_MN.dic" "UTF-8" \
+  "mn_MN.aff" "UTF-8" \
+  "GPL-2.0" "README_mn_MN.txt" "UTF-8"
+generate "nb" "norwegian" \
+  "DICT/nb_NO.dic" "ISO8859-1" \
+  "DICT/nb_NO.aff" "ISO8859-1" \
+  "GPL-2.0" "COPYING" "ISO8859-1"
+generate "nl" "dutch" \
+  "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.dic" "UTF-8" \
+  "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" "UTF-8" \
+  "(BSD-3-Clause OR CC-BY-3.0)" "dutch-master/LICENSE" "UTF-8"
+generate "nn" "norwegian" \
+  "DICT/nn_NO.dic" "ISO8859-1" \
+  "DICT/nn_NO.aff" "ISO8859-1" \
+  "GPL-2.0" "COPYING" "ISO8859-1"
+generate "pl" "polish" \
+  "pl_PL.dic" "ISO8859-2" \
+  "pl_PL.aff" "ISO8859-2" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"
+generate "pt" "portuguese" \
+  "dictionaries/pt_PT.dic" "UTF-8" \
+  "dictionaries/pt_PT.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "dictionaries/README_pt_PT.txt" "ISO8859-1"
+generate "pt-BR" "portuguese-br" \
+  "pt_BR.dic" "ISO8859-1" \
+  "pt_BR.aff" "ISO8859-1" \
+  "LGPL-2.1" "README_en.TXT" "UTF-8"
+generate "ro" "romanian" \
+  "ro_RO.dic" "UTF-8" \
+  "ro_RO.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_EN.txt" "UTF-8"
+generate "ru" "russian" \
+  "ru_RU.dic" "KOI8-R" \
+  "ru_RU.aff" "KOI8-R" \
+  "BSD-2-Clause" "LICENSE" "UTF-8"
+generate "rw" "kinyarwanda" \
+  "hunspell-rw-master/rw_RW.dic" "ISO8859-1" \
+  "hunspell-rw-master/rw_RW.aff" "ISO8859-1" \
+  "GPL-3.0" "hunspell-rw-master/LICENSE" "UTF-8" \
+generate "sk" "slovak" \
+  "sk_SK/sk_SK.dic" "UTF-8" \
+  "sk_SK/sk_SK.aff" "UTF-8" \
+  "GPL-2.0" "LICENSE.txt" "UTF-8"
+generate "sl" "slovenian" \
+  "sl_SI.dic" "ISO8859-2" \
+  "sl_SI.aff" "ISO8859-2" \
+  "(GPL-3.0 OR LGPL-2.1)" "README_sl_SI.txt" "UTF-8"
+generate "sr" "serbian" \
+  "sr.dic" "UTF-8" \
+  "sr.aff" "UTF-8" \
+  "LGPL-3.0" "registration/license_en-US.txt" "UTF-8"
+generate "sr-Latn" "serbian" \
+  "sr-Latn.dic" "UTF-8" \
+  "sr-Latn.aff" "UTF-8" \
+  "LGPL-3.0" "registration/license_en-US.txt" "UTF-8"
+generate "sv" "swedish" \
+  "sv_SE.dic" "UTF-8" \
+  "sv_SE.aff" "UTF-8" \
+  "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
 generate "tr" "turkish" \
   "dictionaries/tr-TR.dic" "UTF-8" \
   "dictionaries/tr-TR.aff" "UTF-8" \
   "MIT"
-
 generate "uk" "ukrainian" \
   "uk_UA/uk_UA.dic" "UTF-8" \
   "uk_UA/uk_UA.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "uk_UA/README_uk_UA.txt" "UTF-8"
-
 generate "vi" "vietnamese" \
   "dictionaries/vi_VN.dic" "UTF-8" \
   "dictionaries/vi_VN.aff" "UTF-8" \
