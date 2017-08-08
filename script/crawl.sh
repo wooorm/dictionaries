@@ -247,6 +247,9 @@ crawl "italian" \
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
+crawl "korean" \
+  "https://github.com/spellcheck-ko/hunspell-dict-ko" \
+  "https://github.com/spellcheck-ko/hunspell-dict-ko/releases/download/0.6.2/ko-aff-dic-0.6.2.zip"
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
   "https://sourceforge.net/projects/aoo-extensions/files/1141/3/dict-la_2013-03-31.oxt/download"
@@ -519,6 +522,10 @@ generate "it" "italian" \
   "dictionaries/it_IT.dic" "UTF-8" \
   "dictionaries/it_IT.aff" "UTF-8" \
   "GPL-3.0" "dictionaries/README.txt" "UTF-8"
+generate "ko" "korean" \
+  "ko-aff-dic-0.6.2/ko.dic" "UTF-8" \
+  "ko-aff-dic-0.6.2/ko.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "ko-aff-dic-0.6.2/LICENSE" "UTF-8"
 generate "la" "latin" \
   "la/universal/la.dic" "UTF-8" \
   "la/universal/la.aff" "UTF-8" \
