@@ -1,6 +1,6 @@
 # dictionary-ia
 
-Interlingua (International Auxiliary Language Association) spelling dictionary in UTF-8.
+Interlingua spelling dictionary in UTF-8.
 
 Useful with [hunspell][] ([node bindings][nodehun] or
 [plain javascript][nspell]), Open Office, LibreOffice, FireFox and

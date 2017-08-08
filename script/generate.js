@@ -30,7 +30,8 @@ var remove = {
   ca: ['or Valencian', 'Valencian'],
   'ca-valencia': ['or Valencian'],
   el: ['(1453-)'],
-  'el-polyton': ['(1453-)']
+  'el-polyton': ['(1453-)'],
+  ia: ['International Auxiliary Language Association']
 };
 
 var replace = {
@@ -38,7 +39,8 @@ var replace = {
   'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'},
   ia: {
     '(international': 'international',
-    'association)': 'association'
+    'association)': 'association',
+    'Interlingua (International Auxiliary Language Association)': 'Interlingua'
   }
 };
 

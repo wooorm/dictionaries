@@ -47,7 +47,7 @@ In total, 61 dictionaries are provided.
 | [`dictionary-hu`](dictionaries/hu) | Hungarian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hu/LICENSE) |
 | [`dictionary-hy-arevela`](dictionaries/hy-arevela) | Armenian (Eastern Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevela/LICENSE) |
 | [`dictionary-hy-arevmda`](dictionaries/hy-arevmda) | Armenian (Western Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevmda/LICENSE) |
-| [`dictionary-ia`](dictionaries/ia) | Interlingua (International Auxiliary Language Association) | [GPL-3.0](dictionaries/ia/LICENSE) |
+| [`dictionary-ia`](dictionaries/ia) | Interlingua | [GPL-3.0](dictionaries/ia/LICENSE) |
 | [`dictionary-ie`](dictionaries/ie) | Interlingue (or Occidental) | [Apache-2.0](dictionaries/ie/LICENSE) |
 | [`dictionary-is`](dictionaries/is) | Icelandic | [CC-BY-SA-3.0](dictionaries/is/LICENSE) |
 | [`dictionary-it`](dictionaries/it) | Italian | [GPL-3.0](dictionaries/it/LICENSE) |
