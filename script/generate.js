@@ -101,7 +101,7 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
 
   pack = {
     name: 'dictionary-' + code.toLowerCase(),
-    version: pack.version || '1.0.0',
+    version: pack.version || '0.0.0',
     description: description + ' spelling dictionary in UTF-8',
     license: read(join(base, 'SPDX'), 'utf-8').trim(),
     keywords: keywords,
