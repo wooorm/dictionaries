@@ -82,6 +82,7 @@ crawl() {
   fi
 
   if [ ! -e "$archivePath" ]; then
+    echo
     wget "$3" -O "$archivePath"
   fi
 
@@ -110,22 +111,30 @@ generate() {
 
   cp "$SOURCE/SOURCE" "$dictionary/SOURCE"
 
-  (
-    iconv -f "$4" -t "UTF-8" | # Encoding
-    awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
-    sed 's/[ \t]*$//' | # Trailing white-space
-    tr -d '\r' # Newlines
-  ) < "$SOURCE/$3" > "$dictionary/index.dic"
-  printf "   $(green "✓") index.dic (from $4)\n"
+  if [ -e "$SOURCE/$3" ]; then
+    (
+      iconv -f "$4" -t "UTF-8" | # Encoding
+      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed 's/[ \t]*$//' | # Trailing white-space
+      tr -d '\r' # Newlines
+    ) < "$SOURCE/$3" > "$dictionary/index.dic"
+    printf "   $(green "✓") index.dic (from $4)\n"
+  else
+    printf "   $(red "𐄂 Could not find $3 file")\n"
+  fi
 
-  (
-    iconv -f "$6" -t "UTF-8" | # Encoding
-    sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
-    awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
-    sed 's/[ \t]*$//' | # Trailing white-space
-    tr -d '\r' # Newlines
-  ) < "$SOURCE/$5" > "$dictionary/index.aff"
-  printf "   $(green "✓") index.aff (from $6)\n"
+  if [ -e "$SOURCE/$5" ]; then
+    (
+      iconv -f "$6" -t "UTF-8" | # Encoding
+      sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
+      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed 's/[ \t]*$//' | # Trailing white-space
+      tr -d '\r' # Newlines
+    ) < "$SOURCE/$5" > "$dictionary/index.aff"
+    printf "   $(green "✓") index.aff (from $6)\n"
+  else
+    printf "   $(red "𐄂 Could not find $5 file")\n"
+  fi
 
   echo "$7" > "$dictionary/SPDX"
 
