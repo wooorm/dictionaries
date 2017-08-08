@@ -35,7 +35,11 @@ var remove = {
 
 var replace = {
   el: {'Modern Greek (1453-)': 'Modern Greek'},
-  'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'}
+  'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'},
+  ia: {
+    '(international': 'international',
+    'association)': 'association'
+  }
 };
 
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
@@ -64,6 +68,12 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
       var data = subtag ? subtag.data.record.Description : null;
 
       if (data) {
+        /* Fix bug in `language-tags`, where the description of a tag when
+         * indented is seen as an array, instead of continued text. */
+        if (subtag.data.subtag === 'ia') {
+          data = [data.join(' ')];
+        }
+
         keywords = keywords.concat(data.join(' ').toLowerCase().split(' '));
 
         if (label === 'language') {

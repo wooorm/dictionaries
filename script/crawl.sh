@@ -208,6 +208,9 @@ crawl "hungarian" \
 # crawl "hungarian" \
 #    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
 #    "http://sourceforge.net/projects/aoo-extensions/files/1283/9/dict-hu.oxt/download"
+crawl "interlingua" \
+  "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
+  "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
 crawl "irish" \
   "http://borel.slu.edu/ispell/index-en.html" \
   "https://github.com/kscanne/gaelspell/archive/master.zip"
@@ -681,6 +684,18 @@ if [ "$(head -n 1 "$DICTIONARIES/hu/index.aff")" = "AF 1263" ]; then
   tail -n 23734 "$DICTIONARIES/hu/index.aff" > "$DICTIONARIES/hu/index-fixed.aff"
   mv "$DICTIONARIES/hu/index-fixed.aff" "$DICTIONARIES/hu/index.aff"
 fi
+
+#
+# Interlingua.
+#
+
+generate "interlingua" \
+  "ia" \
+  "GPL-3.0" \
+  "dictionaries/README_dict-ia.txt" \
+  "dictionaries/ia.dic" \
+  "dictionaries/ia.aff" \
+  "UTF-8"
 
 #
 # Irish.

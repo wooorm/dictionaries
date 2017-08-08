@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total, 53 dictionaries are provided.
+In total, 54 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -47,6 +47,7 @@ In total, 53 dictionaries are provided.
 | [`dictionary-hu`](dictionaries/hu) | Hungarian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hu/LICENSE) |
 | [`dictionary-hy-arevela`](dictionaries/hy-arevela) | Armenian (Eastern Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevela/LICENSE) |
 | [`dictionary-hy-arevmda`](dictionaries/hy-arevmda) | Armenian (Western Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevmda/LICENSE) |
+| [`dictionary-ia`](dictionaries/ia) | Interlingua (International Auxiliary Language Association) | [GPL-3.0](dictionaries/ia/LICENSE) |
 | [`dictionary-is`](dictionaries/is) | Icelandic | [CC-BY-SA-3.0](dictionaries/is/LICENSE) |
 | [`dictionary-it`](dictionaries/it) | Italian | [GPL-3.0](dictionaries/it/LICENSE) |
 | [`dictionary-lb`](dictionaries/lb) | Luxembourgish (or Letzeburgesch) | [EUPL-1.1](dictionaries/lb/LICENSE) |
