@@ -25,14 +25,14 @@ SFX M   0       oma     [^aeiou]
 SFX M   0       ih      [^aeiou]
 SFX M   0       i       [^aeiou]
 SFX M   0       e       [^aeiou]
-SFX M   0       ta      e       
-SFX M   0       tu      e       
-SFX M   0       tom     e       
-SFX M   0       tov     e       
-SFX M   0       toma    e       
-SFX M   0       tih     e       
-SFX M   0       ti      e       
-SFX M   0       te      e       
+SFX M   0       ta      e
+SFX M   0       tu      e
+SFX M   0       tom     e
+SFX M   0       tov     e
+SFX M   0       toma    e
+SFX M   0       tih     e
+SFX M   0       ti      e
+SFX M   0       te      e
 
 SFX J Y 16
 SFX J   0       ja      [riuoae]
@@ -54,14 +54,14 @@ SFX J   0       i       [cčjžš]
 
 
 SFX K Y 72
-SFX K   ek      ka      ek 
-SFX K   ek      ku      ek 
-SFX K   ek      kom     ek 
-SFX K   ek      kov     ek 
-SFX K   ek      koma    ek 
-SFX K   ek      kih     ek 
-SFX K   ek      ke      ek 
-SFX K   ek      ki      ek 
+SFX K   ek      ka      ek
+SFX K   ek      ku      ek
+SFX K   ek      kom     ek
+SFX K   ek      kov     ek
+SFX K   ek      koma    ek
+SFX K   ek      kih     ek
+SFX K   ek      ke      ek
+SFX K   ek      ki      ek
 SFX K   el      la      el
 SFX K   el      lu      el
 SFX K   el      lom     el

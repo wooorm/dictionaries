@@ -1,18 +1,18 @@
 75865
 	This is the dictionary file of the de_CH Hunspell dictionary
 	derived from the igerman98 dictionary
-	
+
 	Version: 20161207
-	
+
 	Copyright (C) 1999-2016 BjÃ¶rn Jacke <bjoern@j3e.de>
-	
+
 	License: GPLv2, GPLv3
 	There should be a copy of all of this licenses included with every distribution
 	of this dictionary. Modified versions using the GPL may only include the
 	GPL. This dictionary is compiled from igerman98. For the purpose of the
 	GPL modifications of this dictionary should be made public as a patch
 	for igerman98 allowing to regenerate the modified dictionary.
-	
+
 Äbte/Nm
 Äbtissin/Fm
 Ächten/SJm

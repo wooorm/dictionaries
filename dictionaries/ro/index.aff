@@ -1132,8 +1132,8 @@ SFX f   are rii      oare               s.f.sg.dat.
 SFX f   are   ării    [^oi]are       s.f.sg.dat.
 SFX f   are   ări     [^oi]are       s.f.sg.neart.dat.
 SFX f   are   area   [^oi]are      s.f.sg.art.
-SFX f   are   area-i   [^oi]are      
-SFX f   are   areo   [^oi]are      
+SFX f   are   area-i   [^oi]are
+SFX f   are   areo   [^oi]are
 SFX f   e     ea     ere            s.f.sg.art.
 SFX f   e     ea-i     ere            s.f.sg.art.
 SFX f   e     eo     ere            s.f.sg.art.
@@ -1156,22 +1156,22 @@ SFX f  vă   vei   vă     s.f.sg.art.dat
 SFX f  ră   re   [^u]ră     s.f.sg.neart.dat
 SFX f  ră   rei   [^u]ră     s.f.sg.art.dat
 SFX f  ie   ia    ie         s.f.sg.art.
-SFX f  ie   ia-i    ie         
-SFX f  ie   io    ie         
+SFX f  ie   ia-i    ie
+SFX f  ie   io    ie
 SFX f  ie   iei    ie         s.f.sg.dat.art.
 SFX f  ie   ii    ie         s.f.sg.dat.neart.
 SFX f   0     a   ime       s.f.sg.art.
-SFX f   0     a-i   ime       
-SFX f   0     o   ime       
+SFX f   0     a-i   ime
+SFX f   0     o   ime
 SFX f   e     i   ime       s.f.sg.dat.neart.
 SFX f   e     ii   ime       s.f.sg.dat.art.
 SFX f   ate   atea    ate       s.f.sg.art.
-SFX f   ate   atea-i    ate     
-SFX f   ate   ateo    ate     
+SFX f   ate   atea-i    ate
+SFX f   ate   ateo    ate
 SFX f   ate   ății    ate       s.f.sg.dat.art.
 SFX f   ate   ăți     ate       s.f.sg.dat.neart.
 SFX f   0     a      [iu]ne       s.f.sg.art.
-SFX f   0     a-i      [iu]ne       
+SFX f   0     a-i      [iu]ne
 SFX f   0     o      [iu]ne       s.f.sg.art.
 SFX f   e     ii      [iu]ne       s.f.sg.dat.art.
 SFX f   e     i       [iu]ne       s.f.sg.dat.neart.
@@ -1340,7 +1340,7 @@ SFX C 0 urile  [^u]         s.n. pl. art.
 SFX C 0 urilor  [^u]        s.n. pl. dat.
 SFX C 0 ului  [^u]          s.n. sg. dat.
 SFX C 0 ule  [^u]
-SFX C 0 -i u                  
+SFX C 0 -i u
 SFX C 0 l u                  s.n. sg. art.
 SFX C 0 ri u                  s.n. pl. neart.
 SFX C 0 rile u               s.n. pl. art.
@@ -1354,7 +1354,7 @@ SFX c 0 u-i  [^u]
 SFX c 0 ul  [^u]            s.n. sg. art.
 SFX c 0 ului  [^u]          s.n. sg. dat.
 SFX c 0 ule  [^u]
-SFX c 0 -i u                  
+SFX c 0 -i u
 SFX c 0 l u                  s.n. sg. art.
 SFX c 0 lui u               s.n. sg. dat.
 SFX c 0 le u
@@ -1422,7 +1422,7 @@ SFX P   0     e       [^o]n                 s.n.pl.neart.
 SFX P   0     ele     [^o]n                 s.n.pl.art.
 SFX P   0     elor    [^o]n                 s.n.pl.dat.
 SFX P   0     l       u                        s.n.sg.art.
-SFX P   0     i       u                       
+SFX P   0     i       u
 SFX P   0     le     u
 SFX P   0     lui     u                        s.n.sg.dat.
 SFX P   u     i       iu                        s.n.pl.neart.
@@ -1577,9 +1577,9 @@ SFX Q   0     ii      [^s]c            adj. m. pl. art.
 SFX Q   0     ilor    [^s]c            adj. m. pl. dat.
 SFX Q   0     ă       [^s]c            adj. f. sg.
 SFX Q   0     a       [^s]c            adj. f. sg. art.
-SFX Q   0     e      [^s]c            
-SFX Q   0     ele       [^s]c           
-SFX Q   0     elor      [^s]c            
+SFX Q   0     e      [^s]c
+SFX Q   0     ele       [^s]c
+SFX Q   0     elor      [^s]c
 SFX Q   sc    ști     sc               adj. m. pl.
 SFX Q   sc    știi    sc               adj. m. pl. art.
 SFX Q   sc    știlor  sc               adj. m. pl. dat.

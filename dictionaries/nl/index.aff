@@ -31,7 +31,7 @@ NOSPLITSUGS
 MAXCPDSUGS 1
 
 # max difference to be applied for all words (compounds and n-gram suggestions)
-ONLYMAXDIFF 
+ONLYMAXDIFF
 
 # max difference in chars for ngram suggestions
 # 3 limits wild suggestions a lot, but also drops suggestions for words with multiple errors
@@ -431,7 +431,7 @@ REP music muzik
 REP ^kiet$ quitte
 REP persé per_se
 REP ruggegraad ruggengraat
-REP ^geupdate$ geüpdatet 
+REP ^geupdate$ geüpdatet
 REP ^zowiezo$ sowieso
 REP ceedee cd
 REP ceedees cd's
@@ -696,14 +696,14 @@ COMPOUNDRULE (N1)(n2)	  	# eenen+zestig[ste]
 COMPOUNDRULE (Nh)(n3)		# honderden+twee[de]
 COMPOUNDRULE (Nh)(n2)		# honderden+twintig[ste]
 COMPOUNDRULE (Nh)(N1)(n2)	# honderden+eenen+dertig
-COMPOUNDRULE (N4)(NH)		# vijf+honderd 
-COMPOUNDRULE (N4)(Nh)(n3)	# vijf+honderden+een 
-COMPOUNDRULE (N4)(Nh)(n2)	# vijf+honderd+twintig 
+COMPOUNDRULE (N4)(NH)		# vijf+honderd
+COMPOUNDRULE (N4)(Nh)(n3)	# vijf+honderden+een
+COMPOUNDRULE (N4)(Nh)(n2)	# vijf+honderd+twintig
 COMPOUNDRULE (N4)(Nh)(N1)(n2)	# vijf+honderd+eenen+zestig
 COMPOUNDRULE (N4)(Nd)		# vijf+duizend
 COMPOUNDRULE (N2)(Nd)		# zestig+duizend[ste]
 COMPOUNDRULE (N1)(N2)(Nh)	# eenen+zestig+honderd
-COMPOUNDRULE (N1)(N2)(Nh)(n3)	
+COMPOUNDRULE (N1)(N2)(Nh)(n3)
 COMPOUNDRULE (N1)(N2)(Nh)(n2)
 COMPOUNDRULE (N1)(N2)(Nh)(N1)(n2)
 COMPOUNDRULE (N1)(N2)(Nd)
@@ -776,7 +776,7 @@ CHECKCOMPOUNDPATTERN i /C3
 CHECKCOMPOUNDPATTERN o /C4
 CHECKCOMPOUNDPATTERN u /C5
 CHECKCOMPOUNDPATTERN /Xf /Xf		# moeder-dochter etc
-CHECKCOMPOUNDPATTERN oon zor          	# woon-zorgflat 
+CHECKCOMPOUNDPATTERN oon zor          	# woon-zorgflat
 CHECKCOMPOUNDPATTERN armte krach	# warmte-krachtcentrale
 CHECKCOMPOUNDPATTERN aag dar		# maag-darmandoening
 CHECKCOMPOUNDPATTERN aagd ar          	# maag-darmandoening
@@ -825,33 +825,33 @@ CHECKCOMPOUNDPATTERN p poen
 # accept an optional  - when compounding, first part
 # the second line allows for the optional hyphen
 SFX CA Y 2
-SFX CA 0 /CaCp	
-SFX CA 0 -/CaCp	
+SFX CA 0 /CaCp
+SFX CA 0 -/CaCp
 
 # accept an optional - when compounding, middle part
 # the second line allows for the optional hyphen
 SFX CB Y 2
-SFX CB 0 /CbCp	
-SFX CB 0 -/CbCp	
+SFX CB 0 /CbCp
+SFX CB 0 -/CbCp
 
 # for words that have a plural s and an s when compounding
 # the second one allows for the optional hyphen
 SFX Cd Y 2
-SFX Cd 0 s/CaCbCcCp .  
-SFX Cd 0 s-/CaCbCcCp . 
+SFX Cd 0 s/CaCbCcCp .
+SFX Cd 0 s-/CaCbCcCp .
 
 # for reasons of good results, parts that could have a compounding s
 # but no plural s
 # have to have separate (!) entries in the dictionary
-# using the Ch flag 
+# using the Ch flag
 SFX Ch Y 2
-SFX Ch 0 s/CaCbCxCp .	
-SFX Ch 0 s-/CaCbCcCp .	
+SFX Ch 0 s/CaCbCxCp .
+SFX Ch 0 s-/CaCbCcCp .
 
 # FLAG FOR WORDS THAT CAN BE FIRST PART AND COULD HAVE A HYPHEN BECAUSE OF SONANT COLLISIONS (END WITH A, E, I, O, U)
 SFX Ce Y 2
-SFX Ce 0 /CaCbCp .	
-SFX Ce 0 -/CaCbCcCp .	
+SFX Ce 0 /CaCbCp .
+SFX Ce 0 -/CaCbCcCp .
 
 # FLAGS FOR LETTERWORDS AND WORD THAT NEED A HYPHEN WHEN COMPOUNDING
 SFX Cl Y 1
@@ -860,12 +860,12 @@ SFX Cl 0 -/CaCbCp .
 PFX Cw Y 1
 PFX Cw 0 -/CbCcCp .
 
-# FLAGS FOR NOUN DIMINITIVES 
+# FLAGS FOR NOUN DIMINITIVES
 # tuin=>tuintje
 SFX Ya Y 3
 SFX Ya 0 tje .				ts:NN1r
 SFX Ya 0 tjes/CaCbCp .			ts:NN2r
-SFX Ya 0 tjes-/CaCbCp .			ts:NN2r 
+SFX Ya 0 tjes-/CaCbCp .			ts:NN2r
 
 # huis=>huisje
 SFX Yb Y 6
@@ -897,7 +897,7 @@ SFX Ye 0 etje i				ts:NN1r
 SFX Ye é eetje é			ts:NN1r
 SFX Ye 0 atjes/CaCbCp a			ts:NN2r
 SFX Ye 0 atjes-/CaCbCp a		ts:NN2r
-SFX Ye 0 utjes/CaCbCp u			ts:NN2r	
+SFX Ye 0 utjes/CaCbCp u			ts:NN2r
 SFX Ye 0 utjes-/CaCbCp u		ts:NN2r
 SFX Ye 0 otjes/CaCbCp o			ts:NN2r
 SFX Ye 0 otjes-/CaCbCp o		ts:NN2r

@@ -38,7 +38,7 @@ MAXCPDSUGS 0
 
 #Tillad at der ingen forslag kommer
 ONLYMAXDIFF
- 
+
 NOSUGGEST 1111
 
 REP 115
@@ -49,7 +49,7 @@ REP ^fremfor$ frem_for
 REP ^påny$ på_ny
 REP ^nutildags$ nu_til_dags
 REP ^vedlige$ ved_lige #vedlige -> ved lige
-REP k g #Enkeltbogstaver folk tit bytter om på, som herved kommer højere op på listen 
+REP k g #Enkeltbogstaver folk tit bytter om på, som herved kommer højere op på listen
 REP g k
 REP b p
 REP p b
@@ -72,8 +72,8 @@ REP t d
 REP o u
 REP u o
 REP d g
-REP v hv #hv problematikken. vilket -> hvilket 
-REP hv v #hvores -> vores 
+REP v hv #hv problematikken. vilket -> hvilket
+REP hv v #hvores -> vores
 REP sj ti
 REP ti j
 REP j ti
@@ -88,13 +88,13 @@ REP k ch
 REP ch k
 REP ch sj
 REP ch j
-REP kk gg #Dobbelt bogstaver folk tit bytter om på 
+REP kk gg #Dobbelt bogstaver folk tit bytter om på
 REP gg kk
 REP mm nn
 REP nn mm
 REP bb pp
 REP pp bb
-REP n nn #Dobbelt bogstave eller ej 
+REP n nn #Dobbelt bogstave eller ej
 REP nn n
 REP l ll
 REP ll l
@@ -170,8 +170,8 @@ SFX 7 0 ns/73,10,53,944,945 e	+GENITIV
 SFX 7 0 ens/944 [^e]	+GENITIV
 SFX 7 0 n/70,944 e	+BESTEMT_ENTAL
 SFX 7 0 en/70,944 [^e]	+PLUR_UBEK
-#Substantiv, konsonantfordobling, intetkøn, -er i flertal 
-SFX 9 Y 120 
+#Substantiv, konsonantfordobling, intetkøn, -er i flertal
+SFX 9 Y 120
 SFX 9 0 bet/944 b	+KONSONANT_FORDOBLING
 SFX 9 0 ber/944 b	+KONSONANT_FORDOBLING
 SFX 9 0 berne/944 b	+KONSONANT_FORDOBLING
@@ -311,8 +311,8 @@ SFX 20 0 ene/944 [^e]r	+PLUR_BEK
 SFX 20 0 enes/944 [^e]r	+PLUR_BEK
 #Ulovligt ord
 FORBIDDENWORD 36
-#Substantiv, konsonantfordobling, fælleskøn, -er i flertal 
-SFX 46 Y 120 
+#Substantiv, konsonantfordobling, fælleskøn, -er i flertal
+SFX 46 Y 120
 SFX 46 0 ben/944 b	+KONSONANT_FORDOBLING
 SFX 46 0 ber/944 b	+KONSONANT_FORDOBLING
 SFX 46 0 berne/944 b	+KONSONANT_FORDOBLING
@@ -541,8 +541,8 @@ SFX 131 0 r/84,10,53,945 r	+KONSONANT_FORDOBLING
 SFX 131 0 x/84,10,53,945 x	+KONSONANT_FORDOBLING
 SFX 131 0 t/53,84,10,945 t	+KONSONANT_FORDOBLING
 SFX 131 0 v/53,84,10,945 v	+KONSONANT_FORDOBLING
-#Substantiv, konsonantfordobling, intetkøn, -e i flertal 
-SFX 132 Y 120 
+#Substantiv, konsonantfordobling, intetkøn, -e i flertal
+SFX 132 Y 120
 SFX 132 0 bet/944 b	+KONSONANT_FORDOBLING
 SFX 132 0 be/944 b	+KONSONANT_FORDOBLING
 SFX 132 0 bene/944 b	+KONSONANT_FORDOBLING
@@ -664,8 +664,8 @@ SFX 132 0 zets/944 z	+KONSONANT_FORDOBLING
 SFX 132 0 zes/944 z	+KONSONANT_FORDOBLING
 SFX 132 0 zenes/944 z	+KONSONANT_FORDOBLING
 
-#Substantiv, konsonantfordobling, fælleskøn, -e i flertal 
-SFX 133 Y 120 
+#Substantiv, konsonantfordobling, fælleskøn, -e i flertal
+SFX 133 Y 120
 SFX 133 0 ben/944 b	+KONSONANT_FORDOBLING
 SFX 133 0 be/944 b	+KONSONANT_FORDOBLING
 SFX 133 0 bene/944 b	+KONSONANT_FORDOBLING
@@ -987,8 +987,8 @@ SFX 252 0 ene/944 [^er]	+PLUR_BEK
 SFX 252 0 ne/944 e	+PLUR_BEK
 SFX 252 0 ne/944 er	+PLUR_BEK
 SFX 252 0 ene/944 [^e]r	+PLUR_BEK
-#Substantiv, konsonantfordobling, intetkøn, -Ø i flertal 
-SFX 254 Y 80 
+#Substantiv, konsonantfordobling, intetkøn, -Ø i flertal
+SFX 254 Y 80
 SFX 254 0 bet/944 b	+KONSONANT_FORDOBLING
 SFX 254 0 bene/944 b	+KONSONANT_FORDOBLING
 SFX 254 0 bets/944 b	+KONSONANT_FORDOBLING
@@ -1070,8 +1070,8 @@ SFX 254 0 zene/944 z	+KONSONANT_FORDOBLING
 SFX 254 0 zets/944 z	+KONSONANT_FORDOBLING
 SFX 254 0 zenes/944 z	+KONSONANT_FORDOBLING
 
-#Substantiv, konsonantfordobling, fælleskøn, -Ø i flertal 
-SFX 267 Y 80 
+#Substantiv, konsonantfordobling, fælleskøn, -Ø i flertal
+SFX 267 Y 80
 SFX 267 0 ben/944 b	+KONSONANT_FORDOBLING
 SFX 267 0 bens/944 b	+KONSONANT_FORDOBLING
 SFX 267 0 bene/944 b	+KONSONANT_FORDOBLING

@@ -4,7 +4,7 @@ TRY aoeintsvrlkmdpuhjzácbyčžíšýúťéľôďgfňäóŕxĺwěřqůAOEINTSVRL
 
 # replacenment table for
 # - multicharacter suggestions
-# - well-sorted suggestions 
+# - well-sorted suggestions
 
 REP 52
 REP a á
@@ -526,7 +526,7 @@ SFX A   a           iec        [^čň]a
 SFX A   a           com        [^č]a
 SFX A   a           coch       [^č]a
 SFX A   a           cami       [^č]a
-SFX A	ňa          niec       [e]ňa	# šteňa 
+SFX A	ňa          niec       [e]ňa	# šteňa
 SFX A	ňa	    niat       [^i][^e]ňa	# jahňa
 SFX A   0           tá         .
 SFX A   0           ťa         .
@@ -1463,7 +1463,7 @@ SFX Y   á           ám         vná
 SFX Y   á           ami        vná
 SFX Y   0           ho         é     # skladné
 SFX Y   0           mu         é
-SFX Y   é           om         é 
+SFX Y   é           om         é
 SFX Y   é           ým         é
 SFX Y   é           ých        é
 SFX Y   é           ými        é

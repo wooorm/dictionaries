@@ -15,10 +15,10 @@ dd/mm/yyyy: 08/02/2002
 License   : GNU GPL
 contact   : evris@source.gr
 URL       : ispell.source.gr
------------------------------------------------ 
-This dictionary is based on greek wordlist and affixes used by ispell 
-(which based on older work of Mitalas and Seraskeris). Many thanks to 
-Voula Sanida (voulariba@source.gr) and Panayotis Vryonis (vrypan@yassou.net) 
+-----------------------------------------------
+This dictionary is based on greek wordlist and affixes used by ispell
+(which based on older work of Mitalas and Seraskeris). Many thanks to
+Voula Sanida (voulariba@source.gr) and Panayotis Vryonis (vrypan@yassou.net)
 for their help in converting the affix rules and to all the people that
 contributed words to the vocabulary.
 Evripidis Papakostas (evris@source.gr)
@@ -29,9 +29,9 @@ The new Licence:
 
 Version: MPL 1.1/GPL 2.0/LGPL 2.1
 
-The contents of this file are subject to the Mozilla Public License Version 
-1.1 (the "License"); you may not use this file except in compliance with 
-the License. You may obtain a copy of the License at 
+The contents of this file are subject to the Mozilla Public License Version
+1.1 (the "License"); you may not use this file except in compliance with
+the License. You may obtain a copy of the License at
 http://www.mozilla.org/MPL/
 
 Software distributed under the License is distributed on an "AS IS" basis,

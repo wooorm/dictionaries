@@ -124,25 +124,25 @@ PFX D   0     d'          fh
 PFX D   f     d'fh        f[^h]
 
 PFX E Y 3
-PFX E   0     dh'          [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ] 
+PFX E   0     dh'          [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ]
 PFX E   0     dh'          fh
 PFX E   f     dh'fh        f[^h]
 
 PFX T Y 2
-PFX T   0     t-        [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ] 
+PFX T   0     t-        [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ]
 PFX T   0     t-        [Ss][aeiouáéíóúàèìòùlnr]
 
 PFX N Y 1
-PFX N   0     n-        [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ] 
+PFX N   0     n-        [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ]
 
 SFX K Y 6
 SFX K   0     -sa          [^-]
-SFX K   0     -se          [^-] 
+SFX K   0     -se          [^-]
 SFX K   0     -ne          [^-]
 SFX K   0     -san      [^-]
 SFX K   0     eigin     [^e]
 SFX K   0     igin     e
 #SFX K   0     sa          [^-]
-#SFX K   0     se          [^-] 
+#SFX K   0     se          [^-]
 #SFX K   0     ne          [^-]
 #SFX K   0     san      [^-]

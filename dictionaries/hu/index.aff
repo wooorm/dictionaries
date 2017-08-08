@@ -1,271 +1,271 @@
-# This dictionary is based on the Hungarian wordlist and affixes created       
-# by László Németh and Ferenc Godó, February 2010 V1.6, and is covered by     
-# their original GPL/LGPL/MPL license as published by the FSF and     
-# Mozilla Foundation, published at http://magyarispell.sourceforge.net.     
-# 2002-2010 (c) László Németh <nemeth@openoffice.org> and Ferenc Godó     
-#        
-# Thanks to        
-# Tamás Szántó <tszanto@mol.hu>,       
-# Árpád Bíró <biro_arpad@yahoo.com>,       
-# Marcel Hilzinger <hili@suselinux.hu>,       
-# Egmont Koblinger <egmont@cs.bme.hu>,       
-# Viktor Trón <tron@coli.uni-sb.de>,       
-# Fransoa Holop <fred@francis.artia.sk>,       
-# Eleonóra Goldmann <eleonora46@gmx.net>,       
-# András Rung <rung@itm.bme.hu>       
-# and others for their assistance in making Hungarian        
-# wordlist and affix table (see szotar/tamogatok in Magyar Ispell source).     
-#        
-# Mailing list: <magyarispell@yahoogroups.com>       
-# Subscribe: <magyarispell-subscribe@yahoogroups.com>       
-# ----------------       
-#        
-# Ez a szótár azon a szólistán és ragozási szabálygyűjteményen alapul,       
-# amelyet Németh László és Godó Ferenc készített, és 2010 februárjában      
-# Magyar Ispell 1.6 néven a GPL/LGPL/MPL licenc mellett a      
-# http://magyarispell.sourceforge.net oldalon közzétett.     
-#      
-# Köszönet illeti a következőket:     
-#      
-# Szántó Tamás <tszanto@mol.hu>,     
-# Bíró Árpád <biro_arpad@yahoo.com>,     
-# Hilzinger Marcel <hili@suselinux.hu>,     
-# Koblinger Egmont <egmont@cs.bme.hu>,     
-# Trón Viktor <tron@coli.uni-sb.de>     
-# Fransoa Holop <fred@francis.artia.sk>,     
-# Goldmann Eleonóra <eleonora46@gmx.net>     
-# Rung András <rung@itm.bme.hu>     
-# és még sokakat a magyar szólista bővítéséért, javításáért,      
-# és a ragozási szabálygyűjtemény hibáinak és     
-# hiányosságainak feltárásáért!     
-# (Lásd még a szotar/tamogatok könyvtárat a forrásban.)     
-#      
-# Levelezési lista: <magyarispell@yahoogroups.com>     
-# Feliratkozás: <magyarispell-subscribe@yahoogroups.com>     
-# ----------------     
-     
-NAME Magyar Ispell helyesírási szótár     
-LANG hu_HU     
-HOME http://magyarispell.sourceforge.net     
-VERSION Magyar 1.6     
+# This dictionary is based on the Hungarian wordlist and affixes created
+# by László Németh and Ferenc Godó, February 2010 V1.6, and is covered by
+# their original GPL/LGPL/MPL license as published by the FSF and
+# Mozilla Foundation, published at http://magyarispell.sourceforge.net.
+# 2002-2010 (c) László Németh <nemeth@openoffice.org> and Ferenc Godó
+#
+# Thanks to
+# Tamás Szántó <tszanto@mol.hu>,
+# Árpád Bíró <biro_arpad@yahoo.com>,
+# Marcel Hilzinger <hili@suselinux.hu>,
+# Egmont Koblinger <egmont@cs.bme.hu>,
+# Viktor Trón <tron@coli.uni-sb.de>,
+# Fransoa Holop <fred@francis.artia.sk>,
+# Eleonóra Goldmann <eleonora46@gmx.net>,
+# András Rung <rung@itm.bme.hu>
+# and others for their assistance in making Hungarian
+# wordlist and affix table (see szotar/tamogatok in Magyar Ispell source).
+#
+# Mailing list: <magyarispell@yahoogroups.com>
+# Subscribe: <magyarispell-subscribe@yahoogroups.com>
+# ----------------
+#
+# Ez a szótár azon a szólistán és ragozási szabálygyűjteményen alapul,
+# amelyet Németh László és Godó Ferenc készített, és 2010 februárjában
+# Magyar Ispell 1.6 néven a GPL/LGPL/MPL licenc mellett a
+# http://magyarispell.sourceforge.net oldalon közzétett.
+#
+# Köszönet illeti a következőket:
+#
+# Szántó Tamás <tszanto@mol.hu>,
+# Bíró Árpád <biro_arpad@yahoo.com>,
+# Hilzinger Marcel <hili@suselinux.hu>,
+# Koblinger Egmont <egmont@cs.bme.hu>,
+# Trón Viktor <tron@coli.uni-sb.de>
+# Fransoa Holop <fred@francis.artia.sk>,
+# Goldmann Eleonóra <eleonora46@gmx.net>
+# Rung András <rung@itm.bme.hu>
+# és még sokakat a magyar szólista bővítéséért, javításáért,
+# és a ragozási szabálygyűjtemény hibáinak és
+# hiányosságainak feltárásáért!
+# (Lásd még a szotar/tamogatok könyvtárat a forrásban.)
+#
+# Levelezési lista: <magyarispell@yahoogroups.com>
+# Feliratkozás: <magyarispell-subscribe@yahoogroups.com>
+# ----------------
+
+NAME Magyar Ispell helyesírási szótár
+LANG hu_HU
+HOME http://magyarispell.sourceforge.net
+VERSION Magyar 1.6
 SET UTF-8
-KEY ĂśĂźĂł|qwertzuiopĹĂş|asdfghjklĂŠĂĄĹą|Ă­yxcvbnm        
-TRY Ă­ĂłĂştaeslzĂĄnorhgkiĂŠdmyĹpvĂśbucfjĂźĹąxwq-.Ă         
-COMPOUNDMIN 1     
-COMPOUNDFLAG Y     
-COMPOUNDFORBIDFLAG %     
-COMPOUNDPERMITFLAG @     
-COMPOUNDSYLLABLE 6 aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą       
-SYLLABLENUM klmc     
-     
-NOSUGGEST =     
-KEEPCASE ?     
-#COMPOUND 1     
-#COMPOUND ,-,     
-     
-# obsoloted     
-COMPOUNDFIRST v     
-COMPOUNDLAST x     
-ONLYROOT u     
-#COMPOUNDWORD 2 y     
-HU_KOTOHANGZO ?     
-     
-# new (> Hunspell-1.0-RC2)     
-COMPOUNDBEGIN v     
-COMPOUNDEND x     
-NEEDAFFIX u     
-ONLYINCOMPOUND |     
-# 2. parameter only for back compatibility:     
-COMPOUNDWORDMAX 2 y     
-COMPOUNDROOT y     
-     
-CHECKCOMPOUNDDUP         
-CHECKCOMPOUNDTRIPLE         
-CHECKCOMPOUNDREP         
-CHECKCOMPOUNDCASE         
-CHECKCOMPOUNDPATTERN 7        
-CHECKCOMPOUNDPATTERN ccs cs       
-CHECKCOMPOUNDPATTERN ggy gy       
-CHECKCOMPOUNDPATTERN lly ly       
-CHECKCOMPOUNDPATTERN nny ny       
-CHECKCOMPOUNDPATTERN ssz sz       
-CHECKCOMPOUNDPATTERN tty ty       
-CHECKCOMPOUNDPATTERN sz szerĹą       
-     
-FORBIDDENWORD w     
-WORDCHARS -.â°Â§%Â°0123456789ââŹ'&apos;ďŹďŹďŹďŹďŹ     
-     
-SUBSTANDARD &     
-GENERATE (     
-LEMMA_PRESENT )     
-     
-MAP 5        
-MAP aĂĄ        
-MAP eĂŠ        
-MAP iĂ­        
-MAP oĂłĂśĹ        
-MAP uĂşĂźĹą        
-     
-BREAK 4     
-BREAK â     
-BREAK -     
-BREAK ^-     
-BREAK -$     
-     
-# számok     
-# 0. osztály: számjegyek     
-# 1. osztály: számjegyek, %, ezrelékjel, °, §, számjegyek + . és toldalékolt alakjaik     
-# 2. osztály: tizedesvessző     
-     
-COMPOUNDRULE 2     
-COMPOUNDRULE 0*1     
-COMPOUNDRULE 00*20*1     
-     
-# f-ligatúrák     
-     
-ICONV 5     
-ICONV ďŹ ffi     
-ICONV ďŹ ffl     
-ICONV ďŹ ff     
-ICONV ďŹ fi     
-ICONV ďŹ fl     
-     
-# replacenment table for     
-# - multicharacter suggestions     
-# - well-sorted suggestions     
-     
-REP 125        
-REP Ă­ i       
-REP i Ă­       
-REP Ăł o       
-REP o Ăł       
-REP o Ĺ       
-REP Ăş u       
-REP u Ăş       
-REP u Ĺą       
-REP Ĺą Ăź       
-REP Ăź Ĺą       
-REP j ly       
-REP ly j       
-REP Ĺ Ăś       
-REP a Ă¤ # Handel->HĂ¤ndel     
-REP n Ĺ # Poznan->PoznaĹ     
-REP S Ĺ  # Skoda->Ĺ koda     
-REP s ĹĄ # skodĂĄs->ĹĄkodĂĄs     
-REP r Ĺ # DvorĂĄk->DvoĹĂĄk     
-REP ra ĹĂĄ # Dvorak->DvoĹĂĄk     
-REP l Ĺ # zloty->zĹoty     
-REP LĂłdz ĹĂłdĹş # LĂłdz ->ĹĂłdĹş    
-REP lĂłdz ĹĂłdĹş # lĂłdzi ->ĹĂłdĹşi    
-REP Lodz ĹĂłdĹş # Lodz ->ĹĂłdĹş    
-REP lodz ĹĂłdĹş # lodzi ->ĹĂłdĹşi    
-REP oliere oliĂ¨re # MoliĂ¨re     
-REP AngstrĂśm ĂngstrĂśm # ĂngstrĂśm     
-REP angstrĂśm ĂĽngstrĂśm # ĂĽngstrĂśm     
-REP Ă Ĺ # hullĂĄmvonalas O    
-REP Ăľ Ĺ # hullĂĄmvonalas o    
-REP Ă Ĺ° # kalapos U    
-REP Ăť Ĺą # kalapos u    
-REP - â       
-REP jj lly       
-REP jj llj       
-REP lly jj       
-REP lly lyj # follyon ->    
-REP ggy gyj       
-REP gyj ggy       
-REP ggy dj       
-REP gy dj       
-REP nny nyj       
-REP nny nj       
-REP tty tyj       
-REP tty tj       
-REP ck dzk # Ăłckodik ->    
-REP cc tsz # maracc->maratsz     
-REP cc dsz # maracc->maradsz     
-REP cc gysz       
-REP cs ts       
-REP cs ds       
-REP ccs ts       
-REP ccs ds       
-REP ccs gys       
-REP g kd # csug->csukd, bĂśg->bĂśkd    
-REP Ăśss Ĺs # erĂśssen->erĹsen, elĂśsszĂśr->elĹszĂśr    
-REP Ăśll Ĺl # szĂśllĹ->szĹlĹ, elĂślle->elĹle    
-REP Ăźtt Ĺąt # hĂźttĹ->hĹątĹ     
-REP ijj Ă­j # dijjĂĄt->dĂ­jĂĄt, hijjĂĄn->hĂ­jĂĄn    
-REP x ksz # box->boksz     
-REP ksz x # falanksz->falanx     
-REP xx xsz # kĂłdexxel->kĂłdexszel     
-REP xx kssz # boxxal->boksszal     
-REP x xsz # kĂłdexel->kĂłdexszel     
-REP x kssz # boxal->boksszal     
-REP sz c # licensz->licenc     
-REP szt cet # licenszt->licencet     
-REP ssz cc # licensszel->licenccel     
-REP jl lj # tejles->teljes, ĂŠjlen->ĂŠljen    
-REP gg g # heggeszt->hegeszt     
-REP file fĂĄjl # file->fĂĄjl     
-REP file- fĂĄjl # file-lal->fĂĄjllal     
-REP floppy flopi # floppy->flopi     
-REP bĂĄjt byte # bĂĄjt->byte     
-REP bĂĄjt byte- # bĂĄjtos->byte-os     
-REP chh chcs # MadĂĄchhal->MadĂĄchcsal     
-REP ll l # vĂĄllfaj->vĂĄlfaj     
-REP ny nny # menyorszĂĄg->mennyorszĂĄg     
-REP nny ny # mennyhal->menyhal     
-REP ivess Ă­ves # szivessen->szĂ­vesen     
-REP -cel -szel # AIDS-cel->AIDS-szel     
-REP -cĂŠ -szĂŠ # AIDS-cĂŠ->AIDS-szĂŠ     
-REP ĹrĂś ĂślrĹ # elĹrĂśl->elĂślrĹl     
-REP Ĺr Ăślr # elĹrĹl->elĂślrĹl     
-REP Ăślr Ĺr # elĂślre->elĹre     
-REP egyenlĹre egyelĹre       
-REP kĂĄbĂŠ kb.       
-REP ss ss-s # Barossal->Baross-sal     
-REP ss ss-sz # Gaussal->Gauss-szal     
-REP ssz ss-sz # Gausszal->Gauss-szal     
-REP ll ll-l # BĂśllel->BĂśll-lel     
-REP nn nn-n # Mannal->Mann-nal     
-REP mm mm-m # Grimmel->Grimm-mel     
-REP tt tt-t # Beckettel->Beckett-tel     
-REP Nin NiĂą       
-REP Sao SĂŁo       
-REP sĂĄrm charme       
-REP sĂĄrm charme-       
-REP exo exĂ¸ # Nexo ->    
-REP Babes BabeČ       
-REP BabeĹ BabeČ       
-REP satĂśbbi s_a_tĂśbbi       
-REP helysĂŠg helyisĂŠg       
-REP kĂŠz kĂŠsz       
-REP kĂśd kĂśt       
-REP ĂĄfa- ĂĄfa       
-REP s ss # felelĹs+ĂŠg ->    
-REP csakazĂŠrtis csak_azĂŠrt_is       
-REP fĹ fĹ_       
-REP papĂ­r papĂ­r_       
-REP kĂśzben _kĂśzben       
-REP vĂŠg _vĂŠg       
-REP be be_       
-REP mĂłdra _mĂłdra       
-REP kor _kor       
-REP szer _szer       
-REP pinyin pinjin       
-REP alak _alak       
-REP pĂĄr pĂĄr_       
-REP asszony _asszony       
-REP Ăşr _Ăşr       
-REP urak _urak       
-REP nimbusz imbusz       
-REP asszem azt_hiszem       
-REP oregĂĄnĂł szurokfĹą       
-REP Îź Âľ       
-     
-SFX ˙ Y 3 
+KEY ĂśĂźĂł|qwertzuiopĹĂş|asdfghjklĂŠĂĄĹą|Ă­yxcvbnm
+TRY Ă­ĂłĂştaeslzĂĄnorhgkiĂŠdmyĹpvĂśbucfjĂźĹąxwq-.Ă 
+COMPOUNDMIN 1
+COMPOUNDFLAG Y
+COMPOUNDFORBIDFLAG %
+COMPOUNDPERMITFLAG @
+COMPOUNDSYLLABLE 6 aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą
+SYLLABLENUM klmc
+
+NOSUGGEST =
+KEEPCASE ?
+#COMPOUND 1
+#COMPOUND ,-,
+
+# obsoloted
+COMPOUNDFIRST v
+COMPOUNDLAST x
+ONLYROOT u
+#COMPOUNDWORD 2 y
+HU_KOTOHANGZO ?
+
+# new (> Hunspell-1.0-RC2)
+COMPOUNDBEGIN v
+COMPOUNDEND x
+NEEDAFFIX u
+ONLYINCOMPOUND |
+# 2. parameter only for back compatibility:
+COMPOUNDWORDMAX 2 y
+COMPOUNDROOT y
+
+CHECKCOMPOUNDDUP
+CHECKCOMPOUNDTRIPLE
+CHECKCOMPOUNDREP
+CHECKCOMPOUNDCASE
+CHECKCOMPOUNDPATTERN 7
+CHECKCOMPOUNDPATTERN ccs cs
+CHECKCOMPOUNDPATTERN ggy gy
+CHECKCOMPOUNDPATTERN lly ly
+CHECKCOMPOUNDPATTERN nny ny
+CHECKCOMPOUNDPATTERN ssz sz
+CHECKCOMPOUNDPATTERN tty ty
+CHECKCOMPOUNDPATTERN sz szerĹą
+
+FORBIDDENWORD w
+WORDCHARS -.â°Â§%Â°0123456789ââŹ'&apos;ďŹďŹďŹďŹďŹ
+
+SUBSTANDARD &
+GENERATE (
+LEMMA_PRESENT )
+
+MAP 5
+MAP aĂĄ
+MAP eĂŠ
+MAP iĂ­
+MAP oĂłĂśĹ
+MAP uĂşĂźĹą
+
+BREAK 4
+BREAK â
+BREAK -
+BREAK ^-
+BREAK -$
+
+# számok
+# 0. osztály: számjegyek
+# 1. osztály: számjegyek, %, ezrelékjel, °, §, számjegyek + . és toldalékolt alakjaik
+# 2. osztály: tizedesvessző
+
+COMPOUNDRULE 2
+COMPOUNDRULE 0*1
+COMPOUNDRULE 00*20*1
+
+# f-ligatúrák
+
+ICONV 5
+ICONV ďŹ ffi
+ICONV ďŹ ffl
+ICONV ďŹ ff
+ICONV ďŹ fi
+ICONV ďŹ fl
+
+# replacenment table for
+# - multicharacter suggestions
+# - well-sorted suggestions
+
+REP 125
+REP Ă­ i
+REP i Ă­
+REP Ăł o
+REP o Ăł
+REP o Ĺ
+REP Ăş u
+REP u Ăş
+REP u Ĺą
+REP Ĺą Ăź
+REP Ăź Ĺą
+REP j ly
+REP ly j
+REP Ĺ Ăś
+REP a Ă¤ # Handel->HĂ¤ndel
+REP n Ĺ # Poznan->PoznaĹ
+REP S Ĺ  # Skoda->Ĺ koda
+REP s ĹĄ # skodĂĄs->ĹĄkodĂĄs
+REP r Ĺ # DvorĂĄk->DvoĹĂĄk
+REP ra ĹĂĄ # Dvorak->DvoĹĂĄk
+REP l Ĺ # zloty->zĹoty
+REP LĂłdz ĹĂłdĹş # LĂłdz ->ĹĂłdĹş
+REP lĂłdz ĹĂłdĹş # lĂłdzi ->ĹĂłdĹşi
+REP Lodz ĹĂłdĹş # Lodz ->ĹĂłdĹş
+REP lodz ĹĂłdĹş # lodzi ->ĹĂłdĹşi
+REP oliere oliĂ¨re # MoliĂ¨re
+REP AngstrĂśm ĂngstrĂśm # ĂngstrĂśm
+REP angstrĂśm ĂĽngstrĂśm # ĂĽngstrĂśm
+REP Ă Ĺ # hullĂĄmvonalas O
+REP Ăľ Ĺ # hullĂĄmvonalas o
+REP Ă Ĺ° # kalapos U
+REP Ăť Ĺą # kalapos u
+REP - â
+REP jj lly
+REP jj llj
+REP lly jj
+REP lly lyj # follyon ->
+REP ggy gyj
+REP gyj ggy
+REP ggy dj
+REP gy dj
+REP nny nyj
+REP nny nj
+REP tty tyj
+REP tty tj
+REP ck dzk # Ăłckodik ->
+REP cc tsz # maracc->maratsz
+REP cc dsz # maracc->maradsz
+REP cc gysz
+REP cs ts
+REP cs ds
+REP ccs ts
+REP ccs ds
+REP ccs gys
+REP g kd # csug->csukd, bĂśg->bĂśkd
+REP Ăśss Ĺs # erĂśssen->erĹsen, elĂśsszĂśr->elĹszĂśr
+REP Ăśll Ĺl # szĂśllĹ->szĹlĹ, elĂślle->elĹle
+REP Ăźtt Ĺąt # hĂźttĹ->hĹątĹ
+REP ijj Ă­j # dijjĂĄt->dĂ­jĂĄt, hijjĂĄn->hĂ­jĂĄn
+REP x ksz # box->boksz
+REP ksz x # falanksz->falanx
+REP xx xsz # kĂłdexxel->kĂłdexszel
+REP xx kssz # boxxal->boksszal
+REP x xsz # kĂłdexel->kĂłdexszel
+REP x kssz # boxal->boksszal
+REP sz c # licensz->licenc
+REP szt cet # licenszt->licencet
+REP ssz cc # licensszel->licenccel
+REP jl lj # tejles->teljes, ĂŠjlen->ĂŠljen
+REP gg g # heggeszt->hegeszt
+REP file fĂĄjl # file->fĂĄjl
+REP file- fĂĄjl # file-lal->fĂĄjllal
+REP floppy flopi # floppy->flopi
+REP bĂĄjt byte # bĂĄjt->byte
+REP bĂĄjt byte- # bĂĄjtos->byte-os
+REP chh chcs # MadĂĄchhal->MadĂĄchcsal
+REP ll l # vĂĄllfaj->vĂĄlfaj
+REP ny nny # menyorszĂĄg->mennyorszĂĄg
+REP nny ny # mennyhal->menyhal
+REP ivess Ă­ves # szivessen->szĂ­vesen
+REP -cel -szel # AIDS-cel->AIDS-szel
+REP -cĂŠ -szĂŠ # AIDS-cĂŠ->AIDS-szĂŠ
+REP ĹrĂś ĂślrĹ # elĹrĂśl->elĂślrĹl
+REP Ĺr Ăślr # elĹrĹl->elĂślrĹl
+REP Ăślr Ĺr # elĂślre->elĹre
+REP egyenlĹre egyelĹre
+REP kĂĄbĂŠ kb.
+REP ss ss-s # Barossal->Baross-sal
+REP ss ss-sz # Gaussal->Gauss-szal
+REP ssz ss-sz # Gausszal->Gauss-szal
+REP ll ll-l # BĂśllel->BĂśll-lel
+REP nn nn-n # Mannal->Mann-nal
+REP mm mm-m # Grimmel->Grimm-mel
+REP tt tt-t # Beckettel->Beckett-tel
+REP Nin NiĂą
+REP Sao SĂŁo
+REP sĂĄrm charme
+REP sĂĄrm charme-
+REP exo exĂ¸ # Nexo ->
+REP Babes BabeČ
+REP BabeĹ BabeČ
+REP satĂśbbi s_a_tĂśbbi
+REP helysĂŠg helyisĂŠg
+REP kĂŠz kĂŠsz
+REP kĂśd kĂśt
+REP ĂĄfa- ĂĄfa
+REP s ss # felelĹs+ĂŠg ->
+REP csakazĂŠrtis csak_azĂŠrt_is
+REP fĹ fĹ_
+REP papĂ­r papĂ­r_
+REP kĂśzben _kĂśzben
+REP vĂŠg _vĂŠg
+REP be be_
+REP mĂłdra _mĂłdra
+REP kor _kor
+REP szer _szer
+REP pinyin pinjin
+REP alak _alak
+REP pĂĄr pĂĄr_
+REP asszony _asszony
+REP Ăşr _Ăşr
+REP urak _urak
+REP nimbusz imbusz
+REP asszem azt_hiszem
+REP oregĂĄnĂł szurokfĹą
+REP Îź Âľ
+
+SFX ˙ Y 3
 SFX ˙ Ăś Ĺs/1108 Ăś 20973
 SFX ˙ 0 Ăśs/1108 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 20973
 SFX ˙ 0 s/1108 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 20973
-SFX ó Y 356 
+SFX ó Y 356
 SFX ó Ăśk ĂśzĂśttsĂŠg/1109 Ăśk 20974
 SFX ó Ăśk ĂśzĂśtt/1110 Ăśk 20975
 SFX ó Ăśk ĂśzĂśtt/400 Ăśk 20976
@@ -622,7 +622,7 @@ SFX ó ak asodgatott/400 ak 21008
 SFX ó ak asodgathatott/400 ak 21016
 SFX ó ak asodgathat/1138 ak 21017
 SFX ó ak asodgat/1138 ak 21018
-SFX í Y 267 
+SFX í Y 267
 SFX í Ăś ĹzĂśttsĂŠg/1109 Ăś 20974
 SFX í Ăś ĹzĂśtt/1110 Ăś 20975
 SFX í Ăś ĹzĂśtt/400 Ăś 20976
@@ -890,7 +890,7 @@ SFX í 0 sĂ­tetlensĂŠg/1123 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21057
 SFX í 0 sĂ­tetlen/1115 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21058
 SFX í 0 sĂ­tendĹ/1126 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21059
 SFX í 0 sĂ­t/1117 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21060
-SFX é Y 356 
+SFX é Y 356
 SFX é e ĂŠzĹ/1111 [^ae]e 20977
 SFX é e ĂŠzĂŠsileg [^ae]e 20978
 SFX é e ĂŠzĂŠsi/1112 [^ae]e 20979
@@ -1247,8 +1247,8 @@ SFX é 0 esedget/1121 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21018
 SFX é 0 esedettsĂŠg/1109 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21006
 SFX é 0 esedett/1115 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21007
 SFX é 0 esedett/400 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21008
-     
-SFX č Y 7 
+
+SFX č Y 7
 SFX č Ăś Ĺnyi/1144 Ăś 21061
 SFX č y nyi/1144 [^n]ny 21061
 SFX č ny nyi/1144 nny 21061
@@ -1256,8 +1256,8 @@ SFX č e ĂŠnyi/1144 [^ae]e 21061
 SFX č 0 nyi/1144 [ae]e 21061
 SFX č 0 nyi/1144 [^n]y 21061
 SFX č 0 nyi/1144 [^eĂśy] 21061
-     
-SFX ç Y 7 
+
+SFX ç Y 7
 SFX ç y nyi/1145 [^n]ny 21061
 SFX ç o Ăłnyi/1145 [^o]o 21061
 SFX ç ny nyi/1145 nny 21061
@@ -1265,37 +1265,37 @@ SFX ç a ĂĄnyi/1145 a 21061
 SFX ç 0 nyi/1145 oo 21061
 SFX ç 0 nyi/1145 [^n]y 21061
 SFX ç 0 nyi/1145 [^aoy] 21061
-     
-SFX ć Y 4 
+
+SFX ć Y 4
 SFX ć Ăśk Ăśs/1146 Ăśk 20973
 SFX ć ok os/1147 ok 20973
 SFX ć ek es/1148 ek 20973
 SFX ć ak as/1147 ak 20973
-     
-SFX ĺ Y 3 
+
+SFX ĺ Y 3
 SFX ĺ Ăś Ĺs/1146 Ăś 20973
 SFX ĺ 0 Ăśs/1146 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 20973
 SFX ĺ 0 s/1146 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 20973
-     
-SFX ä Y 4 
+
+SFX ä Y 4
 SFX ä e ĂŠs/1148 [^ae]e 20973
 SFX ä 0 s/1148 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 20973
 SFX ä 0 s/1148 [ae]e 20973
 SFX ä 0 es/1148 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 20973
-     
-SFX ă Y 5 
+
+SFX ă Y 5
 SFX ă o Ăłs/1147 [^o]o 20973
 SFX ă a ĂĄs/1147 a 20973
 SFX ă 0 s/1147 oo 20973
 SFX ă 0 s/1147 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 20973
 SFX ă 0 os/1147 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 20973
-     
-SFX â Y 4 
+
+SFX â Y 4
 SFX â Ăśk Ăśs/1108 Ăśk 20973
 SFX â ok os/1149 ok 20973
 SFX â ek es/1150 ek 20973
 SFX â ak as/1149 ak 20973
-SFX á Y 445 
+SFX á Y 445
 SFX á o ĂłzĂł/1129 [^o]o 20977
 SFX á o ĂłzĂĄsilag [^o]o 20978
 SFX á o ĂłzĂĄsi/1130 [^o]o 20979
@@ -1741,21 +1741,21 @@ SFX á 0 osodgatott/400 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21008
 SFX á 0 osodgathatott/400 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21016
 SFX á 0 osodgathat/1138 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21017
 SFX á 0 osodgat/1138 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21018
-     
-SFX ŕ Y 4 
+
+SFX ŕ Y 4
 SFX ŕ e ĂŠs/1150 [^ae]e 20973
 SFX ŕ 0 s/1150 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 20973
 SFX ŕ 0 s/1150 [ae]e 20973
 SFX ŕ 0 es/1150 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 20973
-     
-SFX ß Y 5 
+
+SFX ß Y 5
 SFX ß o Ăłs/1149 [^o]o 20973
 SFX ß a ĂĄs/1149 a 20973
 SFX ß 0 s/1149 oo 20973
 SFX ß 0 s/1149 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 20973
 SFX ß 0 os/1149 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 20973
-     
-SFX Ţ Y 8 
+
+SFX Ţ Y 8
 SFX Ţ Ăś ĹvĂŠ Ăś 21062
 SFX Ţ Ăś Ĺvel Ăś 21063
 SFX Ţ Ăś ĹhĂśz Ăś 21064
@@ -1764,7 +1764,7 @@ SFX Ţ e ĂŠvel e 21063
 SFX Ţ 0 vĂŠ [-ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąyĂ Ă¸] 21062
 SFX Ţ 0 vel [-ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąyĂ Ă¸] 21063
 SFX Ţ 0 hĂśz [^aeoĂś] 21064
-SFX Ý Y 166 
+SFX Ý Y 166
 SFX Ý Ăś ĹhĂśz Ăś 21064
 SFX Ý zs dzsĂŠ dzs 21062
 SFX Ý zs dzsel dzs 21063
@@ -1931,7 +1931,7 @@ SFX Ý 0 bĂŠ [^b]b 21062
 SFX Ý 0 bĂŠ B- 21062
 SFX Ý 0 bel [^b]b 21063
 SFX Ý 0 bel B- 21063
-SFX Ü Y 12 
+SFX Ü Y 12
 SFX Ü z szerte [^s]sz 21065
 SFX Ü z szeri/1151 [^s]sz 21066
 SFX Ü z szeres/1152 [^s]sz 21067
@@ -1944,7 +1944,7 @@ SFX Ü 0 szeres/1152 [^z] 21067
 SFX Ü 0 szeres/1152 [^s]z 21067
 SFX Ü 0 szer [^z] 21068
 SFX Ü 0 szer [^s]z 21068
-SFX Ű Y 12 
+SFX Ű Y 12
 SFX Ű z szĂśrĂśs/1153 [^s]sz 21067
 SFX Ű z szĂśrte [^s]sz 21065
 SFX Ű z szĂśri/1154 [^s]sz 21066
@@ -1957,7 +1957,7 @@ SFX Ű 0 szĂśri/1154 [^z] 21066
 SFX Ű 0 szĂśri/1154 [^s]z 21066
 SFX Ű 0 szĂśr [^z] 21068
 SFX Ű 0 szĂśr [^s]z 21068
-SFX Ú Y 12 
+SFX Ú Y 12
 SFX Ú z szorta [^s]sz 21065
 SFX Ú z szoros/1155 [^s]sz 21067
 SFX Ú z szori/1156 [^s]sz 21066
@@ -1970,10 +1970,10 @@ SFX Ú 0 szori/1156 [^z] 21066
 SFX Ú 0 szori/1156 [^s]z 21066
 SFX Ú 0 szor [^z] 21068
 SFX Ú 0 szor [^s]z 21068
-     
-SFX Ů Y 1 
+
+SFX Ů Y 1
 SFX Ů 0 at [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 21069
-SFX Ř Y 22 
+SFX Ř Y 22
 SFX Ř Ăś Ĺt Ăś 21069
 SFX Ř 0 Ăśt tsch 21069
 SFX Ř 0 Ăśt gy 21069
@@ -1996,7 +1996,7 @@ SFX Ř 0 t [^ckprtz]s 21069
 SFX Ř 0 t [^cjrst]z 21069
 SFX Ř 0 t [^bkp]sz 21069
 SFX Ř 0 t - 21069
-SFX × Y 27 
+SFX × Y 27
 SFX × e ĂŠt [^ae]e 21069
 SFX × 0 t sh 21069
 SFX × 0 t [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹąlnrxĂ Ă¸] 21069
@@ -2024,7 +2024,7 @@ SFX × 0 et [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąjlnrsyzĂ Ă¸] 21069
 SFX × 0 et [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą]zs 21069
 SFX × 0 et [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą][^g]y 21069
 SFX × 0 et - 21069
-SFX Ö Y 21 
+SFX Ö Y 21
 SFX Ö 0 t sh 21069
 SFX Ö 0 t [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹąlnrxĂ Ă¸] 21069
 SFX Ö 0 t [aĂĄeĂŠiĂ­ĂłĂśĹuĂşĂźĹą]j 21069
@@ -2046,36 +2046,36 @@ SFX Ö 0 ot [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąjlnrsyz] 21069
 SFX Ö 0 ot [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą]zs 21069
 SFX Ö 0 ot [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą][^g]y 21069
 SFX Ö 0 ot - 21069
-     
-SFX Ő Y 6 
+
+SFX Ő Y 6
 SFX Ő Ăś Ĺt Ăś 21069
 SFX Ő o Ăłt [^o]o 21069
 SFX Ő e ĂŠt e 21069
 SFX Ő a ĂĄt a 21069
 SFX Ő 0 t oo 21069
 SFX Ő 0 t [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąhy-Ă Ă¸] 21069
-     
-SFX Ô Y 3 
+
+SFX Ô Y 3
 SFX Ô Ăś Ĺn Ăś 21070
 SFX Ô 0 Ăśn [^aĂĄeĂŠiĂ­ĂłĹuĂşĂźĹą] 21070
 SFX Ô 0 n [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹą] 21070
-     
-SFX Ó Y 4 
+
+SFX Ó Y 4
 SFX Ó e ĂŠn [^ae]e 21070
 SFX Ó 0 n [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąĂ Ă¸] 21070
 SFX Ó 0 n [ae]e 21070
 SFX Ó 0 en [^aĂĄeĂŠiĂ­ĂłĹuĂşĂźĹąĂ Ă¸] 21070
-     
-SFX Ň Y 5 
+
+SFX Ň Y 5
 SFX Ň o Ăłn [^o]o 21070
 SFX Ň a ĂĄn a 21070
 SFX Ň 0 on [^aĂĄeĂŠiĂ­oĂłĹuĂşĂźĹąĂ Ă¸] 21070
 SFX Ň 0 n oo 21070
 SFX Ň 0 n [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąĂ Ă¸] 21070
-     
-SFX Ń Y 1 
+
+SFX Ń Y 1
 SFX Ń 0 n [y-] 21070
-SFX Đ Y 11 
+SFX Đ Y 11
 SFX Đ Ăś ĹvĂŠ Ăś 21062
 SFX Đ Ăś Ĺvel Ăś 21063
 SFX Đ e ĂŠvĂŠ [^ae]e 21062
@@ -2087,7 +2087,7 @@ SFX Đ 0 vel [ae]e 21063
 SFX Đ 0 vel [-ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąyĂ Ă¸] 21063
 SFX Đ 0 hez [ae]e 21064
 SFX Đ 0 hez [^aeoĂś] 21064
-SFX Ď Y 12 
+SFX Ď Y 12
 SFX Ď o ĂłvĂĄ [^o]o 21062
 SFX Ď o Ăłval [^o]o 21063
 SFX Ď o Ăłhoz [^o]o 21064
@@ -2100,7 +2100,7 @@ SFX Ď 0 val oo 21063
 SFX Ď 0 val [-ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąyĂ Ă¸] 21063
 SFX Ď 0 hoz oo 21064
 SFX Ď 0 hoz [^aeoĂś] 21064
-SFX Î Y 10 
+SFX Î Y 10
 SFX Î o ĂłcskĂĄs/1157 [^o]o 21071
 SFX Î o Ăłcska/1158 [^o]o 21072
 SFX Î a ĂĄcskĂĄs/1157 a 21071
@@ -2111,8 +2111,8 @@ SFX Î 0 cska/1158 oo 21072
 SFX Î 0 cska/1158 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21072
 SFX Î 0 acskĂĄs/1157 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21071
 SFX Î 0 acska/1158 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21072
-     
-SFX Í Y 8 
+
+SFX Í Y 8
 SFX Í Ăśk ĂścskĂŠs/1159 Ăśk 21071
 SFX Í Ăśk Ăścske/1160 Ăśk 21072
 SFX Í ok ocskĂĄs/1157 ok 21071
@@ -2121,16 +2121,16 @@ SFX Í ek ecskĂŠs/1159 ek 21071
 SFX Í ek ecske/1160 ek 21072
 SFX Í ak acskĂĄs/1157 ak 21071
 SFX Í ak acska/1158 ak 21072
-     
-SFX Ě Y 6 
+
+SFX Ě Y 6
 SFX Ě Ăś ĹcskĂŠs/1159 Ăś 21071
 SFX Ě Ăś Ĺcske/1160 Ăś 21072
 SFX Ě 0 ĂścskĂŠs/1159 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21071
 SFX Ě 0 Ăścske/1160 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21072
 SFX Ě 0 cskĂŠs/1159 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21071
 SFX Ě 0 cske/1160 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21072
-     
-SFX Ë Y 8 
+
+SFX Ë Y 8
 SFX Ë e ĂŠcskĂŠs/1159 [^ae]e 21071
 SFX Ë e ĂŠcske/1160 [^ae]e 21072
 SFX Ë 0 ecskĂŠs/1159 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21071
@@ -2139,7 +2139,7 @@ SFX Ë 0 cskĂŠs/1159 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21071
 SFX Ë 0 cskĂŠs/1159 [ae]e 21071
 SFX Ë 0 cske/1160 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21072
 SFX Ë 0 cske/1160 [ae]e 21072
-SFX Ę Y 10 
+SFX Ę Y 10
 SFX Ę o ĂłcskĂĄs/1157 [^o]o 21071
 SFX Ę o Ăłcska/1158 [^o]o 21072
 SFX Ę a ĂĄcskĂĄs/1157 a 21071
@@ -2150,7 +2150,7 @@ SFX Ę 0 cskĂĄs/1157 oo 21071
 SFX Ę 0 cskĂĄs/1157 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21071
 SFX Ę 0 cska/1158 oo 21072
 SFX Ę 0 cska/1158 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21072
-SFX É Y 12 
+SFX É Y 12
 SFX É Ăśk isĂŠg/1161 Ăśk 21073
 SFX É Ăśk ileg Ăśk 21074
 SFX É Ăśk i/1162 Ăśk 21075
@@ -2163,16 +2163,16 @@ SFX É ek i/1162 ek 21075
 SFX É ak isĂĄg/1163 ak 21073
 SFX É ak ilag ak 21074
 SFX É ak i/1164 ak 21075
-     
-SFX Č Y 6 
+
+SFX Č Y 6
 SFX Č Ăś ĹisĂŠg/1161 Ăś 21073
 SFX Č Ăś Ĺileg Ăś 21074
 SFX Č Ăś Ĺi/1162 Ăś 21075
 SFX Č 0 isĂŠg/1161 [^Ăśi] 21073
 SFX Č 0 ileg [^Ăśi] 21074
 SFX Č 0 i/1162 [^Ăśi] 21075
-     
-SFX Ç Y 9 
+
+SFX Ç Y 9
 SFX Ç o ĂłisĂĄg/1163 [^o]o 21073
 SFX Ç o Ăłilag [^o]o 21074
 SFX Ç o Ăłi/1164 [^o]o 21075
@@ -2182,7 +2182,7 @@ SFX Ç 0 ilag oo 21074
 SFX Ç 0 ilag [^oi] 21074
 SFX Ç 0 i/1164 oo 21075
 SFX Ç 0 i/1164 [^oi] 21075
-SFX Ć Y 12 
+SFX Ć Y 12
 SFX Ć Ăśk ĂśssĂŠgi/1165 Ăśk 21076
 SFX Ć Ăśk ĂśssĂŠg/1166 Ăśk 21076
 SFX Ć Ăśk Ăśs/1167 Ăśk 21077
@@ -2195,8 +2195,8 @@ SFX Ć ek es/1159 ek 21077
 SFX Ć ak assĂĄgi/1168 ak 21076
 SFX Ć ak assĂĄg/1169 ak 21076
 SFX Ć ak as/1157 ak 21077
-     
-SFX Ĺ Y 9 
+
+SFX Ĺ Y 9
 SFX Ĺ Ăś ĹssĂŠgi/1165 Ăś 21076
 SFX Ĺ Ăś ĹssĂŠg/1166 Ăś 21076
 SFX Ĺ Ăś Ĺs/1167 Ăś 21077
@@ -2206,7 +2206,7 @@ SFX Ĺ 0 Ăśs/1167 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21077
 SFX Ĺ 0 ssĂŠgi/1165 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21076
 SFX Ĺ 0 ssĂŠg/1166 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21076
 SFX Ĺ 0 s/1167 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21077
-SFX Ä Y 12 
+SFX Ä Y 12
 SFX Ä e ĂŠssĂŠgi/1170 [^ae]e 21076
 SFX Ä e ĂŠssĂŠg/1166 [^ae]e 21076
 SFX Ä e ĂŠs/1159 [^ae]e 21077
@@ -2219,7 +2219,7 @@ SFX Ä 0 s/1159 [ae]e 21077
 SFX Ä 0 essĂŠgi/1170 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21076
 SFX Ä 0 essĂŠg/1166 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21076
 SFX Ä 0 es/1159 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21077
-SFX Ă Y 15 
+SFX Ă Y 15
 SFX Ă o ĂłssĂĄgi/1168 [^o]o 21076
 SFX Ă o ĂłssĂĄg/1169 [^o]o 21076
 SFX Ă o Ăłs/1157 [^o]o 21077
@@ -2235,7 +2235,7 @@ SFX Ă 0 s/1157 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21077
 SFX Ă 0 ossĂĄgi/1168 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21076
 SFX Ă 0 ossĂĄg/1169 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21076
 SFX Ă 0 os/1157 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21077
-SFX Â Y 12 
+SFX Â Y 12
 SFX Â Ăśk ĂśssĂŠgi/1171 Ăśk 21078
 SFX Â Ăśk ĂśssĂŠg/1172 Ăśk 21076
 SFX Â Ăśk Ăśs/1173 Ăśk 21077
@@ -2248,8 +2248,8 @@ SFX Â ek es/1178 ek 21077
 SFX Â ak assĂĄgi/1174 ak 21078
 SFX Â ak assĂĄg/1175 ak 21076
 SFX Â ak as/1176 ak 21077
-     
-SFX Á Y 9 
+
+SFX Á Y 9
 SFX Á Ăś ĹssĂŠgi/1171 Ăś 21078
 SFX Á Ăś ĹssĂŠg/1172 Ăś 21076
 SFX Á Ăś Ĺs/1173 Ăś 21077
@@ -2259,7 +2259,7 @@ SFX Á 0 Ăśs/1173 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21077
 SFX Á 0 ssĂŠgi/1171 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21078
 SFX Á 0 ssĂŠg/1172 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21076
 SFX Á 0 s/1173 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21077
-SFX Ŕ Y 12 
+SFX Ŕ Y 12
 SFX Ŕ e ĂŠssĂŠgi/1177 [^ae]e 21078
 SFX Ŕ e ĂŠssĂŠg/1172 [^ae]e 21076
 SFX Ŕ e ĂŠs/1178 [^ae]e 21077
@@ -2272,7 +2272,7 @@ SFX Ŕ 0 s/1178 [ae]e 21077
 SFX Ŕ 0 essĂŠgi/1177 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21078
 SFX Ŕ 0 essĂŠg/1172 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21076
 SFX Ŕ 0 es/1178 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21077
-SFX ż Y 15 
+SFX ż Y 15
 SFX ż o ĂłssĂĄgi/1174 [^o]o 21078
 SFX ż o ĂłssĂĄg/1175 [^o]o 21076
 SFX ż o Ăłs/1176 [^o]o 21077
@@ -2288,7 +2288,7 @@ SFX ż 0 s/1176 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21077
 SFX ż 0 ossĂĄgi/1174 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21078
 SFX ż 0 ossĂĄg/1175 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21076
 SFX ż 0 os/1176 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21077
-SFX ž Y 12 
+SFX ž Y 12
 SFX ž Ăśk ĹąsĂŠgi/1179 Ăśk 21079
 SFX ž Ăśk ĹąsĂŠg/1180 Ăśk 21080
 SFX ž Ăśk Ĺą/1181 Ăśk 21081
@@ -2301,8 +2301,8 @@ SFX ž ek Ĺą/1181 ek 21081
 SFX ž ak ĂşsĂĄgi/1182 ak 21079
 SFX ž ak ĂşsĂĄg/1183 ak 21080
 SFX ž ak Ăş/1184 ak 21081
-     
-SFX ˝ Y 9 
+
+SFX ˝ Y 9
 SFX ˝ Ăś ĹjĹąsĂŠgi/1179 Ăś 21079
 SFX ˝ Ăś ĹjĹąsĂŠg/1180 Ăś 21080
 SFX ˝ Ăś ĹjĹą/1181 Ăś 21081
@@ -2312,7 +2312,7 @@ SFX ˝ 0 Ĺą/1181 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21081
 SFX ˝ 0 jĹąsĂŠgi/1179 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21079
 SFX ˝ 0 jĹąsĂŠg/1180 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21080
 SFX ˝ 0 jĹą/1181 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21081
-SFX ź Y 12 
+SFX ź Y 12
 SFX ź e jĂŠĹąsĂŠgi/1179 [^ae]e 21079
 SFX ź e jĂŠĹąsĂŠg/1180 [^ae]e 21080
 SFX ź e jĂŠĹą/1181 [^ae]e 21081
@@ -2325,7 +2325,7 @@ SFX ź 0 Ĺą/1181 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21081
 SFX ź 0 jĹąsĂŠgi/1179 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21079
 SFX ź 0 jĹąsĂŠg/1180 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21080
 SFX ź 0 jĹą/1181 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21081
-SFX ť Y 15 
+SFX ť Y 15
 SFX ť o ĂłjĂşsĂĄgi/1182 [^o]o 21079
 SFX ť o ĂłjĂşsĂĄg/1183 [^o]o 21080
 SFX ť o ĂłjĂş/1184 [^o]o 21081
@@ -2341,7 +2341,7 @@ SFX ť 0 Ăş/1184 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21081
 SFX ť 0 jĂşsĂĄgi/1182 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21079
 SFX ť 0 jĂşsĂĄg/1183 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21080
 SFX ť 0 jĂş/1184 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21081
-SFX ş Y 12 
+SFX ş Y 12
 SFX ş Ăśk ĹąsĂŠgi/1185 Ăśk 21079
 SFX ş Ăśk ĹąsĂŠg/1186 Ăśk 21080
 SFX ş Ăśk Ĺą/1187 Ăśk 21081
@@ -2354,8 +2354,8 @@ SFX ş ek Ĺą/1187 ek 21081
 SFX ş ak ĂşsĂĄgi/1188 ak 21079
 SFX ş ak ĂşsĂĄg/1189 ak 21080
 SFX ş ak Ăş/1190 ak 21081
-     
-SFX š Y 9 
+
+SFX š Y 9
 SFX š Ăś ĹjĹąsĂŠgi/1185 Ăś 21079
 SFX š Ăś ĹjĹąsĂŠg/1186 Ăś 21080
 SFX š Ăś ĹjĹą/1187 Ăś 21081
@@ -2365,7 +2365,7 @@ SFX š 0 Ĺą/1187 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21081
 SFX š 0 jĹąsĂŠgi/1185 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21079
 SFX š 0 jĹąsĂŠg/1186 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21080
 SFX š 0 jĹą/1187 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21081
-SFX ¸ Y 12 
+SFX ¸ Y 12
 SFX ¸ e ĂŠjĹąsĂŠgi/1185 [^ae]e 21079
 SFX ¸ e ĂŠjĹąsĂŠg/1186 [^ae]e 21080
 SFX ¸ e ĂŠjĹą/1187 [^ae]e 21081
@@ -2378,7 +2378,7 @@ SFX ¸ 0 Ĺą/1187 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21081
 SFX ¸ 0 jĹąsĂŠgi/1185 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21079
 SFX ¸ 0 jĹąsĂŠg/1186 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21080
 SFX ¸ 0 jĹą/1187 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹą-] 21081
-SFX ˇ Y 15 
+SFX ˇ Y 15
 SFX ˇ o ĂłjĂşsĂĄgi/1188 [^o]o 21079
 SFX ˇ o ĂłjĂşsĂĄg/1189 [^o]o 21080
 SFX ˇ o ĂłjĂş/1190 [^o]o 21081
@@ -2394,7 +2394,7 @@ SFX ˇ 0 jĂşsĂĄg/1189 oo 21080
 SFX ˇ 0 jĂşsĂĄg/1189 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21080
 SFX ˇ 0 jĂş/1190 oo 21081
 SFX ˇ 0 jĂş/1190 [ĂĄĂŠiĂ­ĂłĂśĹuĂşĂźĹą-] 21081
-SFX ś Y 18 
+SFX ś Y 18
 SFX ś Ăś ĹisĂŠg/1191 Ăś 21073
 SFX ś Ăś ĹinĂŠ/1192 Ăś 21082
 SFX ś Ăś Ĺi/1193 Ăś 21075
@@ -2413,7 +2413,7 @@ SFX ś ek ki/1193 telek 21075
 SFX ś 0 isĂŠg/1191 [^Ăśi] 21073
 SFX ś 0 inĂŠ/1192 [^Ăśi] 21082
 SFX ś 0 i/1193 [^Ăśi] 21075
-SFX ľ Y 30 
+SFX ľ Y 30
 SFX ľ om misĂĄg/1194 halom 21073
 SFX ľ om minĂŠ/1195 halom 21082
 SFX ľ om mi/1196 halom 21075
@@ -2444,7 +2444,7 @@ SFX ľ 0 inĂŠ/1195 oo 21082
 SFX ľ 0 inĂŠ/1195 [^oi] 21082
 SFX ľ 0 i/1196 oo 21075
 SFX ľ 0 i/1196 [^oi] 21075
-SFX ´ Y 12 
+SFX ´ Y 12
 SFX ´ Ăśk isĂŠg/1197 Ăśk 21073
 SFX ´ Ăśk ileg Ăśk 21074
 SFX ´ Ăśk i/1112 Ăśk 21075
@@ -2457,16 +2457,16 @@ SFX ´ ek i/1112 ek 21075
 SFX ´ ak isĂĄg/1198 ak 21073
 SFX ´ ak ilag ak 21074
 SFX ´ ak i/1130 ak 21075
-     
-SFX ł Y 6 
+
+SFX ł Y 6
 SFX ł Ăś ĹisĂŠg/1197 Ăś 21073
 SFX ł Ăś Ĺileg Ăś 21074
 SFX ł Ăś Ĺi/1112 Ăś 21075
 SFX ł 0 isĂŠg/1197 [^Ăśi] 21073
 SFX ł 0 ileg [^Ăśi] 21074
 SFX ł 0 i/1112 [^Ăśi] 21075
-     
-SFX ˛ Y 9 
+
+SFX ˛ Y 9
 SFX ˛ o ĂłisĂĄg/1198 [^o]o 21073
 SFX ˛ o Ăłilag [^o]o 21074
 SFX ˛ o Ăłi/1130 [^o]o 21075
@@ -2476,14 +2476,14 @@ SFX ˛ 0 ilag oo 21074
 SFX ˛ 0 ilag [^oi] 21074
 SFX ˛ 0 i/1130 oo 21075
 SFX ˛ 0 i/1130 [^oi] 21075
-     
-SFX ą Y 5 
+
+SFX ą Y 5
 SFX ą 0 sĂŠgĹą/1199 . 21083
 SFX ą 0 sĂŠgnyi/1144 . 21084
 SFX ą 0 sĂŠgi/1200 . 21085
 SFX ą 0 sĂŠges/1201 . 21086
 SFX ą 0 sĂŠg/1202 . 21087
-SFX ° Y 10 
+SFX ° Y 10
 SFX ° 0 sĂĄgĂş/1190 . 21083
 SFX ° 0 sĂĄgĂş/1190 . 21083
 SFX ° 0 sĂĄgos/1203 . 21086
@@ -2494,7 +2494,7 @@ SFX ° 0 sĂĄgi/1204 . 21085
 SFX ° 0 sĂĄgi/1204 . 21085
 SFX ° 0 sĂĄg/1205 . 21087
 SFX ° 0 sĂĄg/1205 . 21087
-SFX Ż Y 318 
+SFX Ż Y 318
 SFX Ż t telenĂ­tĹ/1125 tt 21088
 SFX Ż t telenĂ­tĂŠsileg tt 21089
 SFX Ż t telenĂ­tĂŠsi/1112 tt 21090
@@ -2813,7 +2813,7 @@ SFX Ż 0 telenedett/1115 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąt] 21138
 SFX Ż 0 telenedett/400 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąt] 21139
 SFX Ż 0 telen/1207 [^t]t 21140
 SFX Ż 0 telen/1207 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąt] 21140
-SFX Ž Y 371 
+SFX Ž Y 371
 SFX Ž t talanĂ­tĂł/1136 tt 21088
 SFX Ž t talanĂ­tĂĄsilag tt 21089
 SFX Ž t talanĂ­tĂĄsi/1130 tt 21090
@@ -3185,7 +3185,7 @@ SFX Ž 0 talanodhat/1138 [^t]t 21134
 SFX Ž 0 talanodhat/1138 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąt] 21134
 SFX Ž 0 talan/1209 [^t]t 21140
 SFX Ž 0 talan/1209 [^aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹąt] 21140
-SFX ­ Y 120 
+SFX ­ Y 120
 SFX ­ ik ĂśttsĂŠgĹą/1210 llik 21141
 SFX ­ ik ĂśttsĂŠgĹą/1210 gyik 21141
 SFX ­ ik ĂśttsĂŠgĹą/1210 [bdgjklmrtzy][ldgrz]ik 21141
@@ -3306,7 +3306,7 @@ SFX ­ 0 t/1215 ny 21149
 SFX ­ 0 t ny 21150
 SFX ­ 0 t/1215 [^bgkmpstvzyd] 21149
 SFX ­ 0 t [^bgkmpstvzyd] 21150
-SFX Ź Y 120 
+SFX Ź Y 120
 SFX Ź ik tsĂŠgĹą/1199 lyik 21141
 SFX Ź ik tsĂŠgĹą/1199 [aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą][^bgkmpstvzyd]ik 21141
 SFX Ź ik tsĂŠgnyi/1144 lyik 21143
@@ -3427,7 +3427,7 @@ SFX Ź 0 ett/1217 [nl]l 21149
 SFX Ź 0 ett [nl]l 21150
 SFX Ź 0 ett/1217 [bdfgmpstvz] 21149
 SFX Ź 0 ett [bdfgmpstvz] 21150
-SFX Ť Y 120 
+SFX Ť Y 120
 SFX Ť ik tsĂĄgĂş/1190 lyik 21141
 SFX Ť ik tsĂĄgĂş/1190 [aĂĄeĂŠiĂ­oĂłĂśĹuĂşĂźĹą][^bgkmpstvzyd]ik 21141
 SFX Ť ik tsĂĄgos/1203 lyik 21142
@@ -3548,7 +3548,7 @@ SFX Ť 0 ott/1219 [nl]l 21149
 SFX Ť 0 ott [nl]l 21150
 SFX Ť 0 ott/1219 [bdfgmpstvz] 21149
 SFX Ť 0 ott [bdfgmpstvz] 21150
-SFX Ş Y 30 
+SFX Ş Y 30
 SFX Ş ik Ĺs/1211 ik 21151
 SFX Ş ik Ĺnyi/1144 ik 21152
 SFX Ş ik ĹjĹą/1187 ik 21153
@@ -3579,7 +3579,7 @@ SFX Ş 0 ĂŠsileg [^k] 21162
 SFX Ş 0 ĂŠsi/1144 [^k] 21163
 SFX Ş 0 ĂŠses/1201 [^k] 21164
 SFX Ş 0 ĂŠs/1202 [^k] 21165
-SFX Š Y 30 
+SFX Š Y 30
 SFX Š ik Ăłs/1203 ik 21151
 SFX Š ik Ăłnyi/1145 ik 21152
 SFX Š ik ĂłjĂş/1190 ik 21153
@@ -3610,7 +3610,7 @@ SFX Š 0 ĂĄsnyi/1145 [^k] 21161
 SFX Š 0 ĂĄsilag [^k] 21162
 SFX Š 0 ĂĄsi/1145 [^k] 21163
 SFX Š 0 ĂĄs/1205 [^k] 21165
-SFX ¨ Y 22 
+SFX ¨ Y 22
 SFX ¨ ik getĹ/1221 ik 21166
 SFX ¨ ik getĂŠsĹą/1187 ik 21167
 SFX ¨ ik getĂŠsnyi/1144 ik 21168
@@ -3633,7 +3633,7 @@ SFX ¨ 0 gethetett [^k] 21173
 SFX ¨ 0 gethet/1225 [^k] 21174
 SFX ¨ 0 getett [^k] 21175
 SFX ¨ 0 get/1225 [^k] 21176
-SFX § Y 22 
+SFX § Y 22
 SFX § ik gatĂł/1223 ik 21166
 SFX § ik gatĂĄsĂş/1190 ik 21167
 SFX § ik gatĂĄsos/1203 ik 21170
@@ -3656,7 +3656,7 @@ SFX § 0 gathatĂł/1226 [^k] 21172
 SFX § 0 gathatott [^k] 21173
 SFX § 0 gathat/1227 [^k] 21174
 SFX § 0 gat/1227 [^k] 21176
-SFX Ś Y 66 
+SFX Ś Y 66
 SFX Ś ik ĹdĂśtt/1228 ik 21177
 SFX Ś ik ĹdĹsebbik/1214 ik 21178
 SFX Ś ik ĹdĹsebben ik 21179
@@ -3723,7 +3723,7 @@ SFX Ś 0 etlenebb/1216 [^k] 21204
 SFX Ś 0 etlen/1217 [^k] 21140
 SFX Ś 0 endĹsĂŠg/1213 [^k] 21205
 SFX Ś 0 endĹ/1224 [^k] 21206
-SFX Ľ Y 66 
+SFX Ľ Y 66
 SFX Ľ ik ĂłdĂłsabbik/1218 ik 21178
 SFX Ľ ik ĂłdĂłsabban ik 21179
 SFX Ľ ik ĂłdĂłsabb/1218 ik 21180
@@ -3790,7 +3790,7 @@ SFX Ľ 0 atlanabb/1218 [^k] 21204
 SFX Ľ 0 atlan/1235 [^k] 21140
 SFX Ľ 0 andĂłsĂĄg/1205 [^k] 21205
 SFX Ľ 0 andĂł/1226 [^k] 21206
-SFX ¤ Y 48 
+SFX ¤ Y 48
 SFX ¤ ik hetnĂŠkĂźnk/1236 ik 21207
 SFX ¤ ik hetnĂŠkĂźnk ik 21208
 SFX ¤ ik hetnĂŠkĂźk/1237 ik 21209
@@ -3839,7 +3839,7 @@ SFX ¤ 0 hetetlenebben [^k] 21224
 SFX ¤ 0 hetetlenebb/1216 [^k] 21225
 SFX ¤ 0 hetetlen/1217 [^k] 21226
 SFX ¤ 0 het/1225 [^k] 21227
-SFX Ł Y 48 
+SFX Ł Y 48
 SFX Ł ik hatott ik 21218
 SFX Ł ik hatnĂŠkunk/1239 ik 21207
 SFX Ł ik hatnĂŠkunk ik 21208
@@ -3888,7 +3888,7 @@ SFX Ł 0 hatatlanabban [^k] 21224
 SFX Ł 0 hatatlanabb/1218 [^k] 21225
 SFX Ł 0 hatatlan/1235 [^k] 21226
 SFX Ł 0 hat/1227 [^k] 21227
-SFX ˘ Y 76 
+SFX ˘ Y 76
 SFX ˘ ik tetĹs/1242 ik 21228
 SFX ˘ ik tetĹnyi/1144 ik 21229
 SFX ˘ ik tetĹjĹą/1187 ik 21228
@@ -3965,7 +3965,7 @@ SFX ˘ 0 tethet/1225 [^k] 21261
 SFX ˘ 0 tetett/1217 [^k] 21262
 SFX ˘ 0 tetett [^k] 21263
 SFX ˘ 0 tet/1225 [^k] 21264
-SFX Ą Y 76 
+SFX Ą Y 76
 SFX Ą ik tatĂłs/1243 ik 21228
 SFX Ą ik tatĂłnyi/1145 ik 21229
 SFX Ą ik tatĂłjĂş/1190 ik 21228
@@ -4042,15 +4042,15 @@ SFX Ą 0 tathatatlanabb/1218 [^k] 21259
 SFX Ą 0 tathatatlan/1235 [^k] 21260
 SFX Ą 0 tathat/1227 [^k] 21261
 SFX Ą 0 tat/1227 [^k] 21264
-     
-SFX z Y 6 
+
+SFX z Y 6
 SFX z 0 magĂĄval d 21265
 SFX z 0 magunkkal d 21266
 SFX z 0 magukkal d 21267
 SFX z 0 magatokkal d 21268
 SFX z 0 magammal d 21269
 SFX z 0 magaddal d 21270
-SFX t Y 318 
+SFX t Y 318
 SFX t 0 eiĂźl [cghjmsxyvzbdfklnprt-] 21271
 SFX t 0 eiĂŠĂźl [cghjmsxyvzbdfklnprt-] 21272
 SFX t 0 eiĂŠĂŠrt [cghjmsxyvzbdfklnprt-] 21273
@@ -4369,7 +4369,7 @@ SFX t 0 eibĹl [cghjmsxyvzbdfklnprt-] 21585
 SFX t 0 eiben [cghjmsxyvzbdfklnprt-] 21586
 SFX t 0 eibe [cghjmsxyvzbdfklnprt-] 21587
 SFX t 0 ei [cghjmsxyvzbdfklnprt-] 21588
-SFX s Y 318 
+SFX s Y 318
 SFX s 0 aiĂŠĂŠrt [cghjmsxyvzbdfklnprt-] 21273
 SFX s 0 aiĂŠvĂĄ [cghjmsxyvzbdfklnprt-] 21274
 SFX s 0 aiĂŠval [cghjmsxyvzbdfklnprt-] 21275
@@ -4688,8 +4688,8 @@ SFX s 0 aibĂłl [cghjmsxyvzbdfklnprt-] 21585
 SFX s 0 aiban [cghjmsxyvzbdfklnprt-] 21586
 SFX s 0 aiba [cghjmsxyvzbdfklnprt-] 21587
 SFX s 0 ai [cghjmsxyvzbdfklnprt-] 21588
-     
-SFX q N 9 
+
+SFX q N 9
 SFX q 0 -szerĹąsĂŠg/1202 . 21589
 SFX q 0 -szerĹą/1224 . 21590
 SFX q 0 -fĂŠlesĂŠg/1202 . 21591
@@ -4699,7 +4699,7 @@ SFX q 0 -fajtasĂĄg/1205 . 21594
 SFX q 0 -fajta/1226 . 21595
 SFX q 0 -belisĂŠg/1202 . 21596
 SFX q 0 -beli/1246 . 21597
-SFX p Y 251 
+SFX p Y 251
 SFX p ztik szĂźk sztik 21598
 SFX p ztik szĂźk sztik 21599
 SFX p ztik szĂŠtek sztik 21600
@@ -4951,7 +4951,7 @@ SFX p 0 elek [jlmnrszĂĄĂŠĂ­Ĺą]t 21608
 SFX p 0 elek [gn]g 21608
 SFX p 0 d [zd] 21606
 SFX p 0 d [^tk] 21606
-SFX o Y 358 
+SFX o Y 358
 SFX o ztik szĂĄtok sztik 21600
 SFX o ztik szĂĄtok sztik 21601
 SFX o ztik szĂĄk sztik 21602
@@ -5310,7 +5310,7 @@ SFX o 0 alak [lnrz]d 21608
 SFX o 0 alak [jlmnrszĂĄĂŠĂ­Ĺą]t 21608
 SFX o 0 alak [jdmn]z 21608
 SFX o 0 alak [gn]g 21608
-SFX n Y 167 
+SFX n Y 167
 SFX n zs dzsĂŠ dzs 21062
 SFX n zs dzsel dzs 21063
 SFX n z szĂŠ [^s]sz 21062
@@ -5478,7 +5478,7 @@ SFX n 0 bĂŠ [^b]b 21062
 SFX n 0 bĂŠ B- 21062
 SFX n 0 bel [^b]b 21063
 SFX n 0 bel B- 21063
-SFX m Y 168 
+SFX m Y 168
 SFX m zs dzsĂĄ dzs 21062
 SFX m zs dzsal dzs 21063
 SFX m z szĂĄ [^s]sz 21062
@@ -5647,13 +5647,13 @@ SFX m 0 bĂĄ B- 21062
 SFX m 0 bal [^b]b 21063
 SFX m 0 bal B- 21063
 SFX m 0 al GY- 21063
-     
-SFX l Y 1 
+
+SFX l Y 1
 SFX l 0 ke/1160 [bcfjlmnprsyxz] 21626
-     
-SFX k Y 1 
+
+SFX k Y 1
 SFX k 0 ka/1158 [bcfjlmnprsyxz] 21626
-SFX j Y 13 
+SFX j Y 13
 SFX j Ăś ĹnĂŠ/1192 Ăś 21627
 SFX j Ăś Ĺnyi/1249 Ăś 21061
 SFX j y nyi/1249 [^n]ny 21061
@@ -5667,7 +5667,7 @@ SFX j 0 nĂŠ/1192 [^eĂśn] 21627
 SFX j 0 nyi/1249 [ae]e 21061
 SFX j 0 nyi/1249 [^n]y 21061
 SFX j 0 nyi/1249 [^eĂśy] 21061
-SFX i Y 13 
+SFX i Y 13
 SFX i y nyi/1250 [^n]ny 21061
 SFX i o ĂłnĂŠ/1195 [^o]o 21627
 SFX i o Ăłnyi/1250 [^o]o 21061
@@ -5681,7 +5681,7 @@ SFX i 0 nĂŠ/1195 [^aon] 21627
 SFX i 0 nyi/1250 oo 21061
 SFX i 0 nyi/1250 [^n]y 21061
 SFX i 0 nyi/1250 [^aoy] 21061
-SFX e Y 288 
+SFX e Y 288
 SFX e ztik szĂźk sztik 21598
 SFX e ztik szĂŠtek sztik 21600
 SFX e ztik szĂŠk sztik 21602
@@ -5970,7 +5970,7 @@ SFX e 0 elek [gn]g 21608
 SFX e 0 ed [^k] 21617
 SFX e 0 d [^dtk] 21606
 SFX e 0 d [^d]d 21606
-SFX d Y 67 
+SFX d Y 67
 SFX d Ăśz zĂśtt/1215 rĂśz 21149
 SFX d Ăśz zĂśl/1247 rĂśz 21628
 SFX d Ăśz zĂśl/1248 [^r]Ăśz 21628
@@ -6038,7 +6038,7 @@ SFX d eg gett/1217 eg 21149
 SFX d eg gett eg 21150
 SFX d eg gesz/1247 eg 21628
 SFX d eg gek eg 21629
-SFX c Y 30 
+SFX c Y 30
 SFX c z szerĹąsĂŠg/1202 [^s]sz 21589
 SFX c z szerĹą/1224 [^s]sz 21590
 SFX c 0 szerĹąsĂŠg/1202 [^z] 21589
@@ -6069,7 +6069,7 @@ SFX c 0 belisĂŠg/1202 [^b]b 21596
 SFX c 0 belisĂŠg/1202 [^b] 21596
 SFX c 0 beli/1246 [^b]b 21597
 SFX c 0 beli/1246 [^b] 21597
-SFX W Y 126 
+SFX W Y 126
 SFX W Ăś ĹĂźl Ăś 21636
 SFX W Ăś ĹĂŠĂźl Ăś 21637
 SFX W Ăś ĹĂŠĂŠrt Ăś 21638
@@ -6196,7 +6196,7 @@ SFX W 0 ben [^baeoĂś] 21683
 SFX W 0 ben [^b]b 21683
 SFX W 0 be [^baeoĂś] 21684
 SFX W 0 be [^b]b 21684
-SFX V Y 169 
+SFX V Y 169
 SFX V k kĂŠppen kk 21677
 SFX V k kĂŠpp kk 21678
 SFX V k kĂŠnt kk 21679
@@ -6366,7 +6366,7 @@ SFX V 0 ben [^b]b 21683
 SFX V 0 be [ae]e 21684
 SFX V 0 be [^baeoĂś] 21684
 SFX V 0 be [^b]b 21684
-SFX U Y 224 
+SFX U Y 224
 SFX U o ĂłĂŠĂŠrt [^o]o 21638
 SFX U o ĂłĂŠvĂĄ [^o]o 21639
 SFX U o ĂłĂŠval [^o]o 21640
@@ -6591,7 +6591,7 @@ SFX U 0 an bb 21683
 SFX U 0 ak nn 21676
 SFX U 0 a rr 21674
 SFX U 0 a bb 21684
-SFX T Y 107 
+SFX T Y 107
 SFX T 0 ĂźkĂźl [cghjmsxyvzbdfklnprt-] 21685
 SFX T 0 ĂźkĂśn [cghjmsxyvzbdfklnprt-] 21686
 SFX T 0 ĂźkĂŠĂźl [cghjmsxyvzbdfklnprt-] 21687
@@ -6699,7 +6699,7 @@ SFX T 0 ĂŠbe [cghjmsxyvzbdfklnprt-] 21787
 SFX T 0 ekĂŠnt [cghjmsxyvzbdfklnprt-] 21788
 SFX T 0 ekor [cghjmsxyvzbdfklnprt-] 21789
 SFX T 0 e [cghjmsxyvzbdfklnprt-] 21790
-SFX S Y 107 
+SFX S Y 107
 SFX S 0 ĂĄĂŠĂŠrt [cghjmsxyvzbdfklnprt-] 21740
 SFX S 0 ĂĄĂŠvĂĄ [cghjmsxyvzbdfklnprt-] 21741
 SFX S 0 ĂĄĂŠval [cghjmsxyvzbdfklnprt-] 21742
@@ -6807,7 +6807,7 @@ SFX S 0 uk [cghjmsxyvzbdfklnprt-] 21737
 SFX S 0 akĂŠnt [cghjmsxyvzbdfklnprt-] 21788
 SFX S 0 akor [cghjmsxyvzbdfklnprt-] 21789
 SFX S 0 a [cghjmsxyvzbdfklnprt-] 21790
-SFX R Y 849 
+SFX R Y 849
 SFX R Ăś ĹjĂźkĂźl Ăś 21685
 SFX R Ăś ĹjĂźkĂśn Ăś 21686
 SFX R Ăś ĹjĂźkĂŠĂźl Ăś 21687
@@ -7657,7 +7657,7 @@ SFX R 0 jei [^ĂĄeĂŠĂłĂśĹuĂşĂźĹą] 21588
 SFX R 0 je [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąy] 21790
 SFX R 0 je [ae]e 21790
 SFX R 0 je [^ĂĄeĂŠĂłĂśĹuĂşĂźĹą] 21790
-SFX Q Y 849 
+SFX Q Y 849
 SFX Q o ĂłjĂĄĂŠĂŠrt [^o]o 21740
 SFX Q o ĂłjĂĄĂŠvĂĄ [^o]o 21741
 SFX Q o ĂłjĂĄĂŠval [^o]o 21742
@@ -8507,7 +8507,7 @@ SFX Q 0 jai [^aĂĄĂŠĂłĹuĂşĂźĹąĂ Ă¸] 21588
 SFX Q 0 ja oo 21790
 SFX Q 0 ja [ĂĄĂŠiĂłĹuĂşĂźĹąyĂ Ă¸] 21790
 SFX Q 0 ja [^aĂĄĂŠĂłĹuĂşĂźĹąĂ Ă¸] 21790
-SFX P Y 433 
+SFX P Y 433
 SFX P ztik szĂźnk sztik 21791
 SFX P ztik szĂśn sztik 21792
 SFX P ztik szĂŠl sztik 21793
@@ -8941,7 +8941,7 @@ SFX P 0 ene [lnrz]d 21818
 SFX P 0 ene [ln]l 21818
 SFX P 0 ene [jlmnrszĂĄĂŠĂ­Ĺą]t 21818
 SFX P 0 ene [gn]g 21818
-SFX O Y 465 
+SFX O Y 465
 SFX O ztik szĂŠk sztik 21792
 SFX O ztik szĂĄl sztik 21793
 SFX O ztik szunk sztik 21791
@@ -9407,11 +9407,11 @@ SFX O 0 ana [ln]l 21818
 SFX O 0 ana [jlmnrszĂĄĂŠĂ­Ĺą]t 21818
 SFX O 0 ana [jdmn]z 21818
 SFX O 0 ana [gn]g 21818
-     
-SFX N Y 2 
+
+SFX N Y 2
 SFX N 0 Ăśn . 21070
 SFX N 0 hĂśz . 21064
-SFX M Y 426 
+SFX M Y 426
 SFX M 0 ĂźnkĂźl [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21828
 SFX M 0 ĂźnkĂśn [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21829
 SFX M 0 ĂźnkĂŠĂźl [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21830
@@ -9838,7 +9838,7 @@ SFX M 0 ĂŠkbĹl [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22195
 SFX M 0 ĂŠkben [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22196
 SFX M 0 ĂŠkbe [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22197
 SFX M 0 ĂŠk [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22198
-SFX L Y 426 
+SFX L Y 426
 SFX L 0 ĂźnkĂźl [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21828
 SFX L 0 ĂźnkĂśn [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21829
 SFX L 0 ĂźnkĂŠĂźl [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 21830
@@ -10265,7 +10265,7 @@ SFX L 0 edben [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22145
 SFX L 0 edbe [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22146
 SFX L 0 ed/1247 [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22141
 SFX L 0 ed [^eĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22147
-SFX K Y 426 
+SFX K Y 426
 SFX K 0 ĂŠkĂŠĂŠrt [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22150
 SFX K 0 ĂŠkĂŠvĂĄ [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22151
 SFX K 0 ĂŠkĂŠval [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22152
@@ -10692,8 +10692,8 @@ SFX K 0 odba [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22146
 SFX K 0 odat [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22141
 SFX K 0 od/1247 [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22141
 SFX K 0 od [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹąĂ Ă¸] 22147
-     
-SFX J Y 8 
+
+SFX J Y 8
 SFX J Ăśk Ăźl Ăśk 21636
 SFX J Ăśk Ăśn Ăśk 21070
 SFX J ok ul ok 21636
@@ -10702,7 +10702,7 @@ SFX J ek Ăźl ek 21636
 SFX J ek en ek 21070
 SFX J ak ul ak 21636
 SFX J ak on ak 21070
-SFX I Y 2793 
+SFX I Y 2793
 SFX I Ăśk ĂźnkĂźl Ăśk 21828
 SFX I Ăśk ĂźnkĂśn Ăśk 21829
 SFX I Ăśk ĂźnkĂŠĂźl Ăśk 21830
@@ -13496,7 +13496,7 @@ SFX I ak adat ak 22141
 SFX I ak ad/1247 ak 22141
 SFX I ak ad ak 22147
 SFX I ak a [^dt]ak 21790
-SFX H Y 467 
+SFX H Y 467
 SFX H e ĂŠbbĂźl/179 e 22199
 SFX H e ĂŠbbĹl/179 e 22200
 SFX H e ĂŠbbĂŠĂźl/179 e 22201
@@ -13964,7 +13964,7 @@ SFX H 0 bbekbe/179 [ĹĹą] 22333
 SFX H 0 bbek/179 [ĹĹą] 22334
 SFX H 0 bbe/179 [ĹĹą] 22335
 SFX H 0 bb/179 [ĹĹą] 22336
-SFX G Y 468 
+SFX G Y 468
 SFX G e ĂŠn e 22337
 SFX G e ĂŠbbĂźl/179 e 22199
 SFX G e ĂŠbbĹl/179 e 22200
@@ -14433,7 +14433,7 @@ SFX G 0 bbekbe/179 [ĂĄĂŠiĂ­ĂłĹĂşĹą] 22333
 SFX G 0 bbek/179 [ĂĄĂŠiĂ­ĂłĹĂşĹą] 22334
 SFX G 0 bbe/179 [ĂĄĂŠiĂ­ĂłĹĂşĹą] 22335
 SFX G 0 bb/179 [ĂĄĂŠiĂ­ĂłĹĂşĹą] 22336
-SFX F Y 948 
+SFX F Y 948
 SFX F a ĂĄn a 22340
 SFX F a ĂĄbbĂłl/179 a 22200
 SFX F a ĂĄbbĂŠĂŠrt a 22202
@@ -15382,7 +15382,7 @@ SFX F 0 abbakat/179 [^aeĂĄĂŠiĂ­ĂłĹĂşĹąĂ Ă¸] 22329
 SFX F 0 abbak/179 [^aeĂĄĂŠiĂ­ĂłĹĂşĹą] 22334
 SFX F 0 abba/179 [^aeĂĄĂŠiĂ­ĂłĹĂşĹąĂ Ă¸] 22335
 SFX F 0 abb/179 [^aeĂĄĂŠiĂ­ĂłĹĂşĹąĂ Ă¸] 22336
-SFX E Y 465 
+SFX E Y 465
 SFX E ztik szĂźnk sztik 21791
 SFX E ztik szĂŠl sztik 21793
 SFX E ztik szĂŠk sztik 21792
@@ -15848,7 +15848,7 @@ SFX E 0 ene [jdmn]z 21818
 SFX E 0 ene [gn]g 21818
 SFX E 0 el [sz] 21628
 SFX E 0 ek [^k] 21629
-SFX C Y 1561 
+SFX C Y 1561
 SFX C Ăś ĹĂŠĂźl Ăś 21637
 SFX C Ăś ĹĂŠĂŠrt Ăś 21638
 SFX C Ăś ĹĂŠvĂŠ Ăś 21639
@@ -17410,7 +17410,7 @@ SFX C 0 dben [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹąy-Ă¸] 22145
 SFX C 0 dbe [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹąy-Ă¸] 22146
 SFX C 0 d/1247 [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹąy-Ă¸] 22141
 SFX C 0 d [ĂĄĂŠiĂ­oĂłĹuĂşĂźĹąy-Ă¸] 22147
-SFX B Y 2337 
+SFX B Y 2337
 SFX B k kĂŠnti/1258 kk 22500
 SFX B e ĂŠĂŠĂźl [^ae]e 21637
 SFX B e ĂŠĂŠĂŠrt [^ae]e 21638
@@ -19748,7 +19748,7 @@ SFX B 0 d/1247 [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąy-] 22141
 SFX B 0 d/1247 [ae]e 22141
 SFX B 0 d [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąy-] 22147
 SFX B 0 d [ae]e 22147
-SFX A Y 3116 
+SFX A Y 3116
 SFX A o ĂłĂŠĂŠrt [^o]o 21638
 SFX A o ĂłĂŠvĂĄ [^o]o 21639
 SFX A o ĂłĂŠval [^o]o 21640
@@ -22865,7 +22865,7 @@ SFX A 0 d/1247 oo 22141
 SFX A 0 d/1247 [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąy-Ă Ă¸] 22141
 SFX A 0 d oo 22147
 SFX A 0 d [ĂĄĂŠiĂ­ĂłĹuĂşĂźĹąy-Ă Ă¸] 22147
-SFX ' Y 68 
+SFX ' Y 68
 SFX ' Ăśz zĂźnk/1247 rĂśz 21630
 SFX ' Ăśz zĂźnk/1248 [^r]Ăśz 21630
 SFX ' Ăśz zĂśtt/1247 rĂśz 21150
@@ -22934,7 +22934,7 @@ SFX ' eg gik eg 21603
 SFX ' eg gi eg 21625
 SFX ' eg gem eg 21616
 SFX ' eg ged eg 21617
-SFX $ Y 427 
+SFX $ Y 427
 SFX $ 0 ĂŠkĂŠĂŠrt [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22150
 SFX $ 0 ĂŠkĂŠvĂĄ [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22151
 SFX $ 0 ĂŠkĂŠval [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22152
@@ -23362,7 +23362,7 @@ SFX $ 0 adba [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22146
 SFX $ 0 adat [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22141
 SFX $ 0 ad/1247 [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22141
 SFX $ 0 ad [^aĂĄĂŠiĂ­oĂłĂśĹuĂşĂźĹą] 22147
-PFX r Y 195 
+PFX r Y 195
 PFX r 0 legĂşjra/1262 . 22551
 PFX r 0 legĂşjjĂĄ/1262 . 22552
 PFX r 0 legĂśssze/1262 . 22553
@@ -23558,7 +23558,7 @@ PFX r 0 legbe/1262 . 22733
 PFX r 0 legalĂĄ/1262 . 22734
 PFX r 0 legagyon/1262 . 22735
 PFX r 0 legabba/1262 . 22736
-PFX h Y 11 
+PFX h Y 11
 PFX h 0 ezerĂśtszĂĄz . 22737
 PFX h 0 ezerszĂĄz . 22737
 PFX h 0 ezernĂŠgyszĂĄz . 22737
@@ -23570,8 +23570,8 @@ PFX h 0 ezerhĂĄromszĂĄz . 22737
 PFX h 0 ezerhatszĂĄz . 22737
 PFX h 0 ezeregyszĂĄz . 22737
 PFX h 0 ezer . 22737
-     
-PFX b Y 9 
+
+PFX b Y 9
 PFX b 0 ĂśtszĂĄz . 22737
 PFX b 0 szĂĄz . 22737
 PFX b 0 nĂŠgyszĂĄz . 22737
@@ -23581,8 +23581,8 @@ PFX b 0 kilencszĂĄz . 22737
 PFX b 0 hĂŠtszĂĄz . 22737
 PFX b 0 hĂĄromszĂĄz . 22737
 PFX b 0 hatszĂĄz . 22737
-     
-PFX a Y 9 
+
+PFX a Y 9
 PFX a 0 Ăśtven . 22737
 PFX a 0 tizen . 22737
 PFX a 0 nyolcvan . 22737
@@ -23592,7 +23592,7 @@ PFX a 0 huszon . 22737
 PFX a 0 hetven . 22737
 PFX a 0 hatvan . 22737
 PFX a 0 harminc . 22737
-PFX X Y 65 
+PFX X Y 65
 PFX X 0 Ăşjra/1262 . 22738
 PFX X 0 ĂşjjĂĄ/1262 . 22739
 PFX X 0 Ăśssze/1262 . 22740
@@ -23658,12 +23658,12 @@ PFX X 0 be/1262 . 22796
 PFX X 0 alĂĄ/1262 . 22797
 PFX X 0 agyon/1262 . 22798
 PFX X 0 abba/1262 . 22799
-     
-PFX D Y 3 
+
+PFX D Y 3
 PFX D 0 legeslegesleg [^AĂBCDEĂFGHIĂJKLMNOĂĂĹPQRSTUĂĂĹ°VWZ] 22800
 PFX D 0 legesleg [^AĂBCDEĂFGHIĂJKLMNOĂĂĹPQRSTUĂĂĹ°VWZ] 22801
 PFX D 0 leg [^AĂBCDEĂFGHIĂJKLMNOĂĂĹPQRSTUĂĂĹ°VWZ] 22802
-PFX " Y 39 
+PFX " Y 39
 PFX " Ă Ăź Ă
 PFX " Ĺ° Ĺą Ĺ°
 PFX " Ă Ăş Ă
@@ -23703,7 +23703,7 @@ PFX " C c C
 PFX " B b B
 PFX " A a A
 PFX " Ă ĂĽ Ă
-PFX ! Y 27 
+PFX ! Y 27
 PFX ! 0 Ăśtven/1263 . 22737
 PFX ! 0 Ăśt/1263 . 22737
 PFX ! 0 tĂśbb/1263 [^b] 22737
@@ -23731,4 +23731,4 @@ PFX ! 0 fĂŠl/1263 . 22737
 PFX ! 0 ezer/1263 . 22737
 PFX ! 0 egy/1263 . 22737
 PFX ! 0 billiĂł/1263 . 22737
-     
+

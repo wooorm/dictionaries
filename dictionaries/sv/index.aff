@@ -277,7 +277,7 @@ SFX  G  a  ornas  a
 SFX  G  a  ors  a
 
 # Som katt: katter, katterna, katternas, katters
-# Som historia: historier, historierna, historiernas, historiers 
+# Som historia: historier, historierna, historiernas, historiers
 SFX  H  Y  8
 SFX  H  0  er  [^a]
 SFX  H  0  ers  [^a]
@@ -297,7 +297,7 @@ SFX  H  a  ers  a
 # Som lymmel
 # Som tiger: tigrar, tigrarna, tigrarnas, tigrars
 # Som klammer: klamrar, klamrarna, klamrarnas, klamrars
-# Som sommar: somrar, somrarna, somrarnas, somrars 
+# Som sommar: somrar, somrarna, somrarnas, somrars
 SFX  I  Y  36
 SFX  I  0  r  [^lmnr]
 SFX  I  0  rna  [^lmnr]

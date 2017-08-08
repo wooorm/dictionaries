@@ -9,7 +9,7 @@ Lincence: GPL 3
 ===============
 
 This spell check dictionary for Interlingua is licensed under GPL.
-A copy should be enclosed. 
+A copy should be enclosed.
 
 Package:
 =======
@@ -51,7 +51,7 @@ Words extracted from following dictionaries:
 	--- CEID: A Concise English-Interlingua Dictionary, Woodruff W. Byrne (41)
 		http://www.interlingua.com/an/ceid
 	--- BIO: Terminos biologic in anglese e interlingua, Piet Cleij (2452)
-		http://www.interlingua.com/e-libros-biologia 
+		http://www.interlingua.com/e-libros-biologia
 	--- ANN: Annotationes al margine del „Sancte Libro” (9)
 		http://archive.org/details/annotationes
 	---	SUP: Lista Supplementari de Vocabulos International, Piet Cleij
@@ -67,15 +67,15 @@ C	- Invariable adjectives or nouns used attributively
 D	- Adverbs (not formed from adjectives)
 E	- Adjectives of one form descended from the Latin third declension ('purist list') and ending in -ista, -ota, -ita
 F	- Continuation flag for derivative adjectives of third declension
-G	- Proper names or nouns in singular only 
-H	- Flag allowing affixes to be inside compounds 
+G	- Proper names or nouns in singular only
+H	- Flag allowing affixes to be inside compounds
 I	- First part of compound
 J	- Last part of compound
 K	- Only in compounds
 L	- Nouns in plural only and "guest" plural form of nouns
 M	- Feminine nouns derived from masculine nouns
 N	- Ordinal numerals
-O	- Continuation flag for ordinal numerals 
+O	- Continuation flag for ordinal numerals
 P	- Continuation flag for ronouns
 Q	- Pronouns of two forms (first/second declension)
 R	- Pronouns of one form (third declension)
@@ -118,7 +118,7 @@ t	-ator, -atrice, -itor, -itrice, -or, -rice sb
 u	-atura, -itura, -ura sb
 v	-ative, -itive, -ive adj
 w	-ativitate, -itivitate, -ivitate sb
-x	- cardinal and ordinal suffixes of unit's digits 
+x	- cardinal and ordinal suffixes of unit's digits
 y	- ordinal suffixes of decimal digits
 z	- prefixes of unit's digits
 
@@ -126,7 +126,7 @@ Hyphenation Rules:
 =================
 
 The rules have been built from scratch using the method described in:
-	--- "How to make a foreign language pattern file: Romanian", 
+	--- "How to make a foreign language pattern file: Romanian",
 		http://www.tug.org/TUGboat/Articles/tb16-1/tb46bec2.pdf.
 
 The hyphenation rules were adopted mainly from Italian, Spanish, Romanian and German.
@@ -181,26 +181,26 @@ Revision History:
     -- Flags for -ic adj and -icitate extended
     -- Added all names of countries and their capitals
 2013-09-02
-	-- Added words from "Terminos biologic in anglese e interlingua" 
+	-- Added words from "Terminos biologic in anglese e interlingua"
 	-- Hyphenation rules reworked and extended
 	-- Most of corrections suggested in "Annotationes..." added
 	-- Around 200 additonal corrections added
 	-- Updated compatibility info for new Apache OpenOffice release
-2013-04-30 
+2013-04-30
 	-- Adjectives ended on -phile moved out of 'purist list'.
 	-- Added words from DFI N-Z
 	-- Handful of typos detectd in DIN corrected
 2013-04-19
 	-- Adjectives ended on -gine moved to 'purist list'.
 2013-04-13:
-	-- Flag for following words was corrected: compound, indoor, microcomputer, super, 
-		west-nord-west, out, antidumping, antifading, antiskating, antitank, non-stop, 
-		underground, antiballas, antidrogas, antigas, antipulices, antirugas, cis-trans, 
+	-- Flag for following words was corrected: compound, indoor, microcomputer, super,
+		west-nord-west, out, antidumping, antifading, antiskating, antitank, non-stop,
+		underground, antiballas, antidrogas, antigas, antipulices, antirugas, cis-trans,
 		topless, unisex, waterproof
 	-- Added words extracted from DFI letters A-M
 	-- Dictionary, affixes and hyphenation rules converted to Unicode
 	-- Replacement and mapping rules added.
-	-- Conversion rules for combining accents and hyphenation points 
+	-- Conversion rules for combining accents and hyphenation points
 2010-11-21:
 	-- Following non-international words were added back: an, ella, esque, num, utrum
 	-- Following international words were added: calceria, diffusivitate, merceria, natal
@@ -213,27 +213,27 @@ Revision History:
 	-- new continuation flags: B, F
 	-- review of derivation flags, changes to flag naming, new flag for -ic adjectives
 	-- review of entries from DIN
-	-- typo corrections: hydropatha, telepatha, cardiopatha, diphteria, 
-		coproducteur, zoomer, dischristanisar, deruraliser, dissyllabic, 
+	-- typo corrections: hydropatha, telepatha, cardiopatha, diphteria,
+		coproducteur, zoomer, dischristanisar, deruraliser, dissyllabic,
 		microcalorimétrie, kératoplastie, mille-pedes, kératose, kératotoma,
 		kératotomie, binationalité, Gethsémani, protéinogramme, caprifigo,
 		réplicative, tétanisate, protéinogramme, étiopathia, mille-flores,
-		mille-folios, altoparlator, urugayan, lipovaccin, trompe-d'oeil, 
+		mille-folios, altoparlator, urugayan, lipovaccin, trompe-d'oeil,
 		ethniciser, ostreicola, asinitate, audibitate
-	-- modernized spelling of English compunds (without hyphens) 
+	-- modernized spelling of English compunds (without hyphens)
 	-- regularized capitalization: sinn fein, Pompeiano, quechua
 	-- added -ic adjectives: -ologic, -ophilic, -ophobic, -ochimic
 	-- all duplicates entries removed
 2011-01-01
 	-- added nosplit suggestions option
-	-- added 'hidden entries' in DIN: Abraham, Bernardo, Celsius, 
-		Gotthard, Laurentio, antitempesta, corps diplomatique, erignatho, 
-		horologic, incogniscite, japonic, maladive, onyce, oppositifolie, 
-		polypoide, premiscer, ptarmic, robur, roccella, sebacic, semifundite, 
+	-- added 'hidden entries' in DIN: Abraham, Bernardo, Celsius,
+		Gotthard, Laurentio, antitempesta, corps diplomatique, erignatho,
+		horologic, incogniscite, japonic, maladive, onyce, oppositifolie,
+		polypoide, premiscer, ptarmic, robur, roccella, sebacic, semifundite,
 		sexuate, suprahuman, thapsiforme
 2011-01-16
 	-- removed adjectives ending with -ari (correct forms end with -ar):
-		alveolari, axillari, biliari, ganglionari, interstellari, mamillari, 
+		alveolari, axillari, biliari, ganglionari, interstellari, mamillari,
 		nucleari, pupillari, tumulari, tutelari, bacilari, cilari, supercilari
 	-- removed adjectives incorrectly ending with -ar, correct form ends with ari:
 		valetudinar, jubilar

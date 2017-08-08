@@ -4,7 +4,7 @@ This product is made available subject to the terms of GNU Lesser General Public
 Third Party Code. Additional copyright notices and license terms applicable to portions of the Software are set forth in the THIRDPARTYLICENSEREADME.html file.
 
 ------------------------------------
-All trademarks and registered trademarks mentioned herein are the property of their respective owners.  
+All trademarks and registered trademarks mentioned herein are the property of their respective owners.
 
 ------------------------------------
 Copyright 2002,2008 Sun Microsystems, Inc.
@@ -26,7 +26,7 @@ This product has been created with contributions from the OpenOffice.org communi
 the terms and conditions of version 3 of the GNU General Public
 License, supplemented by the additional permissions listed below.
 
-  0. Additional Definitions. 
+  0. Additional Definitions.
 
   As used herein, "this License" refers to version 3 of the GNU Lesser
 General Public License, and the "GNU GPL" refers to version 3 of the GNU
@@ -127,7 +127,7 @@ the following:
        a copy of the Library already present on the user's computer
        system, and (b) will operate properly with a modified version
        of the Library that is interface-compatible with the Linked
-       Version. 
+       Version.
 
    e) Provide Installation Information, but only if you would otherwise
    be required to provide such information under section 6 of the

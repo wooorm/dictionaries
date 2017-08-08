@@ -118,15 +118,30 @@ generate() {
   echo "$3" > "$dictionary/SPDX"
 
   if [ -e "$SOURCE/$4" ]; then
-    tr -d '\r' < "$SOURCE/$4" > "$dictionary/LICENSE"
+    (
+      sed 's/[ \t]*$//' |
+      tr -d '\r'
+    ) < "$SOURCE/$4" > "$dictionary/LICENSE"
     printf "   $(green "✓") LICENSE\n"
   else
     printf "   $(red "𐄂") Missing LICENSE file\n"
   fi
   
-  (iconv -f "$dicEnc" -t "UTF-8" | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | tr -d '\r') < "$SOURCE/$5" > "$dictionary/index.dic"
+  (
+    iconv -f "$dicEnc" -t "UTF-8" | # Encoding
+    awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' |  # BOM
+    sed 's/[ \t]*$//' | # Trailing white-space
+    tr -d '\r' # Newlines
+  ) < "$SOURCE/$5" > "$dictionary/index.dic"
   printf "   $(green "✓") index.dic\n"
-  (iconv -f "$affEnc" -t "UTF-8" | sed "s/SET .*/SET UTF-8/" | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | tr -d '\r') < "$SOURCE/$6" > "$dictionary/index.aff"
+
+  (
+    iconv -f "$affEnc" -t "UTF-8" | # Encoding
+    sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
+    awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' |  # BOM
+    sed 's/[ \t]*$//' | # Trailing white-space
+    tr -d '\r' # Newlines
+  ) < "$SOURCE/$6" > "$dictionary/index.aff"
   printf "   $(green "✓") index.aff\n"
 }
 

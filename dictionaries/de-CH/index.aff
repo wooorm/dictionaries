@@ -572,7 +572,7 @@ NOSUGGEST n
 WORDCHARS ß-.
 
 # - setting this to 2 decreases performance by 1/10 but is needed for "öl" and "ei"
-# - setting this to 1 for handling Fuge-elements with dashes (Arbeits-) dash will 
+# - setting this to 1 for handling Fuge-elements with dashes (Arbeits-) dash will
 #   be a special word but - is handled as a affix now
 COMPOUNDMIN 2
 
