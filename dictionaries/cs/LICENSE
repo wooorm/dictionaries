@@ -1,4 +1,4 @@
-﻿The pack contains current versions of all OpenOffice.org Czech dictionares as of 2008-05-18.
+The pack contains current versions of all OpenOffice.org Czech dictionares as of 2008-05-18.
 
 Spellchecker
 ------------
