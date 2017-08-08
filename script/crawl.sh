@@ -250,6 +250,9 @@ crawl "kinyarwanda" \
 crawl "korean" \
   "https://github.com/spellcheck-ko/hunspell-dict-ko" \
   "https://github.com/spellcheck-ko/hunspell-dict-ko/releases/download/0.6.2/ko-aff-dic-0.6.2.zip"
+crawl "latgalian" \
+  "http://dict.dv.lv/home.php?prj=la" \
+  "http://dict.dv.lv/download/ltg_LV-0.1.5.oxt"
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
   "https://sourceforge.net/projects/aoo-extensions/files/1141/3/dict-la_2013-03-31.oxt/download"
@@ -534,6 +537,10 @@ generate "lb" "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.dic" "UTF-8" \
   "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
   "EUPL-1.1" "dictionary-lb-lu-master/LICENSE.txt" "UTF-8"
+generate "ltg" "latgalian" \
+  "ltg_LV.dic" "UTF-8" \
+  "ltg_LV.aff" "UTF-8" \
+  "LGPL-2.1" "README_ltg_LV.txt" "UTF-8"
 generate "mn" "mongolian" \
   "mn_MN.dic" "UTF-8" \
   "mn_MN.aff" "UTF-8" \

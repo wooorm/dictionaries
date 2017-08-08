@@ -1,0 +1,26 @@
+{
+  "name": "dictionary-ltg",
+  "version": "0.0.0",
+  "description": "Latgalian spelling dictionary in UTF-8",
+  "license": "LGPL-2.1",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "ltg",
+    "latgalian"
+  ],
+  "repository": "wooorm/dictionaries",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}
