@@ -211,6 +211,9 @@ crawl "hungarian" \
 crawl "interlingua" \
   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
+crawl "interlingue" \
+  "https://github.com/Carmina16/hunspell-ie" \
+  "https://github.com/Carmina16/hunspell-ie/archive/master.zip"
 crawl "irish" \
   "http://borel.slu.edu/ispell/index-en.html" \
   "https://github.com/kscanne/gaelspell/archive/master.zip"
@@ -695,6 +698,18 @@ generate "interlingua" \
   "dictionaries/README_dict-ia.txt" \
   "dictionaries/ia.dic" \
   "dictionaries/ia.aff" \
+  "UTF-8"
+
+#
+# Interlingue.
+#
+
+generate "interlingue" \
+  "ie" \
+  "Apache-2.0" \
+  "hunspell-ie-master/LICENSE" \
+  "hunspell-ie-master/ie.dic" \
+  "hunspell-ie-master/ie.aff" \
   "UTF-8"
 
 #
