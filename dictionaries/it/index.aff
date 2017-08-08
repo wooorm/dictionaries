@@ -3,36 +3,36 @@
 # Copyright (C) 2001, 2002 Gianluca Turconi
 # Copyright (C) 2002, 2003, 2004 Gianluca Turconi and Davide Prina
 # Copyright (C) 2004, 2005, 2006, 2007  Davide Prina
+# Copyright (C) 2013, 2014, 2015 Andrea Pescetti
 #
-# E-Mail: DavidePrina(CHIOCCIOLA)yahoo(PUNTO)com
-# home: http://linguistico.sf.net/wiki
+# E-Mail: pescetti<AT>apache<DOT>org
+# Home: http://extensions.openoffice.org/project/dict-it
+# License: GNU GPL 3
 #
-# Version 2.4 (01/09/2007) (DD/MM/YYYY)
-# Note: this file is unmodified in the current package, hence no
-# copyright notes have been added to it.
+# Version 4.2 (25/09/2015) (DD/MM/YYYY)
 #
-# This file is distributed under GPL license.
+# This file is part of the "Estensione linguistica italiana - Italian
+# Writing Aids extension".
 #
-# This file is part of the "dizionario italiano".
+# The "Estensione linguistica italiana - Italian Writing Aids extension"
+# is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License, version 3,
+# as published by the Free Software Foundation.
 #
-# The "dizionario italiano" is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License as published
-# by the Free Software Foundation; either version 3 of the License, or
-# (at your option) any later version.
-#
-# The "dizionario italiano" is distributed in the hope that it will be
+# The "Estensione linguistica italiana - Italian Writing Aids extension"
+# is distributed in the hope that it will be
 # useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public
-# License along with the "dizionario italiano",
-# if not, see <http://www.gnu.org/licenses/>.
+# License along with the "Estensione linguistica italiana - Italian
+# Writing Aids extension"; if not, see <http://www.gnu.org/licenses/>.
 
 NAME Dizionario italiano
 LANG it_IT
-HOME http://linguistico.sourceforge.net/wiki
-VERSION 2.4 (01/09/2007)
+HOME http://extensions.openoffice.org/project/dict-it
+VERSION 4.2 (25/09/2015)
 SET UTF-8
 TRY aioertnsclmdpgubzfvhàq'ACMSkBGPLxEyRTVòIODNwFéùèìjUZKHWJYQXÙÀÒÈÌÉ
 #Nota: non presenti nel dizionario: ÙÀÒÈÌÉ, vanno aggiunte alla TRY rigenerata
@@ -1781,61 +1781,61 @@ SFX À ire enti ucire
 # v.: pres. 2° pers. pl.
 # v.: cg.p. 3° pers. pl.
 
-SFX È Y 54
-SFX È edere iedo sedere
-SFX È edere iedi sedere
-SFX È edere iede sedere
-SFX È ere iamo sedere
-SFX È re te sedere
-SFX È edere iedono sedere
-SFX È re vo sedere
-SFX È re vi sedere
-SFX È re va sedere
-SFX È re vamo sedere
-SFX È re vate sedere
-SFX È re vano sedere
-SFX È re i sedere
-SFX È re tti sedere
-SFX È re sti sedere
-SFX È ere é sedere
-SFX È re tte sedere
-SFX È re mmo sedere
-SFX È re ste sedere
-SFX È e ono sedere
-SFX È re ttero sedere
-SFX È e ò sedere
-SFX È edere iederò sedere
-SFX È e ai sedere
-SFX È edere iederai sedere
-SFX È e à sedere
-SFX È edere iederà sedere
-SFX È 0 mo sedere
-SFX È edere iederemo sedere
-SFX È 0 te sedere
-SFX È edere iederete sedere
-SFX È e anno sedere
-SFX È edere iederanno sedere
-SFX È edere ieda sedere
-SFX È ere iate sedere
-SFX È edere iedano sedere
-SFX È re ssi sedere
-SFX È re sse sedere
-SFX È re ssimo sedere
-SFX È re ssero sedere
-SFX È 0 i sedere
-SFX È edere iederei sedere
-SFX È 0 sti sedere
-SFX È edere iederesti sedere
-SFX È 0 bbe sedere
-SFX È edere iederebbe sedere
-SFX È 0 mmo sedere
-SFX È edere iederemmo sedere
-SFX È 0 ste sedere
-SFX È edere iedereste sedere
-SFX È 0 bbero sedere
-SFX È edere iederebbero sedere
-SFX È re nte sedere
-SFX È re nti sedere
+SFX f Y 54
+SFX f edere iedo sedere
+SFX f edere iedi sedere
+SFX f edere iede sedere
+SFX f ere iamo sedere
+SFX f re te sedere
+SFX f edere iedono sedere
+SFX f re vo sedere
+SFX f re vi sedere
+SFX f re va sedere
+SFX f re vamo sedere
+SFX f re vate sedere
+SFX f re vano sedere
+SFX f re i sedere
+SFX f re tti sedere
+SFX f re sti sedere
+SFX f ere é sedere
+SFX f re tte sedere
+SFX f re mmo sedere
+SFX f re ste sedere
+SFX f e ono sedere
+SFX f re ttero sedere
+SFX f e ò sedere
+SFX f edere iederò sedere
+SFX f e ai sedere
+SFX f edere iederai sedere
+SFX f e à sedere
+SFX f edere iederà sedere
+SFX f 0 mo sedere
+SFX f edere iederemo sedere
+SFX f 0 te sedere
+SFX f edere iederete sedere
+SFX f e anno sedere
+SFX f edere iederanno sedere
+SFX f edere ieda sedere
+SFX f ere iate sedere
+SFX f edere iedano sedere
+SFX f re ssi sedere
+SFX f re sse sedere
+SFX f re ssimo sedere
+SFX f re ssero sedere
+SFX f 0 i sedere
+SFX f edere iederei sedere
+SFX f 0 sti sedere
+SFX f edere iederesti sedere
+SFX f 0 bbe sedere
+SFX f edere iederebbe sedere
+SFX f 0 mmo sedere
+SFX f edere iederemmo sedere
+SFX f 0 ste sedere
+SFX f edere iedereste sedere
+SFX f 0 bbero sedere
+SFX f edere iederebbero sedere
+SFX f re nte sedere
+SFX f re nti sedere
 # v.: pres. 1° pers. pl.
 # v.: p.r. 2° pers. pl.
 # v.: pres. 2° pers. sn.

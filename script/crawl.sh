@@ -242,8 +242,8 @@ crawl "irish" \
   "http://borel.slu.edu/ispell/index-en.html" \
   "https://github.com/kscanne/gaelspell/archive/master.zip"
 crawl "italian" \
-  "http://extensions.openoffice.org/en/project/italian-dictionary-thesaurus-hyphenation-patterns" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1204/13/dict-it.oxt/download"
+  "http://www.plio.it" \
+  "https://sourceforge.net/projects/aoo-extensions/files/1204/14/dict-it.oxt/download"
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
@@ -513,8 +513,8 @@ generate "is" "libreoffice" \
   "dictionaries-master/is/is.aff" "UTF-8" \
   "CC-BY-SA-3.0" "dictionaries-master/is/license.txt" "UTF-8"
 generate "it" "italian" \
-  "dictionaries/it_IT.dic" "ISO8859-15" \
-  "dictionaries/it_IT.aff" "ISO8859-15" \
+  "dictionaries/it_IT.dic" "UTF-8" \
+  "dictionaries/it_IT.aff" "UTF-8" \
   "GPL-3.0" "dictionaries/README.txt" "UTF-8"
 generate "lb" "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.dic" "UTF-8" \
