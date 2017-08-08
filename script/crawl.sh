@@ -11,13 +11,11 @@ mkdir -p "$DICTIONARIES"
 # METHODS ###########################################################
 #####################################################################
 
-#
 # Unpack an archive.
 #
 # @param $1 - Name of archive.
 # @param $2 - Page of source.
 # @param $3 - Path to archive.
-#
 unpack() {
   sourcePath="$SOURCES/$1"
 
@@ -41,13 +39,11 @@ unpack() {
   fi
 }
 
-#
 # Crawl and unpack an archive.
 #
-# @param $1 - Name of archive;
-# @param $2 - Page of source.
-# @param $3 - URL to archive.
-#
+# @param $1 - Name of archive
+# @param $2 - Page of source
+# @param $3 - URL to archive
 crawl() {
   filename=$(basename "$3")
 
@@ -73,7 +69,6 @@ crawl() {
   unpack "$1" "$2" "$archivePath"
 }
 
-#
 # Generate a package from a crawled directory (at $1) and
 # the given settings.
 #
@@ -85,7 +80,6 @@ crawl() {
 # @param $6 - Path to `.aff` file
 # @param $7 - Encoding of `.dic` file
 # @param $7 - Encoding of `.aff` file (defaults to $7)
-#
 generate() {
   SOURCE="$SOURCES/$1"
   dictionary="$DICTIONARIES/$2"
@@ -116,10 +110,7 @@ generate() {
 # ARCHIVES ##########################################################
 #####################################################################
 
-#
 # List of archives to crawl.
-#
-
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
@@ -204,10 +195,6 @@ crawl "hebrew" \
 crawl "hungarian" \
   "http://magyarispell.sourceforge.net" \
   "https://sourceforge.net/projects/magyarispell/files/Magyar%20Ispell/1.6.1/hu_HU-1.6.1.tar.gz/download"
-# Disabled due to unknown encoding.
-# crawl "hungarian" \
-#    "http://extensions.openoffice.org/en/project/hungarian-dictionary-pack" \
-#    "http://sourceforge.net/projects/aoo-extensions/files/1283/9/dict-hu.oxt/download"
 crawl "interlingua" \
   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
@@ -325,10 +312,6 @@ cd ../..
 # DICTIONARIES ######################################################
 #####################################################################
 
-#
-# Armenian (Eastern).
-#
-
 generate "armenian-eastern" \
   "hy-arevela" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
@@ -345,10 +328,6 @@ generate "armenian-western" \
   "hy_AM_western.aff" \
   "UTF-8"
 
-#
-# German (Austrian).
-#
-
 generate "gaelic" \
   "gd" \
   "GPL-3.0" \
@@ -356,10 +335,6 @@ generate "gaelic" \
   "hunspell-gd-master/gd_GB.dic" \
   "hunspell-gd-master/gd_GB.aff" \
   "UTF-8"
-
-#
-# German (Austrian).
-#
 
 generate "german" \
   "de-AT" \
@@ -369,10 +344,6 @@ generate "german" \
   "hunspell/de_AT.aff" \
   "ISO8859-1"
 
-#
-# Basque.
-#
-
 generate "basque" \
   "eu" \
   "GPL-2.0" \
@@ -380,10 +351,6 @@ generate "basque" \
   "eu.dic" \
   "eu.aff" \
   "UTF-8"
-
-#
-# Breton.
-#
 
 generate "breton" \
   "br" \
@@ -393,10 +360,6 @@ generate "breton" \
   "br_FR.aff" \
   "UTF-8"
 
-#
-# Bulgarian.
-#
-
 generate "bulgarian" \
   "bg" \
   "LGPL-2.1" \
@@ -404,10 +367,6 @@ generate "bulgarian" \
   "spell/bg_BG.dic" \
   "spell/bg_BG.aff" \
   "CP1251"
-
-#
-# Catalan / Valencian.
-#
 
 generate "catalan" \
   "ca" \
@@ -425,10 +384,6 @@ generate "catalan-valencian" \
   "catalan-valencia.aff" \
   "UTF-8"
 
-#
-# Croatian.
-#
-
 generate "croatian" \
   "hr" \
   "(LGPL-2.1 OR SISSL)" \
@@ -436,9 +391,6 @@ generate "croatian" \
   "hr_HR.dic" \
   "hr_HR.aff" \
   "ISO8859-2"
-#
-# Czech.
-#
 
 generate "czech" \
   "cs" \
@@ -448,10 +400,6 @@ generate "czech" \
   "cs_CZ.aff" \
   "ISO8859-2"
 
-#
-# Danish.
-#
-
 generate "danish" \
   "da" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
@@ -459,10 +407,6 @@ generate "danish" \
   "da_DK.dic" \
   "da_DK.aff" \
   "UTF-8"
-
-#
-# Dutch.
-#
 
 generate "dutch" \
   "nl" \
@@ -472,10 +416,6 @@ generate "dutch" \
   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" \
   "UTF-8"
 
-#
-# South African English.
-#
-
 generate "english" \
   "en-ZA" \
   "LGPL-2.1" \
@@ -484,13 +424,10 @@ generate "english" \
   "en_ZA.aff" \
   "UTF-8"
 
-#
 # Note that “the Hunspell English Dictionaries” are very vaguely licensed.
 # Read more in the license file. Note that the SPDX “(MIT AND BSD)”
 # comes from aspell’s description as “BSD/MIT-like”.
-#
 # See: http://wordlist.aspell.net/other-dicts/#official
-#
 
 generate "english-canadian" \
   "en-CA" \
@@ -524,10 +461,6 @@ generate "english-australian" \
   "en_AU.aff" \
   "UTF-8"
 
-#
-# Esperanto.
-#
-
 generate "esperanto" \
   "eo" \
   "GPL-2.0" \
@@ -535,10 +468,6 @@ generate "esperanto" \
   "eo_ilo.dic" \
   "eo_ilo.aff" \
   "UTF-8"
-
-#
-# Estonian.
-#
 
 generate "estonian" \
   "et" \
@@ -548,10 +477,6 @@ generate "estonian" \
   "et.aff" \
   "ISO8859-15"
 
-#
-# Icelandic.
-#
-
 generate "libreoffice" \
   "is" \
   "CC-BY-SA-3.0" \
@@ -559,10 +484,6 @@ generate "libreoffice" \
   "dictionaries-master/is/is.dic" \
   "dictionaries-master/is/is.aff" \
   "UTF-8"
-
-#
-# Faroese.
-#
 
 generate "faroese" \
   "fo" \
@@ -572,10 +493,6 @@ generate "faroese" \
   "fo_FO.aff" \
   "ISO8859-1"
 
-#
-# French.
-#
-
 generate "french" \
   "fr" \
   "MPL-2.0" \
@@ -583,10 +500,6 @@ generate "french" \
   "dictionaries/fr-classique.dic" \
   "dictionaries/fr-classique.aff" \
   "UTF-8"
-
-#
-# Frisian.
-#
 
 generate "frisian" \
   "fy" \
@@ -597,10 +510,6 @@ generate "frisian" \
   "CP1252" \
   "CP1252"
 
-#
-# Friulian.
-#
-
 generate "friulian" \
   "fur" \
   "GPL-2.0" \
@@ -608,10 +517,6 @@ generate "friulian" \
   "myspell-fur-12092005/fur_IT.dic" \
   "myspell-fur-12092005/fur_IT.aff" \
   "ISO8859-1"
-
-#
-# Galician.
-#
 
 generate "galician" \
   "gl" \
@@ -621,10 +526,6 @@ generate "galician" \
   "gl_ES.aff" \
   "UTF-8"
 
-#
-# German (Germany).
-#
-
 generate "german" \
   "de" \
   "(GPL-2.0 OR GPL-3.0)" \
@@ -632,10 +533,6 @@ generate "german" \
   "hunspell/de_DE.dic" \
   "hunspell/de_DE.aff" \
   "ISO8859-1"
-
-#
-# Greek.
-#
 
 generate "greek" \
   "el" \
@@ -646,10 +543,6 @@ generate "greek" \
   "UTF-8" \
   "UTF-8"
 
-#
-# Greek (Polytonic).
-#
-
 generate "greek-polyton" \
   "el-polyton" \
   "GPL-3.0" \
@@ -657,10 +550,6 @@ generate "greek-polyton" \
   "el_GR.dic" \
   "el_GR.aff" \
   "UTF-8"
-
-#
-# Hebrew.
-#
 
 generate "hebrew" \
   "he" \
@@ -670,10 +559,6 @@ generate "hebrew" \
   "he.aff" \
   "UTF-8"
 
-#
-# Hungarian.
-#
-
 generate "hungarian" \
   "hu" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
@@ -681,16 +566,6 @@ generate "hungarian" \
   "hu_HU.dic" \
   "hu_HU.aff" \
   "ISO8859-2"
-
-# Hack around the broken affix file.
-if [ "$(head -n 1 "$DICTIONARIES/hu/index.aff")" = "AF 1263" ]; then
-  tail -n 23734 "$DICTIONARIES/hu/index.aff" > "$DICTIONARIES/hu/index-fixed.aff"
-  mv "$DICTIONARIES/hu/index-fixed.aff" "$DICTIONARIES/hu/index.aff"
-fi
-
-#
-# Interlingua.
-#
 
 generate "interlingua" \
   "ia" \
@@ -700,10 +575,6 @@ generate "interlingua" \
   "dictionaries/ia.aff" \
   "UTF-8"
 
-#
-# Interlingue.
-#
-
 generate "interlingue" \
   "ie" \
   "Apache-2.0" \
@@ -711,10 +582,6 @@ generate "interlingue" \
   "hunspell-ie-master/ie.dic" \
   "hunspell-ie-master/ie.aff" \
   "UTF-8"
-
-#
-# Irish.
-#
 
 generate "irish" \
   "ga" \
@@ -725,10 +592,6 @@ generate "irish" \
   "UTF-8" \
   "UTF-8"
 
-#
-# Italian.
-#
-
 generate "italian" \
   "it" \
   "GPL-3.0" \
@@ -736,10 +599,6 @@ generate "italian" \
   "dictionaries/it_IT.dic" \
   "dictionaries/it_IT.aff" \
   "ISO8859-15"
-
-#
-# Kinyarwanda.
-#
 
 generate "kinyarwanda" \
   "rw" \
@@ -750,10 +609,6 @@ generate "kinyarwanda" \
   "UTF-8" \
   "ISO8859-1"
 
-#
-# Luxembourgish.
-#
-
 generate "luxembourgish" \
   "lb" \
   "EUPL-1.1" \
@@ -762,10 +617,6 @@ generate "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.aff" \
   "UTF-8"
 
-#
-# Mongolian.
-#
-
 generate "mongolian" \
   "mn" \
   "GPL-2.0" \
@@ -773,10 +624,6 @@ generate "mongolian" \
   "mn_MN.dic" \
   "mn_MN.aff" \
   "UTF-8"
-
-#
-# Norwegian (Bokmal, Nynorsk).
-#
 
 generate "norwegian" \
   "nb" \
@@ -794,10 +641,6 @@ generate "norwegian" \
   "DICT/nn_NO.aff" \
   "ISO8859-1"
 
-#
-# Polish.
-#
-
 generate "polish" \
   "pl" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)" \
@@ -805,10 +648,6 @@ generate "polish" \
   "pl_PL.dic" \
   "pl_PL.aff" \
   "ISO8859-2"
-
-#
-# Portuguese (Brazillian).
-#
 
 generate "portuguese-br" \
   "pt-BR" \
@@ -818,10 +657,6 @@ generate "portuguese-br" \
   "pt_BR.aff" \
   "ISO8859-1"
 
-#
-# Portuguese (European).
-#
-
 generate "portuguese" \
   "pt" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
@@ -829,10 +664,6 @@ generate "portuguese" \
   "dictionaries/pt_PT.dic" \
   "dictionaries/pt_PT.aff" \
   "UTF-8"
-
-#
-# Romanian.
-#
 
 generate "romanian" \
   "ro" \
@@ -842,10 +673,6 @@ generate "romanian" \
   "ro_RO.aff" \
   "UTF-8"
 
-#
-# Russian.
-#
-
 generate "russian" \
   "ru" \
   "BSD-2-Clause" \
@@ -853,10 +680,6 @@ generate "russian" \
   "ru_RU.dic" \
   "ru_RU.aff" \
   "KOI8-R"
-
-#
-# Serbian.
-#
 
 generate "serbian" \
   "sr-Latn" \
@@ -874,10 +697,6 @@ generate "serbian" \
   "sr.aff" \
   "UTF-8"
 
-#
-# Slovak.
-#
-
 generate "slovak" \
   "sk" \
   "GPL-2.0" \
@@ -885,10 +704,6 @@ generate "slovak" \
   "sk_SK/sk_SK.dic" \
   "sk_SK/sk_SK.aff" \
   "UTF-8"
-
-#
-# Slovenian.
-#
 
 generate "slovenian" \
   "sl" \
@@ -898,10 +713,6 @@ generate "slovenian" \
   "sl_SI.aff" \
   "ISO8859-2"
 
-#
-# Spanish.
-#
-
 generate "spanish" \
   "es" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" \
@@ -909,10 +720,6 @@ generate "spanish" \
   "es_ES.dic" \
   "es_ES.aff" \
   "ISO8859-1"
-
-#
-# Swedish.
-#
 
 generate "swedish" \
   "sv" \
@@ -922,10 +729,6 @@ generate "swedish" \
   "sv_SE.aff" \
   "UTF-8"
 
-#
-# German (Switzerland).
-#
-
 generate "german" \
   "de-CH" \
   "(GPL-2.0 OR GPL-3.0)" \
@@ -933,10 +736,6 @@ generate "german" \
   "hunspell/de_CH.dic" \
   "hunspell/de_CH.aff" \
   "ISO8859-1"
-
-#
-# Turkish.
-#
 
 # Unknown license.
 generate "turkish" \
@@ -947,10 +746,6 @@ generate "turkish" \
   "dictionaries/tr-TR.aff" \
   "UTF-8"
 
-#
-# Ukrainian.
-#
-
 generate "ukrainian" \
   "uk" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" \
@@ -959,10 +754,6 @@ generate "ukrainian" \
   "uk_UA/uk_UA.aff" \
   "UTF-8"
 
-#
-# Vietnamese.
-#
-
 generate "vietnamese" \
   "vi" \
   "GPL-2.0" \
@@ -970,3 +761,13 @@ generate "vietnamese" \
   "dictionaries/vi_VN.dic" \
   "dictionaries/vi_VN.aff" \
   "UTF-8"
+
+#####################################################################
+# FIX ###############################################################
+#####################################################################
+
+# Hack around the broken Hungarian affix file.
+if [ "$(head -n 1 "$DICTIONARIES/hu/index.aff")" = "AF 1263" ]; then
+  tail -n 23734 "$DICTIONARIES/hu/index.aff" > "$DICTIONARIES/hu/index-fixed.aff"
+  mv "$DICTIONARIES/hu/index-fixed.aff" "$DICTIONARIES/hu/index.aff"
+fi
