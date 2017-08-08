@@ -11,6 +11,23 @@ mkdir -p "$DICTIONARIES"
 # METHODS ###########################################################
 #####################################################################
 
+# ANSI colours.
+function bold {
+  printf "\033[1m%s\033[22m" "$1"
+}
+
+function green {
+  printf "\033[32m%s\033[0m" "$1"
+}
+
+function red {
+  printf "\033[31m%s\033[0m" "$1"
+}
+
+function yellow {
+  printf "\033[33m%s\033[0m" "$1"
+}
+
 # Unpack an archive.
 #
 # @param $1 - Name of archive.
@@ -45,6 +62,8 @@ unpack() {
 # @param $2 - Page of source
 # @param $3 - URL to archive
 crawl() {
+  printf "  $1"
+
   filename=$(basename "$3")
 
   if [ "$filename" = "download" ]; then
@@ -67,6 +86,7 @@ crawl() {
   fi
 
   unpack "$1" "$2" "$archivePath"
+  printf " $(green "✓")\n"
 }
 
 # Generate a package from a crawled directory (at $1) and
@@ -81,10 +101,15 @@ crawl() {
 # @param $7 - Encoding of `.dic` file
 # @param $7 - Encoding of `.aff` file (defaults to $7)
 generate() {
+  echo "  $2"
   SOURCE="$SOURCES/$1"
   dictionary="$DICTIONARIES/$2"
   dicEnc="$7"
   affEnc="$8"
+
+  if [ "$affEnc" = "" ]; then
+    affEnc="$dicEnc"
+  fi
 
   mkdir -p "$dictionary"
 
@@ -94,21 +119,22 @@ generate() {
 
   if [ -e "$SOURCE/$4" ]; then
     tr -d '\r' < "$SOURCE/$4" > "$dictionary/LICENSE"
+    printf "   $(green "✓") LICENSE\n"
   else
-    echo "Warning: Missing LICENSE file for $2"
-  fi
-
-  if [ "$affEnc" = "" ]; then
-    affEnc="$dicEnc"
+    printf "   $(red "𐄂") Missing LICENSE file\n"
   fi
   
   (iconv -f "$dicEnc" -t "UTF-8" | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | tr -d '\r') < "$SOURCE/$5" > "$dictionary/index.dic"
+  printf "   $(green "✓") index.dic\n"
   (iconv -f "$affEnc" -t "UTF-8" | sed "s/SET .*/SET UTF-8/" | awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | tr -d '\r') < "$SOURCE/$6" > "$dictionary/index.aff"
+  printf "   $(green "✓") index.aff\n"
 }
 
 #####################################################################
 # ARCHIVES ##########################################################
 #####################################################################
+
+printf "$(bold "Crawling")...\n"
 
 # List of archives to crawl.
 crawl "libreoffice" \
@@ -259,10 +285,15 @@ crawl "vietnamese" \
   "http://extensions.openoffice.org/en/project/vietnamese-spellchecker" \
   "http://sourceforge.net/projects/aoo-extensions/files/917/3/vi_spellchecker_ooo3.oxt/download"
 
+printf "$(bold "Crawled")!\n\n"
+
 #####################################################################
 # BUILD #############################################################
 #####################################################################
 
+printf "$(bold "Making")...\n"
+
+echo "  basque"
 mkdir -p "$SOURCES/basque"
 echo "http://xuxen.eus/eu/bertsioak" > "$SOURCES/basque/SOURCE"
 if [ ! -e "$SOURCES/basque/eu.aff" ]; then
@@ -272,6 +303,7 @@ if [ ! -e "$SOURCES/basque/eu.dic" ]; then
   wget "http://xuxen.eus/static/hunspell/eu_ES.dic" -O "$SOURCES/basque/eu.dic"
 fi
 
+echo "  estonian"
 mkdir -p "$SOURCES/estonian"
 echo "http://www.meso.ee/~jjpp/speller" > "$SOURCES/estonian/SOURCE"
 if [ ! -e "$SOURCES/estonian/et.aff" ]; then
@@ -281,26 +313,32 @@ if [ ! -e "$SOURCES/estonian/et.dic" ]; then
   wget "http://www.meso.ee/~jjpp/speller/et_EE.dic" -O "$SOURCES/estonian/et.dic"
 fi
 
+echo "  gaelic"
 cd "$SOURCES/gaelic/hunspell-gd-master"
 make gd_GB.dic gd_GB.aff
 cd ../../..
 
+echo "  german"
 cd "$SOURCES/german"
 make hunspell-all
 cd ../..
 
+echo "  greek"
 cd "$SOURCES/greek/elspell-master"
 make
 cd ../../..
 
+echo "  irish"
 cd "$SOURCES/irish/gaelspell-master"
 make ga_IE.dic ga_IE.aff
 cd ../../..
 
+echo "  kinyarwanda"
 cd "$SOURCES/kinyarwanda/hunspell-rw-master"
 make
 cd ../../..
 
+echo "  hebrew"
 cd "$SOURCES/hebrew"
 if [ ! -e "Makefile" ]; then
   ./configure
@@ -308,9 +346,13 @@ fi
 PERL5LIB="$PERL5LIB:." make hunspell
 cd ../..
 
+printf "$(bold "Made")!\n\n"
+
 #####################################################################
 # DICTIONARIES ######################################################
 #####################################################################
+
+printf "$(bold "Generating")...\n"
 
 generate "armenian-eastern" \
   "hy-arevela" \
@@ -762,12 +804,20 @@ generate "vietnamese" \
   "dictionaries/vi_VN.aff" \
   "UTF-8"
 
+printf "$(bold "Generated")!\n\n"
+
 #####################################################################
 # FIX ###############################################################
 #####################################################################
 
+printf "$(bold "Fixing")...\n"
+
+printf "  hu"
 # Hack around the broken Hungarian affix file.
 if [ "$(head -n 1 "$DICTIONARIES/hu/index.aff")" = "AF 1263" ]; then
   tail -n 23734 "$DICTIONARIES/hu/index.aff" > "$DICTIONARIES/hu/index-fixed.aff"
   mv "$DICTIONARIES/hu/index-fixed.aff" "$DICTIONARIES/hu/index.aff"
 fi
+printf " $(green "✓")\n"
+
+printf "$(bold "Fixed")!\n\n"
