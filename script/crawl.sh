@@ -247,6 +247,9 @@ crawl "italian" \
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
+crawl "latin" \
+  "https://extensions.openoffice.org/project/dict-la" \
+  "https://sourceforge.net/projects/aoo-extensions/files/1141/3/dict-la_2013-03-31.oxt/download"
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
@@ -516,6 +519,10 @@ generate "it" "italian" \
   "dictionaries/it_IT.dic" "UTF-8" \
   "dictionaries/it_IT.aff" "UTF-8" \
   "GPL-3.0" "dictionaries/README.txt" "UTF-8"
+generate "la" "latin" \
+  "la/universal/la.dic" "UTF-8" \
+  "la/universal/la.aff" "UTF-8" \
+  "GPL-2.0" "la/README_la.txt" "CP1252"
 generate "lb" "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.dic" "UTF-8" \
   "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
