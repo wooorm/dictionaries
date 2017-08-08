@@ -253,6 +253,9 @@ crawl "korean" \
 crawl "latgalian" \
   "http://dict.dv.lv/home.php?prj=la" \
   "http://dict.dv.lv/download/ltg_LV-0.1.5.oxt"
+crawl "latvian" \
+  "http://dict.dv.lv/home.php?prj=lv" \
+  "http://dict.dv.lv/download/lv_LV-1.3.0.oxt"
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
   "https://sourceforge.net/projects/aoo-extensions/files/1141/3/dict-la_2013-03-31.oxt/download"
@@ -541,6 +544,10 @@ generate "ltg" "latgalian" \
   "ltg_LV.dic" "UTF-8" \
   "ltg_LV.aff" "UTF-8" \
   "LGPL-2.1" "README_ltg_LV.txt" "UTF-8"
+generate "lv" "latvian" \
+  "lv_LV.dic" "UTF-8" \
+  "lv_LV.aff" "UTF-8" \
+  "LGPL-2.1" "README_lv_LV.txt" "UTF-8"
 generate "mn" "mongolian" \
   "mn_MN.dic" "UTF-8" \
   "mn_MN.aff" "UTF-8" \
