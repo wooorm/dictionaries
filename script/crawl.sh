@@ -274,6 +274,9 @@ crawl "libreoffice" \
 crawl "lithuanian" \
   "https://launchpad.net/ispell-lt" \
   "https://launchpad.net/ispell-lt/main/1.3/+download/myspell-lt-1.3.zip"
+crawl "low-german" \
+  "https://github.com/tdf/dict_nds" \
+  "https://github.com/tdf/dict_nds/archive/master.zip"
 crawl "luxembourgish" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu/archive/master.zip"
@@ -383,6 +386,11 @@ if [ ! -e "Makefile" ]; then
 fi
 PERL5LIB="$PERL5LIB:." make hunspell
 cd ../..
+
+echo "  low-german"
+cd "$SOURCES/low-german/dict_nds-master"
+make nds_de.aff nds_de.dic
+cd ../../..
 
 printf "$(bold "Made")!\n\n"
 
@@ -572,6 +580,10 @@ generate "nb" "norwegian" \
   "DICT/nb_NO.dic" "ISO8859-1" \
   "DICT/nb_NO.aff" "ISO8859-1" \
   "GPL-2.0" "COPYING" "ISO8859-1"
+generate "nds" "low-german" \
+  "dict_nds-master/nds_de.dic" "UTF-8" \
+  "dict_nds-master/nds_de.aff" "UTF-8" \
+  "GPL-3.0" "dict_nds-master/dist/README" "UTF-8"
 generate "nl" "dutch" \
   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.dic" "UTF-8" \
   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" "UTF-8" \
