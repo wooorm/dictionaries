@@ -31,7 +31,8 @@ var remove = {
   'ca-valencia': ['or Valencian'],
   el: ['(1453-)'],
   'el-polyton': ['(1453-)'],
-  ia: ['International Auxiliary Language Association']
+  ia: ['International Auxiliary Language Association'],
+  ne: ['(macrolanguage)']
 };
 
 var replace = {
@@ -41,7 +42,8 @@ var replace = {
     '(international': 'international',
     'association)': 'association',
     'Interlingua (International Auxiliary Language Association)': 'Interlingua'
-  }
+  },
+  ne: {'Nepali (macrolanguage)': 'Nepali'}
 };
 
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {

@@ -286,6 +286,9 @@ crawl "macedonian" \
 crawl "mongolian" \
   "http://extensions.openoffice.org/en/project/mongol-helniy-ugiyn-aldaa-shalgagch-ueer-taslagch-mongolian-spelling-and-hyphenation" \
   "http://sourceforge.net/projects/aoo-extensions/files/3204/2/dict-mn.oxt/download"
+crawl "nepali" \
+  "http://ltk.org.np" \
+  "http://ltk.org.np/downloads/ne_NP_dict.zip"
 crawl "norwegian" \
   "http://extensions.openoffice.org/en/project/norwegian-dictionaries-spell-checker-thesaurus-and-hyphenation" \
   "http://sourceforge.net/projects/aoo-extensions/files/1216/6/dictionary-no-no-2.1.oxt/download"
@@ -590,6 +593,10 @@ generate "mn" "mongolian" \
   "mn_MN.dic" "UTF-8" \
   "mn_MN.aff" "UTF-8" \
   "GPL-2.0" "README_mn_MN.txt" "UTF-8"
+generate "ne" "nepali" \
+  "ne_NP.dic" "UTF-8" \
+  "ne_NP.aff" "UTF-8" \
+  "LGPL-2.1" "README_ne_NP.txt" "UTF-8"
 generate "nb" "norwegian" \
   "DICT/nb_NO.dic" "ISO8859-1" \
   "DICT/nb_NO.aff" "ISO8859-1" \
