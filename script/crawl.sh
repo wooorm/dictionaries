@@ -262,6 +262,9 @@ crawl "latin" \
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
+crawl "lithuanian" \
+  "https://launchpad.net/ispell-lt" \
+  "https://launchpad.net/ispell-lt/main/1.3/+download/myspell-lt-1.3.zip"
 crawl "luxembourgish" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu/archive/master.zip"
@@ -540,6 +543,10 @@ generate "lb" "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.dic" "UTF-8" \
   "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
   "EUPL-1.1" "dictionary-lb-lu-master/LICENSE.txt" "UTF-8"
+generate "lt" "lithuanian" \
+  "myspell-lt-1.3/lt_LT.dic" "ISO8859-13" \
+  "myspell-lt-1.3/lt_LT.aff" "ISO8859-13" \
+  "BSD-3-Clause" "myspell-lt-1.3/COPYING" "UTF-8"
 generate "ltg" "latgalian" \
   "ltg_LV.dic" "UTF-8" \
   "ltg_LV.aff" "UTF-8" \

@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total, 59 dictionaries are provided.
+In total, 60 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -54,6 +54,7 @@ In total, 59 dictionaries are provided.
 | [`dictionary-ko`](dictionaries/ko) | Korean | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/ko/LICENSE) |
 | [`dictionary-la`](dictionaries/la) | Latin | [GPL-2.0](dictionaries/la/LICENSE) |
 | [`dictionary-lb`](dictionaries/lb) | Luxembourgish (or Letzeburgesch) | [EUPL-1.1](dictionaries/lb/LICENSE) |
+| [`dictionary-lt`](dictionaries/lt) | Lithuanian | [BSD-3-Clause](dictionaries/lt/LICENSE) |
 | [`dictionary-ltg`](dictionaries/ltg) | Latgalian | [LGPL-2.1](dictionaries/ltg/LICENSE) |
 | [`dictionary-lv`](dictionaries/lv) | Latvian | [LGPL-2.1](dictionaries/lv/LICENSE) |
 | [`dictionary-mn`](dictionaries/mn) | Mongolian | [GPL-2.0](dictionaries/mn/LICENSE) |
