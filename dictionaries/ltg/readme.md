@@ -61,7 +61,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [macos]: https://github.com/wooorm/dictionaries#macos
 
-[source]: http://dict.dv.lv/download.php?prj=la
+[source]: http://dict.dv.lv/home.php?prj=la
 
 [npm]: https://docs.npmjs.com/cli/install
 

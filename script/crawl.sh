@@ -456,11 +456,11 @@ generate "da" "danish" \
 generate "de" "german" \
   "hunspell/de_DE.dic" "ISO8859-1" \
   "hunspell/de_DE.aff" "ISO8859-1" \
-  "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8" \
+  "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8"
 generate "de-AT" "german" \
   "hunspell/de_AT.dic" "ISO8859-1" \
   "hunspell/de_AT.aff" "ISO8859-1" \
-  "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8" \
+  "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8"
 generate "de-CH" "german" \
   "hunspell/de_CH.dic" "ISO8859-1" \
   "hunspell/de_CH.aff" "ISO8859-1" \
@@ -620,7 +620,7 @@ generate "nb" "norwegian" \
 generate "nds" "low-german" \
   "dict_nds-master/nds_de.dic" "UTF-8" \
   "dict_nds-master/nds_de.aff" "UTF-8" \
-  "GPL-3.0" "dict_nds-master/dist/README" "UTF-8"
+  "GPL-3.0" "dict_nds-master/README" "UTF-8"
 generate "nl" "dutch" \
   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.dic" "UTF-8" \
   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" "UTF-8" \
@@ -652,7 +652,7 @@ generate "ru" "russian" \
 generate "rw" "kinyarwanda" \
   "hunspell-rw-master/rw_RW.dic" "ISO8859-1" \
   "hunspell-rw-master/rw_RW.aff" "ISO8859-1" \
-  "GPL-3.0" "hunspell-rw-master/LICENSE" "UTF-8" \
+  "GPL-3.0" "hunspell-rw-master/LICENSE" "UTF-8"
 generate "sk" "slovak" \
   "sk_SK/sk_SK.dic" "UTF-8" \
   "sk_SK/sk_SK.aff" "UTF-8" \
