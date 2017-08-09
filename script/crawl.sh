@@ -290,8 +290,8 @@ crawl "nepali" \
   "http://ltk.org.np" \
   "http://ltk.org.np/downloads/ne_NP_dict.zip"
 crawl "norwegian" \
-  "http://extensions.openoffice.org/en/project/norwegian-dictionaries-spell-checker-thesaurus-and-hyphenation" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1216/6/dictionary-no-no-2.1.oxt/download"
+  "http://no.speling.org" \
+  "https://alioth.debian.org/frs/download.php/latestzip/415/spell-norwegian-latest.zip"
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "http://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download"
@@ -404,6 +404,22 @@ if [ ! -e "release" ]; then
   bash ./build_release.sh
 fi
 cd ../../..
+
+echo "  norwegian"
+cd "$SOURCES/norwegian"
+if [ ! -e "no" ]; then
+  unzip "no_NO-pack2-2.2.zip" -d "no"
+fi
+if [ ! -e "nb" ]; then
+  unzip "no/nb_NO.zip" -d "nb"
+fi
+if [ ! -e "nn" ]; then
+  unzip "no/nn_NO.zip" -d "nn"
+fi
+if [ ! -e "LICENSE" ]; then
+  wget "https://alioth.debian.org/plugins/scmgit/cgi-bin/gitweb.cgi?p=spell-norwegian/spell-norwegian.git;a=blob_plain;f=COPYING;hb=HEAD" -O "LICENSE"
+fi
+cd ../..
 
 printf "$(bold "Made")!\n\n"
 
@@ -598,9 +614,9 @@ generate "ne" "nepali" \
   "ne_NP.aff" "UTF-8" \
   "LGPL-2.1" "README_ne_NP.txt" "UTF-8"
 generate "nb" "norwegian" \
-  "DICT/nb_NO.dic" "ISO8859-1" \
-  "DICT/nb_NO.aff" "ISO8859-1" \
-  "GPL-2.0" "COPYING" "ISO8859-1"
+  "nb/nb_NO.dic" "ISO8859-1" \
+  "nb/nb_NO.aff" "ISO8859-1" \
+  "GPL-2.0" "LICENSE" "UTF-8"
 generate "nds" "low-german" \
   "dict_nds-master/nds_de.dic" "UTF-8" \
   "dict_nds-master/nds_de.aff" "UTF-8" \
@@ -610,9 +626,9 @@ generate "nl" "dutch" \
   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" "UTF-8" \
   "(BSD-3-Clause OR CC-BY-3.0)" "dutch-master/LICENSE" "UTF-8"
 generate "nn" "norwegian" \
-  "DICT/nn_NO.dic" "ISO8859-1" \
-  "DICT/nn_NO.aff" "ISO8859-1" \
-  "GPL-2.0" "COPYING" "ISO8859-1"
+  "nn/nn_NO.dic" "ISO8859-1" \
+  "nn/nn_NO.aff" "ISO8859-1" \
+  "GPL-2.0" "LICENSE" "UTF-8"
 generate "pl" "polish" \
   "pl_PL.dic" "ISO8859-2" \
   "pl_PL.aff" "ISO8859-2" \
