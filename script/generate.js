@@ -109,7 +109,7 @@ dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
     description: description + ' spelling dictionary in UTF-8',
     license: read(join(base, 'SPDX'), 'utf-8').trim(),
     keywords: keywords,
-    repository: pkg.repository,
+    repository: pkg.repository + '/tree/master/dictionaries/' + code,
     bugs: pkg.bugs,
     author: pkg.author,
     contributors: pkg.contributors,

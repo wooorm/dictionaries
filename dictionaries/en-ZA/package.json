@@ -14,7 +14,7 @@
     "south",
     "africa"
   ],
-  "repository": "wooorm/dictionaries",
+  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/en-ZA",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
