@@ -77,7 +77,7 @@ crawl() {
     archivePath="$ARCHIVES/$1.tar.bz2"
   fi
   # Normal GZipped tar, a hack for hebrew, and a hack for hungarian.
-  if [ "$extension" = "tar.gz" ] || [ "$extension" = "4.tar.gz" ] || [ "$extension" = "6.1.tar.gz" ]; then
+  if [ "$extension" = "tar.gz" ] || [ "$extension" = "4.tar.gz" ] || [ "$extension" = "6.tar.gz" ]; then
     archivePath="$ARCHIVES/$1.tar.gz"
   fi
 
@@ -240,7 +240,7 @@ crawl "hebrew" \
   "http://hspell.ivrix.org.il/hspell-1.4.tar.gz"
 crawl "hungarian" \
   "http://magyarispell.sourceforge.net" \
-  "https://sourceforge.net/projects/magyarispell/files/Magyar%20Ispell/1.6.1/hu_HU-1.6.1.tar.gz/download"
+  "https://sourceforge.net/projects/magyarispell/files/Magyar%20Ispell/1.6/hu_HU-1.6.tar.gz/download"
 crawl "interlingua" \
   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
