@@ -1,7 +1,7 @@
 # dictionaries
 
-Accessible and easily installable [hunspell][] dictionaries.  Useful with, for
-example, [`nodehun`][nodehun] and [`nspell`][nspell].
+Accessible and easily installable [hunspell][] dictionaries.  Useful with
+[`nodehun`][nodehun], [`nspell`][nspell], and others.
 
 ## Installation
 
@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total, 63 dictionaries are provided.
+In total 63 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -89,7 +89,7 @@ Each dictionary can be installed on OS X by following
 ## Contributing
 
 New dictionaries can be added quite easily.  Most importantly, they must be
-licensed with an Open Source License, and they should be convertible by
+licensed with a free license, and they should be convertible by
 **iconv**(1) to UTF-8.
 
 ## License
