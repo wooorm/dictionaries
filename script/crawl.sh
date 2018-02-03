@@ -361,52 +361,52 @@ if [ ! -e "$SOURCES/estonian/et.dic" ]; then
 fi
 
 echo "  gaelic"
-cd "$SOURCES/gaelic/hunspell-gd-master"
+cd "$SOURCES/gaelic/hunspell-gd-master" || exit
 make gd_GB.dic gd_GB.aff
-cd ../../..
+cd ../../.. || exit
 
 echo "  german"
-cd "$SOURCES/german"
+cd "$SOURCES/german" || exit
 make hunspell-all
-cd ../..
+cd ../.. || exit
 
 echo "  greek"
-cd "$SOURCES/greek/elspell-master"
+cd "$SOURCES/greek/elspell-master" || exit
 make
-cd ../../..
+cd ../../.. || exit
 
 echo "  irish"
 cd "$SOURCES/irish/gaelspell-master"
 make ga_IE.dic ga_IE.aff
-cd ../../..
+cd ../../.. || exit
 
 echo "  kinyarwanda"
-cd "$SOURCES/kinyarwanda/hunspell-rw-master"
+cd "$SOURCES/kinyarwanda/hunspell-rw-master" || exit
 make
-cd ../../..
+cd ../../.. || exit
 
 echo "  hebrew"
-cd "$SOURCES/hebrew"
+cd "$SOURCES/hebrew" || exit
 if [ ! -e "Makefile" ]; then
   ./configure
 fi
 PERL5LIB="$PERL5LIB:." make hunspell
-cd ../..
+cd ../.. || exit
 
 echo "  low-german"
-cd "$SOURCES/low-german/dict_nds-master"
+cd "$SOURCES/low-german/dict_nds-master" || exit
 make nds_de.aff nds_de.dic
-cd ../../..
+cd ../../.. || exit
 
 echo "  macedonian"
-cd "$SOURCES/macedonian/hunspell-mk-master"
+cd "$SOURCES/macedonian/hunspell-mk-master" || exit
 if [ ! -e "release" ]; then
   bash ./build_release.sh
 fi
-cd ../../..
+cd ../../.. || exit
 
 echo "  norwegian"
-cd "$SOURCES/norwegian"
+cd "$SOURCES/norwegian" || exit
 if [ ! -e "no" ]; then
   unzip "no_NO-pack2-2.2.zip" -d "no"
 fi
@@ -419,7 +419,7 @@ fi
 if [ ! -e "LICENSE" ]; then
   wget "https://alioth.debian.org/plugins/scmgit/cgi-bin/gitweb.cgi?p=spell-norwegian/spell-norwegian.git;a=blob_plain;f=COPYING;hb=HEAD" -O "LICENSE"
 fi
-cd ../..
+cd ../.. || exit
 
 printf "$(bold "Made")!\n\n"
 
