@@ -249,7 +249,7 @@ crawl "interlingue" \
   "https://github.com/Carmina16/hunspell-ie/archive/master.zip"
 crawl "irish" \
   "http://borel.slu.edu/ispell/index-en.html" \
-  "https://github.com/kscanne/gaelspell/archive/master.zip"
+  "https://github.com/kscanne/gaelspell/archive/v4.8.zip"
 crawl "italian" \
   "http://www.plio.it" \
   "https://sourceforge.net/projects/aoo-extensions/files/1204/14/dict-it.oxt/download"
@@ -376,7 +376,8 @@ make
 cd ../../.. || exit
 
 echo "  irish"
-cd "$SOURCES/irish/gaelspell-master"
+cd "$SOURCES/irish/gaelspell-4.8" || exit
+cpan -i roman
 make ga_IE.dic ga_IE.aff
 cd ../../.. || exit
 
@@ -530,9 +531,9 @@ generate "fy" "frisian" \
   "fy_NL.aff" "CP1252" \
   "GPL-3.0" "README" "UTF-8"
 generate "ga" "irish" \
-  "gaelspell-master/ga_IE.dic" "UTF-8" \
-  "gaelspell-master/ga_IE.aff" "UTF-8" \
-  "GPL-2.0" "gaelspell-master/LICENSES-en.txt" "UTF-8"
+  "gaelspell-4.8/ga_IE.dic" "UTF-8" \
+  "gaelspell-4.8/ga_IE.aff" "UTF-8" \
+  "GPL-2.0" "gaelspell-4.8/LICENSES-en.txt" "UTF-8"
 generate "gd" "gaelic" \
   "hunspell-gd-master/gd_GB.dic" "UTF-8" \
   "hunspell-gd-master/gd_GB.aff" "UTF-8" \
