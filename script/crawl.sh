@@ -213,7 +213,7 @@ crawl "faroese" \
   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://www.dicollecte.org" \
-  "http://www.dicollecte.org/grammalecte/oxt/Grammalecte-fr-v0.5.18.oxt"
+  "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.2.zip"
 crawl "frisian" \
   "https://taalweb.frl/downloads" \
   "https://www.fryske-akademy.nl/spell/oxt/fy_NL-20160722.oxt"
@@ -518,9 +518,9 @@ generate "fo" "faroese" \
   "fo_FO.aff" "ISO8859-1" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
 generate "fr" "french" \
-  "dictionaries/fr-classique.dic" "UTF-8" \
-  "dictionaries/fr-classique.aff" "UTF-8" \
-  "MPL-2.0" "dictionaries/README_dict_fr.txt" "UTF-8"
+  "fr-classique.dic" "UTF-8" \
+  "fr-classique.aff" "UTF-8" \
+  "MPL-2.0" "README_dict_fr.txt" "UTF-8"
 generate "fur" "friulian" \
   "myspell-fur-12092005/fur_IT.dic" "ISO8859-1" \
   "myspell-fur-12092005/fur_IT.aff" "ISO8859-1" \
