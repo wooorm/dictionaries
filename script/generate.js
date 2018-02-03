@@ -48,12 +48,19 @@ var replace = {
 
 dir('dictionaries').filter(negate(hidden)).sort().forEach(function (code) {
   var base = dict(code);
-  var source = read(join(base, 'SOURCE'), 'utf-8').trim();
   var tag = bcp47.parse(code);
   var parts = [];
   var pack = {};
   var keywords = ['spelling', 'myspell', 'hunspell', 'dictionary'];
+  var source;
   var description;
+
+  try {
+    source = read(join(base, 'SOURCE'), 'utf-8').trim();
+  } catch (err) {
+    console.log('Cannot find dictionary for `%s`', code);
+    return;
+  }
 
   try {
     pack = JSON.parse(read(join(base, 'package.json')));
