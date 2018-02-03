@@ -280,9 +280,9 @@ crawl "low-german" \
 crawl "luxembourgish" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu" \
   "https://github.com/spellchecker-lu/dictionary-lb-lu/archive/master.zip"
-crawl "macedonian" \
-  "https://github.com/dimztimz/hunspell-mk" \
-  "https://github.com/dimztimz/hunspell-mk/archive/master.zip"
+# crawl "macedonian" \
+#   "https://github.com/dimztimz/hunspell-mk" \
+#   "https://github.com/dimztimz/hunspell-mk/archive/master.zip"
 crawl "mongolian" \
   "http://extensions.openoffice.org/en/project/mongol-helniy-ugiyn-aldaa-shalgagch-ueer-taslagch-mongolian-spelling-and-hyphenation" \
   "http://sourceforge.net/projects/aoo-extensions/files/3204/2/dict-mn.oxt/download"
@@ -399,12 +399,12 @@ cd "$SOURCES/low-german/dict_nds-master" || exit
 make nds_de.aff nds_de.dic
 cd ../../.. || exit
 
-echo "  macedonian"
-cd "$SOURCES/macedonian/hunspell-mk-master" || exit
-if [ ! -e "release" ]; then
-  bash ./build_release.sh
-fi
-cd ../../.. || exit
+# echo "  macedonian"
+# cd "$SOURCES/macedonian/hunspell-mk-master" || exit
+# if [ ! -e "release" ]; then
+#   bash ./build_release.sh
+# fi
+# cd ../../.. || exit
 
 echo "  norwegian"
 cd "$SOURCES/norwegian" || exit
@@ -602,10 +602,10 @@ generate "lv" "latvian" \
   "lv_LV.dic" "UTF-8" \
   "lv_LV.aff" "UTF-8" \
   "LGPL-2.1" "README_lv_LV.txt" "UTF-8"
-generate "mk" "macedonian" \
-  "hunspell-mk-master/release/mk.dic" "UTF-8" \
-  "hunspell-mk-master/release/mk.aff" "UTF-8" \
-  "GPL-3.0" "hunspell-mk-master/release/LICENCE.txt" "UTF-8"
+# generate "mk" "macedonian" \
+#   "hunspell-mk-master/release/mk.dic" "UTF-8" \
+#   "hunspell-mk-master/release/mk.aff" "UTF-8" \
+#   "GPL-3.0" "hunspell-mk-master/release/LICENCE.txt" "UTF-8"
 generate "mn" "mongolian" \
   "mn_MN.dic" "UTF-8" \
   "mn_MN.aff" "UTF-8" \
