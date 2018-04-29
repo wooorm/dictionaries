@@ -26,6 +26,7 @@
     "mdast-zone": "^3.0.1",
     "negate": "^1.0.0",
     "not": "^0.1.0",
+    "prettier": "^1.12.1",
     "remark-cli": "^5.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "tape": "^4.8.0",
@@ -36,16 +37,21 @@
     "xtend": "^4.0.1"
   },
   "scripts": {
-    "build-crawl": "sh script/crawl.sh",
-    "build-generate": "node script/generate",
-    "build-md": "remark *.md --quiet --frail --output",
-    "build": "npm run build-crawl && npm run build-generate && npm run build-md",
-    "lint": "xo",
+    "generate": "sh script/crawl.sh && node script/generate",
+    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
     "test-api": "node test",
-    "test": "npm run build && npm run lint && npm run test-api"
+    "test": "npm run generate && npm run format && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "rules": {
       "no-var": "off",

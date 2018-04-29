@@ -19,10 +19,10 @@ npm install dictionary-cs
 ## Usage
 
 ```js
-var cs = require('dictionary-cs');
+var cs = require('dictionary-cs')
 
 cs(function (err, result) {
-  console.log(err || result);
+  console.log(err || result)
 });
 ```
 
@@ -39,12 +39,11 @@ Where `dic` is a buffer for the dictionary file at `index.dic` (in UTF-8), and
 Or directly load the files, using something like:
 
 ```js
-var path = require('path');
-var base = require.resolve('dictionary-cs');
+var path = require('path')
+var base = require.resolve('dictionary-cs')
 
-// NEVER USE `readFileSync` IN PRODUCTION.
-fs.readFileSync(path.join(base, 'index.dic'), 'utf-8');
-fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
+fs.readFileSync(path.join(base, 'index.dic'), 'utf-8')
+fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
 ```
 
 ## License

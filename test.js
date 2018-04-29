@@ -1,79 +1,81 @@
-'use strict';
+'use strict'
 
-var fs = require('fs');
-var path = require('path');
-var assert = require('assert');
-var test = require('tape');
-var vfile = require('to-vfile');
-var bail = require('bail');
-var not = require('not');
-var hidden = require('is-hidden');
-var isUTF8 = require('utf-8-validate');
+var fs = require('fs')
+var path = require('path')
+var assert = require('assert')
+var test = require('tape')
+var vfile = require('to-vfile')
+var bail = require('bail')
+var not = require('not')
+var hidden = require('is-hidden')
+var isUTF8 = require('utf-8-validate')
 
-var root = 'dictionaries';
+var root = 'dictionaries'
 
 var checks = {
   'All required files should exist': requiredFiles,
   'All files should be in UTF-8': utf8
-};
+}
 
 function utf8(name) {
-  var dirname = path.join(root, name);
+  var dirname = path.join(root, name)
 
-  fs.readdirSync(dirname).filter(not(hidden)).forEach(check);
+  fs
+    .readdirSync(dirname)
+    .filter(not(hidden))
+    .forEach(check)
 
   function check(filename) {
-    var file = vfile.readSync(path.join(dirname, filename));
-    assert.ok(isUTF8(file.contents), file.basename + ' should be utf8');
+    var file = vfile.readSync(path.join(dirname, filename))
+    assert.ok(isUTF8(file.contents), file.basename + ' should be utf8')
   }
 }
 
 function requiredFiles(name) {
-  var dirname = path.join(root, name);
-  var files = fs.readdirSync(dirname).filter(not(hidden));
-
-  [
-    'index.dic',
-    'index.aff',
-    'readme.md',
-    'index.js',
-    'package.json'
-  ].forEach(check);
+  var dirname = path.join(root, name)
+  var files = fs.readdirSync(dirname).filter(not(hidden))
+  ;['index.dic', 'index.aff', 'readme.md', 'index.js', 'package.json'].forEach(
+    check
+  )
 
   function check(basename) {
-    assert.notEqual(files.indexOf(basename), -1, 'should have `' + basename + '`');
+    assert.notEqual(
+      files.indexOf(basename),
+      -1,
+      'should have `' + basename + '`'
+    )
   }
 }
 
-test('dictionaries', function (t) {
-  fs.readdir(root, ondir);
+test('dictionaries', function(t) {
+  fs.readdir(root, ondir)
 
   function ondir(err, paths) {
-    bail(err);
+    bail(err)
 
-    paths = paths.filter(not(hidden));
+    paths = paths.filter(not(hidden))
 
-    t.plan(paths.length);
+    t.plan(paths.length)
 
-    paths.forEach(check, t);
+    paths.forEach(check, t)
   }
-});
+})
 
 function check(basename) {
-  this.test(basename, all);
+  this.test(basename, all)
 
   function all(st) {
-    var descriptions = Object.keys(checks);
+    var descriptions = Object.keys(checks)
 
-    st.plan(descriptions.length);
+    st.plan(descriptions.length)
 
-    descriptions.forEach(one);
+    descriptions.forEach(one)
 
     function one(description) {
-      st.doesNotThrow(check, description);
+      st.doesNotThrow(check, description)
 
       function check() {
-        checks[description](basename);
+        checks[description](basename)
       }
     }
   }
