@@ -4,3 +4,4 @@ SOURCE
 archive/
 source/
 node_modules/
+yarn.lock
