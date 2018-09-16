@@ -1,7 +1,7 @@
 # Occidental (Interlingue)
 # v0.6
 #
-# Copyright 2015-2017 Smirnova O. I.
+# Copyright 2015-2018 Smirnova O. I.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -148,11 +148,15 @@ PFX n Y 2
 PFX n 0 ín .
 PFX n 0 in .
 
-SFX B Y 4
-SFX B r  bil/AMN   [ai]r
-SFX B r  bilitá/n  [ai]r
-SFX B er ibil/AMN  er
-SFX B er ibilitá/n er
+SFX B Y 8
+SFX B r   bil/AMN    [ai]r
+SFX B r   bilitá/n   [ai]r
+SFX B er  ibil/AMN   [^dr]er
+SFX B er  ibilitá/n  [^dr]er
+SFX B der sibil/AMN  der
+SFX B der sibilitá/n der
+SFX B rer sibil/AMN  rer
+SFX B rer sibilitá/n rer
 
 SFX G Y 2
 SFX G r  bilitás/n  [ai]r
