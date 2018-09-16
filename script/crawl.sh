@@ -166,6 +166,9 @@ crawl "armenian-eastern" \
 crawl "armenian-western" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
+crawl "basque" \
+  "http://xuxen.eus/eu/home" \
+  "http://xuxen.eus/static/hunspell/xuxen_5.1_hunspell.zip"
 crawl "breton" \
   "http://drouizig.org/index.php/br/binviou-br/difazier-hunspell" \
   "http://drouizig.org/images/stories/difazier/hunspell/pakadaou/difazier-an-drouizig-0-14.zip"
@@ -340,16 +343,6 @@ printf "$(bold "Crawled")!\n\n"
 
 printf "$(bold "Making")...\n"
 
-echo "  basque"
-mkdir -p "$SOURCES/basque"
-echo "http://xuxen.eus/eu/bertsioak" > "$SOURCES/basque/SOURCE"
-if [ ! -e "$SOURCES/basque/eu.aff" ]; then
-  wget "http://xuxen.eus/static/hunspell/eu_ES.aff" -O "$SOURCES/basque/eu.aff"
-fi
-if [ ! -e "$SOURCES/basque/eu.dic" ]; then
-  wget "http://xuxen.eus/static/hunspell/eu_ES.dic" -O "$SOURCES/basque/eu.dic"
-fi
-
 echo "  estonian"
 mkdir -p "$SOURCES/estonian"
 echo "http://www.meso.ee/~jjpp/speller" > "$SOURCES/estonian/SOURCE"
@@ -434,6 +427,10 @@ generate "bg" "bulgarian" \
   "spell/bg_BG.dic" "CP1251" \
   "spell/bg_BG.aff" "CP1251" \
   "LGPL-2.1" "README.txt" "UTF-8"
+generate "eu" "basque" \
+  "eu_ES.dic" "UTF-8" \
+  "eu_ES.aff" "UTF-8" \
+  "GPL-2.0"
 generate "br" "breton" \
   "br_FR.dic" "UTF-8" \
   "br_FR.aff" "UTF-8" \

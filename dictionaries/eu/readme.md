@@ -59,7 +59,7 @@ Rest: MIT © [Titus Wormer][home].
 
 [macos]: https://github.com/wooorm/dictionaries#macos
 
-[source]: http://xuxen.eus/eu/bertsioak
+[source]: http://xuxen.eus/eu/home
 
 [npm]: https://docs.npmjs.com/cli/install
 
