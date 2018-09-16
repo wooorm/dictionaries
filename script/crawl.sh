@@ -216,7 +216,7 @@ crawl "faroese" \
   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://www.dicollecte.org" \
-  "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.2.zip"
+  "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.3.zip"
 crawl "frisian" \
   "https://taalweb.frl/downloads" \
   "https://www.fryske-akademy.nl/spell/oxt/fy_NL-20160722.oxt"
