@@ -424,10 +424,6 @@ generate "bg" "bulgarian" \
   "spell/bg_BG.dic" "CP1251" \
   "spell/bg_BG.aff" "CP1251" \
   "LGPL-2.1" "README.txt" "UTF-8"
-generate "eu" "basque" \
-  "eu_ES.dic" "UTF-8" \
-  "eu_ES.aff" "UTF-8" \
-  "GPL-2.0"
 generate "br" "breton" \
   "br_FR.dic" "UTF-8" \
   "br_FR.aff" "UTF-8" \
@@ -505,8 +501,8 @@ generate "et" "estonian" \
   "et.aff" "ISO8859-15" \
   "LGPL-2.1"
 generate "eu" "basque" \
-  "eu.dic" "UTF-8" \
-  "eu.aff" "UTF-8" \
+  "eu_ES.dic" "UTF-8" \
+  "eu_ES.aff" "UTF-8" \
   "GPL-2.0"
 generate "fo" "faroese" \
   "fo_FO.dic" "ISO8859-1" \
