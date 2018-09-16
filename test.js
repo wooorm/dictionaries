@@ -33,12 +33,18 @@ function utf8(name) {
 function requiredFiles(name) {
   var dirname = path.join(root, name)
   var files = fs.readdirSync(dirname).filter(not(hidden))
-  ;['index.dic', 'index.aff', 'readme.md', 'index.js', 'package.json'].forEach(
-    check
-  )
+  var paths = [
+    'index.dic',
+    'index.aff',
+    'readme.md',
+    'index.js',
+    'package.json'
+  ]
+
+  paths.forEach(check)
 
   function check(basename) {
-    assert.notEqual(
+    assert.notStrictEqual(
       files.indexOf(basename),
       -1,
       'should have `' + basename + '`'

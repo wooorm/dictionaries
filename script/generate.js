@@ -60,14 +60,14 @@ dir('dictionaries')
 
     try {
       source = read(join(base, 'SOURCE'), 'utf-8').trim()
-    } catch (err) {
+    } catch (error) {
       console.log('Cannot find dictionary for `%s`', code)
       return
     }
 
     try {
       pack = JSON.parse(read(join(base, 'package.json')))
-    } catch (err) {}
+    } catch (error) {}
 
     keywords = keywords.concat(code.toLowerCase().split('-'))
 
