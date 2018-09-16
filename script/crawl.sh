@@ -294,7 +294,7 @@ crawl "nepali" \
   "http://ltk.org.np/downloads/ne_NP_dict.zip"
 crawl "norwegian" \
   "http://no.speling.org" \
-  "https://alioth.debian.org/frs/download.php/latestzip/415/spell-norwegian-latest.zip"
+  "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "http://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download"
@@ -409,9 +409,6 @@ if [ ! -e "nb" ]; then
 fi
 if [ ! -e "nn" ]; then
   unzip "no/nn_NO.zip" -d "nn"
-fi
-if [ ! -e "LICENSE" ]; then
-  wget "https://alioth.debian.org/plugins/scmgit/cgi-bin/gitweb.cgi?p=spell-norwegian/spell-norwegian.git;a=blob_plain;f=COPYING;hb=HEAD" -O "LICENSE"
 fi
 cd ../.. || exit
 
@@ -614,7 +611,7 @@ generate "ne" "nepali" \
 generate "nb" "norwegian" \
   "nb/nb_NO.dic" "ISO8859-1" \
   "nb/nb_NO.aff" "ISO8859-1" \
-  "GPL-2.0" "LICENSE" "UTF-8"
+  "GPL-2.0" "nb/README_nb_NO.txt" "ISO8859-1"
 generate "nds" "low-german" \
   "dict_nds-master/nds_de.dic" "UTF-8" \
   "dict_nds-master/nds_de.aff" "UTF-8" \
@@ -626,7 +623,7 @@ generate "nl" "dutch" \
 generate "nn" "norwegian" \
   "nn/nn_NO.dic" "ISO8859-1" \
   "nn/nn_NO.aff" "ISO8859-1" \
-  "GPL-2.0" "LICENSE" "UTF-8"
+  "GPL-2.0" "nn/README_nn_NO.txt" "ISO8859-1"
 generate "pl" "polish" \
   "pl_PL.dic" "ISO8859-2" \
   "pl_PL.aff" "ISO8859-2" \
