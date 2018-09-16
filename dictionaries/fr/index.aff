@@ -2,9 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v6.2
+# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v6.3
 # par Olivier R. -- licence MPL 2.0
-# Généré le 27-11-2017 à 14:56
+# Généré le 20-08-2018 à 11:51
 # Pour améliorer le dictionnaire, allez sur http://www.dicollecte.org/
 
 
@@ -133,7 +133,7 @@ REP construirent construisirent
 
 KEY azertyuiop|qsdfghjklmù|wxcvbn|aéz|yèu|iço|oàp|aqz|zse|edr|rft|tgy|yhu|uji|iko|olpm|qws|sxd|dcf|fvg|gbh|hnj
 
-ICONV 41
+ICONV 42
 ICONV ’ '
 ICONV ʼ '
 ICONV ﬃ ffi
@@ -143,6 +143,7 @@ ICONV ﬅ ft
 ICONV ﬁ fi
 ICONV ﬂ fl
 ICONV ﬆ st
+ICONV ſ s
 ICONV à à
 ICONV â â
 ICONV ä ä
