@@ -20,8 +20,7 @@ var checks = {
 function utf8(name) {
   var dirname = path.join(root, name)
 
-  fs
-    .readdirSync(dirname)
+  fs.readdirSync(dirname)
     .filter(not(hidden))
     .forEach(check)
 
