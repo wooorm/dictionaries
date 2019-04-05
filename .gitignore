@@ -5,3 +5,4 @@ archive/
 source/
 node_modules/
 yarn.lock
+/.vs/slnx.sqlite
