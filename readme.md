@@ -35,6 +35,7 @@ In total 63 dictionaries are provided.
 | [`dictionary-es`](dictionaries/es) | Spanish (or Castilian) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es/LICENSE) |
 | [`dictionary-et`](dictionaries/et) | Estonian | LGPL-2.1 |
 | [`dictionary-eu`](dictionaries/eu) | Basque | GPL-2.0 |
+| [`dictionary-fa-IR`](dictionaries/fa-IR) | Farsi(Iran) | MIT
 | [`dictionary-fo`](dictionaries/fo) | Faroese | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/fo/LICENSE) |
 | [`dictionary-fr`](dictionaries/fr) | French | [MPL-2.0](dictionaries/fr/LICENSE) |
 | [`dictionary-fur`](dictionaries/fur) | Friulian | [GPL-2.0](dictionaries/fur/LICENSE) |
