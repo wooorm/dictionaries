@@ -7,3 +7,5 @@ node_modules/
 yarn.lock
 /.vs/slnx.sqlite
 /.vs/dictionaries/config/applicationhost.config
+.vs/VSWorkspaceState.json
+.vs/dictionaries/v16/.suo
