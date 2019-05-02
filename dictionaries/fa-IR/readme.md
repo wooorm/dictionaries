@@ -1,9 +1,8 @@
 ## License
 
-Dictionary and affix file: [(MIT)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/fa-IR/LICENSE).
+Dictionary and affix file: [(MIT)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/fa-IR/LICENSE)
 
-[hunspell]: http://hunspell.github.io
+## Sources
 
-[source]: http://jasjoo.com
-
-[dictionaries]: https://github.com/wooorm/dictionaries
+-- http://www.jasjoo.com/books/wordbook/fa/
+-- http://www.jasjoo.com/books/wordbook/dehkhoda
