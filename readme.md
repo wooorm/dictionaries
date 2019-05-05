@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total 63 dictionaries are provided.
+In total 64 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -35,6 +35,7 @@ In total 63 dictionaries are provided.
 | [`dictionary-es`](dictionaries/es) | Spanish (or Castilian) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es/license) |
 | [`dictionary-et`](dictionaries/et) | Estonian | LGPL-2.1 |
 | [`dictionary-eu`](dictionaries/eu) | Basque | GPL-2.0 |
+| [`dictionary-fa`](dictionaries/fa) | Persian | [Apache-2.0](dictionaries/fa/license) |
 | [`dictionary-fo`](dictionaries/fo) | Faroese | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/fo/license) |
 | [`dictionary-fr`](dictionaries/fr) | French | [MPL-2.0](dictionaries/fr/license) |
 | [`dictionary-fur`](dictionaries/fur) | Friulian | [GPL-2.0](dictionaries/fur/license) |
