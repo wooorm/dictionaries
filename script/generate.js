@@ -1,9 +1,6 @@
 'use strict'
 
-/* eslint-disable max-params */
-
 var fs = require('fs')
-var url = require('url')
 var path = require('path')
 var xtend = require('xtend')
 var hidden = require('is-hidden')
@@ -83,7 +80,7 @@ dir('dictionaries')
 
         if (data) {
           /* Fix bug in `language-tags`, where the description of a tag when
-         * indented is seen as an array, instead of continued text. */
+           * indented is seen as an array, instead of continued text. */
           if (subtag.data.subtag === 'ia') {
             data = [data.join(' ')]
           }
@@ -168,14 +165,14 @@ dir('dictionaries')
 function process(file, config) {
   var license = config.license
   var source = config.source
-  var uri = url.parse(source)
+  var uri = new URL(source)
   var sourceName = uri.host
 
   /* Clean name */
   if (sourceName === 'github.com') {
-    sourceName = uri.path.slice(1)
+    sourceName = uri.pathname.slice(1)
   } else if (sourceName === 'sites.google.com') {
-    sourceName = uri.path.split('/')[2]
+    sourceName = uri.pathname.split('/')[2]
   } else if (sourceName.slice(0, 4) === 'www.') {
     sourceName = sourceName.slice(4)
   }

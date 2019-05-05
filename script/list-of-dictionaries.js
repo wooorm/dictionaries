@@ -1,7 +1,5 @@
 'use strict'
 
-/* eslint-disable import/no-dynamic-require */
-
 module.exports = listOfDictionaries
 
 var fs = require('fs')

@@ -27,13 +27,13 @@
     "negate": "^1.0.0",
     "not": "^0.1.0",
     "prettier": "^1.12.1",
-    "remark-cli": "^5.0.0",
+    "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "tape": "^4.8.0",
     "to-vfile": "^5.0.0",
     "unist-builder": "^1.0.2",
     "utf-8-validate": "^5.0.0",
-    "xo": "^0.23.0",
+    "xo": "^0.24.0",
     "xtend": "^4.0.1"
   },
   "scripts": {
