@@ -40,8 +40,6 @@ unpack() {
     filename=$(basename "$3")
     extension="${filename#*.}"
 
-    echo "$3, $extension"
-
     if [ "$extension" = "tar.bz2" ]; then
       mkdir -p "$sourcePath"
       tar xvjf "$3" -C "$sourcePath" --strip-components=1
@@ -115,7 +113,7 @@ generate() {
     (
       iconv -f "$4" -t "UTF-8" | # Encoding
       awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
-      sed 's/[ \t]*$//' | # Trailing white-space
+      sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$3" > "$dictionary/index.dic"
     printf "   $(green "✓") index.dic (from $4)\n"
@@ -128,7 +126,7 @@ generate() {
       iconv -f "$6" -t "UTF-8" | # Encoding
       sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
       awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
-      sed 's/[ \t]*$//' | # Trailing white-space
+      sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$5" > "$dictionary/index.aff"
     printf "   $(green "✓") index.aff (from $6)\n"
@@ -144,7 +142,7 @@ generate() {
     (
       iconv -f "$9" -t "UTF-8" | # Encoding
       awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
-      sed 's/[ \t]*$//' | # Trailing white-space
+      sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$8" > "$dictionary/LICENSE"
     printf "   $(green "✓") LICENSE (from $9)\n"
