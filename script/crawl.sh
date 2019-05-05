@@ -173,8 +173,8 @@ crawl "breton" \
   "http://drouizig.org/index.php/br/binviou-br/difazier-hunspell" \
   "http://drouizig.org/images/stories/difazier/hunspell/pakadaou/difazier-an-drouizig-0-14.zip"
 crawl "bulgarian" \
-  "http://extensions.openoffice.org/en/project/bulgarian-dictionaries-blgarski-rechnici" \
-  "http://sourceforge.net/projects/aoo-extensions/files/744/8/dictionaries-bg.oxt/download"
+  "http://bgoffice.sourceforge.net" \
+  "https://iweb.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
 crawl "catalan" \
   "https://github.com/Softcatala/catalan-dict-tools" \
   "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.2/ca.3.0.2-hunspell.zip"
@@ -421,9 +421,9 @@ printf "$(bold "Made")!\n\n"
 printf "$(bold "Generating")...\n"
 
 generate "bg" "bulgarian" \
-  "spell/bg_BG.dic" "CP1251" \
-  "spell/bg_BG.aff" "CP1251" \
-  "LGPL-2.1" "README.txt" "UTF-8"
+  "OOo-full-pack-bg-4.3/bg_BG.dic" "CP1251" \
+  "OOo-full-pack-bg-4.3/bg_BG.aff" "CP1251" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "OOo-full-pack-bg-4.3/README_spell.bulgarian" "CP1251"
 generate "br" "breton" \
   "br_FR.dic" "UTF-8" \
   "br_FR.aff" "UTF-8" \
