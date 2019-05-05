@@ -76,7 +76,7 @@ In total 63 dictionaries are provided.
 | [`dictionary-sr-latn`](dictionaries/sr-Latn) | Serbian (Latin) | [LGPL-3.0](dictionaries/sr-Latn/LICENSE) |
 | [`dictionary-sv`](dictionaries/sv) | Swedish | [LGPL-3.0](dictionaries/sv/LICENSE) |
 | [`dictionary-tr`](dictionaries/tr) | Turkish | MIT |
-| [`dictionary-uk`](dictionaries/uk) | Ukrainian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/uk/LICENSE) |
+| [`dictionary-uk`](dictionaries/uk) | Ukrainian | [GPL-3.0](dictionaries/uk/LICENSE) |
 | [`dictionary-vi`](dictionaries/vi) | Vietnamese | [GPL-2.0](dictionaries/vi/LICENSE) |
 
 <!--support end-->

@@ -327,8 +327,8 @@ crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
   "http://sourceforge.net/projects/aoo-extensions/files/18079/3/oo-turkish-dict-v1.2.oxt/download"
 crawl "ukrainian" \
-  "http://extensions.openoffice.org/en/project/ukrainian-dictionary" \
-  "http://sourceforge.net/projects/aoo-extensions/files/975/6/dict-uk_ua-1.7.1.oxt/download"
+  "https://github.com/brown-uk/dict_uk" \
+  "https://github.com/brown-uk/dict_uk/releases/download/v4.4.2/hunspell-uk_UA_4.4.2.zip"
 crawl "vietnamese" \
   "http://extensions.openoffice.org/en/project/vietnamese-spellchecker" \
   "http://sourceforge.net/projects/aoo-extensions/files/917/3/vi_spellchecker_ooo3.oxt/download"
@@ -409,6 +409,12 @@ if [ ! -e "nn" ]; then
   unzip "no/nn_NO.zip" -d "nn"
 fi
 cd ../.. || exit
+
+if [ ! -e "$SOURCES/ukrainian/LICENSE" ]; then
+  echo "  ukrainian"
+  wget "https://raw.githubusercontent.com/brown-uk/dict_uk/master/LICENSE" -O "$SOURCES/ukrainian/LICENSE"
+  printf "  $(green "license")\n"
+fi
 
 printf "$(bold "Made")!\n\n"
 
@@ -667,9 +673,9 @@ generate "tr" "turkish" \
   "dictionaries/tr-TR.aff" "UTF-8" \
   "MIT"
 generate "uk" "ukrainian" \
-  "uk_UA/uk_UA.dic" "UTF-8" \
-  "uk_UA/uk_UA.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "uk_UA/README_uk_UA.txt" "UTF-8"
+  "uk_UA.dic" "UTF-8" \
+  "uk_UA.aff" "UTF-8" \
+  "GPL-3.0" "LICENSE" "UTF-8"
 generate "vi" "vietnamese" \
   "dictionaries/vi_VN.dic" "UTF-8" \
   "dictionaries/vi_VN.aff" "UTF-8" \
