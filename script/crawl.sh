@@ -250,9 +250,10 @@ crawl "interlingua" \
 crawl "interlingue" \
   "https://github.com/Carmina16/hunspell-ie" \
   "https://github.com/Carmina16/hunspell-ie/archive/master.zip"
-crawl "irish" \
-  "http://borel.slu.edu/ispell/index-en.html" \
-  "https://github.com/kscanne/gaelspell/archive/v4.8.zip"
+# TODO: kscanne/gaelspell#2
+# crawl "irish" \
+#   "https://github.com/kscanne/gaelspell" \
+#   "https://github.com/kscanne/gaelspell/archive/v5.0.zip"
 crawl "italian" \
   "http://www.plio.it" \
   "https://sourceforge.net/projects/aoo-extensions/files/1204/14/dict-it.oxt/download"
@@ -368,11 +369,12 @@ cd "$SOURCES/greek/elspell-master" || exit
 make
 cd ../../.. || exit
 
-echo "  irish"
-cd "$SOURCES/irish/gaelspell-4.8" || exit
-cpan -i roman
-make ga_IE.dic ga_IE.aff
-cd ../../.. || exit
+# TODO: kscanne/gaelspell#2
+# echo "  irish"
+# cd "$SOURCES/irish/gaelspell-5.0" || exit
+# cpan -i Roman.pm
+# make ga_IE.aff ga_IE.dic
+# cd ../../.. || exit
 
 echo "  kinyarwanda"
 cd "$SOURCES/kinyarwanda/hunspell-rw-master" || exit
@@ -533,10 +535,11 @@ generate "fy" "frisian" \
   "fy_NL.dic" "CP1252" \
   "fy_NL.aff" "CP1252" \
   "GPL-3.0" "README" "UTF-8"
-generate "ga" "irish" \
-  "gaelspell-4.8/ga_IE.dic" "UTF-8" \
-  "gaelspell-4.8/ga_IE.aff" "UTF-8" \
-  "GPL-2.0" "gaelspell-4.8/LICENSES-en.txt" "UTF-8"
+# TODO: kscanne/gaelspell#2
+# generate "ga" "irish" \
+#   "gaelspell-5.0/ga_IE.dic" "UTF-8" \
+#   "gaelspell-5.0/ga_IE.aff" "UTF-8" \
+#   "GPL-2.0" "gaelspell-5.0/LICENSES-en.txt" "UTF-8"
 generate "gd" "gaelic" \
   "hunspell-gd-master/gd_GB.dic" "UTF-8" \
   "hunspell-gd-master/gd_GB.aff" "UTF-8" \
