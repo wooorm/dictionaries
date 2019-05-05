@@ -231,11 +231,11 @@ crawl "german" \
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
   "https://www.j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
 crawl "greek" \
-  "http://www.elspell.gr" \
+  "https://github.com/stevestavropoulos/elspell" \
   "https://github.com/stevestavropoulos/elspell/archive/master.zip"
 crawl "greek-polyton" \
   "https://thepolytonicproject.gr/spell" \
-  "https://sourceforge.net/projects/greekpolytonicsp/files/greek_polytonic_2.0.7.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt"
 crawl "hebrew" \
   "http://hspell.ivrix.org.il" \
   "http://hspell.ivrix.org.il/hspell-1.4.tar.gz"
