@@ -214,8 +214,8 @@ crawl "esperanto" \
 #   "http://www.stava.fo" \
 #   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
-  "https://www.dicollecte.org" \
-  "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.3.zip"
+  "https://grammalecte.net" \
+  "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.4.1.zip"
 crawl "frisian" \
   "https://taalweb.frl/downloads" \
   "https://www.fryske-akademy.nl/spell/oxt/fy_NL-20160722.oxt"
@@ -523,6 +523,7 @@ generate "eu" "basque" \
 #   "fo_FO.dic" "ISO8859-1" \
 #   "fo_FO.aff" "ISO8859-1" \
 #   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
+# French: use classic (“classique”) because the readme suggests so.
 generate "fr" "french" \
   "fr-classique.dic" "UTF-8" \
   "fr-classique.aff" "UTF-8" \
