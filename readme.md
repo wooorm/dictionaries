@@ -86,6 +86,20 @@ In total 63 dictionaries are provided.
 Each dictionary can be installed on OS X by following
 [this StackExchange answer][macos].
 
+## Building
+
+I’ve only tested this on macOS, but there you at least need to install:
+
+*   **hunspell**: `brew install hunspell` (many things)
+*   **coreutils**: `brew install coreutils` (many things)
+*   **sed**: `brew install gnu-sed` (Hungarian)
+*   **awk**: `brew install gawk` (Hungarian)
+*   **m4**: `brew install m4` (Hungarian)
+*   **ispell**: `brew install ispell` (German)
+
+Note that the GNU replacements should be setup in PATH to overwrite macOS
+defaults.
+
 ## Contributing
 
 New dictionaries can be added quite easily.  Most importantly, they must be
