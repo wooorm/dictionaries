@@ -56,7 +56,7 @@ dir('dictionaries')
     var description
 
     try {
-      source = read(join(base, 'SOURCE'), 'utf-8').trim()
+      source = read(join(base, '.source'), 'utf-8').trim()
     } catch (error) {
       console.log('Cannot find dictionary for `%s`', code)
       return
@@ -127,7 +127,7 @@ dir('dictionaries')
       name: 'dictionary-' + code.toLowerCase(),
       version: pack.version || '0.0.0',
       description: description + ' spelling dictionary in UTF-8',
-      license: read(join(base, 'SPDX'), 'utf-8').trim(),
+      license: read(join(base, '.spdx'), 'utf-8').trim(),
       keywords: keywords,
       repository: pkg.repository + '/tree/master/dictionaries/' + code,
       bugs: pkg.bugs,
@@ -144,7 +144,7 @@ dir('dictionaries')
           source: source,
           variable: camelcase(code),
           code: code,
-          hasLicense: exists(join(base, 'LICENSE'))
+          hasLicense: exists(join(base, 'license'))
         })
       )
     )
@@ -184,7 +184,7 @@ function process(file, config) {
       '](https://github.com/wooorm/' +
       'dictionaries/blob/master/dictionaries/' +
       config.code +
-      '/LICENSE)'
+      '/license)'
   }
 
   return file

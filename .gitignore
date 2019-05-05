@@ -1,6 +1,6 @@
 .DS_Store
-SPDX
-SOURCE
+.spdx
+.source
 archive/
 source/
 node_modules/

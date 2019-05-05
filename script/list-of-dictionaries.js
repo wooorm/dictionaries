@@ -53,8 +53,8 @@ function row(name) {
   var license = [u('text', pack.license)]
   var description = pack.description.replace(/\sspelling.+$/, '')
 
-  if (fs.existsSync(join(base, 'LICENSE'))) {
-    license = [u('link', {url: url + '/LICENSE'}, license)]
+  if (fs.existsSync(join(base, 'license'))) {
+    license = [u('link', {url: url + '/license'}, license)]
   }
 
   return u('tableRow', [

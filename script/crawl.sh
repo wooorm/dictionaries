@@ -50,7 +50,7 @@ unpack() {
       unzip "$3" -d "$sourcePath"
     fi
 
-    echo "$2" > "$sourcePath/SOURCE"
+    echo "$2" > "$sourcePath/.source"
   fi
 }
 
@@ -107,7 +107,7 @@ generate() {
 
   mkdir -p "$dictionary"
 
-  cp "$SOURCE/SOURCE" "$dictionary/SOURCE"
+  cp "$SOURCE/.source" "$dictionary/.source"
 
   if [ -e "$SOURCE/$3" ]; then
     (
@@ -134,20 +134,20 @@ generate() {
     printf "   $(red "𐄂 Could not find $5 file")\n"
   fi
 
-  echo "$7" > "$dictionary/SPDX"
+  echo "$7" > "$dictionary/.spdx"
 
   if [ "$8" = "" ]; then
-    printf "     No $(yellow "LICENSE") file\n"
+    printf "     No $(yellow "license") file\n"
   elif [ -e "$SOURCE/$8" ]; then
     (
       iconv -f "$9" -t "UTF-8" | # Encoding
       awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
-    ) < "$SOURCE/$8" > "$dictionary/LICENSE"
-    printf "   $(green "✓") LICENSE (from $9)\n"
+    ) < "$SOURCE/$8" > "$dictionary/license"
+    printf "   $(green "✓") license (from $9)\n"
   else
-    printf "   $(red "𐄂 Could not find LICENSE file")\n"
+    printf "   $(red "𐄂 Could not find license file")\n"
   fi
 }
 
@@ -346,7 +346,7 @@ printf "$(bold "Making")...\n"
 
 echo "  estonian"
 mkdir -p "$SOURCES/estonian"
-echo "http://www.meso.ee/~jjpp/speller" > "$SOURCES/estonian/SOURCE"
+echo "http://www.meso.ee/~jjpp/speller" > "$SOURCES/estonian/.source"
 if [ ! -e "$SOURCES/estonian/et.aff" ]; then
   wget "http://www.meso.ee/~jjpp/speller/et_EE.aff" -O "$SOURCES/estonian/et.aff"
 fi
@@ -420,9 +420,9 @@ if [ ! -e "nn" ]; then
 fi
 cd ../.. || exit
 
-if [ ! -e "$SOURCES/ukrainian/LICENSE" ]; then
+if [ ! -e "$SOURCES/ukrainian/license" ]; then
   echo "  ukrainian"
-  wget "https://raw.githubusercontent.com/brown-uk/dict_uk/master/LICENSE" -O "$SOURCES/ukrainian/LICENSE"
+  wget "https://raw.githubusercontent.com/brown-uk/dict_uk/master/LICENSE" -O "$SOURCES/ukrainian/license"
   printf "  $(green "license")\n"
 fi
 
