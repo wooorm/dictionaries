@@ -1,4 +1,4 @@
-23021
+23044
 a
 ab
 abandon
@@ -943,7 +943,7 @@ anniversar/A
 anniversarie/S
 annotar/VZO
 annu/St
-annual/AMSt
+annual/AMStb
 annuarium/S
 annunciar/V
 annuncie/S
@@ -1687,6 +1687,7 @@ attrappe
 attration/S
 attribuer/VZv
 attribute/S
+attributive/S
 aturdir/Vm
 auction/S
 auctionar/VR
@@ -2482,7 +2483,7 @@ bonesse
 bonesser/VS
 bonessim
 bonhomie
-bonhumor/Q
+bonhumor/Qz
 bonific
 bonificar/VZO
 boniment/S
@@ -2719,7 +2720,7 @@ brunetti/A
 brunijar/V
 brunir/VZOR
 brunirage
-Bruno
+bruno/H
 Brunswick
 bruosi/M
 brusquar/V
@@ -3897,7 +3898,7 @@ christianité
 Christ-nascentie/S
 Christo/Xa
 Christoph
-chrom
+chrom/b!
 chrónic
 Chronica
 chrónica/S
@@ -5365,7 +5366,7 @@ crochete/S
 crocheteríe
 crocodil/S
 crócus/S
-crom
+crom/b
 cromatofer/V
 cromatolise
 cromatoplaste/S
@@ -5421,7 +5422,7 @@ crustacé/S
 crustade
 cruste/S
 crustear/V
-cruz
+cruz/S
 crypta/S
 crypto/ac!
 cryptografie/!
@@ -6322,7 +6323,7 @@ detener/V
 detention/S
 detergent/S
 deteriorar/VZ
-determinar/VZORBv
+determinar/VZORBvb
 deterrar/V
 detestabil
 detestar/VZO
@@ -6465,7 +6466,7 @@ diferentiar/VZ
 diferentie/S
 diferer/V
 diffamar/VZOR
-different
+different/AE
 differential/S
 differentiar/VZ
 differentie/S
@@ -8098,7 +8099,7 @@ faucar/V
 faunessa/S
 fauno/H
 Faust
-fautor
+fautor/S
 favet
 favor/Sz
 favorabil
@@ -8323,7 +8324,7 @@ filú/S
 filuore/S
 fin/AESsb
 final/MSt
-financiar/VAm
+financiar/VAZm
 financiario
 financie/SL
 financiero/S
@@ -8442,6 +8443,7 @@ floscul/S
 flott/SU
 flottalia/S
 flottar/VR
+flottero/H
 flottille/S
 flottuore/S
 flox/S
@@ -8501,7 +8503,7 @@ follícul/S
 follie/S
 fomentar/VZR
 fond/Sg
-fonder/V
+fonder/VZ
 fondería/S
 fonderíe
 fondero/S
@@ -8547,15 +8549,15 @@ forjettabil
 forjettar/V
 forlassar/V
 forluar/VR
-form/S
-formabil
+form/Sb
 formal/Mt
 formaline
 formalisar/VZ
 formalisme/T
-formar/VZORb
+formar/VZORBb
 formarcha/S
 format/S
+formativ/S
 formic
 formíca/S
 formicar/VZ
@@ -9375,8 +9377,12 @@ gradiente/S
 gradu/S
 gradual/M
 graduar/VZO
+graf/SQ
 grafia/bc
 grafic/HLb
+grafic/SHLb
+grafica/Sb
+grafie/Sb
 grafisme
 grafite
 grafolog/HQ
@@ -9416,10 +9422,10 @@ granul/Sz
 granular/VZA
 granulatri
 granut
-graph/SQ
-gráphic/S!
-gráphica/S!
-graphie/S
+graph/SQ!
+graphic/SHLb!
+graphica/Sb!
+graphie/Sb!
 gráphisme/!
 gráphite/!
 gráphologie/!
@@ -9819,6 +9825,7 @@ hepta/ca
 heptaedre/S
 heptagon/S
 heptameton/S
+Heraclite
 heralde/S
 heraldic/M
 heraldica
@@ -9858,7 +9865,7 @@ hermaphrodit/SQ!
 hermeline/SXa
 hermeneutic
 hermeneutica
-hermetic/t
+hermetic/Mt
 herniari/A
 hernie/SL
 Herodotus
@@ -11697,6 +11704,7 @@ jongleríe
 jonglero/S
 jonke/S
 jorne/S
+Josef
 Jourdain
 jovedí/S
 jovial
@@ -11743,7 +11751,7 @@ Julius
 jun
 junar/V
 junco/S
-junct
+junct/R
 juncter/VZOv
 junevre/S
 Jung
@@ -11823,6 +11831,7 @@ Kemp
 Kennedy
 Kentucky
 kepi/S
+Kepler
 keratine
 kermesse
 kerosen/S
@@ -11901,7 +11910,7 @@ laborachar/V
 laborache/S
 laboraci
 laborada
-laborar/VRB
+laborar/VRZB
 laboratoria/SL
 labordie/S
 labore
@@ -12022,6 +12031,7 @@ lápidari
 lapidosi
 lápis
 lápislazuli
+Laplace
 lapon/S
 Laponia
 laponic
@@ -12402,8 +12412,8 @@ literari
 literat
 literatura/S
 lithium
-lithografar/V!
-lithografie/SQ!
+lithographar/V!
+lithographie/SQ!
 litigiar/V
 litigie/Sz
 litium
@@ -12860,7 +12870,7 @@ manicos
 manicure
 manicurist/S
 manie/Sb
-maniere/S
+maniere/Sb
 manierisme/S
 manifest/SM
 manifestar/VZO
@@ -13145,7 +13155,7 @@ mazurka/S
 MBR
 McDonald
 me
-meandre/S
+meandre/SQ
 meat
 Meazzini
 mecanian/S
@@ -13392,19 +13402,21 @@ meteor/SQ
 meteorite/S
 meteorolog/SQ
 meteorologie
-methode/SQ!
+methode/SQb!
+methodica/SQ!
+methodisation/!
 methodisme/T!
-methodologie/S
+methodologie/SQ!
 methyle/!
 methylene/!
 metile
 metilene
 metisse/H
-metode/SQ
+metode/SQb
 metodica/SQ
 metodisation
 metodisme/T
-metodologie/S
+metodologie/SQ
 metonimie/S
 metonomasie/S
 metop/S
@@ -13887,7 +13899,7 @@ morfine
 morfinisme/T
 morfinoman/S
 morfolog/SQ
-morfologie
+morfologie/S
 morganatic
 Morges
 morientar/V
@@ -13905,7 +13917,8 @@ moroso/S
 morpheme/S
 morphie/b!
 morphine/!
-morphologic
+morpholog/SQ!
+morphologie/S!
 Morris
 morsa
 morsade
@@ -13995,7 +14008,7 @@ mulatte/S
 mulattessa/S
 mulatto/S
 mulde/S
-mult/AESt
+mult/AESta
 multa/S
 multcos
 multi/ac
@@ -16335,7 +16348,7 @@ pluperfecte/S
 plur/At
 plural/ASQt
 pluralité
-pluri/ac
+pluri/Eac
 pluricolor/A
 plurilinguisme
 plurimaritage
@@ -16410,6 +16423,7 @@ poliglott/HQ
 poliglottisme
 poligonum/S
 poligrafar/V
+poligrafica
 poligrafie
 polimer/AS
 polimerie/Q
@@ -16453,6 +16467,9 @@ polvear/V
 polvi
 poly/ac
 polyglott/SQ!
+polygraphar/V!
+polygraphica/!
+polygraphie/!
 Polynesia/!
 polyp/S!
 polyphonie/SQ!
@@ -16844,9 +16861,8 @@ príncipe/SL!
 principessa/S
 principie/SL
 principue
-print/S
-printage
-printar/VZORBb
+print/Sa
+printar/VZORBgb
 printarte
 printe/S
 printería/S
@@ -16886,7 +16902,7 @@ proboscian
 proboscide
 procede/S
 procedentie/S
-proceder/V
+proceder/Vm
 procedura/S
 procent/S
 process/SL
@@ -17157,14 +17173,10 @@ pseudonym/S!
 pseudoscientie
 psice/SQy
 psichanalise/SQ
-psichiatrie/Q
-psichologico/S
-psichologie/Q
-psichologo/S
-psichopat/SQ
-psichopatie/S
+psiciatrie/Q
 psico/a
 psicological
+psicologico/S
 psicologie/QS
 psicologo/S
 psicopat/SQ
@@ -17172,8 +17184,14 @@ psicopatie/S
 psicose/S
 psoas
 psyche/SQy!
+psychiatrie/Q!
 psycho/a!
+psychological/!
+psychologico/S!
 psychologie/QS!
+psychologo/S!
+psychopat/SQ!
+psychopatie/S!
 psychose/S!
 pteringoide/S
 pterodactil/S
@@ -17256,7 +17274,7 @@ punir/VZRBv
 Punjab/k
 puntal/S
 puntar/Vm
-punte/S
+punte/Sz
 punthelm/S
 puntillage
 puntillar/V
@@ -17353,7 +17371,7 @@ qualcunc
 qualcvez
 qualificar/VZO
 qualitá/S
-qualitativ
+qualitativ/M
 qualunque
 quam
 quamcunc
@@ -17365,7 +17383,7 @@ quant/S
 quantcunc/M
 quantésim
 quantitá/S
-quantitativ
+quantitativ/M
 quantité/S
 quanto
 quantum/S
@@ -17610,7 +17628,7 @@ rarificar/VZ
 raritero/S
 raritist/S
 ras/S
-rasar/VRu
+rasar/VRZu
 rasatoria/S
 rascalatri
 rascale/S
@@ -18776,6 +18794,7 @@ sanscrit
 sant/AHt
 santal/S
 santesse
+Santiago
 santificar/V
 santification
 santuarium/S
@@ -19864,8 +19883,9 @@ spectaculari/M
 spectar/VR
 spectre/SL
 spectrograf/S
+spectrograph/S!
 spectroscop/S
-spectroscopie
+spectroscopie/Q
 specular/VZORv
 speculum
 spegul/S
@@ -20956,7 +20976,7 @@ tauro/S
 tauromachie
 tautogramma/S
 tautologie/Q
-taverne/S
+taverne/SL
 tavernero/H
 taxa/S
 taxametre/S
@@ -21150,6 +21170,7 @@ terrer/V
 terrestri/L
 terribil/Mt
 terrier/S
+terrificar/V
 terrin/S
 territoria/S
 territorial
@@ -21815,6 +21836,7 @@ Tropez
 tropic/L
 tropico/S
 trotta/S
+trottada/S
 trottar/V
 trotte/S
 trottero/S
@@ -22508,6 +22530,7 @@ viada/S
 viaducte/S
 viage/S
 viagear/VZORb
+viagero/H
 viagette/S
 viar/VRb
 viarium/S

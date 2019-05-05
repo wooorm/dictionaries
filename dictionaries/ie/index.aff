@@ -1,7 +1,7 @@
 # Occidental (Interlingue)
-# v0.6
+# v0.8
 #
-# Copyright 2015-2018 Smirnova O. I.
+# Copyright 2015-2019 Smirnova O. I.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -114,7 +114,7 @@ SFX S 0 e  [^aeiouáéíóú]
 SFX V Y 8
 SFX V r 0/d    r
 SFX V r t/HMN  r
-SFX V r s r
+SFX V r s      r
 SFX V r nt/HMN  [^i]r
 SFX V r ent/HMN ir
 SFX V r ye     r
