@@ -333,8 +333,8 @@ crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
   "https://github.com/brown-uk/dict_uk/releases/download/v4.4.2/hunspell-uk_UA_4.4.2.zip"
 crawl "vietnamese" \
-  "http://extensions.openoffice.org/en/project/vietnamese-spellchecker" \
-  "http://sourceforge.net/projects/aoo-extensions/files/917/3/vi_spellchecker_ooo3.oxt/download"
+  "https://github.com/1ec5/hunspell-vi" \
+  "https://github.com/1ec5/hunspell-vi/releases/download/v2.2.0/vi_spellchecker_OOo3.oxt"
 
 printf "$(bold "Crawled")!\n\n"
 

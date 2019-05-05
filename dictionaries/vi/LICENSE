@@ -1,13 +1,13 @@
-VIETNAMESE SPELLCHECKER FOR OPENOFFICE Version 1.0.110
+VIETNAMESE SPELLCHECKER FOR OPENOFFICE Version 2.2.0
 
 Authors:
 Ivan Garcia <capiscuas@gmail.com>
-Nguyễn Xuân Minh <mxn@zoomtown.com>
+Nguyễn Xuân Minh <mxn@1ec5.org>
 
 This spellchecker for OpenOffice was based on the Vietnamese Dictionary list from Proffessor Hồ Ngọc Đức
 
-Project site: http://code.google.com/p/hunspell-spellcheck-vi/
+Project site: https://github.com/1ec5/hunspell-vi
 OpenOffice in Vietnamese:  http://vi.openoffice.org/
 
-This spellchecker is released with  GPLv2 license
+This spellchecker is released with  GPLv3 license
 Visit http://www.gnu.org/licenses/ for more information
