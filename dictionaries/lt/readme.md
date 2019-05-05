@@ -51,7 +51,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
 Dictionary and affix file: [BSD-3-Clause](https://github.com/wooorm/dictionaries/blob/master/dictionaries/lt/license).
 Rest: [MIT][] © [Titus Wormer][home].
 
-[hunspell]: http://hunspell.github.io
+[hunspell]: https://hunspell.github.io
 
 [nodehun]: https://github.com/nathanjsweet/nodehun
 

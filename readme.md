@@ -113,13 +113,13 @@ licensed with a free license, and they should be convertible by
 See `LICENSE` files in each dictionary for the licensing of `index.dic` and
 `index.aff` files.
 
-[hunspell]: http://hunspell.github.io
+[hunspell]: https://hunspell.github.io
 
 [nodehun]: https://github.com/nathanjsweet/nodehun
 
 [nspell]: https://github.com/wooorm/nspell
 
-[macos]: http://apple.stackexchange.com/a/11842
+[macos]: https://apple.stackexchange.com/a/11842
 
 [mit]: license
 
