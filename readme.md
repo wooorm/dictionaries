@@ -110,7 +110,7 @@ licensed with a free license, and they should be convertible by
 
 [MIT][] © [Titus Wormer][author]
 
-See `LICENSE` files in each dictionary for the licensing of `index.dic` and
+See `license` files in each dictionary for the licensing of `index.dic` and
 `index.aff` files.
 
 [hunspell]: https://hunspell.github.io
