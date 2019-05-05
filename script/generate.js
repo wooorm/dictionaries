@@ -79,8 +79,8 @@ dir('dictionaries')
         var data = subtag ? subtag.data.record.Description : null
 
         if (data) {
-          /* Fix bug in `language-tags`, where the description of a tag when
-           * indented is seen as an array, instead of continued text. */
+          // Fix bug in `language-tags`, where the description of a tag when
+          // indented is seen as an array, instead of continued text.
           if (subtag.data.subtag === 'ia') {
             data = [data.join(' ')]
           }
@@ -168,7 +168,7 @@ function process(file, config) {
   var uri = new URL(source)
   var sourceName = uri.host
 
-  /* Clean name */
+  // Clean name.
   if (sourceName === 'github.com') {
     sourceName = uri.pathname.slice(1)
   } else if (sourceName === 'sites.google.com') {
