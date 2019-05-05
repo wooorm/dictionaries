@@ -184,7 +184,7 @@ crawl "croatian" \
   "http://cvs.linux.hr/spell/myspell/hr_HR.zip"
 crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1078/0/dict-cs-2.0.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1078/0/dict-cs-2.0.oxt"
 crawl "danish" \
   "http://www.stavekontrolden.dk" \
   "http://www.stavekontrolden.dk/main/top/extension/dict-da-current.oxt"
@@ -227,7 +227,7 @@ crawl "gaelic" \
   "https://github.com/kscanne/hunspell-gd/archive/master.zip"
 crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
-  "http://sourceforge.net/projects/aoo-extensions/files/5660/1/hunspell-gl-13.10.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/5660/1/hunspell-gl-13.10.oxt"
 crawl "german" \
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
   "https://www.j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
@@ -256,7 +256,7 @@ crawl "interlingue" \
 #   "https://github.com/kscanne/gaelspell/archive/v5.0.zip"
 crawl "italian" \
   "http://www.plio.it" \
-  "https://sourceforge.net/projects/aoo-extensions/files/1204/14/dict-it.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1204/14/dict-it.oxt"
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
@@ -271,7 +271,7 @@ crawl "latvian" \
   "http://dict.dv.lv/download/lv_LV-1.3.0.oxt"
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
-  "https://sourceforge.net/projects/aoo-extensions/files/1141/3/dict-la_2013-03-31.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
@@ -289,7 +289,7 @@ crawl "luxembourgish" \
 #   "https://github.com/dimztimz/hunspell-mk/archive/master.zip"
 crawl "mongolian" \
   "http://extensions.openoffice.org/en/project/mongol-helniy-ugiyn-aldaa-shalgagch-ueer-taslagch-mongolian-spelling-and-hyphenation" \
-  "http://sourceforge.net/projects/aoo-extensions/files/3204/2/dict-mn.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/3204/2/dict-mn.oxt"
 crawl "nepali" \
   "http://ltk.org.np" \
   "http://ltk.org.np/downloads/ne_NP_dict.zip"
@@ -298,34 +298,34 @@ crawl "norwegian" \
   "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
-  "http://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"
 crawl "portuguese" \
   "http://natura.di.uminho.pt" \
   "http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1375/8/vero_pt_br_v208aoc.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1375/8/vero_pt_br_v208aoc.oxt"
 crawl "romanian" \
   "http://extensions.openoffice.org/en/project/romanian-dictionary-pack-spell-checker-hyphenation-thesaurus" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1392/10/dict-ro.1.7.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1392/10/dict-ro.1.7.oxt"
 crawl "russian" \
   "http://extensions.openoffice.org/en/project/russian-dictionary" \
-  "http://sourceforge.net/projects/aoo-extensions/files/936/9/dict_ru_ru-0.6.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/936/9/dict_ru_ru-0.6.oxt"
 crawl "serbian" \
   "http://extensions.openoffice.org/en/project/serbian-cyrillic-and-latin-spelling-and-hyphenation" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1572/9/dict-sr.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1572/9/dict-sr.oxt"
 crawl "slovak" \
   "http://extensions.openoffice.org/en/project/slovak-dictionary-package-slovenske-slovniky" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1143/11/dict-sk.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1143/11/dict-sk.oxt"
 crawl "slovenian" \
   "http://extensions.openoffice.org/en/project/slovenian-dictionary-package-slovenski-paket-slovarjev" \
-  "http://sourceforge.net/projects/aoo-extensions/files/3280/9/pack-sl.oxt/download"
+  "https://vorboss.dl.sourceforge.net/project/aoo-extensions/3280/10/pack-sl.oxt"
 crawl "spanish" \
   "http://extensions.openoffice.org/en/project/spanish-espanol" \
-  "http://sourceforge.net/projects/aoo-extensions/files/2979/3/es_es.oxt/download"
+  "https://datapacket.dl.sourceforge.net/project/aoo-extensions/2979/3/es_es.oxt"
 crawl "swedish" \
   "http://extensions.openoffice.org/en/project/swedish-dictionaries-apache-openoffice" \
-  "http://sourceforge.net/projects/aoo-extensions/files/5959/1/dict-sv.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/5959/1/dict-sv.oxt"
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
