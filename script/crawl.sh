@@ -328,7 +328,7 @@ crawl "swedish" \
   "http://sourceforge.net/projects/aoo-extensions/files/5959/1/dict-sv.oxt/download"
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
-  "http://sourceforge.net/projects/aoo-extensions/files/18079/3/oo-turkish-dict-v1.2.oxt/download"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
   "https://github.com/brown-uk/dict_uk/releases/download/v4.4.2/hunspell-uk_UA_4.4.2.zip"
