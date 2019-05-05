@@ -11,9 +11,10 @@ MPL-1.1/GPL-2.0/LGPL-2.1 tri-license
   are distributed under the MPL-1.1/GPL-2.0/LGPL-2.1 tri-license. See
   LICENSE.MPL, LICENSE.GPL and LICENSE.LGPL for terms.
 
-CC-BY 4.0
----------
+CC BY-SA 4.0
+------------
 
-- The other word dictionary files ("dict-ko-builtins.json" and
-  "dict-ko-galkwi-ccby.json") are distributed under the Creative Commons
-  Attribution 4.0 International Public License. See LICENSE.CC-BY for terms.
+- The word dictionary files "dict-ko-builtins.json" and
+  "dict-ko-galkwi-ccbysa.json" are distributed under the Creative Commons
+  Attribution-ShareAlike 4.0 International Public License. See
+  LICENSE.CC-BY-SA-4.0 for terms.
