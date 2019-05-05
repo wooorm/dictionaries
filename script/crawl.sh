@@ -74,8 +74,8 @@ crawl() {
   if [ "$extension" = "tar.bz2" ]; then
     archivePath="$ARCHIVES/$1.tar.bz2"
   fi
-  # Normal GZipped tar, a hack for hebrew, and a hack for hungarian.
-  if [ "$extension" = "tar.gz" ] || [ "$extension" = "4.tar.gz" ] || [ "$extension" = "6.tar.gz" ]; then
+  # Normal GZipped tar, and a hack for hebrew.
+  if [ "$extension" = "tar.gz" ] || [ "$extension" = "4.tar.gz" ]; then
     archivePath="$ARCHIVES/$1.tar.gz"
   fi
 
@@ -239,9 +239,10 @@ crawl "greek-polyton" \
 crawl "hebrew" \
   "http://hspell.ivrix.org.il" \
   "http://hspell.ivrix.org.il/hspell-1.4.tar.gz"
-crawl "hungarian" \
-  "http://magyarispell.sourceforge.net" \
-  "https://sourceforge.net/projects/magyarispell/files/Magyar%20Ispell/1.6/hu_HU-1.6.tar.gz/download"
+# TODO: laszlonemeth/magyarispell#9
+# crawl "hungarian" \
+#   "https://github.com/laszlonemeth/magyarispell" \
+#   "https://github.com/laszlonemeth/magyarispell/archive/master.zip"
 crawl "interlingua" \
   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
@@ -384,6 +385,12 @@ if [ ! -e "Makefile" ]; then
 fi
 PERL5LIB="$PERL5LIB:." make hunspell
 cd ../.. || exit
+
+# TODO: laszlonemeth/magyarispell#9
+# echo "  hungarian"
+# cd "$SOURCES/hungarian/magyarispell-master" || exit
+# LC_ALL=C make myspell
+# cd ../../.. || exit
 
 echo "  low-german"
 cd "$SOURCES/low-german/dict_nds-master" || exit
@@ -544,10 +551,11 @@ generate "hr" "croatian" \
   "hr_HR.dic" "ISO8859-2" \
   "hr_HR.aff" "ISO8859-2" \
   "(LGPL-2.1 OR SISSL)" "README_hr_HR.txt" "ISO8859-2"
-generate "hu" "hungarian" \
-  "hu_HU.dic" "ISO8859-2" \
-  "hu_HU.aff" "ISO8859-2" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_hu_HU.txt" "UTF-8"
+# TODO: laszlonemeth/magyarispell#9
+# generate "hu" "hungarian" \
+#   "hu_HU_u8_gen_alias.dic" "ISO8859-2" \
+#   "hu_HU_u8_gen_alias.aff" "ISO8859-2" \
+#   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README" "UTF-8"
 generate "hy-arevela" "armenian-eastern" \
   "hy_am_e_1940.dic" "UTF-8" \
   "hy_am_e_1940.aff" "UTF-8" \
@@ -682,19 +690,3 @@ generate "vi" "vietnamese" \
   "GPL-2.0" "LICENSES-en.txt" "UTF-8"
 
 printf "$(bold "Generated")!\n\n"
-
-#####################################################################
-# FIX ###############################################################
-#####################################################################
-
-printf "$(bold "Fixing")...\n"
-
-printf "  hu"
-# Hack around the broken Hungarian affix file.
-if [ "$(head -n 1 "$DICTIONARIES/hu/index.aff")" = "AF 1263" ]; then
-  tail -n 23734 "$DICTIONARIES/hu/index.aff" > "$DICTIONARIES/hu/index-fixed.aff"
-  mv "$DICTIONARIES/hu/index-fixed.aff" "$DICTIONARIES/hu/index.aff"
-fi
-printf " $(green "✓")\n"
-
-printf "$(bold "Fixed")!\n\n"
