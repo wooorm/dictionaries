@@ -300,8 +300,8 @@ crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "http://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download"
 crawl "portuguese" \
-  "http://extensions.openoffice.org/en/project/european-portuguese-dictionaries" \
-  "http://sourceforge.net/projects/aoo-extensions/files/1196/35/oo3x-pt-pt-15.7.4.1.oxt/download"
+  "http://natura.di.uminho.pt" \
+  "http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
   "http://sourceforge.net/projects/aoo-extensions/files/1375/8/vero_pt_br_v208aoc.oxt/download"
@@ -643,9 +643,9 @@ generate "pl" "polish" \
   "pl_PL.aff" "ISO8859-2" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"
 generate "pt" "portuguese" \
-  "dictionaries/pt_PT.dic" "UTF-8" \
-  "dictionaries/pt_PT.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "dictionaries/README_pt_PT.txt" "ISO8859-1"
+  "pt_PT.dic" "UTF-8" \
+  "pt_PT.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_pt_PT.txt" "CP1252"
 generate "pt-BR" "portuguese-br" \
   "pt_BR.dic" "ISO8859-1" \
   "pt_BR.aff" "ISO8859-1" \
