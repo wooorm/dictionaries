@@ -52,12 +52,7 @@
   },
   "xo": {
     "prettier": true,
-    "esnext": false,
-    "rules": {
-      "no-var": "off",
-      "object-shorthand": "off",
-      "prefer-arrow-callback": "off"
-    }
+    "esnext": false
   },
   "remarkConfig": {
     "settings": {
