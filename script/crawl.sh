@@ -372,6 +372,12 @@ cd "$SOURCES/greek/elspell-master" || exit
 make
 cd ../../.. || exit
 
+echo "  greek (polyton)"
+cd "$SOURCES/greek-polyton" || exit
+sed -i 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
+printf "   $(green "✓") fixed tab\n"
+cd ../.. || exit
+
 # TODO: kscanne/gaelspell#2
 # echo "  irish"
 # cd "$SOURCES/irish/gaelspell-5.0" || exit
