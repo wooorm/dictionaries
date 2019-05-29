@@ -1,0 +1,26 @@
+{
+  "name": "dictionary-fa",
+  "version": "0.0.0",
+  "description": "Persian spelling dictionary in UTF-8",
+  "license": "Apache-2.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "fa",
+    "persian"
+  ],
+  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/fa",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

@@ -296,6 +296,9 @@ crawl "nepali" \
 crawl "norwegian" \
   "http://no.speling.org" \
   "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
+crawl "persian" \
+  "https://github.com/b00f/lilak" \
+  "https://github.com/b00f/lilak/releases/download/v3.2/fa-IR.zip"
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"
@@ -518,6 +521,10 @@ generate "eu" "basque" \
   "eu_ES.dic" "UTF-8" \
   "eu_ES.aff" "UTF-8" \
   "GPL-2.0"
+generate "fa" "persian" \
+  "fa-IR.dic" "UTF-8" \
+  "fa-IR.aff" "UTF-8" \
+  "Apache-2.0" "README_fa_IR.txt" "UTF-8"
 # TODO: Stava is down.
 # generate "fo" "faroese" \
 #   "fo_FO.dic" "ISO8859-1" \
