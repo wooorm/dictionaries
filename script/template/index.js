@@ -1,12 +1,17 @@
-var read = require('fs').readFile
-var join = require('path').join
+const {readFile: read} = require('fs')
+const {join} = require('path')
 
-module.exports = load
-
+/**
+ * Loads the affix file and dictionary file and returns them in a
+ * callback if successfully loaded. The callback provides an error
+ * if it was unable to load either of the files.
+ *
+ * @param {(err: Error, doc: { aff: Buffer, dic: Buffer }) => void} callback
+ */
 function load(callback) {
-  var pos = -1
-  var exception = null
-  var result = {}
+  let pos = -1
+  let exception = null
+  let result = {}
 
   one('aff')
   one('dic')
@@ -25,3 +30,5 @@ function load(callback) {
     })
   }
 }
+
+module.exports = load

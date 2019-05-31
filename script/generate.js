@@ -1,29 +1,29 @@
 'use strict'
 
-var fs = require('fs')
-var path = require('path')
-var xtend = require('xtend')
-var hidden = require('is-hidden')
-var negate = require('negate')
-var bcp47 = require('bcp-47')
-var tags = require('language-tags')
-var pkg = require('../package.json')
+const {
+  readdirSync: dir,
+  existsSync: exists,
+  readFileSync: read,
+  writeFileSync: write,
+} = require('fs')
+const { join } = require('path')
+const xtend = require('xtend')
+const hidden = require('is-hidden')
+const negate = require('negate')
+const bcp47 = require('bcp-47')
+const tags = require('language-tags')
+const pkg = require('../package.json')
 
-var dir = fs.readdirSync
-var exists = fs.existsSync
-var read = fs.readFileSync
-var write = fs.writeFileSync
-var join = path.join
+const docs = read(template('readme.md'), 'utf-8')
+const index = read(template('index.js'), 'utf-8')
+const typings = read(template('index.d.ts'), 'utf-8')
 
-var docs = read(template('readme.md'), 'utf-8')
-var index = read(template('index.js'), 'utf-8')
-
-var types = {
+const types = {
   variants: 'variant',
   extensions: 'extlang'
 }
 
-var remove = {
+const remove = {
   ca: ['or Valencian', 'Valencian'],
   'ca-valencia': ['or Valencian'],
   el: ['(1453-)'],
@@ -32,7 +32,7 @@ var remove = {
   ne: ['(macrolanguage)']
 }
 
-var replace = {
+const replace = {
   el: {'Modern Greek (1453-)': 'Modern Greek'},
   'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'},
   ia: {
@@ -47,13 +47,13 @@ dir('dictionaries')
   .filter(negate(hidden))
   .sort()
   .forEach(function(code) {
-    var base = dict(code)
-    var tag = bcp47.parse(code)
-    var parts = []
-    var pack = {}
-    var keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
-    var source
-    var description
+    const base = dict(code)
+    const tag = bcp47.parse(code)
+    let parts = []
+    let pack = {}
+    let keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
+    let source
+    let description
 
     try {
       source = read(join(base, '.source'), 'utf-8').trim()
@@ -69,14 +69,14 @@ dir('dictionaries')
     keywords = keywords.concat(code.toLowerCase().split('-'))
 
     Object.keys(tag).forEach(function(key) {
-      var label = types[key] || key
-      var value = tag[key]
+      const label = types[key] || key
+      let value = tag[key]
 
       value = value && typeof value === 'object' ? value : [value]
 
       value.forEach(function(subvalue) {
-        var subtag = subvalue ? tags.type(subvalue, label) : null
-        var data = subtag ? subtag.data.record.Description : null
+        const subtag = subvalue ? tags.type(subvalue, label) : null
+        let data = subtag ? subtag.data.record.Description : null
 
         if (data) {
           // Fix bug in `language-tags`, where the description of a tag when
@@ -133,7 +133,8 @@ dir('dictionaries')
       bugs: pkg.bugs,
       author: pkg.author,
       contributors: pkg.contributors,
-      files: ['index.js', 'index.aff', 'index.dic']
+      files: ['index.js', 'index.aff', 'index.dic', 'index.d.ts'],
+      types: 'index.d.ts'
     }
 
     write(
@@ -151,8 +152,10 @@ dir('dictionaries')
 
     write(join(base, 'index.js'), index)
 
-    write(join(base, 'package.json'), JSON.stringify(pack, 0, 2) + '\n')
+    write(join(base, 'index.d.ts'), typings)
 
+    write(join(base, 'package.json'), JSON.stringify(pack, 0, 2) + '\n')
+    
     function ignore(val) {
       return remove[code] ? remove[code].indexOf(val) === -1 : true
     }
@@ -163,10 +166,17 @@ dir('dictionaries')
   })
 
 function process(file, config) {
-  var license = config.license
-  var source = config.source
-  var uri = new URL(source)
-  var sourceName = uri.host
+  let { 
+    license, 
+    source,
+    name,
+    description,
+    variable,
+    code,
+    hasLicense
+  } = config
+  const uri = new URL(source)
+  let sourceName = uri.host
 
   // Clean name.
   if (sourceName === 'github.com') {
@@ -177,24 +187,24 @@ function process(file, config) {
     sourceName = sourceName.slice(4)
   }
 
-  if (config.hasLicense) {
+  if (hasLicense) {
     license =
       '[' +
       license +
       '](https://github.com/wooorm/' +
       'dictionaries/blob/master/dictionaries/' +
-      config.code +
+      code +
       '/license)'
   }
 
   return file
-    .replace(/\{\{NAME\}\}/g, config.name)
-    .replace(/\{\{DESCRIPTION\}\}/g, config.description)
-    .replace(/\{\{SPDX\}\}/g, config.license)
+    .replace(/\{\{NAME\}\}/g, name)
+    .replace(/\{\{DESCRIPTION\}\}/g, description)
+    .replace(/\{\{SPDX\}\}/g, license)
     .replace(/\{\{SOURCE\}\}/g, source)
     .replace(/\{\{SOURCE_NAME\}\}/g, sourceName)
-    .replace(/\{\{VAR\}\}/g, config.variable)
-    .replace(/\{\{CODE\}\}/g, config.code)
+    .replace(/\{\{VAR\}\}/g, variable)
+    .replace(/\{\{CODE\}\}/g, code)
     .replace(/\{\{LICENSE\}\}/g, license)
 }
 
