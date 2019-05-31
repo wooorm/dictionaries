@@ -12,19 +12,19 @@ mkdir -p "$DICTIONARIES"
 #####################################################################
 
 # ANSI colours.
-function bold {
+bold() {
   printf "\033[1m%s\033[22m" "$1"
 }
 
-function green {
+green() {
   printf "\033[32m%s\033[0m" "$1"
 }
 
-function red {
+red() {
   printf "\033[31m%s\033[0m" "$1"
 }
 
-function yellow {
+yellow() {
   printf "\033[33m%s\033[0m" "$1"
 }
 
