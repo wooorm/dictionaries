@@ -21,6 +21,8 @@
   "files": [
     "index.js",
     "index.aff",
-    "index.dic"
-  ]
+    "index.dic",
+    "index.d.ts"
+  ],
+  "types": "index.d.ts"
 }

@@ -6,7 +6,7 @@ const {join} = require('path')
  * callback if successfully loaded. The callback provides an error
  * if it was unable to load either of the files.
  *
- * @param {(err: Error, doc: { aff: Buffer, dic: Buffer }) => void} callback
+ * @param {(err?: Error, doc?: { aff: Buffer, dic: Buffer }) => void} callback
  */
 function load(callback) {
   let pos = -1
@@ -30,5 +30,4 @@ function load(callback) {
     })
   }
 }
-
 module.exports = load
