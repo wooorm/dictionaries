@@ -228,6 +228,9 @@ crawl "gaelic" \
 crawl "galician" \
   "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/5660/1/hunspell-gl-13.10.oxt"
+crawl "georgian" \
+  "https://github.com/gamag/ka_GE.spell" \
+  "https://github.com/gamag/ka_GE.spell/archive/master.zip"
 crawl "german" \
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
   "https://www.j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
@@ -599,6 +602,10 @@ generate "it" "italian" \
   "dictionaries/it_IT.dic" "UTF-8" \
   "dictionaries/it_IT.aff" "UTF-8" \
   "GPL-3.0" "dictionaries/README.txt" "UTF-8"
+generate "ka" "georgian" \
+  "ka_GE.spell-master/dictionaries/ka_GE.dic" "UTF-8" \
+  "ka_GE.spell-master/dictionaries/ka_GE.aff" "UTF-8" \
+  "MIT" "ka_GE.spell-master/LICENSE.mit" "UTF-8"
 generate "ko" "korean" \
   "ko-aff-dic-0.7.1/ko.dic" "UTF-8" \
   "ko-aff-dic-0.7.1/ko.aff" "UTF-8" \
