@@ -335,6 +335,9 @@ crawl "swedish" \
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
+crawl "turkmen" \
+  "https://github.com/nazartm/turkmen-spell-check-dictionary" \
+  "https://github.com/nazartm/turkmen-spell-check-dictionary/archive/master.zip"
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
   "https://github.com/brown-uk/dict_uk/releases/download/v4.4.2/hunspell-uk_UA_4.4.2.zip"
@@ -702,6 +705,9 @@ generate "sv" "swedish" \
   "sv_SE.dic" "UTF-8" \
   "sv_SE.aff" "UTF-8" \
   "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
+generate "tk" "turkmen" \
+  "turkmen-spell-check-dictionary-master/tk_TM.dic" "UTF-8" \
+  "turkmen-spell-check-dictionary-master/tk_TM.aff" "UTF-8"
 generate "tr" "turkish" \
   "dictionaries/tr-TR.dic" "UTF-8" \
   "dictionaries/tr-TR.aff" "UTF-8" \

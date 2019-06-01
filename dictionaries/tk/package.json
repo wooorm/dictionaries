@@ -1,0 +1,26 @@
+{
+  "name": "dictionary-tk",
+  "version": "0.0.0",
+  "description": "Turkmen spelling dictionary in UTF-8",
+  "license": "",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "tk",
+    "turkmen"
+  ],
+  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/tk",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}
