@@ -1,0 +1,29 @@
+{
+  "name": "dictionary-tlh-latn",
+  "version": "0.0.0",
+  "description": "Klingon (or tlhIngan-Hol, Latin) spelling dictionary in UTF-8",
+  "license": "Apache-2.0",
+  "keywords": [
+    "spelling",
+    "myspell",
+    "hunspell",
+    "dictionary",
+    "tlh",
+    "latn",
+    "klingon",
+    "tlhingan-hol",
+    "latin"
+  ],
+  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/tlh-Latn",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "files": [
+    "index.js",
+    "index.aff",
+    "index.dic"
+  ]
+}

@@ -263,6 +263,9 @@ crawl "italian" \
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
   "https://github.com/kscanne/hunspell-rw/archive/master.zip"
+crawl "klingon" \
+  "https://github.com/PanderMusubi/klingon" \
+  "https://github.com/PanderMusubi/klingon/archive/master.zip"
 crawl "korean" \
   "https://github.com/spellcheck-ko/hunspell-dict-ko" \
   "https://github.com/spellcheck-ko/hunspell-dict-ko/releases/download/0.7.1/ko-aff-dic-0.7.1.zip"
@@ -708,6 +711,14 @@ generate "sv" "swedish" \
 generate "tk" "turkmen" \
   "turkmen-spell-check-dictionary-master/tk_TM.dic" "UTF-8" \
   "turkmen-spell-check-dictionary-master/tk_TM.aff" "UTF-8"
+generate "tlh" "klingon" \
+  "klingon-master/generated/tlh.dic" "UTF-8" \
+  "klingon-master/generated/tlh.aff" "UTF-8" \
+  "Apache-2.0" "klingon-master/LICENSE" "UTF-8"
+generate "tlh-Latn" "klingon" \
+  "klingon-master/generated/tlh_Latn.dic" "UTF-8" \
+  "klingon-master/generated/tlh_Latn.aff" "UTF-8" \
+  "Apache-2.0" "klingon-master/LICENSE" "UTF-8"
 generate "tr" "turkish" \
   "dictionaries/tr-TR.dic" "UTF-8" \
   "dictionaries/tr-TR.aff" "UTF-8" \

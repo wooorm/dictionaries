@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total 66 dictionaries are provided.
+In total 68 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -78,6 +78,8 @@ In total 66 dictionaries are provided.
 | [`dictionary-sr-latn`](dictionaries/sr-Latn) | Serbian (Latin) | [LGPL-3.0](dictionaries/sr-Latn/license) |
 | [`dictionary-sv`](dictionaries/sv) | Swedish | [LGPL-3.0](dictionaries/sv/license) |
 | [`dictionary-tk`](dictionaries/tk) | Turkmen |  |
+| [`dictionary-tlh`](dictionaries/tlh) | Klingon (or tlhIngan-Hol) | [Apache-2.0](dictionaries/tlh/license) |
+| [`dictionary-tlh-latn`](dictionaries/tlh-Latn) | Klingon (or tlhIngan-Hol, Latin) | [Apache-2.0](dictionaries/tlh-Latn/license) |
 | [`dictionary-tr`](dictionaries/tr) | Turkish | MIT |
 | [`dictionary-uk`](dictionaries/uk) | Ukrainian | [GPL-3.0](dictionaries/uk/license) |
 | [`dictionary-vi`](dictionaries/vi) | Vietnamese | [GPL-2.0](dictionaries/vi/license) |
