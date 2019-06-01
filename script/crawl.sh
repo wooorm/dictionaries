@@ -217,8 +217,8 @@ crawl "french" \
   "https://grammalecte.net" \
   "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.4.1.zip"
 crawl "frisian" \
-  "https://taalweb.frl/downloads" \
-  "https://www.fryske-akademy.nl/spell/oxt/fy_NL-20160722.oxt"
+  "https://github.com/PanderMusubi/frisian" \
+  "https://github.com/PanderMusubi/frisian/archive/master.zip"
 crawl "friulian" \
   "http://digilander.libero.it/paganf/coretors/dizionaris.html" \
   "http://digilander.libero.it/paganf/coretors/myspell-fur-12092005.zip"
@@ -552,9 +552,9 @@ generate "fur" "friulian" \
   "myspell-fur-12092005/fur_IT.aff" "ISO8859-1" \
   "GPL-2.0" "myspell-fur-12092005/COPYING.txt" "ISO8859-1"
 generate "fy" "frisian" \
-  "fy_NL.dic" "CP1252" \
-  "fy_NL.aff" "CP1252" \
-  "GPL-3.0" "README" "UTF-8"
+  "frisian-master/generated/fy_NL.dic" "UTF-8" \
+  "frisian-master/generated/fy_NL.aff" "UTF-8" \
+  "GPL-3.0" "frisian-master/LICENSE" "UTF-8"
 # TODO: kscanne/gaelspell#2
 # generate "ga" "irish" \
 #   "gaelspell-5.0/ga_IE.dic" "UTF-8" \
