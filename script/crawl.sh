@@ -180,8 +180,8 @@ crawl "catalan-valencian" \
   "https://github.com/Softcatala/catalan-dict-tools" \
   "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.3/ca-valencia.3.0.3-hunspell.zip"
 crawl "croatian" \
-  "http://cvs.linux.hr/spell/" \
-  "http://cvs.linux.hr/spell/myspell/hr_HR.zip"
+  "https://github.com/krunose/hunspell-hr" \
+  "https://github.com/krunose/hunspell-hr/archive/master.zip"
 crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1078/0/dict-cs-2.0.oxt"
@@ -576,9 +576,9 @@ generate "he" "hebrew" \
   "he.aff" "UTF-8" \
   "AGPL-3.0" "LICENSE" "UTF-8"
 generate "hr" "croatian" \
-  "hr_HR.dic" "ISO8859-2" \
-  "hr_HR.aff" "ISO8859-2" \
-  "(LGPL-2.1 OR SISSL)" "README_hr_HR.txt" "ISO8859-2"
+  "hunspell-hr-master/hr_HR.dic" "UTF-8" \
+  "hunspell-hr-master/hr_HR.aff" "UTF-8" \
+  "(LGPL-2.1 OR SISSL)" "hunspell-hr-master/README_hr_HR.txt" "UTF-8"
 # TODO: laszlonemeth/magyarispell#9
 # generate "hu" "hungarian" \
 #   "hu_HU_u8_gen_alias.dic" "ISO8859-2" \
