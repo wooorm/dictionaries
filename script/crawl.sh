@@ -226,8 +226,8 @@ crawl "gaelic" \
   "https://github.com/kscanne/hunspell-gd" \
   "https://github.com/kscanne/hunspell-gd/archive/master.zip"
 crawl "galician" \
-  "http://extensions.openoffice.org/en/project/corrector-ortografico-hunspell-para-galego" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/5660/1/hunspell-gl-13.10.oxt"
+  "https://github.com/meixome/hunspell-gl" \
+  "https://github.com/meixome/hunspell-gl/archive/master.zip"
 crawl "georgian" \
   "https://github.com/gamag/ka_GE.spell" \
   "https://github.com/gamag/ka_GE.spell/archive/master.zip"
@@ -444,6 +444,13 @@ if [ ! -e "$SOURCES/ukrainian/license" ]; then
   printf "  $(green "license")\n"
 fi
 
+if [ ! -e "$SOURCES/galician/hunspell-gl-master/gl_ES.aff" ]; then
+  echo "  galician"
+  wget "https://github.com/meixome/hunspell-gl/releases/download/18.07/gl_ES.aff" -O "$SOURCES/galician/hunspell-gl-master/gl_ES.aff"
+  wget "https://github.com/meixome/hunspell-gl/releases/download/18.07/gl_ES.dic" -O "$SOURCES/galician/hunspell-gl-master/gl_ES.dic"
+  printf "  $(green "aff and dic")\n"
+fi
+
 printf "$(bold "Made")!\n\n"
 
 #####################################################################
@@ -568,9 +575,9 @@ generate "gd" "gaelic" \
   "hunspell-gd-master/gd_GB.aff" "UTF-8" \
   "GPL-3.0" "hunspell-gd-master/README_gd_GB.txt" "UTF-8"
 generate "gl" "galician" \
-  "gl_ES.dic" "UTF-8" \
-  "gl_ES.aff" "UTF-8" \
-  "GPL-3.0" "license.txt" "UTF-8"
+  "hunspell-gl-master/gl_ES.dic" "UTF-8" \
+  "hunspell-gl-master/gl_ES.aff" "UTF-8" \
+  "GPL-3.0" "hunspell-gl-master/LICENSE" "UTF-8"
 generate "he" "hebrew" \
   "he.dic" "UTF-8" \
   "he.aff" "UTF-8" \
