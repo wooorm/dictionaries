@@ -48,7 +48,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
 
 ## License
 
-Dictionary and affix file: .
+Dictionary and affix file: [Apache-2.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/tk/license).
 Rest: [MIT][] © [Titus Wormer][home].
 
 [hunspell]: https://hunspell.github.io

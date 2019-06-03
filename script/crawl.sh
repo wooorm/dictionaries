@@ -717,7 +717,8 @@ generate "sv" "swedish" \
   "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
 generate "tk" "turkmen" \
   "turkmen-spell-check-dictionary-master/tk_TM.dic" "UTF-8" \
-  "turkmen-spell-check-dictionary-master/tk_TM.aff" "UTF-8"
+  "turkmen-spell-check-dictionary-master/tk_TM.aff" "UTF-8" \
+  "Apache-2.0" "turkmen-spell-check-dictionary-master/LICENSE" "UTF-8"
 generate "tlh" "klingon" \
   "klingon-master/generated/tlh.dic" "UTF-8" \
   "klingon-master/generated/tlh.aff" "UTF-8" \
