@@ -215,7 +215,7 @@ crawl "esperanto" \
 #   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://grammalecte.net" \
-  "http://www.dicollecte.org/download/fr/hunspell-french-dictionaries-v6.4.1.zip"
+  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.1.1.oxt"
 crawl "frisian" \
   "https://github.com/PanderMusubi/frisian" \
   "https://github.com/PanderMusubi/frisian/archive/master.zip"
@@ -554,9 +554,9 @@ generate "fa" "persian" \
 #   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
 # French: use classic (“classique”) because the readme suggests so.
 generate "fr" "french" \
-  "fr-classique.dic" "UTF-8" \
-  "fr-classique.aff" "UTF-8" \
-  "MPL-2.0" "README_dict_fr.txt" "UTF-8"
+  "dictionaries/fr-classique.dic" "UTF-8" \
+  "dictionaries/fr-classique.aff" "UTF-8" \
+  "MPL-2.0" "dictionaries/README_dict_fr.txt" "UTF-8"
 generate "fur" "friulian" \
   "myspell-fur-12092005/fur_IT.dic" "ISO8859-1" \
   "myspell-fur-12092005/fur_IT.aff" "ISO8859-1" \
