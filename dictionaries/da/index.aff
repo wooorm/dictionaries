@@ -1,7 +1,8 @@
-#Stavekontrolden version 1.4
+#Stavekontrolden version 2.5
+
 #Denne fil er en del af Stavekontrolden - et softwareprodukt, der gør det muligt at stavekontrollere på dansk.
 
-#Copyright (C) 2015 Foreningen for frit tilgængelige sprogværktøjer
+#Copyright (C) 2020 Foreningen for frit tilgængelige sprogværktøjer
 #Website: http://www.stavekontrolden.dk
 #E-mail: info@stavekontrolden.dk
 
@@ -22,14 +23,17 @@
 
 #You should have received a copy of the Mozilla Public License along with this library; if not, visit http://www.mozilla.org/MPL/MPL-1.1.html
 
+
 SET UTF-8
 TRY esrntliadkogmufbvphæøyjåcSMAKBHTLzRNEGéJVFDCwPIxOZ'.UWqØYÅüXQöèóáúðëÆíÖäÜÁàôïêÞÓÿîçãÒÍ.
 FLAG num
 KEY qwertyuiopå|asdfghjklæø|zxcvbnm
+
 #Til sammensætninger: Bindestreg er et ord i sammensætninger
 COMPOUNDMIN 1
 COMPOUNDWORDMAX 2
 WORDCHARS -.
+
 #Undlad at foreslå opdeling af ord - opdeling vil forårsage flere fejl end det vil afhjælpe
 NOSPLITSUGS
 
@@ -157,6 +161,7 @@ REP zs$ z' #jazzs -> jazz'
 REP aa å #Intet dansk keyboard
 REP ae æ
 REP oe ø
+
 
 #Verbum, svagt bøjet, -ede i datid
 SFX 6 Y 4
@@ -439,7 +444,7 @@ NEEDAFFIX 53
 #Proprium
 SFX 55 Y 4
 SFX 55 0 s [^sxz]	+GENITIV
-SFX 55 0  s	+GENITIV
+SFX 55 0 's [QWERTYUIOPÅASDFGHJKLÆØZXCVBNM]	+GENITIV
 SFX 55 0 ' [sxz]	+GENITIV
 SFX 55 0 es s	+GENITIV
 #Genitiv
@@ -1629,3 +1634,27 @@ SFX 828 el let/944 [^d]del	+BESTEMT_ENTAL
 SFX 828 el let/944 [^m]mel	+BESTEMT_ENTAL
 SFX 828 del let/944 ddel	+BESTEMT_ENTAL
 SFX 828 mel let/944 mmel	+BESTEMT_ENTAL
+#Sammensætning, fugeelement Ø el. kons.f.+e
+
+#Sammensætning, fugeelement -kons.f.+er
+SFX 882 Y 20
+SFX 882 0 ner n
+SFX 882 0 ner n
+SFX 882 0 mer m
+SFX 882 0 mer m
+SFX 882 0 ker k
+SFX 882 0 ker k
+SFX 882 0 ber b
+SFX 882 0 ber b
+SFX 882 0 per p
+SFX 882 0 per p
+SFX 882 0 ter t
+SFX 882 0 ter t
+SFX 882 0 ser s
+SFX 882 0 ser s
+SFX 882 0 der d
+SFX 882 0 der d
+SFX 882 0 ger g
+SFX 882 0 ger g
+SFX 882 0 rer r
+SFX 882 0 rer r
