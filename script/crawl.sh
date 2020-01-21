@@ -328,8 +328,8 @@ crawl "russian" \
   "https://code.google.com/archive/p/hunspell-ru/" \
   "https://bitbucket.org/Shaman_Alex/russian-dictionary-hunspell/downloads/ru_RU_UTF-8_20131101.zip"
 crawl "serbian" \
-  "http://extensions.openoffice.org/en/project/serbian-cyrillic-and-latin-spelling-and-hyphenation" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1572/9/dict-sr.oxt"
+  "https://github.com/grakic/hunspell-sr" \
+  "https://github.com/grakic/hunspell-sr/archive/master.zip"
 crawl "slovak" \
   "http://extensions.openoffice.org/en/project/slovak-dictionary-package-slovenske-slovniky" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1143/11/dict-sk.oxt"
@@ -859,13 +859,13 @@ generate "sl" "slovenian" \
   "sl_SI.aff" "ISO8859-2" \
   "(GPL-3.0 OR LGPL-2.1)" "README_sl_SI.txt" "UTF-8"
 generate "sr" "serbian" \
-  "sr.dic" "UTF-8" \
-  "sr.aff" "UTF-8" \
-  "LGPL-3.0" "registration/license_en-US.txt" "UTF-8"
+  "hunspell-sr-master/sr.dic" "UTF-8" \
+  "hunspell-sr-master/sr.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1 OR CC-BY-SA-3.0)" "hunspell-sr-master/README_sr.txt" "UTF-8"
 generate "sr-Latn" "serbian" \
-  "sr-Latn.dic" "UTF-8" \
-  "sr-Latn.aff" "UTF-8" \
-  "LGPL-3.0" "registration/license_en-US.txt" "UTF-8"
+  "hunspell-sr-master/sr-Latn.dic" "UTF-8" \
+  "hunspell-sr-master/sr-Latn.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1 OR CC-BY-SA-3.0)" "hunspell-sr-master/README-sr-Latn.txt" "UTF-8"
 generate "sv" "swedish" \
   "sv_SE.dic" "UTF-8" \
   "sv_SE.aff" "UTF-8" \
