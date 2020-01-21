@@ -870,6 +870,10 @@ generate "sv" "swedish" \
   "dictionaries/sv_SE.dic" "UTF-8" \
   "dictionaries/sv_SE.aff" "UTF-8" \
   "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
+generate "sv-FI" "swedish" \
+  "dictionaries/sv_FI.dic" "UTF-8" \
+  "dictionaries/sv_FI.aff" "UTF-8" \
+  "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
 generate "tk" "turkmen" \
   "turkmen-spell-check-dictionary-master/tk_TM.dic" "UTF-8" \
   "turkmen-spell-check-dictionary-master/tk_TM.aff" "UTF-8" \
