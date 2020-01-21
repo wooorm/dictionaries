@@ -313,12 +313,13 @@ crawl "persian" \
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"
+# See https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
 crawl "portuguese" \
   "http://natura.di.uminho.pt" \
   "http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1375/8/vero_pt_br_v208aoc.oxt"
+  "https://pt-br.libreoffice.org/assets/Uploads/PT-BR-Documents/VERO/VeroptBRV320AOC.oxt"
 crawl "romanian" \
   "http://extensions.openoffice.org/en/project/romanian-dictionary-pack-spell-checker-hyphenation-thesaurus" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1392/10/dict-ro.1.7.oxt"
@@ -835,7 +836,7 @@ generate "pt" "portuguese" \
 generate "pt-BR" "portuguese-br" \
   "pt_BR.dic" "ISO8859-1" \
   "pt_BR.aff" "ISO8859-1" \
-  "LGPL-2.1" "README_en.TXT" "UTF-8"
+  "(LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"
 generate "ro" "romanian" \
   "ro_RO.dic" "UTF-8" \
   "ro_RO.aff" "UTF-8" \
