@@ -309,7 +309,7 @@ crawl "norwegian" \
   "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
 crawl "persian" \
   "https://github.com/b00f/lilak" \
-  "https://github.com/b00f/lilak/releases/download/v3.2/fa-IR.zip"
+  "https://github.com/b00f/lilak/releases/download/v3.3/fa-IR.zip"
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"

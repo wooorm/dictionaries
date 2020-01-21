@@ -18,16 +18,16 @@
 ##
 ## For more information check:
 ##  Lilak: https://github.com/b00f/lilak
-##  File Version 3.2, 2019-04-03
+##  File Version 3.3, 2019-11-20
 ##
 
 SET UTF-8
 LANG fa_FA
 FLAG long
 
-TRY یاندمر‌هوبتسشلزگکفخپجآقچعحغصذطضژظثئءًؤأُةَِّٔ
+TRY یاندمر‌هوبتسشلزگکفخپجآقچعحغصذطضژئظثءًؤأُةَِّٔ
 KEY ضصثقفغعهخحجچپ|شسیبلاتنمکگ|ظطزرذدئو
-IGNORE ًٌٍَُِّـْ
+#IGNORE ًٌٍَُِّـْ
 
 NOSPLITSUGS
 
@@ -177,16 +177,18 @@ SFX sr      0        ند/FFWW        .
 
 
 SFX st      N        2
-SFX st      0        تر/sdsl        .
-SFX st      0        ترین/sg        .
+SFX st      0        تر/sdslso      .
+SFX st      0        ترین/sgso      .
 
 
 ## with zwnj
 SFX su      N        2
-SFX su      0        ‌تر/sdsl       .
-SFX su      0        ‌ترین/sg       .
+SFX su      0        ‌تر/sdslso     .
+SFX su      0        ‌ترین/sgso     .
 
-
+## Ye With Kasre-Ezafe
+SFX sv      N        1
+SFX sv      0        ی             .
 
 REP 9
 REP ي   ی
