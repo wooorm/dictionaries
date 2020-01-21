@@ -120,9 +120,6 @@ I’ve only tested this on macOS, but there you at least need to install:
 
 *   **hunspell**: `brew install hunspell` (many things)
 *   **coreutils**: `brew install coreutils` (many things)
-*   **sed**: `brew install gnu-sed` (Hungarian)
-*   **awk**: `brew install gawk` (Hungarian)
-*   **m4**: `brew install m4` (Hungarian)
 *   **ispell**: `brew install ispell` (German)
 
 Note that the GNU replacements should be setup in PATH to overwrite macOS

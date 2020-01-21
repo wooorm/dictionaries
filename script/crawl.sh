@@ -249,10 +249,11 @@ crawl "greek-polyton" \
 crawl "hebrew" \
   "http://hspell.ivrix.org.il" \
   "http://hspell.ivrix.org.il/hspell-1.4.tar.gz"
-# TODO: laszlonemeth/magyarispell#9
-# crawl "hungarian" \
-#   "https://github.com/laszlonemeth/magyarispell" \
-#   "https://github.com/laszlonemeth/magyarispell/archive/master.zip"
+# TODO: See: laszlonemeth/magyarispell#9
+# Hard to build, get them from `https://github.com/crash5/mozilla-hungarian-spellchecker/releases` now.
+crawl "hungarian" \
+  "https://github.com/laszlonemeth/magyarispell" \
+  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2019.11.11.09.22/MagyarIspell_b06fc12.zip"
 crawl "interlingua" \
   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
@@ -472,12 +473,6 @@ if [ ! -e "Makefile" ]; then
 fi
 PERL5LIB="$PERL5LIB:." make hunspell
 cd ../.. || exit
-
-# TODO: laszlonemeth/magyarispell#9
-# echo "  hungarian"
-# cd "$SOURCES/hungarian/magyarispell-master" || exit
-# LC_ALL=C make myspell
-# cd ../../.. || exit
 
 echo "  low-german"
 cd "$SOURCES/low-german/dict_nds-master" || exit
@@ -753,10 +748,10 @@ generate "hr" "croatian" \
   "hunspell-hr-master/hr_HR.aff" "UTF-8" \
   "(LGPL-2.1 OR SISSL)" "hunspell-hr-master/README_hr_HR.txt" "UTF-8"
 # TODO: laszlonemeth/magyarispell#9
-# generate "hu" "hungarian" \
-#   "hu_HU_u8_gen_alias.dic" "ISO8859-2" \
-#   "hu_HU_u8_gen_alias.aff" "ISO8859-2" \
-#   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README" "UTF-8"
+generate "hu" "hungarian" \
+  "hu_HU.dic" "ISO8859-2" \
+  "hu_HU.aff" "ISO8859-2" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README.en" "UTF-8"
 generate "hy-arevela" "armenian-eastern" \
   "hy_am_e_1940.dic" "UTF-8" \
   "hy_am_e_1940.aff" "UTF-8" \
