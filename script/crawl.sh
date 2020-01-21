@@ -701,7 +701,7 @@ generate "eu" "basque" \
 generate "fa" "persian" \
   "fa-IR.dic" "UTF-8" \
   "fa-IR.aff" "UTF-8" \
-  "Apache-2.0" "README_fa_IR.txt" "UTF-8"
+  "Apache-2.0"
 # TODO: Stava is down.
 # generate "fo" "faroese" \
 #   "fo_FO.dic" "ISO8859-1" \
@@ -776,7 +776,7 @@ generate "ka" "georgian" \
 generate "ko" "korean" \
   "ko-aff-dic-0.7.92/ko.dic" "UTF-8" \
   "ko-aff-dic-0.7.92/ko.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "ko-aff-dic-0.7.92/LICENSE" "UTF-8"
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
 generate "la" "latin" \
   "la/universal/la.dic" "UTF-8" \
   "la/universal/la.aff" "UTF-8" \
@@ -841,11 +841,11 @@ generate "pt-BR" "portuguese-br" \
 generate "ro" "romanian" \
   "ro_RO.dic" "UTF-8" \
   "ro_RO.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_EN.txt" "UTF-8"
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README" "UTF-8"
 generate "ru" "russian" \
-  "ru_RU.dic" "KOI8-R" \
-  "ru_RU.aff" "KOI8-R" \
-  "BSD-2-Clause" "LICENSE" "UTF-8"
+  "ru_RU.dic" "UTF-8" \
+  "ru_RU.aff" "UTF-8" \
+  "LGPL-3.0"
 generate "rw" "kinyarwanda" \
   "hunspell-rw-master/rw_RW.dic" "ISO8859-1" \
   "hunspell-rw-master/rw_RW.aff" "ISO8859-1" \
