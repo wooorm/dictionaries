@@ -308,7 +308,7 @@ REP ^ž Ž
 REP - _
 
 
-AF 416
+AF 417
 AF ZZ	# 1
 AF ZY	# 2
 AF ZX	# 3
@@ -725,6 +725,7 @@ AF SS	# 413
 AF SOSPSR	# 414
 AF SMSNSR	# 415
 AF SL	# 416
+AF SK   # 417
 
 
 SFX XZ Y      21
@@ -3915,4 +3916,14 @@ SFX SL ti ti strti
 SFX SL ti veni strti
 SFX SL ti te strti
 SFX SL ti vene strti
+
+
+#porodiljni
+SFX SK Y 6
+SFX SK i og ljni
+SFX SK i oga ljni
+SFX SK i om ljni
+SFX SK i ome ljni
+SFX SK i omu ljni
+SFX SK 0 m ljni
 
