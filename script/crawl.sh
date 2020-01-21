@@ -510,6 +510,12 @@ if [ ! -e "$SOURCES/ukrainian/license" ]; then
   printf "  $(green "license")\n"
 fi
 
+if [ ! -e "$SOURCES/persian/license" ]; then
+  echo "  persian"
+  wget "https://raw.githubusercontent.com/b00f/lilak/master/LICENSE" -O "$SOURCES/persian/license"
+  printf "  $(green "license")\n"
+fi
+
 if [ ! -e "$SOURCES/galician/hunspell-gl-master/gl_ES.aff" ]; then
   echo "  galician"
   wget "https://github.com/meixome/hunspell-gl/releases/download/18.07/gl_ES.aff" -O "$SOURCES/galician/hunspell-gl-master/gl_ES.aff"
@@ -701,7 +707,7 @@ generate "eu" "basque" \
 generate "fa" "persian" \
   "fa-IR.dic" "UTF-8" \
   "fa-IR.aff" "UTF-8" \
-  "Apache-2.0"
+  "Apache-2.0" "license" "UTF-8"
 # TODO: Stava is down.
 # generate "fo" "faroese" \
 #   "fo_FO.dic" "ISO8859-1" \
