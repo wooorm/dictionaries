@@ -158,12 +158,17 @@ generate() {
 printf "$(bold "Crawling")...\n"
 
 # List of archives to crawl.
+# TODO: https://github.com/hyspell/HySpell_3.0.1/issues/1
+# western: hy-arevmda -> BCP now recommends hyw (always non-reformed)
+# eastern: hy-arevela -> BCP now recommends hy (always reformed, except in Iran)
+# See also: https://www.evnreport.com/raw-unfiltered/international-recognition-for-the-western-armenian-language
 crawl "armenian-eastern" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_e_1940_dict-1.1.oxt"
 crawl "armenian-western" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
+# See: http://xuxen.eus/eu/deskargatu
 crawl "basque" \
   "http://xuxen.eus/eu/home" \
   "http://xuxen.eus/static/hunspell/xuxen_5.1_hunspell.zip"
