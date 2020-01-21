@@ -57,14 +57,14 @@ dir('dictionaries')
 
     try {
       source = read(join(base, '.source'), 'utf-8').trim()
-    } catch (error) {
+    } catch (_) {
       console.log('Cannot find dictionary for `%s`', code)
       return
     }
 
     try {
       pack = JSON.parse(read(join(base, 'package.json')))
-    } catch (error) {}
+    } catch (_) {}
 
     keywords = keywords.concat(code.toLowerCase().split('-'))
 
@@ -154,7 +154,7 @@ dir('dictionaries')
     write(join(base, 'package.json'), JSON.stringify(pack, 0, 2) + '\n')
 
     function ignore(val) {
-      return remove[code] ? remove[code].indexOf(val) === -1 : true
+      return remove[code] ? !remove[code].includes(val) : true
     }
 
     function change(val) {
@@ -207,7 +207,7 @@ function dict(code) {
 }
 
 function unique(key, index, parent) {
-  return parent.indexOf(key, index + 1) === -1
+  return !parent.includes(key, index + 1)
 }
 
 function camelcase(value) {
