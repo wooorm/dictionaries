@@ -406,8 +406,8 @@ crawl "spanish-ve" \
   "https://github.com/sbosio/rla-es" \
   "https://github.com/sbosio/rla-es/releases/download/v2.5/es_VE.oxt"
 crawl "swedish" \
-  "http://extensions.openoffice.org/en/project/swedish-dictionaries-apache-openoffice" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/5959/1/dict-sv.oxt"
+  "https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan" \
+  "https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan/2.42/@@download/file/ooo_swedish_dict_2.42.oxt"
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
@@ -867,8 +867,8 @@ generate "sr-Latn" "serbian" \
   "hunspell-sr-master/sr-Latn.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1 OR CC-BY-SA-3.0)" "hunspell-sr-master/README-sr-Latn.txt" "UTF-8"
 generate "sv" "swedish" \
-  "sv_SE.dic" "UTF-8" \
-  "sv_SE.aff" "UTF-8" \
+  "dictionaries/sv_SE.dic" "UTF-8" \
+  "dictionaries/sv_SE.aff" "UTF-8" \
   "LGPL-3.0" "LICENSE_en_US.txt" "UTF-8"
 generate "tk" "turkmen" \
   "turkmen-spell-check-dictionary-master/tk_TM.dic" "UTF-8" \

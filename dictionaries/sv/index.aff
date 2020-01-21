@@ -1,5 +1,5 @@
 SET UTF-8
-TRY aerndtislogmkpbhfjuväcöåyqxzvwéâàáèćńłšőř:-.
+TRY aerndtislogmkpbhfjuväcöåyqxzvwéâàáèóćńłšőř:-.
 
 WORDCHARS -0123456789.:
 
@@ -12,7 +12,7 @@ NOSUGGEST !
 
 FORBIDDENWORD %
 
-NEEDAFFIX ?
+NEEDAFFIX ¤
 
 # At least this many letters in each word within a compound:
 COMPOUNDMIN 1
@@ -75,10 +75,8 @@ REP ä e
 REP ngn gn
 REP gn ng
 REP ng gn
-REP je ge
-REP ge je
-REP gö jö
-REP jö gö
+REP j g
+REP g j
 REP gt kt
 REP kt gt
 REP dj g
@@ -106,6 +104,7 @@ REP ai ej
 REP mm m
 REP s ss
 REP l ll
+REP ll l
 REP t tt
 REP n nn
 REP p pp
@@ -129,6 +128,7 @@ REP ^iår$ i_år
 REP ^iövrigt$ i_övrigt
 REP ^utochin$ ut_och_in
 REP ^åfärde$ å_färde
+REP is eece
 #REP m mm
 #REP ss s
 #REP ll l
@@ -665,6 +665,26 @@ SFX  T  0  ares  :
 SFX  T  0  arna  :
 SFX  T  0  arnas  :
 
+SFX  e  Y  8
+SFX  e  0  bo  .
+SFX  e  0  bos  .
+SFX  e  0  bon  .
+SFX  e  0  bons  .
+SFX  e  0  bor  .
+SFX  e  0  bors  .
+SFX  e  0  borna  .
+SFX  e  0  bornas  .
+
+SFX  d  Y  8
+SFX  d  0  sbo  .
+SFX  d  0  sbos  .
+SFX  d  0  sbon  .
+SFX  d  0  sbons  .
+SFX  d  0  sbor  .
+SFX  d  0  sbors  .
+SFX  d  0  sborna  .
+SFX  d  0  sbornas  .
+
 # Som myra: myr- (stack)
 # Som förare: förar- (platsen)
 # Som avgud: avguda- (dyrkan)
@@ -776,10 +796,12 @@ SFX  b  0  -  .
 # 42  - a number written in letters, e.g. trehundratjugonio
 # 4?2?54?2? - as above, e.g. sjuhundrafemtiotretusentrehundratjugonio
 # 4?2?54?2?54?2? - as above, e.g. tvåhundratrettonmiljonerfemhundrasjuttontusenelva
+# for adjectives: )k
+# for verbs: >j
 
-#pragma no-merge 268
+#pragma no-merge 268¤jkc
 
-COMPOUNDRULE 10
+COMPOUNDRULE 12
 COMPOUNDRULE 0*
 COMPOUNDRULE 1*-6
 COMPOUNDRULE 4?5?4?5?4?2?6
@@ -790,6 +812,8 @@ COMPOUNDRULE 4?5?4?53U*Y
 COMPOUNDRULE 4?5?4?5?4?5?4?2?
 COMPOUNDRULE 47
 COMPOUNDRULE 4?78
+COMPOUNDRULE >j
+COMPOUNDRULE )k
 
 #pragma ignore-start
 SFX  1  Y  8
