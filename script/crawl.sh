@@ -782,7 +782,7 @@ generate "ka" "georgian" \
 generate "ko" "korean" \
   "ko-aff-dic-0.7.92/ko.dic" "UTF-8" \
   "ko-aff-dic-0.7.92/ko.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "ko-aff-dic-0.7.92/LICENSE.md"
 generate "la" "latin" \
   "la/universal/la.dic" "UTF-8" \
   "la/universal/la.aff" "UTF-8" \
