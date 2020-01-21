@@ -325,8 +325,8 @@ crawl "romanian" \
   "https://rospell.wordpress.com" \
   "https://iweb.dl.sourceforge.net/project/rospell/Romanian%20dictionaries/dict-3.3.10/ro_RO.3.3.10.zip"
 crawl "russian" \
-  "http://extensions.openoffice.org/en/project/russian-dictionary" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/936/9/dict_ru_ru-0.6.oxt"
+  "https://code.google.com/archive/p/hunspell-ru/" \
+  "https://bitbucket.org/Shaman_Alex/russian-dictionary-hunspell/downloads/ru_RU_UTF-8_20131101.zip"
 crawl "serbian" \
   "http://extensions.openoffice.org/en/project/serbian-cyrillic-and-latin-spelling-and-hyphenation" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1572/9/dict-sr.oxt"

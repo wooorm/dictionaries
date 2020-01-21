@@ -2,7 +2,7 @@
   "name": "dictionary-ru",
   "version": "1.2.2",
   "description": "Russian spelling dictionary in UTF-8",
-  "license": "BSD-2-Clause",
+  "license": "LGPL-3.0",
   "keywords": [
     "spelling",
     "myspell",
