@@ -48,7 +48,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
 
 ## License
 
-Dictionary and affix file: MIT.
+Dictionary and affix file: [MIT](https://github.com/wooorm/dictionaries/blob/master/dictionaries/tr/license).
 Rest: [MIT][] © [Titus Wormer][home].
 
 [hunspell]: https://hunspell.github.io

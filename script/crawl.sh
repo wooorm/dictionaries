@@ -516,6 +516,12 @@ if [ ! -e "$SOURCES/persian/license" ]; then
   printf "  $(green "license")\n"
 fi
 
+if [ ! -e "$SOURCES/turkish/license" ]; then
+  echo "  persian"
+  wget "https://raw.githubusercontent.com/hrzafer/hunspell-tr/master/LICENSE" -O "$SOURCES/turkish/license"
+  printf "  $(green "license")\n"
+fi
+
 if [ ! -e "$SOURCES/galician/hunspell-gl-master/gl_ES.aff" ]; then
   echo "  galician"
   wget "https://github.com/meixome/hunspell-gl/releases/download/18.07/gl_ES.aff" -O "$SOURCES/galician/hunspell-gl-master/gl_ES.aff"
@@ -895,7 +901,7 @@ generate "tlh-Latn" "klingon" \
 generate "tr" "turkish" \
   "dictionaries/tr-TR.dic" "UTF-8" \
   "dictionaries/tr-TR.aff" "UTF-8" \
-  "MIT"
+  "MIT" "license" "UTF-8"
 generate "uk" "ukrainian" \
   "uk_UA.dic" "UTF-8" \
   "uk_UA.aff" "UTF-8" \
