@@ -94,7 +94,7 @@ In total 90 dictionaries are provided.
 | [`dictionary-ro`](dictionaries/ro) | Romanian (or Moldavian, or Moldovan) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/ro/license) |
 | [`dictionary-ru`](dictionaries/ru) | Russian | [LGPL-3.0](dictionaries/ru/license) |
 | [`dictionary-rw`](dictionaries/rw) | Kinyarwanda | [GPL-3.0](dictionaries/rw/license) |
-| [`dictionary-sk`](dictionaries/sk) | Slovak | [GPL-2.0](dictionaries/sk/license) |
+| [`dictionary-sk`](dictionaries/sk) | Slovak | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/sk/license) |
 | [`dictionary-sl`](dictionaries/sl) | Slovenian | [(GPL-3.0 OR LGPL-2.1)](dictionaries/sl/license) |
 | [`dictionary-sr`](dictionaries/sr) | Serbian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1 OR CC-BY-SA-3.0)](dictionaries/sr/license) |
 | [`dictionary-sr-latn`](dictionaries/sr-Latn) | Serbian (Latin) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1 OR CC-BY-SA-3.0)](dictionaries/sr-Latn/license) |

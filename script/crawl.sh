@@ -331,8 +331,8 @@ crawl "serbian" \
   "https://github.com/grakic/hunspell-sr" \
   "https://github.com/grakic/hunspell-sr/archive/master.zip"
 crawl "slovak" \
-  "http://extensions.openoffice.org/en/project/slovak-dictionary-package-slovenske-slovniky" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1143/11/dict-sk.oxt"
+  "http://www.sk-spell.sk.cx" \
+  "http://www.sk-spell.sk.cx/file_download/92/hunspell-sk-20110228.zip"
 crawl "slovenian" \
   "http://extensions.openoffice.org/en/project/slovenian-dictionary-package-slovenski-paket-slovarjev" \
   "https://vorboss.dl.sourceforge.net/project/aoo-extensions/3280/10/pack-sl.oxt"
@@ -851,9 +851,9 @@ generate "rw" "kinyarwanda" \
   "hunspell-rw-master/rw_RW.aff" "ISO8859-1" \
   "GPL-3.0" "hunspell-rw-master/LICENSE" "UTF-8"
 generate "sk" "slovak" \
-  "sk_SK/sk_SK.dic" "UTF-8" \
-  "sk_SK/sk_SK.aff" "UTF-8" \
-  "GPL-2.0" "LICENSE.txt" "UTF-8"
+  "hunspell-sk-20110228/sk_SK.dic" "UTF-8" \
+  "hunspell-sk-20110228/sk_SK.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "hunspell-sk-20110228/doc/Copyright" "UTF-8"
 generate "sl" "slovenian" \
   "sl_SI.dic" "ISO8859-2" \
   "sl_SI.aff" "ISO8859-2" \

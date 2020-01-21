@@ -1,4 +1,4 @@
-# verzia: 2.04, 2013-03-17
+# verzia: 2.03-1, 2009-12-19
 SET UTF-8
 TRY aoeintsvrlkmdpuhjzácbyčžíšýúťéľôďgfňäóŕxĺwěřqůAOEINTSVRLKMDPUHJZÁCBYČŽÍŠÝÚŤÉĽÔĎGFŇÄÓŔXĹWĚŘQŮ
 
@@ -788,7 +788,7 @@ SFX H   a           ov         a
 SFX H   a           och        a
 SFX H   0           mi         a
 
-SFX B Y 183
+SFX B Y 181
 SFX B   0           y          [áéíóúý]rod
 SFX B   0           a          [áéíóúý]rod
 SFX B   0           ov         [áéíóúý]rod
@@ -874,9 +874,7 @@ SFX B   0           a          [oúy]r
 SFX B   0           ov         [aeíoúy]r
 SFX B   0           u          [aeíoúy]r
 SFX B   0           om         [aeíoúy]r
-SFX B   0           e          [^n][aeíoúy]r	# L charakter
-SFX B   0           a          ner		# G skenner
-SFX B   0           i          ner		# L skenner
+SFX B   0           e          [aeíoúy]r
 SFX B   0           och        [aeíoúy]r
 SFX B   0           mi         [aeíoúy]r
 SFX B   us          y          mus
@@ -972,7 +970,6 @@ SFX B   0           ov         [^z]og
 SFX B   0           om         [^z]og
 SFX B   0           och        [^z]og
 SFX B   0           mi         [^z]og
-
 
 SFX J Y 132
 SFX J   iec         ce         iec
