@@ -177,7 +177,7 @@ crawl "breton" \
   "http://drouizig.org/images/stories/difazier/hunspell/pakadaou/difazier-an-drouizig-0-14.zip"
 crawl "bulgarian" \
   "http://bgoffice.sourceforge.net" \
-  "https://iweb.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
+  "https://master.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
 crawl "catalan" \
   "https://github.com/Softcatala/catalan-dict-tools" \
   "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.4/ca.3.0.4-hunspell.zip"
