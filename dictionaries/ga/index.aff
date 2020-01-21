@@ -27,7 +27,7 @@
 #
 # Consult the web page
 #
-#   http://borel.slu.edu/ispell/
+#   https://cadhan.com/gaelspell/
 #
 # for detailed information about these packages and installation information.
 
@@ -365,7 +365,7 @@ PFX L   t     soth        t
 PFX L   0     so          s[^aeiouáéíóúlnr]
 PFX L   s     sosh        s[aeiouáéíóúlnr]
 
-SFX A Y 81
+SFX A Y 83
 SFX A   im    nn          [^ui]aim
 SFX A   0     id          [^ui]aim
 SFX A   im    dh          [^ui]aim
@@ -381,6 +381,7 @@ SFX A   im    r           faim
 SFX A   im    r           taim
 SFX A   aim   tar         bhaim
 SFX A   aim   tar         chaim
+SFX A   aim   tar         dhaim
 SFX A   aim   tar         ghaim
 SFX A   aim   tar         mhaim
 SFX A   thaim tar         thaim
@@ -418,6 +419,7 @@ SFX A   im    tear        [^haoáéóút]im
 SFX A   im    ear         tim
 SFX A   im    tear        bhim
 SFX A   im    tear        chim
+SFX A   im    tear        dhim
 SFX A   thim  tear        thim
 SFX A   im    ann         éim
 SFX A   0     id          éim
@@ -448,7 +450,7 @@ SFX A   ím    itear       ghuím
 SFX A   ím    itear       shuím
 SFX A   m     tear        bhuím
 
-SFX E Y 116
+SFX E Y 120
 SFX E   inn   mar         [^iu]ainn
 SFX E   inn   dh          [^iu]ainn
 SFX E   nn    mis         [^iu]ainn
@@ -468,6 +470,8 @@ SFX E   ainn  tá          bhainn
 SFX E   ainn  taí         bhainn
 SFX E   ainn  tá          chainn
 SFX E   ainn  taí         chainn
+SFX E   ainn  tá          dhainn
+SFX E   ainn  taí         dhainn
 SFX E   ainn  tá          ghainn
 SFX E   ainn  taí         ghainn
 SFX E   ainn  tá          mhainn
@@ -521,6 +525,8 @@ SFX E   inn   teá         bhinn
 SFX E   inn   tí          bhinn
 SFX E   inn   teá         chinn
 SFX E   inn   tí          chinn
+SFX E   inn   teá         dhinn
+SFX E   inn   tí          dhinn
 SFX E   thinn teá         thinn
 SFX E   thinn tí          thinn
 SFX E   inn   amar        éinn
