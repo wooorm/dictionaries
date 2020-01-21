@@ -320,9 +320,10 @@ crawl "portuguese" \
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
   "https://pt-br.libreoffice.org/assets/Uploads/PT-BR-Documents/VERO/VeroptBRV320AOC.oxt"
+# See: https://rospell.wordpress.com/download/
 crawl "romanian" \
-  "http://extensions.openoffice.org/en/project/romanian-dictionary-pack-spell-checker-hyphenation-thesaurus" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1392/10/dict-ro.1.7.oxt"
+  "https://rospell.wordpress.com" \
+  "https://iweb.dl.sourceforge.net/project/rospell/Romanian%20dictionaries/dict-3.3.10/ro_RO.3.3.10.zip"
 crawl "russian" \
   "http://extensions.openoffice.org/en/project/russian-dictionary" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/936/9/dict_ru_ru-0.6.oxt"
