@@ -193,19 +193,19 @@ crawl "dutch" \
   "https://github.com/OpenTaal/dutch/archive/master.zip"
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/17102/47/dict-en-20190501b.oxt"
+  "https://iweb.dl.sourceforge.net/project/aoo-extensions/17102/50/dict-en-20200101.oxt"
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2018.04.16/hunspell-en_GB-ise-2018.04.16.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_GB-ise-2019.10.06.zip"
 crawl "english-american" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netix.dl.sourceforge.net/project/wordlist/speller/2018.04.16/hunspell-en_US-2018.04.16.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_US-2019.10.06.zip"
 crawl "english-canadian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2018.04.16/hunspell-en_CA-2018.04.16.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_CA-2019.10.06.zip"
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://datapacket.dl.sourceforge.net/project/wordlist/speller/2018.04.16/hunspell-en_AU-2018.04.16.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_AU-2019.10.06.zip"
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
