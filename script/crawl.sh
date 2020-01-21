@@ -334,8 +334,8 @@ crawl "slovak" \
   "http://www.sk-spell.sk.cx" \
   "http://www.sk-spell.sk.cx/file_download/92/hunspell-sk-20110228.zip"
 crawl "slovenian" \
-  "http://extensions.openoffice.org/en/project/slovenian-dictionary-package-slovenski-paket-slovarjev" \
-  "https://vorboss.dl.sourceforge.net/project/aoo-extensions/3280/10/pack-sl.oxt"
+  "https://extensions.libreoffice.org/extensions/slovenian-dictionary-pack/" \
+  "https://extensions.libreoffice.org/extensions/slovenian-dictionary-pack/2019-12.25/@@download/file/pack-sl.oxt"
 crawl "spanish" \
   "https://github.com/sbosio/rla-es" \
   "https://github.com/sbosio/rla-es/releases/download/v2.5/es_ANY.oxt"
