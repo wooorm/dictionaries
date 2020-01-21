@@ -335,8 +335,74 @@ crawl "slovenian" \
   "http://extensions.openoffice.org/en/project/slovenian-dictionary-package-slovenski-paket-slovarjev" \
   "https://vorboss.dl.sourceforge.net/project/aoo-extensions/3280/10/pack-sl.oxt"
 crawl "spanish" \
-  "http://extensions.openoffice.org/en/project/spanish-espanol" \
-  "https://datapacket.dl.sourceforge.net/project/aoo-extensions/2979/3/es_es.oxt"
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_ANY.oxt"
+crawl "spanish-ar" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_AR.oxt"
+crawl "spanish-bo" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_BO.oxt"
+crawl "spanish-cl" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CL.oxt"
+crawl "spanish-co" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CO.oxt"
+crawl "spanish-cr" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CR.oxt"
+crawl "spanish-cu" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CU.oxt"
+crawl "spanish-do" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_DO.oxt"
+crawl "spanish-ec" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_EC.oxt"
+crawl "spanish-es" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_ES.oxt"
+crawl "spanish-gt" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_GT.oxt"
+crawl "spanish-hn" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_HN.oxt"
+crawl "spanish-mx" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_MX.oxt"
+crawl "spanish-ni" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_NI.oxt"
+crawl "spanish-pa" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PA.oxt"
+crawl "spanish-pe" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PE.oxt"
+crawl "spanish-ph" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PH.oxt"
+crawl "spanish-pr" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PR.oxt"
+crawl "spanish-py" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PY.oxt"
+crawl "spanish-sv" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_SV.oxt"
+crawl "spanish-us" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_US.oxt"
+crawl "spanish-uy" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_UY.oxt"
+crawl "spanish-ve" \
+  "https://github.com/sbosio/rla-es" \
+  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_VE.oxt"
 crawl "swedish" \
   "http://extensions.openoffice.org/en/project/swedish-dictionaries-apache-openoffice" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/5959/1/dict-sv.oxt"
@@ -536,9 +602,98 @@ generate "eo" "esperanto" \
   "eo_ilo.dic" "UTF-8" \
   "eo_ilo.aff" "UTF-8" \
   "GPL-2.0" "LICENSE.txt" "UTF-8"
+
 generate "es" "spanish" \
-  "es_ES.dic" "ISO8859-1" \
-  "es_ES.aff" "ISO8859-1" \
+  "es_ANY.dic" "UTF-8" \
+  "es_ANY.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-AR" "spanish-ar" \
+  "es_AR.dic" "UTF-8" \
+  "es_AR.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-BO" "spanish-bo" \
+  "es_BO.dic" "UTF-8" \
+  "es_BO.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-CL" "spanish-cl" \
+  "es_CL.dic" "UTF-8" \
+  "es_CL.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-CO" "spanish-co" \
+  "es_CO.dic" "UTF-8" \
+  "es_CO.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-CR" "spanish-cr" \
+  "es_CR.dic" "UTF-8" \
+  "es_CR.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-CU" "spanish-cu" \
+  "es_CU.dic" "UTF-8" \
+  "es_CU.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-DO" "spanish-do" \
+  "es_DO.dic" "UTF-8" \
+  "es_DO.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-EC" "spanish-ec" \
+  "es_EC.dic" "UTF-8" \
+  "es_EC.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-ES" "spanish-ES" \
+  "es_ES.dic" "UTF-8" \
+  "es_ES.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-GT" "spanish-gt" \
+  "es_GT.dic" "UTF-8" \
+  "es_GT.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-HN" "spanish-hn" \
+  "es_HN.dic" "UTF-8" \
+  "es_HN.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-MX" "spanish-mx" \
+  "es_MX.dic" "UTF-8" \
+  "es_MX.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-NI" "spanish-ni" \
+  "es_NI.dic" "UTF-8" \
+  "es_NI.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-PA" "spanish-pa" \
+  "es_PA.dic" "UTF-8" \
+  "es_PA.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-PE" "spanish-pe" \
+  "es_PE.dic" "UTF-8" \
+  "es_PE.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-PH" "spanish-ph" \
+  "es_PH.dic" "UTF-8" \
+  "es_PH.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-PR" "spanish-pr" \
+  "es_PR.dic" "UTF-8" \
+  "es_PR.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-PY" "spanish-py" \
+  "es_PY.dic" "UTF-8" \
+  "es_PY.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-SV" "spanish-sv" \
+  "es_SV.dic" "UTF-8" \
+  "es_SV.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-US" "spanish-us" \
+  "es_US.dic" "UTF-8" \
+  "es_US.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-UY" "spanish-uy" \
+  "es_UY.dic" "UTF-8" \
+  "es_UY.aff" "UTF-8" \
+  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
+generate "es-VE" "spanish-ve" \
+  "es_VE.dic" "UTF-8" \
+  "es_VE.aff" "UTF-8" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
 generate "et" "estonian" \
   "et.dic" "ISO8859-15" \

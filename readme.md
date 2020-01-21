@@ -11,7 +11,7 @@ See each of the below packages for installation guidelines.
 
 <!--support start-->
 
-In total 68 dictionaries are provided.
+In total 90 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -33,6 +33,28 @@ In total 68 dictionaries are provided.
 | [`dictionary-en-za`](dictionaries/en-ZA) | English (South Africa) | [LGPL-2.1](dictionaries/en-ZA/license) |
 | [`dictionary-eo`](dictionaries/eo) | Esperanto | [GPL-2.0](dictionaries/eo/license) |
 | [`dictionary-es`](dictionaries/es) | Spanish (or Castilian) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es/license) |
+| [`dictionary-es-ar`](dictionaries/es-AR) | Spanish (or Castilian, Argentina) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-AR/license) |
+| [`dictionary-es-bo`](dictionaries/es-BO) | Spanish (or Castilian, Bolivia) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-BO/license) |
+| [`dictionary-es-cl`](dictionaries/es-CL) | Spanish (or Castilian, Chile) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-CL/license) |
+| [`dictionary-es-co`](dictionaries/es-CO) | Spanish (or Castilian, Colombia) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-CO/license) |
+| [`dictionary-es-cr`](dictionaries/es-CR) | Spanish (or Castilian, Costa Rica) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-CR/license) |
+| [`dictionary-es-cu`](dictionaries/es-CU) | Spanish (or Castilian, Cuba) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-CU/license) |
+| [`dictionary-es-do`](dictionaries/es-DO) | Spanish (or Castilian, Dominican Republic) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-DO/license) |
+| [`dictionary-es-ec`](dictionaries/es-EC) | Spanish (or Castilian, Ecuador) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-EC/license) |
+| [`dictionary-es-es`](dictionaries/es-ES) | Spanish (or Castilian, Spain) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-ES/license) |
+| [`dictionary-es-gt`](dictionaries/es-GT) | Spanish (or Castilian, Guatemala) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-GT/license) |
+| [`dictionary-es-hn`](dictionaries/es-HN) | Spanish (or Castilian, Honduras) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-HN/license) |
+| [`dictionary-es-mx`](dictionaries/es-MX) | Spanish (or Castilian, Mexico) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-MX/license) |
+| [`dictionary-es-ni`](dictionaries/es-NI) | Spanish (or Castilian, Nicaragua) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-NI/license) |
+| [`dictionary-es-pa`](dictionaries/es-PA) | Spanish (or Castilian, Panama) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-PA/license) |
+| [`dictionary-es-pe`](dictionaries/es-PE) | Spanish (or Castilian, Peru) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-PE/license) |
+| [`dictionary-es-ph`](dictionaries/es-PH) | Spanish (or Castilian, Philippines) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-PH/license) |
+| [`dictionary-es-pr`](dictionaries/es-PR) | Spanish (or Castilian, Puerto Rico) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-PR/license) |
+| [`dictionary-es-py`](dictionaries/es-PY) | Spanish (or Castilian, Paraguay) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-PY/license) |
+| [`dictionary-es-sv`](dictionaries/es-SV) | Spanish (or Castilian, El Salvador) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-SV/license) |
+| [`dictionary-es-us`](dictionaries/es-US) | Spanish (or Castilian, United States) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-US/license) |
+| [`dictionary-es-uy`](dictionaries/es-UY) | Spanish (or Castilian, Uruguay) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-UY/license) |
+| [`dictionary-es-ve`](dictionaries/es-VE) | Spanish (or Castilian, Venezuela) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-VE/license) |
 | [`dictionary-et`](dictionaries/et) | Estonian | LGPL-2.1 |
 | [`dictionary-eu`](dictionaries/eu) | Basque | GPL-2.0 |
 | [`dictionary-fa`](dictionaries/fa) | Persian | [Apache-2.0](dictionaries/fa/license) |

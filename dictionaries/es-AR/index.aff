@@ -103,9 +103,8 @@ PFX u e tra es
 PFX u 0 tra s
 PFX u 0 tras [^es]
 PFX u e tras e[^s]
-PFX v Y 2
-PFX v 0 contra [^r]
-PFX v 0 contrar r
+PFX v Y 1
+PFX v 0 contra .
 PFX w Y 1
 PFX w 0 ex	 .
 SFX A Y 14

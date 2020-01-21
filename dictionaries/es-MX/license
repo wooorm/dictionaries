@@ -4,7 +4,7 @@
   **                      Apache OpenOffice/LibreOffice                     **
   **                                                                        **
   ****************************************************************************
-  **  VERSIÓN GENÉRICA PARA TODAS LAS LOCALIZACIONES                        **
+  **  VERSIÓN LOCALIZADA PARA MÉXICO                                        **
   ****************************************************************************
 
                                   Versión 2.5
@@ -37,7 +37,7 @@ formato de MySpell por Richard Holt.
 2. LICENCIA
 
    Este diccionario para corrección ortográfica, integrado por el fichero
-de afijos y la lista de palabras (es_ANY[.aff|.dic]) se distribuye
+de afijos y la lista de palabras (es_MX[.aff|.dic]) se distribuye
 bajo un triple esquema de licencias disjuntas: GNU GPL versión 3 o posterior,
 GNU LGPL versión 3 o posterior, ó MPL versión 1.1 o posterior. Puede
 seleccionar libremente bajo cuál de estas licencias utilizará este diccionario.
