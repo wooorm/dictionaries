@@ -2,9 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v6.4.1
+# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v6.5
 # par Olivier R. -- licence MPL 2.0
-# Généré le 15-05-2019 à 08:25
+# Généré le 26-11-2019 à 15:57
 # Pour améliorer le dictionnaire, allez sur https://grammalecte.net/
 
 
@@ -44,7 +44,35 @@ MAP wW
 MAP xX
 MAP zZ
 
-REP 82
+REP 110
+REP a â
+REP â a
+REP e é
+REP é e
+REP e ê
+REP ê e
+REP e è
+REP è e
+REP i î
+REP î i
+REP o ô
+REP ô o
+REP u û
+REP û u
+REP A Â
+REP Â A
+REP E É
+REP É E
+REP E Ê
+REP Ê E
+REP E È
+REP È E
+REP I Î
+REP Î I
+REP O Ô
+REP Ô O
+REP U Û
+REP Û U
 REP ^Ca$ Ça
 REP ^l l'
 REP ^d d'
