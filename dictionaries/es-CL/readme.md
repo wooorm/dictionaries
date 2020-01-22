@@ -1,6 +1,6 @@
 # dictionary-es-cl
 
-Spanish (or Castilian, Chile) spelling dictionary in UTF-8.
+Spanish (or Castilian; Chile) spelling dictionary in UTF-8.
 
 Useful with [hunspell][], [`nodehun`][nodehun], [`nspell`][nspell],
 Open Office, LibreOffice, Firefox and Thunderbird, or [macOS][].

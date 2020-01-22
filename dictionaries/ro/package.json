@@ -1,7 +1,7 @@
 {
   "name": "dictionary-ro",
   "version": "1.2.3",
-  "description": "Romanian (or Moldavian, or Moldovan) spelling dictionary in UTF-8",
+  "description": "Romanian (or Moldavian; or Moldovan) spelling dictionary in UTF-8",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",

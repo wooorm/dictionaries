@@ -1,6 +1,6 @@
 # dictionary-ro
 
-Romanian (or Moldavian, or Moldovan) spelling dictionary in UTF-8.
+Romanian (or Moldavian; or Moldovan) spelling dictionary in UTF-8.
 
 Useful with [hunspell][], [`nodehun`][nodehun], [`nspell`][nspell],
 Open Office, LibreOffice, Firefox and Thunderbird, or [macOS][].

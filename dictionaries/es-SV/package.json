@@ -1,7 +1,7 @@
 {
   "name": "dictionary-es-sv",
   "version": "0.0.0",
-  "description": "Spanish (or Castilian, El Salvador) spelling dictionary in UTF-8",
+  "description": "Spanish (or Castilian; El Salvador) spelling dictionary in UTF-8",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "spelling",

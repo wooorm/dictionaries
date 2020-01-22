@@ -1,6 +1,6 @@
 # dictionary-es-pe
 
-Spanish (or Castilian, Peru) spelling dictionary in UTF-8.
+Spanish (or Castilian; Peru) spelling dictionary in UTF-8.
 
 Useful with [hunspell][], [`nodehun`][nodehun], [`nspell`][nspell],
 Open Office, LibreOffice, Firefox and Thunderbird, or [macOS][].

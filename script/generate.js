@@ -74,34 +74,34 @@ dir('dictionaries')
 
       value = value && typeof value === 'object' ? value : [value]
 
-      value.forEach(function(subvalue) {
+      value.filter(Boolean).forEach(function(subvalue) {
         var subtag = subvalue ? tags.type(subvalue, label) : null
         var data = subtag ? subtag.data.record.Description : null
 
-        if (data) {
-          // Fix bug in `language-tags`, where the description of a tag when
-          // indented is seen as an array, instead of continued text.
-          if (subtag.data.subtag === 'ia') {
-            data = [data.join(' ')]
-          }
+        // Fix bug in `language-tags`, where the description of a tag when
+        // indented is seen as an array, instead of continued text.
+        if (subtag.data.subtag === 'ia') {
+          data = [data.join(' ')]
+        }
 
-          keywords = keywords.concat(
-            data
-              .join(' ')
-              .toLowerCase()
-              .split(' ')
+        keywords = keywords.concat(
+          data
+            .join(' ')
+            .toLowerCase()
+            .split(' ')
+        )
+
+        if (label === 'language') {
+          parts = [data[0]].concat(
+            data.slice(1).map(function(x) {
+              return 'or ' + x
+            }),
+            parts
           )
-
-          if (label === 'language') {
-            parts = [data[0]].concat(
-              data.slice(1).map(function(x) {
-                return 'or ' + x
-              }),
-              parts
-            )
-          } else {
-            parts = parts.concat(data)
-          }
+        } else if (label === 'script') {
+          parts = parts.concat(data.join(' ') + ' script')
+        } else {
+          parts = parts.concat(data)
         }
       })
     })
@@ -120,7 +120,7 @@ dir('dictionaries')
     description = parts[0]
 
     if (parts.length > 1) {
-      description += ' (' + parts.slice(1).join(', ') + ')'
+      description += ' (' + parts.slice(1).join('; ') + ')'
     }
 
     pack = {
