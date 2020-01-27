@@ -1,7 +1,7 @@
 {
   "name": "dictionary-tlh",
   "version": "1.1.0",
-  "description": "Klingon (or tlhIngan-Hol) spelling dictionary in UTF-8",
+  "description": "Klingon (or tlhIngan Hol) spelling dictionary in UTF-8",
   "license": "Apache-2.0",
   "keywords": [
     "spelling",
@@ -10,7 +10,8 @@
     "dictionary",
     "tlh",
     "klingon",
-    "tlhingan-hol"
+    "tlhingan",
+    "hol"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/tlh",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

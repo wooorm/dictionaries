@@ -101,8 +101,8 @@ In total 91 dictionaries are provided.
 | [`dictionary-sv`](dictionaries/sv) | Swedish | [LGPL-3.0](dictionaries/sv/license) |
 | [`dictionary-sv-fi`](dictionaries/sv-FI) | Swedish (Finland) | [LGPL-3.0](dictionaries/sv-FI/license) |
 | [`dictionary-tk`](dictionaries/tk) | Turkmen | [Apache-2.0](dictionaries/tk/license) |
-| [`dictionary-tlh`](dictionaries/tlh) | Klingon (or tlhIngan-Hol) | [Apache-2.0](dictionaries/tlh/license) |
-| [`dictionary-tlh-latn`](dictionaries/tlh-Latn) | Klingon (or tlhIngan-Hol; Latin script) | [Apache-2.0](dictionaries/tlh-Latn/license) |
+| [`dictionary-tlh`](dictionaries/tlh) | Klingon (or tlhIngan Hol) | [Apache-2.0](dictionaries/tlh/license) |
+| [`dictionary-tlh-latn`](dictionaries/tlh-Latn) | Klingon (or tlhIngan Hol; Latin script) | [Apache-2.0](dictionaries/tlh-Latn/license) |
 | [`dictionary-tr`](dictionaries/tr) | Turkish | [MIT](dictionaries/tr/license) |
 | [`dictionary-uk`](dictionaries/uk) | Ukrainian | [GPL-3.0](dictionaries/uk/license) |
 | [`dictionary-vi`](dictionaries/vi) | Vietnamese | [GPL-2.0](dictionaries/vi/license) |

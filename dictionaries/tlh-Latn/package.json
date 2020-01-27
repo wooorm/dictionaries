@@ -1,7 +1,7 @@
 {
   "name": "dictionary-tlh-latn",
   "version": "1.1.0",
-  "description": "Klingon (or tlhIngan-Hol; Latin script) spelling dictionary in UTF-8",
+  "description": "Klingon (or tlhIngan Hol; Latin script) spelling dictionary in UTF-8",
   "license": "Apache-2.0",
   "keywords": [
     "spelling",
@@ -11,7 +11,8 @@
     "tlh",
     "latn",
     "klingon",
-    "tlhingan-hol",
+    "tlhingan",
+    "hol",
     "latin"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/tlh-Latn",
