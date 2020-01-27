@@ -127,9 +127,14 @@ defaults.
 
 ## Contributing
 
-New dictionaries can be added quite easily.  Most importantly, they must be
-licensed with a free license, and they should be convertible by
-**iconv**(1) to UTF-8.
+Dictionaries can be added if:
+
+*   Have a significant affix file (not just a `.dic` file)
+*   They have an open source license
+*   Are convertible to UTF-8 with **iconv**(1)
+
+The crawling and building is done in [`script/crawl.sh`][crawl].
+Add code there, similar to the existing ones, to include new dictionaries.
 
 ## License
 
@@ -149,3 +154,5 @@ See `license` files in each dictionary for the licensing of `index.dic` and
 [mit]: license
 
 [author]: https://wooorm.com
+
+[crawl]: script/crawl.sh
