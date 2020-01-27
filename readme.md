@@ -3,11 +3,11 @@
 Accessible and easily installable [hunspell][] dictionaries.  Useful with
 [`nodehun`][nodehun], [`nspell`][nspell], and others.
 
-## Installation
+## Install
 
-See each of the below packages for installation guidelines.
+See each of the below packages for install guidelines.
 
-## Table of Dictionaries
+## Dictionaries
 
 <!--support start-->
 
