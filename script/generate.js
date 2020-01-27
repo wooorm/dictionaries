@@ -131,6 +131,7 @@ dir('dictionaries')
       keywords: keywords,
       repository: pkg.repository + '/tree/master/dictionaries/' + code,
       bugs: pkg.bugs,
+      funding: pkg.funding,
       author: pkg.author,
       contributors: pkg.contributors,
       files: ['index.js', 'index.aff', 'index.dic']
