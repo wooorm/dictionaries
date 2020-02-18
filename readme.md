@@ -127,11 +127,11 @@ defaults.
 
 ## Contributing
 
-Dictionaries can be added if:
+Dictionaries can be added if they:
 
-*   Have a significant affix file (not just a `.dic` file)
-*   They have an open source license
-*   Are convertible to UTF-8 with **iconv**(1)
+*   have a significant affix file (not just a `.dic` file)
+*   have an open source license
+*   are convertible to UTF-8 with **iconv**(1)
 
 The crawling and building is done in [`script/crawl.sh`][crawl].
 Add code there, similar to the existing ones, to include new dictionaries.
