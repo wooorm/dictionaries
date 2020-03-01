@@ -117,7 +117,7 @@ In total 90 dictionaries are provided.
 Each dictionary can be installed on OS X by following
 [this StackExchange answer][macos].
 
-## Building
+## Build
 
 I’ve only tested this on macOS, but there you at least need to install:
 
