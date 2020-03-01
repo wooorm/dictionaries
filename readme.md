@@ -11,7 +11,7 @@ See each of the below packages for install guidelines.
 
 <!--support start-->
 
-In total 91 dictionaries are provided.
+In total 90 dictionaries are provided.
 
 | Name | Description | License |
 | ---- | ----------- | ------- |
@@ -41,7 +41,6 @@ In total 91 dictionaries are provided.
 | [`dictionary-es-cu`](dictionaries/es-CU) | Spanish (or Castilian; Cuba) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-CU/license) |
 | [`dictionary-es-do`](dictionaries/es-DO) | Spanish (or Castilian; Dominican Republic) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-DO/license) |
 | [`dictionary-es-ec`](dictionaries/es-EC) | Spanish (or Castilian; Ecuador) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-EC/license) |
-| [`dictionary-es-es`](dictionaries/es-ES) | Spanish (or Castilian; Spain) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-ES/license) |
 | [`dictionary-es-gt`](dictionaries/es-GT) | Spanish (or Castilian; Guatemala) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-GT/license) |
 | [`dictionary-es-hn`](dictionaries/es-HN) | Spanish (or Castilian; Honduras) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-HN/license) |
 | [`dictionary-es-mx`](dictionaries/es-MX) | Spanish (or Castilian; Mexico) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es-MX/license) |

@@ -604,10 +604,9 @@ generate "eo" "esperanto" \
   "eo_ilo.dic" "UTF-8" \
   "eo_ilo.aff" "UTF-8" \
   "GPL-2.0" "LICENSE.txt" "UTF-8"
-
-generate "es" "spanish" \
-  "es_ANY.dic" "UTF-8" \
-  "es_ANY.aff" "UTF-8" \
+generate "es" "spanish-ES" \
+  "es_ES.dic" "UTF-8" \
+  "es_ES.aff" "UTF-8" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
 generate "es-AR" "spanish-ar" \
   "es_AR.dic" "UTF-8" \
@@ -640,10 +639,6 @@ generate "es-DO" "spanish-do" \
 generate "es-EC" "spanish-ec" \
   "es_EC.dic" "UTF-8" \
   "es_EC.aff" "UTF-8" \
-  "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
-generate "es-ES" "spanish-ES" \
-  "es_ES.dic" "UTF-8" \
-  "es_ES.aff" "UTF-8" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)" "README.txt" "UTF-8"
 generate "es-GT" "spanish-gt" \
   "es_GT.dic" "UTF-8" \
