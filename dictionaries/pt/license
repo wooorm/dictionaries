@@ -1,32 +1,29 @@
-This is a Portuguese (Portugal) dictionary for Hunspell:
+Author: Raimundo Moura <raimundomoura@openoffice.org>
 
-Copyright (C) 2006-2009  José João de Almeida <jj@di.uminho.pt> ,
-	Rui Vilela <ruivilela@di.uminho.pt> ,
-	Alberto Simões <ambs@di.uminho.pt>
+en-US: This dictionary is under continuous development by Raimundo Moura and his team. It is
+licensed under the terms of the GNU Lesser General Public License version 3 (LGPLv3),
+as published by the Free Software Foundation, and Mozilla Public License as published by
+The Mozilla Foundation.  The credits are available at
+http://pt-br.libreoffice.org/projetos/projeto-vero-verificador-ortografico/ and you can
+find new releases at
+http://extensions.libreoffice.org
 
-Dep. Informática, Universidade do Minho
-Portugal
+Copyright (C) 2006 - 2013 by Raimundo Santos Moura <raimundo.smoura@gmail.com>
 
-All dictionary files and associated programs are currently covered by
-the (GPL/LGPL/MPL), by this order. See also COPYING file for more
-details, if available.
+============
+INTRODUCTION
+============
 
-Regarding license versions:
-     1. GPL Version 2
-     2. LGPL Version 2.1
-     3. MPL Version 1.1
+The LibreOffice Spell Checker and Hyphenation  is a colaborative project developed
+by the Brazilian community.
+The complete list of participants in this project is at
+http://pt-br.libreoffice.org/projetos/projeto-vero-verificador-ortografico/
 
-To install : Find a suitable application that uses myspell
-    dictionaries like openoffice, or hunspell terminal aplication. Use
-    the program dictionary application (if it has) for installing the
-    dictionaries.  For openoffice, you should make sure that the
-    dictionary.lst file has the following line: DICT pt PT pt_PT
-
-Automatic instalation: You can automatically download our dictionary
-using the available plugins, either from mozilla, or OpenOffice. See
-our site for details.
-
-Latest versions, suggestions, automatic install, informations at
-       http://natura.di.uminho.pt/
-
-#This readme will change on next release
+***********************************************************************
+* This is a dictionary for spell correction and hyphenation for the   *
+* Brazilian Portuguese language for hunspell.                         *
+* This is a free program and it can be redistributed and/or           *
+* modified under the terms of the GNU Lesser General Public License   *
+* (LGPL) version 3 and Mozilla Public License.                        *
+*                                                                     *
+***********************************************************************

@@ -315,7 +315,7 @@ crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"
 # See https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
-crawl "portuguese" \
+crawl "portuguese-pt" \
   "http://natura.di.uminho.pt" \
   "http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
 crawl "portuguese-br" \
@@ -832,11 +832,11 @@ generate "pl" "polish" \
   "pl_PL.dic" "ISO8859-2" \
   "pl_PL.aff" "ISO8859-2" \
   "(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"
-generate "pt" "portuguese" \
+generate "pt-PT" "portuguese-pt" \
   "pt_PT.dic" "UTF-8" \
   "pt_PT.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_pt_PT.txt" "CP1252"
-generate "pt-BR" "portuguese-br" \
+generate "pt" "portuguese-br" \
   "pt_BR.dic" "ISO8859-1" \
   "pt_BR.aff" "ISO8859-1" \
   "(LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"

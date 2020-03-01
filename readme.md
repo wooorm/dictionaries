@@ -88,8 +88,8 @@ In total 90 dictionaries are provided.
 | [`dictionary-nl`](dictionaries/nl) | Dutch (or Flemish) | [(BSD-3-Clause OR CC-BY-3.0)](dictionaries/nl/license) |
 | [`dictionary-nn`](dictionaries/nn) | Norwegian Nynorsk | [GPL-2.0](dictionaries/nn/license) |
 | [`dictionary-pl`](dictionaries/pl) | Polish | [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)](dictionaries/pl/license) |
-| [`dictionary-pt`](dictionaries/pt) | Portuguese | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/pt/license) |
-| [`dictionary-pt-br`](dictionaries/pt-BR) | Portuguese (Brazil) | [(LGPL-3.0 OR MPL-2.0)](dictionaries/pt-BR/license) |
+| [`dictionary-pt`](dictionaries/pt) | Portuguese | [(LGPL-3.0 OR MPL-2.0)](dictionaries/pt/license) |
+| [`dictionary-pt-pt`](dictionaries/pt-PT) | Portuguese (Portugal) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/pt-PT/license) |
 | [`dictionary-ro`](dictionaries/ro) | Romanian (or Moldavian; or Moldovan) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/ro/license) |
 | [`dictionary-ru`](dictionaries/ru) | Russian | [LGPL-3.0](dictionaries/ru/license) |
 | [`dictionary-rw`](dictionaries/rw) | Kinyarwanda | [GPL-3.0](dictionaries/rw/license) |
