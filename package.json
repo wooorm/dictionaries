@@ -25,6 +25,7 @@
   "devDependencies": {
     "bail": "^1.0.0",
     "bcp-47": "^1.0.0",
+    "bcp-47-normalize": "^1.0.0",
     "is-hidden": "^1.0.0",
     "language-tags": "^1.0.0",
     "mdast-zone": "^3.0.0",
