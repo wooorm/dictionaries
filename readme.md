@@ -26,10 +26,10 @@ In total 91 dictionaries are provided.
 | [`dictionary-de-ch`](dictionaries/de-CH) | German (Switzerland) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de-CH/license) |
 | [`dictionary-el`](dictionaries/el) | Modern Greek | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/el/license) |
 | [`dictionary-el-polyton`](dictionaries/el-polyton) | Modern Greek (Polytonic Greek) | [GPL-3.0](dictionaries/el-polyton/license) |
+| [`dictionary-en`](dictionaries/en) | English | [(MIT AND BSD)](dictionaries/en/license) |
 | [`dictionary-en-au`](dictionaries/en-AU) | English (Australia) | [(MIT AND BSD)](dictionaries/en-AU/license) |
 | [`dictionary-en-ca`](dictionaries/en-CA) | English (Canada) | [(MIT AND BSD)](dictionaries/en-CA/license) |
 | [`dictionary-en-gb`](dictionaries/en-GB) | English (United Kingdom) | [(MIT AND BSD)](dictionaries/en-GB/license) |
-| [`dictionary-en-us`](dictionaries/en-US) | English (United States) | [(MIT AND BSD)](dictionaries/en-US/license) |
 | [`dictionary-en-za`](dictionaries/en-ZA) | English (South Africa) | [LGPL-2.1](dictionaries/en-ZA/license) |
 | [`dictionary-eo`](dictionaries/eo) | Esperanto | [GPL-2.0](dictionaries/eo/license) |
 | [`dictionary-es`](dictionaries/es) | Spanish (or Castilian) | [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](dictionaries/es/license) |

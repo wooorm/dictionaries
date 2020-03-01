@@ -592,7 +592,7 @@ generate "en-GB" "english-gb" \
   "en_GB-ise.dic" "UTF-8" \
   "en_GB-ise.aff" "UTF-8" \
   "(MIT AND BSD)" "README_en_GB-ise.txt" "UTF-8"
-generate "en-US" "english-american" \
+generate "en" "english-american" \
   "en_US.dic" "UTF-8" \
   "en_US.aff" "UTF-8" \
   "(MIT AND BSD)" "README_en_US.txt" "UTF-8"
