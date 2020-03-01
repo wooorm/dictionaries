@@ -1,7 +1,7 @@
 # Occidental (Interlingue)
-# v0.8
+# v1.0
 #
-# Copyright 2015-2019 Smirnova O. I.
+# Copyright 2015-2020 Smirnova O. I.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -73,6 +73,28 @@ PFX N 0 ir r
 
 PFX I Y 1
 PFX I i í i
+
+PFX j Y 20
+PFX j 0 yotta .
+PFX j 0 zetta .
+PFX j 0 exa   .
+PFX j 0 peta  .
+PFX j 0 tera  .
+PFX j 0 giga  .
+PFX j 0 mega  .
+PFX j 0 kilo  .
+PFX j 0 hecto .
+PFX j 0 deca  .
+PFX j 0 deci  .
+PFX j 0 centi .
+PFX j 0 milli .
+PFX j 0 micro .
+PFX j 0 nano  .
+PFX j 0 pico  .
+PFX j 0 femto .
+PFX j 0 atto  .
+PFX j 0 zepto .
+PFX j 0 yocto .
 
 SFX A Y 7
 SFX A 0 s  [aeiou]
@@ -328,8 +350,8 @@ SFX y ia o-/pacd ia
 SFX y e  o-/pacd e
 
 SFX z Y 5
-SFX z 0 osi/A [^aáeo]
-SFX z e osi/A e
-SFX z 0 si/A  o
-SFX z a osi/A a
-SFX z á osi/A á
+SFX z 0 osi/AM [^aáeo]
+SFX z e osi/AM e
+SFX z 0 si/AM  o
+SFX z a osi/AM a
+SFX z á osi/AM á
