@@ -1,19 +1,18 @@
 {
-  "name": "dictionary-hy-arevmda",
-  "version": "1.0.2",
-  "description": "Armenian (Western Armenian) spelling dictionary in UTF-8",
+  "name": "dictionary-hyw",
+  "version": "0.0.0",
+  "description": "Western Armenian spelling dictionary in UTF-8",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",
     "myspell",
     "hunspell",
     "dictionary",
-    "hy",
-    "arevmda",
+    "hyw",
     "western",
     "armenian"
   ],
-  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/hy-arevmda",
+  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/hyw",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
   "funding": {
     "type": "github",

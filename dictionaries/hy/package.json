@@ -1,7 +1,7 @@
 {
-  "name": "dictionary-hy-arevela",
-  "version": "1.0.2",
-  "description": "Armenian (Eastern Armenian) spelling dictionary in UTF-8",
+  "name": "dictionary-hy",
+  "version": "0.0.0",
+  "description": "Armenian spelling dictionary in UTF-8",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",
@@ -9,11 +9,9 @@
     "hunspell",
     "dictionary",
     "hy",
-    "arevela",
-    "eastern",
     "armenian"
   ],
-  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/hy-arevela",
+  "repository": "https://github.com/wooorm/dictionaries/tree/master/dictionaries/hy",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
   "funding": {
     "type": "github",

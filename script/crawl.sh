@@ -747,11 +747,11 @@ generate "hu" "hungarian" \
   "hu_HU.dic" "ISO8859-2" \
   "hu_HU.aff" "ISO8859-2" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README.en" "UTF-8"
-generate "hy-arevela" "armenian-eastern" \
+generate "hy" "armenian-eastern" \
   "hy_am_e_1940.dic" "UTF-8" \
   "hy_am_e_1940.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
-generate "hy-arevmda" "armenian-western" \
+generate "hyw" "armenian-western" \
   "hy_AM_western.dic" "UTF-8" \
   "hy_AM_western.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"

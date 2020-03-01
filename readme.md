@@ -67,8 +67,8 @@ In total 90 dictionaries are provided.
 | [`dictionary-he`](dictionaries/he) | Hebrew | [AGPL-3.0](dictionaries/he/license) |
 | [`dictionary-hr`](dictionaries/hr) | Croatian | [(LGPL-2.1 OR SISSL)](dictionaries/hr/license) |
 | [`dictionary-hu`](dictionaries/hu) | Hungarian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hu/license) |
-| [`dictionary-hy-arevela`](dictionaries/hy-arevela) | Armenian (Eastern Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevela/license) |
-| [`dictionary-hy-arevmda`](dictionaries/hy-arevmda) | Armenian (Western Armenian) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy-arevmda/license) |
+| [`dictionary-hy`](dictionaries/hy) | Armenian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hy/license) |
+| [`dictionary-hyw`](dictionaries/hyw) | Western Armenian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/hyw/license) |
 | [`dictionary-ia`](dictionaries/ia) | Interlingua | [GPL-3.0](dictionaries/ia/license) |
 | [`dictionary-ie`](dictionaries/ie) | Interlingue (or Occidental) | [Apache-2.0](dictionaries/ie/license) |
 | [`dictionary-is`](dictionaries/is) | Icelandic | [CC-BY-SA-3.0](dictionaries/is/license) |
