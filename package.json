@@ -28,7 +28,7 @@
     "bcp-47-normalize": "^1.0.0",
     "is-hidden": "^1.0.0",
     "language-tags": "^1.0.0",
-    "mdast-zone": "^3.0.0",
+    "mdast-zone": "^4.0.0",
     "negate": "^1.0.0",
     "not": "^0.1.0",
     "prettier": "^1.0.0",
@@ -38,7 +38,7 @@
     "to-vfile": "^6.0.0",
     "unist-builder": "^2.0.0",
     "utf-8-validate": "^5.0.0",
-    "xo": "^0.25.0",
+    "xo": "^0.27.0",
     "xtend": "^4.0.0"
   },
   "scripts": {
