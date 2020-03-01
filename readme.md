@@ -9,6 +9,10 @@ See each of the below packages for install guidelines.
 
 ## Dictionaries
 
+Note that normal, canonical, and preferred BCP-47 codes are used.
+To illustrate, as American English and Brazilian Portuguese are the most common
+types of English and Portuguese respectively, they get the codes `en` and `pt`.
+
 <!--support start-->
 
 In total 90 dictionaries are provided.
