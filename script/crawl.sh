@@ -531,9 +531,9 @@ generate "bg" "bulgarian" \
   "OOo-full-pack-bg-4.3/bg_BG.aff" "CP1251" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "OOo-full-pack-bg-4.3/README_spell.bulgarian" "CP1251"
 generate "br" "breton" \
-  "br_FR.dic" "UTF-8" \
-  "br_FR.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README.txt" "UTF-8"
+  "hunspell-br-master/br_FR.dic" "UTF-8" \
+  "hunspell-br-master/br_FR.aff" "UTF-8" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "hunspell-br-master/README.txt" "UTF-8"
 generate "ca" "catalan" \
   "catalan.dic" "UTF-8" \
   "catalan.aff" "UTF-8" \
