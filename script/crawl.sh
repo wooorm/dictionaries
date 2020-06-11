@@ -191,8 +191,8 @@ crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1078/0/dict-cs-2.0.oxt"
 crawl "danish" \
-  "http://www.stavekontrolden.dk" \
-  "http://www.stavekontrolden.dk/main/top/extension/dict-da-current.oxt"
+  "https://www.stavekontrolden.dk" \
+  "https://stavekontrolden.dk/dictionaries/da_DK/da_DK.oxt?v=20200611161013"
 # Dutch is down. They seem to be working on a new version.
 # crawl "dutch" \
 #   "https://github.com/OpenTaal/dutch" \
