@@ -417,7 +417,7 @@ crawl "turkmen" \
   "https://github.com/nazartm/turkmen-spell-check-dictionary/archive/master.zip"
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
-  "https://github.com/brown-uk/dict_uk/releases/download/v4.8.0/hunspell-uk_UA_4.8.0.zip"
+  "https://github.com/brown-uk/dict_uk/releases/download/v5.0.1/hunspell-uk_UA_5.0.1.zip"
 crawl "vietnamese" \
   "https://github.com/1ec5/hunspell-vi" \
   "https://github.com/1ec5/hunspell-vi/releases/download/v2.2.0/vi_spellchecker_OOo3.oxt"
