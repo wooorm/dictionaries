@@ -46,7 +46,7 @@ var replace = {
 dir('dictionaries')
   .filter(negate(hidden))
   .sort()
-  .forEach(function(code) {
+  .forEach(function (code) {
     var base = dict(code)
     var tag = bcp47.parse(code)
     var parts = []
@@ -68,13 +68,13 @@ dir('dictionaries')
 
     keywords = keywords.concat(code.toLowerCase().split('-'))
 
-    Object.keys(tag).forEach(function(key) {
+    Object.keys(tag).forEach(function (key) {
       var label = types[key] || key
       var value = tag[key]
 
       value = value && typeof value === 'object' ? value : [value]
 
-      value.filter(Boolean).forEach(function(subvalue) {
+      value.filter(Boolean).forEach(function (subvalue) {
         var subtag = subvalue ? tags.type(subvalue, label) : null
         var data = subtag ? subtag.data.record.Description : null
 
@@ -84,16 +84,11 @@ dir('dictionaries')
           data = [data.join(' ')]
         }
 
-        keywords = keywords.concat(
-          data
-            .join(' ')
-            .toLowerCase()
-            .split(' ')
-        )
+        keywords = keywords.concat(data.join(' ').toLowerCase().split(' '))
 
         if (label === 'language') {
           parts = [data[0]].concat(
-            data.slice(1).map(function(x) {
+            data.slice(1).map(function (x) {
               return 'or ' + x
             }),
             parts
@@ -111,11 +106,7 @@ dir('dictionaries')
       .filter(unique)
       .filter(ignore)
       .map(change)
-    parts = parts
-      .filter(Boolean)
-      .filter(unique)
-      .filter(ignore)
-      .map(change)
+    parts = parts.filter(Boolean).filter(unique).filter(ignore).map(change)
 
     description = parts[0]
 
@@ -154,12 +145,12 @@ dir('dictionaries')
 
     write(join(base, 'package.json'), JSON.stringify(pack, 0, 2) + '\n')
 
-    function ignore(val) {
-      return remove[code] ? !remove[code].includes(val) : true
+    function ignore(value) {
+      return remove[code] ? !remove[code].includes(value) : true
     }
 
-    function change(val) {
-      return (replace[code] ? replace[code][val] : null) || val
+    function change(value) {
+      return (replace[code] ? replace[code][value] : null) || value
     }
   })
 
@@ -189,14 +180,14 @@ function process(file, config) {
   }
 
   return file
-    .replace(/\{\{NAME\}\}/g, config.name)
-    .replace(/\{\{DESCRIPTION\}\}/g, config.description)
-    .replace(/\{\{SPDX\}\}/g, config.license)
-    .replace(/\{\{SOURCE\}\}/g, source)
-    .replace(/\{\{SOURCE_NAME\}\}/g, sourceName)
-    .replace(/\{\{VAR\}\}/g, config.variable)
-    .replace(/\{\{CODE\}\}/g, config.code)
-    .replace(/\{\{LICENSE\}\}/g, license)
+    .replace(/{{NAME}}/g, config.name)
+    .replace(/{{DESCRIPTION}}/g, config.description)
+    .replace(/{{SPDX}}/g, config.license)
+    .replace(/{{SOURCE}}/g, source)
+    .replace(/{{SOURCE_NAME}}/g, sourceName)
+    .replace(/{{VAR}}/g, config.variable)
+    .replace(/{{CODE}}/g, config.code)
+    .replace(/{{LICENSE}}/g, license)
 }
 
 function template(fileName) {

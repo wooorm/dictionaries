@@ -22,10 +22,7 @@ function transformer(tree) {
 }
 
 function replace(start, nodes, end) {
-  var rows = fs
-    .readdirSync(root)
-    .filter(negate(hidden))
-    .map(row)
+  var rows = fs.readdirSync(root).filter(negate(hidden)).map(row)
 
   return [
     start,

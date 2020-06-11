@@ -34,9 +34,7 @@ function bcp47(name) {
 function utf8(name) {
   var dirname = path.join(root, name)
 
-  fs.readdirSync(dirname)
-    .filter(not(hidden))
-    .forEach(check)
+  fs.readdirSync(dirname).filter(not(hidden)).forEach(check)
 
   function check(filename) {
     var file = vfile.readSync(path.join(dirname, filename))
@@ -66,7 +64,7 @@ function requiredFiles(name) {
   }
 }
 
-test('dictionaries', function(t) {
+test('dictionaries', function (t) {
   fs.readdir(root, ondir)
 
   function ondir(err, paths) {
