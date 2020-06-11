@@ -1,9 +1,9 @@
 _______________________________________________________________________________
 
    DICTIONNAIRES ORTHOGRAPHIQUES FRANÇAIS
-   version 6.5
+   version 7.1
 
-   Olivier R. - olivier<at>grammalecte<dot>net
+   Olivier R.
    https://grammalecte.net/
 
    Licence :
@@ -54,15 +54,9 @@ _______________________________________________________________________________
    de chacun, quatre dictionnaires existent, respectant différemment cette
    réforme.
 
-    Dictionnaire “Moderne”
-        Ce dictionnaire propose une sélection des graphies classiques et
-        réformées, suivant la lente évolution de l’orthographe actuelle. Ce
-        dictionnaire contient les graphies les moins polémiques de la réforme.
-
     Dictionnaire “Classique”  [recommandé]
-        Ce dictionnaire est une extension du dictionnaire «Moderne» et propose
-        en sus des graphies alternatives, parfois encore très usitées, parfois
-        tombées en désuétude.
+        Ce dictionnaire propose l’orthographe usuelle du français, avec en sus
+        quelques graphies nouvelles rectifiant les incohérences passées.
 
     Dictionnaire “Réforme 1990”
         Ce dictionnaire ne connaît que les graphies nouvelles des mots concernés

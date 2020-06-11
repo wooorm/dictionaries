@@ -221,7 +221,7 @@ crawl "esperanto" \
 #   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://grammalecte.net" \
-  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.6.0.oxt"
+  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.10.0.oxt"
 crawl "frisian" \
   "https://github.com/PanderMusubi/frisian" \
   "https://github.com/PanderMusubi/frisian/archive/master.zip"
