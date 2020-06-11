@@ -121,8 +121,9 @@ Each dictionary can be installed on OS X by following
 
 I’ve only tested this on macOS, but there you at least need to install:
 
-*   **hunspell**: `brew install hunspell` (many things)
-*   **coreutils**: `brew install coreutils` (many things)
+*   **wget**: `brew install wget` (crawling)
+*   **hunspell**: `brew install hunspell` (many dictionaries)
+*   **coreutils**: `brew install coreutils` (many dictionaries)
 *   **ispell**: `brew install ispell` (German)
 
 Note that the GNU replacements should be setup in PATH to overwrite macOS
