@@ -59,7 +59,7 @@ Rest: [MIT][] © [Titus Wormer][home].
 
 [macos]: https://github.com/wooorm/dictionaries#macos
 
-[source]: http://natura.di.uminho.pt
+[source]: https://natura.di.uminho.pt
 
 [npm]: https://docs.npmjs.com/cli/install
 

@@ -173,8 +173,8 @@ crawl "basque" \
   "http://xuxen.eus/eu/home" \
   "http://xuxen.eus/static/hunspell/xuxen_5.1_hunspell.zip"
 crawl "breton" \
-  "http://drouizig.org/index.php/br/binviou-br/difazier-hunspell" \
-  "http://drouizig.org/images/stories/difazier/hunspell/pakadaou/difazier-an-drouizig-0-14.zip"
+  "https://github.com/Drouizig/hunspell-br" \
+  "https://github.com/Drouizig/hunspell-br/archive/master.zip"
 crawl "bulgarian" \
   "http://bgoffice.sourceforge.net" \
   "https://master.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
@@ -199,19 +199,19 @@ crawl "danish" \
 #   "https://github.com/OpenTaal/dutch/archive/master.zip"
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/17102/50/dict-en-20200101.oxt"
+  "https://netcologne.dl.sourceforge.net/project/aoo-extensions/17102/55/dict-en-20200601.oxt"
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_GB-ise-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_GB-ise-2019.10.06.zip"
 crawl "english-american" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_US-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_US-2019.10.06.zip"
 crawl "english-canadian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_CA-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_CA-2019.10.06.zip"
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_AU-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_AU-2019.10.06.zip"
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
@@ -239,7 +239,7 @@ crawl "georgian" \
   "https://github.com/gamag/ka_GE.spell/archive/master.zip"
 crawl "german" \
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
-  "https://www.j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
+  "https://j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
 crawl "greek" \
   "https://github.com/stevestavropoulos/elspell" \
   "https://github.com/stevestavropoulos/elspell/archive/master.zip"
@@ -316,8 +316,8 @@ crawl "polish" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"
 # See https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
 crawl "portuguese-pt" \
-  "http://natura.di.uminho.pt" \
-  "http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
+  "https://natura.di.uminho.pt" \
+  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
   "https://pt-br.libreoffice.org/assets/Uploads/PT-BR-Documents/VERO/VeroptBRV320AOC.oxt"
@@ -336,7 +336,7 @@ crawl "slovak" \
   "http://www.sk-spell.sk.cx/file_download/92/hunspell-sk-20110228.zip"
 crawl "slovenian" \
   "https://extensions.libreoffice.org/extensions/slovenian-dictionary-pack/" \
-  "https://extensions.libreoffice.org/extensions/slovenian-dictionary-pack/2019-12.25/@@download/file/pack-sl.oxt"
+  "https://extensions.libreoffice.org/assets/downloads/z/8b7ba8bb_pack-sl.oxt"
 crawl "spanish" \
   "https://github.com/sbosio/rla-es" \
   "https://github.com/sbosio/rla-es/releases/download/v2.5/es_ANY.oxt"
@@ -408,7 +408,7 @@ crawl "spanish-ve" \
   "https://github.com/sbosio/rla-es/releases/download/v2.5/es_VE.oxt"
 crawl "swedish" \
   "https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan" \
-  "https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan/2.42/@@download/file/ooo_swedish_dict_2.42.oxt"
+  "https://extensions.libreoffice.org/assets/downloads/z/ooo-swedish-dict-2-42.oxt"
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
@@ -505,14 +505,8 @@ if [ ! -e "$SOURCES/ukrainian/license" ]; then
   printf "  $(green "license")\n"
 fi
 
-if [ ! -e "$SOURCES/persian/license" ]; then
-  echo "  persian"
-  wget "https://raw.githubusercontent.com/b00f/lilak/master/LICENSE" -O "$SOURCES/persian/license"
-  printf "  $(green "license")\n"
-fi
-
 if [ ! -e "$SOURCES/turkish/license" ]; then
-  echo "  persian"
+  echo "  turkish"
   wget "https://raw.githubusercontent.com/hrzafer/hunspell-tr/master/LICENSE" -O "$SOURCES/turkish/license"
   printf "  $(green "license")\n"
 fi
@@ -701,9 +695,9 @@ generate "eu" "basque" \
   "eu_ES.aff" "UTF-8" \
   "GPL-2.0"
 generate "fa" "persian" \
-  "fa-IR.dic" "UTF-8" \
-  "fa-IR.aff" "UTF-8" \
-  "Apache-2.0" "license" "UTF-8"
+  "fa-IR/fa-IR.dic" "UTF-8" \
+  "fa-IR/fa-IR.aff" "UTF-8" \
+  "Apache-2.0" "fa-IR/license" "UTF-8"
 # TODO: Stava is down.
 # generate "fo" "faroese" \
 #   "fo_FO.dic" "ISO8859-1" \
