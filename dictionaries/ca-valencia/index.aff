@@ -2,17 +2,17 @@
 #                              Corrector ortogràfic català
 #                          Fitxer d'afixos i llista de paraules
 # =======================================================================================
-#                                Versió 3.0.5 (07-06-2020)
+#                                Versió 3.0.6 (15-06-2020)
 # =======================================================================================
-# Copyright (C) 2015 Jaume Ortolà <jaumeortola@gmail.com>
+# Copyright (C) 2013-2020 Jaume Ortolà <jaumeortola@gmail.com>
 # Copyright (C) 2002-2008 Joan Moratinos <jmo@softcatala.org>
 # 
 # Dual license:
 # 
-#   * GNU General Public License, version 2 
+#   * GNU General Public License, version 2 or later
 #     https://www.gnu.org/licenses/gpl-2.0.txt
 # 
-#   * GNU Lesser General Public License, version 2.1 
+#   * GNU Lesser General Public License, version 2.1 or later 
 #     https://www.gnu.org/licenses/lgpl-2.1.txt
 # 
 # =======================================================================================
@@ -35,7 +35,12 @@ FORBIDDENWORD ZZ
 
 WORDCHARS ·-'
 
-TRY easirtocnlumdpgvfbqjwxyzhàèéïíòóúüç·-'
+ICONV 3
+ICONV ’ '
+ICONV Ŀ L·
+ICONV ŀ l·
+
+TRY easirtocnlumdpgvfbqjwxyzhàèéïíòóúüç·-'Ωµ
 KEY qwertyuiop|asdfghjklñ|zxcvbnm|qaw|saz|wse|dsx|sz|edr|fdc|dx|rft|gfv|fc|tgz|hgb|gv|zhu|jhn|hb|uji|kjm|jn|iko|lkmñ|plñç
 
 MAP 24
@@ -677,84 +682,120 @@ PFX _Z 0 t' [aàeèéiíoòóhuú]
 PFX _Z 0 s' [aàeèéiíoòóhuú]
 PFX _Z 0 l' [aàeèéiíoòóhuú]
 
+PFX U1 N 8
+PFX U1 0 Y .
+PFX U1 0 Z .
+PFX U1 0 E .
+PFX U1 0 P .
+PFX U1 0 T .
+PFX U1 0 G .
+PFX U1 0 M .
+PFX U1 0 k .
+
+PFX U2 N 2
+PFX U2 0 h .
+PFX U2 0 da .
+
+PFX U3 N 10
+PFX U3 0 d .
+PFX U3 0 c .
+PFX U3 0 m .
+PFX U3 0 µ .
+PFX U3 0 n .
+PFX U3 0 p .
+PFX U3 0 f .
+PFX U3 0 a .
+PFX U3 0 z .
+PFX U3 0 y .
+
+PFX U4 N 8
+PFX U4 0 Yi .
+PFX U4 0 Zi .
+PFX U4 0 Ei .
+PFX U4 0 Pi .
+PFX U4 0 Ti .
+PFX U4 0 Gi .
+PFX U4 0 Mi .
+PFX U4 0 ki .
+
 # Model de conjugació: cantar, sense apostrofació inicial
 SFX 00 Y 84
 SFX 00 r r/_C ar
 SFX 00 r nt/_C ar
-SFX 00 r t/ ar
-SFX 00 r da/ ar
-SFX 00 r ts/ ar
-SFX 00 r des/ ar
-SFX 00 ar o/ ar
-SFX 00 ar e/ ar
-SFX 00 ar 0/ ar
-SFX 00 ar es/ ar
-SFX 00 r 0/ ar
-SFX 00 ar em/ ar
-SFX 00 r m/ ar
-SFX 00 ar eu/ ar
-SFX 00 r u/ ar
-SFX 00 ar en/ ar
-SFX 00 r va/ ar
-SFX 00 r ves/ ar
-SFX 00 r va/ ar
-SFX 00 ar àvem/ ar
-SFX 00 ar àveu/ ar
-SFX 00 r ven/ ar
-SFX 00 ar í/ ar
-SFX 00 r res/ ar
-SFX 00 ar à/ ar
-SFX 00 ar àrem/ ar
-SFX 00 ar àreu/ ar
-SFX 00 r ren/ ar
-SFX 00 r ré/ ar
-SFX 00 r ràs/ ar
-SFX 00 r rà/ ar
-SFX 00 r rem/ ar
-SFX 00 r reu/ ar
-SFX 00 r ran/ ar
-SFX 00 r ria/ ar
-SFX 00 r ries/ ar
-SFX 00 r ria/ ar
-SFX 00 r ríem/ ar
-SFX 00 r ríeu/ ar
-SFX 00 r rien/ ar
-SFX 00 ar e/ ar
-SFX 00 ar i/ ar
-SFX 00 ar es/ ar
-SFX 00 ar is/ ar
-SFX 00 ar e/ ar
-SFX 00 ar i/ ar
-SFX 00 ar em/ ar
-SFX 00 ar eu/ ar
-SFX 00 ar en/ ar
-SFX 00 ar in/ ar
-SFX 00 ar és/ ar
-SFX 00 r ra/ ar
-SFX 00 ar às/ ar
-SFX 00 ar essis/ ar
-SFX 00 r res/ ar
-SFX 00 r ssis/ ar
-SFX 00 ar esses/ ar
-SFX 00 r sses/ ar
-SFX 00 ar és/ ar
-SFX 00 r ra/ ar
-SFX 00 ar às/ ar
-SFX 00 ar éssim/ ar
-SFX 00 ar àrem/ ar
-SFX 00 ar àssim/ ar
-SFX 00 ar éssem/ ar
-SFX 00 ar àssem/ ar
-SFX 00 ar éssiu/ ar
-SFX 00 ar àreu/ ar
-SFX 00 ar àssiu/ ar
-SFX 00 ar ésseu/ ar
-SFX 00 ar àsseu/ ar
-SFX 00 ar essin/ ar
-SFX 00 r ren/ ar
-SFX 00 r ssin/ ar
-SFX 00 ar essen/ ar
-SFX 00 r ssen/ ar
+SFX 00 r t ar
+SFX 00 r da ar
+SFX 00 r ts ar
+SFX 00 r des ar
+SFX 00 ar o ar
+SFX 00 ar e ar
+SFX 00 ar 0 ar
+SFX 00 ar es ar
+SFX 00 r 0 ar
+SFX 00 ar em ar
+SFX 00 r m ar
+SFX 00 ar eu ar
+SFX 00 r u ar
+SFX 00 ar en ar
+SFX 00 r va ar
+SFX 00 r ves ar
+SFX 00 r va ar
+SFX 00 ar àvem ar
+SFX 00 ar àveu ar
+SFX 00 r ven ar
+SFX 00 ar í ar
+SFX 00 r res ar
+SFX 00 ar à ar
+SFX 00 ar àrem ar
+SFX 00 ar àreu ar
+SFX 00 r ren ar
+SFX 00 r ré ar
+SFX 00 r ràs ar
+SFX 00 r rà ar
+SFX 00 r rem ar
+SFX 00 r reu ar
+SFX 00 r ran ar
+SFX 00 r ria ar
+SFX 00 r ries ar
+SFX 00 r ria ar
+SFX 00 r ríem ar
+SFX 00 r ríeu ar
+SFX 00 r rien ar
+SFX 00 ar e ar
+SFX 00 ar i ar
+SFX 00 ar es ar
+SFX 00 ar is ar
+SFX 00 ar e ar
+SFX 00 ar i ar
+SFX 00 ar em ar
+SFX 00 ar eu ar
+SFX 00 ar en ar
+SFX 00 ar in ar
+SFX 00 ar és ar
+SFX 00 r ra ar
+SFX 00 ar às ar
+SFX 00 ar essis ar
+SFX 00 r res ar
+SFX 00 r ssis ar
+SFX 00 ar esses ar
+SFX 00 r sses ar
+SFX 00 ar és ar
+SFX 00 r ra ar
+SFX 00 ar às ar
+SFX 00 ar éssim ar
+SFX 00 ar àrem ar
+SFX 00 ar àssim ar
+SFX 00 ar éssem ar
+SFX 00 ar àssem ar
+SFX 00 ar éssiu ar
+SFX 00 ar àreu ar
+SFX 00 ar àssiu ar
+SFX 00 ar ésseu ar
+SFX 00 ar àsseu ar
+SFX 00 ar essin ar
+SFX 00 r ren ar
+SFX 00 r ssin ar
+SFX 00 ar essen ar
+SFX 00 r ssen ar
 SFX 00 r 0/_D ar
 SFX 00 ar e/_D ar
 SFX 00 ar i/_D ar

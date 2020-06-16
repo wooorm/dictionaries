@@ -180,10 +180,10 @@ crawl "bulgarian" \
   "https://master.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
 crawl "catalan" \
   "https://github.com/Softcatala/catalan-dict-tools" \
-  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.5/ca.3.0.5-hunspell.zip"
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.6/ca.3.0.6-hunspell.zip"
 crawl "catalan-valencian" \
   "https://github.com/Softcatala/catalan-dict-tools" \
-  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.5/ca-valencia.3.0.5-hunspell.zip"
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.6/ca-valencia.3.0.6-hunspell.zip"
 crawl "croatian" \
   "https://github.com/krunose/hunspell-hr" \
   "https://github.com/krunose/hunspell-hr/archive/master.zip"
