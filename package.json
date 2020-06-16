@@ -65,10 +65,14 @@
   },
   "remarkConfig": {
     "settings": {
-      "paddedTable": false
+      "tablePipeAlign": false
     },
     "plugins": [
       "preset-wooorm",
+      [
+        "remark-lint-table-pipe-alignment",
+        false
+      ],
       "./script/list-of-dictionaries"
     ]
   }

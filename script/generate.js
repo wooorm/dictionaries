@@ -134,7 +134,7 @@ dir('dictionaries')
         docs,
         xtend(pack, {
           source: source,
-          variable: camelcase(code),
+          variable: camelcase(code.toLowerCase()),
           code: code,
           hasLicense: exists(join(base, 'license'))
         })
