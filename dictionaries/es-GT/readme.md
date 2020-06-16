@@ -48,7 +48,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
 
 ## License
 
-Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](https://github.com/wooorm/dictionaries/blob/master/dictionaries/es-GT/license).
+Dictionary and affix file: [(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)](https://github.com/wooorm/dictionaries/blob/main/dictionaries/es-GT/license).
 Rest: [MIT][] © [Titus Wormer][home].
 
 [hunspell]: https://hunspell.github.io
@@ -65,6 +65,6 @@ Rest: [MIT][] © [Titus Wormer][home].
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 
-[mit]: https://github.com/wooorm/dictionaries/blob/master/LICENSE
+[mit]: https://github.com/wooorm/dictionaries/blob/main/license
 
 [home]: https://wooorm.com

@@ -65,6 +65,6 @@ Rest: [MIT][] © [Titus Wormer][home].
 
 [dictionaries]: https://github.com/wooorm/dictionaries
 
-[mit]: https://github.com/wooorm/dictionaries/blob/master/LICENSE
+[mit]: https://github.com/wooorm/dictionaries/blob/main/license
 
 [home]: https://wooorm.com

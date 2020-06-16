@@ -49,7 +49,7 @@ fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 
 ## License
 
-Dictionary and affix file: [GPL-3.0](https://github.com/wooorm/dictionaries/blob/master/dictionaries/mk/LICENSE).
+Dictionary and affix file: [GPL-3.0](https://github.com/wooorm/dictionaries/blob/main/dictionaries/mk/license).
 Rest: MIT © [Titus Wormer][home].
 
 [hunspell]: http://hunspell.github.io

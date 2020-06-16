@@ -120,7 +120,7 @@ dir('dictionaries')
       description: description + ' spelling dictionary in UTF-8',
       license: read(join(base, '.spdx'), 'utf-8').trim(),
       keywords: keywords,
-      repository: pkg.repository + '/tree/master/dictionaries/' + code,
+      repository: pkg.repository + '/tree/main/dictionaries/' + code,
       bugs: pkg.bugs,
       funding: pkg.funding,
       author: pkg.author,
@@ -174,7 +174,7 @@ function process(file, config) {
       '[' +
       license +
       '](https://github.com/wooorm/' +
-      'dictionaries/blob/master/dictionaries/' +
+      'dictionaries/blob/main/dictionaries/' +
       config.code +
       '/license)'
   }
