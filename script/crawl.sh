@@ -339,73 +339,73 @@ crawl "slovenian" \
   "https://extensions.libreoffice.org/assets/downloads/z/8b7ba8bb_pack-sl.oxt"
 crawl "spanish" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_ANY.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_ANY.oxt"
 crawl "spanish-ar" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_AR.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_AR.oxt"
 crawl "spanish-bo" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_BO.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_BO.oxt"
 crawl "spanish-cl" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CL.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CL.oxt"
 crawl "spanish-co" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CO.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CO.oxt"
 crawl "spanish-cr" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CR.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CR.oxt"
 crawl "spanish-cu" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_CU.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CU.oxt"
 crawl "spanish-do" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_DO.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_DO.oxt"
 crawl "spanish-ec" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_EC.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_EC.oxt"
 crawl "spanish-es" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_ES.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_ES.oxt"
 crawl "spanish-gt" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_GT.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_GT.oxt"
 crawl "spanish-hn" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_HN.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_HN.oxt"
 crawl "spanish-mx" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_MX.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_MX.oxt"
 crawl "spanish-ni" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_NI.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_NI.oxt"
 crawl "spanish-pa" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PA.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PA.oxt"
 crawl "spanish-pe" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PE.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PE.oxt"
 crawl "spanish-ph" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PH.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PH.oxt"
 crawl "spanish-pr" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PR.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PR.oxt"
 crawl "spanish-py" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_PY.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PY.oxt"
 crawl "spanish-sv" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_SV.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_SV.oxt"
 crawl "spanish-us" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_US.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_US.oxt"
 crawl "spanish-uy" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_UY.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_UY.oxt"
 crawl "spanish-ve" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.5/es_VE.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_VE.oxt"
 crawl "swedish" \
   "https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan" \
   "https://extensions.libreoffice.org/assets/downloads/z/ooo-swedish-dict-2-42.oxt"
@@ -417,7 +417,7 @@ crawl "turkmen" \
   "https://github.com/nazartm/turkmen-spell-check-dictionary/archive/master.zip"
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
-  "https://github.com/brown-uk/dict_uk/releases/download/v5.0.1/hunspell-uk_UA_5.0.1.zip"
+  "https://github.com/brown-uk/dict_uk/releases/download/v5.0.6/hunspell-uk_UA.zip"
 crawl "vietnamese" \
   "https://github.com/1ec5/hunspell-vi" \
   "https://github.com/1ec5/hunspell-vi/releases/download/v2.2.0/vi_spellchecker_OOo3.oxt"
