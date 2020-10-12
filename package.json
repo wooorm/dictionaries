@@ -32,13 +32,13 @@
     "negate": "^1.0.0",
     "not": "^0.1.0",
     "prettier": "^2.0.0",
-    "remark-cli": "^8.0.0",
-    "remark-preset-wooorm": "^7.0.0",
+    "remark-cli": "^9.0.0-alpha.1",
+    "remark-preset-wooorm": "^8.0.0",
     "tape": "^5.0.0",
     "to-vfile": "^6.0.0",
     "unist-builder": "^2.0.0",
     "utf-8-validate": "^5.0.0",
-    "xo": "^0.32.0",
+    "xo": "^0.33.0",
     "xtend": "^4.0.0"
   },
   "scripts": {
@@ -64,13 +64,16 @@
     }
   },
   "remarkConfig": {
-    "settings": {
-      "tablePipeAlign": false
-    },
     "plugins": [
       "preset-wooorm",
       [
-        "remark-lint-table-pipe-alignment",
+        "gfm",
+        {
+          "tablePipeAlign": false
+        }
+      ],
+      [
+        "lint-table-pipe-alignment",
         false
       ],
       "./script/list-of-dictionaries"
