@@ -1,4 +1,4 @@
-4061
+4152
 'I'/NO
 'I' ghew/N
 'I'SeghIm/N
@@ -11,6 +11,7 @@
 'ISjaH/N
 'ISlan/NL
 'ISletlh/N
+'ISqu'/N
 'ISyar/N
 'Ib/N
 'Ich/vV
@@ -63,6 +64,7 @@
 'aH/N
 'aQlo'/NO
 'aQvoH/N
+'aS/N
 'aSralya'/NL
 'aSya'/NL
 'ab/vV
@@ -82,6 +84,9 @@
 'ampaS/N
 'amrI'/N
 'an/vV
+'an'or/N
+'an'orQeD/N
+'an'ortej/N
 'anDo'ra'/NL
 'anDor/NL
 'anDorngan/NE
@@ -104,6 +109,9 @@
 'apmoH/vV
 'apuStoQ/N
 'aq/vV
+'aqaD/NL
+'aqaDyan
+'aqaDyan Hol/N
 'aqleH/N
 'aqnaw/N
 'aqroS/N
@@ -116,7 +124,7 @@
 'archer HoD/N
 'argh/vV
 'arlogh
-'at/N
+'at/NvV
 'atlantIq
 'atlantIq bIQ'a'/NL
 'atlhqam/N
@@ -141,6 +149,7 @@
 'eDSeHcha/N
 'eDjen/N
 'eH
+'eQ
 'eQway/NO
 'eQway'/N
 'eQway' 'echlet/N
@@ -187,6 +196,7 @@
 'eqwaDor/NL
 'er/N
 'er'In/N
+'ergh/vV
 'et/NvV
 'etlh/N
 'ev/NL
@@ -207,6 +217,7 @@
 'o'mat
 'o'mat ghIrI'/N
 'o'megh/N
+'o'nI'/N
 'o'rIS/N
 'o'raylIy/N
 'o'roy'/N
@@ -218,6 +229,7 @@
 'oQqar/N
 'oS/vV
 'oSrIq/N
+'oStIn/NL
 'oSteray'/NL
 'oSwI'/NE
 'ob/vV
@@ -242,6 +254,7 @@
 'oqmoH/vV
 'oqranD/N
 'or/vV
+'or'eq/N
 'oray/NL
 'orayngan/NE
 'orayya'/NL
@@ -350,6 +363,7 @@ DIr paH bID/N
 DIr rop/N
 DIr tutlh/N
 DIron/N
+DItlhon/N
 DIv/vV
 DIvI'/N
 DIvI' Hol/N
@@ -406,6 +420,7 @@ De' chu' ghItlh/N
 De' jengva'/N
 De' naw'wI'/N
 De' ngop/N
+De'lor/N
 De'vID/N
 De'wI'/N
 De'wI' 'echlet Hab/N
@@ -422,6 +437,7 @@ DeQ/N
 DeS/NO
 DeSqIv/NO
 DeSwar/N
+DeSwar bIr/N
 Deb/N
 Dech/vV
 Degh/NvV
@@ -452,6 +468,7 @@ Do juvwI'/N
 Do qaD/N
 Do'/vVN
 Do'Ha'/vV
+Do'ghI'/NO
 Do'natu
 Do'natu vagh/N
 Do'ol/N
@@ -486,6 +503,7 @@ Doy'/vVN
 Doy'yuS/NL
 DoyIchlan/NL
 DoyIchlan Hol/N
+DoylI'/N
 Du'/N
 Du' naH/N
 Du'Hom/N
@@ -502,6 +520,7 @@ DuS/N
 DuSaQ/N
 Dub/NOvV
 Dugh/vV
+DughrI'/NO
 Duj/N
 Duj ngaDHa'/N
 DujtlhuQ/N
@@ -515,6 +534,7 @@ DuraS/N
 Duran
 Duran lung/N
 Duran lung DIr/N
+Durghang/N
 Dut/vV
 Duv/vV
 Duy/N
@@ -546,6 +566,7 @@ HIvHe/N
 HIvchuq/N
 HIvje'/N
 HIvje' bom/N
+HIvneS/vV
 Ha'
 Ha'DIbaH/N
 Ha'DIbaH ghIH tIr ngogh je/N
@@ -669,9 +690,9 @@ Hoj/vV
 Hol/N
 Hol Sar/N
 Hol ghoQ/N
-Hol tej/NE
 HolQeD/N
 Holmey
+Holtej/NE
 Hom/NOvV
 HomwI'/NO
 Hon/vV
@@ -710,6 +731,7 @@ HuH/N
 HuS/vVN
 Hub/vVN
 Hubbeq/N
+HubneS/vV
 Huch/N
 Huch chaw'/N
 Huch jengva'/N
@@ -730,6 +752,7 @@ Hur'Iq/NE
 Hur'Iqngan/NE
 HurDagh/N
 Hurgh/vVN
+Hurgh Duj/N
 HurqIq/N
 Hut/N
 Hut'In/N
@@ -770,7 +793,7 @@ QIghpej/N
 QIj/vV
 QIl/vV
 QIm/N
-QIn/N
+QIn/NvV
 QIn 'echletHom/N
 QIn pup/N
 QIn tum/N
@@ -857,7 +880,6 @@ QoQ ghom/N
 QoQ jan/N
 QoS/vV
 Qob/vVN
-Qob'etlh/N
 Qoch/vV
 Qochbe'/vV
 Qogh/N
@@ -947,9 +969,13 @@ SIlovenISqa'/NL
 SIlreq/N
 SIm/vV
 SImyon/N
+SIntlher/N
 SIp/N
+SIpoq/N
 SIq/vV
 SIqenDInavya'/NL
+SIqnaSwaq/NE
+SIqotlan/NL
 SIqral/NL
 SIqral bIQtIq/NL
 SIqwI'/NO
@@ -1081,7 +1107,7 @@ Soj qub/N
 Soj tetlh/N
 Soj tlhol/N
 Soj vutlu'pu'bogh/N
-Sol/vV
+Sol/vVNL
 SolDeS/N
 Som/N
 SommI'/N
@@ -1123,6 +1149,7 @@ SubmaH/N
 Subpu'
 Subpu' vaS/N
 Such/vV
+Suchtuv/N
 Sugh/vV
 Suj/vV
 Sum/vV
@@ -1171,6 +1198,7 @@ bIQ beb/N
 bIQ ghItmoHwI'/N
 bIQ ghaywI' pa'/N
 bIQ na'/N
+bIQ notron/N
 bIQ'a'/NL
 bIQ'a' HeH/N
 bIQDep/N
@@ -1188,7 +1216,7 @@ bIm/N
 bIng/N
 bInglan/N
 bIp/N
-bIr/vV
+bIr/vVN
 bIrI'tIS
 bIrI'tIS qolambIya/NL
 bIraSIw/NL
@@ -1213,6 +1241,7 @@ baS 'In/N
 baS Ha'on/N
 baS SIrgh/N
 baS laSvargh/N
+baStan/NL
 bach/vVN
 bachHa'/vV
 bachlu'meH
@@ -1310,6 +1339,7 @@ boQ/NvV
 boQDu'/N
 boQwI'/N
 boS/vV
+boSporoS/NL
 bobcho'/N
 boch/vV
 bochmoHwI'/NE
@@ -1342,11 +1372,13 @@ bot/vV
 botjan/N
 botlh/N
 bov/N
+bov tIQ/N
 bu'/NE
 buD/vV
 buQ/vV
 buS/vV
 buSHa'/vV
+buSHach/N
 bulvar/NE
 bup/vV
 buq/N
@@ -1578,7 +1610,6 @@ gha'vIq/N
 ghaH/N
 ghab/NvV
 ghab tun/N
-ghab'etlh/N
 ghach/vV
 ghagh/vV
 ghaj/vV
@@ -1606,6 +1637,7 @@ gharwI'/NE
 ghatlh/vV
 ghav/N
 ghav 'uSqan/N
+ghaw/vV
 ghaw'/N
 ghawran/N
 ghay/NvV
@@ -1626,6 +1658,7 @@ gheb/N
 ghegh/vV
 ghel/vV
 ghem/N
+ghenlan/NL
 ghenraq/N
 ghep/vVN
 gher/vV
@@ -1651,7 +1684,6 @@ ghoH/vV
 ghoQ/vVN
 ghoS/vV
 ghob/NvV
-ghob'etlh/N
 ghobchuq
 ghobchuq loDnI'pu'/N
 ghobe'
@@ -1681,6 +1713,7 @@ ghonDoq/N
 ghong/NvV
 ghonglIq/N
 ghop/NO
+ghop 'etlh/N
 ghopDap/N
 ghoq/vV
 ghoqwI'/NE
@@ -1711,6 +1744,7 @@ ghul/N
 ghum/NvV
 ghun/vV
 ghung/vV
+ghunta/N
 ghup/vV
 ghur/vV
 ghurlaq/N
@@ -1722,9 +1756,10 @@ ghuy'
 ghuy'cha'
 jI'ev/N
 jIH/NvV
-jIb/NO
+jIb/NOvV
 jIb Ho'Du'/N
 jIb yachwI'/N
+jIb'egh/vV
 jIj/vV
 jIl/N
 jIm/vV
@@ -1783,6 +1818,7 @@ jar/N
 jargh/NO
 jarjaj/N
 jat/NvV
+jat Hol/N
 jatlh/vV
 jatlhHa'/vV
 jatyIn/N
@@ -1806,6 +1842,7 @@ jeghpu'wI'/NE
 jej/vV
 jejHa'/vV
 jel/vV
+jelwaS/N
 jem/vV
 jem'IH/N
 jemS
@@ -1858,6 +1895,7 @@ joq/vV
 joqwI'/N
 jor/vV
 jorchan/N
+jorchan velqa'/N
 jorja/NL
 jorneb/N
 jornub/N
@@ -1867,6 +1905,7 @@ jotHa'/vV
 jotlh/vV
 jotlhHa'/vV
 joy'/vV
+ju'pIter/NL
 juH/N
 juH qach/N
 juHqo'/N
@@ -1916,7 +1955,9 @@ lIt/vV
 lItHa'/vV
 lIvqa'nan/N
 lIw/N
+lIwnal/NE
 lIy/N
+lIyenIn/N
 la'/NE
 la''a'/N
 la'SIv/N
@@ -1939,9 +1980,11 @@ lalDan/N
 lam/vVN
 lan/vV
 lanDan/NL
+lanSoy/N
 lang/vV
 lap/vV
 laq/vV
+laqlaq/N
 largh/vV
 lat/N
 latlh/N
@@ -2038,6 +2081,7 @@ lom/N
 lon/vV
 lop/vVN
 lopno'/N
+loq/vV
 lor/NE
 lorbe'/NE
 lorloD/NE
@@ -2082,6 +2126,7 @@ lurveng/N
 lut/N
 lut mIr/N
 lutlh/vV
+luvnup/N
 mI'/NvV
 mI' 'al/N
 mI' mob/N
@@ -2175,6 +2220,7 @@ maqlegh/NE
 maqoch/NE
 maqtagh/N
 mar/vV
+marIS/NL
 marQen/N
 marSe'luS/N
 mara/N
@@ -2188,7 +2234,7 @@ matlh/vVN
 matlhHa'/vV
 mavje'/NO
 mavjop/N
-maw/vV
+maw/vVN
 maw'/vV
 may/NvV
 may'/N
@@ -2223,6 +2269,7 @@ megh/N
 megh'an/N
 mej/vV
 mej'aD/N
+mejnay/N
 melchoQ/N
 mellota'/N
 mem/N
@@ -2300,6 +2347,7 @@ mu'qaD veS/N
 mu'tay'/N
 mu'tlhegh/N
 muD/N
+muD 'umber/N
 muD Dotlh/N
 muD Duj/N
 muD ngeb SeHwI' pat/N
@@ -2312,7 +2360,9 @@ muSHa'/vV
 mub/vV
 much/NvV
 much Qe'/N
+much jech/N
 much qach/N
+much yaH/N
 muchpa'/N
 muchwI'/NE
 mugh/vV
@@ -2434,6 +2484,7 @@ naw'wat/N
 nawlogh/N
 nay/NvV
 nay'/N
+nayeghra/NL
 nayjerya'/NL
 ne'/NE
 ne'Derlan/NL
@@ -2465,6 +2516,7 @@ net/N
 netlh/N
 netlh DIS poH/N
 nev'aQ/N
+nev'ob/NO
 nevDagh/N
 ngI'/vV
 ngIDvoS/N
@@ -2476,6 +2528,7 @@ ngIm/vV
 ngIng/vV
 ngIp/vV
 ngIq/N
+ngItHel/N
 ngItlh/vV
 ngIv/vV
 nga'chuq/vV
@@ -2576,6 +2629,7 @@ nguvmoH/vV
 no'/N
 no' DIr/N
 no' Hol/N
+no' bov/N
 no''och/NO
 no'QeD/N
 no'laS
@@ -2591,6 +2645,7 @@ noS/vV
 noSvagh/N
 nob/NvV
 nobHa'/vV
+nobmeD/NO
 noch/N
 noch pat/N
 nogh/vV
@@ -2610,6 +2665,7 @@ not
 notlh/vV
 notqa'/N
 notqa' pach/N
+notron/N
 nov/NEvV
 noy/NvV
 nu'/vV
@@ -2664,6 +2720,7 @@ pIm/vV
 pIn/NE
 pIn tlhoy'/N
 pIn'a'/NE
+pInHom/N
 pIp/NO
 pIpyuS/N
 pIpyuS pach/N
@@ -2725,6 +2782,7 @@ paq nojwI' tum/N
 paq'batlh/N
 par/vV
 parHa'/vV
+parIy/NL
 parbIng/N
 pargh/vV
 parmaq/N
@@ -2734,6 +2792,7 @@ patat
 patat 'oQqar/N
 patlh/NvV
 patlhmoH/vV
+patmor/N
 pav/vV
 paw/vV
 paw'/vV
@@ -2742,6 +2801,7 @@ pay/NvV
 pay'
 pay'Ha'
 pay'an/N
+pay'rIn/N
 pe'/vV
 pe''egh/vV
 pe'bIl/N
@@ -2890,6 +2950,7 @@ qIv/NO
 qIvo'rIt/N
 qIvon/NO
 qa'/vVNE
+qa'mInar/NL
 qa'meH/N
 qa'meH mI'/N
 qa'meH vIttlhegh/N
@@ -2907,6 +2968,7 @@ qaDrav/NL
 qaH/N
 qaS/vV
 qab/vVNO
+qab jech/N
 qabDu'/N
 qabDu' law'/N
 qach/N
@@ -2957,6 +3019,8 @@ qatru'/NE
 qatwI'/N
 qav'ap/N
 qaw/vVN
+qaw'/vV
+qaw'moH/vV
 qawHa'/vV
 qawHaq/N
 qawmoH/vV
@@ -2983,11 +3047,13 @@ qej/vV
 qel/vV
 qelHay'ya/N
 qelI'qam/N
+qelpIngan/NE
 qelpIya'ngan/NE
 qem/vV
 qempa'/N
 qen
 qenHa'
+qenSaS/NL
 qeng/vVN
 qengHoD/N
 qengbogh
@@ -3019,9 +3085,11 @@ qeyvaq/N
 qeyvaq Ha'DIbaH/N
 qo'/N
 qo' Sor/N
-qo'la'
+qo'la'/N
 qo'la' 'awje'/N
 qo'leq/N
+qo'qa'
+qo'qa' qo'la'/N
 qo'qaD/N
 qo'qo/N
 qo'rIDan/NL
@@ -3154,6 +3222,7 @@ rItlh/N
 rItlh 'echlet/N
 rItlh naQ/N
 rItwI'/NE
+rIv/vV
 rIvSo'/N
 rIymuS/NL
 ra'/vV
@@ -3202,9 +3271,11 @@ ray/N
 ray'/N
 ray' tIr/N
 rayQeD/N
+raywal/N
 reD/N
 reH/vV
 reS/vV
+reStav/NO
 rech/vV
 regh/vV
 reghuluS/NL
@@ -3222,7 +3293,7 @@ ren/vV
 renwI'/NE
 rep/N
 req/N
-ret/N
+ret/NvV
 ret'aq/N
 retlaw/N
 retlh/N
@@ -3245,7 +3316,9 @@ roS/vV
 roSHa'moH/vV
 roSenQatlh/N
 roSghaH/N
+roSqa'/N
 roSqa'QeD/N
+roSqa'tej/NE
 roSwI'/NO
 rob'agh/N
 rogh/vV
@@ -3346,7 +3419,7 @@ taQ/vV
 taQbang/N
 taS/N
 taSman/N
-tach/N
+tach/NvV
 tagh/NvV
 tagha'
 tagha'Ha'
@@ -3372,6 +3445,7 @@ tamlertej/NE
 tammoH/vV
 tang/vV
 tangqa'/N
+tanje'rIn/N
 tap/vV
 taq/vV
 taq'ev
@@ -3388,7 +3462,10 @@ tatlh'egh/vV
 tav/vV
 taw/N
 taw 'ay'/N
+taw'/vV
 tawI'yan/NE
+tawleHnu'/N
+tawleHnu' pogh/N
 tay/NvVE
 tay'/vVNL
 tay'ghoqor/NL
@@ -3423,6 +3500,7 @@ tep/N
 tep jolpat/N
 tepqengwI'/N
 teq/vV
+teqSaS/NL
 tera'/NL
 tera' 'arDeH/N
 tera' bIQ lung'a'/N
@@ -3504,6 +3582,7 @@ tlhegh/N
 tlhegh jIrmoHwI'/N
 tlhej/vV
 tlheng'IQ/N
+tlhep/vV
 tlhepQe'/N
 tlher/vV
 tlher'aq/N
@@ -3547,6 +3626,7 @@ tlhub/N
 tlhuch/vV
 tlhup/vV
 tlhur/vV
+tlhut/vV
 tlhutlh/vV
 to'/N
 to'baj/N
@@ -3658,6 +3738,7 @@ vIj/N
 vIl/NvV
 vIlHom/NO
 vIlInHoD/N
+vIlaDelvIya'/NL
 vIlle'/N
 vIn/NE
 vInDa'/NE
@@ -3669,6 +3750,7 @@ vIq/N
 vIqSIS/N
 vIqraq/N
 vIraS/NL
+vIrgh/vV
 vIt/vVN
 vItHay'/N
 vItlh/vV
@@ -3758,6 +3840,7 @@ vey/N
 vey'/vV
 vey'Ha'/vV
 vo'/vV
+vo'yajer/N
 voD/vV
 voD jan/N
 voDchuch/N
@@ -3818,6 +3901,7 @@ wIgh/N
 wIj/vV
 wIjwI'
 wIjwI' jan/N
+wIjwI' ngeb/N
 wIl/N
 wIlle'/NO
 wIlpuq/N
@@ -3827,10 +3911,12 @@ wItlh/vV
 wItte'/N
 wIv/NvV
 wIy/N
+wIyqap/N
 wa'/NL
 wa' rutlh qam Do Duj/N
 wa'DIch/NLE
 wa'Hu'/N
+wa'SIngtanDIySIy/NL
 wa'chaw/N
 wa'jo''a'/N
 wa'lIS/N
@@ -3864,21 +3950,25 @@ waqboch/N
 war/N
 warjun/N
 watlh/vV
+watrIn/N
 wav/vV
 waw'/N
 way/NvV
 way'/vV
+way'ar/N
 weH/vV
 weQ/N
 weQmoQnaQ/N
 weS/vV
 weSjech/N
+weSjech ba'Suq Duj/N
 web/vV
 wech/vV
 wegh/vV
 wej/NL
 wejDIch/N
 wejHa'
+wejbe'/N
 wejmaH/N
 wejpuH
 wejwa'/N
@@ -3909,6 +3999,7 @@ woj choHwI'/N
 wol/vV
 wolmoH/vV
 wom/vV
+wonmugh/N
 woq/vV
 wornagh/N
 wot/N

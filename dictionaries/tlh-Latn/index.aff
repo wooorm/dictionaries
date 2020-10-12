@@ -1,11 +1,11 @@
 # Author: Pander <pander@users.sourceforge.net>
 # License: Apache License 2.0
 # Homepage: https://github.com/PanderMusubi/klingon
-# Version: 1.0.6
-# Date: 2019-08-21 14:48:28
+# Version: 1.0.7
+# Date: 2020-06-18 14:00:45
 # Source: build from boQwI' version 2.0
 SET UTF-8
-TRY a'hoIenlugtHmrqSDjpbwyvcQ
+TRY a'ohIenlutgHmrqSDjpbwyvcQ
 WORDCHARS abceghjlmnopqrtuvwy'DHIQS’
 ICONV 1
 ICONV ’ '
@@ -42,7 +42,7 @@ SFX N 0 wI' .
 SFX N 0 wIj .
 SFX O Y 1
 SFX O 0 pu' .
-SFX V Y 36
+SFX V Y 38
 SFX V 0 'a' .
 SFX V 0 'egh .
 SFX V 0 DI' .
@@ -60,9 +60,11 @@ SFX V 0 chuq .
 SFX V 0 ghach .
 SFX V 0 jaj .
 SFX V 0 lI' .
+SFX V 0 la' .
 SFX V 0 laH .
 SFX V 0 law' .
 SFX V 0 lu' .
+SFX V 0 luH .
 SFX V 0 meH .
 SFX V 0 mo' .
 SFX V 0 moH .
