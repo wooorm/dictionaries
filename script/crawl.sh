@@ -308,6 +308,9 @@ crawl "nepali" \
 crawl "norwegian" \
   "http://no.speling.org" \
   "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
+crawl "occitan" \
+  "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian" \
+  "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian/-/raw/master/corrector_occitan_lengadocian_1-2.oxt?inline=false"  
 crawl "persian" \
   "https://github.com/b00f/lilak" \
   "https://github.com/b00f/lilak/releases/download/v3.3/fa-IR.zip"
