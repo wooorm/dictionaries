@@ -43,7 +43,7 @@
   },
   "scripts": {
     "generate": "sh script/crawl.sh && node script/generate",
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test",
     "test": "npm run generate && npm run format && npm run test-api"
   },
