@@ -318,7 +318,7 @@ crawl "polish" \
 # See https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
 crawl "portuguese-pt" \
   "https://natura.di.uminho.pt" \
-  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20190329.tar.gz"
+  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20201212.tar.gz"
 crawl "portuguese-br" \
   "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
   "https://pt-br.libreoffice.org/assets/Uploads/PT-BR-Documents/VERO/VeroptBRV320AOC.oxt"
