@@ -193,10 +193,9 @@ crawl "czech" \
 crawl "danish" \
   "https://www.stavekontrolden.dk" \
   "https://www.stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.017.oxt"
-# Dutch is down. They seem to be working on a new version.
-# crawl "dutch" \
-#   "https://github.com/OpenTaal/dutch" \
-#   "https://github.com/OpenTaal/dutch/archive/master.zip"
+crawl "dutch" \
+  "https://github.com/OpenTaal/opentaal-hunspell" \
+  "https://github.com/OpenTaal/opentaal-hunspell/archive/master.zip"
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
   "https://netix.dl.sourceforge.net/project/aoo-extensions/17102/61/dict-en-20210101.oxt"
@@ -815,10 +814,10 @@ generate "nds" "low-german" \
   "dict_nds-master/nds_de.aff" "UTF-8" \
   "GPL-3.0" "dict_nds-master/README" "UTF-8"
 # Dutch is down. They seem to be working on a new version.
-# generate "nl" "dutch" \
-#   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.dic" "UTF-8" \
-#   "dutch-master/result/hunspell-nl/usr/share/hunspell/nl.aff" "UTF-8" \
-#   "(BSD-3-Clause OR CC-BY-3.0)" "dutch-master/LICENSE" "UTF-8"
+generate "nl" "dutch" \
+  "opentaal-hunspell-master/nl.dic" "UTF-8" \
+  "opentaal-hunspell-master/nl.aff" "UTF-8" \
+  "(BSD-3-Clause OR CC-BY-3.0)" "opentaal-hunspell-master/LICENSE.txt" "UTF-8"
 generate "nn" "norwegian" \
   "nn/nn_NO.dic" "ISO8859-1" \
   "nn/nn_NO.aff" "ISO8859-1" \

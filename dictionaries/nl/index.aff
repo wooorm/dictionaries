@@ -1,9 +1,21 @@
-# Hunspell affix file
-# (c) 2006-2011 OpenTaal
-# Coded by R. Baars
-# www.opentaal.org
-# version 2.10G
-# version date 2011-09-23
+# Title: Dutch support for Hunspell
+# Creator: OpenTaal https://opentaal.org
+# Rights: Revised BSD License and/or CC BY 3.0
+# Date and version: 2020-12-24 15:42:49 2.20.18
+# Source: https://github.com/OpenTaal/opentaal-hunspell
+# License choice: To enable the broadest (re)use, these language files are
+# freely available under the liberal licenses at the discretion of the user. We
+# strongly recommend to read the applicable license before usage. Choose one or
+# both licenses which apply best for you.
+# A) Revised BSD License (3-clause license), as is defined at
+# https://opensource.org/licenses/BSD-3-Clause (see also below)
+# B) Creative Commons, Attribution 3.0 Unported (CC BY 3.0), as is defined at
+# https://creativecommons.org/licenses/by/3.0/legalcode.txt (see also below)
+# Creator history:
+# © 2020 OpenTaal (Simon Brouwer, Sander van Geloven)
+# © 2006 - 2010 OpenTaal (Ruud Baars, Simon Brouwer)
+# © 2001 - 2005 Simon Brouwer and others
+# © 1996 Nederlandstalige TeX Gebruikersgroep
 
 # BEWARE: THIS AFFIX FILE AND DICTIONARY REQUIRE HUNSPELL 1.3.1 AS MINIMAL VERSION
 
@@ -16,12 +28,13 @@ TRY  -ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êü12635407çà8û9îñäôERNIT
 # combined layout for BE and NL keyboards NL en BE
 KEY qwertyuiop|asdfghjkl|zxcvbnm|qawsedrftgyhujikolp|azsxdcfvgbhnjmk|aze|qsd|lm|wx|aqz|qws|
 
-WORDCHARS '’0123456789ĳ.-\/
+WORDCHARS '’0123456789ĳ.-\/+
 # . is only useful as wordchar from the command line
 # \/ should make the / acceptable as part of word (km/h)
 # the way applications offer words to the Hunspell interface apperently differs,
 # causing problems with abbreviations and end-of-sentence words.
 # Issue has been communicated with Hunspell's author.
+# + added to support 50+'er
 
 # do not offer split words (to prevent English desease, splitting up words)
 NOSPLITSUGS
@@ -70,16 +83,16 @@ MAP uüúùû
 
 # replace correct accented double vowels with unaccented ones for acceptance
 # also take care of apostrophe differences and ij as one character
-ICONV 9
-ICONV áá aa
-ICONV éé ee
-ICONV íé ie
-ICONV óó oo
-ICONV úú uu
-ICONV óé oe
+ICONV 3
 ICONV ’ '
 ICONV ij ĳ
 ICONV IJ Ĳ
+#ICONV áá aa
+#ICONV éé ee
+#ICONV íé ie
+#ICONV óó oo
+#ICONV úú uu
+#ICONV óé oe
 
 # trick to uppercase ij as IJ
 # note the REP-statements on the ij as well
@@ -87,7 +100,7 @@ OCONV 2
 OCONV ĳ ij
 OCONV Ĳ IJ
 
-REP 593
+REP 885
 REP a's$ a	# centra's=>centra
 REP a's$ ums	# centra's=>centrums
 REP pt$ bd	# dichtgeslipt
@@ -165,7 +178,7 @@ REP d$ t	# speeld=>speelt
 REP t$ d	# gespeelt=>gespeeld
 REP ^newage$ new_age
 REP ^newwave$ new_wave
-REP oren$ oors$	# pastoren=>pastoors
+REP pas wacht	#paswoordgegevens -> wachtwoordgegevens
 REP erer er
 REP heid heids
 REP ing ings
@@ -489,7 +502,7 @@ REP ^imho$ n.m.m.
 REP ^nmm$ n.m.m.
 REP ^ff$ even
 REP ^ad$ A.D.
-REP ^dv$  D.V.
+REP ^dv$ D.V.
 REP ^hkh$ H.K.H.
 REP ^hm$ H.M.	# Hare majesteit
 REP ^lb$ L.B.
@@ -674,14 +687,305 @@ REP ei ie	# gebeid=>gebied
 REP heidstel stel	# zekerheidstelling=>zekerstelling
 REP ij ei	# Ij=>ei
 REP intelligentie inlichtingen	# intelligentiediensten_=_inlichtingendien
-REP roestvrijstaal roestvrij staal
+REP ashkena Asjkena
 REP gebeid gebied
 REP dattie dat hij
 REP veras verras
 REP aanvaart aanvaardt
-REP persentage percentage
-REP deja-vu déjà_vu
-
+REP persentage percentage	#592
+REP vice-versa vice_versa
+REP zorgdroeg zorg_droeg
+REP fei vĳ	# feiltje -> vijltje
+REP ee ai	# meelt -> mailt
+REP gd kt	# gekrengd -> gekrenkt
+REP en eren	# omkaden -> omkaderen
+REP onderom onder_om
+REP eit ĳd	# weit -> wijd 600
+REP ieke ische	# anemieke -> anemische
+REP meniet me_niet
+REP weder terug	# wedervinden -> terugvinden
+REP ^aanmoet aan_moet	# aanmoeten -> aan moeten
+REP ^aange aan_ge	# aangemoeten -> aan gemoeten
+REP oë o-e	#coënzym -> co-enzym
+REP ct x	# dyslectie -> dyslexie
+REP ppie pje	# happie -> hapje
+REP kkie kje	# hakkie -> hakje
+REP ^Ij Ĳ	# Ijsland -> IJsland 610
+REP ^Ij Ei	# Ijbergen -> Eibergen
+REP ^Ĳ Ei	# IJbergen -> Eibergen
+REP houmous hummus
+REP ^huis-aan-huis huis_aan_huis
+REP arĳu arihu	#marijuana -> marihuana
+REP servie Servië	# serviers -> Serviërs
+REP è ai	# stagières -> stagiaires
+REP ^sterks sterk_s -> sterksmakend -> sterk smakend
+REP ^superdeluxe super-de-luxe
+REP twaalfeneenhalf twaalf-en-een-half	# twaalfeneenhalfjarig 620
+REP ^Tweedeka Tweede_Ka	# Tweedekamerleden
+REP ^tshi T-shi	# tshirts
+REP gd cht	# toegejuigd -> toegejuicht
+REP uberhaubt überhaupt
+REP ^dea pro-dea	#deaan pro-deaan
+REP uitkun uit_kun	# uitkunt, uitkunnen
+REP uitsta uit_sta	# uitstaart
+REP ^vanal van_al	# vanalles
+REP ^vand van_d	# vandeze, vandien
+REP vinex Vinex-	# vinexwijken 630
+REP ^voorals voor_als
+REP ^volz vol_z	#volzat, volzit
+REP ctic ktik	# practicanten -> praktikanten
+REP ch k	# orchestreren -> orkestreren
+REP ^oo-s au_s	# oo-sérieux
+REP ^oo-se au_sé	# oo-serieux
+REP ĳ ilj	# mijard -> miljard
+REP ^kort-geding$ kort_geding
+REP ^Jehovage Jehova's_ge	# Jehovagetuige -> Jehova's getuige
+REP -en-een-half ënhalf	# drie-en-een-half -> drieënhalf 640
+REP ^doof-blind doofblind
+REP boogywoogy boogiewoogie
+REP ^sch sj	#schwa -> sjwa
+REP ^mond-op-mond mond-tot-mond	# mond-op-mondreclame
+REP elĳk eling
+REP ^kadoo cadeau
+REP en s
+REP burkah boerka
+REP burqa boerka
+REP sjiek chic	# 650
+REP sjieke chique
+REP sent cent	# door de limiet van 15 valt dit anders buiten de suggesties
+REP zoopje zopie
+REP a-capella a_capella
+REP algorithm algoritme
+REP ^au-s au_s	# au-sérieux -> au sérieux
+REP ^au-se au_sé	# au-serieux -> au sérieux
+REP ^bon-vivant bon_vivant
+REP broodje-aap broodje_aap
+REP BSN-nummer BSN	# 660
+REP carierre carrière
+REP cariëre carrière
+REP cariërre carrière
+REP citohulp Cito-hulp
+REP sierg ciërg	# consierge conciërge
+REP coq-au-vin coq_au_vin
+REP ule uul	# crapule crapuul
+REP tyl tylus	# dactyl -> dactylus
+REP sch sj	# fetisch -> fetisj
+REP ^haemorrh hemorr	# haemorrhagie hemorragie 670
+REP handenspan hand-_en_span	# handenspandiensten -> hand- en spandiensten
+REP ISBN-nr ISBN	# ISBN-nr. -> ISBN
+REP kans tweedekans	# kansbeleid -> tweedekansbeleid
+REP klassiekara Klassiek_Ara	# Klassiekarabische -> Klassiek Arabische
+REP lĳns eerstelĳns
+REP Mont-Saint Mont_Saint	# Mont-Saint-Michel -> Mont Saint-Michel
+REP oodle oedel	# noodlesoep -> noedelsoep
+REP welwillig willig	# onwelwillig -> onwillig
+REP willig willend	# onwelwillig -> onwelwillend
+REP -ers 'ers	# 680
+REP ^pvda PvdA
+REP ^youtube YouTube
+REP ^vvd-er VVD'er
+REP Vinex-nota Vinex
+REP synth synthesizer
+REP garoo goeroe	# kangaroo -> kangoeroe
+REP ^ict ICT
+REP angstrom ångström
+REP bagetalis bagatellis	# bagetaliseren, gebagetaliseerd -> bagatelliseren
+REP ^eens ins	# 690 eensgelijks -> insgelijks
+REP x sk	# asterix -> asterisk
+REP capella a-capella	# a capellakoor a-capellakoor
+REP - _	# art-nouveau -> art nouveau
+REP ^advocaat-generaals$ advocaten-generaal
+REP atie- atie	# alimentatie-geld alimentatiegeld
+REP ^deleted$ gedeletet
+REP ien iënn	# ancieniteit anciënniteit
+REP vis visvis	# ansjovisserij ansjovisvisserij
+REP ^a à_	# apropos -> à propos
+REP llen$ ls	# 700 archipellen -> archipels
+REP shawl sjaal
+REP socie ssocië	# asocieren associëren
+REP ^bain$ au_bain-marie
+REP ^marie$ au_bain-marie
+REP ^auditeurs-militairen$ auditeurs-militair
+REP ^aux au_sérieux
+REP ntlale nt_la_le	# avantlalettre avant la lettre
+REP Mariatje Ave_Mariaatje
+REP sitten babysitten
+REP packer backpacker	# 710
+REP beach beachvolleybal
+REP -and- _and_	# bed-and-breakfast -> bed and breakfast
+REP ai è	# belvedaire -> belvedère
+REP i-j ĳ	# bi-jectie bijectie
+REP eet èt	# bleetten blètten
+REP s$ en	# blauwbaards blauwbaarden
+REP boed boeddh	# boedisme -> boeddhisme
+REP oezoe ouzou	# boezoeki bouzouki
+REP ^fide$ bonafide
+REP ^booby$ boobytrap	# 720
+REP ^woogie boogiewoogie
+REP ^bossa$ bossanova
+REP ^bottom$ bottom-up
+REP ^point break-evenpoint
+REP ^bric$ bric-à-brac
+REP ^aapverha broodjeaapverha
+REP sk sch	# brusketta bruschetta
+REP ^bungee$ bungeejumpen
+REP ^burn$ burn-out
+REP ñ nh	# 730 caipiriña caipirinha
+REP ^girl$ callgirl
+REP cho$ ccio	# carpacho carpaccio
+REP ^caric karik	#caricatuur karikatuur
+REP ^catali kataly	# catalisator katalysator
+REP ch sj	# chibbolet sjibbolet
+REP cc qu	# chiccer chiquer
+REP co-e coë	# co-efficiënt coëfficiënt
+REP co-o coö	# co-ordinatie coördinatie
+REP c qu	# confisceren confisqueren
+REP conoi connai	# 740 conoisseur connaisseur
+REP ^core$ corebusiness
+REP ^corned$ cornedbeef
+REP ^cotelette$ kotelet
+REP ^count$ countdown
+REP ck qu	# crackelé craquelé
+REP y's$ ies	# fifty's fifties
+REP débâ deba	# débâcle debacle
+REP vu déjà-vu	# déjà vugevoel -> déjà-vugevoel
+REP ^DES- des	#DES-moeder -> desmoeder
+REP ser siër	# 750 discusseren -> discussiëren
+REP ^dislectie$ dyslexie
+REP ^zelfza doe-het-zelfza	# (doe het) zelfzaak
+REP ^dress$ dresscode
+REP -en- -_en_	# duw-en-trekwerk duw- en trekwerk
+REP ^E-coli E._coli
+REP kk qu	# makkette -> maquette
+REP -de- _de_	# eau-de-vie -> eau de vie
+REP ^edammer Edammer_	# edammerkaas
+REP ^allemans$ allemansvriend
+REP op -op-	# 760 eenopeen -> een-op-een
+REP ^eklek eclec	# eklektisch eclectisch
+REP extacy ecstasy
+REP ^facility$ facilitymanager
+REP ^fajies failliss
+REP eu ö	# feuhn föhn
+REP f ph	# fishing phishing
+REP ^yong$ foeyonghai	# foe yong hai
+REP ji y	# fojier foyer
+REP sit syth	# forsitia forsythia
+REP wiel wheel	# 770 freewiel freewheel
+REP -e ë	# ge-eigend geëigend
+REP -u ü	# ge-updatet geüpdatet
+REP bd pt	# gerummikubd gerummikupt
+REP ï ji	# goïbessen
+REP guerila guerrilla
+REP -over- over	#hals-over-kop halsoverkop
+REP ii ï	# hawaiihemd hawaïhemd
+REP ĳ idj	# hijab hidjab
+REP ^pants$ hotpants
+REP y ie	# 780 hotty hottie
+REP es eën	# idees ideeën, kopies kopieën
+REP -en- _en_	# ins-en-outs -> ins en outs
+REP ^inside$ inside-information
+REP ous oez	# jalousie -> jaloezie
+REP kliche cliché
+REP knackebrod knäckebröd
+REP ^know$ knowhow
+REP kok cock	# kokpit, koktail
+REP konfek confec	# konfektioneren
+REP konk conc	# 790 konkours, konkreet
+REP kung kungfu
+REP kwantifiëren kwantificeren
+REP ^shave$ ladyshave
+REP ^laisser$ lasser-faire
+REP ^laissez$ lassez-passer
+REP ooch og	#loochenstraffen
+REP s 's-	# mamaskindje -> mama's-kindje
+REP ch gg	# mesjoche -> mesjogge
+REP ^afstandsraket middellangeafstandsraket
+REP e -E	# 800 Middeneuropees -> Midden-Europees
+REP Navo NAVO
+REP ^nekrace nek-aan-nekrace
+REP a -A	# Noordafrikaans -> Noord-Afrikaans
+REP b -B	# Noordbrabantse -> Noord-Brabantse
+REP oe u	# oekelele -> ukelele
+REP ^line offline	# off line -> offline
+REP ^side offside	# off side -> offside
+REP ^vive qui-vive	# qui vive -> qui-vive
+REP orang$ orang-oetan
+REP ^osso$ ossobuco	# 810
+REP c cque	# pain à la grec -> pain à la grecque
+REP ^zoutstel$ peper-en-zoutstel
+REP ë ce	# plastifiëren plastificeren
+REP ^porter$ prêt-à-porter
+REP quartz kwarts
+REP otje teje	# quootje -> quoteje
+REP ^claude reine-claude	# reine claude -> reine-claude
+REP ^rhythm$ rhythm-and-blues
+REP ^afschip$ rij-op-rij-afschip
+REP ^riot$ riotgun	#820
+REP yth it	# rythme -> ritme
+REP ^science$ sciencefiction
+REP semi- semi	# om veel onzinsuggesties te voorkomen
+REP ië ye	# sexiër -> sexyer
+REP sj ch	# sjagrijnig -> chagrijnig
+REP sjisj shish	# sjisj kebab
+REP skylĳn skyline
+REP -N n	# Standaard-Nederlands -> Standaardnederlands
+REP ^chiën$ tai-chiën
+REP ek ac	# 830 tekkelen -> tackelen
+REP ^dege$ terdege
+REP ^nauwernood$ ternauwernood
+REP ^zelfder$ terzelfder
+REP eu o	# teutebel -> totebel
+REP euten ote	# teutenbel -> totebel
+REP totdantoe tot_dan_toe
+REP ^trait$ trait-d'union
+REP se zen	# turkooise -> turkooizen
+REP duizend duizend_	# tweeduizendnegentien tweeduizend negentien
+REP U Oe	# 840 Uzbeek -> Oezbeek
+REP van-heinde-en-verre van_heinde_en_verre
+REP Vangogh Van_Gogh
+REP vanjongsafaan van_jongsaf_aan
+REP verkavelings-Vlaams Verkavelingsvlaams
+REP ^voice$ voicemail
+REP ^dovemans$ dovemansoren
+REP ^voordegekhouderĳ voor-de-gek-houderĳ
+REP ita atel	# bagitaliseren -> bagatelliseren
+REP eeuws 19e-eeuws	# 19e eeuwse -> 19e-eeuwse
+REP km 30km	# 850 30 km-zone 30km-zone
+REP 7-7 7/7	# 7-7-bereikbaarheid -> 7/7-bereikbaarheid
+REP a-b-c abc
+REP à-la-carte à-la-carterestaurant
+REP ^abc ABC
+REP ^abra abracadabra
+REP ieten its	# accessieten -> accessits
+REP antwoord vraag-en-antwoord	# vraag- en antwoordspel -> vraag-en-antwoordspel
+REP ings ingen	# verzamelingsleer -> verzamelingenleer
+REP Royce Rolls-Royce # Rolls Royce -> Rolls-Royce
+REP atatfriet atates-frites	# 860 patatfrietkraam patates-friteskraam
+REP atat-friet atates-frites	# patat-frietkraam patates-friteskraam
+REP meerkeuze meerkeuzevraag
+REP kristal Kristall	# kristalnacht -> Kristallnacht
+REP staart kop-staart	#kop staartbotsing
+REP snelheids hogesnelheids	# trein
+REP steen eerstesteen	# eerste steenlegging -> eerstesteenlegging
+REP ĳ ie	# bijzijnde -> bijziende
+REP bĳ dichtstbĳ	# bijzijnde -> dichtstbijzijnde
+REP never-nooit-niet never_nooit_niet	# never-nooit-niet -> never nooit niet
+REP deus-ex-machina deus_ex_machina	# 870
+REP end ig	# afwezend -> afwezig
+REP ^hai$ foeyonghai
+REP igings ing -> vestigingsstad - vestingstad
+REP termĳn langetermĳn
+REP termĳn kortetermĳn
+REP spand hand-en-spand	# hand- en spandiensten -> hand-en-spandiensten
+REP slacht slag	# slachtveld -> slagveld
+REP ^pied$ pied-à-terre
+REP mmetje mdje	# hemmetje -> hemdje
+REP ^G 's-G	# 880 Gravenvoeren -> 's-Gravenvoeren
+REP ussen$ i	# politicussen -> politici
+REP ssed st	# gefocussed -> gefocust
+REP ^persee$ per_se
+REP eh é	# tempeh -> tempé
+REP Bosnië-Herzegovina Bosnië_en_Herzegovina
 
 # no minimum chars for compounding (just don't flag the dangerous ones)
 COMPOUNDMIN 0
@@ -730,7 +1034,6 @@ COMPOUNDRULE (Sv)(Sn)		# -straat, -plein etc.
 COMPOUNDRULE (Ll)(Hp)(Lr)	# Nederlands-Ghanese
 COMPOUNDRULE (Ll)(Hp)(Ll)(Le)	# Nederlands-Duits+e
 
-
 # don't compound on case-different word borders
 CHECKCOMPOUNDCASE
 
@@ -766,7 +1069,7 @@ CHECKCOMPOUNDDUP
 
 # preventing unwanted compounds
 # not all chars of colliding parts can be used !
-CHECKCOMPOUNDPATTERN 50
+CHECKCOMPOUNDPATTERN 52
 CHECKCOMPOUNDPATTERN /Ch /Xc		# prevent training+s+port
 CHECKCOMPOUNDPATTERN /Cd /Xc
 CHECKCOMPOUNDPATTERN a /C1		# klinkerbotsingen
@@ -778,7 +1081,7 @@ CHECKCOMPOUNDPATTERN u /C5
 CHECKCOMPOUNDPATTERN /Xf /Xf		# moeder-dochter etc
 CHECKCOMPOUNDPATTERN oon zor          	# woon-zorgflat
 CHECKCOMPOUNDPATTERN armte krach	# warmte-krachtcentrale
-CHECKCOMPOUNDPATTERN aag dar		# maag-darmandoening
+CHECKCOMPOUNDPATTERN aag dar		# maag-darmaandoening
 CHECKCOMPOUNDPATTERN aagd ar          	# maag-darmandoening
 CHECKCOMPOUNDPATTERN hart long          # hart-longmachine
 CHECKCOMPOUNDPATTERN woon werk          # woon-werkverkeer
@@ -817,6 +1120,8 @@ CHECKCOMPOUNDPATTERN m mĳn
 CHECKCOMPOUNDPATTERN l lĳn
 CHECKCOMPOUNDPATTERN p peen
 CHECKCOMPOUNDPATTERN p poen
+CHECKCOMPOUNDPATTERN /Xf relat	# moederrelatie, kindrelatie
+CHECKCOMPOUNDPATTERN gave /Xa 	# uitgavelimiet, etc
 
 # FLAG FOR FIRST WORDS THAT CAN BE FIRST PART OF COMPOUND AND HAVE AN S WHEN COMPOUNDED
 # (unfortunately, I haven't found a method to suppress the affix s at the compound end
@@ -836,17 +1141,17 @@ SFX CB 0 -/CbCp
 
 # for words that have a plural s and an s when compounding
 # the second one allows for the optional hyphen
-SFX Cd Y 2
+SFX Cd Y 1
 SFX Cd 0 s/CaCbCcCp .
-SFX Cd 0 s-/CaCbCcCp .
+# SFX Cd 0 s-/CaCbCcCp .
 
 # for reasons of good results, parts that could have a compounding s
 # but no plural s
 # have to have separate (!) entries in the dictionary
 # using the Ch flag
-SFX Ch Y 2
+SFX Ch Y 1
 SFX Ch 0 s/CaCbCxCp .
-SFX Ch 0 s-/CaCbCcCp .
+# SFX Ch 0 s-/CaCbCcCp .
 
 # FLAG FOR WORDS THAT CAN BE FIRST PART AND COULD HAVE A HYPHEN BECAUSE OF SONANT COLLISIONS (END WITH A, E, I, O, U)
 SFX Ce Y 2
@@ -953,6 +1258,11 @@ SFX Zu ium ia ium			ts:NN2
 SFX Zu icus ici icus			ts:NN2
 SFX Zu icus ica icus			ts:NN2
 
+# museum => musea, catalogus -> catalogi
+SFX Zx Y 2
+SFX Zx um a um				ts:NN2
+SFX Zx us i us				ts:NN2
+
 # tuin=>tuinen
 SFX Zb Y 4
 SFX Zb 0 en/CaCbCp [^eo]		ts:NN2
@@ -970,7 +1280,7 @@ SFX Zd heid heden/CaCbCp .		ts:NN2
 SFX Zd heid heden-/CaCbCp .		ts:NN2
 
 # tas=>tassen
-SFX Ze Y 24
+SFX Ze Y 26
 SFX Ze 0 ben/CaCbCp b		ts:NN2
 SFX Ze 0 den/CaCbCp d		ts:NN2
 SFX Ze 0 fen/CaCbCp f		ts:NN2
@@ -983,6 +1293,7 @@ SFX Ze 0 pen/CaCbCp p		ts:NN2
 SFX Ze 0 sen/CaCbCp s		ts:NN2
 SFX Ze 0 ren/CaCbCp r		ts:NN2
 SFX Ze 0 ten/CaCbCp t		ts:NN2
+SFX Ze 0 zen/CaCbCp z		ts:NN2
 SFX Ze 0 ben-/CaCbCp b		ts:NN2
 SFX Ze 0 den-/CaCbCp d		ts:NN2
 SFX Ze 0 fen-/CaCbCp f		ts:NN2
@@ -995,8 +1306,9 @@ SFX Ze 0 pen-/CaCbCp p		ts:NN2
 SFX Ze 0 sen-/CaCbCp s		ts:NN2
 SFX Ze 0 ren-/CaCbCp r		ts:NN2
 SFX Ze 0 ten-/CaCbCp t		ts:NN2
+SFX Ze 0 zen-/CaCbCp z		ts:NN2
 
-# baal=>balen
+# baal=>balen, kloof=>kloven
 SFX Zf Y 88
 SFX Zf al len/CaCbCp l		ts:NN2
 SFX Zf ar ren/CaCbCp r		ts:NN2
@@ -1087,10 +1399,11 @@ SFX Zf um men-/CaCbCp m		ts:NN2
 SFX Zf ut ten-/CaCbCp t		ts:NN2
 SFX Zf ug gen-/CaCbCp g		ts:NN2
 
-# paragraaf => paragrafen
-SFX Zg Y 2
+# paragraaf => paragrafen, filosoof => filosofen, diocees => diocesen
+SFX Zg Y 3
 SFX Zg af fen/CaCbCp .		ts:NN2
-SFX Zg af fen-/CaCbCp .		ts:NN2
+SFX Zg of fen/CaCbCp .		ts:NN2
+SFX Zg es sen/CaCbCp .		ts:NN2
 
 #lens=>lenzen
 SFX Zh Y 4
@@ -1132,6 +1445,27 @@ SFX PI 0 se .		ts:NN1d	ts:AJe
 SFX PJ N 2
 SFX PJ 0 aar en		ts:NN1d
 SFX PJ 0 mer m		ts:NN1d
+
+# FLAG for male inhabitant of place (Hoofddorp->Hoofddorper, Haarlemmermeer->Haarlemmermeerder)
+SFX PK N 4
+SFX PK 0 er [^r]	ts:NN1d
+SFX PK 0 der r		ts:NN1d
+SFX PK 0 ers [^r]	ts:NN2d
+SFX PK 0 ders r	ts:NN2d
+
+# FLAG for noun from adjective (deskundig => deskundige, deskundigen)
+SFX Zk Y 2
+SFX Zk 0 en .			ts:NN2
+SFX Zk 0 e .			ts:NN1
+
+# FLAG for noun from adjective (deskundig => deskundigheid, deskundigheden)
+SFX Zm Y 2
+SFX Zm 0 heid .		ts:NN1
+SFX Zm 0 heden .		ts:NN2
+
+# FLAG for female form of noun (bassist => bassiste)
+SFX Xe Y 1
+SFX Xe 0 e .			ts:NN1
 
 # FLAGS FOR VERBS
 
@@ -1177,10 +1511,11 @@ PFX Ps 0 uit .
 PFX Pt Y 1
 PFX Pt 0 na .
 
-
-# 3d person, add a t to the stem
-SFX V3 Y 1
-SFX V3 0 t .		ts:VB3
+# 3rd person, add a t to the stem
+SFX V3 Y 3
+SFX V3 0 t [^ao]		ts:VB3
+SFX V3 0 at a		ts:VB3
+SFX V3 0 ot o		ts:VB3
 
 # past tense, add de or den to the stem
 SFX Vp Y 2
@@ -1191,6 +1526,16 @@ SFX Vp 0 den .		ts:VBh
 SFX Vq Y 2
 SFX Vq 0 te .		ts:VBh1
 SFX Vq 0 ten .		ts:VBh
+
+# rammelt => rammelde, rammelden
+SFX Va Y 2
+SFX Va t de t		ts:VBh1
+SFX Va t den t		ts:VBh
+
+# bakt => bakte, bakten
+SFX Vb Y 2
+SFX Vb t te t		ts:VBh1
+SFX Vb t ten t		ts:VBh
 
 # verb +d, +de
 SFX Vi Y 2
@@ -1222,7 +1567,7 @@ SFX Ad Y 2
 SFX Ad 0 st/A0 [^s]	ts:AJsn
 SFX Ad 0 t/A0 [s]		ts:AJsn
 
-# lelijkst => allerlijkst
+# lelijkst => allerlelijkst
 PFX A0 Y 1
 PFX A0 0 aller
 
@@ -1235,8 +1580,8 @@ SFX Ae 0 te/A0 [s]		ts:AJse
 SFX Ai Y 1
 SFX Ai 0 s .		ts:i
 
-# baar => bare, boos=> boze
-SFX Al Y 29
+# baar => bare, boos=> boze (aaf,oof,oos)
+SFX Al Y 38
 SFX Al ob be oob	ts:AJe
 SFX Al ad de aad	ts:AJe
 SFX Al ed de eed	ts:AJe
@@ -1266,7 +1611,15 @@ SFX Al et te eet	ts:AJe
 SFX Al ot te oot	ts:AJe
 SFX Al os ze oos	ts:AJe
 SFX Al us se uus	ts:AJe
-
+SFX Al ut te uut	ts:AJe
+SFX Al ur re uur	ts:AJe
+SFX Al er re eer	ts:AJe
+SFX Al op pe oop	ts:AJe
+SFX Al un ne uun	ts:AJe
+SFX Al em me eem	ts:AJe
+SFX Al ul le uul	ts:AJe
+SFX Al as se aas	ts:AJe
+SFX Al uk ke uuk	ts:AJe
 
 # industrieel => industriële
 SFX Am Y 1
@@ -1314,8 +1667,8 @@ SFX Ap 0 rere r		ts:AJce
 SFX Ap 0 sere s		ts:AJce
 SFX Ap 0 tere t		ts:AJce
 
-# kaad => kwader, boos=> bozer
-SFX Aq Y 27
+# kwaad => kwader, boos=> bozer
+SFX Aq Y 28
 SFX Aq ob ber oob	ts:AJcn
 SFX Aq ad der aad	ts:AJcn
 SFX Aq ed der eed	ts:AJcn
@@ -1343,6 +1696,7 @@ SFX Aq et ter eet	ts:AJcn
 SFX Aq ot ter oot	ts:AJcn
 SFX Aq os zer oos	ts:AJcn
 SFX Aq us ser uus	ts:AJcn
+SFX Aq ut ter uut	ts:AJcn
 
 # lief => lieve, precicieus => precisieuze
 SFX Ar Y 2
@@ -1354,7 +1708,12 @@ SFX As Y 2
 SFX As f ver f	ts:AJcn
 SFX As s zer s	ts:AJcn
 
-# kaad => kwaders, boos=> bozers
+# lief => lievere
+SFX Ay Y 2
+SFX Ay f vere f	ts:AJcn
+SFX Ay s zere s	ts:AJcn
+
+# kwaad => kwaders, boos=> bozers
 SFX At Y 27
 SFX At ob bers oob	ts:AJci
 SFX At ad ders aad	ts:AJci
@@ -1408,13 +1767,14 @@ SFX Aw Y 2
 SFX Aw 0 ers [^r]	ts:AJci
 SFX Aw 0 ders r	ts:AJci
 
-# kaad => kwadere, boos=> bozere
-SFX Ax Y 27
+# kwaad => kwadere, boos=> bozere
+SFX Ax Y 29
 SFX Ax ob bere oob	ts:AJce
 SFX Ax ad dere aad	ts:AJce
 SFX Ax ed dere eed	ts:AJce
 SFX Ax od dere ood	ts:AJce
 SFX Ax af vere aaf	ts:AJce
+SFX Ax f vere ief	ts:AJce
 SFX Ax of vere oof	ts:AJce
 SFX Ax ag gere aag	ts:AJce
 SFX Ax eg gere eeg	ts:AJce
@@ -1437,3 +1797,27 @@ SFX Ax et tere eet	ts:AJce
 SFX Ax ot tere oot	ts:AJce
 SFX Ax os zere oos	ts:AJce
 SFX Ax us sere uus	ts:AJce
+SFX Ax ut tere uut	ts:AJce
+
+# GEOGRAFIE
+
+SFX Gs Y 1
+SFX Gs 0 straat .	ts:DT
+
+SFX Gl Y 1
+SFX Gl 0 laan .	ts:DT
+
+SFX Gp Y 1
+SFX Gp 0 plein .	ts:DT
+
+SFX Gk Y 1
+SFX Gk 0 kanaal .	ts:DT
+
+SFX Gw Y 1
+SFX Gw 0 weg .	ts:DT
+
+SFX GL Y 1
+SFX GL straat laan straat	ts:DT
+
+SFX GW Y 1
+SFX GW straat weg straat	ts:DT
