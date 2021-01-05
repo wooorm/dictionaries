@@ -12,9 +12,9 @@ function load(callback) {
   one('dic')
 
   function one(name) {
-    read(join(__dirname, 'index.' + name), function (err, doc) {
+    read(join(__dirname, 'index.' + name), function (error, doc) {
       pos++
-      exception = exception || err
+      exception = exception || error
       result[name] = doc
 
       if (pos) {

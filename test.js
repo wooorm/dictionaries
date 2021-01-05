@@ -67,8 +67,8 @@ function requiredFiles(name) {
 test('dictionaries', function (t) {
   fs.readdir(root, ondir)
 
-  function ondir(err, paths) {
-    bail(err)
+  function ondir(error, paths) {
+    bail(error)
 
     paths = paths.filter(not(hidden))
 
