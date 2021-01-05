@@ -177,7 +177,7 @@ crawl "breton" \
   "https://github.com/Drouizig/hunspell-br/archive/master.zip"
 crawl "bulgarian" \
   "http://bgoffice.sourceforge.net" \
-  "https://master.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
+  "https://kumisystems.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip"
 crawl "catalan" \
   "https://github.com/Softcatala/catalan-dict-tools" \
   "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.6/ca.3.0.6-hunspell.zip"
@@ -199,7 +199,7 @@ crawl "danish" \
 #   "https://github.com/OpenTaal/dutch/archive/master.zip"
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://netcologne.dl.sourceforge.net/project/aoo-extensions/17102/55/dict-en-20200601.oxt"
+  "https://netix.dl.sourceforge.net/project/aoo-extensions/17102/61/dict-en-20210101.oxt"
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
   "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_GB-ise-2019.10.06.zip"
@@ -221,7 +221,7 @@ crawl "esperanto" \
 #   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://grammalecte.net" \
-  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.10.0.oxt"
+  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.0.0.oxt"
 crawl "frisian" \
   "https://github.com/PanderMusubi/frisian" \
   "https://github.com/PanderMusubi/frisian/archive/master.zip"
@@ -339,7 +339,7 @@ crawl "slovenian" \
   "https://extensions.libreoffice.org/assets/downloads/z/8b7ba8bb_pack-sl.oxt"
 crawl "spanish" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_ANY.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.6/es.oxt"
 crawl "spanish-ar" \
   "https://github.com/sbosio/rla-es" \
   "https://github.com/sbosio/rla-es/releases/download/v2.6/es_AR.oxt"
@@ -457,7 +457,7 @@ cd ../../.. || exit
 
 echo "  greek (polyton)"
 cd "$SOURCES/greek-polyton" || exit
-sed -i 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
+sed -i '' 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
 printf "   $(green "✓") fixed tab\n"
 cd ../.. || exit
 
