@@ -202,16 +202,16 @@ crawl "english" \
   "https://netix.dl.sourceforge.net/project/aoo-extensions/17102/61/dict-en-20210101.oxt"
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip"
+  "https://kumisystems.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_GB-ise-2020.12.07.zip"
 crawl "english-american" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_US-2020.12.07.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip"
 crawl "english-canadian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_CA-2020.12.07.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_CA-2020.12.07.zip"
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_AU-2020.12.07.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_AU-2020.12.07.zip"
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
