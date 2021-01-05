@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v7.1
+# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v7.4
 # par Olivier R. -- licence MPL 2.0
 # Pour améliorer le dictionnaire, allez sur https://grammalecte.net/
 
@@ -398,18 +398,20 @@ SFX I. o i/D'Q' o
 SFX I. um a/D'Q' um
 SFX I. us i/D'Q' us
 
-SFX F. Y 31
+SFX F. Y 33
 SFX F. 0 0/L'D'Q' [^sxz]
 SFX F. 0 s/D'Q' [^sxz]
 SFX F. 0 0/L'D'Q' [sxz]
 SFX F. 0 e/L'D'Q' [éiïudhlsz]
 SFX F. 0 es/D'Q' [éiïudhlsz]
-SFX F. 0 e/L'D'Q' [^e][knrt]
-SFX F. 0 es/D'Q' [^e][knrt]
+SFX F. 0 e/L'D'Q' [^e][knmrt]
+SFX F. 0 es/D'Q' [^e][knmrt]
 SFX F. ec èche/L'D'Q' sec
 SFX F. ec èches/D'Q' sec
 SFX F. ef ève/L'D'Q' ef
 SFX F. ef èves/D'Q' ef
+SFX F. ète étesse/L'D'Q' ète
+SFX F. ète étesses/D'Q' ète
 SFX F. f ve/L'D'Q' [iïu]f
 SFX F. f ves/D'Q' [iïu]f
 SFX F. 0 e/L'D'Q' of
