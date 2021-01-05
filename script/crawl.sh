@@ -192,7 +192,7 @@ crawl "czech" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1078/0/dict-cs-2.0.oxt"
 crawl "danish" \
   "https://www.stavekontrolden.dk" \
-  "https://stavekontrolden.dk/dictionaries/da_DK/da_DK.oxt?v=20200611161013"
+  "https://www.stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.017.oxt"
 # Dutch is down. They seem to be working on a new version.
 # crawl "dutch" \
 #   "https://github.com/OpenTaal/dutch" \
@@ -202,16 +202,16 @@ crawl "english" \
   "https://netix.dl.sourceforge.net/project/aoo-extensions/17102/61/dict-en-20210101.oxt"
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_GB-ise-2019.10.06.zip"
+  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip"
 crawl "english-american" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_US-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_US-2020.12.07.zip"
 crawl "english-canadian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_CA-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_CA-2020.12.07.zip"
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_AU-2019.10.06.zip"
+  "https://iweb.dl.sourceforge.net/project/wordlist/speller/2019.10.06/hunspell-en_AU-2020.12.07.zip"
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
@@ -238,6 +238,7 @@ crawl "georgian" \
   "https://github.com/gamag/ka_GE.spell" \
   "https://github.com/gamag/ka_GE.spell/archive/master.zip"
 crawl "german" \
+  # See https://j3e.de/ispell/igerman98/dict/ for latest versions
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
   "https://j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
 crawl "greek" \
@@ -288,8 +289,8 @@ crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
   "https://github.com/LibreOffice/dictionaries/archive/master.zip"
 crawl "lithuanian" \
-  "https://launchpad.net/ispell-lt" \
-  "https://launchpad.net/ispell-lt/main/1.3/+download/myspell-lt-1.3.zip"
+  "https://github.com/ispell-lt/ispell-lt" \
+  "https://github.com/ispell-lt/ispell-lt/releases/download/rel-1.3.2/myspell-lt-1.3.2.zip"
 crawl "low-german" \
   "https://github.com/tdf/dict_nds" \
   "https://github.com/tdf/dict_nds/archive/master.zip"
@@ -782,9 +783,9 @@ generate "lb" "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
   "EUPL-1.1" "dictionary-lb-lu-master/LICENSE.txt" "UTF-8"
 generate "lt" "lithuanian" \
-  "myspell-lt-1.3/lt_LT.dic" "ISO8859-13" \
-  "myspell-lt-1.3/lt_LT.aff" "ISO8859-13" \
-  "BSD-3-Clause" "myspell-lt-1.3/COPYING" "UTF-8"
+  "myspell-lt-1.3.2/lt_LT.dic" "ISO8859-13" \
+  "myspell-lt-1.3.2/lt_LT.aff" "ISO8859-13" \
+  "BSD-3-Clause" "myspell-lt-1.3.2/COPYING" "UTF-8"
 generate "ltg" "latgalian" \
   "ltg_LV.dic" "UTF-8" \
   "ltg_LV.aff" "UTF-8" \
