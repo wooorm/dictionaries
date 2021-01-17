@@ -421,6 +421,10 @@ crawl "ukrainian" \
 crawl "vietnamese" \
   "https://github.com/1ec5/hunspell-vi" \
   "https://github.com/1ec5/hunspell-vi/releases/download/v2.2.0/vi_spellchecker_OOo3.oxt"
+crawl "hindi" \
+  "https://github.com/Shreeshrii/hindi-hunspell" \
+  "https://extensions.libreoffice.org/assets/downloads/73/hindi-v3.oxt"
+
 
 printf "$(bold "Crawled")!\n\n"
 
@@ -894,5 +898,12 @@ generate "vi" "vietnamese" \
   "dictionaries/vi_VN.dic" "UTF-8" \
   "dictionaries/vi_VN.aff" "UTF-8" \
   "GPL-2.0" "LICENSES-en.txt" "UTF-8"
+generate "hi" "hindi" \
+  "dictionaries/hi_IN.dic" "UTF-8" \
+  "dictionaries/hi_IN.aff" "UTF-8" \
+  "GPL-2.0" "LICENSES-en.txt" "UTF-8"
+  
+  
+  
 
 printf "$(bold "Generated")!\n\n"
