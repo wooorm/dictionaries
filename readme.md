@@ -18,7 +18,7 @@ file still has its original license!
 
 <!--support start-->
 
-In total 90 dictionaries are provided.
+In total 91 dictionaries are provided.
 
 | Name | Description | License |
 | - | - | - |
@@ -94,6 +94,7 @@ In total 90 dictionaries are provided.
 | [`dictionary-ne`](dictionaries/ne) | Nepali | [LGPL-2.1](dictionaries/ne/license) |
 | [`dictionary-nl`](dictionaries/nl) | Dutch (or Flemish) | [(BSD-3-Clause OR CC-BY-3.0)](dictionaries/nl/license) |
 | [`dictionary-nn`](dictionaries/nn) | Norwegian Nynorsk | [GPL-2.0](dictionaries/nn/license) |
+| [`dictionary-oc`](dictionaries/oc) | Occitan (post 1500) | [GPL-2.0](dictionaries/oc/license) |
 | [`dictionary-pl`](dictionaries/pl) | Polish | [(GPL-3.0 OR LGPL-3.0 OR MPL-2.0)](dictionaries/pl/license) |
 | [`dictionary-pt`](dictionaries/pt) | Portuguese | [(LGPL-3.0 OR MPL-2.0)](dictionaries/pt/license) |
 | [`dictionary-pt-pt`](dictionaries/pt-PT) | Portuguese (Portugal) | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/pt-PT/license) |
