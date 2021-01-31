@@ -308,6 +308,9 @@ crawl "nepali" \
 crawl "norwegian" \
   "http://no.speling.org" \
   "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
+crawl "occitan" \
+  "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian" \
+  "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian/-/raw/master/corrector_occitan_lengadocian_1-2.oxt?inline=false"  
 crawl "persian" \
   "https://github.com/b00f/lilak" \
   "https://github.com/b00f/lilak/releases/download/v3.3/fa-IR.zip"
@@ -822,6 +825,10 @@ generate "nn" "norwegian" \
   "nn/nn_NO.dic" "ISO8859-1" \
   "nn/nn_NO.aff" "ISO8859-1" \
   "GPL-2.0" "nn/README_nn_NO.txt" "ISO8859-1"
+generate "oc" "occitan" \
+  "oc_FR.dic" "UTF-8" \
+  "oc_FR.aff" "UTF-8" \
+  "(GPL-2.0)" "LICENSES-en.txt" "UTF-8"  
 generate "pl" "polish" \
   "pl_PL.dic" "ISO8859-2" \
   "pl_PL.aff" "ISO8859-2" \
