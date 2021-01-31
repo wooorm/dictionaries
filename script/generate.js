@@ -40,7 +40,8 @@ var replace = {
     'association)': 'association',
     'Interlingua (International Auxiliary Language Association)': 'Interlingua'
   },
-  ne: {'Nepali (macrolanguage)': 'Nepali'}
+  ne: {'Nepali (macrolanguage)': 'Nepali'},
+  oc: {'(post': 'post', '1500)': '1500'}
 }
 
 dir('dictionaries')
@@ -163,6 +164,8 @@ function process(file, config) {
   // Clean name.
   if (sourceName === 'github.com') {
     sourceName = uri.pathname.slice(1)
+  } else if (sourceName === 'gitlab.com') {
+    sourceName = 'gl:' + uri.pathname.slice(1)
   } else if (sourceName === 'sites.google.com') {
     sourceName = uri.pathname.split('/')[2]
   } else if (sourceName.slice(0, 4) === 'www.') {
