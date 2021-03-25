@@ -1,6 +1,6 @@
 {
   "name": "dictionary-de",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "German spelling dictionary in UTF-8",
   "license": "(GPL-2.0 OR GPL-3.0)",
   "keywords": [
@@ -20,7 +20,8 @@
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
-    "Thomas Beverley <tom.beverley101@gmail.com>"
+    "Thomas Beverley <tom.beverley101@gmail.com>",
+    "Martin Arndt (https://github.com/Eagle3386)",
   ],
   "files": [
     "index.js",
