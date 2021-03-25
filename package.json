@@ -19,7 +19,8 @@
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
-    "Thomas Beverley <tom.beverley101@gmail.com>"
+    "Thomas Beverley <tom.beverley101@gmail.com>",
+    "Martin Arndt (https://github.com/Eagle3386)"
   ],
   "dependencies": {},
   "devDependencies": {
