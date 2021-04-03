@@ -321,9 +321,6 @@ crawl "polish" \
 crawl "portuguese-pt" \
   "https://natura.di.uminho.pt" \
   "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20201212.tar.gz"
-crawl "portuguese-br" \
-  "http://extensions.openoffice.org/en/project/vero-brazilian-portuguese-spellchecking-dictionary-hyphenator" \
-  "https://pt-br.libreoffice.org/assets/Uploads/PT-BR-Documents/VERO/VeroptBRV320AOC.oxt"
 # See: https://rospell.wordpress.com/download/
 crawl "romanian" \
   "https://rospell.wordpress.com" \
@@ -837,10 +834,10 @@ generate "pt-PT" "portuguese-pt" \
   "pt_PT.dic" "UTF-8" \
   "pt_PT.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_pt_PT.txt" "CP1252"
-generate "pt" "portuguese-br" \
-  "pt_BR.dic" "ISO8859-1" \
-  "pt_BR.aff" "ISO8859-1" \
-  "(LGPL-3.0 OR MPL-2.0)" "README_en.txt" "UTF-8"
+generate "pt" "libreoffice" \
+  "dictionaries-master/pt_BR/pt_BR.dic" "UTF-8" \
+  "dictionaries-master/pt_BR/pt_BR.aff" "UTF-8" \
+  "(LGPL-3.0 OR MPL-2.0)" "dictionaries-master/pt_BR/README_en.txt" "UTF-8"
 generate "ro" "romanian" \
   "ro_RO.dic" "UTF-8" \
   "ro_RO.aff" "UTF-8" \
