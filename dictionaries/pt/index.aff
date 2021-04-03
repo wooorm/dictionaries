@@ -1,13 +1,14 @@
 SET UTF-8
+FLAG UTF-8
 TRY áàãâéêíóõôúüçesianrtolcdugmphbyfvkwjqxz
 
 #   VERO - Verificador Ortográfico Livre - Versão 3.2
 #   Copyright (C) 2006 - 2013  por Raimundo Santos Moura
 #   <raimundo.smoura@gmail.com>
 #   Brasil - outubro 2013
-#   Este é um dicionário para correção ortográfica da língua Portuguesa   
-#   para o Hunspell.                                                       
-#   Este programa é livre e pode ser redistribuído e/ou modificado nos    
+#   Este é um dicionário para correção ortográfica da língua Portuguesa
+#   para o Hunspell.
+#   Este programa é livre e pode ser redistribuído e/ou modificado nos
 #   termos Licença Pública Geral Menor versão 3 (LGPLv3), como publicado
 #   pela Free Software Foundation e pela Mozilla Public License como
 #   publicado pela Mozilla Foundation.
@@ -88,10 +89,10 @@ BREAK -SE$
 BREAK -TO$
 
 
-#   Número máximo de sugestões       
+#   Número máximo de sugestões
 MAXNGRAMSUGS 12
 
-#   Não sugerir       
+#   Não sugerir
 NOSUGGEST Ý
 
 FORBIDDENWORD ý
@@ -100,7 +101,7 @@ MAXDIFF 10
 
 ONLYMAXDIFF
 
-#   palavras raras ou com grafia incorreta       
+#   palavras raras ou com grafia incorreta
 WARN ~
 
 
@@ -387,7 +388,7 @@ REP n               n-
 REP n-              n
 REP não-            in
 REP não-            ir
-REP ne              nde 
+REP ne              nde
 REP nhe             in
 REP nhi             in
 REP no-a-ma         no_a_ma
@@ -1184,7 +1185,7 @@ PFX Â   0     des     .
 
 PFX Ã Y 4
 PFX Ã   0     auto    [^oóôhrs]
-PFX Ã   0     auto-   [oóôh] 
+PFX Ã   0     auto-   [oóôh]
 PFX Ã   0     autor   r
 PFX Ã   0     autos   s
 
@@ -1379,10 +1380,10 @@ PFX ü   0     ex-     .
 PFX ñ Y 1
 PFX ñ   0     soto-   .
 
- 
+
 # ================================================================
 # SUFIXOS - Representados pelo alfabeto maiúsculo+números
-#           ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 
+#           ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
 # ================================================================
 
 # Plural -A- (ão ães) - (l la) - (m ma) - (r ra)
@@ -1414,7 +1415,7 @@ SFX C   il     eis     il
 SFX C   ol     óis     ol
 
 # Plural -D- número/gênero(masculino e feminino)
-#            (ão - ãos - ã - ãs ) - (eu - eus - eia - eias)... 
+#            (ão - ãos - ã - ãs ) - (eu - eus - eia - eias)...
 
 SFX D Y 16
 SFX D   0     a        [mr]
@@ -1434,9 +1435,9 @@ SFX D   o     s        ão
 SFX D   u     ia       u
 SFX D   u     ias      u
 
-# Plural -E-   ão - número/gênero/grau 
+# Plural -E-   ão - número/gênero/grau
 #              ão - ães - ã - ãs
-                                                                                                  
+
 SFX E Y 11
 SFX E   0     zão      ão
 SFX E   0     zinho    ão
@@ -1459,7 +1460,7 @@ SFX F   e     a       e
 SFX F   o     a       [^ã]o
 SFX F   u     ia      eu
 
-# Plural -G-   ão número/gênero/grau 
+# Plural -G-   ão número/gênero/grau
 #              ão - ões - ã - ãs
 
 SFX G Y 11
@@ -1784,14 +1785,14 @@ SFX S   ônia      oniazinha    ônia
 SFX S   ônia      oniazinhas   ônia
 
 #  Diminutivos masculinos -T- Terminação: zinho
-#  algumas palavras terminadas em 'ão' (irmão) - ãozinhos 
+#  algumas palavras terminadas em 'ão' (irmão) - ãozinhos
 
 SFX T Y 2
 SFX T   0      zinho    ão
 SFX T   0      zinhos   ão
 
 #  Diminutivos masculinos -U- Terminação: zinho
-#  algumas palavras terminadas em 'ão' (pão) - ãezinhos 
+#  algumas palavras terminadas em 'ão' (pão) - ãezinhos
 
 SFX U Y 2
 SFX U   0      zinho    ão
@@ -1832,7 +1833,7 @@ SFX W   m      nzonas  m
 SFX W   s      na      os
 SFX W   s      nas     os
 
-# Substantivos -X- Terminação: idade            
+# Substantivos -X- Terminação: idade
 
 SFX X Y 22
 SFX X   0     idade        [^e]l
@@ -2296,7 +2297,7 @@ SFX 9   0   -Zimbábue         .
 
 # ================================================================
 # VERBOS - Representados pelo alfabeto minúsculo
-#          abcdefghijklmnopqrstuvwxyz 
+#          abcdefghijklmnopqrstuvwxyz
 # ================================================================
 
 
@@ -2547,8 +2548,8 @@ SFX b   er      ido-lhe   er
 SFX b   er      ido-lhes  er
 
 
-# VERBOS -c-  Terminados em VIR TER AIR GUIR GIR GAR: 
-#             intervir convir manter conter sair seguir distinguir  
+# VERBOS -c-  Terminados em VIR TER AIR GUIR GIR GAR:
+#             intervir convir manter conter sair seguir distinguir
 
 SFX c Y 902
 SFX c  ar   á     ar
@@ -3227,7 +3228,7 @@ SFX c   er      ha       valer
 SFX c   er      hais     valer
 SFX c   er      ham      valer
 SFX c   er      hamos    valer
-SFX c   er      has      valer 
+SFX c   er      has      valer
 SFX c   er      ho       valer
 SFX c   er      i        valer
 SFX c   er      ia       valer
@@ -3235,7 +3236,7 @@ SFX c   er      iam      valer
 SFX c   er      íamos    valer
 SFX c   er      ias      valer
 SFX c   er      íeis     valer
-SFX c   r       0        valer 
+SFX c   r       0        valer
 SFX c   r       i        valer
 SFX c   r       is       valer
 SFX c   r       m        valer
@@ -3456,7 +3457,7 @@ SFX c   r      vas       uitar
 
 
 # VERBOS -d- EXCEÇÕES: rir, sorrir, cerzir, explodir, demolir
-#                    e verbos terminados em ear com som aberto: 
+#                    e verbos terminados em ear com som aberto:
 #                    idear, estrear
 
 SFX d Y 213
@@ -3676,7 +3677,7 @@ SFX d   ar      ou        ear
 
 
 # VERBOS IRREGULARES -e- Terminação: ear - dar - udar - iar
-#              apoiar, atear, dar, estar, odiar, passear, saudar 
+#              apoiar, atear, dar, estar, odiar, passear, saudar
 
 
 SFX e Y 464
@@ -4146,7 +4147,7 @@ SFX e   er      ias          requerer
 SFX e   er      íeis         requerer
 
 
-# IRREGULARES -f- haver ir poder querer ser ter   
+# IRREGULARES -f- haver ir poder querer ser ter
 
 SFX f Y 308
 SFX f   ar     á            ar
@@ -5408,7 +5409,7 @@ SFX h   ar       ou           [aeou]izar
 
 
 # VERBOS IRREGULARES -i- Terminação:  VIR  TRUIR      ERGIR      RER   QUIR
-#                                     vir  construir  convergir  crer  ressequir  
+#                                     vir  construir  convergir  crer  ressequir
 
 SFX i Y 871
 SFX i   ar       á            ar
@@ -6284,7 +6285,7 @@ SFX i   espir    ispas        espir
 SFX i   espir    ispo         espir
 
 
-# ADJETIVOS DERIVADOS DE VERBOS -j- Terminação: dor  número/gênero/grau 
+# ADJETIVOS DERIVADOS DE VERBOS -j- Terminação: dor  número/gênero/grau
 
 SFX j Y 13
 SFX j   r       dor        r
@@ -6301,7 +6302,7 @@ SFX j   r       dorona     r
 SFX j   r       dorezões   r
 SFX j   r       doronas    r
 
-# ÊNCLISES E MESÓCLISES -k- Para verbos da regra -a- 
+# ÊNCLISES E MESÓCLISES -k- Para verbos da regra -a-
 
 SFX k Y 1192
 SFX k   0       -me            [aei]r
@@ -7498,7 +7499,7 @@ SFX k   udir    odem-no        cudir
 SFX k   udir    odem-nos       cudir
 
 
-# ÊNCLISES E MESÓCLISES -m- Para verbos da regra -c- 
+# ÊNCLISES E MESÓCLISES -m- Para verbos da regra -c-
 
 SFX m Y 4681
 SFX m   er      ê-la-á         ter
@@ -12186,7 +12187,7 @@ SFX m   r      vam-vos       uitar
 
 
 
-# ÊNCLISES E MESÓCLISES -n- Para verbos da regra -d- 
+# ÊNCLISES E MESÓCLISES -n- Para verbos da regra -d-
 
 SFX n Y 1072
 SFX n   0      -me             [aei]r
@@ -13262,7 +13263,7 @@ SFX n   ar      ou-se          ear
 SFX n   ar      ou-te          ear
 SFX n   ar      ou-vos         ear
 
-# ÊNCLISES E MESÓCLISES -o- Para verbos da regra -e- 
+# ÊNCLISES E MESÓCLISES -o- Para verbos da regra -e-
 
 SFX o Y 2393
 SFX o   0        -me             [aei]r
@@ -15658,9 +15659,9 @@ SFX o   er       íamos-lhe       requerer
 SFX o   er       íamos-lhes      requerer
 SFX o   er       íamos-nos       requerer
 SFX o   er       íamos-vos       requerer
-                              
 
-# ÊNCLISES E MESÓCLISES -p- Para verbos da regra -f- 
+
+# ÊNCLISES E MESÓCLISES -p- Para verbos da regra -f-
 
 SFX p Y 1506
 SFX p   0      -me             [aei]r
@@ -17171,7 +17172,7 @@ SFX p   erer   is-vos          querer
 SFX p   erer   is-se           querer
 
 
-# ÊNCLISES E MESÓCLISES -q- Para verbos da regra -g- 
+# ÊNCLISES E MESÓCLISES -q- Para verbos da regra -g-
 
 SFX q Y 1544
 SFX q   0      -me             [aei]r
@@ -18719,7 +18720,7 @@ SFX q   0       em-se          gear
 SFX q   r       ndo-se         gear
 SFX q   r       do-se          gear
 
-# ÊNCLISES E MESÓCLISES -r- Para verbos da regra -h- 
+# ÊNCLISES E MESÓCLISES -r- Para verbos da regra -h-
 
 SFX r Y 3122
 SFX r   0        -me             [aeio]r
@@ -21845,7 +21846,7 @@ SFX r   ar       ou-se           [aeou]izar
 SFX r   ar       ou-te           [aeou]izar
 SFX r   ar       ou-vos          [aeou]izar
 
-# ÊNCLISES E MESÓCLISES -s- Para verbos da regra -i- 
+# ÊNCLISES E MESÓCLISES -s- Para verbos da regra -i-
 
 SFX s Y 4663
 SFX s   0       -me            [aei]r
@@ -26593,7 +26594,7 @@ SFX u   er    idas  er
 SFX u   er    ido   er
 SFX u   er    idos  er
 
-# ÊNCLISES E MESÓCLISES -v- Para verbos da regra -t- 
+# ÊNCLISES E MESÓCLISES -v- Para verbos da regra -t-
 
 SFX v Y 414
 SFX v   0     a-a         r
@@ -27012,7 +27013,7 @@ SFX v   r     vam-te      ar
 SFX v   r     vam-vos     ar
 
 
-# VERBOS OUTROS -w- Terminação:  FAISCAR, RESFOLEGAR, APAZIGUAR... 
+# VERBOS OUTROS -w- Terminação:  FAISCAR, RESFOLEGAR, APAZIGUAR...
 
 SFX w Y 352
 SFX w   iscar    ísca         iscar
