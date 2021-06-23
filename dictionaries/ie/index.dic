@@ -1,4 +1,4 @@
-23528
+23566
 a
 ab
 abandon
@@ -89,7 +89,7 @@ absolvent
 absorpter/VZRv
 abstenentie
 abstener/V
-abstention
+abstention/S
 absterger/V
 abstinentie
 abstiner/V
@@ -734,6 +734,7 @@ amagrar/VZ
 amaladar/VZ
 amalgam/S
 amalgamar/VZ
+amanita/S
 amansabil
 amansar/VZ
 amar/VRb
@@ -794,6 +795,7 @@ amidol
 amidon/L
 amidonar/V
 amildar/V
+amine/S
 amirale/S
 Amirantes
 ammoniac
@@ -924,7 +926,8 @@ anglican/S
 anglicanisme
 anglicisme/S
 anglo/a
-anglophon/S
+anglofon/SQ
+anglophon/SQ!
 angloromanic
 anglosaxon/SQ
 Angola/k
@@ -1303,6 +1306,7 @@ arangear/VBbm
 arangement
 arar/VZRB
 Ararat
+araucaria
 arbalest/S
 arbalestero/S
 arbitrar/VZRg
@@ -3008,6 +3012,7 @@ calabasse/S
 calabresi
 Calabria
 calabron/S
+Calais
 calambur/S
 cálame/S
 calamitá/S
@@ -3903,6 +3908,8 @@ chef/S
 chefprestro/S
 chefredactor/S
 cheik/S
+chemopause
+chemosfere
 cherif/!
 cherry-brandy
 chérub/S!
@@ -4337,7 +4344,7 @@ cochero/S
 Cochinchina
 cochinchines/AH
 cocin/S
-cocinar/VRZg
+cocinar/VZRBg
 cocinatoria/S
 cocinelle/S
 cocinería/S
@@ -4539,6 +4546,7 @@ comfortar/VBb
 comfortosi/N
 comic/HMEt
 comiserar/VZO
+comissariatu/S
 comissario/S
 comisser/VZO
 comissionariatu/S
@@ -4631,6 +4639,7 @@ complot/S
 complotar/V
 complott/S
 component/S
+componist/S
 composir/VZOR
 composit/Sb
 composter/VHZOR
@@ -4945,8 +4954,9 @@ contact/S
 contacter/V
 contada
 contagiar/V
-contagie/Sz
+contagie/S
 contagion/S
+contagiosi/Mt
 contaminar/VZ
 contante/S
 contar/VZORB
@@ -5203,7 +5213,7 @@ corol/S
 corolarie/S
 corollarie/S
 coron/SU
-coronar/VZOm
+coronar/VZAOm
 coroner/S!
 corpo/S
 córpor/S
@@ -5576,7 +5586,7 @@ cude/SL
 cuguar/S
 cuida/S
 cuidar/V
-cuidosi/M
+cuidosi/MN
 cul/S
 culbut/S
 culbutar/VZO
@@ -6133,6 +6143,7 @@ denuclear/V
 denudar/VZO
 denuncia/S
 denunciar/VZOR
+Denver
 Denzler
 deo/H
 deodar/V
@@ -6153,8 +6164,7 @@ deplazzabil
 deplazzar/VZOm
 depleser/Vu
 deplicar/V
-deplorabil
-deplorar/V
+deplorar/VB
 deplumar/V
 depó/S
 depolarisar/V
@@ -6969,6 +6979,7 @@ dot/S
 dotar/VZO
 double
 Douglas
+Dover
 dozen/S
 dr
 drach
@@ -7800,7 +7811,7 @@ eufemistic
 eufonica/Q
 eufonie/z
 euforbie/S!
-euforie
+euforie/Q
 Eugen
 eugenica/Q
 eugenie
@@ -7979,6 +7990,7 @@ exonerar/VZOB
 exorbitant
 exorcisar/VZO
 exorcisisme/T
+exosfere
 exosmose/Q
 exostose/S
 exot/SQ
@@ -8220,7 +8232,7 @@ fantasie/SQ
 fantasist/SQ
 fantasma/S
 fantasmagorie/SQ
-fantastic
+fantastic/M
 fantom/SQ
 fantoma/SQ
 far/Va
@@ -8686,6 +8698,7 @@ follesse/S
 follícul/S
 follie/S
 fomentar/VZR
+fon/SQb
 fond/Sg
 fonder/VZ
 fondería/S
@@ -10298,6 +10311,7 @@ honest/AMNt
 honestie
 Hongkong
 honocte
+Honolulu
 honor/Sz
 honorabil
 honorar/VAZ
@@ -10603,7 +10617,7 @@ implosion/S
 import/S
 importantie/S
 importantissim
-importar/VZR
+importar/VZOR
 importero/S
 importun
 importunar/V
@@ -11734,6 +11748,7 @@ ion/SQ
 Ionia
 ionian/H
 ionisar/VZ
+ionopause
 ionosfere/S
 iota/S
 Iowa
@@ -12054,6 +12069,7 @@ karaoke
 karate
 Karel
 Karl
+Karlsruhe
 karma/S
 Karst
 Kasakhstan/k
@@ -13457,7 +13473,7 @@ medievie
 medievist/S
 Medina
 medinocte
-mediocri/At
+mediocri/AMt
 meditar/VZOv
 mediterran
 Mediterrané
@@ -13624,7 +13640,9 @@ mesme
 mesmerisar/V
 mesocarpe/S
 meson/S
+mesopause
 Mesopotamia
+mesosfere
 mespil/S
 mespiliero/S
 mesquin/HM
@@ -13881,7 +13899,7 @@ misapropiar/V
 misatention
 misaudir/V
 misaventura/S
-miscalcular/V
+miscalcular/VZO
 miscellanies
 miscomprender/V
 miscomprense/S
@@ -14137,6 +14155,7 @@ montania/S
 montaniosi
 montante/S
 montar/Vb
+Mont-Blanc
 montcúlmine/S
 monte/Sz
 Monte-Carlo
@@ -14144,6 +14163,7 @@ montenegrin/AH
 Montenegro
 monter/VRHu
 montette/S
+Montevideo
 Montreal
 Montreux
 monument/SL
@@ -14945,6 +14965,7 @@ ocluder/VZOw
 ocre
 oct
 octagon/SL
+octane/Q
 octante/S
 octave/S
 octavo/S!
@@ -15100,6 +15121,7 @@ onix
 onomatopea/S
 Ontario
 ontologie/SQ
+Oomoto
 opac/t
 opal/ASJ
 opalatri/A
@@ -15450,7 +15472,7 @@ palpar/VBZOvb
 palpebrar/V
 palpebre/S
 palpitar/VZm
-palude/z
+palude/Lz
 palumbe/S
 pamflete/S
 pamfletero/S
@@ -16285,6 +16307,7 @@ philosophie
 phlegma/SQ!
 phlox/S
 phoca/S
+phon/SQb!
 phonetic/M!
 phonétic/M!
 phonética/!
@@ -16766,6 +16789,7 @@ poliomielite
 polip/S
 polipor
 polir/VZOu
+polistirene/S
 polit/M
 politecnic
 politeisme/T
@@ -16845,6 +16869,7 @@ popul/Saz
 populach/S
 popular/VAt
 popularisar/VZR
+popularscientic/M
 population/Sb
 populclass/S
 populisme/T
@@ -16993,6 +17018,7 @@ Praga
 pragan/H
 pragma/SQ
 pragmatisme
+Praha/K
 praline
 pram/SU
 pramero/S
@@ -18871,7 +18897,7 @@ rossar/V
 Rosselló
 rossore/S
 rostage/S
-rostar/Vu
+rostar/VZu
 rostbeef/S!
 rostbif/S
 roste/S
@@ -19628,7 +19654,7 @@ senioressa/S!
 senioretta/S
 senioria/SL
 seniorie/S
-sens/Stb
+sens/SLtb
 sensation/SL
 sensationalisme/T
 sensibil/Mt
@@ -20212,6 +20238,7 @@ sorbe/S
 sorbete
 sorbiero/S
 sorbir/V
+Sorbonne
 sorbote/S
 sorciada
 sorciage
@@ -20651,6 +20678,7 @@ strate/S
 strategie/SLQ
 stratego/S
 stratificar/VZO
+stratopause
 stratosfere/S
 stratpetre/S
 strax
@@ -21326,7 +21354,7 @@ Tanner
 tannería/S
 tanneríe
 tannero/S
-tannine
+tannine/S
 Tansania
 tant/HM
 tantale
@@ -21485,6 +21513,8 @@ telescopar/V
 television
 televisiv
 televisor/S
+telex
+telexar/V
 tellur
 tema/SQ
 tematica/S
@@ -21668,6 +21698,7 @@ thallium/!
 thé/S
 theatral
 theatre/S
+Thebes
 theiere/S
 thema/SQ
 thematica/S
@@ -21951,6 +21982,7 @@ tortug/H
 tortura/S
 torturar/VR
 torturero/S
+Toscana/k
 Toscania
 tossa
 tost/M
@@ -22172,6 +22204,7 @@ triangulari
 triant/Ca
 triantdu/C
 triantun/C
+triasic
 tribalisme
 tribe/SL
 tribu/S!
@@ -22286,6 +22319,8 @@ trope/S
 Tropez
 tropic/L
 tropico/S
+tropopause
+troposfere
 trotta/S
 trottada/S
 trottar/V
@@ -22465,6 +22500,7 @@ UFO
 UFOs
 Uganda
 ugrian/b
+ugric/b
 ugrofinlandes/H
 ugrofinn/AQ
 uistití/S
@@ -22770,6 +22806,8 @@ variometre/S
 varvul/S
 vasage
 vasallia
+vascul/S
+vasculari/A
 vase/S
 vaseline
 vaso/S
@@ -22914,7 +22952,7 @@ vernissero/S
 veronica/S
 Verrazano
 verruca/Sz
-vers/S
+vers/SU
 versar/V
 versatil/t
 versemblant/AS
