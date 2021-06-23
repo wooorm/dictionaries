@@ -807,7 +807,7 @@ SFX a0 0 en . is:en
 SFX a0 0 e . is:en is:eifeler
 SFX a0 0 er . is:er
 SFX a0 n 0 [^rny]n is:eifeler
-SFX a0 nn 0 [^aëio]nn is:eifeler
+SFX a0 nn 0 [^aëio]nn is:eifeler is:eifeler_nn
 SFX a0 0 t [^drt] is:t
 SFX a0 0 t [^äu]r is:t
 SFX a0 r ert [äu]r is:t
@@ -911,7 +911,7 @@ SFX a2 0 ten t is:en
 SFX a2 0 tem t is:em
 SFX a2 0 ter t is:er
 SFX a2 0 t [^et] is:t
-SFX a2 e len le is:en is:eifeler
+SFX a2 e len le is:en
 SFX a2 e lem le is:em
 SFX a2 e ler le is:er
 SFX a2 e le le is:en is:eifeler
@@ -999,7 +999,7 @@ SFX a3 0 n [^e]e is:en
 SFX a3 0 r [^e]e is:er
 SFX a3 0 m [^e]e is:em
 SFX a3 0 t . is:t
-SFX a3 e ë [^e]e is:en is:eifeler
+SFX a3 e ë [^e]e is:en is:eifeler is:eifeler_changed_e
 SFX a3 0 ë ee is:en is:eifeler
 SFX a3 0 ëm ee is:em
 SFX a3 0 ën ee is:en
@@ -1008,10 +1008,10 @@ SFX a3 0 ër ee is:er
 SFX n0 Y 3
 SFX n0 0 en . is:plural
 SFX n0 0 e [^é] is:plural is:eifeler
-SFX n0 0 ë é is:plural is:eifeler
+SFX n0 0 ë é is:plural is:eifeler is:eifeler_changed_e
 
 SFX n4 Y 2
-SFX n4 e ë . is:plural is:eifeler
+SFX n4 e ë . is:plural is:eifeler is:eifeler_changed_e
 SFX n4 0 n . is:plural
 
 SFX u1 Y 21
@@ -1157,7 +1157,7 @@ SFX f0 rt sch/n0 rt is:m2f is:feminine is:singular
 
 SFX c0 Y 2
 SFX c0 n 0 [^n]n is:eifeler
-SFX c0 nn 0 nn is:eifeler
+SFX c0 nn 0 nn is:eifeler is:eifeler_nn
 
 SFX l1 N 6
 SFX l1 a en/c0 a is:plural
@@ -1177,11 +1177,10 @@ SFX f6 0 in . is:m2f is:feminine is:singular
 SFX f6 0 innen . is:m2f is:feminine is:singular is:plural
 SFX f6 0 inne . is:m2f is:feminine is:singular is:plural is:eifeler
 
-SFX r0 N 4
+SFX r0 N 3
 SFX r0 0 er [^e] is:plural
 SFX r0 n 0 äin is:eifeler
 SFX r0 0 r e is:plural
-SFX r0 nn 0 Versinn is:eifeler
 
 SFX r3 N 2
 SFX r3 n r . is:plural
@@ -1241,7 +1240,7 @@ SFX d0 ächen äercher ächen is:plural
 
 SFX v3 N 146
 SFX v3 n 0 [^n]n is:eifeler
-SFX v3 nn 0 nn is:eifeler
+SFX v3 nn 0 nn is:eifeler is:eifeler_nn
 SFX v3 ënnen ann/c0 ënnen is:ip is:1ps
 SFX v3 ënnen anns ënnen is:ip is:2ps
 SFX v3 annen ënns annen is:ip is:2ps
@@ -1371,13 +1370,13 @@ SFX v3 en s iewen is:ip is:2ps
 SFX v3 en t [il][eo]wen is:ip is:3ps
 SFX v3 en t [il][eo]wen is:ip is:2pp
 SFX v3 n 0 [^o]en is:ip is:3pp is:eifeler
-SFX v3 nn 0 nn is:ip is:3pp is:eifeler
+SFX v3 nn 0 nn is:ip is:3pp is:eifeler is:eifeler_nn
 SFX v3 n 0 [^gt]oen is:ip is:3pp is:eifeler
 SFX v3 n 0 [^o]en is:ip is:1pp is:eifeler
-SFX v3 nn 0 nn is:ip is:1pp is:eifeler
+SFX v3 nn 0 nn is:ip is:1pp is:eifeler is:eifeler_nn
 SFX v3 n 0 [^gt]oen is:ip is:1pp is:eifeler
 SFX v3 n 0 [^hlnos]en is:ip is:1ps is:eifeler
-SFX v3 nn 0 nn is:ip is:1ps is:eifeler
+SFX v3 nn 0 nn is:ip is:1ps is:eifeler is:eifeler_nn
 SFX v3 n 0 [^cglnst][hlnos]en is:ip is:1ps is:eifeler
 SFX v3 n 0 [^ë]ssen is:ip is:1ps is:eifeler
 SFX v3 n 0 [ls]oen is:ip is:1ps is:eifeler
@@ -1655,7 +1654,7 @@ SFX z0 0 fach [^n]
 SFX z0 0 t [^t]
 SFX z0 0 ten [^tn]
 SFX z0 0 tens [^tn]
-SFX z0 0 te [^tn]
+SFX z0 0 te [^tn] is:eifeler
 SFX z0 0 anzwanzeg .
 SFX z0 0 andrësseg .
 SFX z0 0 avéierzeg .
@@ -1869,7 +1868,7 @@ SFX n5 0 den/c0 n is:plural
 SFX n5 ip ippien ip is:plural
 SFX n5 ip ippie ip is:plural is:eifeler
 
-PFX t0 N 215
+PFX t0 N 217
 PFX t0 an anze/c0 an[^e]
 PFX t0 an anzë/c0 anengen
 PFX t0 a anze/c0 a[^nu]
@@ -1918,7 +1917,7 @@ PFX t0 eraus erauszë/c0 erause
 PFX t0 erbäi erbäize/c0 erbäi
 PFX t0 erduerch erduerchze/c0 erduerch
 PFX t0 erëm erëmze/c0 erëm[^e]
-PFX t0 erëm erëmzë/c0 erëme
+PFX t0 erëm erëmze/c0 erëme
 PFX t0 eriwwer eriwwerze/c0 eriwwer
 PFX t0 erof erofze/c0 erof
 PFX t0 erop eropze/c0 erop
@@ -2085,6 +2084,8 @@ PFX t0 oppe oppenze/c0 oppel
 PFX t0 bevir bevirze/c0 bevir
 PFX t0 zerecht zerechtze/c0 zerecht
 PFX t0 stramm strammze/c0 stramm
+PFX t0 raus rausze/c0 raus[^e]
+PFX t0 raus rauszë/c0 rause
 
 SFX i0 N 38
 SFX i0 ach ächen/c0 ach is:m2f is:feminine is:singular
@@ -2490,7 +2491,7 @@ SFX a5 0 enen . is:en
 SFX a5 0 enem . is:em
 SFX a5 0 ent . is:t
 SFX a5 0 ene . is:en is:eifeler
-SFX a5 0 e .
+SFX a5 0 e . is:eifeler
 
 SFX b5 N 1
 SFX b5 0 enst/a0 . is:superlative
@@ -2714,13 +2715,13 @@ SFX v5 nn es unn is:ip is:2ps
 SFX v5 nn tt unn is:ip is:2pp
 SFX v5 unn aten/v9 unn is:pre
 SFX v5 unn ätten/v9 unn is:cond
-SFX v5 nn 0 nn is:eifeler
+SFX v5 nn 0 nn is:eifeler is:eifeler_nn
 SFX v5 0 0 . is:ip is:1ps
-SFX v5 nn 0 . is:ip is:1ps is:eifeler
+SFX v5 nn 0 . is:ip is:1ps is:eifeler is:eifeler_nn
 SFX v5 0 0 . is:ip is:1pp
-SFX v5 nn 0 . is:ip is:1pp is:eifeler
+SFX v5 nn 0 . is:ip is:1pp is:eifeler is:eifeler_nn
 SFX v5 0 0 . is:ip is:3pp
-SFX v5 nn 0 . is:ip is:3pp is:eifeler
+SFX v5 nn 0 . is:ip is:3pp is:eifeler is:eifeler_nn
 SFX v5 sinn bass sinn is:ip is:2ps
 SFX v5 sinn ass sinn is:ip is:3ps
 SFX v5 inn idd inn is:ip is:2pp
@@ -2731,7 +2732,7 @@ SFX v5 sinn wären/v9 sinn is:cond
 SFX g3 N 3
 SFX g3 0 0 . is:papa
 SFX g3 n 0 [^n]n is:papa is:eifeler
-SFX g3 nn 0 nn is:papa is:eifeler
+SFX g3 nn 0 nn is:papa is:eifeler is:eifeler_nn
 
 SFX g4 N 1
 SFX g4 en 0 . is:papa
@@ -2902,9 +2903,9 @@ PFX G9 0 ge/** .
 
 SFX m1 Y 2
 SFX m1 0 en . is:plural
-SFX m1 0 ë . is:eifeler
+SFX m1 0 ë . is:eifeler is:eifeler_changed_e
 
 SFX m2 Y 2
 SFX m2 0 n ie is:plural
-SFX m2 0 0 ie is:plural is:eifeler
+SFX m2 0 0 ie is:plural is:eifeler is:eifeler_identical
 
