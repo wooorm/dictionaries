@@ -1,0 +1,15 @@
+SET UTF-8
+FLAG UTF-8
+TRY aineurktosldmbphfzvgáójé'íxñúMKBcASLTwPFyNIERGJVDOXHUZWÍÁÉqÚ
+
+ICONV 1
+ICONV ’ '
+
+MAP 7
+MAP aáAÁ
+MAP eéEÉ
+MAP iíIÍ
+MAP oóOÓ
+MAP uúUÚ
+MAP sz
+MAP ou
