@@ -9,7 +9,8 @@
     "hunspell",
     "dictionary",
     "tdt",
-    "portuguese"
+    "tetun",
+    "tetum"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/tdt",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
