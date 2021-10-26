@@ -1,8 +1,8 @@
 {
   "name": "dictionary-mn",
-  "version": "1.2.7",
+  "version": "2.19.0",
   "description": "Mongolian spelling dictionary in UTF-8",
-  "license": "GPL-2.0",
+  "license": "LPPL-1.3c",
   "keywords": [
     "spelling",
     "myspell",
