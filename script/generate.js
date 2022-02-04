@@ -126,7 +126,7 @@ dir('dictionaries')
       funding: pkg.funding,
       author: pkg.author,
       contributors: pkg.contributors,
-      files: ['index.js', 'index.aff', 'index.dic']
+      files: ['index.js', 'index.aff', 'index.dic', 'index.d.ts']
     }
 
     write(
