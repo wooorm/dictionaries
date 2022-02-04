@@ -1,7 +1,7 @@
 # Title: Dutch support for Hunspell
 # Creator: OpenTaal https://opentaal.org
 # Rights: Revised BSD License and/or CC BY 3.0
-# Date and version: 2020-12-24 15:42:49 2.20.18
+# Date and version: 2021-07-03 20:32:13 2.20.21
 # Source: https://github.com/OpenTaal/opentaal-hunspell
 # License choice: To enable the broadest (re)use, these language files are
 # freely available under the liberal licenses at the discretion of the user. We
@@ -23,12 +23,12 @@
 SET UTF-8
 
 # statistical order as shown by Pander, except for the -, ‘’ and capitals
-TRY  -ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êü12635407çà8û9îñäôERNITSAOLDGKUPMCHBVJWFZYX
+TRY  -ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êü12635407çà8û9îñäôERNITSAOLDGKUPMCHBVJWFZYX₂²€@
 
 # combined layout for BE and NL keyboards NL en BE
 KEY qwertyuiop|asdfghjkl|zxcvbnm|qawsedrftgyhujikolp|azsxdcfvgbhnjmk|aze|qsd|lm|wx|aqz|qws|
 
-WORDCHARS '’0123456789ĳ.-\/+
+WORDCHARS '’0123456789ĳ.-\/+₂²€@
 # . is only useful as wordchar from the command line
 # \/ should make the / acceptable as part of word (km/h)
 # the way applications offer words to the Hunspell interface apperently differs,
@@ -36,7 +36,7 @@ WORDCHARS '’0123456789ĳ.-\/+
 # Issue has been communicated with Hunspell's author.
 # + added to support 50+'er
 
-# do not offer split words (to prevent English desease, splitting up words)
+# do not offer split words (to prevent English disease, splitting up words)
 NOSPLITSUGS
 
 # maximum number of compound suggestions
@@ -50,7 +50,11 @@ ONLYMAXDIFF
 # 3 limits wild suggestions a lot, but also drops suggestions for words with multiple errors
 MAXDIFF 3
 
-# avoid wrong spelling of letterwords in full uppercase (DVD should be dvd)
+# use double chars as flags, for more choice and readability
+# For readability reasons, use of flags is (mostly) restricted tu Upper-Lowercase combinations
+FLAG long
+
+# avoid wrong spelling of acronym in full uppercase (DVD should be dvd)
 KEEPCASE Kc
 
 # set the flag for warning with confusing words (kunne)
@@ -63,10 +67,6 @@ FORCEUCASE Fu
 # which is necessary to support the optional - in compounded words
 BREAK 0
 
-# use double chars as flags, for more choice and readability
-# For readability reasons, use of flags is (mostly) restricted tu Upper-Lowercase combinations
-FLAG long
-
 # explicitly forbid words
 FORBIDDENWORD Fw
 
@@ -74,12 +74,14 @@ FORBIDDENWORD Fw
 NOSUGGEST NS
 
 # make calculation of alternatives better for words with accents
-MAP 5
+MAP 7
 MAP eéèëê
-MAP aáà
+MAP aáàäâå
 MAP iíìïî
 MAP oóòöô
-MAP uüúùû
+MAP uúùüû
+MAP nñ
+MAP cç
 
 # replace correct accented double vowels with unaccented ones for acceptance
 # also take care of apostrophe differences and ij as one character
@@ -100,7 +102,7 @@ OCONV 2
 OCONV ĳ ij
 OCONV Ĳ IJ
 
-REP 885
+REP 884
 REP a's$ a	# centra's=>centra
 REP a's$ ums	# centra's=>centrums
 REP pt$ bd	# dichtgeslipt
@@ -689,7 +691,6 @@ REP ij ei	# Ij=>ei
 REP intelligentie inlichtingen	# intelligentiediensten_=_inlichtingendien
 REP ashkena Asjkena
 REP gebeid gebied
-REP dattie dat hij
 REP veras verras
 REP aanvaart aanvaardt
 REP persentage percentage	#592
@@ -718,7 +719,7 @@ REP ^huis-aan-huis huis_aan_huis
 REP arĳu arihu	#marijuana -> marihuana
 REP servie Servië	# serviers -> Serviërs
 REP è ai	# stagières -> stagiaires
-REP ^sterks sterk_s -> sterksmakend -> sterk smakend
+REP ^sterks sterk_s # sterksmakend -> sterk smakend
 REP ^superdeluxe super-de-luxe
 REP twaalfeneenhalf twaalf-en-een-half	# twaalfeneenhalfjarig 620
 REP ^Tweedeka Tweede_Ka	# Tweedekamerleden
@@ -973,7 +974,7 @@ REP never-nooit-niet never_nooit_niet	# never-nooit-niet -> never nooit niet
 REP deus-ex-machina deus_ex_machina	# 870
 REP end ig	# afwezend -> afwezig
 REP ^hai$ foeyonghai
-REP igings ing -> vestigingsstad - vestingstad
+REP igings ing # vestigingsstad - vestingstad
 REP termĳn langetermĳn
 REP termĳn kortetermĳn
 REP spand hand-en-spand	# hand- en spandiensten -> hand-en-spandiensten
@@ -1158,14 +1159,14 @@ SFX Ce Y 2
 SFX Ce 0 /CaCbCp .
 SFX Ce 0 -/CaCbCcCp .
 
-# FLAGS FOR LETTERWORDS AND WORD THAT NEED A HYPHEN WHEN COMPOUNDING
+# FLAGS FOR ACRONYM AND WORD THAT NEED A HYPHEN WHEN COMPOUNDING
 SFX Cl Y 1
 SFX Cl 0 -/CaCbCp .
 
 PFX Cw Y 1
 PFX Cw 0 -/CbCcCp .
 
-# FLAGS FOR NOUN DIMINITIVES
+# FLAGS FOR NOUN DIMINUTIVES
 # tuin=>tuintje
 SFX Ya Y 3
 SFX Ya 0 tje .				ts:NN1r
@@ -1421,7 +1422,7 @@ SFX Zj Y 2
 SFX Zj 0 n/CaCbCp .		ts:NN2
 SFX Zj 0 n-/CaCbCp .		ts:NN2
 
-# FLAGS FOR POSESSIVE FORM OF PROPER NAMES
+# FLAGS FOR POSSESSIVE FORM OF PROPER NAMES
 SFX PN N 13
 SFX PN 0 ' [hsxz]		ts:DT
 SFX PN 0 's [^a][a]		ts:DT
