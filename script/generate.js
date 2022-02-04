@@ -17,6 +17,7 @@ var join = path.join
 
 var docs = read(template('readme.md'), 'utf-8')
 var index = read(template('index.js'), 'utf-8')
+var types = read(template('index.d.ts'), 'utf-8')
 
 var types = {
   variants: 'variant',
@@ -143,6 +144,8 @@ dir('dictionaries')
     )
 
     write(join(base, 'index.js'), index)
+
+    write(join(base, 'index.d.ts'), types)
 
     write(join(base, 'package.json'), JSON.stringify(pack, 0, 2) + '\n')
 
