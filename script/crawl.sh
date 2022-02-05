@@ -459,7 +459,7 @@ cd ../../.. || exit
 
 echo "  greek (polyton)"
 cd "$SOURCES/greek-polyton" || exit
-sed -i '' 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
+sed -i 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
 printf "   $(green "✓") fixed tab\n"
 cd ../.. || exit
 
