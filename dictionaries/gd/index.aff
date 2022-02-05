@@ -391,18 +391,20 @@ PFX T   0     t-        [Ss][aeiouáéíóúàèìòùlnr]
 PFX N Y 1
 PFX N   0     n-        [aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ]
 
-SFX K Y 6
+SFX K Y 5
 SFX K   0     -sa          [^-]
 SFX K   0     -se          [^-]
 SFX K   0     -ne          [^-]
-SFX K   0     -san      [^-]
-SFX K   0     eigin     [^e]
-SFX K   0     igin     e
+SFX K   0     -san         [^-]
+SFX K   0     -eigin       [^-]
+
 
 # These are obsolete rules which passed hyphen-less addition of
 # the emphatic suffixes i.e. these would pass taighsa as OK as required
-# by an old version of GOC
+# by an old version of GOC and affix eigin directly e.g. taigheigin
 #SFX K   0     sa          [^-]
 #SFX K   0     se          [^-]
 #SFX K   0     ne          [^-]
-#SFX K   0     san      [^-]
+#SFX K   0     san         [^-]
+#SFX K   0     eigin       [^e]
+#SFX K   0     igin         e
