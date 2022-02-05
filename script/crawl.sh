@@ -255,9 +255,10 @@ crawl "hebrew" \
 crawl "hungarian" \
   "https://github.com/laszlonemeth/magyarispell" \
   "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2019.11.11.09.22/MagyarIspell_b06fc12.zip"
-crawl "interlingua" \
-  "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
-  "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
+# Extensions seem missing?
+# crawl "interlingua" \
+#   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
+#   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
 crawl "interlingue" \
   "https://github.com/Carmina16/hunspell-ie" \
   "https://github.com/Carmina16/hunspell-ie/archive/master.zip"
@@ -750,10 +751,10 @@ generate "hyw" "armenian-western" \
   "hy_AM_western.dic" "UTF-8" \
   "hy_AM_western.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
-generate "ia" "interlingua" \
-  "dictionaries/ia.dic" "UTF-8" \
-  "dictionaries/ia.aff" "UTF-8" \
-  "GPL-3.0" "dictionaries/README_dict-ia.txt" "UTF-8"
+# generate "ia" "interlingua" \
+#   "dictionaries/ia.dic" "UTF-8" \
+#   "dictionaries/ia.aff" "UTF-8" \
+#   "GPL-3.0" "dictionaries/README_dict-ia.txt" "UTF-8"
 generate "ie" "interlingue" \
   "hunspell-ie-master/ie.dic" "UTF-8" \
   "hunspell-ie-master/ie.aff" "UTF-8" \
