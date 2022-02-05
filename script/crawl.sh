@@ -112,7 +112,7 @@ generate() {
   if [ -e "$SOURCE/$3" ]; then
     (
       iconv -f "$4" -t "UTF-8" | # Encoding
-      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$3" > "$dictionary/index.dic"
@@ -125,7 +125,7 @@ generate() {
     (
       iconv -f "$6" -t "UTF-8" | # Encoding
       sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
-      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$5" > "$dictionary/index.aff"
@@ -141,7 +141,7 @@ generate() {
   elif [ -e "$SOURCE/$8" ]; then
     (
       iconv -f "$9" -t "UTF-8" | # Encoding
-      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$8" > "$dictionary/license"
