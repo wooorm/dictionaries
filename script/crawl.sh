@@ -114,7 +114,8 @@ generate() {
       iconv -f "$4" -t "UTF-8" | # Encoding
       sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
-      tr -d '\r' # Newlines
+      sed 's/\r$//' | # Carriage return
+      sed -e '$a\' # EOF EOL
     ) < "$SOURCE/$3" > "$dictionary/index.dic"
     printf "   $(green "✓") index.dic (from $4)\n"
   else
@@ -127,7 +128,8 @@ generate() {
       sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
       sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
-      tr -d '\r' # Newlines
+      sed 's/\r$//' | # Carriage return
+      sed -e '$a\' # EOF EOL
     ) < "$SOURCE/$5" > "$dictionary/index.aff"
     printf "   $(green "✓") index.aff (from $6)\n"
   else
@@ -143,7 +145,8 @@ generate() {
       iconv -f "$9" -t "UTF-8" | # Encoding
       sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
-      tr -d '\r' # Newlines
+      sed 's/\r$//' | # Carriage return
+      sed -e '$a\' # EOF EOL
     ) < "$SOURCE/$8" > "$dictionary/license"
     printf "   $(green "✓") license (from $9)\n"
   else
