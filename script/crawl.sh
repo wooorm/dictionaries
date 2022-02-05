@@ -302,8 +302,8 @@ crawl "luxembourgish" \
 #   "https://github.com/dimztimz/hunspell-mk" \
 #   "https://github.com/dimztimz/hunspell-mk/archive/master.zip"
 crawl "mongolian" \
-  "http://extensions.openoffice.org/en/project/mongol-helniy-ugiyn-aldaa-shalgagch-ueer-taslagch-mongolian-spelling-and-hyphenation" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/3204/2/dict-mn.oxt"
+  "https://github.com/bataak/dict-mn" \
+  "https://github.com/bataak/dict-mn/archive/main.zip"
 crawl "nepali" \
   "http://ltk.org.np" \
   "http://ltk.org.np/downloads/ne_NP_dict.zip"
@@ -800,9 +800,9 @@ generate "lv" "latvian" \
 #   "hunspell-mk-master/release/mk.aff" "UTF-8" \
 #   "GPL-3.0" "hunspell-mk-master/release/LICENCE.txt" "UTF-8"
 generate "mn" "mongolian" \
-  "mn_MN.dic" "UTF-8" \
-  "mn_MN.aff" "UTF-8" \
-  "GPL-2.0" "README_mn_MN.txt" "UTF-8"
+  "dict-mn-main/mn_MN/mn_MN.dic" "UTF-8" \
+  "dict-mn-main/mn_MN/mn_MN.aff" "UTF-8" \
+  "LPPL-1.3c" "dict-mn-main/mn_MN/README_mn_MN.txt" "UTF-8"
 generate "ne" "nepali" \
   "ne_NP.dic" "UTF-8" \
   "ne_NP.aff" "UTF-8" \
