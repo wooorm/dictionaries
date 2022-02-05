@@ -127,11 +127,12 @@ I’ve only tested this on macOS, but there you at least need to install:
 
 *   **wget**: `brew install wget` (crawling)
 *   **hunspell**: `brew install hunspell` (many dictionaries)
+*   **sed**: `brew install gnu-sed` (crawling, many dictionaries)
 *   **coreutils**: `brew install coreutils` (many dictionaries)
 *   **ispell**: `brew install ispell` (German)
 
-Note that the GNU replacements should be setup in PATH to overwrite macOS
-defaults.
+Note that sed and the GNU replacements should be setup in PATH to overwrite
+macOS defaults.
 
 ## Contributing
 
