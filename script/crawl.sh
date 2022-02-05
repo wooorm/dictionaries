@@ -190,9 +190,10 @@ crawl "croatian" \
 crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1078/0/dict-cs-2.0.oxt"
-crawl "danish" \
-  "https://www.stavekontrolden.dk" \
-  "https://www.stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.017.oxt"
+# Offline :(
+# crawl "danish" \
+#   "https://www.stavekontrolden.dk" \
+#   "https://www.stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.017.oxt"
 crawl "dutch" \
   "https://github.com/OpenTaal/opentaal-hunspell" \
   "https://github.com/OpenTaal/opentaal-hunspell/archive/master.zip"
@@ -546,10 +547,10 @@ generate "cs" "czech" \
   "cs_CZ.dic" "ISO8859-2" \
   "cs_CZ.aff" "ISO8859-2" \
   "GPL-2.0" "README_en.txt" "UTF-8"
-generate "da" "danish" \
-  "da_DK.dic" "UTF-8" \
-  "da_DK.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_da_DK.txt" "UTF-8"
+# generate "da" "danish" \
+#   "da_DK.dic" "UTF-8" \
+#   "da_DK.aff" "UTF-8" \
+#   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_da_DK.txt" "UTF-8"
 generate "de" "german" \
   "hunspell/de_DE.dic" "ISO8859-1" \
   "hunspell/de_DE.aff" "ISO8859-1" \
