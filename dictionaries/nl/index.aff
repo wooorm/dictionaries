@@ -1,7 +1,7 @@
 # Title: Dutch support for Hunspell
 # Creator: OpenTaal https://opentaal.org
 # Rights: Revised BSD License and/or CC BY 3.0
-# Date and version: 2020-12-24 15:42:49 2.20.18
+# Date and version: 2021-07-03 20:32:13 2.20.21
 # Source: https://github.com/OpenTaal/opentaal-hunspell
 # License choice: To enable the broadest (re)use, these language files are
 # freely available under the liberal licenses at the discretion of the user. We
@@ -23,12 +23,12 @@
 SET UTF-8
 
 # statistical order as shown by Pander, except for the -, ‘’ and capitals
-TRY  -ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êü12635407çà8û9îñäôERNITSAOLDGKUPMCHBVJWFZYX
+TRY  -ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êü12635407çà8û9îñäôERNITSAOLDGKUPMCHBVJWFZYX₂²€@
 
 # combined layout for BE and NL keyboards NL en BE
 KEY qwertyuiop|asdfghjkl|zxcvbnm|qawsedrftgyhujikolp|azsxdcfvgbhnjmk|aze|qsd|lm|wx|aqz|qws|
 
-WORDCHARS '’0123456789ĳ.-\/+
+WORDCHARS '’0123456789ĳ.-\/+₂²€@
 # . is only useful as wordchar from the command line
 # \/ should make the / acceptable as part of word (km/h)
 # the way applications offer words to the Hunspell interface apperently differs,
