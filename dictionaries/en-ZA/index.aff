@@ -10,6 +10,10 @@
 #       - suggesting words with typographical apostrophes
 #       - recognizing words with Unicode f ligatures
 #  - add phonetic suggestion (Copyright (C) 2000 Björn Jacke, see the end of the file)
+#
+# 2021-02-15 (Marco A.G.Pinto)
+# Fixed: concious + conciousness
+#
 SET UTF-8
 TRY esiaénrtolcdugmfphbyvkw-'.zqjxSNRTLCGDMFPHBEAUYOIVKWóöâôZQJXÅçèîêàïüäñ
 REP 36
