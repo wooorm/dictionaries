@@ -59,7 +59,7 @@ Rest: [MIT][] © [Titus Wormer][home].
 
 [macos]: https://github.com/wooorm/dictionaries#macos
 
-[source]: https://www.stavekontrolden.dk
+[source]: https://stavekontrolden.dk
 
 [npm]: https://docs.npmjs.com/cli/install
 
