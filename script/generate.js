@@ -1,30 +1,29 @@
-'use strict'
+import fs from 'fs'
+import path from 'path'
+import {isHidden} from 'is-hidden'
+import {parse} from 'bcp-47'
+import tags from 'language-tags'
 
-var fs = require('fs')
-var path = require('path')
-var xtend = require('xtend')
-var hidden = require('is-hidden')
-var negate = require('negate')
-var bcp47 = require('bcp-47')
-var tags = require('language-tags')
-var pkg = require('../package.json')
+const own = {}.hasOwnProperty
 
-var dir = fs.readdirSync
-var exists = fs.existsSync
-var read = fs.readFileSync
-var write = fs.writeFileSync
-var join = path.join
+const pkg = JSON.parse(String(fs.readFileSync('package.json')))
 
-var docs = read(template('readme.md'), 'utf-8')
-var index = read(template('index.js'), 'utf-8')
-var types = read(template('index.d.ts'), 'utf-8')
+const docs = String(
+  fs.readFileSync(path.join('script', 'template', 'readme.md'))
+)
+const main = String(
+  fs.readFileSync(path.join('script', 'template', 'index.js'))
+)
+const types = String(
+  fs.readFileSync(path.join('script', 'template', 'index.d.ts'))
+)
 
-var types = {
+const types = {
   variants: 'variant',
   extensions: 'extlang'
 }
 
-var remove = {
+const remove = {
   ca: ['or Valencian', 'Valencian'],
   'ca-valencia': ['or Valencian'],
   el: ['(1453-)'],
@@ -33,7 +32,7 @@ var remove = {
   ne: ['(macrolanguage)']
 }
 
-var replace = {
+const replace = {
   el: {'Modern Greek (1453-)': 'Modern Greek'},
   'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'},
   ia: {
@@ -45,124 +44,130 @@ var replace = {
   oc: {'(post': 'post', '1500)': '1500'}
 }
 
-dir('dictionaries')
-  .filter(negate(hidden))
+const dictionaries = fs
+  .readdirSync('dictionaries')
+  .filter((d) => !isHidden(d))
   .sort()
-  .forEach(function (code) {
-    var base = dict(code)
-    var tag = bcp47.parse(code)
-    var parts = []
-    var pack = {}
-    var keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
-    var source
-    var description
+let index = -1
 
-    try {
-      source = read(join(base, '.source'), 'utf-8').trim()
-    } catch (_) {
-      console.log('Cannot find dictionary for `%s`', code)
-      return
+while (++index < dictionaries.length) {
+  const code = dictionaries[index]
+  const base = path.join('dictionaries', code)
+  const tag = parse(code)
+  let parts = []
+  let pack = {}
+  let keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
+  let source
+  let description
+
+  try {
+    source = fs.readFileSync(path.join(base, '.source'), 'utf-8').trim()
+  } catch {
+    console.log('Cannot find dictionary for `%s`', code)
+    continue
+  }
+
+  try {
+    pack = JSON.parse(fs.readFileSync(path.join(base, 'package.json')))
+  } catch {}
+
+  keywords = keywords.concat(code.toLowerCase().split('-'))
+  let key
+
+  for (key in tag) {
+    if (!own.call(tag, key)) continue
+
+    const label = types[key] || key
+    const value = Array.isArray(tag[key]) ? tag[key] : [tag[key]]
+    let offset = -1
+
+    while (++offset < value.length) {
+      const subvalue = value[offset]
+      if (!subvalue) continue
+      const subtag = subvalue ? tags.type(subvalue, label) : null
+      let data = subtag ? subtag.data.record.Description : null
+
+      // Fix bug in `language-tags`, where the description of a tag when
+      // indented is seen as an array, instead of continued text.
+      if (subtag.data.subtag === 'ia') {
+        data = [data.join(' ')]
+      }
+
+      keywords = keywords.concat(data.join(' ').toLowerCase().split(' '))
+
+      if (label === 'language') {
+        parts = [data[0]].concat(
+          data.slice(1).map((x) => 'or ' + x),
+          parts
+        )
+      } else if (label === 'script') {
+        parts = parts.concat(data.join(' ') + ' script')
+      } else {
+        parts = parts.concat(data)
+      }
     }
+  }
 
-    try {
-      pack = JSON.parse(read(join(base, 'package.json')))
-    } catch (_) {}
+  keywords = keywords
+    .filter(Boolean)
+    .filter((key, index, parent) => !parent.includes(key, index + 1))
+    .filter((d) => (remove[code] ? !remove[code].includes(d) : true))
+    .map((d) => (replace[code] ? replace[code][d] : null) || d)
 
-    keywords = keywords.concat(code.toLowerCase().split('-'))
+  parts = parts
+    .filter(Boolean)
+    .filter((key, index, parent) => !parent.includes(key, index + 1))
+    .filter((d) => (remove[code] ? !remove[code].includes(d) : true))
+    .map((d) => (replace[code] ? replace[code][d] : null) || d)
 
-    Object.keys(tag).forEach(function (key) {
-      var label = types[key] || key
-      var value = tag[key]
+  description = parts[0]
 
-      value = value && typeof value === 'object' ? value : [value]
+  if (parts.length > 1) {
+    description += ' (' + parts.slice(1).join('; ') + ')'
+  }
 
-      value.filter(Boolean).forEach(function (subvalue) {
-        var subtag = subvalue ? tags.type(subvalue, label) : null
-        var data = subtag ? subtag.data.record.Description : null
+  pack = {
+    name: 'dictionary-' + code.toLowerCase(),
+    version: pack.version || '0.0.0',
+    description: description + ' spelling dictionary in UTF-8',
+    license: fs.readFileSync(path.join(base, '.spdx'), 'utf-8').trim(),
+    keywords,
+    repository: pkg.repository + '/tree/main/dictionaries/' + code,
+    bugs: pkg.bugs,
+    funding: pkg.funding,
+    author: pkg.author,
+    contributors: pkg.contributors,
+    files: ['index.js', 'index.aff', 'index.dic']
+  }
 
-        // Fix bug in `language-tags`, where the description of a tag when
-        // indented is seen as an array, instead of continued text.
-        if (subtag.data.subtag === 'ia') {
-          data = [data.join(' ')]
-        }
-
-        keywords = keywords.concat(data.join(' ').toLowerCase().split(' '))
-
-        if (label === 'language') {
-          parts = [data[0]].concat(
-            data.slice(1).map(function (x) {
-              return 'or ' + x
-            }),
-            parts
-          )
-        } else if (label === 'script') {
-          parts = parts.concat(data.join(' ') + ' script')
-        } else {
-          parts = parts.concat(data)
-        }
+  fs.writeFileSync(
+    path.join(base, 'readme.md'),
+    process(
+      docs,
+      Object.assign({}, pack, {
+        source,
+        variable: camelcase(code.toLowerCase()),
+        code,
+        hasLicense: fs.existsSync(path.join(base, 'license'))
       })
-    })
-
-    keywords = keywords
-      .filter(Boolean)
-      .filter(unique)
-      .filter(ignore)
-      .map(change)
-    parts = parts.filter(Boolean).filter(unique).filter(ignore).map(change)
-
-    description = parts[0]
-
-    if (parts.length > 1) {
-      description += ' (' + parts.slice(1).join('; ') + ')'
-    }
-
-    pack = {
-      name: 'dictionary-' + code.toLowerCase(),
-      version: pack.version || '0.0.0',
-      description: description + ' spelling dictionary in UTF-8',
-      license: read(join(base, '.spdx'), 'utf-8').trim(),
-      keywords: keywords,
-      repository: pkg.repository + '/tree/main/dictionaries/' + code,
-      bugs: pkg.bugs,
-      funding: pkg.funding,
-      author: pkg.author,
-      contributors: pkg.contributors,
-      files: ['index.js', 'index.aff', 'index.dic', 'index.d.ts']
-    }
-
-    write(
-      join(base, 'readme.md'),
-      process(
-        docs,
-        xtend(pack, {
-          source: source,
-          variable: camelcase(code.toLowerCase()),
-          code: code,
-          hasLicense: exists(join(base, 'license'))
-        })
-      )
     )
+  )
 
-    write(join(base, 'index.js'), index)
+  fs.writeFileSync(path.join(base, 'index.js'), main)
 
-    write(join(base, 'index.d.ts'), types)
+  fs.writeFileSync(path.join(base, 'index.d.ts'), types)
 
-    write(join(base, 'package.json'), JSON.stringify(pack, 0, 2) + '\n')
-
-    function ignore(value) {
-      return remove[code] ? !remove[code].includes(value) : true
-    }
-
-    function change(value) {
-      return (replace[code] ? replace[code][value] : null) || value
-    }
-  })
+  fs.writeFileSync(
+    path.join(base, 'package.json'),
+    JSON.stringify(pack, null, 2) + '\n'
+  )
+}
 
 function process(file, config) {
-  var license = config.license
-  var source = config.source
-  var uri = new URL(source)
-  var sourceName = uri.host
+  let license = config.license
+  const source = config.source
+  const uri = new URL(source)
+  let sourceName = uri.host
 
   // Clean name.
   if (sourceName === 'github.com') {
@@ -194,18 +199,6 @@ function process(file, config) {
     .replace(/{{VAR}}/g, config.variable)
     .replace(/{{CODE}}/g, config.code)
     .replace(/{{LICENSE}}/g, license)
-}
-
-function template(fileName) {
-  return join(__dirname, 'template', fileName)
-}
-
-function dict(code) {
-  return join('dictionaries', code)
-}
-
-function unique(key, index, parent) {
-  return !parent.includes(key, index + 1)
 }
 
 function camelcase(value) {

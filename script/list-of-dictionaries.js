@@ -1,19 +1,14 @@
-'use strict'
+import fs from 'fs'
+import path from 'path'
+import {u} from 'unist-builder'
+import {zone} from 'mdast-zone'
+import {isHidden} from 'is-hidden'
 
-module.exports = listOfDictionaries
+const join = path.join
 
-var fs = require('fs')
-var path = require('path')
-var u = require('unist-builder')
-var zone = require('mdast-zone')
-var hidden = require('is-hidden')
-var negate = require('negate')
+const root = join(process.cwd(), 'dictionaries')
 
-var join = path.join
-
-var root = join(process.cwd(), 'dictionaries')
-
-function listOfDictionaries() {
+export default function listOfDictionaries() {
   return transformer
 }
 
@@ -22,7 +17,10 @@ function transformer(tree) {
 }
 
 function replace(start, nodes, end) {
-  var rows = fs.readdirSync(root).filter(negate(hidden)).map(row)
+  const rows = fs
+    .readdirSync(root)
+    .filter((d) => !isHidden(d))
+    .map((d) => row(d))
 
   return [
     start,
@@ -44,18 +42,18 @@ function replace(start, nodes, end) {
 }
 
 function row(name) {
-  var url = 'dictionaries/' + name
-  var base = join(root, name)
-  var pack = JSON.parse(fs.readFileSync(join(base, 'package.json')))
-  var license = [u('text', pack.license)]
-  var description = pack.description.replace(/\sspelling.+$/, '')
+  const url = 'dictionaries/' + name
+  const base = join(root, name)
+  const pack = JSON.parse(fs.readFileSync(join(base, 'package.json')))
+  let license = [u('text', pack.license)]
+  const description = pack.description.replace(/\sspelling.+$/, '')
 
   if (fs.existsSync(join(base, 'license'))) {
     license = [u('link', {url: url + '/license'}, license)]
   }
 
   return u('tableRow', [
-    u('tableCell', [u('link', {url: url}, [u('inlineCode', pack.name)])]),
+    u('tableCell', [u('link', {url}, [u('inlineCode', pack.name)])]),
     u('tableCell', [u('text', description)]),
     u('tableCell', license)
   ])

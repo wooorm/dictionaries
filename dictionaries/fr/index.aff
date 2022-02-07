@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v7.4
+# AFFIXES DU DICTIONNAIRE ORTHOGRAPHIQUE FRANÇAIS “CLASSIQUE” v7.5
 # par Olivier R. -- licence MPL 2.0
 # Pour améliorer le dictionnaire, allez sur https://grammalecte.net/
 
@@ -2412,50 +2412,6 @@ SFX iK quérir quissent/n'q'l'm't's' quérir
 SFX iK quérir quiers/n'l'm't' quérir
 SFX iK quérir quérons/n'l't' quérir
 SFX iK quérir quérez/n'l'm' quérir
-
-SFX iM Y 42
-SFX iM quérir quérir/n'q'd'l'm't's' quérir
-SFX iM quérir quérant/n'q'd'l'm't's' quérir
-SFX iM quérir quis/L'D'Q' quérir
-SFX iM quérir quise/L'D'Q' quérir
-SFX iM quérir quises/D'Q' quérir
-SFX iM quérir quiers/j'n'q'l'm't' quérir
-SFX iM quérir quiert/n'q'l'm't's' quérir
-SFX iM quérir quérons/n'q'l't' quérir
-SFX iM quérir quérez/n'q'l'm' quérir
-SFX iM quérir quièrent/n'q'l'm't's' quérir
-SFX iM quérir quérais/j'n'q'l'm't' quérir
-SFX iM quérir quérait/n'q'l'm't's' quérir
-SFX iM quérir quérions/n'q'l't' quérir
-SFX iM quérir quériez/n'q'l'm' quérir
-SFX iM quérir quéraient/n'q'l'm't's' quérir
-SFX iM quérir quis/j'n'q'l'm't' quérir
-SFX iM quérir quit/n'q'l'm't's' quérir
-SFX iM quérir quîmes/n'q'l't' quérir
-SFX iM quérir quîtes/n'q'l'm' quérir
-SFX iM quérir quirent/n'q'l'm't's' quérir
-SFX iM quérir querrai/j'n'q'l'm't' quérir
-SFX iM quérir querras/n'q'l'm't' quérir
-SFX iM quérir querra/n'q'l'm't's' quérir
-SFX iM quérir querrons/n'q'l't' quérir
-SFX iM quérir querrez/n'q'l'm' quérir
-SFX iM quérir querront/n'q'l'm't's' quérir
-SFX iM quérir querrais/j'n'q'l'm't' quérir
-SFX iM quérir querrait/n'q'l'm't's' quérir
-SFX iM quérir querrions/n'q'l't' quérir
-SFX iM quérir querriez/n'q'l'm' quérir
-SFX iM quérir querraient/n'q'l'm't's' quérir
-SFX iM quérir quière/j'n'q'l'm't's' quérir
-SFX iM quérir quières/n'q'l'm't' quérir
-SFX iM quérir quisse/j'n'q'l'm't' quérir
-SFX iM quérir quisses/n'q'l'm't' quérir
-SFX iM quérir quît/n'q'l'm't's' quérir
-SFX iM quérir quissions/n'q'l't' quérir
-SFX iM quérir quissiez/n'q'l'm' quérir
-SFX iM quérir quissent/n'q'l'm't's' quérir
-SFX iM quérir quiers/n'l'm't' quérir
-SFX iM quérir quérons/n'l't' quérir
-SFX iM quérir quérez/n'l'm' quérir
 
 SFX iN Y 41
 SFX iN uir uir/n'q'd'l'm't's' fuir
@@ -5020,7 +4976,7 @@ SFX xM ourdre ourde/n'q'l'm't's' sourdre
 SFX xM ourdre ourdît/n'q'l'm't's' sourdre
 SFX xM ourdre ourdissent/n'q'l'm't's' sourdre
 
-SFX xN Y 46
+SFX xN Y 48
 SFX xN soudre soudre/n'q'd'l'm't's' soudre
 SFX xN soudre solvant/n'q'd'l'm't's' soudre
 SFX xN soudre solu/L'D'Q' résoudre
@@ -5028,6 +4984,8 @@ SFX xN soudre solus/D'Q' résoudre
 SFX xN soudre solue/L'D'Q' résoudre
 SFX xN soudre solues/D'Q' résoudre
 SFX xN soudre sous/L'D'Q' soudre
+SFX xN soudre sout/L'D'Q' soudre
+SFX xN soudre souts/D'Q' soudre
 SFX xN soudre soute/L'D'Q' soudre
 SFX xN soudre soutes/D'Q' soudre
 SFX xN soudre sous/j'n'q'l'm't' soudre

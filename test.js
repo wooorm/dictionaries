@@ -1,19 +1,17 @@
-'use strict'
+import fs from 'fs'
+import path from 'path'
+import assert from 'assert'
+import test from 'tape'
+import {toVFile} from 'to-vfile'
+import {isHidden} from 'is-hidden'
+import isUtf8 from 'utf-8-validate'
+import {bcp47Normalize} from 'bcp-47-normalize'
 
-var fs = require('fs')
-var path = require('path')
-var assert = require('assert')
-var test = require('tape')
-var vfile = require('to-vfile')
-var bail = require('bail')
-var not = require('not')
-var hidden = require('is-hidden')
-var isUtf8 = require('utf-8-validate')
-var normalize = require('bcp-47-normalize')
+const own = {}.hasOwnProperty
 
-var root = 'dictionaries'
+const root = 'dictionaries'
 
-var checks = {
+const checks = {
   'Should have a canonical BCP-47 tag': bcp47,
   'All required files should exist': requiredFiles,
   'All files should be in UTF-8': utf8
@@ -22,7 +20,7 @@ var checks = {
 function bcp47(name) {
   assert.strictEqual(
     name,
-    normalize(name, {warning: warn}),
+    bcp47Normalize(name, {warning: warn}),
     name + ' should be a canonical, normal BCP-47 tag'
   )
 
@@ -32,20 +30,22 @@ function bcp47(name) {
 }
 
 function utf8(name) {
-  var dirname = path.join(root, name)
+  const dirname = path.join(root, name)
+  const files = fs.readdirSync(dirname)
+  let index = -1
 
-  fs.readdirSync(dirname).filter(not(hidden)).forEach(check)
-
-  function check(filename) {
-    var file = vfile.readSync(path.join(dirname, filename))
-    assert.ok(isUtf8(file.contents), file.basename + ' should be utf8')
+  while (++index < files.length) {
+    const d = files[index]
+    if (isHidden(d)) continue
+    const file = toVFile.readSync(path.join(dirname, d))
+    assert.ok(isUtf8(file.value), file.basename + ' should be utf8')
   }
 }
 
 function requiredFiles(name) {
-  var dirname = path.join(root, name)
-  var files = fs.readdirSync(dirname).filter(not(hidden))
-  var paths = [
+  const dirname = path.join(root, name)
+  const files = fs.readdirSync(dirname).filter((d) => !isHidden(d))
+  const paths = [
     'index.dic',
     'index.aff',
     'readme.md',
@@ -53,48 +53,37 @@ function requiredFiles(name) {
     'index.d.ts',
     'package.json'
   ]
+  let index = -1
 
-  paths.forEach(check)
-
-  function check(basename) {
-    assert.notStrictEqual(
-      files.indexOf(basename),
-      -1,
-      'should have `' + basename + '`'
-    )
+  while (++index < paths.length) {
+    const d = paths[index]
+    assert.notStrictEqual(files.indexOf(d), -1, 'should have `' + d + '`')
   }
 }
 
-test('dictionaries', function (t) {
-  fs.readdir(root, ondir)
+test('dictionaries', (t) => {
+  const files = fs.readdirSync(root)
+  let index = -1
 
-  function ondir(error, paths) {
-    bail(error)
+  while (++index < files.length) {
+    const d = files[index]
 
-    paths = paths.filter(not(hidden))
+    if (isHidden(d)) continue
 
-    t.plan(paths.length)
+    t.test(d, (st) => {
+      let key
 
-    paths.forEach(check, t)
-  }
-})
+      for (key in checks) {
+        if (!own.call(checks, key)) continue
 
-function check(basename) {
-  this.test(basename, all)
-
-  function all(st) {
-    var descriptions = Object.keys(checks)
-
-    st.plan(descriptions.length)
-
-    descriptions.forEach(one)
-
-    function one(description) {
-      st.doesNotThrow(check, description)
-
-      function check() {
-        checks[description](basename)
+        st.doesNotThrow(() => {
+          checks[key](d)
+        }, key)
       }
-    }
+
+      st.end()
+    })
   }
-}
+
+  t.end()
+})

@@ -88,7 +88,7 @@ In total 91 dictionaries are provided.
 | [`dictionary-ltg`](dictionaries/ltg) | Latgalian | [LGPL-2.1](dictionaries/ltg/license) |
 | [`dictionary-lv`](dictionaries/lv) | Latvian | [LGPL-2.1](dictionaries/lv/license) |
 | [`dictionary-mk`](dictionaries/mk) | Macedonian | [GPL-3.0](dictionaries/mk/license) |
-| [`dictionary-mn`](dictionaries/mn) | Mongolian | [GPL-2.0](dictionaries/mn/license) |
+| [`dictionary-mn`](dictionaries/mn) | Mongolian | [LPPL-1.3c](dictionaries/mn/license) |
 | [`dictionary-nb`](dictionaries/nb) | Norwegian Bokmål | [GPL-2.0](dictionaries/nb/license) |
 | [`dictionary-nds`](dictionaries/nds) | Low German (or Low Saxon) | [GPL-3.0](dictionaries/nds/license) |
 | [`dictionary-ne`](dictionaries/ne) | Nepali | [LGPL-2.1](dictionaries/ne/license) |
@@ -127,11 +127,12 @@ I’ve only tested this on macOS, but there you at least need to install:
 
 *   **wget**: `brew install wget` (crawling)
 *   **hunspell**: `brew install hunspell` (many dictionaries)
+*   **sed**: `brew install gnu-sed` (crawling, many dictionaries)
 *   **coreutils**: `brew install coreutils` (many dictionaries)
 *   **ispell**: `brew install ispell` (German)
 
-Note that the GNU replacements should be setup in PATH to overwrite macOS
-defaults.
+Note that sed and the GNU replacements should be setup in PATH to overwrite
+macOS defaults.
 
 ## Contributing
 

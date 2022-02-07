@@ -1,4 +1,4 @@
-95005
+95062
 ///!0
 2D/!0
 2-D/!0
@@ -6,6 +6,7 @@
 3-D/!0
 a
 à
+A-Woch/n0 po:noun ts:feminine_singular
 a/!0
 A/n0 po:noun ts:neutral_singular
 aacht/a0 po:adjective
@@ -927,7 +928,7 @@ Aeroklimatologie po:noun ts:feminine_singular
 aeronautesch/a0 po:adjective
 Aeronautesches st:aeronautesch is:es
 Aeronautic
-Aerosol/n0 po:noun
+Aerosol/n0n1 po:noun ts:masculine_singular
 aerostatesch/a0 po:adjective
 Aerostatesches st:aerostatesch is:es
 Äert
@@ -983,6 +984,7 @@ Affekotekandidat/n0f6 po:noun ts:masculine_singular
 Affekotekniff/r0 po:noun ts:feminine_singular
 Affekotekoppel/n0k6 po:noun ts:feminine_singular
 Affekotenetüd/n0 po:noun ts:feminine_singular
+Affekotenetude/n4 po:noun ts:feminine_singular
 Affekotentrick/n0 po:noun ts:masculine_singular
 Affekotestage/n4 po:noun ts:masculine_singular
 Affekt/r0 po:noun ts:masculine_singular
@@ -1563,6 +1565,7 @@ Agrarsommet/n0 po:noun ts:masculine_singular
 agrarspezifesch/b0a0 po:adjective
 Agrarspezifesches st:agrarspezifesch is:es
 Agrarstaat/n0 po:noun ts:masculine_singular
+Agrarstat/n0 po:noun ts:masculine_singular
 Agrarsubventioun/n0 po:noun ts:feminine_singular
 agrartechnologesch/a0 po:adjective
 Agrartechnologesches st:agrartechnologesch is:es
@@ -2565,6 +2568,8 @@ Alterskategorie/n4 po:noun ts:feminine_singular
 Altersklass/n0 po:noun ts:feminine_singular
 Alterskolleeg/n0f6 po:noun ts:masculine_singular
 Alterslimitt/n0 po:noun ts:feminine_singular
+Altersmedian/n0 po:noun ts:masculine_singular
+Altersmediane/n4 po:noun ts:feminine_singular
 altersméisseg
 Altersmoyenne/n4 po:noun ts:feminine_singular
 Alterspensioun/n0 po:noun ts:feminine_singular
@@ -2732,6 +2737,8 @@ ameséieren/v0X0g1w0 po:verb
 Ameséiertes st:ameséieren is:adjective is:papa is:es
 Ameséiervéierel po:noun ts:masculine_singular
 Amethyst/n0 po:noun ts:masculine_singular
+amgaang
+amgaangen/c0
 Ami/n0 po:noun
 amiabel/b0a0 po:adjective
 Amiabeles st:amiabel is:es
@@ -3272,6 +3279,7 @@ Antarktis po:noun ts:feminine_singular
 antätowéieren/v0t0X0g1 po:verb
 Antätowéiertes st:antätowéieren is:adjective is:papa is:es
 antauschen/v0t0 po:verb
+Antecedant/n0 po:noun ts:masculine_singular
 Antenn/n0 po:noun ts:feminine_singular
 Antennebësch/r0 po:noun ts:masculine_singular
 Antennëbësch/r0 po:noun ts:masculine_singular
@@ -3384,8 +3392,11 @@ Antifraecampagne/n4 po:noun ts:feminine_singular
 antifranséisch/a0 po:adjective
 Antifranséisches st:antifranséisch is:es
 Antifranséischstëmmung po:noun ts:feminine_singular
+Antigeen/n0 po:noun ts:masculine_singular
 Antigëftzenter/n0 po:noun ts:masculine_singular
 Antigel po:noun ts:masculine_singular
+Antigen/n0 po:noun ts:masculine_singular
+Antigène/n4 po:noun ts:masculine_singular
 Antiglobalismus po:noun ts:masculine_singular
 Antiguaner/f6m0 po:noun ts:masculine_singular
 antiguanesch/a0 po:adjective
@@ -3420,6 +3431,8 @@ Antikapitalist/n0f6 po:noun ts:masculine_singular
 antikapitalistesch/b0a0 po:adjective
 Antikapitalistesches st:antikapitalistesch is:es
 Antikierper/n0 po:noun ts:masculine_singular
+Antikierperschnelltest/r0 po:noun ts:masculine_singular
+Antikierpertest/r0 po:noun ts:masculine_singular
 Antikitéit/n0 po:noun ts:feminine_singular
 antiklerikal/a1b1 po:adjective
 Antiklerikales st:antiklerikal is:es
@@ -3992,7 +4005,7 @@ Areesgrond/e0 po:noun ts:masculine_singular
 Areesméiglechkeet/n0 po:noun ts:feminine_singular
 Areesrestriktioun/n0 po:noun ts:feminine_singular
 Areesstopp/n0 po:noun ts:masculine_singular
-Areesverbuet/r0 po:noun ts:masculine/_singular
+Areesverbuet/r0 po:noun ts:_singular
 Areesverbuetsdekret/r0 po:noun ts:masculine_singular
 areiden/v0t0 po:verb
 areien/v0t0 po:verb
@@ -4565,6 +4578,7 @@ asymmeetresch/b0a0 po:adjective
 asymmetresch/b0a0 po:adjective
 Asymmetresches st:asymmetresch is:es
 Asymmetrie/n4 po:noun ts:feminine_singular
+asymptomatesch/b0a0 po:adjective
 Asymptote/n4 po:noun
 asymptotesch/a0 po:adjective
 Asymptotesches st:asymptotesch is:es
@@ -4680,6 +4694,7 @@ Atomsécherheet po:noun ts:feminine_singular
 Atomsite/n1 po:noun ts:masculine_singular
 Atomsprengkapp/e0 po:noun ts:masculine_singular
 Atomstaat/n0 po:noun ts:masculine_singular
+Atomstat/n0 po:noun ts:masculine_singular
 Atomsträit po:noun ts:masculine_singular
 Atomstral/n0 po:noun ts:masculine_singular
 Atomstroum po:noun ts:masculine_singular
@@ -4700,6 +4715,7 @@ Atomwaffenideolog/n0f6 po:noun ts:masculine_singular
 Atomwaffentest/r0 po:noun ts:masculine_singular
 Atomwaffeprogramm/n0r0 po:noun ts:masculine_singular
 Atomwaffestaat/n0 po:noun ts:masculine_singular
+Atomwaffestat/n0 po:noun ts:masculine_singular
 Atomwaffeverbuet/r0 po:noun ts:masculine/_singular
 Atomwee/r2 po:noun ts:masculine_singular
 Atomwierk/r0 po:noun ts:neutral_singular
@@ -5983,6 +5999,7 @@ Autoimmunerkrankung/n0 po:noun ts:feminine_singular
 Autoimmunkrankheet/n0 po:noun ts:feminine_singular
 Autoimmunkränkt/n0 po:noun ts:feminine_singular
 Autoimmunreaktioun/n0 po:noun ts:feminine_singular
+Autoisolatioun/n0s0 po:noun ts:feminine_singular
 Autokrat/n0f6 po:noun ts:masculine_singular
 autokratesch/b0a0 po:adjective
 Autokratesches st:autokratesch is:es
@@ -6053,6 +6070,8 @@ Autoproklaméiertes st:autoproklaméiert is:es
 Autopsie/n4 po:noun ts:feminine_singular
 Autopsiebericht/r0 po:noun ts:masculine_singular
 Autopsierapport/n0 po:noun ts:masculine_singular
+Autoquarantaine/n4 po:noun ts:feminine_singular
+Autoquarantän/n0 po:noun ts:feminine_singular
 Autoregulatioun/n0 po:noun ts:feminine_singular
 Autorennfuerer/f6m0 po:noun ts:masculine_singular
 Autorisatioun/n0s0 po:noun ts:feminine_singular
@@ -6313,6 +6332,7 @@ awunnerräich/b0a0 po:adjective
 Awunnerräiches st:awunnerräich is:es
 Awunnerschaft/n0 po:noun ts:feminine_singular
 Awunnerstaat/n0 po:noun ts:masculine_singular
+Awunnerstat/n0 po:noun ts:masculine_singular
 Awunnerwalrecht po:noun ts:neutral_singular
 Awunnerzuel/n0 po:noun ts:feminine_singular
 axéieren/v0X0g1w0 po:verb
@@ -6330,6 +6350,9 @@ Azurbloes st:azurblo is:es
 Azyanopsie po:noun ts:feminine_singular
 azyklesch/a0 po:adjective
 Azyklesches st:azyklesch is:es
+B-Woch/n0 po:noun ts:feminine_singular
+BA-Aktioun/n0 po:noun ts:feminine_singular
+BA/n0 po:noun ts:feminine_singular
 Baach/n0k6 po:noun ts:feminine_singular
 Baachfrell/n0 po:noun ts:feminine_singular
 baalgen/v0w0 po:verb
@@ -6626,6 +6649,7 @@ Balkanpanewippchen/d0 po:noun ts:masculine_singular
 Balkanroute po:noun ts:feminine_singular
 Balkanstaat/n0 po:noun ts:masculine_singular
 Balkanstabilitéitspakt/n0r0 po:noun ts:masculine_singular
+Balkanstat/n0 po:noun ts:masculine_singular
 Balkenende/!0
 Ball/!0
 Ball/e0k6 po:noun ts:masculine_singular
@@ -8081,6 +8105,7 @@ Belagerung/n0s0 po:noun ts:feminine_singular
 Belagerungszoustand/e0 po:noun ts:masculine_singular
 Belair/p0
 belären/v0X0g1w0 po:verb
+Belarus
 belästegen/v0X0g1w0 po:verb
 Belästegtes st:belästegen is:adjective is:papa is:es
 Belästegung/n0s0 po:noun ts:feminine_singular
@@ -8098,7 +8123,6 @@ belëften/v0g1w0 po:verb
 Belëfter po:noun ts:masculine_singular
 Belëftung/n0s0 po:noun ts:feminine_singular
 Belëftungsanlag/n0 po:noun ts:feminine_singular
-Beleg
 beleidegen/v0X0x0g1w0 po:verb
 Beleidegendes st:beleidegen is:adjective is:papr is:es
 Beleidegtes st:beleidegen is:adjective is:papa is:es
@@ -8294,32 +8318,32 @@ Benotzungsbedéngung/n0 po:noun ts:feminine_singular
 Benotzungsgewunnecht/n0 po:noun ts:feminine_singular
 Benotzungskonditioun/n0 po:noun ts:feminine_singular
 Benotzungsprofil/n1r1 po:noun ts:masculine_singular
-Bensin/s0 po:noun ts:masculine_singular
+Bensinn/s0 po:noun ts:masculine_singular
 Bensinner po:noun ts:masculine_singular
-Bensinsauto/n0 po:noun ts:masculine_singular
+Bensinnsauto/n0 po:noun ts:masculine_singular
+Bensinnsbidong/n0 po:noun ts:masculine_singular
+Bensinnsbomm/n0 po:noun ts:feminine_singular
+Bensinnscamion/n0 po:noun ts:masculine_singular
+Bensinnsdepot/n0 po:noun ts:masculine_singular
+Bensinnsfleck/n0 po:noun ts:masculine_singular
+Bensinnskan/n0 po:noun ts:feminine_singular
+Bensinnskanister/n0 po:noun
+Bensinnslager/n0 po:noun ts:neutral_singular
+Bensinnsleitung/n0 po:noun ts:feminine_singular
+Bensinnsmotor/n0 po:noun ts:masculine_singular
+Bensinnspompel/n0 po:noun ts:feminine_singular
+Bensinnspräis/r1 po:noun ts:masculine_singular
+Bensinnsreserv/n0 po:noun ts:feminine_singular
+Bensinnsstatioun/n0 po:noun ts:feminine_singular
+Bensinnstank/n0 po:noun ts:masculine_singular
+Bensinnstax/n0 po:noun ts:feminine_singular
+Bensinnstourismus po:noun ts:masculine_singular
+Bensinnsverbrauch po:noun ts:masculine_singular
+Bensinnszort/n0 po:noun ts:feminine_singular
 bensinsbedriwwen/a0 po:adjective
 Bensinsbedriwwenes st:bensinsbedriwwen is:es
-Bensinsbidong/n0 po:noun ts:masculine_singular
-Bensinsbomm/n0 po:noun ts:feminine_singular
-Bensinscamion/n0 po:noun ts:masculine_singular
-Bensinsdepot/n0 po:noun ts:masculine_singular
-Bensinsfleck/n0 po:noun ts:masculine_singular
 bensinsgedriwwen/a0 po:adjective
 Bensinsgedriwwenes st:bensinsgedriwwen is:es
-Bensinskan/n0 po:noun ts:feminine_singular
-Bensinskanister/n0 po:noun
-Bensinslager/n0 po:noun ts:neutral_singular
-Bensinsleitung/n0 po:noun ts:feminine_singular
-Bensinsmotor/n0 po:noun ts:masculine_singular
-Bensinspompel/n0 po:noun ts:feminine_singular
-Bensinspräis/r1 po:noun ts:masculine_singular
-Bensinsreserv/n0 po:noun ts:feminine_singular
-Bensinsstatioun/n0 po:noun ts:feminine_singular
-Bensinstank/n0 po:noun ts:masculine_singular
-Bensinstax/n0 po:noun ts:feminine_singular
-Bensinstourismus po:noun ts:masculine_singular
-Bensinsverbrauch po:noun ts:masculine_singular
-Bensinszort/n0 po:noun ts:feminine_singular
 Bentley/!0
 Bënzelt/p0
 Bënzert/p0
@@ -8332,8 +8356,9 @@ Beonrouegtes st:beonrouegen is:adjective is:papa is:es
 Beonrouegung/n0 po:noun ts:feminine_singular
 beootmen/v3w2 po:verb
 Beootmung/n0s0 po:noun ts:feminine_singular
-Beootmungsapparat/r0 po:noun ts:masculine_singular
+Beootmungsapparat/n0r0 po:noun ts:masculine_singular
 Beootmungsgerät/r0 po:noun ts:neutral_singular
+Beootmungsmaschinn/n0 po:noun ts:feminine_singular
 Beootmungsschlauch/e0 po:noun ts:masculine_singular
 Beoptraagtes st:beoptragen is:adjective is:papa is:es
 beoptragen/v1w1g5X1 po:verb
@@ -8345,9 +8370,9 @@ Bepisstes st:bepissen is:adjective is:papa is:es
 beplanzen/v0X0g1w0 po:verb
 Beplanztes st:beplanzen is:adjective is:papa is:es
 Beplanzung/n0 po:noun ts:feminine_singular
+bequeem/b0a0 po:adjective
+Bequeemes st:bequeem is:es
 Bequeemlechkeet/n0 po:noun ts:feminine_singular
-bequem/a1b1 po:adjective
-Bequemes st:bequem is:es
 Beräich/r0 po:noun ts:masculine_singular
 beräicheren/v0X0x0g1w0 po:verb
 Beräicherendes st:beräicheren is:adjective is:papr is:es
@@ -9731,6 +9756,7 @@ Bind/n0 po:noun ts:feminine_singular
 Bindestréch/r0 po:noun ts:masculine_singular
 Bindung/n0 po:noun ts:feminine_singular
 Bing/n0 po:noun ts:masculine_singular
+Bingewatching po:noun ts:masculine_singular
 Bingo
 Binnert/n0 po:noun ts:masculine_singular
 Binnett/n0 po:noun ts:feminine_singular
@@ -11122,7 +11148,7 @@ Broschtkriibslaf/e1 po:noun ts:masculine_singular
 Broschtkriibspatient/n0f6 po:noun ts:masculine_singular
 Broschtkuerf/e1 po:noun ts:masculine_singular
 Broschtrekonstruktioun/n0 po:noun ts:feminine_singular
-Broschtschwammen po:noun ts:neutral_singular
+Broschtschwammen/c0 po:noun ts:neutral_singular
 Broschtspëtzt/n0 po:noun ts:feminine_singular
 Broschttoun/e0 po:noun ts:masculine_singular
 Broschtvergréisserung/n0 po:noun ts:feminine_singular
@@ -11517,6 +11543,7 @@ Bundesregierung/n0 po:noun ts:feminine_singular
 Bundesrepublik/n1 po:noun ts:feminine_singular
 Bundesriichter/f6m0 po:noun ts:masculine_singular
 Bundesstaat/n0 po:noun ts:masculine_singular
+Bundesstat/n0 po:noun ts:masculine_singular
 Bundesstrooss/n0 po:noun ts:feminine_singular
 Bundestag/s0
 Bundestagsfraktioun/n0 po:noun ts:feminine_singular
@@ -12277,8 +12304,6 @@ Chile po:noun
 Chileen/n0f6 po:noun ts:masculine_singular
 chileenesch/a0 po:adjective
 Chilen/n0f6 po:noun ts:masculine_singular
-chilenesch/a0 po:adjective
-Chilenesches st:chilenesch is:es
 chilleg/a0 po:adjective
 Chilleges st:chilleg is:es
 chillen/v0w0G0 po:verb
@@ -12312,17 +12337,14 @@ Chineeseschunterrecht/r0 po:noun ts:masculine_singular
 chinéiert/a0 po:adjective
 Chinéiertes st:chinéiert is:es
 Chines/n0f6 po:noun ts:masculine_singular
-chinesesch/a0 po:adjective
 Chineseschbuch/u1 po:noun ts:neutral_singular
 Chineseschcours/m1 po:noun ts:masculine_singular
-Chinesesches st:chinesesch is:es
 Chineseschexamen/m0 po:noun ts:masculine_singular
 Chineseschkenntnis/r1 po:noun ts:feminine_singular
 Chineseschprofesser/n0f0f4 po:noun ts:masculine_singular
 Chineseschproff/n0 po:noun ts:masculine_singular
 Chineseschprüfung/n0 po:noun ts:feminine_singular
 Chineseschspriecher/f6m0 po:noun ts:masculine_singular
-chineseschsproocheg/a0 po:adjective
 Chineseschsproochegkeet po:noun ts:feminine_singular
 Chineseschstonn/n0 po:noun ts:feminine_singular
 Chineseschunterrecht/r0 po:noun ts:masculine_singular
@@ -13143,6 +13165,8 @@ Cornet/n0 po:noun ts:masculine_singular
 Cornflakes/n0 po:noun
 Corniche/n4 po:noun
 Corollaire/n4 po:noun
+Corona po:noun ts:masculine_singular
+Corona-Virus/l1n1 po:noun ts:masculine_singular
 Coronavirus/l1n1 po:noun ts:masculine_singular
 Corps/n0 po:noun
 Corpschef/n1f9 po:noun ts:masculine_singular
@@ -15362,6 +15386,7 @@ Detail/r0 po:noun ts:masculine_singular
 Detailanalys/n0 po:noun ts:feminine_singular
 detailbewosst/b0a0 po:adjective
 Detailetüd/n0 po:noun ts:feminine_singular
+Detailetude/n4 po:noun ts:feminine_singular
 Detailfakt/n0 po:noun ts:masculine_singular
 Detailfro/n0 po:noun ts:feminine_singular
 Detailgestaltung/n0 po:noun ts:feminine_singular
@@ -15503,10 +15528,10 @@ deziméieren/v0X0Y0g1w0 po:verb
 Deziméiertes st:deziméieren is:adjective is:papa is:es
 DHL/!0
 Dia/n0 po:noun ts:masculine_singular
+Diabetes
 diabetesch/a0 po:adjective
 Diabetiker/f6m0 po:noun ts:masculine_singular
 Diabetikerassociatioun/n0 po:noun ts:feminine_singular
-Diabetis
 Diabetolog/n0f6 po:noun ts:masculine_singular
 Diabetologie po:noun ts:feminine_singular
 diabolesch/b0a0 po:adjective
@@ -16929,6 +16954,7 @@ Drauwenzort/n0 po:noun ts:feminine_singular
 Drauwesaaft po:noun ts:masculine_singular
 drawerfen/v3t0 po:verb
 Dreadlocks po:noun ts:_plural
+Dréchefudder po:noun ts:neutral_singular
 dréchegeluecht/a0 po:adjective
 Dréchegeluechtes st:dréchegeluecht is:es
 drécheleeën/v0t0 po:verb
@@ -17139,6 +17165,7 @@ Drëttspender/n0f6 po:noun ts:masculine_singular
 Drëttstaat/n0 po:noun ts:masculine_singular
 drëttstäerkst/a0 po:adjective
 Drëttstäerkstes st:drëttstäerkst is:es
+Drëttstat/n0 po:noun ts:masculine_singular
 drëttwäermst/a0 po:adjective
 Drëttweltland/u0 po:noun ts:neutral_singular
 Drëttweltmarché/n0 po:noun ts:masculine_singular
@@ -18092,6 +18119,9 @@ Eechenholz po:noun ts:neutral_singular
 Eechepollen/m0 po:noun ts:masculine_singular
 Eed/r0 po:noun ts:masculine_singular
 Eedelgas/n0r0 po:noun ts:masculine_singular
+Eedelmetall/r0 po:noun ts:neutral_singular
+Eedelsteen/k4e1 po:noun ts:masculine_singular
+Eedelwäissgirland/n0 po:noun ts:feminine_singular
 Eedem/n0 po:noun ts:masculine_singular
 Eeden/c0
 Eedgenossenschaft/n0 po:noun ts:feminine_singular
@@ -18263,6 +18293,7 @@ Eenheetspräis/r1 po:noun ts:masculine_singular
 Eenheetsregierung/n0 po:noun ts:feminine_singular
 Eenheetsregimm/n0r0 po:noun ts:masculine_singular
 Eenheetsstaat/n0 po:noun ts:masculine_singular
+Eenheetsstat/n0 po:noun ts:masculine_singular
 Eenheetsstatut po:noun ts:masculine_singular
 Eenheetstarif/r1 po:noun ts:masculine_singular
 Eenheetstaux/n0 po:noun ts:masculine_singular
@@ -18327,6 +18358,7 @@ Eenzelsportler/f6m0 po:noun ts:masculine_singular
 eenzelsproochlech/a0 po:adjective
 Eenzelstaat/n0 po:noun ts:masculine_singular
 Eenzelstär/n0 po:noun ts:masculine_singular
+Eenzelstat/n0 po:noun ts:masculine_singular
 Eenzelstéck/r0 po:noun ts:neutral_singular
 Eenzelstëmm/n0 po:noun ts:feminine_singular
 Eenzeltäter/f6m0 po:noun ts:masculine_singular
@@ -18383,7 +18415,6 @@ Eestufeges st:eestufeg is:es
 Eeter po:noun ts:masculine_singular
 eeteren/v2 po:verb
 Eether po:noun ts:masculine_singular
-Eethereum/n0 po:noun ts:masculine_singular
 eethesch/b0a0 po:adjective
 Eethik po:noun ts:feminine_singular
 Eethikcode/n4 po:noun ts:masculine_singular
@@ -18416,10 +18447,12 @@ Effeminéierung/n0 po:noun ts:feminine_singular
 Ëffentlechkeetsaarbecht/n0 po:noun ts:feminine_singular
 Ëffentlechkeetscampagne/n4 po:noun ts:feminine_singular
 Effet/n0 po:noun ts:masculine_singular
+Efficacitéitsetude/n4 po:noun ts:feminine_singular
 effikass/b0a0 po:adjective
 Effikasses st:effikass is:es
 Effikassitéit/n0s0 po:noun ts:feminine_singular
 Effikassitéitsetüd/n0 po:noun ts:feminine_singular
+Effikassitéitsetude/n4 po:noun ts:feminine_singular
 effiléieren/v0X0g1w0 po:verb
 Effiléiertes st:effiléieren is:adjective is:papa is:es
 effizient/b0a0 po:adjective
@@ -18427,7 +18460,7 @@ Effizientes st:effizient is:es
 Effizienz po:noun ts:feminine_singular
 Effizienzufuerderung/n0 po:noun ts:feminine_singular
 Effloreszenz/n0 po:noun ts:feminine_singular
-Effluenz/n0 po:noun ts:feminine_singular
+Effluenz/n0!0 po:noun ts:feminine_singular
 Ëffner/m0 po:noun ts:masculine_singular
 Ëffnung/n0s0 po:noun ts:feminine_singular
 Ëffnungsparty/n0 po:noun ts:feminine_singular
@@ -18581,10 +18614,9 @@ einstweilen
 eintlech/b0a0 po:adjective
 Eintleches st:eintlech is:es
 Einwegverpackung/n0 po:noun ts:feminine_singular
-Eippers
+Eippers/!0
 éirewou
 eis/h0 po:pronoun
-Eischen/!0
 Éischent/p0
 éischt/a0 po:adjective
 Éischt/p0
@@ -18595,7 +18627,6 @@ Eischen/!0
 éischter po:adverb
 Éischtes st:éischt is:es
 éischtgebuer/a5 po:adjective
-Éischtgebuerenes st:éischtgebuer is:adjective is:papa is:es
 Éischtgebuert/n0 po:noun ts:feminine_singular
 éischtgenannt/b0a0 po:adjective
 Éischtgenanntes st:éischtgenannt is:es
@@ -18675,7 +18706,6 @@ Eisebunnswaggon/n0 po:noun ts:masculine_singular
 Eisebunnsweich/n0 po:noun ts:feminine_singular
 Eisebunnswiesen/c0 po:noun ts:neutral_singular
 Eiseclôture/n4 po:noun
-Eisefriess/n0 po:noun ts:feminine_singular
 Eisegelänner/n0 po:noun ts:neutral_singular
 Eisegewiicht/r0 po:noun ts:neutral_singular
 Eisekonstruktioun/n0 po:noun ts:feminine_singular
@@ -18781,6 +18811,7 @@ Ekonomie/n4 po:noun ts:feminine_singular
 Ekonomiesberäich po:noun ts:masculine_singular
 Ekonomiescours/m1 po:noun ts:masculine_singular
 Ekonomiesetüd/n0 po:noun ts:feminine_singular
+Ekonomiesetude/n4 po:noun ts:feminine_singular
 Ekonomiesminister/n0f0f6 po:noun ts:masculine_singular
 Ekonomiesprofesser/n0f0f4 po:noun ts:masculine_singular
 Ekonomiesproff/n0 po:noun ts:masculine_singular
@@ -19679,6 +19710,7 @@ Emulator/n0 po:noun ts:masculine_singular
 Ëmweltdumping/n0 po:noun ts:masculine_singular
 Ëmweltengagement/r0 po:noun ts:masculine_singular
 Ëmweltetüd/n0 po:noun ts:feminine_singular
+Ëmweltetude/n4 po:noun ts:feminine_singular
 Ëmweltexpert/n0f6 po:noun ts:masculine_singular
 Ëmweltfacteur/n0 po:noun ts:masculine_singular
 ëmweltfeindlech/b0a0 po:adjective
@@ -19699,6 +19731,7 @@ Emulator/n0 po:noun ts:masculine_singular
 Ëmweltidealist/n0f6 po:noun ts:masculine_singular
 Ëmweltimpakt/r0 po:noun ts:masculine_singular
 Ëmweltimpaktetüd/n0 po:noun ts:feminine_singular
+Ëmweltimpaktetude/n4 po:noun ts:feminine_singular
 Ëmweltingenieur/n0f6 po:noun ts:masculine_singular
 Ëmweltiwwerwaachung/n0 po:noun ts:feminine_singular
 Ëmweltkatastroph/n0 po:noun ts:feminine_singular
@@ -19787,6 +19820,7 @@ Emulator/n0 po:noun ts:masculine_singular
 Ëmweltverdréigleches st:ëmweltverdréiglech is:es
 Ëmweltverdréiglechkeet/n0s0 po:noun ts:feminine_singular
 Ëmweltverdréiglechkeetsetüd/n0 po:noun ts:feminine_singular
+Ëmweltverdréiglechkeetsetude/n4 po:noun ts:feminine_singular
 Ëmweltverknaschtung/n0 po:noun ts:feminine_singular
 Ëmweltverschmotzer/f6m0 po:noun ts:masculine_singular
 Ëmweltverschmotzung/n0 po:noun ts:feminine_singular
@@ -20122,6 +20156,7 @@ Ennemi/n0f8 po:noun ts:masculine_singular
 Ënnerdréckungsinstrument/r0 po:noun ts:neutral_singular
 Ënnerdréckungspolitik/n1 po:noun ts:feminine_singular
 Ënnerdréckungsstaat/n0 po:noun ts:masculine_singular
+Ënnerdréckungsstat/n0 po:noun ts:masculine_singular
 ënnerdreiwen/v0w0g2 po:verb
 Ënnerdreiwung/n0 po:noun ts:feminine_singular
 Ënnerdrock po:noun ts:masculine_singular
@@ -22927,6 +22962,7 @@ Etruskesches st:etruskesch is:es
 Ettelbréck/p0
 Ëtteng/p0
 Etüd/n0 po:noun ts:feminine_singular
+Etude/n4 po:noun ts:feminine_singular
 Etudiant/n0f8 po:noun ts:masculine_singular
 etudiéieren/v0g1w0 po:verb
 Etui/n0 po:noun ts:masculine_singular
@@ -22978,6 +23014,7 @@ Eurokratie/n4 po:noun ts:feminine_singular
 Eurokris/n0 po:noun ts:feminine_singular
 Euroland/u0 po:noun ts:neutral_singular
 Euromemberstaat/n0 po:noun ts:masculine_singular
+Euromemberstat/n0 po:noun ts:masculine_singular
 Euromënz/n0 po:noun ts:feminine_singular
 Euromillions/!0
 Euronorm/n0 po:noun ts:feminine_singular
@@ -23137,6 +23174,7 @@ Evaluatiounsbericht/r0 po:noun ts:masculine_singular
 Evaluatiounscomité/n0 po:noun ts:masculine_singular
 Evaluatiounscritère/n4 po:noun ts:masculine_singular
 Evaluatiounsetüd/n0 po:noun ts:feminine_singular
+Evaluatiounsetude/n4 po:noun ts:feminine_singular
 Evaluatiounsgrupp/n0 po:noun ts:masculine/_singular
 Evaluatiounskommissioun/n0 po:noun ts:feminine_singular
 Evaluatiounskrittär/n0 po:noun ts:masculine_singular
@@ -24064,7 +24102,6 @@ Fachberäichsleeder/f6m0 po:noun ts:masculine_singular
 Fachbibliothéik/n0 po:noun ts:feminine_singular
 Fachbuch/u1 po:noun ts:neutral_singular
 Fachchineesesch po:noun ts:neutral_singular
-Fachchinesesch po:noun ts:neutral_singular
 Fachdokter/n0f0 po:noun ts:masculine_singular
 fächelen/v0w0 po:verb
 fachen/v0w0G0 po:verb
@@ -24194,6 +24231,7 @@ Fairness po:noun ts:feminine_singular
 Fairplay po:noun ts:masculine_singular
 Fairtrade
 Faisabilitéitsetüd/n0 po:noun ts:feminine_singular
+Faisabilitéitsetude/n4 po:noun ts:feminine_singular
 Fait/n0 po:noun ts:masculine_singular
 fäkal/a1 po:adjective
 Fäkales st:fäkal is:es
@@ -24459,6 +24497,7 @@ fantasieräich/b0a0 po:adjective
 Fantasieräiches st:fantasieräich is:es
 Fantasierumeur/n0 po:noun ts:feminine_singular
 Fantasiestaat/n0 po:noun ts:feminine_singular
+Fantasiestat/n0 po:noun ts:feminine_singular
 Fantasiestéck/r0 po:noun ts:neutral_singular
 fantasievoll/b0a0 po:adjective
 Fantasievolles st:fantasievoll is:es
@@ -26239,7 +26278,7 @@ Fligeralarm/n0 po:noun ts:masculine_singular
 Fligerbau po:noun ts:masculine_singular
 Fligerbauch/e0 po:noun ts:masculine_singular
 Fligerbauer/n0f6 po:noun ts:masculine_singular
-Fligerbensin po:noun ts:masculine_singular
+Fligerbensinn po:noun ts:masculine_singular
 Fligerbett/r0k0 po:noun ts:neutral_singular
 Fligerbilljee/n2 po:noun ts:masculine_singular
 Fligerbomm/n0 po:noun ts:feminine_singular
@@ -27369,6 +27408,7 @@ fräispriechen/v3t0 po:verb
 Fräispriechfunktioun/n0 po:noun ts:feminine_singular
 Fräisproch/e0 po:noun ts:masculine_singular
 Fräistaat/n0 po:noun ts:masculine_singular
+Fräistat/n0 po:noun ts:masculine_singular
 fräistellen/v0t0 po:verb
 Fräistellung/n0 po:noun ts:feminine_singular
 Fräistil po:noun ts:masculine_singular
@@ -29037,7 +29077,7 @@ Gebimmels po:noun ts:neutral_singular
 gebimmelt/a0 po:adjective
 Gebimmeltes st:gebimmelt is:es
 Gebitt/u1r0 po:noun ts:neutral_singular
-Gebittsfriemer/f6m0 po:noun ts:masculine_singular
+Gebittsfriemen/f7q0 po:noun ts:masculine_singular
 Gebittszouwuess/n0 po:noun ts:masculine_singular
 gebitzt/a0 po:adjective
 Gebitztes st:gebitzt is:es
@@ -29978,6 +30018,7 @@ Gehalt/u0 po:noun ts:neutral_singular
 Gehälteraccord/n0 po:noun ts:masculine_singular
 Gehälterentwécklung/n0 po:noun ts:feminine_singular
 Gehälteretüd/n0 po:noun ts:feminine_singular
+Gehälteretude/n4 po:noun ts:feminine_singular
 Gehälterofkommes/n1 po:noun ts:neutral_singular
 Gehälteropbesserung/n0 po:noun ts:feminine_singular
 Gehälterpolitik/n1 po:noun ts:feminine_singular
@@ -30287,6 +30328,7 @@ Géigenekipp/n0 po:noun ts:feminine_singular
 Géigenentworf/e0 po:noun ts:masculine_singular
 Géigenequipe/n1 po:noun ts:feminine_singular
 Géigenetüd/n0 po:noun ts:feminine_singular
+Géigenetude/n4 po:noun ts:feminine_singular
 Géigenexpertis/n0 po:noun ts:feminine_singular
 géigeniwwer po:adverb
 Géigeniwwer po:noun ts:neutral_singular
@@ -32101,6 +32143,7 @@ Gesamtemissioun/n0 po:noun ts:feminine_singular
 Gesamterspuernis/r1 po:noun ts:neutral_singular
 Gesamtes st:gesamt is:es
 Gesamtetüd/n0 po:noun ts:feminine_singular
+Gesamtetude/n4 po:noun ts:feminine_singular
 Gesamtfinanzsituatioun/n0 po:noun ts:feminine_singular
 Gesamtfläch/n0 po:noun ts:feminine_singular
 Gesamtfluchhafen/e0 po:noun ts:masculine_singular
@@ -32145,6 +32188,7 @@ Gesamtschoul/n0 po:noun ts:feminine_singular
 Gesamtsituatioun/n0 po:noun ts:feminine_singular
 Gesamtstaat/n0 po:noun ts:masculine_singular
 gesamtstaatlech/a0 po:adjective
+Gesamtstat/n0 po:noun ts:masculine_singular
 Gesamtsteierlaascht/n0 po:noun ts:feminine_singular
 Gesamtsteierrecette/n4 po:noun ts:feminine_singular
 Gesamtstëmm/n0 po:noun ts:feminine_singular
@@ -34328,6 +34372,7 @@ Golfregioun/n0 po:noun ts:feminine_singular
 Golfschléier/m0 po:noun ts:masculine_singular
 Golfspiller/f6m0 po:noun ts:masculine_singular
 Golfstaat/n0 po:noun ts:masculine_singular
+Golfstat/n0 po:noun ts:masculine_singular
 Golfterrain/n0 po:noun ts:masculine_singular
 Golfturnéier/n0m0 po:noun ts:masculine_singular
 golgeféierlech/a0 po:adjective
@@ -34388,6 +34433,7 @@ Gotteslästereches st:gotteslästerech is:es
 Gotteslästerung/n0 po:noun ts:feminine_singular
 Gottesnar/n0 po:noun
 Gottesstaat/n0 po:noun ts:masculine_singular
+Gottesstat/n0 po:noun ts:masculine_singular
 Gottesstrof/n0 po:noun ts:feminine_singular
 gottgeweit/a0 po:adjective
 Gottgeweites st:gottgeweit is:es
@@ -34668,6 +34714,7 @@ grënnen/v0w0 po:verb
 Grënner/f6m0 po:noun ts:masculine_singular
 Grënnerland/u0 po:noun ts:neutral_singular
 Grënnerstaat/n0 po:noun ts:masculine_singular
+Grënnerstat/n0 po:noun ts:masculine_singular
 Grënnerzäit/n0 po:noun ts:feminine_singular
 Grënnung/n0s0 po:noun ts:feminine_singular
 Grënnungsakt/n0 po:noun ts:masculine_singular
@@ -36897,6 +36944,7 @@ Heemechtsschutzministère/n4 po:noun ts:masculine_singular
 Heemechtssprooch/n0 po:noun ts:feminine_singular
 Heemechtsstaat/n0 po:noun ts:masculine_singular
 Heemechtsstad/e1 po:noun ts:feminine_singular
+Heemechtsstat/n0 po:noun ts:masculine_singular
 Heemechtstoun/e0 po:noun ts:masculine_singular
 Heemechtsveräin/r0 po:noun ts:masculine_singular
 Heemechtsverréider/f6m0 po:noun ts:masculine_singular
@@ -36976,6 +37024,7 @@ hegemonial/a1b1 po:adjective
 Hegemoniales st:hegemonial is:es
 Hegemonialmuecht/n0 po:noun ts:feminine_singular
 Hegemonialstaat/n0 po:noun ts:masculine_singular
+Hegemonialstat/n0 po:noun ts:masculine_singular
 Hegemonialusproch/e0 po:noun ts:masculine_singular
 Hegemonie/n4 po:noun ts:feminine_singular
 hei po:adverb
@@ -37367,6 +37416,8 @@ Helldäischteres st:helldäischter is:es
 Hellebard/n0 po:noun
 Hellecht/n0 po:noun ts:feminine_singular
 Hellechtsmécher/f0m0 po:noun ts:masculine_singular
+helleenesch/a0 po:adjective
+Helleenesches st:helleenesch is:es
 Hëllef/n0s0 po:noun ts:feminine_singular
 hëllefen/v0w0 po:verb
 Hëllefer/f6m0 po:noun ts:masculine_singular
@@ -37455,8 +37506,6 @@ Hellegspriechung/n0 po:noun ts:feminine_singular
 Hellegtmécher/n0 po:noun
 Hellegtum/u1 po:noun ts:neutral_singular
 Hellen/n0f6 po:noun ts:masculine_singular
-hellenesch/a0 po:adjective
-Hellenesches st:hellenesch is:es
 Helleng/p0
 helleniséieren/v0X0g1w0 po:verb
 Helleniséiertes st:helleniséieren is:adjective is:papa is:es
@@ -39424,6 +39473,7 @@ Immunsystem/r0 po:noun ts:masculine_singular
 Immunzell/n0 po:noun ts:feminine_singular
 Impakt/r0 po:noun ts:masculine_singular
 Impaktetüd/n0 po:noun ts:feminine_singular
+Impaktetude/n4 po:noun ts:feminine_singular
 Impaktproduzent/n0f6 po:noun ts:masculine_singular
 Impaktstudie/n4 po:noun ts:feminine_singular
 Imparfait/n0 po:noun ts:masculine_singular
@@ -39704,8 +39754,6 @@ Individuum/n0l1 po:noun ts:masculine_singular
 Indivisioun/n0 po:noun ts:feminine_singular
 Indiz/n5 po:noun ts:masculine_singular
 indochineesesch/a0 po:adjective
-indochinesesch/a0 po:adjective
-Indochinesesches st:indochinesesch is:es
 Indoeuropäer/f6m0 po:noun ts:masculine_singular
 indoeuropäesch/a0 po:adjective
 Indoeuropäesches st:indoeuropäesch is:es
@@ -39753,6 +39801,7 @@ Industriedreckstipp/n0 po:noun ts:masculine_singular
 Industrieemissioun/n0 po:noun ts:feminine_singular
 Industrieentreprise/n4 po:noun ts:feminine_singular
 Industrieetüd/n0 po:noun ts:feminine_singular
+Industrieetude/n4 po:noun ts:feminine_singular
 Industriefeindlechkeet po:noun ts:feminine_singular
 Industriefoire/n4 po:noun ts:feminine_singular
 Industriefräiheet po:noun ts:feminine_singular
@@ -39798,6 +39847,7 @@ Industriesite/n1 po:noun ts:masculine_singular
 Industriestaat/n0 po:noun ts:masculine_singular
 Industriestad/e1 po:noun ts:feminine_singular
 Industriestanduert/r0 po:noun ts:masculine_singular
+Industriestat/n0 po:noun ts:masculine_singular
 Industriestrooss po:noun ts:feminine_singular
 Industrieterrain/n0 po:noun ts:masculine_singular
 Industriezäitalter po:noun ts:masculine/_singular
@@ -40207,6 +40257,7 @@ Inselnatioun/n0 po:noun ts:feminine_singular
 Inselregioun/n0 po:noun ts:feminine_singular
 Inselrepublik/n1 po:noun ts:feminine_singular
 Inselstaat/n0 po:noun ts:masculine_singular
+Inselstat/n0 po:noun ts:masculine_singular
 Inselsystem/r0 po:noun ts:masculine_singular
 Inselwanderschaft/n0 po:noun ts:feminine_singular
 Inseminatioun/n0 po:noun ts:feminine_singular
@@ -41659,7 +41710,7 @@ iwwerschloen/v3w0g3X4 po:verb
 Iwwerschloenes st:iwwerschloen is:adjective is:papa is:es
 iwwerschnapen/v1w1 po:verb
 iwwerschnappe
-iwwerschnappen
+iwwerschnappen/c0
 iwwerschneiden/v0w0g2 po:verb
 Iwwerschneidung/n0 po:noun ts:feminine_singular
 Iwwerschoss/e0 po:noun ts:masculine_singular
@@ -41819,6 +41870,7 @@ Iwwerwaachungssatellit/n1 po:noun ts:masculine_singular
 Iwwerwaachungsschutz po:noun ts:masculine_singular
 Iwwerwaachungssoftware/n4 po:noun ts:feminine_singular
 Iwwerwaachungsstaat/n0 po:noun ts:masculine_singular
+Iwwerwaachungsstat/n0 po:noun ts:masculine_singular
 Iwwerwaachungsstatioun/n0 po:noun ts:feminine_singular
 Iwwerwaachungssystem/r0 po:noun ts:masculine_singular
 Iwwerwaachungstechnologie/n4 po:noun ts:feminine_singular
@@ -41865,7 +41917,6 @@ Iwwreges st:iwwreg is:es
 Izeg/p0
 Izoard
 J-Pop po:noun
-J-Rock po:noun
 Jaanshaff/p0
 Jabel/n0 po:noun ts:masculine_singular
 jabelen/v0w0 po:verb
@@ -43686,6 +43737,7 @@ Karibesches st:karibesch is:es
 Karibik
 Karibikinsel/n0 po:noun ts:feminine_singular
 Karibikstaat/n0 po:noun ts:masculine_singular
+Karibikstat/n0 po:noun ts:masculine_singular
 Karies po:noun ts:feminine_singular
 karikativ/a1b1 po:adjective
 Karikatives st:karikativ is:es
@@ -44468,15 +44520,16 @@ Kierchesprooch po:noun ts:feminine_singular
 kierchesproochlech/a0 po:adjective
 Kierchesproochleches st:kierchesproochlech is:es
 Kierchestaat/n0 po:noun ts:masculine_singular
+Kierchestat/n0 po:noun ts:masculine_singular
 Kierchesteier/n0 po:noun ts:feminine_singular
 Kierchestonn/n0 po:noun ts:feminine_singular
+Kierchestrooss/n0 po:noun ts:feminine_singular
 Kierchevertrieder/f6m0 po:noun ts:masculine_singular
 Kierchevisitatioun/n0 po:noun ts:feminine_singular
 Kierchhunn/n0k7 po:noun ts:masculine_singular
 kierchlech/b0a0 po:adjective
 Kierchleches st:kierchlech is:es
 Kierchplaz/n0 po:noun ts:feminine_singular
-Kierchstrooss/n0 po:noun ts:feminine_singular
 Kierchtuerm/e1 po:noun ts:masculine_singular
 Kierchtuermspolitik/n1 po:noun ts:feminine_singular
 Kierel
@@ -44656,16 +44709,8 @@ Killwon/e1 po:noun ts:masculine_singular
 Kilo/n0 po:noun ts:masculine_singular
 Kilogramm po:noun ts:masculine_singular
 Kilohertz po:noun
-Kilomeetercarré
-Kilomeetercompteur/n0 po:noun ts:masculine_singular
-Kilomeetergeld po:noun ts:neutral_singular
-Kilomeeterkaree
 kilomeeterlaang/a0 po:adjective
-Kilomeeterpauschal/n0 po:noun
-Kilomeeterstand/e0 po:noun ts:masculine_singular
-Kilomeetersteen/k4e1 po:noun ts:masculine_singular
 kilomeeterwäit/a0 po:adjective
-Kilomeeterzieler/m0 po:noun ts:masculine_singular
 Kilometer/n0 po:noun ts:masculine_singular
 Kilometercarré
 Kilometercompteur/n0 po:noun ts:masculine_singular
@@ -44757,6 +44802,7 @@ Kiosk/n0 po:noun ts:masculine_singular
 Kiotofong po:noun ts:masculine_singular
 Kipp/n0 po:noun
 Kippa/n0 po:noun
+Kippchen/c0d0
 kippen/v0w0 po:verb
 Kir/n0 po:noun ts:masculine_singular
 Kirelshaff/p0
@@ -45069,6 +45115,7 @@ klengschreiwen/v0t0 po:verb
 Klengschreiwung/n0 po:noun ts:feminine_singular
 Klengstaat/n0 po:noun ts:masculine_singular
 Klengstad/e1 po:noun ts:feminine_singular
+Klengstat/n0 po:noun ts:masculine_singular
 klengstméiglech/a0 po:adjective
 Klengtransporter/n0 po:noun ts:masculine_singular
 Klengverdénger/f6m0 po:noun ts:masculine_singular
@@ -46219,6 +46266,7 @@ Konfliktreegelung/n0 po:noun ts:feminine_singular
 Konfliktregioun/n0 po:noun ts:feminine_singular
 Konfliktsituatioun/n0 po:noun ts:feminine_singular
 Konfliktstaat/n0 po:noun ts:masculine_singular
+Konfliktstat/n0 po:noun ts:masculine_singular
 Konfliktstoff po:noun ts:masculine_singular
 konfliktuell/a0 po:adjective
 Konfliktuelles st:konfliktuell is:es
@@ -46646,7 +46694,6 @@ Konteninformatioun/n0 po:noun ts:feminine_singular
 Kontennummer/n0 po:noun ts:feminine_singular
 Kontenofschloss/e0 po:noun ts:masculine_singular
 Konteplang/e0 po:noun ts:masculine_singular
-Konter/m0 po:noun ts:masculine_singular
 Konterattack/n0 po:noun ts:feminine_singular
 konterbont/b0a0 po:adjective
 Konterbontes st:konterbont is:es
@@ -47735,6 +47782,7 @@ Krisesommet/n0 po:noun ts:masculine_singular
 Krisespezialkommissioun/n0 po:noun ts:feminine_singular
 Krisestaat/n0 po:noun ts:masculine_singular
 Krisestaf/e1 po:noun ts:masculine_singular
+Krisestat/n0 po:noun ts:masculine_singular
 Krisesteier/n0 po:noun ts:feminine_singular
 Krisestëmmung po:noun ts:feminine_singular
 Krisestrategie/n4 po:noun ts:feminine_singular
@@ -48194,6 +48242,7 @@ Kulturstaat/n0 po:noun ts:masculine_singular
 Kulturstaatssekretär/n0f6 po:noun ts:masculine_singular
 Kulturstad/e1 po:noun ts:feminine_singular
 Kulturstanduert/r0 po:noun ts:masculine_singular
+Kulturstat/n0 po:noun ts:masculine_singular
 Kulturstrategie/n4 po:noun ts:feminine_singular
 Kulturstreik/r0 po:noun ts:masculine_singular
 Kulturstréimung/n0 po:noun ts:feminine_singular
@@ -48389,6 +48438,7 @@ Laangzäitchômage po:noun ts:masculine_singular
 Laangzäitchômeur/n0f1 po:noun ts:masculine_singular
 Laangzäitequipage/n4 po:noun ts:masculine_singular
 Laangzäitetüd/n0 po:noun ts:feminine_singular
+Laangzäitetude/n4 po:noun ts:feminine_singular
 Laangzäitfluch/e1 po:noun ts:masculine_singular
 Laangzäitfolleg/l0 po:noun ts:feminine_singular
 Laangzäitfotografie/n4 po:noun ts:feminine_singular
@@ -50213,7 +50263,7 @@ liichten/v0x0w0G0 po:verb
 Liichtendes st:liichten is:adjective is:papr is:es
 Liichtenergie/n4 po:noun ts:feminine_singular
 Liichterketten/m0 po:noun ts:feminine_singular
-Liichterprëssessioun/n0 po:noun ts:feminine_singular
+Liichterpressessioun/n0 po:noun ts:feminine_singular
 Liichtes st:liicht is:es
 liichtfäerteg/b0a0 po:adjective
 Liichtfäerteges st:liichtfäerteg is:es
@@ -51892,6 +51942,7 @@ Marionettentheaterstéck/r0 po:noun ts:neutral_singular
 Marionetteregierung/n0 po:noun ts:feminine_singular
 Marionettespiller/f6m0 po:noun ts:masculine_singular
 Marionettestaat/n0 po:noun ts:masculine_singular
+Marionettestat/n0 po:noun ts:masculine_singular
 Marionettesteiergrëff/r0 po:noun ts:masculine_singular
 maritim/a2 po:adjective
 Maritimmes st:maritim is:es
@@ -52605,7 +52656,9 @@ Medezintechnik/n0 po:noun ts:feminine_singular
 medial/a1b1 po:adjective
 Mediales st:medial is:es
 median/a1 po:adjective
+Median/n0 po:noun ts:masculine_singular
 Medianakommes po:noun ts:neutral_singular
+Mediane/n4 po:noun ts:feminine_singular
 Medianes st:median is:es
 mediatesch/b0a0 po:adjective
 Mediatesches st:mediatesch is:es
@@ -53082,6 +53135,7 @@ Memberslëscht/n0 po:noun ts:feminine_singular
 Membersnummer/n0 po:noun ts:feminine_singular
 Membersprogramm/n0r0 po:noun ts:masculine_singular
 Memberstaat/n0 po:noun ts:masculine_singular
+Memberstat/n0 po:noun ts:masculine_singular
 Memberszuel/n0 po:noun ts:feminine_singular
 Memberversammlung/n0 po:noun ts:feminine_singular
 Membran/n0 po:noun ts:feminine_singular
@@ -53907,6 +53961,7 @@ Mikroskop/n0r0 po:noun ts:masculine_singular
 mikroskopesch/b0a0 po:adjective
 Mikroskopesches st:mikroskopesch is:es
 Mikrostaat/n0 po:noun ts:masculine_singular
+Mikrostat/n0 po:noun ts:masculine_singular
 Mikrostruktur/n0 po:noun ts:feminine_singular
 Mikroteslawäert/r0 po:noun ts:masculine_singular
 Mikrotheorie/n4 po:noun ts:feminine_singular
@@ -54107,6 +54162,7 @@ Milliardeprogramm/r0 po:noun ts:masculine_singular
 milliardeschwéier/a0 po:adjective
 Milliardeschwéieres st:milliardeschwéier is:es
 Milliardestaat/n0 po:noun ts:masculine_singular
+Milliardestat/n0 po:noun ts:masculine_singular
 Milliardeverloscht/r0 po:noun ts:masculine_singular
 Millième
 Millièmen
@@ -55470,6 +55526,7 @@ Muppemeeschter/n0f0f6 po:noun ts:masculine_singular
 Muppendreck/r0 po:noun ts:masculine_singular
 Muppenhimmel po:noun ts:masculine_singular
 Muppentut/n0 po:noun ts:feminine_singular
+Muppenzant/e0k6 po:noun ts:masculine_singular
 Muppepapp/n0i0 po:noun ts:masculine_singular
 Muppeschnëss/n0 po:noun ts:feminine_singular
 Muralist/n0f6 po:noun ts:masculine_singular
@@ -56009,6 +56066,7 @@ nationalstaatlech/b0a0 po:adjective
 Nationalstaatleches st:nationalstaatlech is:es
 Nationalstaatlechkeet po:noun ts:feminine_singular
 Nationalstadion/n0 po:noun ts:masculine_singular
+Nationalstat/n0 po:noun ts:masculine_singular
 Nationalstolz po:noun ts:masculine_singular
 Nationalstrooss/n0 po:noun ts:feminine_singular
 Nationalsymbol/r0 po:noun ts:neutral_singular
@@ -57483,6 +57541,7 @@ Nopeschregioun/n0 po:noun ts:feminine_singular
 Nopeschreseau/n0 po:noun ts:masculine_singular
 Nopeschstaat/n0 po:noun ts:masculine_singular
 Nopeschstad/e1 po:noun ts:feminine_singular
+Nopeschstat/n0 po:noun ts:masculine_singular
 Nopeschstellwierk/r0 po:noun ts:neutral_singular
 Nopeschsträit po:noun ts:masculine_singular
 Nopeschstrooss/n0 po:noun ts:feminine_singular
@@ -57516,8 +57575,6 @@ Nordaustralesches st:nordaustralesch is:es
 Nordaustralien/c0 po:noun ts:neutral_singular
 Nordbezierk/r0 po:noun ts:masculine_singular
 nordchileenesch/a0 po:adjective
-nordchilenesch/a0 po:adjective
-Nordchilenesches st:nordchilenesch is:es
 norddäitsch/a0 po:adjective
 Norddäitsches st:norddäitsch is:es
 Norddäitschland po:noun
@@ -57740,7 +57797,7 @@ Notabeles st:notabel is:es
 notabene po:adverb
 Notabilitéit/n0 po:noun ts:feminine_singular
 Notaire/n4f5 po:noun ts:masculine_singular
-Notairesakten
+Notairesakt/n0 po:noun ts:masculine_singular
 notamment
 Notär/n0f6 po:noun ts:masculine_singular
 Notatioun/n0 po:noun ts:feminine_singular
@@ -59225,7 +59282,7 @@ ofwiesslungsräich/b0a0 po:adjective
 Ofwiesslungsräiches st:ofwiesslungsräich is:es
 Ofwiesslungsräichtum po:noun ts:masculine_singular
 ofwigele
-ofwigelen
+ofwigelen/c0
 ofwimmelen/v0t0g0 po:verb
 ofwinnen/v0t0 po:verb
 ofzapen/v1t0 po:verb
@@ -60051,6 +60108,7 @@ Onlineënnerstëtzung/n0 po:noun ts:feminine_singular
 Onlineentwécklungsstrategie/n4 po:noun ts:feminine_singular
 Onlineenzyklopedie/n4 po:noun ts:feminine_singular
 Onlineetüd/n0 po:noun ts:feminine_singular
+Onlineetude/n4 po:noun ts:feminine_singular
 Onlineformatioun/n0 po:noun ts:feminine_singular
 Onlineforum/n0l1 po:noun ts:masculine_singular
 Onlinegeschäft/r0 po:noun ts:neutral_singular
@@ -61733,8 +61791,6 @@ Ostblock po:noun ts:masculine_singular
 Ostblockland/u0 po:noun ts:neutral_singular
 Ostblockuni/n0 po:noun ts:feminine_singular
 ostchineesesch/a0 po:adjective
-ostchinesesch/a0 po:adjective
-Ostchinesesches st:ostchinesesch is:es
 ostdäitsch/a0 po:adjective
 Ostdäitsches st:ostdäitsch is:es
 Ostdäitschland po:noun
@@ -61779,6 +61835,7 @@ Ostsee/!0
 ostslawesch/a0 po:adjective
 Ostslawesches st:ostslawesch is:es
 Oststaat/n0 po:noun ts:masculine_singular
+Oststat/n0 po:noun ts:masculine_singular
 Ostukrain/p0 po:noun ts:feminine_singular
 ostukrainesch/a0 po:adjective
 Ostukrainesches st:ostukrainesch is:es
@@ -62177,6 +62234,7 @@ Palestinenserorganisatioun/n0 po:noun ts:feminine_singular
 Palestinenserpresident/n0f6 po:noun ts:masculine_singular
 Palestinenserregioun/n0 po:noun ts:feminine_singular
 Palestinenserstaat po:noun ts:masculine_singular
+Palestinenserstat po:noun ts:masculine_singular
 Palestinenserterritoire/n4 po:noun ts:masculine_singular
 palestinensesch/a0 po:adjective
 Palestinensesches st:palestinensesch is:es
@@ -62773,6 +62831,7 @@ Partnerschaftsroll/n0 po:noun ts:feminine_singular
 Partnerschaftsvertrag/e0 po:noun ts:masculine_singular
 Partnerstaat/n0 po:noun ts:masculine_singular
 Partnerstad/e1 po:noun ts:feminine_singular
+Partnerstat/n0 po:noun ts:masculine_singular
 Partnervermëttlung/n0 po:noun ts:feminine_singular
 partout
 Party/n0 po:noun ts:feminine_singular
@@ -64746,6 +64805,7 @@ Policespär/n0 po:noun ts:feminine_singular
 Policespriecher/f6m0 po:noun ts:masculine_singular
 Policestaat/n0 po:noun ts:masculine_singular
 Policestagiär/n0f6 po:noun ts:masculine_singular
+Policestat/n0 po:noun ts:masculine_singular
 Policestatioun/n0 po:noun ts:feminine_singular
 Policestatistik/n0 po:noun ts:feminine_singular
 Policestonn/n0 po:noun ts:feminine_singular
@@ -65771,7 +65831,6 @@ Pressespriecher/f6m0 po:noun ts:masculine_singular
 pressesproochlech/a0 po:adjective
 Pressesproochleches st:pressesproochlech is:es
 Pressessioun/n0 po:noun ts:feminine_singular
-Prëssessioun/n0 po:noun ts:feminine_singular
 Pressetext/r0 po:noun ts:masculine_singular
 Pressevertrieder/f6m0 po:noun ts:masculine_singular
 Pressezeechner/f6m0 po:noun ts:masculine_singular
@@ -67204,7 +67263,7 @@ Quantitéit/n0s0 po:noun ts:feminine_singular
 Quantitéitsreegeler po:noun ts:masculine_singular
 Quantum/l1 po:noun ts:masculine_singular
 Quarantaine/n4 po:noun ts:feminine_singular
-Quarantän/n4 po:noun ts:feminine_singular
+Quarantän/n0 po:noun ts:feminine_singular
 Quartal po:noun ts:neutral_singular
 quartéieren/v0g1w0 po:verb
 Quarterback/r0 po:noun ts:masculine_singular
@@ -68609,6 +68668,7 @@ Rechtsstaat/n0 po:noun ts:masculine_singular
 rechtsstaatlech/b0a0 po:adjective
 Rechtsstaatleches st:rechtsstaatlech is:es
 Rechtsstaatlechkeet po:noun ts:feminine_singular
+Rechtsstat/n0 po:noun ts:masculine_singular
 Rechtssträit po:noun ts:masculine_singular
 Rechtssujet/n0 po:noun ts:masculine_singular
 Rechtssystem/r0 po:noun ts:masculine_singular
@@ -69193,6 +69253,7 @@ Regierungserfarung/n0 po:noun ts:feminine_singular
 Regierungserklärung/n0 po:noun ts:feminine_singular
 Regierungserweiderung/n0 po:noun ts:feminine_singular
 Regierungsetüd/n0 po:noun ts:feminine_singular
+Regierungsetude/n4 po:noun ts:feminine_singular
 Regierungsexperienz/n0 po:noun ts:feminine_singular
 regierungsfäeg/b0a0 po:adjective
 Regierungsféierung/n0 po:noun ts:feminine_singular
@@ -71198,7 +71259,7 @@ Rousegaart/e0k6 po:noun ts:masculine_singular
 Rousekranz/e0 po:noun ts:masculine_singular
 Rousekranzfënster/n0k1 po:noun ts:feminine_singular
 Rousekranzgebiet/u1 po:noun ts:neutral_singular
-Rousekranzprëssessioun/n0 po:noun ts:feminine_singular
+Rousekranzpressessioun/n0 po:noun ts:feminine_singular
 Rousekrich/r0 po:noun ts:masculine_singular
 Rouseland/u0 po:noun ts:neutral_singular
 Rousenheck/n0 po:noun ts:feminine_singular
@@ -71945,6 +72006,7 @@ Satellittentelefon/n0 po:noun ts:masculine_singular
 Satellitteprojet/n0 po:noun ts:masculine_singular
 Satellitteschossel/n0 po:noun ts:feminine_singular
 Satellittestaat/n0 po:noun ts:masculine_singular
+Satellittestat/n0 po:noun ts:masculine_singular
 Satellittesystem/r0 po:noun ts:masculine_singular
 Satellittewiesen/c0 po:noun ts:neutral_singular
 Sates st:sat is:es
@@ -72176,6 +72238,7 @@ Schäissméck/n0 po:noun ts:feminine_singular
 Schäissongerechtegkeet/n0 po:noun ts:feminine_singular
 Schäisspabeier po:noun ts:masculine_singular
 Schäistaat/n0 po:noun ts:masculine_singular
+Schäistat/n0 po:noun ts:masculine_singular
 Schäiwelt/n0 po:noun ts:feminine_singular
 Schakal/n0 po:noun ts:masculine_singular
 Schal/n0r0 po:noun ts:masculine_singular
@@ -73109,7 +73172,7 @@ Schlusspaff/e0 po:noun ts:masculine_singular
 Schlussphas/n0 po:noun ts:feminine_singular
 Schlussplädoyer/n0 po:noun ts:masculine_singular
 Schlusspodium/n0 po:noun ts:masculine_singular
-Schlussprëssessioun/n0 po:noun ts:feminine_singular
+Schlusspressessioun/n0 po:noun ts:feminine_singular
 Schlusspunkt/n0 po:noun ts:masculine_singular
 Schlussrapport/n0 po:noun ts:masculine_singular
 Schlussrechnung/n0 po:noun ts:feminine_singular
@@ -73680,6 +73743,7 @@ schoulesch/b0a0 po:adjective
 Schoulesches st:schoulesch is:es
 Schouletablissement/r0 po:noun ts:neutral_singular
 Schouletüd/n0 po:noun ts:feminine_singular
+Schouletude/n4 po:noun ts:feminine_singular
 Schoulfach/u0 po:noun ts:neutral_singular
 Schoulfest/r0 po:noun ts:neutral_singular
 Schoulflicht po:noun ts:feminine_singular
@@ -76574,6 +76638,7 @@ Sozialservice/r0 po:noun ts:masculine_singular
 Sozialsommet/n0 po:noun ts:masculine_singular
 Sozialstaat/n0 po:noun ts:masculine_singular
 Sozialstandard/n0 po:noun ts:masculine_singular
+Sozialstat/n0 po:noun ts:masculine_singular
 Sozialstonn/n0 po:noun ts:feminine_singular
 Sozialsträit po:noun ts:masculine_singular
 Sozialstruktur/n0 po:noun ts:feminine_singular
@@ -77534,7 +77599,7 @@ Sprangbuer/n0 po:noun ts:masculine_singular
 sprangen/v3x0w0 po:verb
 Sprangendes st:sprangen is:adjective is:papr is:es
 Spranggrupp/n0 po:noun ts:masculine/_singular
-Sprangprëssessioun/n0 po:noun ts:feminine_singular
+Sprangpressessioun/n0 po:noun ts:feminine_singular
 Sprangreiden/c0 po:noun ts:neutral_singular
 Sprangreider/f6m0 po:noun ts:masculine_singular
 Sprangschlass/u0 po:noun ts:neutral_singular
@@ -78402,6 +78467,7 @@ Startzeechen/m0 po:noun ts:neutral_singular
 Startzoustand/e0 po:noun ts:masculine_singular
 Stärzeechen/m0 po:noun ts:neutral_singular
 Stasi
+Stat/n0s0 po:noun ts:masculine_singular
 Statec/!0
 Statement po:noun ts:masculine_singular
 Stater
@@ -78910,8 +78976,6 @@ Stëppelerei/n0 po:noun ts:feminine_singular
 Steppeméiw/n0 po:noun ts:feminine_singular
 steppen/v0w0 po:verb
 Steppenhengscht/r0 po:noun
-Sterelisateur/n0 po:noun ts:masculine_singular
-Sterelisator/n0 po:noun
 Stereo/n0 po:noun
 Stereochimie po:noun ts:feminine_singular
 Stereograph/n0 po:noun ts:masculine_singular
@@ -79988,8 +80052,6 @@ Südaustralesches st:südaustralesch is:es
 Südaustralien/c0 po:noun ts:neutral_singular
 Südbezierk/r0 po:noun ts:masculine_singular
 südchineesesch/a0 po:adjective
-südchinesesch/a0 po:adjective
-Südchinesesches st:südchinesesch is:es
 süddäitsch/a0 po:adjective
 Süddäitsches st:süddäitsch is:es
 Süddäitschland po:noun
@@ -80070,6 +80132,7 @@ Südspuenien/c0 po:noun
 Südstaat/n0 po:noun ts:masculine_singular
 Südstaatefändel/n0 po:noun ts:masculine_singular
 Südstaategenerol/f6e1 po:noun ts:masculine_singular
+Südstat/n0 po:noun ts:masculine_singular
 Südstreck po:noun ts:feminine_singular
 Südsudan po:noun
 Südsudanees/n0f6 po:noun ts:masculine_singular
@@ -80294,6 +80357,7 @@ Supersaach/n0 po:noun ts:feminine_singular
 Supersonnecrème/n4 po:noun ts:feminine_singular
 Superstaat/n0 po:noun ts:masculine_singular
 Superstar/n0 po:noun ts:masculine_singular
+Superstat/n0 po:noun ts:masculine_singular
 Supersteier po:noun ts:feminine_singular
 Superstress po:noun ts:masculine_singular
 Superstruktur/n0 po:noun ts:feminine_singular
@@ -80511,11 +80575,11 @@ Syntaxkorrektur/n0 po:noun ts:feminine_singular
 syntaxonomesch/a0 po:adjective
 Syntaxonomesches st:syntaxonomesch is:es
 Synthees/n0 po:noun ts:feminine_singular
+syntheetesch/b0a0 po:adjective
+Syntheetesches st:syntheetesch is:es
+syntheetiséieren/v0X0g1w0 po:verb
+Syntheetiséiertes st:syntheetiséieren is:adjective is:papa is:es
 Synthesizer/n0 po:noun ts:masculine_singular
-synthetesch/b0a0 po:adjective
-Synthetesches st:synthetesch is:es
-synthetiséieren/v0X0g1w0 po:verb
-Synthetiséiertes st:synthetiséieren is:adjective is:papa is:es
 Synthetiséierung/n0 po:noun ts:feminine_singular
 Synthpop po:noun ts:masculine_singular
 Syphilis po:noun ts:feminine_singular
@@ -80740,6 +80804,7 @@ Tankstatioun/n0 po:noun ts:feminine_singular
 Tankstell/n0 po:noun ts:feminine_singular
 Tanktourismus po:noun ts:masculine_singular
 Tanktourismusetüd/n0 po:noun ts:feminine_singular
+Tanktourismusetude/n4 po:noun ts:feminine_singular
 Tanktourissem po:noun ts:masculine_singular
 Tanktourist/n0f6 po:noun ts:masculine_singular
 Tankwon/e1 po:noun ts:masculine_singular
@@ -81462,6 +81527,7 @@ Terroristereseau/n0 po:noun ts:masculine_singular
 terroristesch/b0a0 po:adjective
 Terroristesches st:terroristesch is:es
 Terroristestaat/n0 po:noun ts:masculine_singular
+Terroristestat/n0 po:noun ts:masculine_singular
 Terrorkommando po:noun ts:masculine_singular
 Terrorkompliz/n0f6 po:noun ts:masculine_singular
 Terrormenace/n4 po:noun ts:feminine_singular
@@ -83384,8 +83450,6 @@ Turkmeen/n0f6 po:noun ts:masculine_singular
 turkmeenesch/a0 po:adjective
 Turkmeenistan
 Turkmen/n0f6 po:noun ts:masculine_singular
-turkmenesch/a0 po:adjective
-Turkmenesches st:turkmenesch is:es
 Turkmenistan
 Turlatäin po:noun ts:neutral_singular
 Turmes/!0
@@ -84740,6 +84804,7 @@ Ursprongskraaft/l0 po:noun ts:feminine_singular
 Ursprongsland/u0 po:noun ts:neutral_singular
 Ursprongsmodell/r0 po:noun ts:masculine_singular
 Ursprongsstaat/n0 po:noun ts:masculine_singular
+Ursprongsstat/n0 po:noun ts:masculine_singular
 Urspronk/e0 po:noun ts:masculine_singular
 Ursprooch/n0 po:noun ts:feminine_singular
 Urteel/r0 po:noun ts:neutral_singular
@@ -85184,6 +85249,7 @@ Vatikan po:noun
 vatikanesch/a0 po:adjective
 Vatikanesches st:vatikanesch is:es
 Vatikanstaat po:noun ts:masculine_singular
+Vatikanstat po:noun ts:masculine_singular
 Vauban/!0
 Vauxhall/!0
 VdL/!0
@@ -87962,8 +88028,6 @@ Verzweefachung/n0 po:noun ts:feminine_singular
 verzweiwelen/v0X0Y0g1w0 po:verb
 Verzweiweltes st:verzweiwelen is:adjective is:papa is:es
 Verzweiwlung/n0 po:noun ts:feminine_singular
-veschidden/b0a0 po:adjective
-Veschiddenes st:veschidden is:es
 Vëslosfan/n1 po:noun ts:masculine_singular
 Vesper po:noun ts:feminine_singular
 Vesquenhaff/p0
@@ -88159,6 +88223,7 @@ villsproocheg/a0 po:adjective
 Villsproochegkeet po:noun ts:feminine_singular
 villt
 Villvëlkerstaat/n0 po:noun ts:masculine_singular
+Villvëlkerstat/n0 po:noun ts:masculine_singular
 villverspriechend/b0a0 po:adjective
 Villverspriechendes st:villverspriechend is:es
 villzelleg/a0 po:adjective
@@ -91883,6 +91948,7 @@ Wonschstär/n0 po:noun ts:masculine_singular
 Wonschvakanz/n0 po:noun ts:feminine_singular
 Wonschvirstellung/n0 po:noun ts:feminine_singular
 Wonschziedel/n0k1 po:noun ts:masculine_singular
+Wooltz
 Wopen/m0 po:noun ts:neutral_singular
 Wopendéier/n0 po:noun ts:neutral_singular
 Wor/n0 po:noun
@@ -91982,6 +92048,7 @@ wuelergoen/t0v4g2 po:verb
 Wuelessen/p2
 Wuelfaart/s0 po:noun ts:feminine_singular
 Wuelfaartsstaat/n0 po:noun ts:masculine_singular
+Wuelfaartsstat/n0 po:noun ts:masculine_singular
 wuelfillen/v0t0 po:verb
 Wuelgefalen/c0 po:noun ts:neutral_singular
 Wuelgefill/r0 po:noun ts:neutral_singular
@@ -92261,6 +92328,7 @@ Wüüsteregioun/n0 po:noun ts:feminine_singular
 Wüüstes st:wüüst is:es
 Wüüstestaat/n0 po:noun ts:masculine_singular
 Wüüstestad/e1 po:noun ts:feminine_singular
+Wüüstestat/n0 po:noun ts:masculine_singular
 Wüüstevollek/u0 po:noun ts:neutral_singular
 Wyoming/!0
 Xavier/!0
@@ -92485,7 +92553,6 @@ Zalotenueleg/r0 po:noun ts:masculine_singular
 Zaloteplanz/n0 po:noun ts:feminine_singular
 Zaloterescht/r0 po:noun ts:masculine_singular
 Zaloteschossel/n0 po:noun ts:feminine_singular
-Zalotestrooss/n0 po:noun ts:feminine_singular
 zam/a1 po:adjective
 Zam/e1 po:noun ts:masculine_singular
 Zames st:zam is:es
@@ -92860,8 +92927,6 @@ Zentralbankchef/n1f9 po:noun ts:masculine_singular
 Zentralbanker/f6m0 po:noun ts:masculine_singular
 Zentralbudget/n0 po:noun ts:masculine_singular
 zentralchineesesch/a0 po:adjective
-zentralchinesesch/a0 po:adjective
-Zentralchinesesches st:zentralchinesesch is:es
 Zentralcomité/n0 po:noun ts:masculine_singular
 Zentralcomputer/n0 po:noun ts:masculine_singular
 Zentraleenheet/n0 po:noun ts:feminine_singular
@@ -92890,6 +92955,7 @@ Zentralrot/e0 po:noun ts:masculine_singular
 Zentralschoul/n0 po:noun ts:feminine_singular
 Zentralsekretär/n0f6 po:noun ts:masculine_singular
 Zentralstaat/n0 po:noun ts:masculine_singular
+Zentralstat/n0 po:noun ts:masculine_singular
 Zentralverdeedegung/n0 po:noun ts:feminine_singular
 Zentralverwaltung/n0 po:noun ts:feminine_singular
 zentréieren/v0X0g1w0 po:verb
@@ -93512,7 +93578,6 @@ Zesummeruff/e1 po:noun ts:masculine_singular
 zesummeruffen/v3t0 po:verb
 zesummerullen/v0t0 po:verb
 zesummesammelen/v0t0 po:verb
-Zesummeschaff
 Zesummeschaffe
 Zesummeschaffen
 zesummeschaffen/v0t0g0 po:verb
@@ -93644,7 +93709,6 @@ Zilgeriichtes st:zilgeriicht is:es
 Zilgrupp/n0 po:noun ts:masculine/_singular
 zilgruppegerecht/b0a0 po:adjective
 Zilgruppegerechtes st:zilgruppegerecht is:es
-Zilinder/n0 po:noun ts:masculine_singular
 Zill/n0 po:noun ts:feminine_singular
 Zilland/u0 po:noun ts:neutral_singular
 Zillebäcker/n0f0m0 po:noun ts:masculine_singular
@@ -93900,7 +93964,6 @@ zoogeographesch/a0 po:adjective
 Zoogeographesches st:zoogeographesch is:es
 Zoogeographie po:noun ts:feminine_singular
 Zoogeschäft/r0 po:noun ts:neutral_singular
-Zoohälter/f6m0 po:noun ts:masculine_singular
 Zoolog/n0f6 po:noun ts:masculine_singular
 zoologesch/a0 po:adjective
 Zoologesches st:zoologesch is:es
@@ -94645,7 +94708,6 @@ Zuelespillerei/n0 po:noun ts:feminine_singular
 Zuelesystem/r0 po:noun ts:masculine_singular
 zuelräich/b0a0 po:adjective
 Zuelräiches st:zuelräich is:es
-Zuelungsaart/n0 po:noun ts:feminine_singular
 zuelungsonfäeg/b0a0 po:adjective
 Zuelungsonfäeges st:zuelungsonfäeg is:es
 Zuelwuert/u1 po:noun ts:neutral_singular
@@ -94796,7 +94858,6 @@ zwanzegst/a0 po:adjective
 zwanzegstëmmeg/a0 po:adjective
 Zwanzegstëmmeges st:zwanzegstëmmeg is:es
 Zwanzegstes st:zwanzegst is:es
-Zwanzgest/n0 po:noun
 zwar po:adverb
 Zweck/r0 po:noun ts:masculine_singular
 Zweckallianz/n0 po:noun ts:feminine_singular
@@ -94808,7 +94869,7 @@ Zweckloses st:zwecklos is:es
 zweckméisseg/b0a0 po:adjective
 Zweckméisseges st:zweckméisseg is:es
 Zwéckmillchen/d0 po:noun ts:feminine_singular
-Zweckoptimismus/l1n1 po:noun ts:masculine_singular
+Zweckoptimismus po:noun ts:masculine_singular
 zweckoptimistesch/a0 po:adjective
 Zweckoptimistesches st:zweckoptimistesch is:es
 Zweckpessimist/n0f6 po:noun ts:masculine_singular
@@ -94851,7 +94912,6 @@ zweegleiseg/a0 po:adjective
 Zweegleiseges st:zweegleiseg is:es
 Zweegleisegkeet po:noun ts:feminine_singular
 Zweekampf/e0 po:noun ts:masculine_singular
-Zweemeeterfra/n0 po:noun ts:feminine_singular
 Zweemeterfra/n0 po:noun ts:feminine_singular
 zweemoleg/a0 po:adjective
 Zweemoleges st:zweemoleg is:es
@@ -94864,7 +94924,6 @@ Zweeriedereges st:zweeriedereg is:es
 zweesam/a1 po:adjective
 Zweesames st:zweesam is:es
 Zweesamkeet/n0 po:noun ts:feminine_singular
-Zweeschicht/n0 po:noun ts:feminine_singular
 zweeschneideg/a0 po:adjective
 Zweeschneideges st:zweeschneideg is:es
 Zweeschneidegkeet po:noun ts:feminine_singular
@@ -94912,8 +94971,6 @@ zweeträichst/a0 po:adjective
 Zweeträichstes st:zweeträichst is:es
 zweetrangeg/b0a0 po:adjective
 Zweetrangeges st:zweetrangeg is:es
-zweetschlechst/a0 po:adjective
-Zweetschlechstes st:zweetschlechst is:es
 Zweetschlëssel/n0 po:noun ts:masculine_singular
 Zweetsprooch/n0 po:noun ts:feminine_singular
 zweetstäerkst/a0 po:adjective
@@ -94952,6 +95009,7 @@ zwieleft/a0 po:adjective
 Zwieleften/f7q0 po:noun ts:masculine_singular
 Zwieleftes st:zwieleft is:es
 Zwier/n0r0 po:noun ts:masculine_singular
+Zwiispalt/n0r0 po:noun
 zwiispälteg/b0a0 po:adjective
 Zwiispälteges st:zwiispälteg is:es
 Zwilling/n0s0 po:noun ts:masculine_singular
@@ -94960,7 +95018,6 @@ Zwillingsjong/n0i0 po:noun ts:masculine_singular
 Zwillingskoppel/n0k6 po:noun ts:feminine_singular
 Zwillingstuerm/e1 po:noun ts:masculine_singular
 Zwinger
-Zwispalt/n0r0 po:noun
 zwitscheren/v0w0G0 po:verb
 Zwitter/n0 po:noun ts:masculine_singular
 Zwiwwel/n0k1 po:noun ts:feminine_singular

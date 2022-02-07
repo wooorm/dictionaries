@@ -1,18 +1,18 @@
-var read = require('fs').readFile
-var join = require('path').join
+const read = require('fs').readFile
+const join = require('path').join
 
 module.exports = load
 
 function load(callback) {
-  var pos = -1
-  var exception = null
-  var result = {}
+  let pos = -1
+  let exception = null
+  let result = {}
 
   one('aff')
   one('dic')
 
   function one(name) {
-    read(join(__dirname, 'index.' + name), function (error, doc) {
+    read(join(__dirname, 'index.' + name), (error, doc) => {
       pos++
       exception = exception || error
       result[name] = doc

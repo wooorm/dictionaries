@@ -1,8 +1,8 @@
-Spellchecker Dictionary (files: lb_LU.dic, lb_LU.aff, unmunched.dic)
+Spellchecker Dictionary (files: lb_LU.dic, lb_LU.aff)
 Thesaurus (files: th_lb_LU_v2.dat, th_lb_LU_v2.idx)
 
 Copyright (C) 2008-2015 Michel Weimerskirch
-Copyright (C) 2016-2019 Michel Weimerskirch, Edson Souza Morais
+Copyright (C) 2016-2021 Michel Weimerskirch, Edson Souza Morais
 
 Licensed under the EUPL V.1.1
 See http://joinup.ec.europa.eu/software/page/eupl/licence-eupl for license terms in other languages.

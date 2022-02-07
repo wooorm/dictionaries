@@ -112,7 +112,7 @@ generate() {
   if [ -e "$SOURCE/$3" ]; then
     (
       iconv -f "$4" -t "UTF-8" | # Encoding
-      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$3" > "$dictionary/index.dic"
@@ -125,7 +125,7 @@ generate() {
     (
       iconv -f "$6" -t "UTF-8" | # Encoding
       sed "s/SET .*/SET UTF-8/" | # Encoding Pragma
-      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$5" > "$dictionary/index.aff"
@@ -141,7 +141,7 @@ generate() {
   elif [ -e "$SOURCE/$8" ]; then
     (
       iconv -f "$9" -t "UTF-8" | # Encoding
-      awk 'NR==1{sub(/^\xef\xbb\xbf/,"")}1' | # BOM
+      sed '1s/^\xEF\xBB\xBF//' | # BOM
       sed 's/[ 	]*$//' | # Trailing white-space
       tr -d '\r' # Newlines
     ) < "$SOURCE/$8" > "$dictionary/license"
@@ -190,9 +190,10 @@ crawl "croatian" \
 crawl "czech" \
   "http://extensions.openoffice.org/en/project/czech-dictionary-pack-ceske-slovniky-cs-cz" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1078/0/dict-cs-2.0.oxt"
-crawl "danish" \
-  "https://www.stavekontrolden.dk" \
-  "https://www.stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.017.oxt"
+# Offline :(
+# crawl "danish" \
+#   "https://www.stavekontrolden.dk" \
+#   "https://www.stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.017.oxt"
 crawl "dutch" \
   "https://github.com/OpenTaal/opentaal-hunspell" \
   "https://github.com/OpenTaal/opentaal-hunspell/archive/master.zip"
@@ -220,7 +221,7 @@ crawl "esperanto" \
 #   "http://www.stava.fo/download/hunspell.zip"
 crawl "french" \
   "https://grammalecte.net" \
-  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.0.0.oxt"
+  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.1.2.oxt"
 crawl "frisian" \
   "https://github.com/PanderMusubi/frisian" \
   "https://github.com/PanderMusubi/frisian/archive/master.zip"
@@ -254,9 +255,10 @@ crawl "hebrew" \
 crawl "hungarian" \
   "https://github.com/laszlonemeth/magyarispell" \
   "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2019.11.11.09.22/MagyarIspell_b06fc12.zip"
-crawl "interlingua" \
-  "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
-  "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
+# Extensions seem missing?
+# crawl "interlingua" \
+#   "https://addons.mozilla.org/en-us/firefox/addon/dict-ia/" \
+#   "https://addons.mozilla.org/firefox/downloads/latest/dict-ia/addon-514646-latest.xpi"
 crawl "interlingue" \
   "https://github.com/Carmina16/hunspell-ie" \
   "https://github.com/Carmina16/hunspell-ie/archive/master.zip"
@@ -300,8 +302,8 @@ crawl "luxembourgish" \
 #   "https://github.com/dimztimz/hunspell-mk" \
 #   "https://github.com/dimztimz/hunspell-mk/archive/master.zip"
 crawl "mongolian" \
-  "http://extensions.openoffice.org/en/project/mongol-helniy-ugiyn-aldaa-shalgagch-ueer-taslagch-mongolian-spelling-and-hyphenation" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/3204/2/dict-mn.oxt"
+  "https://github.com/bataak/dict-mn" \
+  "https://github.com/bataak/dict-mn/archive/main.zip"
 crawl "nepali" \
   "http://ltk.org.np" \
   "http://ltk.org.np/downloads/ne_NP_dict.zip"
@@ -457,7 +459,7 @@ cd ../../.. || exit
 
 echo "  greek (polyton)"
 cd "$SOURCES/greek-polyton" || exit
-sed -i '' 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
+sed -i 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
 printf "   $(green "✓") fixed tab\n"
 cd ../.. || exit
 
@@ -546,10 +548,10 @@ generate "cs" "czech" \
   "cs_CZ.dic" "ISO8859-2" \
   "cs_CZ.aff" "ISO8859-2" \
   "GPL-2.0" "README_en.txt" "UTF-8"
-generate "da" "danish" \
-  "da_DK.dic" "UTF-8" \
-  "da_DK.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_da_DK.txt" "UTF-8"
+# generate "da" "danish" \
+#   "da_DK.dic" "UTF-8" \
+#   "da_DK.aff" "UTF-8" \
+#   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README_da_DK.txt" "UTF-8"
 generate "de" "german" \
   "hunspell/de_DE.dic" "ISO8859-1" \
   "hunspell/de_DE.aff" "ISO8859-1" \
@@ -749,10 +751,10 @@ generate "hyw" "armenian-western" \
   "hy_AM_western.dic" "UTF-8" \
   "hy_AM_western.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "COPYING" "UTF-8"
-generate "ia" "interlingua" \
-  "dictionaries/ia.dic" "UTF-8" \
-  "dictionaries/ia.aff" "UTF-8" \
-  "GPL-3.0" "dictionaries/README_dict-ia.txt" "UTF-8"
+# generate "ia" "interlingua" \
+#   "dictionaries/ia.dic" "UTF-8" \
+#   "dictionaries/ia.aff" "UTF-8" \
+#   "GPL-3.0" "dictionaries/README_dict-ia.txt" "UTF-8"
 generate "ie" "interlingue" \
   "hunspell-ie-master/ie.dic" "UTF-8" \
   "hunspell-ie-master/ie.aff" "UTF-8" \
@@ -798,9 +800,9 @@ generate "lv" "latvian" \
 #   "hunspell-mk-master/release/mk.aff" "UTF-8" \
 #   "GPL-3.0" "hunspell-mk-master/release/LICENCE.txt" "UTF-8"
 generate "mn" "mongolian" \
-  "mn_MN.dic" "UTF-8" \
-  "mn_MN.aff" "UTF-8" \
-  "GPL-2.0" "README_mn_MN.txt" "UTF-8"
+  "dict-mn-main/mn_MN/mn_MN.dic" "UTF-8" \
+  "dict-mn-main/mn_MN/mn_MN.aff" "UTF-8" \
+  "LPPL-1.3c" "dict-mn-main/mn_MN/README_mn_MN.txt" "UTF-8"
 generate "ne" "nepali" \
   "ne_NP.dic" "UTF-8" \
   "ne_NP.aff" "UTF-8" \
