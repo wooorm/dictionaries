@@ -1,22 +1,25 @@
 declare namespace load {
+  /**
+   * Object representing a hunspell dictionary, with `aff` and `dic` fields
+   */
   interface Dictionary {
     /**
-     * A buffer for the affix file at `index.aff` in UTF-8.
+     * Buffer in UTF-8 for the affix file (defines the language, keyboard, flags, and more).
      */
     aff: Buffer
 
     /**
-     * A buffer for the dictionary file at `index.dic` in UTF-8.
+     * Buffer in UTF-8 for the dictionary file (contains words and flags applying to those words).
      */
     dic: Buffer
   }
 
-  type Callback = (error: NodeJS.ErrnoException | null, result: Dictionary) => void;
+  /**
+   * Callback called when dictionary is loaded.
+   */
+  type Callback = (error: NodeJS.ErrnoException | undefined, result: Dictionary) => void;
 }
 
-/**
- * Load the dictionary.
- */
 declare const load: (callback: load.Callback) => void
 
 export = load
