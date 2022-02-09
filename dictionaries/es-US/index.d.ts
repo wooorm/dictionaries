@@ -1,6 +1,6 @@
 declare namespace load {
   /**
-   * Object representing a hunspell dictionary, with `aff` and `dic` fields
+   * Object representing a hunspell dictionary, with `aff` and `dic` fields.
    */
   interface Dictionary {
     /**
