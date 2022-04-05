@@ -423,6 +423,9 @@ crawl "ukrainian" \
 crawl "vietnamese" \
   "https://github.com/1ec5/hunspell-vi" \
   "https://github.com/1ec5/hunspell-vi/releases/download/v2.2.0/vi_spellchecker_OOo3.oxt"
+crawl "welsh-gb" \
+  "https://github.com/techiaith/hunspell-cy" \
+  "https://github.com/techiaith/hunspell-cy/archive/master.zip"
 
 printf "$(bold "Crawled")!\n\n"
 
@@ -900,5 +903,9 @@ generate "vi" "vietnamese" \
   "dictionaries/vi_VN.dic" "UTF-8" \
   "dictionaries/vi_VN.aff" "UTF-8" \
   "GPL-2.0" "LICENSES-en.txt" "UTF-8"
+generate "cy-GB" "welsh-gb" \
+  "hunspell-cy-master/cy_GB.dic" "UTF-8" \
+  "hunspell-cy-master/cy_GB.aff" "UTF-8" \
+  "LGPL-3.0" "hunspell-cy-master/LICENCE" "UTF-8"
 
 printf "$(bold "Generated")!\n\n"
