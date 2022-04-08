@@ -322,11 +322,12 @@ crawl "persian" \
   "https://github.com/b00f/lilak/releases/download/v3.3/fa-IR.zip"
 crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt"
-# See https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/
+  "https://master.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt?viasf=1"
+# Go to <https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/>,
+# get the last one before `hunspell-pt_PT-preao*`
 crawl "portuguese-pt" \
   "https://natura.di.uminho.pt" \
-  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20201212.tar.gz"
+  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20220304.tar.gz"
 # See: https://rospell.wordpress.com/download/
 crawl "romanian" \
   "https://rospell.wordpress.com" \
