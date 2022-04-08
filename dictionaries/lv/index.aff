@@ -3,9 +3,9 @@
 # Latvian affix table for OpenOffice v.v. 2.4.1 and 3.x.x, LibreOffice
 # and other applications using HunSpell as the backend
 #
-# Copyright (C) 2002-2016 Janis Eisaks, jancs@dv.lv
+# Copyright (C) 2002-2020 Janis Eisaks, jancs@dv.lv
 #
-# Versija//Version: 1.2.0
+# Versija//Version: 1.4.0
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -51,7 +51,7 @@ CIRCUMFIX |
 MAXNGRAMSUGS 6
 NOSPLITSUGS
 
-REP 93
+REP 92
 REP ike iek
 REP via vai
 REP lig līg
@@ -144,7 +144,7 @@ REP tāpēcka tāpēc_ka
 REP tiklīdzkā tiklīdz_kā
 REP tiktikko tik_tikko
 REP vaiarī vai_arī
-REP vainu vai_nu
+#REP vainu vai_nu
 
 
 SFX = Y 1
@@ -1599,14 +1599,14 @@ SFX F  cēt kat    [t]ecēt   is:2dtt0
 SFX F  cēt kiet   [t]ecēt   is:2dttp
 SFX F  cēt kot    [t]ecēt   is:0xtta
 SFX F  cēt k/]|   [t]ecēt   is:0xttv
-SFX F  īt  u   [^cz]īt   is:1vtt0
-SFX F  īt  i   [^cz]īt   is:2vtt0
-SFX F  īt  a   [^cz]īt   is:3xtt0
-SFX F  īt  ām  [^cz]īt   is:1dtt0
-SFX F  īt  āt  [^cz]īt   is:2dtt0
-SFX F  īt  iet [^cz]īt   is:2dttp
-SFX F  īt  ot  [^cz]īt   is:0xtta
-SFX F  īt  a/]| |^cz]īt   is:0xttv
+SFX F  īt  u    [^cz]īt   is:1vtt0
+SFX F  īt  i    [^cz]īt   is:2vtt0
+SFX F  īt  a    [^cz]īt   is:3xtt0
+SFX F  īt  ām   [^cz]īt   is:1dtt0
+SFX F  īt  āt   [^cz]īt   is:2dtt0
+SFX F  īt  iet  [^cz]īt   is:2dttp
+SFX F  īt  ot   [^cz]īt   is:0xtta
+SFX F  īt  a/]| [^cz]īt   is:0xttv
 SFX F  cīt ku    [^āīr]cīt   is:1vtt0
 SFX F  cīt ki    [^āīr]cīt   is:2vtt0
 SFX F  cīt ka    [^āīr]cīt   is:3xtt0

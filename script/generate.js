@@ -1,5 +1,5 @@
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 import {isHidden} from 'is-hidden'
 import {parse} from 'bcp-47'
 import tags from 'language-tags'
