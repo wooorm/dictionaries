@@ -283,9 +283,10 @@ crawl "korean" \
 crawl "latgalian" \
   "http://dict.dv.lv/home.php?prj=la" \
   "http://dict.dv.lv/download/ltg_LV-0.1.5.oxt"
+# Go to <http://dict.dv.lv/download.php?prj=lv>, copy the url of the latest `.oxt`.
 crawl "latvian" \
   "http://dict.dv.lv/home.php?prj=lv" \
-  "http://dict.dv.lv/download/lv_LV-1.3.0.oxt"
+  "http://dict.dv.lv/download/lv_LV-1.4.0.oxt"
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
