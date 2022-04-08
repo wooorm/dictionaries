@@ -30,13 +30,13 @@
     "language-tags": "^1.0.0",
     "mdast-zone": "^5.0.0",
     "prettier": "^2.0.0",
-    "remark-cli": "^9.0.0",
-    "remark-preset-wooorm": "^8.0.0",
+    "remark-cli": "^10.0.0",
+    "remark-preset-wooorm": "^9.0.0",
     "tape": "^5.0.0",
     "to-vfile": "^7.0.0",
     "unist-builder": "^3.0.0",
     "utf-8-validate": "^5.0.0",
-    "xo": "^0.39.0"
+    "xo": "^0.48.0"
   },
   "scripts": {
     "generate": "sh script/crawl.sh && node script/generate",
@@ -55,6 +55,7 @@
   "xo": {
     "prettier": true,
     "rules": {
+      "unicorn/prefer-module": "off",
       "unicorn/prefer-switch": "off"
     }
   },
@@ -71,7 +72,7 @@
         "lint-table-pipe-alignment",
         false
       ],
-      "./script/list-of-dictionaries"
+      "./script/list-of-dictionaries.js"
     ]
   }
 }
