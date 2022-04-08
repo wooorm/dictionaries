@@ -218,10 +218,10 @@ crawl "english-australian" \
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
-# TODO: Stava is down.
-# crawl "faroese" \
-#   "http://www.stava.fo" \
-#   "http://www.stava.fo/download/hunspell.zip"
+# Go to <https://stava.glasir.fo>, click the tiny plus in the left bottom
+crawl "faroese" \
+  "https://stava.glasir.fo" \
+  "https://stava.glasir.fo/download/hunspell.zip"
 crawl "french" \
   "https://grammalecte.net" \
   "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.1.2.oxt"
@@ -703,11 +703,10 @@ generate "fa" "persian" \
   "fa-IR/fa-IR.dic" "UTF-8" \
   "fa-IR/fa-IR.aff" "UTF-8" \
   "Apache-2.0" "fa-IR/license" "UTF-8"
-# TODO: Stava is down.
-# generate "fo" "faroese" \
-#   "fo_FO.dic" "ISO8859-1" \
-#   "fo_FO.aff" "ISO8859-1" \
-#   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
+generate "fo" "faroese" \
+  "fo_FO.dic" "ISO8859-1" \
+  "fo_FO.aff" "ISO8859-1" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "LICENSE_en_US.txt" "UTF-8"
 # French: use classic (“classique”) because the readme suggests so.
 generate "fr" "french" \
   "dictionaries/fr-classique.dic" "UTF-8" \
