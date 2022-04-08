@@ -1,7 +1,7 @@
 {
-  "name": "dictionary-cy-gb",
+  "name": "dictionary-cy",
   "version": "0.0.0",
-  "description": "Welsh (United Kingdom) spelling dictionary in UTF-8",
+  "description": "Welsh spelling dictionary in UTF-8",
   "license": "LGPL-3.0",
   "keywords": [
     "spelling",
@@ -9,12 +9,9 @@
     "hunspell",
     "dictionary",
     "cy",
-    "gb",
-    "welsh",
-    "united",
-    "kingdom"
+    "welsh"
   ],
-  "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/cy-GB",
+  "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/cy",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
   "funding": {
     "type": "github",

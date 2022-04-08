@@ -18,7 +18,7 @@ file still has its original license!
 
 <!--support start-->
 
-In total 91 dictionaries are provided.
+In total 92 dictionaries are provided.
 
 | Name | Description | License |
 | - | - | - |
@@ -27,6 +27,7 @@ In total 91 dictionaries are provided.
 | [`dictionary-ca`](dictionaries/ca) | Catalan | [(GPL-2.0 OR LGPL-2.1)](dictionaries/ca/license) |
 | [`dictionary-ca-valencia`](dictionaries/ca-valencia) | Catalan (Valencian) | [(GPL-2.0 OR LGPL-2.1)](dictionaries/ca-valencia/license) |
 | [`dictionary-cs`](dictionaries/cs) | Czech | [GPL-2.0](dictionaries/cs/license) |
+| [`dictionary-cy`](dictionaries/cy) | Welsh | [LGPL-3.0](dictionaries/cy/license) |
 | [`dictionary-da`](dictionaries/da) | Danish | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/da/license) |
 | [`dictionary-de`](dictionaries/de) | German | [(GPL-2.0 OR GPL-3.0)](dictionaries/de/license) |
 | [`dictionary-de-at`](dictionaries/de-AT) | German (Austria) | [(GPL-2.0 OR GPL-3.0)](dictionaries/de-AT/license) |
