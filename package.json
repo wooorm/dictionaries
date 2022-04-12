@@ -54,6 +54,10 @@
   },
   "xo": {
     "prettier": true,
+    "ignores": [
+      "dictionaries/*/index.d.ts",
+      "script/template/index.d.ts"
+    ],
     "rules": {
       "unicorn/prefer-module": "off",
       "unicorn/prefer-switch": "off"

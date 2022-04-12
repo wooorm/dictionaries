@@ -14,8 +14,11 @@ const docs = String(
 const main = String(
   fs.readFileSync(path.join('script', 'template', 'index.js'))
 )
+const types = String(
+  fs.readFileSync(path.join('script', 'template', 'index.d.ts'))
+)
 
-const types = {
+const labels = {
   variants: 'variant',
   extensions: 'extlang'
 }
@@ -74,7 +77,7 @@ while (++index < dictionaries.length) {
   for (key in tag) {
     if (!own.call(tag, key)) continue
 
-    const label = types[key] || key
+    const label = labels[key] || key
     const value = Array.isArray(tag[key]) ? tag[key] : [tag[key]]
     let offset = -1
 
@@ -134,7 +137,7 @@ while (++index < dictionaries.length) {
     funding: pkg.funding,
     author: pkg.author,
     contributors: pkg.contributors,
-    files: ['index.js', 'index.aff', 'index.dic']
+    files: ['index.js', 'index.aff', 'index.dic', 'index.d.ts']
   }
 
   fs.writeFileSync(
@@ -151,6 +154,8 @@ while (++index < dictionaries.length) {
   )
 
   fs.writeFileSync(path.join(base, 'index.js'), main)
+
+  fs.writeFileSync(path.join(base, 'index.d.ts'), types)
 
   fs.writeFileSync(
     path.join(base, 'package.json'),

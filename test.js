@@ -50,6 +50,7 @@ function requiredFiles(name) {
     'index.aff',
     'readme.md',
     'index.js',
+    'index.d.ts',
     'package.json'
   ]
   let index = -1
