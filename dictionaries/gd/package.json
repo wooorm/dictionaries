@@ -1,7 +1,7 @@
 {
   "name": "dictionary-gd",
   "version": "1.2.0",
-  "description": "Scottish Gaelic (or Gaelic) spelling dictionary in UTF-8",
+  "description": "Scottish Gaelic (or Gaelic) spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
     "spelling",

@@ -58,7 +58,7 @@ while (++index < dictionaries.length) {
   let pack = {}
   let keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
   let source
-  let description
+  let langName
 
   try {
     source = fs.readFileSync(path.join(base, '.source'), 'utf-8').trim()
@@ -120,16 +120,16 @@ while (++index < dictionaries.length) {
     .filter((d) => (remove[code] ? !remove[code].includes(d) : true))
     .map((d) => (replace[code] ? replace[code][d] : null) || d)
 
-  description = parts[0]
+  langName = parts[0]
 
   if (parts.length > 1) {
-    description += ' (' + parts.slice(1).join('; ') + ')'
+    langName += ' (' + parts.slice(1).join('; ') + ')'
   }
 
   pack = {
     name: 'dictionary-' + code.toLowerCase(),
     version: pack.version || '0.0.0',
-    description: description + ' spelling dictionary in UTF-8',
+    description: langName + ' spelling dictionary',
     license: fs.readFileSync(path.join(base, '.spdx'), 'utf-8').trim(),
     keywords,
     repository: pkg.repository + '/tree/main/dictionaries/' + code,
@@ -145,6 +145,7 @@ while (++index < dictionaries.length) {
     process(
       docs,
       Object.assign({}, pack, {
+        langName,
         source,
         variable: camelcase(code.toLowerCase()),
         code,
@@ -192,11 +193,16 @@ function process(file, config) {
 
   return file
     .replace(/{{NAME}}/g, config.name)
+    .replace(/{{LANG}}/g, config.langName)
     .replace(/{{DESCRIPTION}}/g, config.description)
     .replace(/{{SPDX}}/g, config.license)
     .replace(/{{SOURCE}}/g, source)
     .replace(/{{SOURCE_NAME}}/g, sourceName)
     .replace(/{{VAR}}/g, config.variable)
+    .replace(
+      /{{VAR_CAP}}/g,
+      config.variable.charAt(0).toUpperCase() + config.variable.slice(1)
+    )
     .replace(/{{CODE}}/g, config.code)
     .replace(/{{LICENSE}}/g, license)
 }

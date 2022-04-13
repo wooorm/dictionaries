@@ -1,7 +1,7 @@
 {
   "name": "dictionary-ko",
   "version": "1.2.2",
-  "description": "Korean spelling dictionary in UTF-8",
+  "description": "Korean spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",

@@ -1,7 +1,7 @@
 {
   "name": "dictionary-uk",
   "version": "3.0.0",
-  "description": "Ukrainian spelling dictionary in UTF-8",
+  "description": "Ukrainian spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
     "spelling",

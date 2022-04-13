@@ -1,7 +1,7 @@
 {
   "name": "dictionary-ltg",
   "version": "1.0.3",
-  "description": "Latgalian spelling dictionary in UTF-8",
+  "description": "Latgalian spelling dictionary",
   "license": "LGPL-2.1",
   "keywords": [
     "spelling",

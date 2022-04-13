@@ -1,7 +1,7 @@
 {
   "name": "dictionary-hr",
   "version": "1.5.0",
-  "description": "Croatian spelling dictionary in UTF-8",
+  "description": "Croatian spelling dictionary",
   "license": "(LGPL-2.1 OR SISSL)",
   "keywords": [
     "spelling",

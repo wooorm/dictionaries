@@ -1,7 +1,7 @@
 {
   "name": "dictionary-ne",
   "version": "1.0.3",
-  "description": "Nepali spelling dictionary in UTF-8",
+  "description": "Nepali spelling dictionary",
   "license": "LGPL-2.1",
   "keywords": [
     "spelling",

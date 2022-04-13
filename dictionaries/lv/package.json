@@ -1,7 +1,7 @@
 {
   "name": "dictionary-lv",
   "version": "1.1.0",
-  "description": "Latvian spelling dictionary in UTF-8",
+  "description": "Latvian spelling dictionary",
   "license": "LGPL-2.1",
   "keywords": [
     "spelling",

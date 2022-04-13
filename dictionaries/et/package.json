@@ -1,7 +1,7 @@
 {
   "name": "dictionary-et",
   "version": "1.0.3",
-  "description": "Estonian spelling dictionary in UTF-8",
+  "description": "Estonian spelling dictionary",
   "license": "LGPL-2.1",
   "keywords": [
     "spelling",

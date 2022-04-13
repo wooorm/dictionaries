@@ -1,20 +1,78 @@
+<!-- lint disable no-html -->
+
 # dictionaries
 
-Collection of normalized and easily installable [hunspell][] dictionaries.
-Useful with [`nodehun`][nodehun], [`nspell`][nspell], and others.
+Collection of normalized and installable [hunspell][] dictionaries.
+
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [List of dictionaries](#list-of-dictionaries)
+*   [Examples](#examples)
+    *   [Example: use with `nspell`](#example-use-with-nspell)
+    *   [Example: load files from ESM](#example-load-files-from-esm)
+    *   [Example: load files from CommonJS](#example-load-files-from-commonjs)
+    *   [Example: use with macOS](#example-use-with-macos)
+*   [Types](#types)
+*   [Contribute](#contribute)
+    *   [Build](#build)
+    *   [Updating a dictionary](#updating-a-dictionary)
+    *   [Adding a new dictionary](#adding-a-new-dictionary)
+*   [License](#license)
+
+## What is this?
+
+This monorepo is a bunch of scripts that crawls dictionaries from several
+sources, normalizes them, and packs them so that they can each be installed and
+used in one single way.
+Dictionaries are not maintained here but they are usable from here.
+
+## When should I use this?
+
+You can particularly use the packages here as a programmer when integrating with
+other tools (such as [`nodehun`][nodehun], [`nspell`][nspell]) or when making
+such tools.
 
 ## Install
 
-See each of the below packages for install guidelines.
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 
-## Dictionaries
+```sh
+npm install dictionary-en
+```
 
-Note that normal, canonical, and preferred BCP-47 codes are used.
-To illustrate, as American English and Brazilian Portuguese are the most common
-types of English and Portuguese respectively, they get the codes `en` and `pt`.
+> 👉 **Note**: replace `en` with the language code you want.
+>
+> ⚠️ **Important**: this project itself is MIT, but each `index.dic` and
+> `index.aff` file still has its original license!
 
-**Important**: this project itself is MIT, but each `index.dic` and `index.aff`
-file still has its original license!
+## Use
+
+```js
+import dictionaryEn from 'dictionary-en'
+
+dictionaryEn(function (error, en) {
+  if (error) throw error
+  console.log(en)
+  // To do: use `en` somehow
+})
+```
+
+Yields:
+
+```js
+{dic: <Buffer>, aff: <Buffer>}
+```
+
+## List of dictionaries
+
+> 👉 **Note**: preferred BCP-47 codes are used (according to Unicode CLDR).
+> To illustrate, as American English and Brazilian Portuguese are the most
+> common types of English and Portuguese respectively, they get the codes `en`
+> and `pt`.
 
 <!--support start-->
 
@@ -117,14 +175,126 @@ In total 92 dictionaries are provided.
 
 <!--support end-->
 
-## macOS
+## Examples
 
-Each dictionary can be installed on OS X by following [this StackExchange
-answer][macos].
+### Example: use with `nspell`
 
-## Build
+This example uses `dictionary-en` in combination with [`nspell`][nspell].
 
-I’ve only tested this on macOS, but there you at least need to install:
+<details><summary>Show install command for this example</summary>
+
+```sh
+npm install dictionary-en nspell
+```
+
+</details>
+
+```js
+import dictionaryEn from 'dictionary-en'
+import nspell from 'nspell'
+
+dictionaryEn(function (error, en) {
+  if (error) throw error
+  const spell = nspell(en)
+  console.log(spell.correct('color'))
+  console.log(spell.correct('colour'))
+})
+```
+
+Yields:
+
+```txt
+true
+false
+```
+
+### Example: load files from ESM
+
+This example loads the `index.dic` and `index.aff` files located in
+`dictionary-hyw` (Western Armenian) from a Node.js JavaScript module (ESM).
+
+It uses a ponyfill ([`import-meta-resolve`][import-meta-resolve]) for an
+experimental Node API.
+
+<details><summary>Show install command for this example</summary>
+
+```sh
+npm install dictionary-hyw import-meta-resolve
+```
+
+</details>
+
+```js
+import fs from 'node:fs/promises'
+import {resolve} from 'import-meta-resolve'
+
+main()
+
+async function main() {
+  const base = await resolve('dictionary-hyw', import.meta.url)
+  const dic = await fs.readFile(new URL('index.dic', base))
+  const aff = await fs.readFile(new URL('index.aff', base))
+  console.log(dic, aff)
+}
+```
+
+### Example: load files from CommonJS
+
+This example loads the `index.dic` and `index.aff` files located in
+`dictionary-tlh` (Klingon) from a Node.js CommonJS script (CJS).
+
+<details><summary>Show install command for this example</summary>
+
+```sh
+npm install dictionary-tlh
+```
+
+</details>
+
+```js
+const fs = require('node:fs')
+const path = require('node:path')
+
+main()
+
+async function main() {
+  const base = require.resolve('dictionary-tlh')
+  const dic = await fs.readFile(path.join(base, 'index.dic'))
+  const aff = await fs.readFile(path.join(base, 'index.aff'))
+  console.log(dic, aff)
+}
+```
+
+<!--Old name of the following section:-->
+
+<a name="macos"></a>
+
+### Example: use with macOS
+
+Follow these steps to use a dictionary on macOS:
+
+1.  Navigate to the dictionary you want on GitHub, such as `dictionaries/$code`
+    (replace `$code` with the language code you want)
+2.  Download the `index.aff` and `index.dic` files (i.e., open them, right-click
+    “Raw”, and “download linked files”)
+3.  Rename the download files to `$code.aff` and `$code.dic`
+4.  Move `$code.aff` and `$code.dic` into the folder `~/Library/Spelling/`
+5.  Go to **System Preferences** > **Keyboard** > **Text** > **Spelling** and
+    select your added language (it should come with the `(Library)` suffix and
+    is situated at the bottom)
+
+## Types
+
+The dictionaries are typed with [TypeScript][].
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
+
+### Build
+
+To build this project, on macOS, you at least need to install:
 
 *   **wget**: `brew install wget` (crawling)
 *   **hunspell**: `brew install hunspell` (many dictionaries)
@@ -132,19 +302,26 @@ I’ve only tested this on macOS, but there you at least need to install:
 *   **coreutils**: `brew install coreutils` (many dictionaries)
 *   **ispell**: `brew install ispell` (German)
 
-Note that sed and the GNU replacements should be setup in PATH to overwrite
-macOS defaults.
+> 👉 **Note**: sed and the GNU replacements should be setup in PATH to overwrite
+> macOS defaults.
 
-## Contributing
+### Updating a dictionary
 
-Dictionaries can be added if they:
+Dictionaries are not maintained here.
+Report problems upstream.
 
-*   have a significant affix file (not just a `.dic` file)
-*   have an open source license
-*   are convertible to UTF-8 with **iconv**(1)
+### Adding a new dictionary
 
-The crawling and building is done in [`script/crawl.sh`][crawl].
-Add code there, similar to the existing ones, to include new dictionaries.
+Dictionaries are not maintained here.
+Most languages have a small community or institute that maintains a dictionary,
+and they often do so on GitHub or similar.
+Please ask in the issues to request that such a dictionary is included here.
+
+> 👉 **Note**: acceptable dictionaries must:
+>
+> *   have a significant affix file (not just a `.dic` file)
+> *   have an open source license
+> *   have recent contributions
 
 ## License
 
@@ -153,16 +330,20 @@ Add code there, similar to the existing ones, to include new dictionaries.
 See `license` files in each dictionary for the licensing of `index.dic` and
 `index.aff` files.
 
+[npm]: https://docs.npmjs.com/cli/install
+
 [hunspell]: https://hunspell.github.io
 
 [nodehun]: https://github.com/nathanjsweet/nodehun
 
 [nspell]: https://github.com/wooorm/nspell
 
-[macos]: https://apple.stackexchange.com/a/11842
-
 [mit]: license
 
 [author]: https://wooorm.com
 
-[crawl]: script/crawl.sh
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
+
+[import-meta-resolve]: https://github.com/wooorm/import-meta-resolve

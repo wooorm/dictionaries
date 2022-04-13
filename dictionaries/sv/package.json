@@ -1,7 +1,7 @@
 {
   "name": "dictionary-sv",
   "version": "3.0.2",
-  "description": "Swedish spelling dictionary in UTF-8",
+  "description": "Swedish spelling dictionary",
   "license": "LGPL-3.0",
   "keywords": [
     "spelling",

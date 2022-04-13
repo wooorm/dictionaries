@@ -1,7 +1,7 @@
 {
   "name": "dictionary-he",
   "version": "1.0.4",
-  "description": "Hebrew spelling dictionary in UTF-8",
+  "description": "Hebrew spelling dictionary",
   "license": "AGPL-3.0",
   "keywords": [
     "spelling",

@@ -1,7 +1,7 @@
 {
   "name": "dictionary-en-za",
   "version": "2.1.0",
-  "description": "English (South Africa) spelling dictionary in UTF-8",
+  "description": "English (South Africa) spelling dictionary",
   "license": "LGPL-2.1",
   "keywords": [
     "spelling",

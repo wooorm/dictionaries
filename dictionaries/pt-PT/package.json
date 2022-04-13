@@ -1,7 +1,7 @@
 {
   "name": "dictionary-pt-pt",
   "version": "1.2.0",
-  "description": "Portuguese (Portugal) spelling dictionary in UTF-8",
+  "description": "Portuguese (Portugal) spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",

@@ -1,7 +1,7 @@
 {
   "name": "dictionary-ga",
   "version": "2.2.2",
-  "description": "Irish spelling dictionary in UTF-8",
+  "description": "Irish spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
     "spelling",

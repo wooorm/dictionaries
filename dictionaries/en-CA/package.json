@@ -1,7 +1,7 @@
 {
   "name": "dictionary-en-ca",
   "version": "2.3.0",
-  "description": "English (Canada) spelling dictionary in UTF-8",
+  "description": "English (Canada) spelling dictionary",
   "license": "(MIT AND BSD)",
   "keywords": [
     "spelling",

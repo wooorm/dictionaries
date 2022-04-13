@@ -1,7 +1,7 @@
 {
   "name": "dictionary-cs",
   "version": "3.0.0",
-  "description": "Czech spelling dictionary in UTF-8",
+  "description": "Czech spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
     "spelling",

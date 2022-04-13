@@ -1,7 +1,7 @@
 {
   "name": "dictionary-ia",
   "version": "1.0.4",
-  "description": "Interlingua spelling dictionary in UTF-8",
+  "description": "Interlingua spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
     "spelling",

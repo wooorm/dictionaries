@@ -1,7 +1,7 @@
 {
   "name": "dictionary-rw",
   "version": "1.0.3",
-  "description": "Kinyarwanda spelling dictionary in UTF-8",
+  "description": "Kinyarwanda spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
     "spelling",

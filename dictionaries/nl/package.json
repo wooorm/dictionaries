@@ -1,7 +1,7 @@
 {
   "name": "dictionary-nl",
   "version": "1.5.0",
-  "description": "Dutch (or Flemish) spelling dictionary in UTF-8",
+  "description": "Dutch (or Flemish) spelling dictionary",
   "license": "(BSD-3-Clause OR CC-BY-3.0)",
   "keywords": [
     "spelling",

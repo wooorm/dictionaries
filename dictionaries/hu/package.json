@@ -1,7 +1,7 @@
 {
   "name": "dictionary-hu",
   "version": "2.0.2",
-  "description": "Hungarian spelling dictionary in UTF-8",
+  "description": "Hungarian spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "spelling",

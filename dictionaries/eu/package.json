@@ -1,7 +1,7 @@
 {
   "name": "dictionary-eu",
   "version": "3.1.3",
-  "description": "Basque spelling dictionary in UTF-8",
+  "description": "Basque spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
     "spelling",

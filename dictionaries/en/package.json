@@ -1,7 +1,7 @@
 {
   "name": "dictionary-en",
   "version": "3.1.0",
-  "description": "English spelling dictionary in UTF-8",
+  "description": "English spelling dictionary",
   "license": "(MIT AND BSD)",
   "keywords": [
     "spelling",

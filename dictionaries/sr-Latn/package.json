@@ -1,7 +1,7 @@
 {
   "name": "dictionary-sr-latn",
   "version": "3.0.2",
-  "description": "Serbian (Latin script) spelling dictionary in UTF-8",
+  "description": "Serbian (Latin script) spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1 OR CC-BY-SA-3.0)",
   "keywords": [
     "spelling",
