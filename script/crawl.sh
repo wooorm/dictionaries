@@ -176,6 +176,10 @@ crawl "basque" \
   "http://xuxen.eus/eu/home" \
   "http://xuxen.eus/static/hunspell/xuxen_5.1_hunspell.zip"
 # Nothing:
+crawl "belarusian" \
+  "https://github.com/375gnu/hunspell-be" \
+  "https://github.com/375gnu/hunspell-be/archive/master.zip"
+# Nothing:
 crawl "breton" \
   "https://github.com/Drouizig/hunspell-br" \
   "https://github.com/Drouizig/hunspell-br/archive/master.zip"
@@ -609,6 +613,10 @@ printf "$(bold "Made")!\n\n"
 
 printf "$(bold "Generating")...\n"
 
+generate "be" "belarusian" \
+  "hunspell-be-master/be_BY.dic" "UTF-8" \
+  "hunspell-be-master/be_BY.aff" "UTF-8" \
+  "CC-BY-SA-3.0" "hunspell-be-master/debian/copyright" "UTF-8"
 generate "bg" "bulgarian" \
   "OOo-full-pack-bg-4.3/bg_BG.dic" "CP1251" \
   "OOo-full-pack-bg-4.3/bg_BG.aff" "CP1251" \

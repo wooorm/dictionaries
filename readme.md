@@ -76,10 +76,11 @@ Yields:
 
 <!--support start-->
 
-In total 92 dictionaries are provided.
+In total 93 dictionaries are provided.
 
 | Name | Description | License |
 | - | - | - |
+| [`dictionary-be`](dictionaries/be) | Belarusian | [CC-BY-SA-3.0](dictionaries/be/license) |
 | [`dictionary-bg`](dictionaries/bg) | Bulgarian | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/bg/license) |
 | [`dictionary-br`](dictionaries/br) | Breton | [(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)](dictionaries/br/license) |
 | [`dictionary-ca`](dictionaries/ca) | Catalan | [(GPL-2.0 OR LGPL-2.1)](dictionaries/ca/license) |
