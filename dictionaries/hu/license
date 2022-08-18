@@ -17,6 +17,15 @@
  rules (AkH. 12., 2015) was supported by FSF.hu Foundation, Hungary
  (http://www.fsf.hu) between October, 2017 and May, 2018.
 
+= Download dictionary files =
+
+Latest release of hu_HU.aff and hu_HU.dic dictionary files is
+part of LibreOffice office suite:
+
+https://cgit.freedesktop.org/libreoffice/dictionaries/tree/hu_HU
+
+See also http://www.libreoffice.org.
+
 = Requirements =
 
 Hunspell: https://github.com/hunspell/hunspell
