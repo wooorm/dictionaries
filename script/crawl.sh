@@ -171,7 +171,7 @@ crawl "armenian-eastern" \
 crawl "armenian-western" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers" \
   "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
-# See: http://xuxen.eus/eu/deskargatu, click “hunspell”, see the yellow thing.
+# See: http://xuxen.eus/deskargatu, click “hunspell”, see the yellow thing.
 crawl "basque" \
   "http://xuxen.eus/eu/home" \
   "http://xuxen.eus/static/hunspell/xuxen_5.1_hunspell.zip"
@@ -179,23 +179,23 @@ crawl "basque" \
 crawl "breton" \
   "https://github.com/Drouizig/hunspell-br" \
   "https://github.com/Drouizig/hunspell-br/archive/master.zip"
-# See <http://bgoffice.sourceforge.net/ooo/index.html>, pick the first “тук” (which goes to “Bulgarian language support”)
+# See <http://bgoffice.sourceforge.net/ooo/index.html>, pick the first `тук` (which goes to “Bulgarian language support”)
 crawl "bulgarian" \
   "http://bgoffice.sourceforge.net" \
   "https://master.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip?viasf=1"
 # See <https://github.com/Softcatala/catalan-dict-tools/releases>, pick the latest.
 crawl "catalan" \
   "https://github.com/Softcatala/catalan-dict-tools" \
-  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.6/ca.3.0.6-hunspell.zip"
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.7/ca-hunspell.zip"
 # Same as `catalan`
 crawl "catalan-valencian" \
   "https://github.com/Softcatala/catalan-dict-tools" \
-  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.6/ca-valencia.3.0.6-hunspell.zip"
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.7/ca-valencia-hunspell.zip"
 # Nothing:
 crawl "croatian" \
   "https://github.com/krunose/hunspell-hr" \
   "https://github.com/krunose/hunspell-hr/archive/master.zip"
-# See: <http://www.translatoblog.cz/hunspell/>. Or use a custom Google search on
+# See: <http://www.translatoblog.cz/hunspell/> (see `tady`). Or use a custom Google search on
 # that site to look for “hunspell” for recent entries?
 crawl "czech" \
   "http://www.translatoblog.cz/hunspell/" \
@@ -203,7 +203,7 @@ crawl "czech" \
 # See <https://stavekontrolden.dk/?dictionaries=1>, get the OXT link.
 crawl "danish" \
   "https://stavekontrolden.dk" \
-  "https://stavekontrolden.dk/dictionaries/da_DK/da_DK-2.6.249.oxt"
+  "https://stavekontrolden.dk/dictionaries/da_DK/da_DK-2.7.026.oxt"
 # Nothing:
 crawl "dutch" \
   "https://github.com/OpenTaal/opentaal-hunspell" \
@@ -211,7 +211,7 @@ crawl "dutch" \
 # Go to the link, get the latest.
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://deac-fra.dl.sourceforge.net/project/aoo-extensions/17102/74/dict-en-20220201_aoo.oxt"
+  "https://altushost-swe.dl.sourceforge.net/project/aoo-extensions/17102/80/dict-en-20220801_aoo.oxt"
 # Go to the link, go to “Additional Hunspell Dictionaries”, go to “Parent folder”.
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
@@ -232,7 +232,8 @@ crawl "english-australian" \
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
   "http://www.esperantilo.org/evortaro.zip"
-# Go to <https://stava.glasir.fo>, click the tiny plus in the left bottom
+# Probably nothing.
+# If not: go to <https://stava.glasir.fo>, click the tiny plus in the left bottom, scroll to `Hunspell`.
 crawl "faroese" \
   "https://stava.glasir.fo" \
   "https://stava.glasir.fo/download/hunspell.zip"
@@ -262,6 +263,7 @@ crawl "galician" \
 crawl "georgian" \
   "https://github.com/gamag/ka_GE.spell" \
   "https://github.com/gamag/ka_GE.spell/archive/master.zip"
+# Not updated in 6 years.
 # Go to <https://www.j3e.de/ispell/igerman98/dict/>, get the latest
 # `igerman98-20*` tarball.
 crawl "german" \
@@ -286,7 +288,8 @@ crawl "hebrew" \
 # copy/paste the URL of the latest `.zip` file.
 crawl "hungarian" \
   "https://github.com/laszlonemeth/magyarispell" \
-  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2019.11.11.09.22/MagyarIspell_b06fc12.zip"
+  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2022.02.18.09.36/MagyarIspell_67770a2.zip"
+# Hasn’t updated in 8 years.
 # Go to <https://addons.thunderbird.net/en-US/thunderbird/addon/dict-ia/>,
 # copy/paste the URL for “Download Now” (but clean it).
 crawl "interlingua" \
@@ -302,9 +305,9 @@ crawl "irish" \
   "https://github.com/kscanne/gaelspell" \
   "https://github.com/kscanne/gaelspell/releases/download/v5.1/hunspell-ga-5.1.zip"
 # Down, unfortunately :'(
-crawl "italian" \
-  "http://www.plio.it" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1204/14/dict-it.oxt"
+# crawl "italian" \
+#   "http://www.plio.it" \
+#   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1204/14/dict-it.oxt"
 # Nothing:
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
@@ -329,7 +332,7 @@ crawl "latvian" \
 # Hasn’t been updates in 10 years.
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
+  "https://deac-fra.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
 # Nothing.
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
@@ -364,10 +367,10 @@ crawl "norwegian" \
   "http://no.speling.org" \
   "https://alioth-archive.debian.org/releases/spell-norwegian/spell-norwegian/spell-norwegian-latest.zip"
 # Go to <https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian>,
-# click the `.oxt`, copy/paste the “Download” URL
+# click the `corrector_occitan_lengadocian_….oxt` (last?), copy/paste the “Download” URL
 crawl "occitan" \
   "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian" \
-  "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian/-/raw/master/corrector_occitan_lengadocian_1-2.oxt?inline=false"
+  "https://gitlab.com/taissou/hunspell-files-for-occitan-lengadocian/-/raw/master/corrector_occitan_lengadocian_1-2.oxt"
 # Go to <https://github.com/b00f/lilak/releases>, get the latest `fa-IR.zip`.
 crawl "persian" \
   "https://github.com/b00f/lilak" \
@@ -377,15 +380,16 @@ crawl "polish" \
   "http://extensions.openoffice.org/en/project/polish-dictionary-pack" \
   "https://master.dl.sourceforge.net/project/aoo-extensions/806/4/pl-dict.oxt?viasf=1"
 # Go to <https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/>,
-# get the last one before `hunspell-pt_PT-preao*`
+# get the last one **before** `hunspell-pt_PT-preao*`
 crawl "portuguese-pt" \
   "https://natura.di.uminho.pt" \
-  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20220304.tar.gz"
+  "https://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20220621.tar.gz"
 # Go to <https://rospell.wordpress.com/download/>,
 # get the hunspell one.
 crawl "romanian" \
   "https://rospell.wordpress.com" \
   "https://master.dl.sourceforge.net/project/rospell/Romanian%20dictionaries/dict-3.3.10/ro_RO.3.3.10.zip?viasf=1"
+# Not updated in 9 years.
 # Go to <https://bitbucket.org/Shaman_Alex/russian-dictionary-hunspell/downloads/>,
 # (or find the link to that on <https://code.google.com/archive/p/hunspell-ru/>).
 crawl "russian" \
@@ -404,7 +408,7 @@ crawl "slovak" \
 # get the top “download”.
 crawl "slovenian" \
   "https://extensions.libreoffice.org/extensions/slovenian-dictionary-pack/" \
-  "https://extensions.libreoffice.org/assets/downloads/752/pack-sl.oxt"
+  "https://extensions.libreoffice.org/assets/downloads/752/1659538154/pack-sl.oxt"
 # Go to <https://github.com/sbosio/rla-es/releases>,
 # hopefully only the version number changes 😅
 crawl "spanish" \
@@ -495,12 +499,13 @@ crawl "turkmen" \
 # get the top `hunspell-uk`.
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
-  "https://github.com/brown-uk/dict_uk/releases/download/v5.6.0/hunspell-uk_UA_5.6.0.zip"
+  "https://github.com/brown-uk/dict_uk/releases/download/v5.8.0/hunspell-uk_UA_5.8.0.zip"
 # Hasn’t updated in 8 years, but:
 # Go to <https://github.com/1ec5/hunspell-vi/releases>.
 crawl "vietnamese" \
   "https://github.com/1ec5/hunspell-vi" \
   "https://github.com/1ec5/hunspell-vi/releases/download/v2.2.0/vi_spellchecker_OOo3.oxt"
+# Nothing.
 crawl "welsh-gb" \
   "https://github.com/techiaith/hunspell-cy" \
   "https://github.com/techiaith/hunspell-cy/archive/master.zip"
@@ -843,10 +848,11 @@ generate "is" "libreoffice" \
   "dictionaries-master/is/is.dic" "UTF-8" \
   "dictionaries-master/is/is.aff" "UTF-8" \
   "CC-BY-SA-3.0" "dictionaries-master/is/license.txt" "UTF-8"
-generate "it" "italian" \
-  "dictionaries/it_IT.dic" "UTF-8" \
-  "dictionaries/it_IT.aff" "UTF-8" \
-  "GPL-3.0" "dictionaries/README.txt" "UTF-8"
+# Offline...
+# generate "it" "italian" \
+#   "dictionaries/it_IT.dic" "UTF-8" \
+#   "dictionaries/it_IT.aff" "UTF-8" \
+#   "GPL-3.0" "dictionaries/README.txt" "UTF-8"
 generate "ka" "georgian" \
   "ka_GE.spell-master/dictionaries/ka_GE.dic" "UTF-8" \
   "ka_GE.spell-master/dictionaries/ka_GE.aff" "UTF-8" \
