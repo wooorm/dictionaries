@@ -1,11 +1,11 @@
 # Author: Pander <pander@users.sourceforge.net>
 # License: Apache License 2.0
 # Homepage: https://github.com/PanderMusubi/klingon
-# Version: 1.0.8
-# Date: 2021-08-10 18:54:58
+# Version: 1.0.9
+# Date: 2022-05-08 07:52:45
 # Source: build from boQwI' version 2.0
 SET UTF-8
-TRY a'ohIenlutgHmrqSDjpbywvcQ
+TRY a'ohIenlutgHrmqSDjpbwyvcQ
 WORDCHARS abceghjlmnopqrtuvwy'DHIQS’
 ICONV 1
 ICONV ’ '
