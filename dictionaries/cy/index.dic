@@ -1,4 +1,4 @@
-54558
+54992
 
 'ch
 'dach
@@ -262,6 +262,7 @@ achos/CHv
 achoseg/H
 achosegol/H
 achosi/H
+achosiad/BH
 achosiaeth/H
 achosiant/H
 achosol/H
@@ -348,6 +349,7 @@ actwyr/H
 acw/H
 acwafeithrin/H
 acwafeithriNI/Hv
+acwaponeg/H
 acwaria/H
 acwariwm/H
 acwatint/BH
@@ -375,6 +377,7 @@ adail/H
 adain/H
 adainfur/DH
 adalw/Hvw
+adalwad/BH
 adalwadwy/H
 Adam/H
 adamant/H
@@ -497,6 +500,7 @@ addysged/BH
 addysgedd/H
 addysgedig/H
 addysgeg/H
+addysgegol/H
 addysgfa/H
 addysgfeydd/H
 addysgiadol/H
@@ -1115,6 +1119,7 @@ afrealistig/H
 afrealrwydd/H
 afreidiau/H
 afreidiol/H
+afreidrwydd/H
 afreolaeth/H
 afreolaidd/H
 afreoleidd-dra/H
@@ -1269,6 +1274,7 @@ ailaddasiad/BH
 ailaddurn/Hv
 ailaddurno/H
 ailadeilad/Hv
+ailadeiladol/H
 ailadeiladu/H
 ailadneuo/H
 ailadrodd/Hv
@@ -1280,6 +1286,7 @@ ailafael/Hv
 ailafaeli/Hv
 ailafaelyd/H
 ailagor/H
+ailalinio/H
 ailallforiad/BH
 ailallforio/H
 ailarfog/Hv
@@ -1394,9 +1401,13 @@ aildrefnu/H
 aildroedio/H
 aildrosedd/Hv
 aildroseddu/H
+aildrosglwyddiad/BH
+aildrosglwyddo/H
 aildrydanadwy/H
 aildwymo/H
 aildyf/Hv
+aildyfiannau/H
+aildyfiant/H
 aildyfu/H
 ailedrych/Hv
 ailegino/H
@@ -1427,6 +1438,8 @@ ailfedyddwraig/H
 ailfedyddwyr/H
 Ailfedyddwyr/H
 ailfedylwyr/H
+ailfeintio/H
+ailfeintiol/H
 ailffocysu/H
 ailfforestu/H
 ailfformati/Hv
@@ -1498,6 +1511,7 @@ ailgyfodi/H
 ailgyfodol/H
 ailgyfrif/H
 ailgyfuniad/BH
+ailgyfunol/H
 ailgyhoedd/Hv
 ailgyhoeddi/H
 ailgyhoeddiad/BH
@@ -1722,6 +1736,8 @@ alelomorff/BH
 alelomorffig/H
 alergaidd/H
 alergedd/BH
+alergen/BH
+alergenig/H
 alergol/H
 alewron/H
 alfeolaidd/H
@@ -1778,6 +1794,7 @@ allanoliad/BH
 allanolion/H
 allanolwr/H
 allanolwyr/H
+allanolyn/H
 allanu/H
 allblyg/H
 allblygiad/H
@@ -1858,8 +1875,11 @@ allgarwch/H
 allgarwr/H
 allgarwyr/H
 allgau/H
+allgáu/H
 allgellog/H
 allglofan/FH
+allgludiad/H
+allgludo/H
 allgludol/H
 Allgo/H
 allgofnod/Hv
@@ -1893,6 +1913,8 @@ allosod/H
 allosodiad/BH
 allraddiad/BH
 allrediad/BH
+allrwyd/H
+allrwydi/H
 allsianel/BH
 allsynhwyraidd/H
 Allt-y-grug/H
@@ -1948,6 +1970,7 @@ Almaen/H
 Almaenaidd/H
 Almaeneg/H
 Almaenes/BH
+almaenig/H
 Almaenwr/H
 Almaenwyr/H
 almanac/DH
@@ -2160,6 +2183,7 @@ amgrwm/H
 amgrym/H
 amgrymedd/BH
 amgrypti/Hv
+amgryptiad/BH
 amgryptio/H
 amguddiad/BH
 amgueddfa/H
@@ -2308,21 +2332,25 @@ amlap/DH
 amlapi/Hv
 amlapio/H
 amlarfod/H
+amlasiantaeth/BH
 amlasiantaethol/H
 amlbenrhynnol/H
 amlblecsydd/CH
 amlbleidiol/H
+amlbleth/H
 amlblwyfaeth/H
 amlblwyfol/H
 amlblwyfydd/CH
 amlblyg/H
 amlbreswyliaeth/H
 amlbriod/H
+amlbriodas/H
 amlbroffesiwn/H
 amlbroses/H
 amlbrosesydd/CH
 amlbwrpas/H
 amlbwrpasedd/H
+amlddefnydd/H
 amlddefnyddiwr/H
 amlddefnyddwyr/H
 amlddeiliadaeth/BH
@@ -2332,6 +2360,7 @@ amlddigid/H
 amlddirgrynydd/CH
 amlddisgyblaeth/H
 amlddisgyblaethol/H
+amlddiwylliannaeth/H
 amlddiwylliannol/H
 amlddrychigaeth/H
 amldduwiad/H
@@ -2342,6 +2371,7 @@ amlder/BH
 amldon/H
 amldra/H
 amldrac/DH
+amldro/H
 amled/H
 amledau/H
 amledd/BH
@@ -2451,6 +2481,7 @@ amodi/H
 amodiad/H
 amodig/H
 amodol/H
+amodoldeb/BH
 amoebaidd/H
 amonia/H
 amoniac/H
@@ -2515,6 +2546,7 @@ amrywioldeb/BH
 amrywiolion/H
 amrywiolyn/H
 amrywion/H
+amrywogaeth/BH
 amser-llawn/H
 amser/BEHv
 amserach/H
@@ -2573,6 +2605,7 @@ anabled/H
 anabledd/BH
 anablu/H
 anabolaeth/H
+anabolig/H
 anacademaidd/H
 anachubol/H
 anacroniaeth/BH
@@ -2580,6 +2613,7 @@ anacrwses/H
 anacrwsis/BH
 anacrwstig/H
 anactif/H
+anactifadu/H
 anactifedd/H
 anad/H
 anaddas/Hv
@@ -2618,6 +2652,8 @@ anaf/BHv
 anafdod/H
 anafedig/CH
 anaffas/H
+anaffylacsis/H
+anaffylactig/H
 anafiad/BH
 anafiadau/H
 Anafon/H
@@ -2786,6 +2822,7 @@ anfadwaith/H
 anfadwr/H
 anfadwyr/H
 anfagnetig/H
+anfalaen/H
 anfantais/H
 anfanteisiol/H
 anfanteision/H
@@ -3091,6 +3128,7 @@ anghyfreithlondeb/H
 anghyfrifol/H
 anghyfunrhyw/H
 anghyfyngedig/H
+anghylchol/H
 anghymarebol/H
 anghymarus/H
 anghymdeithasgar/H
@@ -3126,6 +3164,7 @@ anghymysgadwy/H
 anghynaladwy/H
 anghynefin/H
 anghynefindra/H
+anghynhenid/H
 anghynhwysol/H
 anghynhyrchiol/H
 anghynnes/H
@@ -3168,6 +3207,8 @@ anghywir/H
 anghywirdeb/BH
 anghywrain/H
 anghywreini/H
+angioplasteg/H
+angioplasti/H
 angiosberm/BH
 angladd/BH
 angladdol/H
@@ -3432,6 +3473,7 @@ annhebygol/H
 annhebygolrwydd/H
 annhebygrwydd/H
 annhec/H
+annhechnegol/H
 annheg/H
 annhegwch/H
 annheilwng/H
@@ -3596,6 +3638,7 @@ anoddefgar/H
 anoddefgarwch/H
 anoddefiad/H
 anoddun/H
+anodedig/H
 anodeiddio/H
 anodi/H
 anodiad/BH
@@ -3699,6 +3742,8 @@ ansoddi/H
 ansoddion/H
 ansoddol/H
 ansoddyn/H
+ansolfedd/BH
+ansolfent/H
 anstatudol/H
 answyddogol/H
 ansyber/H
@@ -3741,6 +3786,7 @@ antholeg/BH
 Anthony/H
 anthosyanin/BH
 anthracs/H
+anthrasen/H
 anthropoid/BH
 anthropoleg/H
 anthropolegol/H
@@ -3759,6 +3805,7 @@ anticlinoria/H
 anticlinoriwm/H
 antiffon/BH
 antigen/BH
+antigenig/H
 antimoni/H
 antinod/BH
 antinomaidd/H
@@ -4038,6 +4085,7 @@ aradrwr/H
 aradrwyr/H
 aradu/H
 arae/BH
+aráe/H
 aräe/H
 araeau/H
 araeddfedu/H
@@ -4470,6 +4518,7 @@ arhosfa/H
 arhosiad/H
 arhosol/H
 arhydol/H
+arhythmia/H
 arhythmig/H
 aria/H
 Ariad/H
@@ -4514,6 +4563,7 @@ aristocrat/GH
 aristocrataidd/H
 arlais/H
 arleisiau/H
+arleisiol/H
 arlliw-wyr/H
 arlliw/DH
 arlliwedig/H
@@ -4567,6 +4617,7 @@ armonicau/H
 arna/H
 arnaf/H
 arnat/H
+arnawf/H
 arnewid/H
 arni/H
 arno/H
@@ -5006,6 +5057,8 @@ atblygiad/BH
 atblygol/H
 atbor/CH
 atbreis/H
+atchwanegiad/BH
+atchwel/H
 atchweliad/BH
 atchwelyd/Hv
 atchwyddiant/H
@@ -5022,12 +5075,14 @@ atebydd/H
 atecbost/H
 ateg/CHv
 ategiad/BH
+ategion/H
 ategol/H
 ategolion/H
 ategolyn/H
 ategu/H
 ategwaith/H
 ategweithiau/H
+ategyn/H
 ateli/Hw
 atethol/H
 atffurfiant/H
@@ -5044,6 +5099,7 @@ atgasedd/H
 atgasrwydd/H
 atgenedl/Hz
 atgenhedliad/H
+atgenhedlol/H
 atgenhedlu/H
 atglaf/H
 atglafych/Hv
@@ -5077,6 +5133,7 @@ atgyfaniad/BH
 atgyfann/Hv
 atgyfannu/H
 atgyfeiriad/BH
+atgyfeirio/H
 atgyfenn/Hw
 atgyffwrdd/H
 atgyflyr/Hv
@@ -5201,6 +5258,7 @@ atredeg/H
 atrediad/BH
 atresia/H
 atria/H
+atrïaidd/H
 atriwm/H
 atro/H
 atrO/Hv
@@ -5213,6 +5271,7 @@ atseinio/H
 atseiniol/H
 atwf/H
 atwrnai/H
+atwrneiaeth/BH
 atwrneiod/H
 atwynt/H
 atyf/Hv
@@ -5324,12 +5383,37 @@ awtistig/H
 awto-cod/BH
 awto-erotig/H
 awto-gysylltnodi/H
+awtobeilot/GH
+awtobost/H
 awtocatalysis/H
 awtocrat/GH
 awtocratiaeth/H
 awtocratig/H
+awtoddiweddaru/H
+awtodeip/H
+awtodestun/H
 awtoditradydd/CH
+awtodrefnu/H
+awtofertigol/H
+awtofewnbwn/H
+awtofewnbynnau/H
+awtoffitio/H
+awtofformat/BH
+awtogadw/H
+awtoganfod/H
+awtogrynhoi/H
+awtogrynodeb/BH
+awtogychwyn/H
+awtogynnwys/H
+awtogynyddiad/BH
+awtogysylltnodi/H
+awtogywiro/H
+awtohidlydd/CH
 awtoimiwnedd/H
+awtolanw/H
+awtoled/H
+awtolorweddol/H
+awtolwytho/H
 awtolysis/H
 awtomasiwn/H
 awtomataidd/H
@@ -5338,12 +5422,15 @@ awtomatiaeth/H
 awtomatig/H
 awtomeiddio/H
 awtomorffig/H
+awtonewid/H
 awtonomaidd/H
 awtonomiaeth/H
 awtonomig/H
 awtopolyploid/BH
 awtopsi/H
 awtopsïau/H
+awtorifo/H
+awtosiapio/H
 awtosom/BH
 awtotroffig/H
 awydd/BHv
@@ -5525,6 +5612,7 @@ balâd/MT
 baladau/MT
 balalaica/MT
 balalaicau/MT
+balans/BMT
 balast/MT
 balc/DMT
 Balcanau/MT
@@ -5597,6 +5685,7 @@ Bancymansel/MT
 band/DMT
 Banda/MT
 bandin/BMT
+bandio/MT
 bando/MT
 bandog/MT
 bandwagen/MT
@@ -5736,6 +5825,7 @@ baritonwyr/MT
 bariwm/MT
 barlad/MT
 barlat/MT
+barlinell/BMT
 barllyd/MT
 Barlwyd/MT
 barlyn/MT
@@ -6114,6 +6204,7 @@ Benji/MT
 Benllech/MT
 bensen/MT
 bensin/MT
+bensodiasepin/BMT
 bensopyren/MT
 benthig/MT
 benthos/MT
@@ -6261,6 +6352,7 @@ bidogan/MT
 bidogi/MT
 bifalent/MT
 bîff/MT
+biffenyl/BMT
 bigamydd/CMT
 bigiti/Mv
 bigitian/MT
@@ -6308,6 +6400,7 @@ bïocor/MT
 biocorau/MT
 biodaearyddiaeth/MT
 biodanwydd/BMT
+bioddaearyddiaeth/MT
 bioddiogelwch/MT
 bioddiraddadwy/MT
 bioddiraddadwyedd/MT
@@ -6329,6 +6422,9 @@ biolegydd/MT
 biomas/MT
 biomecaneg/MT
 biometreg/MT
+biopsi/MT
+biopsïau/MT
+bioseicogymdeithasol/MT
 biosffer/MT
 bïosffer/MT
 biosfferau/MT
@@ -6502,6 +6598,7 @@ Blaenllyfni/MT
 blaenllym/MTv
 blaenllymder/MT
 blaenllymu/MT
+blaenlun/DMT
 blaenluniad/BMT
 blaenluosi/MT
 blaenlythrennau/MT
@@ -6523,6 +6620,7 @@ blaenrhesi/MT
 Blaenrhondda/MT
 Blaenrhymni/MT
 blaensffenoidol/MT
+blaenslaes/BMT
 blaenstroc/DMT
 blaenstrôcs/MT
 blaenswm/MT
@@ -6596,6 +6694,8 @@ bleiddyn/MT
 bleind/DMT
 blend/DMT
 blendio/MT
+blendiwr/MT
+blendiwyr/MT
 bler/M
 blêr/MT
 blerdwf/MT
@@ -6692,6 +6792,7 @@ bloesgwyr/MT
 bloesgyn/MT
 blog/DMT
 blogi/Mv
+blogiad/BMT
 blogio/MT
 blogiwr/MT
 blogwyr/MT
@@ -7059,6 +7160,7 @@ boron/MT
 bors/MT
 Borth-y-gest/MT
 Borth/MT
+borthiad/MT
 bos/MT
 bosibl/MT
 bosn/IMT
@@ -7373,6 +7475,8 @@ breinig/MT
 breinio/MT
 breiniog/MT
 breiniol/MT
+breiniwr/MT
+breiniwyr/MT
 breinlen/FMT
 breinlenni/MT
 breinllys/EMT
@@ -8162,6 +8266,7 @@ bwli/MTv
 bwlïaid/MT
 bwlian/MT
 bwlïau/MT
+bwlimia/MT
 bwlio/MT
 bwlïo/MT
 bwlïod/MT
@@ -8214,6 +8319,7 @@ bwred/BMT
 bwrgais/MT
 bwrgeisiaid/MT
 bwrglera/MT
+bwrgleriaeth/BMT
 Bwrgwyn/MT
 Bwrgwynaidd/MT
 Bwrgwyniad/MT
@@ -8865,6 +8971,7 @@ cadwynedd/BLMT
 cadwyni/LMT
 cadwyno/LMT
 cadwynog/LMT
+cadwynol/LMT
 cadwyr/LMT
 Cae'r-bryn/LMT
 Cae'r-lan/LMT
@@ -9312,6 +9419,7 @@ camfuchedd/LMv
 camfucheddu/LMT
 camfynegiannau/LMT
 camfynegiant/LMT
+camgarcharu/LMT
 camgastio/LMT
 camgoeli/LMv
 camgoelio/LMT
@@ -9406,6 +9514,7 @@ camsillaf/LMv
 camsillafiad/BLMT
 camsillafu/LMT
 camsin/BLMT
+camsymud/LMT
 camsyNI/LMv
 camsyniad/BLMT
 camsynied/LMT
@@ -9733,6 +9842,8 @@ caolin/LMT
 cap/DLMT
 capan/BLMT
 capandrwyn/BLMT
+capasiti/LMT
+capasitïau/LMT
 Capel-y-ffin/LMT
 Capel-y-graig/LMT
 Capel-y-wig/LMT
@@ -9814,6 +9925,7 @@ carbwradur/HLMT
 carbwreiddio/LMT
 carbynclau/LMT
 carc/LMTv
+carcas/BLMT
 carchar/BLMTv
 carchardai/LMT
 carchardy/LMT
@@ -9839,6 +9951,8 @@ cardigan/BLMT
 cardinal/GLMT
 cardio/LMT
 cardiofasgwlaidd/LMT
+cardiograffwyr/LMT
+cardiograffydd/LMT
 cardioid/BLMT
 cardioleg/LMT
 cardiolegydd/CLMT
@@ -10085,6 +10199,7 @@ caryatid/BLMT
 Caryl/LMT
 carynclau/LMT
 carynglau/LMT
+caryoteip/DLMT
 Carys/LMT
 Cas-gwent/LMT
 cas/LMT
@@ -10618,6 +10733,7 @@ ceisiwr/LMT
 ceislen/LMT
 ceislenni/LMT
 ceiswyr/LMT
+ceisydd/LMT
 ceith/LMT
 cejuela/ILMT
 cêl-liwiad/LMT
@@ -10953,6 +11069,7 @@ cês/LMT
 cesail/LMT
 cesair/LMT
 cesar/LMT
+cesaraidd/LMT
 ceseilaid/LMT
 ceseilaidd/LMT
 ceseileidiau/LMT
@@ -11239,11 +11356,13 @@ Chwigaidd
 Chwigiaeth
 chwil-lys
 chwil/K
+chwilair
 chwilboeth
 chwildro
 chwildrO/v
 chwildroadau
 chwildroi
+chwileiriau
 chwilen
 chwilenn/v
 chwilenna
@@ -11264,6 +11383,7 @@ chwiliadur/H
 chwilibaw/v
 chwilibawa
 chwilibawan
+chwiliedydd/C
 chwilio
 chwiliwr
 chwilmant/v
@@ -11332,6 +11452,7 @@ chwithdra
 chwithig
 chwithigo
 chwithigrwydd
+chwitlyn/G
 chwiw/D
 chwiwell/B
 chwiwgar
@@ -11986,6 +12107,7 @@ clewtio/LMT
 clewyn/FLMT
 clic/DLMT
 clici/LMv
+cliciadwy/LMT
 clician/LMT
 clicied/BLMTv
 cliciedi/LMT
@@ -12170,6 +12292,7 @@ clorienn/LMw
 clorin/LMT
 clorinad/LMv
 clorinadu/LMT
+clorinedig/LMT
 clorineiddio/LMT
 clorinio/LMT
 clorio/LMT
@@ -12194,6 +12317,7 @@ cloÿnnau/LMT
 clud/LMTv
 cluda/LMT
 cludadwy/LMT
+cludadwyedd/LMT
 cludair/LMT
 cludeiriau/LMT
 cludfelt/DLMT
@@ -12271,6 +12395,7 @@ clwstwr/LMT
 Clwt-y-bont/LMT
 clwt/LMT
 clwtyn/LMT
+clwy/BLMT
 clwyd/BLMTv
 clwyden/LMT
 clwydenni/LMT
@@ -12343,6 +12468,7 @@ Clynnog/LMT
 clys/LM
 clystyrau/LMT
 clystyriad/LMT
+clystyrog/LMT
 clystyru/LMT
 clyti/LMv
 clytiau/LMT
@@ -12368,6 +12494,7 @@ clywedol/LMT
 clywedydd/CLMT
 clyweld/LMT
 clyweled/LMT
+clyweledol/LMT
 clyweliad/BLMT
 clywgynadledd/LMv
 clywgynadledda/LMT
@@ -12745,6 +12872,8 @@ cofadeiladau/LMT
 cofalens/BLMT
 cofalent/LMT
 cofarwydd/CLMT
+cofddata/LMT
+cofdroshaen/BLMT
 cofeb/CLMT
 coff/LMv
 coffâ/LMT
@@ -12776,6 +12905,8 @@ cofgardiau/LMT
 cofgell/ELMT
 cofgerdyn/LMT
 cofgolofn/BLMT
+cofgyfeiriad/BLMT
+cofgylchred/BLMT
 cofi/LMv
 cofia/LMT
 cofiadur/GHLMT
@@ -12889,6 +13020,7 @@ coleddu/LMT
 coleddwr/LMT
 coleddwyr/LMT
 coleg/BLMT
+colegaidd/LMT
 colegol/LMT
 colegwr/LMT
 colegwyr/LMT
@@ -12911,6 +13043,7 @@ colfachog/LMT
 colfachu/LMT
 colfen/FLMT
 colfenni/LMT
+colfran/LMT
 coli/LMv
 colifflŵar/ILMT
 colifform/LMT
@@ -13336,10 +13469,12 @@ coriander/LMT
 coridor/BLMT
 Corinthaidd/LMT
 corion/BLMT
+corionig/LMT
 corlan/FLMT
 corlann/LMv
 corlannu/LMT
 corlenn/LMw
+corlun/DLMT
 corlwyn/LMT
 corlwyni/LMT
 corm/BLMT
@@ -13693,7 +13828,9 @@ crasu/LMT
 craswr/LMT
 craswyr/LMT
 crasyd/LMT
+crât/LMT
 crater/BLMT
+cratiau/LMT
 cratsh/LMT
 cratshis/LMT
 crau/LMT
@@ -14103,6 +14240,7 @@ croesawyr/LMT
 croesbeilliad/BLMT
 croesbren/FLMT
 croesbrenni/LMT
+croesbylu/LMT
 croesddweud/LMT
 croesddywediad/BLMT
 croesebol/LMT
@@ -14166,6 +14304,8 @@ croesryw/DLMT
 croesrywedd/LMT
 croestorfan/FLMT
 croestoriad/BLMT
+croestoriadedd/LMT
+croestoriadol/LMT
 croestorr/LMv
 croestorri/LMT
 croestyniad/BLMT
@@ -14256,6 +14396,7 @@ cromlinog/LMT
 cromnen/FLMT
 cromosffer/BLMT
 cromosom/BLMT
+cromosomaidd/LMT
 cronadur/HLMT
 cronedig/LMT
 cronellau/LMT
@@ -14480,6 +14621,7 @@ crygwst/LMT
 crym/LMv
 crymachau/LMT
 cryman/BFLMTv
+crymangell/ELMT
 crymanu/LMT
 crymanwr/LMT
 crymanwyr/LMT
@@ -14538,6 +14680,7 @@ cryniad/BLMT
 crynion/LMT
 cryno/LMT
 crynoadau/LMT
+crynoadol/LMT
 crynodeb/BLMTv
 crynodebu/LMT
 crynodedig/LMT
@@ -14622,6 +14765,7 @@ cuddserch/LMT
 cuddswyddog/CLMT
 cuddweddu/LMT
 cuddwisg/LMT
+cuddwybodaeth/LMT
 cuddwyr/LMT
 cuddygl/BLMT
 cudeb/LMT
@@ -14768,6 +14912,7 @@ cwblhau/LMT
 cwblheui/kLM
 cwcer/BLMT
 cwch/LMT
+cwci/ILMT
 cwcio/LMT
 cwcsog/LMT
 cwcw/KLMT
@@ -14964,6 +15109,8 @@ cwnsallt/BLMT
 cwnsel/BELMTv
 cwnsela/LMT
 cwnseli/LMT
+cwnselwyr/LMT
+cwnselydd/LMT
 cwnsler/GLMT
 cwnstabl/GLMT
 Cwnsyllt/LMT
@@ -15983,6 +16130,7 @@ cyfanrediad/BLMT
 cyfanredol/LMT
 cyfanres/LMT
 cyfanrif/BLMT
+cyfanrifol/LMT
 cyfanrwydd/LMT
 cyfansawdd/LMT
 cyfansodd/LMv
@@ -17140,6 +17288,7 @@ cymhelliad/LMT
 cymhelliannau/LMT
 cymhelliant/LMT
 cymhellion/LMT
+cymhellol/LMT
 cymhellwr/LMT
 cymhellwyr/LMT
 cymhelri/LMT
@@ -17255,6 +17404,7 @@ cymudol/LMT
 cymudwr/LMT
 cymudwyr/LMT
 cymun/BLMTv
+cymundeb/BLMT
 Cymundeb/BLMT
 cymundod/BLMT
 cymuned/BLMT
@@ -18030,6 +18180,7 @@ Cystennin/LMT
 cystiedig/LMT
 cystig/LMT
 cystin/LMT
+cystodaeth/BLMT
 cystrawen/FLMT
 cystrawenn/LMv
 cystrawennol/LMT
@@ -18133,6 +18284,7 @@ cytoleg/LMT
 cytoplasm/LMT
 cytosol/LMT
 cytosom/LMT
+cytotocsig/LMT
 cytras/LMT
 cytrasedd/LMT
 cytref/LMT
@@ -18290,6 +18442,7 @@ dadalltudio/MT
 dadaminas/MT
 dadamineiddiad/MT
 dadamineiddio/MT
+dadamwyso/MT
 dadamwyswyr/MT
 dadamwysydd/MT
 dadannudd/MT
@@ -18357,13 +18510,18 @@ dadfyddiniad/MT
 dadfyddino/MT
 dadfygi/Mv
 dadfygio/MT
+dadfygiwr/MT
+dadfygwyr/MT
 dadgennu/MT
 dadgodi/Mv
 dadgodio/MT
 dadgodydd/CMT
 dadgofrestru/MT
 dadgriptio/MT
+dadgrwpio/MT
+dadgrynhoi/MT
 dadgryptio/MT
+dadgydosod/MT
 dadgyfraniad/BMT
 dadgyplu/MT
 dadhydradiad/MT
@@ -18386,6 +18544,7 @@ dadleol/Mv
 dadleoledig/MT
 dadleoli/MT
 dadleoliad/BMT
+dadlercian/MT
 dadleu/MTvz
 dadleuaeth/MT
 dadleugar/MT
@@ -18574,6 +18733,7 @@ dalenni/MT
 dalennog/MT
 dalennu/MT
 dalfa/MT
+dalfan/FMT
 dalfeydd/MT
 dalgadw/MT
 dalgar/MT
@@ -18943,6 +19103,7 @@ das/BMT
 dat-Stalineiddio/MT
 data-bas/BMT
 data/MT
+databeilot/GMT
 datawyru/MT
 datblethu/MT
 datblyg/Mv
@@ -19009,6 +19170,7 @@ datgodio/MT
 datgodiwr/MT
 datgodwyr/MT
 datgoedwigo/MT
+datgomisiynu/MT
 datgordeddu/MT
 datgorffor/Mv
 datgorffori/MT
@@ -19076,6 +19238,7 @@ datseinedd/BMT
 datseini/Mv
 datseinio/MT
 datseiniol/MT
+datsgilio/MT
 datsgwar/BMT
 datsyflyd/MT
 datwm/MT
@@ -19155,6 +19318,7 @@ dechreuwr/MT
 dechreuwyr/MT
 decilitr/BMT
 decimetr/BMT
+decin/MT
 decoladwyr/MT
 decoladydd/MT
 décor/MT
@@ -19283,10 +19447,14 @@ dei/BIMT
 deial/BMTv
 deialog/BMT
 deialu/MT
+deialwr/MT
+deialwyr/MT
+deialydd/MT
 Deian/MT
 deic/DMT
 deiet/BMT
 deieteg/MT
+deietegol/MT
 deietegwyr/MT
 deietegydd/MT
 deif/DMT
@@ -19485,6 +19653,7 @@ dentin/MT
 dentio/MT
 denu/MT
 Denzil/MT
+deocsiriboniwcleig/MT
 deol/MTv
 deoledig/MT
 deon/GMT
@@ -19566,6 +19735,7 @@ dest/MT
 destl/MT
 destlus/MT
 destlusrwydd/MT
+dêt/IMT
 detector/BMT
 determinannau/MT
 determinant/MT
@@ -19600,11 +19770,13 @@ deubar/MT
 deubarthol/MT
 deubegwn/MT
 deubegynedd/MT
+deuben/MT
 deubeth/MT
 deublyg/MT
 deubol/BMT
 deucanmlwyddiannau/MT
 deucanmlwyddiant/MT
+deucarbonad/BMT
 deud/MTv
 deuddarn/MT
 deuddeg/MT
@@ -19634,6 +19806,7 @@ deufel/EMT
 deufetel/MT
 deufetelaidd/MT
 deuffenyl/MT
+deuffobig/MT
 deuffocal/MT
 deufforchiad/BMT
 deufforchiog/MT
@@ -19700,6 +19873,7 @@ deusill/MT
 deusillaf/MT
 deustad/BMT
 deuswllt/MT
+deusygotig/MT
 deuthum/MT
 deutu/MT
 deuwch/MT
@@ -20246,6 +20420,7 @@ diegwan/MT
 diegwyddor/MT
 dieifl/MT
 dieilfydd/MT
+dieiriau/MT
 dieisiau/MT
 dieithr/GMT
 dieithri/Mv
@@ -20511,6 +20686,7 @@ difrodwyr/MT
 difrychau/MT
 difrycheulyd/MT
 difrys/MT
+difuddiant/MT
 difuddio/MT
 difuri/Mv
 difurio/MT
@@ -20571,6 +20747,7 @@ digido/MT
 digidol/MT
 digidydd/CMT
 digio/MT
+diglefyd/MT
 digllon/MT
 digllonrwydd/MT
 diglwyf/MT
@@ -20626,6 +20803,7 @@ digwmni/MT
 digwmwl/MT
 digwsg/MT
 digwydd/MTv
+digwyddedd/MT
 digwyddiad/BMT
 digwyddiadol/MT
 digwyddol/MT
@@ -20640,6 +20818,7 @@ digyfeiliant/MT
 digyfeiliorn/MT
 digyffelyb/MT
 digyffro/MT
+digyffwrdd/MT
 digyflog/MT
 digyfnewid/MT
 digyfnod/MT
@@ -20804,6 +20983,7 @@ dilyn/MTv
 dilyniad/MT
 dilyniadol/MT
 dilyniannau/MT
+dilyniannodi/MT
 dilyniannol/MT
 dilyniannu/MT
 dilyniant/MT
@@ -21711,6 +21891,7 @@ dotbwnsio/MT
 doth/MT
 doti/Mv
 dotio/MT
+dotiog/MT
 dotwaith/MT
 dotweithio/MT
 dotweithiwr/MT
@@ -21941,6 +22122,7 @@ drychganon/BMT
 drychiad/BMT
 drychiolaeth/BMT
 drychiolaethol/MT
+drychweddu/MT
 drycin/EMT
 drycinog/MT
 drycsawr/MT
@@ -22158,6 +22340,7 @@ dwyieitheg/MT
 dwyieithog/MT
 dwyieithrwydd/MT
 dwylaw/MT
+dwylen/MT
 dwylo/MT
 dwyn/MTv
 dwyno/MT
@@ -22266,6 +22449,7 @@ dychweladwy/MT
 dychweledig/CMT
 dychweledigion/M
 dychweliad/BMT
+dychweliadol/MT
 dychwelwr/MT
 dychwelwyr/MT
 dychwelyd/MT
@@ -22336,6 +22520,7 @@ dyfeisgarwch/MT
 dyfeisi/Mv
 dyfeisiadau/MT
 dyfeisiau/MT
+dyfeisiedig/MT
 dyfeisio/MT
 dyfeisiwr/MT
 dyfeiswyr/MT
@@ -22376,6 +22561,7 @@ dyfr-haen/BMT
 dyfr/Mv
 dyfradwy/MT
 dyframaeth/MT
+dyframaethu/MT
 dyfrdwll/MT
 Dyfrdwy/MT
 dyfrdyllau/MT
@@ -22643,6 +22829,7 @@ dyrysbwnc/DMT
 dyryslyd/MT
 dyrysu/MT
 dyryswch/MT
+dyscinesia/MT
 dysen/MT
 dysenni/MT
 dysentri/MT
@@ -22847,6 +23034,7 @@ eclipsio/H
 ecliptig/H
 eco/H
 ecoclin/H
+ecodwristiaeth/H
 ecogyfeillgar/H
 ecolabel/Hv
 ecolabelu/H
@@ -22880,6 +23068,7 @@ ecotôn/H
 ecotonau/H
 ecr/H
 ecsbloeti/Hv
+ecsbloetiaeth/H
 ecsbloetio/H
 ecsbloetiwr/H
 ecsbloetwyr/H
@@ -22891,6 +23080,7 @@ ecsema/H
 ecsentredd/BH
 ecsentrig/H
 ecsergonig/H
+ecsocrin/H
 ecsostasia/H
 ecsothermig/H
 ecsploetiaeth/H
@@ -23457,6 +23647,7 @@ electrofforws/H
 electrogemegol/H
 electrogemigion/H
 electrogemigyn/H
+electrogynhyrfol/H
 electroleiddiad/H
 electroleiddio/H
 electrolysis/H
@@ -23701,6 +23892,7 @@ endorri/H
 endosberm/BH
 endoseicl/H
 endosgop/BH
+endosgopi/BH
 endostyl/BH
 endothermig/H
 endrin/H
@@ -23777,11 +23969,13 @@ enosod/H
 enrhif/BHv
 enrhifiad/BH
 enrhifo/H
+enseffalomyelitis/H
 enseffalopathi/H
 ensemble/HI
 ensöotig/H
 ensym/BH
 ensymaidd/H
+ensymatig/H
 ensyNI/Hv
 ensyniad/BH
 ensynio/H
@@ -23875,6 +24069,7 @@ epicotyl/H
 epicur/GH
 epidemig/BCH
 epidemioleg/H
+epidemiolegol/H
 epidermaidd/H
 epidermis/BH
 epidiasgop/BH
@@ -23921,6 +24116,7 @@ epistemoleg/H
 epistol/BH
 epistolaidd/H
 epitasis/BH
+epithelaidd/H
 epithelia/H
 epitheliwm/H
 epitrocoid/BH
@@ -24081,6 +24277,7 @@ esgeiriau/H
 esgeirlwm/H
 esgeulus/Hv
 esgeuluso/H
+esgeuluster/BH
 esgeulustod/H
 esgeulustra/H
 esgeuluswr/H
@@ -24505,6 +24702,7 @@ felwm
 Fenai
 fendeta
 fendetâu
+fenis
 Fenisaidd
 Fenlli
 Fenni
@@ -24571,6 +24769,7 @@ ffactor/Bv
 ffactora
 ffactoradwy
 ffactoraidd
+ffactoreiddio
 ffactori
 ffactoriad/B
 ffactoriaeth
@@ -24661,6 +24860,7 @@ ffarad/B
 ffarier/I
 ffarm
 ffarmacoleg
+ffarmacolegol
 Ffarmers
 ffarmi/v
 ffarmio
@@ -24841,6 +25041,7 @@ ffeodiad/B
 ffeodwr
 ffeodwyr
 ffêr
+fferal
 fferau
 fferdinand
 fferdod
@@ -25138,6 +25339,7 @@ fflodiart
 ffloem
 fflop
 fflora
+fflorens
 Fflorentaidd
 ffloring/K
 fflôt
@@ -25376,6 +25578,7 @@ ffoto-allyriant
 ffoto-electrig
 ffoto-engrafiad/B
 ffoto-ysgythru
+ffoto/I
 ffotocemegol
 ffotocopï/v
 ffotocopïo
@@ -25425,6 +25628,7 @@ ffracio
 ffracsiwn
 ffracsiynau
 ffracsiynol
+ffracsiynu
 ffractal/B
 ffrae/BHv
 ffraegar
@@ -25443,9 +25647,12 @@ Ffraid
 Ffrainc
 ffrâm
 ffrâmgell/E
+fframgipiwr
+fframgipwyr
 fframi/v
 fframiau
 fframio
+fframset/D
 fframwaith
 fframweithiau
 fframyn
@@ -25698,6 +25905,7 @@ ffurflywodraeth/B
 ffurfwaith
 ffurfwasanaeth/B
 ffurfwedd/Bv
+ffurfweddiad/B
 ffurfweddu
 ffurfweithiau
 ffurfwisg/E
@@ -25827,6 +26035,7 @@ ffyrfhau
 ffyriwr
 ffyrling/BK
 ffyrlling/BK
+ffyrlo
 ffyrm/D
 ffyrnau
 ffyrnic
@@ -26093,6 +26302,7 @@ Gallt-y-Foel/MT
 gallt/MT
 Galltfaenan/MT
 gallu/EMT
+galluedd/BMT
 galluoc/M
 galluog/MTv
 galluogi/MT
@@ -26240,6 +26450,7 @@ gast/MT
 gastrig/MT
 gastro-enteritis/MT
 gastro-enteroleg/MT
+gastroberfeddol/MT
 gastroenteroleg/MT
 gastrwla/MT
 gastrwlae/MT
@@ -26772,6 +26983,7 @@ glinio/MT
 glissade/MT
 glo/MT
 glôb/MT
+globaleiddio/MT
 globau/MT
 globwl/MT
 globwlin/MT
@@ -26837,7 +27049,7 @@ glwfer/GT
 glŵm/MT
 glwmau/MT
 glŵp/MT
-glwten/T
+glwten/MT
 glwth/MT
 glwys/MT
 glwysedd/MT
@@ -27239,6 +27451,7 @@ gonestaf/M
 gonested/M
 gonestrwydd/MT
 gong/DT
+gonorea/MT
 gonorrhoea/MT
 gooer/MTv
 gooeri/MT
@@ -27286,6 +27499,7 @@ gorboethi/MT
 gorbor/Mv
 gorbori/MT
 gorbrisio/MT
+gorbryder/HMT
 gorbryderus/MT
 gorbwys/Mv
 gorbwysedd/MT
@@ -27447,6 +27661,7 @@ gorffwystra/MT
 gorflin/Mv
 gorflino/MT
 gorfod/MTv
+gorfodadwy/MT
 gorfodaeth/BMT
 gorfodeb/BCMT
 gorfodi/MT
@@ -27706,6 +27921,7 @@ gorwyn/MT
 gorwyniad/GMT
 gorwyr/CMT
 gorwyres/BMT
+goryfed/MT
 gorymadrodd/CMT
 gorymarfer/MT
 gorymdaith/MT
@@ -27779,6 +27995,7 @@ graddiant/MT
 graddio/MT
 graddliwio/MT
 graddluniadu/MT
+graddlwyd/MT
 graddnod/BMTv
 graddnodedig/MT
 graddnodi/MT
@@ -27810,8 +28027,10 @@ graff/DT
 graffeg/MT
 graffem/BMT
 graffig/MT
+graffigau/MT
 graffigol/MT
 graffigwaith/MT
+graffigyn/MT
 graffit/DMT
 graffiti/T
 graffito/MT
@@ -28128,6 +28347,7 @@ gwaethafyddiaeth/MT
 gwaethed/MT
 gwaethwaeth/MT
 gwaethyg/Mv
+gwaethygedig/MT
 gwaethygiad/BMT
 gwaethygu/MT
 gwaew/MT
@@ -28615,6 +28835,7 @@ gwead/BMT
 gweadedd/BMT
 gweadeddol/MT
 gweadeddu/MT
+gweadog/MT
 gweadwaith/MT
 gweadweithiau/MT
 gwedd/BEMTv
@@ -28693,6 +28914,8 @@ gwegi/Mv
 gwegian/MT
 gwegil/BDMT
 gwegio/MT
+gwegrawn/MT
+gwegronau/MT
 Gwehelog/MT
 gwehelyth/MT
 gwehilion/MT
@@ -28781,6 +29004,7 @@ gweithredadwy/MT
 gweithrediad/BMT
 gweithrediadau/MT
 gweithrediadol/MT
+gweithrediaeth/BMT
 gweithrediant/MT
 gweithredol/MTv
 gweithredoli/MT
@@ -29323,6 +29547,7 @@ gwlyddyn/MT
 gwlyp/M
 gwlypdir/EMT
 gwlypter/MT
+gwlyptir/EMT
 gwm/MT
 gwmog/MT
 gwn/MT
@@ -29582,6 +29807,7 @@ gwrthapelydd/MT
 gwrthargaen/MT
 gwrtharogl/MT
 gwrtharwr/MT
+gwrtharwydd/CMT
 gwrtharwyr/MT
 gwrthasid/MT
 gwrthateb/CMT
@@ -29681,6 +29907,7 @@ Gwrtheyrn/MT
 gwrthfacteria/MT
 gwrthferyn/FMT
 gwrthffactor/BMT
+gwrthffeithiol/MT
 gwrthfflam/MT
 gwrthffrithiant/MT
 gwrthfiotig/BCMT
@@ -29699,6 +29926,7 @@ gwrthgefn/BMT
 gwrthgeisiau/MT
 gwrthgeisio/MT
 gwrthgenhedlu/MT
+gwrthgeulydd/CMT
 gwrthgili/Mv
 gwrthgiliad/BMT
 gwrthgilio/MT
@@ -29805,6 +30033,7 @@ gwrthsafwyr/MT
 gwrthsaim/MT
 gwrthsain/MT
 gwrthsefyll/MT
+gwrthseicotig/BMT
 gwrthseptig/MT
 gwrthslip/MT
 gwrthsodd/MT
@@ -29827,6 +30056,7 @@ gwrthweithi/Mv
 gwrthweithiad/MT
 gwrthweithio/MT
 gwrthweithiol/MT
+gwrthweithydd/CMT
 gwrthwenwyn/BMT
 gwrthwneud/MT
 gwrthwyfyn/MT
@@ -30277,6 +30507,7 @@ gwythienigau/MT
 gwythiennau/MT
 gwythiennig/MT
 gwythiennog/MT
+gwythiennol/MT
 gwythiennu/MT
 gwythienwaith/MT
 gwythog/MT
@@ -30420,6 +30651,7 @@ haelach
 haelaf
 haelder
 haeled
+haelfraint
 haelfrydedd
 haelfrydig
 haelion
@@ -30758,6 +30990,7 @@ Harry
 haru
 hasb/D
 hash
+hashnod/B
 hasienda/I
 hast
 hatling/BK
@@ -30789,8 +31022,10 @@ hawlfreintiau
 hawli/v
 hawliad/B
 hawliau
+hawlildiad/B
 hawlio
 hawliwr
+hawlrwym/B
 hawlwr
 hawlwyr
 hawlydd/C
@@ -30978,6 +31213,7 @@ helfeirch
 Helfetig
 helfeydd
 helgi
+helgig
 helgorn
 helgud
 helgwn
@@ -31586,12 +31822,14 @@ holwyddorol
 holwyr
 homeopathi
 homeostasis
+homeostatig
 homili
 homilïau
 homoblastig
 homoffôb/I
 homoffobaidd
 homoffobia
+homoffobig
 homoffoni
 homoffonig
 homogenaidd
@@ -31742,6 +31980,7 @@ hunanamddiffynol
 hunanamlwg
 hunananwythedd
 hunanarchwiliad/B
+hunanarchwilio
 hunanarddangosfa
 hunanarlwyo
 hunanases/v
@@ -31831,6 +32070,7 @@ hunanreoleiddiol
 hunanreoliad/B
 hunanreolus
 hunansgwrsio
+hunansylweddoli
 hunansylweddoliad
 hunansyniad/B
 hunanus
@@ -32032,6 +32272,7 @@ hyblygrwydd
 hyboen
 hyboenedd
 hybrid
+hybrin
 hybu
 hybwyll
 hychaidd
@@ -32094,6 +32335,7 @@ hydrobwll
 hydrobyllau
 hydrocarbon/B
 hydroceffalig
+hydroceffalws
 hydroclorid/B
 hydroclorig
 hydrocsid/B
@@ -32349,6 +32591,7 @@ hyrddiaid
 hyrddiant
 hyrddiau
 hyrddio
+hyrddiol
 hyrddiwr
 hyrddod
 hyrddrym
@@ -32682,6 +32925,7 @@ indentur/BH
 India/H
 Indiad/H
 Indiaid/H
+indiaidd/H
 indigo/H
 indiwm/H
 Indo-Swmeraidd/H
@@ -32964,6 +33208,8 @@ isbrydles/BEH
 isbrydlesi/H
 isbwerdai/H
 isbwerdy/H
+isbwynt/H
+isbwyntiau/H
 isbwysedd/H
 isbynciau/H
 ischaemig/H
@@ -32973,6 +33219,8 @@ isdadenydd/H
 isdafodol/H
 isdangiad/BH
 isddatblygedig/H
+isddewislen/H
+isddewislenni/H
 isddilyniannau/H
 isddilyniant/H
 isddiwylliannau/H
@@ -33060,6 +33308,7 @@ islais/H
 islaith/H
 Islam/H
 Islamaidd/H
+islamoffobia/H
 islanwol/H
 islap/DH
 islau/H
@@ -33594,6 +33843,7 @@ letraset
 letys
 letysen
 Leusa
+lewcemia
 lewcin
 lewcocyt/B
 lewcoplast/B
@@ -33648,6 +33898,7 @@ limrig/B
 linarit
 linc-di-lonc
 linc/D
+lincoln
 lincyn-loncyn
 Linda
 lindys
@@ -34668,11 +34919,13 @@ lleol/Mv
 lleolbwynt/DM
 lleoledig/M
 lleoleiddiad/M
+lleoleiddio/M
 lleoli/M
 lleoliad/BM
 lleoliadol/M
 lleolnod/BM
 lleolun/DM
+lleolydd/CM
 llepian/M
 llepio/M
 llerci/Mv
@@ -34753,6 +35006,7 @@ lletyaeth/M
 lletygar/M
 lletygarwch/M
 Lletygynfarch/M
+lletyol/M
 lletywr/M
 lletywragedd/M
 lletywraig/M
@@ -34808,6 +35062,7 @@ Llidiartnennog/M
 llidio/M
 llidioc/M
 llidiog/M
+llidiol/M
 llidiowgrwydd/M
 llidus/M
 lliein-blyg/M
@@ -34889,6 +35144,8 @@ llinach/BM
 llinachyddiaeth/M
 llinachyddol/M
 llinaidd/M
+llinborthi/M
+llinborthiad/BM
 llindag/BMv
 llindagiad/BM
 llindagu/M
@@ -34915,6 +35172,7 @@ lliniarydd/CM
 lliniogi/M
 llinol/M
 llinoledd/M
+llinolygydd/CM
 llinon/M
 llinor/M
 llinorod/M
@@ -35139,6 +35397,8 @@ llosgydd/CM
 llosgyrnau/M
 llosgyrnog/M
 llost/BM
+llostfain/M
+llostfeiniau/M
 llostlydan/KM
 llowc/M
 llowci/Mv
@@ -35591,6 +35851,7 @@ llygadrythu/M
 llygadu/M
 llygadus/M
 llygaid/M
+llygatddu/M
 llygatgam/M
 llygatgraff/M
 llygatgroes/M
@@ -35690,6 +35951,8 @@ Llynpenmaen/M
 Llynwynddŵr/M
 llyo/M
 Llŷr/M
+llyriad/M
+llyriaid/M
 Llys-y-coed/M
 Llys-y-frân/M
 llys/EM
@@ -35863,6 +36126,7 @@ logarithmig
 logia/I
 logiau
 Login
+logio
 logistaidd
 logisteg
 logo/I
@@ -35962,6 +36226,8 @@ lygwn/I
 lymff
 lymffatig
 lymffocyt/B
+lymffoma
+lymffomau
 lymp-symiau
 lympiau
 Lyn
@@ -36351,6 +36617,8 @@ mamau-yng-nghyfraith/M
 mamau/M
 mamddinas/EM
 mamfaeth/BKM
+mamfwrdd/M
+mamfyrddau/M
 mamgell/EM
 mamgraig/M
 mamgreigiau/M
@@ -37096,6 +37364,8 @@ Meisgyn/M
 Meistersinger/M
 meistr/GM
 meistradoedd/M
+meistrddogfen/M
+meistrddogfenni/M
 meistres/M
 meistresi/M
 meistri/M
@@ -37104,6 +37374,7 @@ meistrol/Mv
 meistrolaeth/M
 meistrolgar/M
 meistroli/M
+meistrolwg/M
 meistrolwr/M
 meistrolwyr/M
 meithder/BM
@@ -37224,6 +37495,7 @@ memrwn/M
 memrynau/M
 memrynwr/M
 memrynwyr/M
+memyn/FM
 men/M
 mên/M
 Menai/M
@@ -37243,6 +37515,7 @@ Menna/M
 mennaid/M
 menni/M
 mennu/M
+menopos/M
 Mensiefig/GM
 Mensiefigaidd/M
 menter/M
@@ -37398,7 +37671,9 @@ metacarpal/M
 metacarpi/M
 metacarpol/M
 metacarpws/M
+metaddadansoddi/M
 metaffas/BM
+metaffeil/DM
 metaffiseg/M
 metaffisegol/M
 metaffisegwr/M
@@ -37423,6 +37698,7 @@ metatarsol/M
 metatarsws/M
 metathesis/M
 metathoracs/BM
+metawybyddiaeth/M
 metel/BEM
 metelaidd/M
 meteleg/M
@@ -37444,6 +37720,7 @@ meteorolegwr/M
 meteorolegwyr/M
 meteoryn/FM
 meth/CMvw
+methadon/M
 methan/M
 methanol/M
 methdal/M
@@ -37570,6 +37847,9 @@ mewngellol/M
 mewngofnodi/M
 mewngraig/M
 mewngreigiau/M
+mewngroenol/M
+mewngroth/M
+mewngyhyrol/M
 mewngylch/EM
 mewngyrch-allgyrch/M
 mewngyrch/M
@@ -37637,6 +37917,7 @@ micro-organeb/BM
 micro-organedd/BM
 micro/IM
 microb/BM
+microbaidd/M
 microbioleg/M
 microbiolegol/M
 microbiolegwyr/M
@@ -37676,6 +37957,8 @@ micrograff/BM
 microgrisialog/M
 microgyfrifiadur/HM
 microgylched/BM
+microgynefin/BM
+microgynhyrchu/M
 microhinsawdd/M
 microhinsoddau/M
 microhinsoddeg/M
@@ -38189,6 +38472,7 @@ morddwyd/M
 morddwydol/M
 morddwydydd/M
 mordeithiau/M
+mordeithio/M
 mordeithiwr/M
 mordeithwyr/M
 mordent/BM
@@ -38260,6 +38544,7 @@ morladron/M
 morlaid/M
 Morlais/M
 morlan/FM
+morlannol/M
 morleidr/M
 morlen/M
 morlenni/M
@@ -38443,6 +38728,7 @@ mwcws/M
 mwd/M
 mwdlyd/M
 mwdwl/M
+mwffwl/M
 mwg/M
 mwgwd/M
 mwgyn/M
@@ -38623,6 +38909,7 @@ mwythus/M
 mwythustra/M
 my`g/M
 my`ll/M
+myalgig/M
 Myanmar/M
 mycelia/M
 myceliwm/M
@@ -38813,6 +39100,7 @@ mynyglog/M
 Mynyllod/M
 Mynytho/M
 Mynyw/M
+myocardiaidd/M
 myoglobin/M
 myomer/M
 myopia/M
@@ -38909,11 +39197,13 @@ namyn
 Nancy
 Nanhoron
 Nanhyfer
+nani/I
 Nanmor
 Nannau
 Nannerch
 nano-eiliad/B
 nanometr/B
+nanowyddoniaeth
 Nansi
 nant
 Nant-y-bwch
@@ -38951,6 +39241,7 @@ nap
 napalm
 napcyn/BF
 napiog
+napoli
 naratif
 narcosis
 narcotig
@@ -39038,6 +39329,9 @@ negeseuau
 negeseuon
 negeseuwr
 negeseuwyr
+negesfwrdd
+negesfyrddau
+negesu
 negeswyr
 negesydd/C
 negeu/vz
@@ -39331,6 +39625,7 @@ nitro-cellwlos
 nitrogen
 nitrogenaidd
 nitrogenus
+nitrus
 Niwbwrch
 niwclear
 niwcledig
@@ -39373,14 +39668,19 @@ niwral
 niwralgia
 niwritis
 niwro-gyhyrog
+niwroffibromatosis
+niwrogyhyrol
+niwrolawdriniaeth/B
 niwroleg
 niwrolegol
 niwrolegwyr
 niwrolegydd
 niwron/B
 niwroseiciatreg
+niwroseicolegol
 niwrosis/B
 niwrotig
+niwrowyddoniaeth
 Niwrowyddorau
 niwsans
 niwton/B
@@ -39415,6 +39715,10 @@ nodal
 nodaledd
 nodarwydd/C
 nodau
+nodchwiliad/B
+nodchwilio
+nodchwiliwr
+nodchwiliwyr
 nodd/Cv
 noddau
 nodded
@@ -39884,6 +40188,7 @@ offrymwr/H
 offrymwyr/H
 offrymydd/CH
 offthalmia/H
+offthalmig/H
 offthalmoleg/H
 offthalmolegwr/H
 offthalmolegwyr/H
@@ -40457,6 +40762,7 @@ pae/LMT
 paediatreg/LMT
 paediatregwyr/LMT
 paediatregydd/LMT
+paediatrig/LMT
 paëla/ILMT
 paen/BLMT
 paent/DLMT
@@ -40509,6 +40815,7 @@ paleograffwr/LMT
 paleograffwyr/LMT
 paleolithig/LMT
 paleontoleg/LMT
+palesteina/LMT
 Palestina/LMT
 palet/BLMT
 palf/BLMT
@@ -40566,6 +40873,7 @@ panasen/LMT
 panatrop/BLMT
 panbib/BLMT
 pancreas/LMT
+pancreatig/LMT
 pancromatig/LMT
 pandai/LMT
 panddemoniaeth/LMT
@@ -40685,6 +40993,7 @@ paralel/BLMT
 paralelepiped/BLMT
 paraleliaeth/LMT
 paralelogram/BLMT
+paramaethu/LMT
 paramagnetedd/LMT
 paramedr/BLMT
 paramedrig/LMT
@@ -40693,6 +41002,7 @@ paranoia/LMT
 parapet/BLMT
 paraplegaidd/LMT
 paraplegia/LMT
+paraplegig/LMT
 parapodia/LMT
 parapodiwm/LMT
 paraseicoleg/LMT
@@ -40889,6 +41199,7 @@ patentedig/CLMT
 pathew/KLMT
 pathogen/BLMT
 pathogenaidd/LMT
+pathogenedd/LMT
 patholeg/LMT
 patholegol/LMT
 patholegwyr/LMT
@@ -41973,6 +42284,7 @@ pibgneuen/LMT
 pibgod/BLMT
 pibgorn/LMT
 pibgyrn/LMT
+piblinell/BLMT
 piblyd/LMT
 pibo/LMT
 pibonen/LMT
@@ -42212,6 +42524,7 @@ plaeniwr/LMT
 plaenwyr/LMT
 plagi/LMv
 plagio/LMT
+plagioclimacs/LMT
 plagiogeotropedd/LMT
 plagus/LMT
 plaia/LMT
@@ -42530,6 +42843,7 @@ pocedu/LMT
 pocer/BLMT
 poceri/LMT
 podia/LMT
+podiatreg/LMT
 podiwm/LMT
 podlediad/BLMT
 podledu/LMT
@@ -42544,6 +42858,8 @@ poenfa/ELMT
 poenfâu/LMT
 poenfeydd/LMT
 poeni/LMT
+poenleddfwr/LMT
+poenleddfwyr/LMT
 poenliniaredd/LMT
 poenliniarol/LMT
 poenliniarwyr/LMT
@@ -42632,6 +42948,7 @@ polyhedral/LMT
 polyhedrol/LMT
 polyhedron/BLMT
 polymer/BLMT
+polymeras/BLMT
 polymeriad/LMT
 polymeru/LMT
 polymorff/LMT
@@ -42801,6 +43118,7 @@ porthfeydd/LMT
 Porthgain/LMT
 Porthgogof/LMT
 porthi/LMT
+porthiadau/MT
 porthiannau/LMT
 porthiannus/LMT
 porthiant/LMT
@@ -42932,6 +43250,7 @@ praffach/LM
 praffaf/LM
 praffed/LM
 praffter/LMT
+pragmataidd/LMT
 pragmatiaeth/LMT
 pragmatig/LMT
 pragmatydd/CLMT
@@ -43098,6 +43417,7 @@ prifi/LMv
 prifiant/LMT
 prifio/LMT
 priflythrennau/LMT
+priflythrennu/LMT
 priflythyren/FLMT
 prifodl/BLMT
 prifol/CLMT
@@ -43110,6 +43430,7 @@ prifwythiennol/LMT
 prifysgol/CLMT
 primaidd/LMT
 primas/GLMT
+primydd/CLMT
 prin-nwy/HLMT
 prin/LMT
 prinder/BLMT
@@ -43288,6 +43609,7 @@ propaganda/LMT
 propagandwyr/LMT
 propagandydd/CLMT
 propan/LMT
+propriodderbyniaeth/BLMT
 propriodderbynnydd/LMT
 propriodderbynyddion/LMT
 propylen/LMT
@@ -43579,6 +43901,7 @@ Pwllmeurig/LMT
 Pwllstrodur/LMT
 Pwlluffern/LMT
 pwllyn/LMT
+pwlmonaidd/LMT
 pwlofer/BILMT
 pwloferi/LMT
 pwlp/LMT
@@ -43677,6 +44000,7 @@ pwysleisiol/LMT
 pwyso/LMT
 pwysol/BLMT
 pwysoli/LMT
+pwysoliad/BLMT
 pwyswr/LMT
 pwyswyr/LMT
 pwysyn/FLMT
@@ -43809,6 +44133,7 @@ pysgotai/LMT
 pysgotwr/LMT
 pysgotwyr/LMT
 pysgoty/LMT
+pysgysol/LMT
 pyst/LMT
 pystyl/LMv
 pystylad/LMTv
@@ -43977,6 +44302,7 @@ relaiau
 releiau
 relish
 remand
+remánd
 remandio
 rendrad/B
 rendro
@@ -44034,8 +44360,10 @@ rhadlonaf/M
 rhadlondeb/M
 rhadloned/M
 rhadlonrwydd/M
+rhadrwyd/M
 rhadrwydd/M
 rhadus/M
+rhadwedd/M
 rhaeadr/BMv
 rhaeadrol/M
 rhaeadru/M
@@ -44077,6 +44405,7 @@ rhagalaw/HM
 rhagamcan/CM
 rhagamcaniad/BM
 rhagamcanu/M
+rhagamod/BM
 rhagangenrheidiau/M
 rhaganghenraid/M
 rhagarfaeth/Mv
@@ -44143,6 +44472,7 @@ rhagdrefnydd/CM
 rhagdriniaeth/M
 rhagdro/M
 rhagdroeon/M
+rhagdudalen/FM
 rhagduedd/M
 rhagdueddiad/M
 rhagdueddiadau/M
@@ -44202,7 +44532,9 @@ rhaglefarydd/CM
 rhaglen/M
 rhaglenadwy/M
 rhaglenedig/M
+rhaglenigau/M
 rhaglenni/M
+rhaglennig/M
 rhaglennog/M
 rhaglennol/M
 rhaglennu/M
@@ -44262,6 +44594,7 @@ rhagorol/M
 rhagoroldeb/M
 rhagorsaf/EM
 rhagosod/Mv
+rhagosodedig/M
 rhagosodiad/BM
 rhagosodol/M
 rhagot/M
@@ -44370,6 +44703,8 @@ rhandal/M
 rhandaledig/M
 rhandaliad/BM
 rhandaliadau/M
+rhanddeiliad/M
+rhanddeiliaid/M
 rhanddirymiad/BM
 rhandir/EM
 Rhandirmwyn/M
@@ -44402,6 +44737,7 @@ rhanorffenedig/M
 rhanrif/BM
 rhansain/M
 rhanseiniau/M
+rhanwedd/M
 rhanwyr/M
 rhanyddion/M
 rhanynnau/M
@@ -44466,6 +44802,7 @@ rhef/M
 rheffyn/FM
 rhefr-rwym/M
 rhefr/M
+rhefrol/M
 rhefru/M
 rhefrwr/M
 rhefrwst/M
@@ -44544,6 +44881,7 @@ rheoledig/M
 rheoleidd-dra/M
 rheoleiddi/Mv
 rheoleiddiad/BM
+rheoleiddiedig/M
 rheoleiddio/M
 rheoleiddiol/M
 rheolfa/M
@@ -44673,6 +45011,7 @@ rhiant-gynorthwyydd/M
 rhiant-lywodraethwr/M
 rhiant-lywodraethwyr/M
 rhiant/M
+rhianta/M
 Rhianwen/M
 Rhianydd/M
 rhibidirês/M
@@ -44773,8 +45112,11 @@ rhisoid/M
 rhisom/BM
 rhistyll/M
 rhith/DM
+rhithbair/M
+rhithbeiriau/M
 rhithdyb/DM
 rhithganfyddiad/BM
+rhithgymuned/BM
 rhithi/Mv
 rhithio/M
 rhithiol/M
@@ -44782,6 +45124,8 @@ rhithiolaeth/M
 rhithiwr/M
 rhithlun/DM
 rhitholaeth/M
+rhithstorfa/M
+rhithstorfeydd/M
 rhithwelediad/BM
 rhithweledigaeth/BM
 rhithwir/M
@@ -45104,6 +45448,7 @@ rhwymaf/M
 rhwymed/M
 rhwymedd/M
 rhwymedi/M
+rhwymedïau/M
 rhwymedig/M
 rhwymedigaeth/BM
 rhwymedïol/M
@@ -45229,10 +45574,12 @@ rhyddhawyr/M
 rhyddheui/kM
 rhyddiaith/M
 rhyddid/M
+rhyddidau/M
 rhyddieithol/M
 rhyddion/M
 rhyddlifo/M
 rhyddni/M
+rhyddwedd/M
 Rhydfelen/M
 rhydi/Mv
 Rhydieithon/M
@@ -45253,6 +45600,7 @@ rhydu/M
 Rhyduchaf/M
 rhydweli/M
 rhydwelïau/M
+rhydwelïol/M
 rhydwelïyn/FM
 Rhydwen/M
 Rhydwhiman/M
@@ -45402,11 +45750,14 @@ rhyngronynnog/M
 rhyngrwyd/M
 rhyngrywiolion/M
 rhyngrywiolyn/M
+rhyngrywogaethol/M
 rhyngserol/M
 rhyngu/M
 rhyngweithiad/BM
 rhyngweithio/M
 rhyngweithiol/M
+rhyngweithredol/M
+rhyngweithredu/M
 rhyngwelyog/M
 rhyngwladol/M
 rhyngwladoli/M
@@ -45441,10 +45792,13 @@ rhyw/DM
 rhywbeth/M
 rhywbryd/M
 rhywdro/M
+rhywedd/BM
+rhyweddol/M
 rhywel/CM
 rhywfaint/M
 rhywfaith/M
 rhywfodd/M
+rhywiaeth/M
 rhywiaethol/M
 rhywiaethwr/M
 rhywiaethwyr/M
@@ -45467,6 +45821,7 @@ riâu
 rib/D
 ribidi-res
 ribofflafin
+riboniwcleig
 ribosom/B
 Rica
 ricercare
@@ -45531,6 +45886,7 @@ robin-goch
 robin-y-gyrrwr
 robot/BG
 roboteg
+robotig
 Robyn
 roc
 roced
@@ -45563,6 +45919,7 @@ ROM
 Romanésg
 Romania
 România
+romáwns
 romper
 romperi
 rompyr/I
@@ -45968,6 +46325,8 @@ Sbaenwr
 Sbaenwyr
 sbafen
 sbageti
+sbam
+sbamio
 sbandrel/B
 sbandreli
 sbaner
@@ -46069,6 +46428,7 @@ sbirila
 sbirilwm
 sbirochaet/B
 sbirochet/B
+sbirometreg
 sblae
 sblas
 sblash
@@ -46266,8 +46626,14 @@ seguryn
 Sehareia
 seiadau
 seiat
+seiberbarth/B
+seiberdrosedd/B
+seiberdroseddu
 seibernetaidd
 seiberneteg
+seiberofod
+seibersgwatiwr
+seibersgwatwyr
 seibi/v
 seibiad/B
 seibiannau
@@ -46298,10 +46664,12 @@ seiclostom
 seiclotron/B
 seiclwr
 seiclwyr
+seicodynamig
 seicoffisegol
 seicogeriatregwyr
 seicogeriatregydd
 seicograff/B
+seicogymdeithasol
 seicoieithyddiaeth
 seicoleg
 seicolegiaeth
@@ -46318,6 +46686,7 @@ seicorywiol
 seicosis/B
 seicosomatig
 seicotherapi
+seicoweithredol
 seidbord/DI
 seidbordydd
 seidin/I
@@ -46460,6 +46829,7 @@ selfâu
 selfeisiau
 seli/v
 seliau
+seliedig
 selio
 seliwloid
 seliwlos
@@ -46483,6 +46853,7 @@ Selyf
 sêm
 semaffor/B
 semanteg
+semantig
 semau
 semen
 semenaidd
@@ -46612,6 +46983,7 @@ seromorffedd
 seromorffig
 seronydd/C
 seroser/B
+seroteip/D
 serotherm
 serth
 serthedd
@@ -46669,6 +47041,8 @@ sffinctrau
 sga/v
 sgadan
 sgadenyn
+sgafell
+sgafelli
 sgaffald/B
 sgaffaldiau
 sgalar/B
@@ -46921,6 +47295,7 @@ sgwaredig
 sgwari/v
 sgwariau
 sgwario
+sgwariog
 sgwarnog/K
 sgwarog
 sgwaronglog
@@ -47142,6 +47517,7 @@ sidydd
 Sidydd
 siec/D
 siecerwaith
+siecr/B
 siêd
 sied/D
 siedau
@@ -47381,6 +47757,7 @@ sisiad/B
 sisial/v
 sisialwr
 sisialwyr
+sisili
 sisiol/C
 sislyd
 sisoid/B
@@ -47566,6 +47943,7 @@ smygu
 Smytho
 snac/DI
 snacbar/D
+snapio
 snecian
 Snichyn
 snip/D
@@ -47655,6 +48033,7 @@ soled/B
 solenoid/B
 solet
 Solfach
+solfedd
 solffae/v
 solffaeo
 solffatara
@@ -48071,6 +48450,7 @@ stwrsiwn/K
 sty`ds
 sty`nt
 stycau
+styd/D
 styden
 stydi/I
 stydiau
@@ -48101,6 +48481,7 @@ sucan
 Sudan
 sudd/Cv
 suddedig
+suddfan/F
 suddgloch
 suddglychau
 suddiad/B
@@ -48337,6 +48718,7 @@ sybachu
 syber
 syberwyd
 sybornu
+sybsidiaredd
 sycamorwydd
 sycamorwydden
 sych-bydredd
@@ -48410,6 +48792,7 @@ sylfeini
 sylffad/B
 sylffid/B
 sylffit/B
+sylffonad/B
 sylffwr
 sylffwrig
 sylffyraidd
@@ -48491,6 +48874,7 @@ sympiau
 symposia
 symposiwm
 symptom/B
+symptomatig
 symud/v
 symudadwy
 symudedd
@@ -48712,6 +49096,7 @@ tacteg/BLMT
 tactegol/LMT
 tactegydd/CLMT
 tacwyr/LMT
+tacycardia/LMT
 tad-cu/KLMT
 tad-yng-nghyfraith/LMT
 tad/BLMT
@@ -48996,6 +49381,7 @@ tân/LMT
 tanaf/LMT
 tanafael/LMT
 tanamcangyfrif/LMTv
+tananadlu/LMT
 tanariannu/LMT
 tanas/LMT
 tanasi/LMv
@@ -49330,6 +49716,7 @@ tec/LM
 teca/LMv
 tecau/LMT
 tecáu/LMT
+tecawê/ILMT
 techneg/BLMT
 technegol/LMT
 technegwr/LMT
@@ -49345,6 +49732,7 @@ technolegydd/LMT
 Technologies/LMT
 teclyn/FLMT
 tecstil/BLMT
+tecstio/LMT
 tectonig/LMT
 Tecwyn/LMT
 tedi/ILMT
@@ -49387,6 +49775,7 @@ teiliwr/LMT
 teilo/LMT
 teils/LMT
 teilsen/LMT
+teilsio/LMT
 teilsiwr/LMT
 teilswyr/LMT
 teilwng/LMT
@@ -49425,6 +49814,7 @@ teipograffwyr/LMT
 teipograffydd/LMT
 teipograffyddol/LMT
 teipoleg/LMT
+teiposod/LMT
 teipydd/CLMT
 teipyddes/BLMT
 teipysgrif/BLMT
@@ -49441,6 +49831,7 @@ teirblwydd/LMT
 teircoes/LMT
 teirenn/LMw
 teirgwaith/LMT
+teirlen/LMT
 teirw/LMT
 teisban/FLMT
 teisen/FLMT
@@ -49476,6 +49867,7 @@ teledestun/LMT
 telediad/BLMT
 teledu/LMT
 teledydd/CLMT
+telefeddygaeth/BLMT
 teleffilm/DLMT
 teleffon/BLMT
 teleffoni/LMT
@@ -49587,6 +49979,7 @@ tentacl/BLMT
 tentaclog/LMT
 tenynnau/LMT
 têr/LMT
+terabeit/DLMT
 teras/BLMT
 teraset/BLMT
 terasét/LMT
@@ -49600,6 +49993,7 @@ terfannol/LMT
 Terfel/LMT
 terfenydd/LMT
 Terfgarn/LMT
+terfol/LMT
 terfyn/BLMTv
 terfynadwy/LMT
 terfynedig/LMT
@@ -49735,6 +50129,7 @@ TG/LMT
 TGAU/LMT
 TGC/LMT
 Thai
+thalasaemia
 thali
 thaliwm
 thaloid
@@ -49795,6 +50190,7 @@ thermoplastig/B
 thermosgop/B
 thermosodol
 thermostat/B
+thermostatig
 thesawrws
 thesawrysau
 Thesbiad
@@ -49809,6 +50205,7 @@ thoracs/B
 thorasig
 thoriwm
 thrombocyt/B
+thrombolytig
 thrombosis/B
 thrombosyt/B
 thrombws
@@ -49993,6 +50390,7 @@ tiwniwr/LMT
 tiwnwyr/LMT
 tiwtelaeth/LMT
 tiwtor/GLMT
+tiwtora/LMT
 tiwtoriaeth/BLMT
 tiwtorial/BLMT
 tlawd/LMT
@@ -50126,6 +50524,7 @@ Tomistiaeth/LMT
 Tomistig/LMT
 tomlyd/LMT
 Tommy/LMT
+tomograffeg/LMT
 tomos/LMT
 Tomos/LMT
 tôn-fyddar/LMT
@@ -50333,6 +50732,7 @@ traceâu/H
 traceau/LMT
 traceid/BDLMT
 traceol/BLMT
+traceostomi/BLMT
 trachefn/LMT
 trachwant/BLMTv
 trachwanta/LMT
@@ -50566,7 +50966,9 @@ trawsddygiad/BLMT
 trawsddygiadur/HLMT
 trawsdonau/LMT
 trawsedd/LMT
+trawselastigedd/BLMT
 trawsenwad/LMT
+trawsenynnol/LMT
 trawsergyd/CLMT
 trawsfeddiann/LMv
 trawsfeddiannaeth/LMT
@@ -50580,6 +50982,7 @@ trawsfeidraidd/LMT
 trawsfesur/BLMT
 trawsfesuriadau/LMT
 trawsffiniol/LMT
+trawsffobig/LMT
 trawsffrwythloni/LMT
 trawsffurf/DLMT
 trawsffurfedd/LMT
@@ -50656,6 +51059,7 @@ trawsnodiad/BLMT
 trawsosod/LMT
 trawsosodiad/BLMT
 trawsrythm/BLMT
+trawsryweddol/LMT
 trawsrywiol/LMT
 trawst/DLMT
 trawstaith/LMT
@@ -51024,6 +51428,7 @@ trichornel/LMT
 Trichrug/LMT
 trichwarterwr/LMT
 trichwarterwyr/LMT
+tricloromethan/LMT
 tridaint/LMT
 tridant/LMT
 tridarn/LMT
@@ -51102,6 +51507,7 @@ trioleg/BLMT
 triolion/LMT
 triolyn/LMT
 triongl/BLMT
+triongli/LMT
 triongliannau/LMT
 triongliant/LMT
 trionglog/LMT
@@ -51166,6 +51572,7 @@ trochionog/LMT
 trochoeri/LMT
 trochwr/LMT
 trochwyr/LMT
+trochydd/CLMT
 trocoid/BLMT
 trodd/LMT
 Troea/LMT
@@ -51242,6 +51649,7 @@ trofer/LMT
 trofeydd/LMT
 troffi/LMT
 troffïau/LMT
+troffig/LMT
 trofwrdd/LMT
 trofyrddau/LMT
 trogen/LMT
@@ -51250,8 +51658,10 @@ trogylch/BLMT
 troi!/LMT
 troi/LMT
 trol/DLMT
+trôl/LMT
 troli/LMTv
 trolian/LMT
+troliau/LMT
 trolïau/LMT
 trolif/BLMT
 trolifo/LMT
@@ -51295,6 +51705,7 @@ troseddeg/LMT
 troseddiad/BLMT
 troseddlu/ELMT
 troseddol/LMT
+troseddoli/LMT
 troseddu/LMT
 troseddwr/LMT
 troseddwyr/LMT
@@ -51372,9 +51783,11 @@ Trostre/LMT
 trostyn/LM
 trostynt/LM
 troswisg/ELMT
+troswr/LMT
 troswydrau/LMT
 troswydro/LMT
 troswydryn/LMT
+troswyr/LMT
 trosydd/CLMT
 trosysgrif/LMv
 trosysgrifo/LMT
@@ -51674,6 +52087,8 @@ tsip/DM
 tsipen/M
 tsipio/M
 tsips/M
+tswnami/M
+tswnamïau/M
 tt/LMT
 tu/LMT
 tua'm/LMT
@@ -51686,6 +52101,7 @@ tuchanwr/LMT
 tuchanwyr/LMT
 tud/LMT
 tudalen/FLMT
+tudalengipio/LMT
 tudaleniad/LMT
 tudalennog/LMT
 tudalennu/LMT
@@ -51748,6 +52164,7 @@ twba/LMT
 twbâu/LMT
 twbercwl/LMT
 twbercwlin/BLMT
+twbercwlosis/LMT
 twbercylau/LMT
 twbio/LMT
 twbyn/LMT
@@ -52402,6 +52819,7 @@ unoliaethwr/H
 unoliaethwyr/H
 unplyg/H
 unplygrwydd/H
+unrhan/H
 unrhyw/H
 unrhywiaeth/H
 unrhywiol/H
@@ -52413,6 +52831,7 @@ unsillafog/H
 unswydd/H
 unto/H
 untrac/H
+untro/H
 untu/H
 unwaith/H
 unwedd/H
@@ -52538,6 +52957,8 @@ uwchnodiad/BH
 uwchnofa/H
 uwchnofâu/H
 uwchnormal/H
+uwcholeuwyr/H
+uwcholeuydd/H
 uwcholion/H
 uwcholwg/H
 uwcholygon/H
@@ -53047,6 +53468,7 @@ ymbelydr/Hv
 ymbelydredd/BH
 ymbelydrol/H
 ymbelydru/H
+ymberthyn/H
 ymbesg/Hv
 ymbesgi/H
 ymbil/DHv
@@ -53502,6 +53924,7 @@ ymgyfeillach/Hv
 ymgyfeillachu/H
 ymgyffelyb/Hv
 ymgyffelybu/H
+ymgyflwyniad/BH
 ymgyfnewid/H
 ymgyfnewidi/Hv
 ymgyfnewidiol/H
@@ -53535,6 +53958,7 @@ ymgynefino/H
 ymgynghor/Hv
 ymgynghori/H
 ymgynghoriad/BH
+ymgynghoriaeth/BH
 ymgynghorol/H
 ymgynghorwr/H
 ymgynghorwyr/H
@@ -53666,6 +54090,8 @@ ymlusgiad/H
 ymlusgiaid/H
 ymlusgo/H
 ymlusgol/H
+ymlusgwr/H
+ymlusgwyr/H
 ymlwybr/Hv
 ymlwybran/Hv
 ymlwybro/H
@@ -53716,6 +54142,7 @@ ymolchfeydd/H
 ymolchi/H
 ymolchiad/BH
 ymoleuedd/H
+ymoleuol/H
 ymollwng/Hv
 ymollyng/Hv
 ymollyngdod/H
@@ -53793,6 +54220,7 @@ ymrwymiad/BH
 ymrwymo/H
 ymrwymol/H
 ymryddhau/H
+ymrymuso/H
 ymryson/BHv
 ymrysonfa/H
 ymrysonfeydd/H
@@ -53921,6 +54349,7 @@ ymwroli/H
 ymwrthedd/H
 ymwrthod/Hv
 ymwrthodiad/BH
+ymwrthodol/H
 ymwrthodwr/H
 ymwrthodwyr/H
 ymwthgar/H
@@ -53961,12 +54390,14 @@ ymyraethwr/H
 ymyraethwyr/H
 ymyrgar/H
 ymyriad/BH
+ymyriadol/H
 ymyriadur/H
 ymyriadureg/H
 ymyriannau/H
 ymyriant/H
 ymyrr/Hv
 ymyrraeth/H
+ymyrrol/H
 ymyrru/H
 ymyrrwr/H
 ymyrryd/H
@@ -54107,6 +54538,7 @@ ysbigoglys/H
 ysbinagl/H
 ysbio/H
 ysbïo/H
+ysbïwedd/H
 ysbïwr/H
 ysbïwriaeth/H
 ysbiwyr/H
@@ -54391,6 +54823,7 @@ ysnodi/H
 ysol/H
 ystabl/BH
 ystablau/H
+ystad/H
 ystâd/H
 ystadau/H
 ystadegaeth/H
@@ -54422,6 +54855,7 @@ ystent/DH
 ystenti/H
 ystid/BHv
 ystido/H
+ystifflog/HK
 ystig/H
 ystinos/H
 ystiwardiaid/H
