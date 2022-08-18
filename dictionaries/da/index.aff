@@ -1,5 +1,5 @@
 #A. Intro ##########
-#Stavekontrolden version 2.6.249
+#Stavekontrolden version 2.7.026
 #Denne fil er en del af Stavekontrolden - et softwareprodukt, der gør det muligt at stavekontrollere på dansk.
 
 #Copyright (C) 2022 Foreningen for frit tilgængelige sprogværktøjer
@@ -39,8 +39,8 @@ SET UTF-8
 #Bindestreg og punktum kan indgå i ord (ifølge hunspell-manual kun vigtigt for kommandolinjetjek)
 WORDCHARS -.
 
-#Ord ned til 1 bogstav (som en ø og en å) kan indgå i sammensætning. Default er mindst 3 bogstaver.
-COMPOUNDMIN 1
+#Ord ned til 2 bogstaver kan indgå i sammensætning. Default er mindst 3 bogstaver.
+COMPOUNDMIN 2
 
 #Op til 10 ord i sammensætninger.
 COMPOUNDWORDMAX 10
@@ -70,7 +70,7 @@ MAXNGRAMSUGS 10
 ONLYMAXDIFF
 
 #Enkeltbogstaver som kan forsøges udskiftet med et andet enkeltbogstav.
-TRY esrntliadkogmufbvphæøyjåcSMAKBHTLzRNEGéJVFDCwPIxOZ'.UWqØYÅüXQöèóáúðëÆíÖäÜÁàôïêÞÓÿîçãÒÍ.çńñłđžŽ
+TRY esrntliadkogmufbvphæøyjåcSMAKBHTLzRNEGéJVFDCwPIxOZ'.-UWqØYÅüXQöèóáúðëÆíÖäÜÁàôïêÞÓÿîçãÒÍ.çńñłđžŽ
 
 #Enkelttegn som kan erstattes med nabotegn, f.eks. når man rammer den forkerte tast på tastaturet.
 KEY qwertyuiopå|asdfghjklæø|zxcvbnm
@@ -294,9 +294,9 @@ SFX 1 0 t/34,22 e	+PERF_PART
 
 #Substantiv, fælleskøn
 SFX 2 Y 4
-SFX 2 0 ns/11,4,8,34,35 e	+GENITIV
-SFX 2 0 n/10,34 e	+BESTEMT_ENTAL
-SFX 2 0 en/10,34 [^e]	+BESTEMT_ENTAL
+SFX 2 0 ns/34 e	+GENITIV
+SFX 2 0 n/34 e	+BESTEMT_ENTAL
+SFX 2 0 en/34 [^e]	+BESTEMT_ENTAL
 SFX 2 0 ens/34 [^e]	+GENITIV
 
 #Substantiv, konsonantfordobling, intetkøn, -er i flertal
@@ -324,17 +324,17 @@ SFX 3 0 z/11,4,8,35,34 z	+KONSONANT_FORDOBLING
 
 #Substantiv, intetkøn
 SFX 4 Y 4
-SFX 4 0 et/10,34 [^e]	+BESTEMT_ENTAL
-SFX 4 0 t/10,34 e	+BESTEMT_ENTAL
+SFX 4 0 et/34 [^e]	+BESTEMT_ENTAL
+SFX 4 0 t/34 e	+BESTEMT_ENTAL
 SFX 4 0 ts/34 e	+GENITIV
 SFX 4 0 ets/34 [^e]	+GENITIV
 
 #Substantiv, flertal, med -e
 SFX 5 Y 8
 SFX 5 0 es/34 .	+GENITIV
-SFX 5 0 ene/10,34 [^r]	+PLUR_BEK
-SFX 5 0 e/10,34 .	+PLUR_UBEK
-SFX 5 0 ne/10,34 er	+PLUR_BEK
+SFX 5 0 ene/34 [^r]	+PLUR_BEK
+SFX 5 0 e/34 .	+PLUR_UBEK
+SFX 5 0 ne/34 er	+PLUR_BEK
 SFX 5 0 enes/34 [^r]	+PLUR_BEK
 SFX 5 0 nes/34 er	+GENITIV
 SFX 5 0 ene/34 [^e]r	+PLUR_BEK
@@ -385,14 +385,14 @@ SFX 10 0 's/34 [ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ]	+GENITIV
 
 #Substantiv, flertal, med -er
 SFX 11 Y 8
-SFX 11 0 rnes/10,34 e	+GENITIV
-SFX 11 0 r/10,34 e	+PLUR_UBEK
-SFX 11 0 er/10,34 [^e]	+PLUR_UBEK
-SFX 11 0 erne/10,34 [^e]	+PLUR_BEK
+SFX 11 0 r/34 e	+PLUR_UBEK
+SFX 11 0 er/34 [^e]	+PLUR_UBEK
+SFX 11 0 erne/34 [^e]	+PLUR_BEK
 SFX 11 0 ernes/34 [^e]	+GENITIV
 SFX 11 0 rne/34 e	+PLUR_BEK
 SFX 11 0 ers/34 [^e]	+GENITIV
 SFX 11 0 rs/34 e	+GENITIV
+SFX 11 0 rnes/34 e	+GENITIV
 
 #Adjektiv, ender på -en, bøjes med -ne
 SFX 12 Y 80
@@ -798,52 +798,53 @@ SFX 20 xe t/34,22 xxe	+PERF_PART
 SFX 20 ze t/34,22 zze	+PERF_PART
 
 #Verbum, svagt bøjet
-SFX 21 Y 45
+SFX 21 Y 46
 SFX 21 0 r/34 .	+NUTID
 SFX 21 0 nde/22,34 e	+PRÆSENS_PART
-SFX 21 be 0/34 bbe	+IMPERATIV
-SFX 21 ce 0/34 cce	+IMPERATIV
-SFX 21 de 0/34 dde	+IMPERATIV
-SFX 21 fe 0/34 ffe	+IMPERATIV
-SFX 21 ge 0/34 gge	+IMPERATIV
-SFX 21 he 0/34 hhe	+IMPERATIV
-SFX 21 je 0/34 jje	+IMPERATIV
-SFX 21 ke 0/34 kke	+IMPERATIV
-SFX 21 le 0/34 lle	+IMPERATIV
-SFX 21 me 0/34 mme	+IMPERATIV
-SFX 21 ne 0/34 nne	+IMPERATIV
-SFX 21 pe 0/34 ppe	+IMPERATIV
-SFX 21 qe 0/34 qqe	+IMPERATIV
-SFX 21 re 0/34 rre	+IMPERATIV
-SFX 21 se 0/34 sse	+IMPERATIV
-SFX 21 te 0/34 tte	+IMPERATIV
-SFX 21 ve 0/34 vve	+IMPERATIV
-SFX 21 we 0/34 wwe	+IMPERATIV
-SFX 21 xe 0/34 xxe	+IMPERATIV
-SFX 21 ze 0/34 zze	+IMPERATIV
-SFX 21 e 0/34 [^b]be	+IMPERATIV
-SFX 21 e 0/34 [^c]ce	+IMPERATIV
-SFX 21 e 0/34 [^d]de	+IMPERATIV
-SFX 21 e 0/34 [^f]fe	+IMPERATIV
-SFX 21 e 0/34 [^g]ge	+IMPERATIV
-SFX 21 e 0/34 [^h]he	+IMPERATIV
-SFX 21 e 0/34 [^j]je	+IMPERATIV
-SFX 21 e 0/34 [^k]ke	+IMPERATIV
-SFX 21 e 0/34 [^l]le	+IMPERATIV
-SFX 21 e 0/34 [^m]me	+IMPERATIV
-SFX 21 e 0/34 [^n]ne	+IMPERATIV
-SFX 21 e 0/34 [^p]pe	+IMPERATIV
-SFX 21 e 0/34 [^q]qe	+IMPERATIV
-SFX 21 e 0/34 [^r]re	+IMPERATIV
-SFX 21 e 0/34 [^s]se	+IMPERATIV
-SFX 21 e 0/34 [^t]te	+IMPERATIV
-SFX 21 e 0/34 [^v]ve	+IMPERATIV
-SFX 21 e 0/34 [^w]we	+IMPERATIV
-SFX 21 e 0/34 [^x]xe	+IMPERATIV
-SFX 21 e 0/34 [^z]ze	+IMPERATIV
+SFX 21 be 0 bbe	+IMPERATIV
+SFX 21 ce 0 cce	+IMPERATIV
+SFX 21 de 0 dde	+IMPERATIV
+SFX 21 fe 0 ffe	+IMPERATIV
+SFX 21 ge 0 gge	+IMPERATIV
+SFX 21 he 0 hhe	+IMPERATIV
+SFX 21 je 0 jje	+IMPERATIV
+SFX 21 ke 0 kke	+IMPERATIV
+SFX 21 le 0 lle	+IMPERATIV
+SFX 21 me 0 mme	+IMPERATIV
+SFX 21 ne 0 nne	+IMPERATIV
+SFX 21 pe 0 ppe	+IMPERATIV
+SFX 21 qe 0 qqe	+IMPERATIV
+SFX 21 re 0 rre	+IMPERATIV
+SFX 21 se 0 sse	+IMPERATIV
+SFX 21 te 0 tte	+IMPERATIV
+SFX 21 ve 0 vve	+IMPERATIV
+SFX 21 we 0 wwe	+IMPERATIV
+SFX 21 xe 0 xxe	+IMPERATIV
+SFX 21 ze 0 zze	+IMPERATIV
+SFX 21 e 0 [^b]be	+IMPERATIV
+SFX 21 e 0 [^c]ce	+IMPERATIV
+SFX 21 e 0 [^d]de	+IMPERATIV
+SFX 21 e 0 [^f]fe	+IMPERATIV
+SFX 21 e 0 [^g]ge	+IMPERATIV
+SFX 21 e 0 [^h]he	+IMPERATIV
+SFX 21 e 0 [^j]je	+IMPERATIV
+SFX 21 e 0 [^k]ke	+IMPERATIV
+SFX 21 e 0 [^l]le	+IMPERATIV
+SFX 21 e 0 [^m]me	+IMPERATIV
+SFX 21 e 0 [^n]ne	+IMPERATIV
+SFX 21 e 0 [^p]pe	+IMPERATIV
+SFX 21 e 0 [^q]qe	+IMPERATIV
+SFX 21 e 0 [^r]re	+IMPERATIV
+SFX 21 e 0 [^s]se	+IMPERATIV
+SFX 21 e 0 [^t]te	+IMPERATIV
+SFX 21 e 0 [^v]ve	+IMPERATIV
+SFX 21 e 0 [^w]we	+IMPERATIV
+SFX 21 e 0 [^x]xe	+IMPERATIV
+SFX 21 e 0 [^z]ze	+IMPERATIV
 SFX 21 0 ende/34,22 [^e]	+PRÆSENS_PART
-SFX 21 ere ér/34 ere	+IMPERATIV
+SFX 21 ere ér ere	+IMPERATIV
 SFX 21 0 er/34 [iy]	+NUTID
+SFX 21 e 0 [aeiouyæøå]e	+IMPERATIV
 
 #Verbum, passiv
 SFX 22 Y 2
@@ -893,9 +894,10 @@ SFX 29 0 s/32,35,36 .
 SFX 29 0 s/33,35,36 .
 
 #Sammensætning, fugeelement -e-
-SFX 30 Y 2
+SFX 30 Y 3
 SFX 30 0 e/32,36,35 .
 SFX 30 0 e/33,36,35 .
+SFX 30 0 e-/34 .
 
 #Sammensætning, fugeelement Ø
 SFX 31 Y 2
@@ -1255,8 +1257,8 @@ SFX 43 0 es s	+GENITIV
 
 #Substantiv, torso, fælleskøn
 SFX 44 Y 4
-SFX 44 0 en/10,34 [^e]	+BESTEMT_ENTAL
-SFX 44 0 n/10,34 e	+BESTEMT_ENTAL
+SFX 44 0 en/34 [^e]	+BESTEMT_ENTAL
+SFX 44 0 n/34 e	+BESTEMT_ENTAL
 SFX 44 0 ens/34 [^e]	+GENITIV
 SFX 44 0 ns/34 e	+GENITIV
 
