@@ -61,7 +61,7 @@ while (++index < dictionaries.length) {
   let langName
 
   try {
-    source = fs.readFileSync(path.join(base, '.source'), 'utf-8').trim()
+    source = fs.readFileSync(path.join(base, '.source'), 'utf8').trim()
   } catch {
     console.log('Cannot find dictionary for `%s`', code)
     continue
@@ -130,7 +130,7 @@ while (++index < dictionaries.length) {
     name: 'dictionary-' + code.toLowerCase(),
     version: pack.version || '0.0.0',
     description: langName + ' spelling dictionary',
-    license: fs.readFileSync(path.join(base, '.spdx'), 'utf-8').trim(),
+    license: fs.readFileSync(path.join(base, '.spdx'), 'utf8').trim(),
     keywords,
     repository: pkg.repository + '/tree/main/dictionaries/' + code,
     bugs: pkg.bugs,
