@@ -12,10 +12,16 @@
 #  - add phonetic suggestion (Copyright (C) 2000 Björn Jacke, see the end of the file)
 #
 # 2021-02-15 (Marco A.G.Pinto)
-# Fixed: concious + conciousness
+# Fixed: concious + conciousness.
+#
+# 2022-07-12 (Marco A.G.Pinto)
+# Fixed: ! flag at start of words;
+#           Removed duplicate words;
+#           Sorted alphabetically the dictionary.
 #
 SET UTF-8
 TRY esiaénrtolcdugmfphbyvkw-'.zqjxSNRTLCGDMFPHBEAUYOIVKWóöâôZQJXÅçèîêàïüäñ
+NOSUGGEST !
 REP 36
 REP f ph
 REP ph f
