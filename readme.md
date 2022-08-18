@@ -228,14 +228,10 @@ npm install dictionary-hyw import-meta-resolve
 import fs from 'node:fs/promises'
 import {resolve} from 'import-meta-resolve'
 
-main()
-
-async function main() {
-  const base = await resolve('dictionary-hyw', import.meta.url)
-  const dic = await fs.readFile(new URL('index.dic', base))
-  const aff = await fs.readFile(new URL('index.aff', base))
-  console.log(dic, aff)
-}
+const base = await resolve('dictionary-hyw', import.meta.url)
+const dic = await fs.readFile(new URL('index.dic', base))
+const aff = await fs.readFile(new URL('index.aff', base))
+console.log(dic, aff)
 ```
 
 ### Example: load files from CommonJS
@@ -255,14 +251,10 @@ npm install dictionary-tlh
 const fs = require('node:fs')
 const path = require('node:path')
 
-main()
-
-async function main() {
-  const base = require.resolve('dictionary-tlh')
-  const dic = await fs.readFile(path.join(base, 'index.dic'))
-  const aff = await fs.readFile(path.join(base, 'index.aff'))
-  console.log(dic, aff)
-}
+const base = require.resolve('dictionary-tlh')
+const dic = await fs.readFile(path.join(base, 'index.dic'))
+const aff = await fs.readFile(path.join(base, 'index.aff'))
+console.log(dic, aff)
 ```
 
 <!--Old name of the following section:-->
