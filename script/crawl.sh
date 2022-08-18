@@ -275,7 +275,7 @@ crawl "greek" \
 # “Ἐγκατάσταση σὲ OpenOffice / LibreOffice”, and get the latest from sourceforge.
 crawl "greek-polyton" \
   "https://thepolytonicproject.gr/spell" \
-  "https://iweb.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt"
+  "https://altushost-swe.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt"
 # Go to <http://hspell.ivrix.org.il/download.html>, copy/paste the URL of the
 # latest release
 crawl "hebrew" \
@@ -486,7 +486,7 @@ crawl "swedish" \
 # get the top.
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
-  "https://iweb.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
+  "https://kumisystems.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
 # Nothing.
 crawl "turkmen" \
   "https://github.com/nazartm/turkmen-spell-check-dictionary" \
