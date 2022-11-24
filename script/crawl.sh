@@ -211,7 +211,7 @@ crawl "dutch" \
 # Go to the link, get the latest.
 crawl "english" \
   "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://altushost-swe.dl.sourceforge.net/project/aoo-extensions/17102/80/dict-en-20220801_aoo.oxt"
+  "https://deac-ams.dl.sourceforge.net/project/aoo-extensions/17102/83/dict-en-20221101_aoo.oxt"
 # Go to the link, go to “Additional Hunspell Dictionaries”, go to “Parent folder”.
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
@@ -332,7 +332,7 @@ crawl "latvian" \
 # Hasn’t been updates in 10 years.
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
-  "https://deac-fra.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
+  "https://kumisystems.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
 # Nothing.
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \

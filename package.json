@@ -36,7 +36,7 @@
     "to-vfile": "^7.0.0",
     "unist-builder": "^3.0.0",
     "utf-8-validate": "^5.0.0",
-    "xo": "^0.51.0"
+    "xo": "^0.53.0"
   },
   "scripts": {
     "generate": "sh script/crawl.sh && node script/generate",
@@ -60,6 +60,7 @@
     ],
     "rules": {
       "unicorn/prefer-module": "off",
+      "unicorn/prefer-node-protocol": "off",
       "unicorn/prefer-switch": "off"
     }
   },
