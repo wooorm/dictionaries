@@ -38,7 +38,7 @@ such tools.
 
 ## Install
 
-In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+In Node.js (14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install dictionary-en
