@@ -22,7 +22,6 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "type": "module",
-  "dependencies": {},
   "devDependencies": {
     "bcp-47": "^2.0.0",
     "bcp-47-normalize": "^2.0.0",
@@ -34,12 +33,13 @@
     "remark-preset-wooorm": "^9.0.0",
     "tape": "^5.0.0",
     "to-vfile": "^7.0.0",
+    "type-fest": "^3.0.0",
     "unist-builder": "^3.0.0",
     "utf-8-validate": "^5.0.0",
     "xo": "^0.53.0"
   },
   "scripts": {
-    "generate": "sh script/crawl.sh && node script/generate",
+    "generate": "sh script/crawl.sh && node --conditions development script/generate.js",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test",
     "test": "npm run generate && npm run format && npm run test-api"

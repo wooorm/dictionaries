@@ -1,28 +1,45 @@
-import fs from 'node:fs'
-import path from 'node:path'
+/**
+ * @typedef {import('type-fest').PackageJson} PackageJson
+ * @typedef {import('bcp-47').Schema} Schema
+ *
+ * @typedef Info
+ * @property {string} langName
+ * @property {string} source
+ * @property {string} variable
+ * @property {string} code
+ * @property {boolean} hasLicense
+ */
+
+import assert from 'node:assert/strict'
+import fs from 'node:fs/promises'
 import {isHidden} from 'is-hidden'
 import {parse} from 'bcp-47'
 import tags from 'language-tags'
 
+/* eslint-disable no-await-in-loop */
+
 const own = {}.hasOwnProperty
 
-const pkg = JSON.parse(String(fs.readFileSync('package.json')))
+/** @type {PackageJson} */
+const pkg = JSON.parse(String(await fs.readFile('package.json')))
 
 const docs = String(
-  fs.readFileSync(path.join('script', 'template', 'readme.md'))
+  await fs.readFile(new URL('template/readme.md', import.meta.url))
 )
 const main = String(
-  fs.readFileSync(path.join('script', 'template', 'index.js'))
+  await fs.readFile(new URL('template/index.js', import.meta.url))
 )
 const types = String(
-  fs.readFileSync(path.join('script', 'template', 'index.d.ts'))
+  await fs.readFile(new URL('template/index.d.ts', import.meta.url))
 )
 
+/** @type {Partial<Record<keyof Schema, string>>} */
 const labels = {
   variants: 'variant',
   extensions: 'extlang'
 }
 
+/** @type {Record<string, Array<string>>} */
 const remove = {
   ca: ['or Valencian', 'Valencian'],
   'ca-valencia': ['or Valencian'],
@@ -32,6 +49,7 @@ const remove = {
   ne: ['(macrolanguage)']
 }
 
+/** @type {Record<string, Record<string, string>>} */
 const replace = {
   el: {'Modern Greek (1453-)': 'Modern Greek'},
   'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'},
@@ -44,55 +62,65 @@ const replace = {
   oc: {'(post': 'post', '1500)': '1500'}
 }
 
-const dictionaries = fs
-  .readdirSync('dictionaries')
-  .filter((d) => !isHidden(d))
-  .sort()
+const root = new URL('../dictionaries/', import.meta.url)
+const files = await fs.readdir(root)
+const dictionaries = files.filter((d) => !isHidden(d)).sort()
 let index = -1
 
 while (++index < dictionaries.length) {
   const code = dictionaries[index]
-  const base = path.join('dictionaries', code)
+  const base = new URL(code + '/', root)
   const tag = parse(code)
+  /** @type {Array<string>} */
   let parts = []
+  /** @type {PackageJson} */
   let pack = {}
   let keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
+  /** @type {string} */
   let source
+  /** @type {string} */
   let langName
 
   try {
-    source = fs.readFileSync(path.join(base, '.source'), 'utf8').trim()
+    source = String(await fs.readFile(new URL('.source', base))).trim()
   } catch {
     console.log('Cannot find dictionary for `%s`', code)
     continue
   }
 
   try {
-    pack = JSON.parse(fs.readFileSync(path.join(base, 'package.json')))
+    pack = JSON.parse(String(await fs.readFile(new URL('package.json', base))))
   } catch {}
 
   keywords = keywords.concat(code.toLowerCase().split('-'))
+  /** @type {keyof Schema} */
   let key
 
   for (key in tag) {
     if (!own.call(tag, key)) continue
 
     const label = labels[key] || key
-    const value = Array.isArray(tag[key]) ? tag[key] : [tag[key]]
+    const value = /** @type {Array<string>} */ (
+      Array.isArray(tag[key]) ? tag[key] : [tag[key]]
+    )
     let offset = -1
 
     while (++offset < value.length) {
       const subvalue = value[offset]
       if (!subvalue) continue
       const subtag = subvalue ? tags.type(subvalue, label) : null
+      /** @type {Array<string>|null} */
+      // @ts-expect-error: exists.
       let data = subtag ? subtag.data.record.Description : null
 
       // Fix bug in `language-tags`, where the description of a tag when
       // indented is seen as an array, instead of continued text.
-      if (subtag.data.subtag === 'ia') {
+      // @ts-expect-error: exists.
+      if (subtag.data.subtag === 'ia' && data) {
         data = [data.join(' ')]
       }
 
+      assert(data, 'expected subtag')
       keywords = keywords.concat(data.join(' ').toLowerCase().split(' '))
 
       if (label === 'language') {
@@ -126,11 +154,15 @@ while (++index < dictionaries.length) {
     langName += ' (' + parts.slice(1).join('; ') + ')'
   }
 
+  assert(pkg.bugs, 'expected `bugs`')
+  assert(pkg.funding, 'expected `funding`')
+  assert(pkg.author, 'expected `author`')
+  assert(pkg.contributors, 'expected `contributors`')
   pack = {
     name: 'dictionary-' + code.toLowerCase(),
     version: pack.version || '0.0.0',
     description: langName + ' spelling dictionary',
-    license: fs.readFileSync(path.join(base, '.spdx'), 'utf8').trim(),
+    license: String(await fs.readFile(new URL('.spdx', base))).trim(),
     keywords,
     repository: pkg.repository + '/tree/main/dictionaries/' + code,
     bugs: pkg.bugs,
@@ -140,33 +172,47 @@ while (++index < dictionaries.length) {
     files: ['index.js', 'index.aff', 'index.dic', 'index.d.ts']
   }
 
-  fs.writeFileSync(
-    path.join(base, 'readme.md'),
-    process(
-      docs,
-      Object.assign({}, pack, {
-        langName,
-        source,
-        variable: camelcase(code.toLowerCase()),
-        code,
-        hasLicense: fs.existsSync(path.join(base, 'license'))
-      })
-    )
+  let exists = false
+
+  try {
+    await fs.access(new URL('license', base), fs.constants.F_OK)
+    exists = true
+  } catch {}
+
+  await fs.writeFile(
+    new URL('readme.md', base),
+    process(docs, pack, {
+      langName,
+      source,
+      variable: camelcase(code.toLowerCase()),
+      code,
+      hasLicense: exists
+    })
   )
 
-  fs.writeFileSync(path.join(base, 'index.js'), main)
+  await fs.writeFile(new URL('index.js', base), main)
 
-  fs.writeFileSync(path.join(base, 'index.d.ts'), types)
+  await fs.writeFile(new URL('index.d.ts', base), types)
 
-  fs.writeFileSync(
-    path.join(base, 'package.json'),
+  await fs.writeFile(
+    new URL('package.json', base),
     JSON.stringify(pack, null, 2) + '\n'
   )
 }
 
-function process(file, config) {
-  let license = config.license
-  const source = config.source
+/**
+ *
+ * @param {string} file
+ * @param {PackageJson} pkg
+ * @param {Info} info
+ * @returns {string}
+ */
+function process(file, pkg, info) {
+  assert(pkg.name, 'expected description')
+  assert(pkg.description, 'expected description')
+  assert(pkg.license, 'expected license')
+  let license = pkg.license
+  const source = info.source
   const uri = new URL(source)
   let sourceName = uri.host
 
@@ -181,31 +227,37 @@ function process(file, config) {
     sourceName = sourceName.slice(4)
   }
 
-  if (config.hasLicense) {
+  if (info.hasLicense) {
     license =
       '[' +
       license +
       '](https://github.com/wooorm/' +
       'dictionaries/blob/main/dictionaries/' +
-      config.code +
+      info.code +
       '/license)'
   }
 
   return file
-    .replace(/{{NAME}}/g, config.name)
-    .replace(/{{LANG}}/g, config.langName)
-    .replace(/{{DESCRIPTION}}/g, config.description)
-    .replace(/{{SPDX}}/g, config.license)
+    .replace(/{{NAME}}/g, pkg.name)
+    .replace(/{{LANG}}/g, info.langName)
+    .replace(/{{DESCRIPTION}}/g, pkg.description)
+    .replace(/{{SPDX}}/g, pkg.license)
     .replace(/{{SOURCE}}/g, source)
     .replace(/{{SOURCE_NAME}}/g, sourceName)
-    .replace(/{{VAR}}/g, config.variable)
+    .replace(/{{VAR}}/g, info.variable)
     .replace(
       /{{VAR_CAP}}/g,
-      config.variable.charAt(0).toUpperCase() + config.variable.slice(1)
+      info.variable.charAt(0).toUpperCase() + info.variable.slice(1)
     )
-    .replace(/{{CODE}}/g, config.code)
+    .replace(/{{CODE}}/g, info.code)
     .replace(/{{LICENSE}}/g, license)
 }
+
+/**
+ *
+ * @param {string} value
+ * @returns {string}
+ */
 
 function camelcase(value) {
   return value.replace(/-[a-z]/gi, replace)
@@ -213,3 +265,5 @@ function camelcase(value) {
     return d.charAt(1).toUpperCase()
   }
 }
+
+/* eslint-enable no-await-in-loop */
