@@ -64,7 +64,7 @@ dictionaryEn(function (error, en) {
 Yields:
 
 ```js
-{dic: <Buffer>, aff: <Buffer>}
+{aff: <Buffer>, dic: <Buffer>}
 ```
 
 ## List of dictionaries

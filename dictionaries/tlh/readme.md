@@ -38,7 +38,7 @@ dictionaryTlh(function (error, tlh) {
 Yields:
 
 ```js
-{dic: <Buffer>, aff: <Buffer>}
+{aff: <Buffer>, dic: <Buffer>}
 ```
 
 Where `dic` and `aff` are [`Buffer`][buffer]s for `index.dic` and `index.aff`

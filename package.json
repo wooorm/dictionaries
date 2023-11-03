@@ -38,7 +38,6 @@
     "type-coverage": "^2.0.0",
     "type-fest": "^4.0.0",
     "typescript": "^5.0.0",
-    "unist-builder": "^4.0.0",
     "utf-8-validate": "^6.0.0",
     "xo": "^0.56.0"
   },
@@ -82,11 +81,12 @@
   "xo": {
     "overrides": [
       {
-        "files": "**/*.d.ts",
+        "files": [
+          "script/**/*.js",
+          "test.js"
+        ],
         "rules": {
-          "@typescript-eslint/consistent-type-definitions": "off",
-          "@typescript-eslint/no-redeclare": "off",
-          "n/prefer-global/buffer": "off"
+          "no-await-in-loop": "off"
         }
       }
     ],

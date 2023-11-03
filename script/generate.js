@@ -1,13 +1,20 @@
 /**
- * @typedef {import('type-fest').PackageJson} PackageJson
  * @typedef {import('bcp-47').Schema} Schema
- *
+ * @typedef {import('type-fest').PackageJson} PackageJson
+ */
+
+/**
  * @typedef Info
- * @property {string} langName
- * @property {string} source
- * @property {string} variable
  * @property {string} code
+ *   BCP 47 tag.
  * @property {boolean} hasLicense
+ *   Whether a license file exists.
+ * @property {string} langName
+ *   Language name.
+ * @property {string} source
+ *   Source URL.
+ * @property {string} variable
+ *   Variable name.
  */
 
 import assert from 'node:assert/strict'
@@ -16,10 +23,6 @@ import {parse} from 'bcp-47'
 import {iso15924} from 'iso-15924'
 import {iso31661} from 'iso-3166'
 import {iso6393} from 'iso-639-3'
-
-/* eslint-disable no-await-in-loop */
-
-const own = {}.hasOwnProperty
 
 /** @type {PackageJson} */
 const pkg = JSON.parse(String(await fs.readFile('package.json')))
@@ -32,11 +35,17 @@ const main = String(
 )
 const types = String(
   await fs.readFile(new URL('template/index.d.ts', import.meta.url))
-).replace(/\r?\n\/\/ @ts-expect-error: to do: use ESM\./, '')
+)
+  // To do: remove when ESM.
+  .replace(/\r?\n\/\/ @ts-expect-error: to do: use ESM\./, '')
 
 const root = new URL('../dictionaries/', import.meta.url)
 const files = await fs.readdir(root)
-const dictionaries = files.filter((d) => d.charAt(0) !== '.').sort()
+const dictionaries = files
+  .filter(function (d) {
+    return d.charAt(0) !== '.'
+  })
+  .sort()
 let index = -1
 
 while (++index < dictionaries.length) {
@@ -69,7 +78,7 @@ while (++index < dictionaries.length) {
   let key
 
   for (key in tag) {
-    if (!own.call(tag, key)) continue
+    if (!Object.hasOwn(tag, key)) continue
 
     const value = /** @type {Array<string>} */ (
       Array.isArray(tag[key]) ? tag[key] : [tag[key]]
@@ -83,9 +92,9 @@ while (++index < dictionaries.length) {
       let displayName
 
       if (key === 'language') {
-        const value = iso6393.find(
-          (d) => d.iso6391 === subvalue || d.iso6393 === subvalue
-        )
+        const value = iso6393.find(function (d) {
+          return d.iso6391 === subvalue || d.iso6393 === subvalue
+        })
         assert(value, 'expected ISO 639-1 or 639-3 language `' + subvalue + '`')
         displayName = value.name
           .replace(/\([^)]+\)/, '')
@@ -93,12 +102,16 @@ while (++index < dictionaries.length) {
           .trim()
         parts.push(displayName)
       } else if (key === 'script') {
-        const value = iso15924.find((d) => d.code === subvalue)
+        const value = iso15924.find(function (d) {
+          return d.code === subvalue
+        })
         assert(value, 'expected ISO 15924 script `' + subvalue + '`')
         displayName = value.name
         parts.push(displayName + ' script')
       } else if (key === 'region') {
-        const value = iso31661.find((d) => d.alpha2 === subvalue)
+        const value = iso31661.find(function (d) {
+          return d.alpha2 === subvalue
+        })
         assert(value, 'expected ISO 3166-1 region `' + subvalue + '`')
         displayName = value.name
           .replace(/of Great Britain .*/, '')
@@ -153,11 +166,11 @@ while (++index < dictionaries.length) {
   await fs.writeFile(
     new URL('readme.md', base),
     process(docs, pack, {
+      code,
+      hasLicense: exists,
       langName,
       source,
-      variable: camelcase(code.toLowerCase()),
-      code,
-      hasLicense: exists
+      variable: camelcase(code.toLowerCase())
     })
   )
 
@@ -167,16 +180,21 @@ while (++index < dictionaries.length) {
 
   await fs.writeFile(
     new URL('package.json', base),
-    JSON.stringify(pack, null, 2) + '\n'
+    JSON.stringify(pack, undefined, 2) + '\n'
   )
 }
 
 /**
+ * Generate a readme.
  *
  * @param {string} file
+ *   Template.
  * @param {PackageJson} pkg
+ *   Package.
  * @param {Info} info
+ *   Info.
  * @returns {string}
+ *   Result.
  */
 function process(file, pkg, info) {
   assert(pkg.name, 'expected description')
@@ -226,18 +244,20 @@ function process(file, pkg, info) {
 
 /**
  * @param {string} value
+ *   Value.
  * @returns {string}
+ *   Result.
  */
 function camelcase(value) {
   return value.replace(/-[a-z]/gi, replace)
 
   /**
    * @param {string} d
+   *   Value.
    * @returns {string}
+   *   Result.
    */
   function replace(d) {
     return d.charAt(1).toUpperCase()
   }
 }
-
-/* eslint-enable no-await-in-loop */

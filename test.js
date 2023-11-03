@@ -14,7 +14,6 @@ test('dictionaries', async function (t) {
 
     if (folder.charAt(0) === '.') continue
 
-    // eslint-disable-next-line no-await-in-loop
     await t.test(folder, async function (t) {
       const folderUrl = new URL(folder + '/', base)
 

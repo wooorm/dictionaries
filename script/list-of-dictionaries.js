@@ -1,13 +1,13 @@
 /**
+ * @typedef {import('mdast').PhrasingContent} PhrasingContent
  * @typedef {import('mdast').Root} Root
  * @typedef {import('mdast').TableRow} TableRow
- * @typedef {import('mdast').PhrasingContent} PhrasingContent
+ *
  * @typedef {import('type-fest').PackageJson} PackageJson
  */
 
 import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
-import {u} from 'unist-builder'
 import {zone} from 'mdast-zone'
 
 const root = new URL('../dictionaries/', import.meta.url)
@@ -16,7 +16,7 @@ const root = new URL('../dictionaries/', import.meta.url)
  * @returns
  *   Transform.
  */
-export default function listOfDictionaries() {
+export default function remarkListDictionaries() {
   /**
    * @param {Root} tree
    *   Tree.
@@ -26,23 +26,47 @@ export default function listOfDictionaries() {
   return async function (tree) {
     const files = await fs.readdir(root)
     const rows = await Promise.all(
-      files.filter((d) => d.charAt(0) !== '.').map((d) => row(d))
+      files
+        .filter(function (d) {
+          return d.charAt(0) !== '.'
+        })
+        .map(function (d) {
+          return row(d)
+        })
     )
 
     zone(tree, 'support', function (start, nodes, end) {
       return [
         start,
-        u('paragraph', [
-          u('text', 'In total ' + rows.length + ' dictionaries are provided.')
-        ]),
-        u('table', [
-          u('tableRow', [
-            u('tableCell', [u('text', 'Name')]),
-            u('tableCell', [u('text', 'Description')]),
-            u('tableCell', [u('text', 'License')])
-          ]),
-          ...rows
-        ]),
+        {
+          type: 'paragraph',
+          children: [
+            {
+              type: 'text',
+              value: 'In total ' + rows.length + ' dictionaries are provided.'
+            }
+          ]
+        },
+        {
+          type: 'table',
+          children: [
+            {
+              type: 'tableRow',
+              children: [
+                {type: 'tableCell', children: [{type: 'text', value: 'Name'}]},
+                {
+                  type: 'tableCell',
+                  children: [{type: 'text', value: 'Description'}]
+                },
+                {
+                  type: 'tableCell',
+                  children: [{type: 'text', value: 'License'}]
+                }
+              ]
+            },
+            ...rows
+          ]
+        },
         end
       ]
     })
@@ -50,9 +74,10 @@ export default function listOfDictionaries() {
 }
 
 /**
- *
  * @param {string} name
+ *   Name.
  * @returns {Promise<TableRow>}
+ *   Row.
  */
 
 async function row(name) {
@@ -82,19 +107,31 @@ async function row(name) {
 
   if (exists) {
     license = [
-      u('link', {url: 'dictionaries/' + name + '/license'}, [
-        u('text', pack.license)
-      ])
+      {
+        type: 'link',
+        url: 'dictionaries/' + name + '/license',
+        children: [{type: 'text', value: pack.license}]
+      }
     ]
   } else {
-    license = [u('text', pack.license)]
+    license = [{type: 'text', value: pack.license}]
   }
 
-  return u('tableRow', [
-    u('tableCell', [
-      u('link', {url: 'dictionaries/' + name}, [u('inlineCode', pack.name)])
-    ]),
-    u('tableCell', [u('text', description)]),
-    u('tableCell', license)
-  ])
+  return {
+    type: 'tableRow',
+    children: [
+      {
+        type: 'tableCell',
+        children: [
+          {
+            type: 'link',
+            url: 'dictionaries/' + name,
+            children: [{type: 'inlineCode', value: pack.name}]
+          }
+        ]
+      },
+      {type: 'tableCell', children: [{type: 'text', value: description}]},
+      {type: 'tableCell', children: license}
+    ]
+  }
 }

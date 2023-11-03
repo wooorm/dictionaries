@@ -1,14 +1,17 @@
 /**
  * @callback Callback
- * @param {NodeJS.ErrnoException | undefined} error
+ *   Callback.
+ * @param {Error | undefined} error
+ *   Error.
  * @param {Dictionary | undefined} [dictionary]
+ *   Dictionary.
  *
  * @typedef Dictionary
  *   Hunspell dictionary.
- * @property {Buffer} aff
- *   Buffer in UTF-8 for the affix file (defines the language, keyboard, flags, and more).
- * @property {Buffer} dic
- *   Buffer in UTF-8 for the dictionary file (contains words and flags applying to those words).
+ * @property {Uint8Array} aff
+ *   Data for the affix file (defines the language, keyboard, flags, and more).
+ * @property {Uint8Array} dic
+ *   Data for the dictionary file (contains words and flags applying to those words).
  */
 
 const fs = require('fs')
@@ -18,7 +21,9 @@ module.exports = load
 
 /**
  * @param {Callback} callback
+ *   Callback.
  * @returns {undefined}
+ *   Nothing.
  */
 function load(callback) {
   /** @type {Dictionary} */
@@ -33,9 +38,12 @@ function load(callback) {
 
   /**
    * @param {'aff' | 'dic'} name
+   *   Name.
+   * @returns {undefined}
+   *   Nothing.
    */
   function one(name) {
-    fs.readFile(path.join(__dirname, 'index.' + name), (error, doc) => {
+    fs.readFile(path.join(__dirname, 'index.' + name), function (error, doc) {
       pos++
       exception = exception || error || undefined
       result[name] = doc
