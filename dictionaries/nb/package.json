@@ -4,13 +4,13 @@
   "description": "Norwegian Bokmål spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
+    "bokmål",
     "dictionary",
     "hunspell",
     "myspell",
     "nb",
-    "spelling",
     "norwegian",
-    "bokmål"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

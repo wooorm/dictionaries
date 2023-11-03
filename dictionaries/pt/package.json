@@ -7,9 +7,9 @@
     "dictionary",
     "hunspell",
     "myspell",
+    "portuguese",
     "pt",
-    "spelling",
-    "portuguese"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/pt",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

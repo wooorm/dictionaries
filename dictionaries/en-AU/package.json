@@ -5,13 +5,13 @@
   "license": "(MIT AND BSD)",
   "keywords": [
     "au",
+    "australia",
     "dictionary",
     "en",
+    "english",
     "hunspell",
     "myspell",
-    "spelling",
-    "english",
-    "australia"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/en-AU",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

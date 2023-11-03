@@ -5,11 +5,11 @@
   "license": "GPL-3.0",
   "keywords": [
     "dictionary",
+    "galician",
     "gl",
     "hunspell",
     "myspell",
-    "spelling",
-    "galician"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/gl",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

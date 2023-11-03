@@ -1,18 +1,17 @@
 {
   "name": "dictionary-es-cl",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Chile) spelling dictionary",
+  "description": "Spanish (Chile) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
+    "chile",
     "cl",
     "dictionary",
     "es",
     "hunspell",
     "myspell",
-    "spelling",
     "spanish",
-    "castilian",
-    "chile"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-CL",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

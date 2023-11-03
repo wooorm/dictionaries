@@ -6,10 +6,10 @@
   "keywords": [
     "dictionary",
     "hunspell",
+    "kinyarwanda",
     "myspell",
     "rw",
-    "spelling",
-    "kinyarwanda"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/rw",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

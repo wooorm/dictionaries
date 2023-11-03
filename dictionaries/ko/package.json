@@ -7,9 +7,9 @@
     "dictionary",
     "hunspell",
     "ko",
+    "korean",
     "myspell",
-    "spelling",
-    "korean"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ko",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

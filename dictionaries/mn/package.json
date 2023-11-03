@@ -7,9 +7,9 @@
     "dictionary",
     "hunspell",
     "mn",
+    "mongolian",
     "myspell",
-    "spelling",
-    "mongolian"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/mn",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

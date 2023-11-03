@@ -7,9 +7,9 @@
     "dictionary",
     "hunspell",
     "myspell",
+    "serbian",
     "spelling",
-    "sr",
-    "serbian"
+    "sr"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/sr",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

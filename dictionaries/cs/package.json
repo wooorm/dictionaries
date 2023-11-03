@@ -5,11 +5,11 @@
   "license": "GPL-2.0",
   "keywords": [
     "cs",
+    "czech",
     "dictionary",
     "hunspell",
     "myspell",
-    "spelling",
-    "czech"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/cs",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -6,10 +6,10 @@
   "keywords": [
     "dictionary",
     "en",
+    "english",
     "hunspell",
     "myspell",
-    "spelling",
-    "english"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/en",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

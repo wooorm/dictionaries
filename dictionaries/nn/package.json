@@ -8,9 +8,9 @@
     "hunspell",
     "myspell",
     "nn",
-    "spelling",
     "norwegian",
-    "nynorsk"
+    "nynorsk",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/nn",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

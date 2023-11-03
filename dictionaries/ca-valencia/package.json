@@ -1,17 +1,16 @@
 {
   "name": "dictionary-ca-valencia",
   "version": "2.6.0",
-  "description": "Catalan (Valencian) spelling dictionary",
+  "description": "Catalan (Valencia) spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1)",
   "keywords": [
     "ca",
+    "catalan",
     "dictionary",
     "hunspell",
     "myspell",
     "spelling",
-    "valencia",
-    "catalan",
-    "valencian"
+    "valencia"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ca-valencia",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

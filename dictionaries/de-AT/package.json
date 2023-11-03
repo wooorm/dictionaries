@@ -5,13 +5,13 @@
   "license": "(GPL-2.0 OR GPL-3.0)",
   "keywords": [
     "at",
+    "austria",
     "de",
     "dictionary",
+    "german",
     "hunspell",
     "myspell",
-    "spelling",
-    "german",
-    "austria"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/de-AT",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -1,16 +1,16 @@
 {
   "name": "dictionary-gd",
   "version": "1.3.0",
-  "description": "Scottish Gaelic (or Gaelic) spelling dictionary",
+  "description": "Scottish Gaelic spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
     "dictionary",
+    "gaelic",
     "gd",
     "hunspell",
     "myspell",
-    "spelling",
     "scottish",
-    "gaelic"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/gd",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

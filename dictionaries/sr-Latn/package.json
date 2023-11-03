@@ -6,12 +6,12 @@
   "keywords": [
     "dictionary",
     "hunspell",
+    "latin",
     "latn",
     "myspell",
-    "spelling",
-    "sr",
     "serbian",
-    "latin"
+    "spelling",
+    "sr"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/sr-Latn",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

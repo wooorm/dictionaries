@@ -5,13 +5,13 @@
   "license": "(MIT AND BSD)",
   "keywords": [
     "ca",
+    "canada",
     "dictionary",
     "en",
+    "english",
     "hunspell",
     "myspell",
-    "spelling",
-    "english",
-    "canada"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/en-CA",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

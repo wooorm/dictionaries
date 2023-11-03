@@ -5,12 +5,11 @@
   "license": "(GPL-2.0 OR LGPL-2.1)",
   "keywords": [
     "ca",
+    "catalan",
     "dictionary",
     "hunspell",
     "myspell",
-    "spelling",
-    "catalan",
-    "valencian"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ca",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -6,13 +6,13 @@
   "keywords": [
     "dictionary",
     "en",
+    "english",
     "gb",
     "hunspell",
+    "kingdom",
     "myspell",
     "spelling",
-    "english",
-    "united",
-    "kingdom"
+    "united"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/en-GB",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

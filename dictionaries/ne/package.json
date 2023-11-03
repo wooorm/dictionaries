@@ -8,8 +8,8 @@
     "hunspell",
     "myspell",
     "ne",
-    "spelling",
-    "nepali"
+    "nepali",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ne",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

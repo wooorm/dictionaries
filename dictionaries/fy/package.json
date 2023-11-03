@@ -5,12 +5,12 @@
   "license": "GPL-3.0",
   "keywords": [
     "dictionary",
+    "frisian",
     "fy",
     "hunspell",
     "myspell",
     "spelling",
-    "western",
-    "frisian"
+    "western"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/fy",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

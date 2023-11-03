@@ -7,13 +7,9 @@
     "dictionary",
     "hunspell",
     "ia",
-    "myspell",
-    "spelling",
     "interlingua",
-    "international",
-    "auxiliary",
-    "language",
-    "association"
+    "myspell",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ia",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

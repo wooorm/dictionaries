@@ -8,8 +8,8 @@
     "hunspell",
     "myspell",
     "sl",
-    "spelling",
-    "slovenian"
+    "slovenian",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/sl",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

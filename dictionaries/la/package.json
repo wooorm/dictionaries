@@ -7,9 +7,9 @@
     "dictionary",
     "hunspell",
     "la",
+    "latin",
     "myspell",
-    "spelling",
-    "latin"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/la",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

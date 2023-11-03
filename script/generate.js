@@ -14,7 +14,9 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
 import {isHidden} from 'is-hidden'
 import {parse} from 'bcp-47'
-import tags from 'language-tags'
+import {iso15924} from 'iso-15924'
+import {iso31661} from 'iso-3166'
+import {iso6393} from 'iso-639-3'
 
 /* eslint-disable no-await-in-loop */
 
@@ -33,35 +35,6 @@ const types = String(
   await fs.readFile(new URL('template/index.d.ts', import.meta.url))
 )
 
-/** @type {Partial<Record<keyof Schema, string>>} */
-const labels = {
-  variants: 'variant',
-  extensions: 'extlang'
-}
-
-/** @type {Record<string, Array<string>>} */
-const remove = {
-  ca: ['or Valencian', 'Valencian'],
-  'ca-valencia': ['or Valencian'],
-  el: ['(1453-)'],
-  'el-polyton': ['(1453-)'],
-  ia: ['International Auxiliary Language Association'],
-  ne: ['(macrolanguage)']
-}
-
-/** @type {Record<string, Record<string, string>>} */
-const replace = {
-  el: {'Modern Greek (1453-)': 'Modern Greek'},
-  'el-polyton': {'Modern Greek (1453-)': 'Modern Greek'},
-  ia: {
-    '(international': 'international',
-    'association)': 'association',
-    'Interlingua (International Auxiliary Language Association)': 'Interlingua'
-  },
-  ne: {'Nepali (macrolanguage)': 'Nepali'},
-  oc: {'(post': 'post', '1500)': '1500'}
-}
-
 const root = new URL('../dictionaries/', import.meta.url)
 const files = await fs.readdir(root)
 const dictionaries = files.filter((d) => !isHidden(d)).sort()
@@ -72,10 +45,10 @@ while (++index < dictionaries.length) {
   const base = new URL(code + '/', root)
   const tag = parse(code)
   /** @type {Array<string>} */
-  let parts = []
+  const parts = []
   /** @type {PackageJson} */
   let pack = {}
-  let keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
+  const keywords = ['spelling', 'myspell', 'hunspell', 'dictionary']
   /** @type {string} */
   let source
   /** @type {string} */
@@ -92,14 +65,13 @@ while (++index < dictionaries.length) {
     pack = JSON.parse(String(await fs.readFile(new URL('package.json', base))))
   } catch {}
 
-  keywords = [...keywords, ...code.toLowerCase().split('-')].sort()
+  keywords.push(...code.toLowerCase().split('-'))
   /** @type {keyof Schema} */
   let key
 
   for (key in tag) {
     if (!own.call(tag, key)) continue
 
-    const label = labels[key] || key
     const value = /** @type {Array<string>} */ (
       Array.isArray(tag[key]) ? tag[key] : [tag[key]]
     )
@@ -108,45 +80,45 @@ while (++index < dictionaries.length) {
     while (++offset < value.length) {
       const subvalue = value[offset]
       if (!subvalue) continue
-      const subtag = subvalue ? tags.type(subvalue, label) : null
-      /** @type {Array<string>|null} */
-      // @ts-expect-error: exists.
-      let data = subtag ? subtag.data.record.Description : null
+      /** @type {string | undefined} */
+      let displayName
 
-      // Fix bug in `language-tags`, where the description of a tag when
-      // indented is seen as an array, instead of continued text.
-      // @ts-expect-error: exists.
-      if (subtag.data.subtag === 'ia' && data) {
-        data = [data.join(' ')]
-      }
-
-      assert(data, 'expected subtag')
-      keywords = keywords.concat(data.join(' ').toLowerCase().split(' '))
-
-      if (label === 'language') {
-        parts = [data[0]].concat(
-          data.slice(1).map((x) => 'or ' + x),
-          parts
+      if (key === 'language') {
+        const value = iso6393.find(
+          (d) => d.iso6391 === subvalue || d.iso6393 === subvalue
         )
-      } else if (label === 'script') {
-        parts = parts.concat(data.join(' ') + ' script')
-      } else {
-        parts = parts.concat(data)
+        assert(value, 'expected ISO 639-1 or 639-3 language `' + subvalue + '`')
+        displayName = value.name
+          .replace(/\([^)]+\)/, '')
+          .replace(/modern/i, '')
+          .trim()
+        parts.push(displayName)
+      } else if (key === 'script') {
+        const value = iso15924.find((d) => d.code === subvalue)
+        assert(value, 'expected ISO 15924 script `' + subvalue + '`')
+        displayName = value.name
+        parts.push(displayName + ' script')
+      } else if (key === 'region') {
+        const value = iso31661.find((d) => d.alpha2 === subvalue)
+        assert(value, 'expected ISO 3166-1 region `' + subvalue + '`')
+        displayName = value.name
+          .replace(/of Great Britain .*/, '')
+          .replace(/\([^)]+\)/, '')
+          .trim()
+        parts.push(displayName)
+      } else if (key === 'variants') {
+        assert(
+          subvalue === 'valencia' || subvalue === 'polyton',
+          'expected only supported variant valencia'
+        )
+        displayName = subvalue.charAt(0).toUpperCase() + subvalue.slice(1)
+        parts.push(displayName)
       }
+
+      assert(displayName, 'expected `displayName`')
+      keywords.push(...displayName.toLowerCase().split(' '))
     }
   }
-
-  keywords = keywords
-    .filter(Boolean)
-    .filter((key, index, parent) => !parent.includes(key, index + 1))
-    .filter((d) => (remove[code] ? !remove[code].includes(d) : true))
-    .map((d) => (replace[code] ? replace[code][d] : null) || d)
-
-  parts = parts
-    .filter(Boolean)
-    .filter((key, index, parent) => !parent.includes(key, index + 1))
-    .filter((d) => (remove[code] ? !remove[code].includes(d) : true))
-    .map((d) => (replace[code] ? replace[code][d] : null) || d)
 
   langName = parts[0]
 
@@ -163,7 +135,7 @@ while (++index < dictionaries.length) {
     version: pack.version || '0.0.0',
     description: langName + ' spelling dictionary',
     license: String(await fs.readFile(new URL('.spdx', base))).trim(),
-    keywords,
+    keywords: [...new Set(keywords)].sort(),
     repository: pkg.repository + '/tree/main/dictionaries/' + code,
     bugs: pkg.bugs,
     funding: pkg.funding,

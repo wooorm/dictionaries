@@ -8,8 +8,8 @@
     "hunspell",
     "myspell",
     "ru",
-    "spelling",
-    "russian"
+    "russian",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ru",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

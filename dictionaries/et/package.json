@@ -5,11 +5,11 @@
   "license": "LGPL-2.1",
   "keywords": [
     "dictionary",
+    "estonian",
     "et",
     "hunspell",
     "myspell",
-    "spelling",
-    "estonian"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/et",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

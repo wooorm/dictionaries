@@ -1,19 +1,17 @@
 {
   "name": "dictionary-tlh-latn",
   "version": "1.4.0",
-  "description": "Klingon (or tlhIngan Hol; Latin script) spelling dictionary",
+  "description": "Klingon (Latin script) spelling dictionary",
   "license": "Apache-2.0",
   "keywords": [
     "dictionary",
     "hunspell",
+    "klingon",
+    "latin",
     "latn",
     "myspell",
     "spelling",
-    "tlh",
-    "klingon",
-    "tlhingan",
-    "hol",
-    "latin"
+    "tlh"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/tlh-Latn",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

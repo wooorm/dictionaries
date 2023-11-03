@@ -1,7 +1,7 @@
 {
   "name": "dictionary-es-pa",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Panama) spelling dictionary",
+  "description": "Spanish (Panama) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
@@ -9,10 +9,9 @@
     "hunspell",
     "myspell",
     "pa",
-    "spelling",
+    "panama",
     "spanish",
-    "castilian",
-    "panama"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-PA",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

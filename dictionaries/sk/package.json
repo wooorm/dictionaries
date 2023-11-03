@@ -8,8 +8,8 @@
     "hunspell",
     "myspell",
     "sk",
-    "spelling",
-    "slovak"
+    "slovak",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/sk",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

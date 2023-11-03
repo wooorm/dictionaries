@@ -1,18 +1,16 @@
 {
   "name": "dictionary-el-polyton",
   "version": "1.1.0",
-  "description": "Modern Greek (Polytonic Greek) spelling dictionary",
+  "description": "Greek (Polyton) spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
     "dictionary",
     "el",
+    "greek",
     "hunspell",
     "myspell",
     "polyton",
-    "spelling",
-    "modern",
-    "polytonic",
-    "greek"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/el-polyton",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

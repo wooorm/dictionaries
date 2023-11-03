@@ -1,18 +1,17 @@
 {
   "name": "dictionary-es-hn",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Honduras) spelling dictionary",
+  "description": "Spanish (Honduras) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
     "es",
     "hn",
+    "honduras",
     "hunspell",
     "myspell",
-    "spelling",
     "spanish",
-    "castilian",
-    "honduras"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-HN",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

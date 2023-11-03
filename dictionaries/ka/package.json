@@ -5,11 +5,11 @@
   "license": "MIT",
   "keywords": [
     "dictionary",
+    "georgian",
     "hunspell",
     "ka",
     "myspell",
-    "spelling",
-    "georgian"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ka",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

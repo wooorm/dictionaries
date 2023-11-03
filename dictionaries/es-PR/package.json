@@ -1,7 +1,7 @@
 {
   "name": "dictionary-es-pr",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Puerto Rico) spelling dictionary",
+  "description": "Spanish (Puerto Rico) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
@@ -9,11 +9,10 @@
     "hunspell",
     "myspell",
     "pr",
-    "spelling",
-    "spanish",
-    "castilian",
     "puerto",
-    "rico"
+    "rico",
+    "spanish",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-PR",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

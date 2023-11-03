@@ -4,15 +4,15 @@
   "description": "English (South Africa) spelling dictionary",
   "license": "LGPL-2.1",
   "keywords": [
+    "africa",
     "dictionary",
     "en",
+    "english",
     "hunspell",
     "myspell",
-    "spelling",
-    "za",
-    "english",
     "south",
-    "africa"
+    "spelling",
+    "za"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/en-ZA",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -1,16 +1,15 @@
 {
   "name": "dictionary-lb",
   "version": "3.4.0",
-  "description": "Luxembourgish (or Letzeburgesch) spelling dictionary",
+  "description": "Luxembourgish spelling dictionary",
   "license": "EUPL-1.1",
   "keywords": [
     "dictionary",
     "hunspell",
     "lb",
-    "myspell",
-    "spelling",
     "luxembourgish",
-    "letzeburgesch"
+    "myspell",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/lb",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

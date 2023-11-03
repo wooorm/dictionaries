@@ -1,17 +1,15 @@
 {
   "name": "dictionary-oc",
   "version": "1.1.0",
-  "description": "Occitan (post 1500) spelling dictionary",
+  "description": "Occitan spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
     "dictionary",
     "hunspell",
     "myspell",
     "oc",
-    "spelling",
     "occitan",
-    "post",
-    "1500"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/oc",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

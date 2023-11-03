@@ -4,12 +4,12 @@
   "description": "Basque spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
+    "basque",
     "dictionary",
     "eu",
     "hunspell",
     "myspell",
-    "spelling",
-    "basque"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/eu",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -1,18 +1,17 @@
 {
   "name": "dictionary-es-gt",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Guatemala) spelling dictionary",
+  "description": "Spanish (Guatemala) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
     "es",
     "gt",
+    "guatemala",
     "hunspell",
     "myspell",
-    "spelling",
     "spanish",
-    "castilian",
-    "guatemala"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-GT",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

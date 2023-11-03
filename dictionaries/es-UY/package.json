@@ -1,18 +1,17 @@
 {
   "name": "dictionary-es-uy",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Uruguay) spelling dictionary",
+  "description": "Spanish (Uruguay) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
     "es",
     "hunspell",
     "myspell",
-    "spelling",
-    "uy",
     "spanish",
-    "castilian",
-    "uruguay"
+    "spelling",
+    "uruguay",
+    "uy"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-UY",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

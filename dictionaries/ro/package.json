@@ -1,17 +1,15 @@
 {
   "name": "dictionary-ro",
   "version": "2.1.0",
-  "description": "Romanian (or Moldavian; or Moldovan) spelling dictionary",
+  "description": "Romanian spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
     "dictionary",
     "hunspell",
     "myspell",
     "ro",
-    "spelling",
     "romanian",
-    "moldavian",
-    "moldovan"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ro",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

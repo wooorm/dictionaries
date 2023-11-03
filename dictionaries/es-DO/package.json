@@ -1,19 +1,18 @@
 {
   "name": "dictionary-es-do",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Dominican Republic) spelling dictionary",
+  "description": "Spanish (Dominican Republic) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
     "do",
+    "dominican",
     "es",
     "hunspell",
     "myspell",
-    "spelling",
+    "republic",
     "spanish",
-    "castilian",
-    "dominican",
-    "republic"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-DO",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -6,12 +6,12 @@
   "keywords": [
     "dictionary",
     "fi",
+    "finland",
     "hunspell",
     "myspell",
     "spelling",
     "sv",
-    "swedish",
-    "finland"
+    "swedish"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/sv-FI",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

@@ -6,10 +6,10 @@
   "keywords": [
     "dictionary",
     "he",
+    "hebrew",
     "hunspell",
     "myspell",
-    "spelling",
-    "hebrew"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/he",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

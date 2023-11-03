@@ -1,17 +1,15 @@
 {
   "name": "dictionary-tlh",
   "version": "1.4.0",
-  "description": "Klingon (or tlhIngan Hol) spelling dictionary",
+  "description": "Klingon spelling dictionary",
   "license": "Apache-2.0",
   "keywords": [
     "dictionary",
     "hunspell",
+    "klingon",
     "myspell",
     "spelling",
-    "tlh",
-    "klingon",
-    "tlhingan",
-    "hol"
+    "tlh"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/tlh",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

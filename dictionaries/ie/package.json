@@ -1,16 +1,15 @@
 {
   "name": "dictionary-ie",
   "version": "1.6.0",
-  "description": "Interlingue (or Occidental) spelling dictionary",
+  "description": "Interlingue spelling dictionary",
   "license": "Apache-2.0",
   "keywords": [
     "dictionary",
     "hunspell",
     "ie",
-    "myspell",
-    "spelling",
     "interlingue",
-    "occidental"
+    "myspell",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ie",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

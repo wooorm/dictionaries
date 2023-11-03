@@ -5,11 +5,11 @@
   "license": "GPL-2.0",
   "keywords": [
     "dictionary",
+    "friulian",
     "fur",
     "hunspell",
     "myspell",
-    "spelling",
-    "friulian"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/fur",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

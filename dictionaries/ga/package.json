@@ -7,9 +7,9 @@
     "dictionary",
     "ga",
     "hunspell",
+    "irish",
     "myspell",
-    "spelling",
-    "irish"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ga",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

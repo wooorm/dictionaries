@@ -4,12 +4,12 @@
   "description": "Croatian spelling dictionary",
   "license": "(LGPL-2.1 OR SISSL)",
   "keywords": [
+    "croatian",
     "dictionary",
     "hr",
     "hunspell",
     "myspell",
-    "spelling",
-    "croatian"
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/hr",
   "bugs": "https://github.com/wooorm/dictionaries/issues",

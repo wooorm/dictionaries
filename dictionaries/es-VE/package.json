@@ -1,17 +1,16 @@
 {
   "name": "dictionary-es-ve",
   "version": "1.2.0",
-  "description": "Spanish (or Castilian; Venezuela) spelling dictionary",
+  "description": "Spanish (Venezuela) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
     "dictionary",
     "es",
     "hunspell",
     "myspell",
+    "spanish",
     "spelling",
     "ve",
-    "spanish",
-    "castilian",
     "venezuela"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es-VE",
