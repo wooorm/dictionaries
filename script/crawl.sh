@@ -392,9 +392,6 @@ crawl "romanian" \
 # Not updated in 10 years.
 # Go to <https://bitbucket.org/Shaman_Alex/russian-dictionary-hunspell/downloads/>,
 # (or find the link to that on <https://code.google.com/archive/p/hunspell-ru/>).
-crawl "russian" \
-  "https://code.google.com/archive/p/hunspell-ru/" \
-  "https://bitbucket.org/Shaman_Alex/russian-dictionary-hunspell/downloads/ru_RU_UTF-8_20131101.zip"
 # Nothing.
 crawl "serbian" \
   "https://github.com/grakic/hunspell-sr" \
@@ -931,10 +928,10 @@ generate "ro" "romanian" \
   "ro_RO.dic" "UTF-8" \
   "ro_RO.aff" "UTF-8" \
   "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "README" "UTF-8"
-generate "ru" "russian" \
-  "ru_RU.dic" "UTF-8" \
-  "ru_RU.aff" "UTF-8" \
-  "LGPL-3.0"
+generate "ru" "libreoffice" \
+  "dictionaries-master/ru_RU/ru_RU.dic" "UTF-8" \
+  "dictionaries-master/ru_RU/ru_RU.aff" "UTF-8" \
+  "BSD-3-Clause" "dictionaries-master/ru_RU/README_ru_RU.txt" "UTF-8"
 generate "rw" "kinyarwanda" \
   "hunspell-rw-master/rw_RW.dic" "ISO8859-1" \
   "hunspell-rw-master/rw_RW.aff" "ISO8859-1" \

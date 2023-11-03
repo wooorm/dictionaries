@@ -1,5 +1,15 @@
 * Copyright (c) 1997-2008, Alexander I. Lebedev
 
+Modifications:
+------------------------------------------------------------------
+2012-08-24: Laszlo Nemeth (nemeth at numbertext org)
+* ru_RU.aff: add TRY line for better suggestions
+  (fix fdo#35001, reported by sasha.libreoffice at gmail)
+
+Copyright:
+------------------------------------------------------------------
+* Copyright (c) 1997-2008, Alexander I. Lebedev
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
