@@ -1169,28 +1169,28 @@ PFX Cw 0 -/CbCcCp .
 # FLAGS FOR NOUN DIMINUTIVES
 # tuin=>tuintje
 SFX Ya Y 3
-SFX Ya 0 tje .				ts:NN1r
+SFX Ya 0 tje .					ts:NN1r
 SFX Ya 0 tjes/CaCbCp .			ts:NN2r
 SFX Ya 0 tjes-/CaCbCp .			ts:NN2r
 
 # huis=>huisje
 SFX Yb Y 6
-SFX Yb 0 je [^m]			ts:NN1r
+SFX Yb 0 je [^m]				ts:NN1r
 SFX Yb 0 jes/CaCbCp [^m] 		ts:NN2r
 SFX Yb 0 jes-/CaCbCp [^m] 		ts:NN2r
-SFX Yb 0 pje [m]			ts:NN1r
-SFX Yb 0 pjes/CaCbCp [m]		ts:NN1r
-SFX Yb 0 pjes-/CaCbCp [m]		ts:NN1r
+SFX Yb 0 pje m					ts:NN1r
+SFX Yb 0 pjes/CaCbCp m			ts:NN1r
+SFX Yb 0 pjes-/CaCbCp m			ts:NN1r
 
 # opleiding=>opleidinkje
 SFX Yc Y 3
-SFX Yc g kje .				ts:NN1r
+SFX Yc g kje .					ts:NN1r
 SFX Yc g kjes/CaCbCp .			ts:NN2r
 SFX Yc g kjes-/CaCbCp .			ts:NN2r
 
 # ding=>dingetje
 SFX Yd Y 3
-SFX Yd 0 etje .				ts:NN1r
+SFX Yd 0 etje .					ts:NN1r
 SFX Yd 0 etjes/CaCbCp .			ts:NN2r
 SFX Yd 0 etjes-/CaCbCp .		ts:NN2r
 
@@ -1255,7 +1255,7 @@ SFX Za 0 s .				ts:NN2
 # ium => iums, ia, icus->ici
 SFX Zu Y 4
 SFX Zu 0 s ium
-SFX Zu ium ia ium			ts:NN2
+SFX Zu ium ia ium				ts:NN2
 SFX Zu icus ici icus			ts:NN2
 SFX Zu icus ica icus			ts:NN2
 
@@ -1456,7 +1456,7 @@ SFX PK 0 ders r	ts:NN2d
 
 # FLAG for noun from adjective (deskundig => deskundige, deskundigen)
 SFX Zk Y 2
-SFX Zk 0 en .			ts:NN2
+SFX Zk 0 en .		ts:NN2
 SFX Zk 0 e .			ts:NN1
 
 # FLAG for noun from adjective (deskundig => deskundigheid, deskundigheden)
@@ -1551,7 +1551,7 @@ SFX Ve 0 e .		ts:VBpe
 # viezig => viezige, moe => moeë
 SFX Aa Y 2
 SFX Aa 0 e [^e]		ts:AJe
-SFX Aa 0 ë [e]		ts:AJe
+SFX Aa 0 ë e		ts:AJe
 
 # lelijk => lelijker, raar => raarder
 SFX Ab Y 2
@@ -1566,7 +1566,7 @@ SFX Ac 0 dere r		ts:AJce
 # lelijk => lelijkst
 SFX Ad Y 2
 SFX Ad 0 st/A0 [^s]	ts:AJsn
-SFX Ad 0 t/A0 [s]		ts:AJsn
+SFX Ad 0 t/A0 s		ts:AJsn
 
 # lelijkst => allerlelijkst
 PFX A0 Y 1
@@ -1575,7 +1575,7 @@ PFX A0 0 aller
 # lelijk => lelijkste
 SFX Ae Y 2
 SFX Ae 0 ste/A0 [^s]	ts:AJse
-SFX Ae 0 te/A0 [s]		ts:AJse
+SFX Ae 0 te/A0 s		ts:AJse
 
 # lelijk => lelijks
 SFX Ai Y 1
@@ -1802,17 +1802,32 @@ SFX Ax ut tere uut	ts:AJce
 
 # GEOGRAFIE
 
+SFX Gb Y 1
+SFX Gb 0 brug .	ts:DT
+
+SFX Gd Y 1
+SFX Gd 0 dijk .	ts:DT
+
 SFX Gs Y 1
 SFX Gs 0 straat .	ts:DT
 
 SFX Gl Y 1
 SFX Gl 0 laan .	ts:DT
 
+SFX Gh Y 1
+SFX Gh 0 hof .	ts:DT
+
+SFX Gi Y 1
+SFX Gi 0 singel .	ts:DT
+
 SFX Gp Y 1
 SFX Gp 0 plein .	ts:DT
 
 SFX Gk Y 1
 SFX Gk 0 kanaal .	ts:DT
+
+SFX Ga Y 1
+SFX Ga 0 kade .	ts:DT
 
 SFX Gw Y 1
 SFX Gw 0 weg .	ts:DT
