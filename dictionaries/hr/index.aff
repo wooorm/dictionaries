@@ -76,7 +76,7 @@ ICONV ŕ r
 
 
 # REP - .
-REP 229
+REP 231
 REP ^pocrtava podcrtava
 REP ^zdrastv zdravstv
 REP nućemo$ nut_ćemo
@@ -118,6 +118,7 @@ REP nion nionic
 REP nuće$ nut_će
 REP ^aders adres
 REP prijek prek
+REP ćovije čovje
 REP vežen vezen
 REP ećeš$ et_ćeš
 REP ljanj ljenj
@@ -145,6 +146,7 @@ REP ^trab treb
 REP ^jel$ je_li
 REP bljiv biv
 REP ljiv ljav
+REP vije vje
 REP najs naes
 REP sup sump
 REP kus$ k
