@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import assert from 'node:assert'
 import test from 'tape'
-import {toVFile} from 'to-vfile'
+import {readSync} from 'to-vfile'
 import {isHidden} from 'is-hidden'
 import isUtf8 from 'utf-8-validate'
 import {bcp47Normalize} from 'bcp-47-normalize'
@@ -37,8 +37,12 @@ function utf8(name) {
   while (++index < files.length) {
     const d = files[index]
     if (isHidden(d)) continue
-    const file = toVFile.readSync(path.join(dirname, d))
-    assert.ok(isUtf8(file.value), file.basename + ' should be utf8')
+    const file = readSync(path.join(dirname, d))
+    assert.ok(
+      // @ts-expect-error: hopefully uint8array is fine for `is-utf-8`.
+      typeof file.value === 'string' || isUtf8(file.value),
+      file.basename + ' should be utf8'
+    )
   }
 }
 
