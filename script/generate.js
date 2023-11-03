@@ -149,7 +149,13 @@ while (++index < dictionaries.length) {
     contributors: pkg.contributors,
     type: 'module',
     exports: './index.js',
-    files: ['index.aff', 'index.d.ts', 'index.dic', 'index.js', 'index.map']
+    files: [
+      'index.aff',
+      'index.d.ts',
+      'index.d.ts.map',
+      'index.dic',
+      'index.js'
+    ]
   }
 
   let exists = false

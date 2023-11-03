@@ -32,8 +32,8 @@
   "files": [
     "index.aff",
     "index.d.ts",
+    "index.d.ts.map",
     "index.dic",
-    "index.js",
-    "index.map"
+    "index.js"
   ]
 }
