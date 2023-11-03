@@ -92,8 +92,6 @@
     ],
     "prettier": true,
     "rules": {
-      "unicorn/prefer-module": "off",
-      "unicorn/prefer-node-protocol": "off",
       "unicorn/prefer-string-replace-all": "off",
       "unicorn/prefer-switch": "off"
     }

@@ -33,12 +33,6 @@ const docs = String(
 const main = String(
   await fs.readFile(new URL('template/index.js', import.meta.url))
 )
-const types = String(
-  await fs.readFile(new URL('template/index.d.ts', import.meta.url))
-)
-  // To do: remove when ESM.
-  .replace(/\r?\n\/\/ @ts-expect-error: to do: use ESM\./, '')
-
 const root = new URL('../dictionaries/', import.meta.url)
 const files = await fs.readdir(root)
 const dictionaries = files
@@ -153,7 +147,8 @@ while (++index < dictionaries.length) {
     funding: pkg.funding,
     author: pkg.author,
     contributors: pkg.contributors,
-    files: ['index.aff', 'index.d.ts', 'index.dic', 'index.js']
+    type: 'module',
+    files: ['index.aff', 'index.d.ts', 'index.dic', 'index.js', 'index.map']
   }
 
   let exists = false
@@ -175,8 +170,6 @@ while (++index < dictionaries.length) {
   )
 
   await fs.writeFile(new URL('index.js', base), main)
-
-  await fs.writeFile(new URL('index.d.ts', base), types)
 
   await fs.writeFile(
     new URL('package.json', base),

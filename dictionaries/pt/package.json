@@ -22,10 +22,12 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
+  "type": "module",
   "files": [
     "index.aff",
     "index.d.ts",
     "index.dic",
-    "index.js"
+    "index.js",
+    "index.map"
   ]
 }

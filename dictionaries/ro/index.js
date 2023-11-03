@@ -1,11 +1,4 @@
 /**
- * @callback Callback
- *   Callback.
- * @param {Error | undefined} error
- *   Error.
- * @param {Dictionary | undefined} [dictionary]
- *   Dictionary.
- *
  * @typedef Dictionary
  *   Hunspell dictionary.
  * @property {Uint8Array} aff
@@ -14,51 +7,12 @@
  *   Data for the dictionary file (contains words and flags applying to those words).
  */
 
-const fs = require('fs')
-const path = require('path')
+import fs from 'node:fs/promises'
 
-module.exports = load
+const aff = await fs.readFile(new URL('index.aff', import.meta.url))
+const dic = await fs.readFile(new URL('index.dic', import.meta.url))
 
-/**
- * @param {Callback} callback
- *   Callback.
- * @returns {undefined}
- *   Nothing.
- */
-function load(callback) {
-  /** @type {Dictionary} */
-  // @ts-expect-error: filled later.
-  let result = {}
-  let pos = -1
-  /** @type {Error | undefined} */
-  let exception
+/** @type {Dictionary} */
+const dictionary = {aff, dic}
 
-  one('aff')
-  one('dic')
-
-  /**
-   * @param {'aff' | 'dic'} name
-   *   Name.
-   * @returns {undefined}
-   *   Nothing.
-   */
-  function one(name) {
-    fs.readFile(path.join(__dirname, 'index.' + name), function (error, doc) {
-      pos++
-      exception = exception || error || undefined
-      result[name] = doc
-
-      if (pos) {
-        if (exception) {
-          callback(exception)
-        } else {
-          callback(undefined, result)
-        }
-
-        exception = undefined
-        // @ts-expect-error: free memory.
-        result = undefined
-      }
-    })
-  }
-}
+export default dictionary

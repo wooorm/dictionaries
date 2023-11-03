@@ -4,12 +4,12 @@
   "description": "Italian spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
     "it",
-    "italian"
+    "italian",
+    "myspell",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/it",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
@@ -22,10 +22,12 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
+  "type": "module",
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js",
+    "index.map"
   ]
 }

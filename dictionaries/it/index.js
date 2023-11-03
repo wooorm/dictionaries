@@ -1,56 +1,18 @@
 /**
- * @callback Callback
- * @param {NodeJS.ErrnoException | undefined} error
- * @param {Dictionary | undefined} [dictionary]
- *
  * @typedef Dictionary
  *   Hunspell dictionary.
- * @property {Buffer} aff
- *   Buffer in UTF-8 for the affix file (defines the language, keyboard, flags, and more).
- * @property {Buffer} dic
- *   Buffer in UTF-8 for the dictionary file (contains words and flags applying to those words).
+ * @property {Uint8Array} aff
+ *   Data for the affix file (defines the language, keyboard, flags, and more).
+ * @property {Uint8Array} dic
+ *   Data for the dictionary file (contains words and flags applying to those words).
  */
 
-const fs = require('fs')
-const path = require('path')
+import fs from 'node:fs/promises'
 
-module.exports = load
+const aff = await fs.readFile(new URL('index.aff', import.meta.url))
+const dic = await fs.readFile(new URL('index.dic', import.meta.url))
 
-/**
- * @param {Callback} callback
- * @returns {undefined}
- */
-function load(callback) {
-  /** @type {Dictionary} */
-  // @ts-expect-error: filled later.
-  let result = {}
-  let pos = -1
-  /** @type {Error | undefined} */
-  let exception
+/** @type {Dictionary} */
+const dictionary = {aff, dic}
 
-  one('aff')
-  one('dic')
-
-  /**
-   * @param {'aff' | 'dic'} name
-   */
-  function one(name) {
-    fs.readFile(path.join(__dirname, 'index.' + name), (error, doc) => {
-      pos++
-      exception = exception || error || undefined
-      result[name] = doc
-
-      if (pos) {
-        if (exception) {
-          callback(exception)
-        } else {
-          callback(undefined, result)
-        }
-
-        exception = undefined
-        // @ts-expect-error: free memory.
-        result = undefined
-      }
-    })
-  }
-}
+export default dictionary

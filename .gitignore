@@ -2,6 +2,7 @@ archive/
 source/
 node_modules/
 *.d.ts
+*.map
 .DS_Store
 .source
 .spdx

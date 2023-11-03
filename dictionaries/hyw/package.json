@@ -4,13 +4,13 @@
   "description": "Western Armenian spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
+    "armenian",
     "dictionary",
+    "hunspell",
     "hyw",
-    "western",
-    "armenian"
+    "myspell",
+    "spelling",
+    "western"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/hyw",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
@@ -23,10 +23,12 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
+  "type": "module",
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js",
+    "index.map"
   ]
 }
