@@ -226,13 +226,16 @@ function process(file, pkg, info) {
 }
 
 /**
- *
  * @param {string} value
  * @returns {string}
  */
-
 function camelcase(value) {
   return value.replace(/-[a-z]/gi, replace)
+
+  /**
+   * @param {string} d
+   * @returns {string}
+   */
   function replace(d) {
     return d.charAt(1).toUpperCase()
   }

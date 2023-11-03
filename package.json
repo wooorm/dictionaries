@@ -23,6 +23,9 @@
   ],
   "type": "module",
   "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/tape": "^5.0.0",
+    "@types/utf-8-validate": "^5.0.0",
     "bcp-47": "^2.0.0",
     "bcp-47-normalize": "^2.0.0",
     "is-hidden": "^2.0.0",
@@ -35,16 +38,19 @@
     "remark-preset-wooorm": "^9.0.0",
     "tape": "^5.0.0",
     "to-vfile": "^8.0.0",
+    "type-coverage": "^2.0.0",
     "type-fest": "^4.0.0",
+    "typescript": "^5.0.0",
     "unist-builder": "^4.0.0",
     "utf-8-validate": "^6.0.0",
     "xo": "^0.56.0"
   },
   "scripts": {
-    "generate": "sh script/crawl.sh && node --conditions development script/generate.js",
+    "build": "tsc --build --clean && tsc --build && type-coverage",
     "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
-    "test-api": "node test",
-    "test": "npm run generate && npm run format && npm run test-api"
+    "generate": "sh script/crawl.sh && node --conditions development script/generate.js",
+    "test": "npm run build && npm run format && npm run test-api",
+    "test-api": "node --conditions development test.js"
   },
   "prettier": {
     "tabWidth": 2,
@@ -70,10 +76,22 @@
       "./script/list-of-dictionaries.js"
     ]
   },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "ignoreCatch": true,
+    "strict": true
+  },
   "xo": {
-    "ignores": [
-      "dictionaries/*/index.d.ts",
-      "script/template/index.d.ts"
+    "overrides": [
+      {
+        "files": "**/*.d.ts",
+        "rules": {
+          "@typescript-eslint/consistent-type-definitions": "off",
+          "@typescript-eslint/no-redeclare": "off",
+          "n/prefer-global/buffer": "off"
+        }
+      }
     ],
     "prettier": true,
     "rules": {

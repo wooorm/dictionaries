@@ -25,4 +25,5 @@ declare namespace load {
 
 declare const load: (callback: load.Callback) => void
 
+// @ts-expect-error: to do: use ESM.
 export = load

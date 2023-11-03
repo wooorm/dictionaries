@@ -7,16 +7,12 @@ import {isHidden} from 'is-hidden'
 import isUtf8 from 'utf-8-validate'
 import {bcp47Normalize} from 'bcp-47-normalize'
 
-const own = {}.hasOwnProperty
-
 const root = 'dictionaries'
 
-const checks = {
-  'Should have a canonical BCP-47 tag': bcp47,
-  'All required files should exist': requiredFiles,
-  'All files should be in UTF-8': utf8
-}
-
+/**
+ * @param {string} name
+ * @returns {undefined}
+ */
 function bcp47(name) {
   assert.strictEqual(
     name,
@@ -24,11 +20,19 @@ function bcp47(name) {
     name + ' should be a canonical, normal BCP-47 tag'
   )
 
+  /**
+   * @param {string} reason
+   * @returns {undefined}
+   */
   function warn(reason) {
     console.log('warning:%s: %s', name, reason)
   }
 }
 
+/**
+ * @param {string} name
+ * @returns {undefined}
+ */
 function utf8(name) {
   const dirname = path.join(root, name)
   const files = fs.readdirSync(dirname)
@@ -46,6 +50,10 @@ function utf8(name) {
   }
 }
 
+/**
+ * @param {string} name
+ * @returns {undefined}
+ */
 function requiredFiles(name) {
   const dirname = path.join(root, name)
   const files = fs.readdirSync(dirname).filter((d) => !isHidden(d))
@@ -75,15 +83,17 @@ test('dictionaries', (t) => {
     if (isHidden(d)) continue
 
     t.test(d, (st) => {
-      let key
+      st.doesNotThrow(() => {
+        bcp47(d)
+      }, 'Should have a canonical BCP-47 tag')
 
-      for (key in checks) {
-        if (!own.call(checks, key)) continue
+      st.doesNotThrow(() => {
+        requiredFiles(d)
+      }, 'All required files should exist')
 
-        st.doesNotThrow(() => {
-          checks[key](d)
-        }, key)
-      }
+      st.doesNotThrow(() => {
+        utf8(d)
+      }, 'All files should be in UTF-8')
 
       st.end()
     })

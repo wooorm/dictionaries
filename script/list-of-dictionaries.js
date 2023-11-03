@@ -13,8 +13,17 @@ import {isHidden} from 'is-hidden'
 
 const root = new URL('../dictionaries/', import.meta.url)
 
-/** @type {import('unified').Plugin<[], Root>} */
+/**
+ * @returns
+ *   Transform.
+ */
 export default function listOfDictionaries() {
+  /**
+   * @param {Root} tree
+   *   Tree.
+   * @returns {Promise<undefined>}
+   *   Nothing.
+   */
   return async function (tree) {
     const files = await fs.readdir(root)
     const rows = await Promise.all(

@@ -1,7 +1,8 @@
-.DS_Store
-.spdx
-.source
 archive/
 source/
 node_modules/
+*.d.ts
+.DS_Store
+.source
+.spdx
 yarn.lock
