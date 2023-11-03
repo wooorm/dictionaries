@@ -1,8 +1,8 @@
 #A. Intro ##########
-#Stavekontrolden version 2.7.026
+#Stavekontrolden version 2.8.034
 #Denne fil er en del af Stavekontrolden - et softwareprodukt, der gør det muligt at stavekontrollere på dansk.
 
-#Copyright (C) 2022 Foreningen for frit tilgængelige sprogværktøjer
+#Copyright (C) 2023 Foreningen for frit tilgængelige sprogværktøjer
 #Website: http://www.stavekontrolden.dk
 #E-mail: info@stavekontrolden.dk
 
@@ -11,24 +11,13 @@
 #GPL 2.0/LGPL 2.1/MPL 1.1 tri-license
 
 #This library is free software; you can redistribute it and/or modify it under the terms of one or more of the following:
-#the GNU Lesser General Public License as published by the Free Software Foundation; version 2.1 of the License,
-#the GNU General Public License as published by the Free Software Foundation; version 2.0 of the License,
-#and the Mozilla Public License as published by the The Mozilla Foundation; version 1.1 of the License.
+#   the GNU General Public License as published by the Free Software Foundation, version 2.0, https://www.gnu.org/licenses/gpl-2.0.html
+#   the GNU Lesser General Public License as published by the Free Software Foundation, version 2.1, https://www.gnu.org/licenses/lgpl-2.1.html
+#   and the Mozilla Public License as published by the The Mozilla Foundation, version 1.1, https://www.mozilla.org/en-US/MPL/1.1/
 
-#This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License, GNU General Public License, and Mozilla Public License for more details.
-
-#You should have received a copy of the GNU Lesser General Public License along with this library; if not, visit https://www.gnu.org/licenses/licenses.html#LGPL
-
-#You should have received a copy of the GNU General Public License along with this library; if not, visit https://www.gnu.org/licenses/licenses.html#GPL
-
-#Alternatively, write to the:
-
-#Free Software Foundation, Inc.
-#51 Franklin Street, Fifth Floor
-#Boston
-#MA  02110-1301  USA
-
-#You should have received a copy of the Mozilla Public License along with this library; if not, visit http://www.mozilla.org/MPL/MPL-1.1.html
+#This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#See the GNU General Public License, GNU Lesser General Public License, and Mozilla Public License for more details.
 
 #Tegnsæt UTF-8
 SET UTF-8
@@ -46,8 +35,9 @@ COMPOUNDMIN 2
 COMPOUNDWORDMAX 10
 
 #Tjek ordsammensætninger mod REP-listen over erstatningsforslag. Hvis ordsammensætningen med en
-#erstatning kan blive til et ord, som findes i ordbogen, så er det sandsynligvis en stavefejl. (Kun tjek
-#for nye sammensætninger - hvis et et sammensat ord er lagt ind i ordbogen, så er det et gyldigt ord).
+#erstatning kan blive til et ord, som findes i ordbogen, så er det sandsynligvis en stavefejl.
+#(Tjekket gælder kun nye sammensætninger, konstrueret ud fra ordbogens ord - hvis et sammensat ord
+#er lagt ind i ordbogen, så er det naturligvis et gyldigt ord.)
 CHECKCOMPOUNDREP
 
 
@@ -70,7 +60,7 @@ MAXNGRAMSUGS 10
 ONLYMAXDIFF
 
 #Enkeltbogstaver som kan forsøges udskiftet med et andet enkeltbogstav.
-TRY esrntliadkogmufbvphæøyjåcSMAKBHTLzRNEGéJVFDCwPIxOZ'.-UWqØYÅüXQöèóáúðëÆíÖäÜÁàôïêÞÓÿîçãÒÍ.çńñłđžŽ
+TRY esrntliadkogmufbvphæøyjåcSMAKBHTLzRNEGéJVFDCwPIxOZ'.-UWqØYÅüXQöèóáúðëÆíÖäÜÁàôïêÞÓÿîçãÒÍçńñłđžŽ
 
 #Enkelttegn som kan erstattes med nabotegn, f.eks. når man rammer den forkerte tast på tastaturet.
 KEY qwertyuiopå|asdfghjklæø|zxcvbnm
@@ -79,6 +69,7 @@ KEY qwertyuiopå|asdfghjklæø|zxcvbnm
 #D. Erstatningsliste til ordforslag #########
 
 #Liste med erstatningsforslag for at hjælpe systemet med at finde de rette forslag
+
 REP 126
 REP ^altsammen$ alt_sammen #altsammen -> alt sammen
 REP ^forlængst$ for_længst
@@ -181,7 +172,7 @@ REP e de
 REP sj ch
 REP øv eu #øvforisk -> euforisk
 REP ø eu #øforisk -> euforisk
-REP y ud
+REP y j #ved ord fra fremmedsprog, hvor j på dansk ofte har stået som y i engelsk gengivelse
 REP sj g
 REP ds c
 REP ^u in #ueffektiv -> ineffektiv
@@ -854,10 +845,10 @@ SFX 22 0 es/34 [iy]	+PASSIV
 #Adjektiv, svagt bøjet, komparation -st
 SFX 23 Y 7
 SFX 23 0 ere/34 [^e]	+KOMPARATIV
-SFX 23 0 st/34 .	+SUPERLATIV
-SFX 23 0 ste/34 .	+SUPERLATIV_PLURALIS
+SFX 23 0 st/34,90,89 .	+SUPERLATIV
+SFX 23 0 ste/34,90,89 .	+SUPERLATIV_PLURALIS
 SFX 23 0 eres/34 [^e]	+GENITIV
-SFX 23 0 stes/34 .	+GENITIV
+SFX 23 0 stes/34,90,89 .	+GENITIV
 SFX 23 0 re/34 e	+KOMPARATIV
 SFX 23 0 res/34 e	+GENITIV
 
@@ -894,10 +885,12 @@ SFX 29 0 s/32,35,36 .
 SFX 29 0 s/33,35,36 .
 
 #Sammensætning, fugeelement -e-
-SFX 30 Y 3
+SFX 30 Y 5
 SFX 30 0 e/32,36,35 .
 SFX 30 0 e/33,36,35 .
 SFX 30 0 e-/34 .
+SFX 30 0 e-/32,35,36 .
+SFX 30 0 e-/33,35,36 .
 
 #Sammensætning, fugeelement Ø
 SFX 31 Y 2
@@ -926,9 +919,9 @@ PFX 37 0 -/35 .	+FUGNING
 #Adjektiv, svagt bøjet, komparation -est
 SFX 38 Y 5
 SFX 38 0 ere/34 .	+KOMPARATIV
-SFX 38 0 est/34 .	+SUPERLATIV
-SFX 38 0 este/34 .	+SUPERLATIV_PLURALIS
-SFX 38 0 estes/34 .	+GENITIV
+SFX 38 0 est/34,90,89 .	+SUPERLATIV
+SFX 38 0 este/34,90,89 .	+SUPERLATIV_PLURALIS
+SFX 38 0 estes/34,90,89 .	+GENITIV
 SFX 38 0 eres/34 .	+GENITIV
 
 #Sammensætning, ord sidst i sammensætning
@@ -938,10 +931,10 @@ SFX 39 0 0/35,34 .	+ORD_SIDST
 #Adjektiv, dobbeltkonsonant (mm), -st
 SFX 40 Y 5
 SFX 40 0 mere/34 m	+KOMPARATIV
-SFX 40 0 st/34 .	+SUPERLATIV
-SFX 40 0 ste/34 .	+SUPERLATIV_PLURALIS
+SFX 40 0 st/34,89,90 .	+SUPERLATIV
+SFX 40 0 ste/34,89,90 .	+SUPERLATIV_PLURALIS
 SFX 40 0 meres/34 m	+GENITIV
-SFX 40 0 stes/34 .	+GENITIV
+SFX 40 0 stes/34,89,90 .	+GENITIV
 
 #Adjektiv, ender på -er, bøjes med -re
 SFX 41 Y 280
@@ -1025,66 +1018,66 @@ SFX 41 er reres/34 [^v]ver	+GENITIV
 SFX 41 er reres/34 [^w]wer	+GENITIV
 SFX 41 er reres/34 [^x]xer	+GENITIV
 SFX 41 er reres/34 [^z]zer	+GENITIV
-SFX 41 er rest/34 [^b]ber	+SUPERLATIV
-SFX 41 er rest/34 [^c]cer	+SUPERLATIV
-SFX 41 er rest/34 [^d]der	+SUPERLATIV
-SFX 41 er rest/34 [^f]fer	+SUPERLATIV
-SFX 41 er rest/34 [^g]ger	+SUPERLATIV
-SFX 41 er rest/34 [^h]her	+SUPERLATIV
-SFX 41 er rest/34 [^j]jer	+SUPERLATIV
-SFX 41 er rest/34 [^k]ker	+SUPERLATIV
-SFX 41 er rest/34 [^l]ler	+SUPERLATIV
-SFX 41 er rest/34 [^m]mer	+SUPERLATIV
-SFX 41 er rest/34 [^n]ner	+SUPERLATIV
-SFX 41 er rest/34 [^p]per	+SUPERLATIV
-SFX 41 er rest/34 [^q]qer	+SUPERLATIV
-SFX 41 er rest/34 [^r]rer	+SUPERLATIV
-SFX 41 er rest/34 [^s]ser	+SUPERLATIV
-SFX 41 er rest/34 [^t]ter	+SUPERLATIV
-SFX 41 er rest/34 [^v]ver	+SUPERLATIV
-SFX 41 er rest/34 [^w]wer	+SUPERLATIV
-SFX 41 er rest/34 [^x]xer	+SUPERLATIV
-SFX 41 er rest/34 [^z]zer	+SUPERLATIV
-SFX 41 er reste/34 [^b]ber	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^c]cer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^d]der	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^f]fer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^g]ger	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^h]her	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^j]jer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^k]ker	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^l]ler	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^m]mer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^n]ner	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^p]per	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^q]qer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^r]rer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^s]ser	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^t]ter	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^v]ver	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^w]wer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^x]xer	+SUPERLATIV_PLURALIS
-SFX 41 er reste/34 [^z]zer	+SUPERLATIV_PLURALIS
-SFX 41 er restes/34 [^b]ber	+GENITIV
-SFX 41 er restes/34 [^c]cer	+GENITIV
-SFX 41 er restes/34 [^d]der	+GENITIV
-SFX 41 er restes/34 [^f]fer	+GENITIV
-SFX 41 er restes/34 [^g]ger	+GENITIV
-SFX 41 er restes/34 [^h]her	+GENITIV
-SFX 41 er restes/34 [^j]jer	+GENITIV
-SFX 41 er restes/34 [^k]ker	+GENITIV
-SFX 41 er restes/34 [^l]ler	+GENITIV
-SFX 41 er restes/34 [^m]mer	+GENITIV
-SFX 41 er restes/34 [^n]ner	+GENITIV
-SFX 41 er restes/34 [^p]per	+GENITIV
-SFX 41 er restes/34 [^q]qer	+GENITIV
-SFX 41 er restes/34 [^r]rer	+GENITIV
-SFX 41 er restes/34 [^s]ser	+GENITIV
-SFX 41 er restes/34 [^t]ter	+GENITIV
-SFX 41 er restes/34 [^v]ver	+GENITIV
-SFX 41 er restes/34 [^w]wer	+GENITIV
-SFX 41 er restes/34 [^x]xer	+GENITIV
-SFX 41 er restes/34 [^z]zer	+GENITIV
+SFX 41 er rest/34,90,89 [^b]ber	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^c]cer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^d]der	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^f]fer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^g]ger	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^h]her	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^j]jer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^k]ker	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^l]ler	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^m]mer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^n]ner	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^p]per	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^q]qer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^r]rer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^s]ser	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^t]ter	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^v]ver	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^w]wer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^x]xer	+SUPERLATIV
+SFX 41 er rest/34,90,89 [^z]zer	+SUPERLATIV
+SFX 41 er reste/34,90,89 [^b]ber	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^c]cer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^d]der	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^f]fer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^g]ger	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^h]her	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^j]jer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^k]ker	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^l]ler	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^m]mer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^n]ner	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^p]per	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^q]qer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^r]rer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^s]ser	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^t]ter	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^v]ver	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^w]wer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^x]xer	+SUPERLATIV_PLURALIS
+SFX 41 er reste/34,90,89 [^z]zer	+SUPERLATIV_PLURALIS
+SFX 41 er restes/34,90,89 [^b]ber	+GENITIV
+SFX 41 er restes/34,90,89 [^c]cer	+GENITIV
+SFX 41 er restes/34,90,89 [^d]der	+GENITIV
+SFX 41 er restes/34,90,89 [^f]fer	+GENITIV
+SFX 41 er restes/34,90,89 [^g]ger	+GENITIV
+SFX 41 er restes/34,90,89 [^h]her	+GENITIV
+SFX 41 er restes/34,90,89 [^j]jer	+GENITIV
+SFX 41 er restes/34,90,89 [^k]ker	+GENITIV
+SFX 41 er restes/34,90,89 [^l]ler	+GENITIV
+SFX 41 er restes/34,90,89 [^m]mer	+GENITIV
+SFX 41 er restes/34,90,89 [^n]ner	+GENITIV
+SFX 41 er restes/34,90,89 [^p]per	+GENITIV
+SFX 41 er restes/34,90,89 [^q]qer	+GENITIV
+SFX 41 er restes/34,90,89 [^r]rer	+GENITIV
+SFX 41 er restes/34,90,89 [^s]ser	+GENITIV
+SFX 41 er restes/34,90,89 [^t]ter	+GENITIV
+SFX 41 er restes/34,90,89 [^v]ver	+GENITIV
+SFX 41 er restes/34,90,89 [^w]wer	+GENITIV
+SFX 41 er restes/34,90,89 [^x]xer	+GENITIV
+SFX 41 er restes/34,90,89 [^z]zer	+GENITIV
 SFX 41 ber re/34 bber
 SFX 41 cer re/34 ccer
 SFX 41 der re/34 dder
@@ -1165,66 +1158,66 @@ SFX 41 ver reres/34 vver	+GENITIV
 SFX 41 wer reres/34 wwer	+GENITIV
 SFX 41 xer reres/34 xxer	+GENITIV
 SFX 41 zer reres/34 zzer	+GENITIV
-SFX 41 ber rest/34 bber	+SUPERLATIV
-SFX 41 cer rest/34 ccer	+SUPERLATIV
-SFX 41 der rest/34 dder	+SUPERLATIV
-SFX 41 fer rest/34 ffer	+SUPERLATIV
-SFX 41 ger rest/34 gger	+SUPERLATIV
-SFX 41 her rest/34 hher	+SUPERLATIV
-SFX 41 jer rest/34 jjer	+SUPERLATIV
-SFX 41 ker rest/34 kker	+SUPERLATIV
-SFX 41 ler rest/34 ller	+SUPERLATIV
-SFX 41 mer rest/34 mmer	+SUPERLATIV
-SFX 41 ner rest/34 nner	+SUPERLATIV
-SFX 41 per rest/34 pper	+SUPERLATIV
-SFX 41 qer rest/34 qqer	+SUPERLATIV
-SFX 41 rer rest/34 rrer	+SUPERLATIV
-SFX 41 ser rest/34 sser	+SUPERLATIV
-SFX 41 ter rest/34 tter	+SUPERLATIV
-SFX 41 ver rest/34 vver	+SUPERLATIV
-SFX 41 wer rest/34 wwer	+SUPERLATIV
-SFX 41 xer rest/34 xxer	+SUPERLATIV
-SFX 41 zer rest/34 zzer	+SUPERLATIV
-SFX 41 ber reste/34 bber	+SUPERLATIV_PLURALIS
-SFX 41 cer reste/34 ccer	+SUPERLATIV_PLURALIS
-SFX 41 der reste/34 dder	+SUPERLATIV_PLURALIS
-SFX 41 fer reste/34 ffer	+SUPERLATIV_PLURALIS
-SFX 41 ger reste/34 gger	+SUPERLATIV_PLURALIS
-SFX 41 her reste/34 hher	+SUPERLATIV_PLURALIS
-SFX 41 jer reste/34 jjer	+SUPERLATIV_PLURALIS
-SFX 41 ker reste/34 kker	+SUPERLATIV_PLURALIS
-SFX 41 ler reste/34 ller	+SUPERLATIV_PLURALIS
-SFX 41 mer reste/34 mmer	+SUPERLATIV_PLURALIS
-SFX 41 ner reste/34 nner	+SUPERLATIV_PLURALIS
-SFX 41 per reste/34 pper	+SUPERLATIV_PLURALIS
-SFX 41 qer reste/34 qqer	+SUPERLATIV_PLURALIS
-SFX 41 rer reste/34 rrer	+SUPERLATIV_PLURALIS
-SFX 41 ser reste/34 sser	+SUPERLATIV_PLURALIS
-SFX 41 ter reste/34 tter	+SUPERLATIV_PLURALIS
-SFX 41 ver reste/34 vver	+SUPERLATIV_PLURALIS
-SFX 41 wer reste/34 wwer	+SUPERLATIV_PLURALIS
-SFX 41 xer reste/34 xxer	+SUPERLATIV_PLURALIS
-SFX 41 zer reste/34 zzer	+SUPERLATIV_PLURALIS
-SFX 41 ber restes/34 bber	+GENITIV
-SFX 41 cer restes/34 ccer	+GENITIV
-SFX 41 der restes/34 dder	+GENITIV
-SFX 41 fer restes/34 ffer	+GENITIV
-SFX 41 ger restes/34 gger	+GENITIV
-SFX 41 her restes/34 hher	+GENITIV
-SFX 41 jer restes/34 jjer	+GENITIV
-SFX 41 ker restes/34 kker	+GENITIV
-SFX 41 ler restes/34 ller	+GENITIV
-SFX 41 mer restes/34 mmer	+GENITIV
-SFX 41 ner restes/34 nner	+GENITIV
-SFX 41 per restes/34 pper	+GENITIV
-SFX 41 qer restes/34 qqer	+GENITIV
-SFX 41 rer restes/34 rrer	+GENITIV
-SFX 41 ser restes/34 sser	+GENITIV
-SFX 41 ter restes/34 tter	+GENITIV
-SFX 41 ver restes/34 vver	+GENITIV
-SFX 41 wer restes/34 wwer	+GENITIV
-SFX 41 xer restes/34 xxer	+GENITIV
-SFX 41 zer restes/34 zzer	+GENITIV
+SFX 41 ber rest/34,90,89 bber	+SUPERLATIV
+SFX 41 cer rest/34,90,89 ccer	+SUPERLATIV
+SFX 41 der rest/34,90,89 dder	+SUPERLATIV
+SFX 41 fer rest/34,90,89 ffer	+SUPERLATIV
+SFX 41 ger rest/34,90,89 gger	+SUPERLATIV
+SFX 41 her rest/34,90,89 hher	+SUPERLATIV
+SFX 41 jer rest/34,90,89 jjer	+SUPERLATIV
+SFX 41 ker rest/34,90,89 kker	+SUPERLATIV
+SFX 41 ler rest/34,90,89 ller	+SUPERLATIV
+SFX 41 mer rest/34,90,89 mmer	+SUPERLATIV
+SFX 41 ner rest/34,90,89 nner	+SUPERLATIV
+SFX 41 per rest/34,90,89 pper	+SUPERLATIV
+SFX 41 qer rest/34,90,89 qqer	+SUPERLATIV
+SFX 41 rer rest/34,90,89 rrer	+SUPERLATIV
+SFX 41 ser rest/34,90,89 sser	+SUPERLATIV
+SFX 41 ter rest/34,90,89 tter	+SUPERLATIV
+SFX 41 ver rest/34,90,89 vver	+SUPERLATIV
+SFX 41 wer rest/34,90,89 wwer	+SUPERLATIV
+SFX 41 xer rest/34,90,89 xxer	+SUPERLATIV
+SFX 41 zer rest/34,90,89 zzer	+SUPERLATIV
+SFX 41 ber reste/34,90,89 bber	+SUPERLATIV_PLURALIS
+SFX 41 cer reste/34,90,89 ccer	+SUPERLATIV_PLURALIS
+SFX 41 der reste/34,90,89 dder	+SUPERLATIV_PLURALIS
+SFX 41 fer reste/34,90,89 ffer	+SUPERLATIV_PLURALIS
+SFX 41 ger reste/34,90,89 gger	+SUPERLATIV_PLURALIS
+SFX 41 her reste/34,90,89 hher	+SUPERLATIV_PLURALIS
+SFX 41 jer reste/34,90,89 jjer	+SUPERLATIV_PLURALIS
+SFX 41 ker reste/34,90,89 kker	+SUPERLATIV_PLURALIS
+SFX 41 ler reste/34,90,89 ller	+SUPERLATIV_PLURALIS
+SFX 41 mer reste/34,90,89 mmer	+SUPERLATIV_PLURALIS
+SFX 41 ner reste/34,90,89 nner	+SUPERLATIV_PLURALIS
+SFX 41 per reste/34,90,89 pper	+SUPERLATIV_PLURALIS
+SFX 41 qer reste/34,90,89 qqer	+SUPERLATIV_PLURALIS
+SFX 41 rer reste/34,90,89 rrer	+SUPERLATIV_PLURALIS
+SFX 41 ser reste/34,90,89 sser	+SUPERLATIV_PLURALIS
+SFX 41 ter reste/34,90,89 tter	+SUPERLATIV_PLURALIS
+SFX 41 ver reste/34,90,89 vver	+SUPERLATIV_PLURALIS
+SFX 41 wer reste/34,90,89 wwer	+SUPERLATIV_PLURALIS
+SFX 41 xer reste/34,90,89 xxer	+SUPERLATIV_PLURALIS
+SFX 41 zer reste/34,90,89 zzer	+SUPERLATIV_PLURALIS
+SFX 41 ber restes/34,90,89 bber	+GENITIV
+SFX 41 cer restes/34,90,89 ccer	+GENITIV
+SFX 41 der restes/34,90,89 dder	+GENITIV
+SFX 41 fer restes/34,90,89 ffer	+GENITIV
+SFX 41 ger restes/34,90,89 gger	+GENITIV
+SFX 41 her restes/34,90,89 hher	+GENITIV
+SFX 41 jer restes/34,90,89 jjer	+GENITIV
+SFX 41 ker restes/34,90,89 kker	+GENITIV
+SFX 41 ler restes/34,90,89 ller	+GENITIV
+SFX 41 mer restes/34,90,89 mmer	+GENITIV
+SFX 41 ner restes/34,90,89 nner	+GENITIV
+SFX 41 per restes/34,90,89 pper	+GENITIV
+SFX 41 qer restes/34,90,89 qqer	+GENITIV
+SFX 41 rer restes/34,90,89 rrer	+GENITIV
+SFX 41 ser restes/34,90,89 sser	+GENITIV
+SFX 41 ter restes/34,90,89 tter	+GENITIV
+SFX 41 ver restes/34,90,89 vver	+GENITIV
+SFX 41 wer restes/34,90,89 wwer	+GENITIV
+SFX 41 xer restes/34,90,89 xxer	+GENITIV
+SFX 41 zer restes/34,90,89 zzer	+GENITIV
 
 #Adjektiv, dobbeltkonsonant, -est
 SFX 42 Y 20
@@ -1249,11 +1242,12 @@ SFX 42 0 w/8,38,35,34 w	+KONSONANT_FORDOBLING
 SFX 42 0 x/8,38,35,34 x	+KONSONANT_FORDOBLING
 SFX 42 0 z/8,38,35,34 z	+KONSONANT_FORDOBLING
 
-#x Substantiv, ubestemt
-SFX 43 Y 3
-SFX 43 0 s [^szx]	+GENITIV
-SFX 43 0 ' [szx]	+GENITIV
-SFX 43 0 es s	+GENITIV
+#Substantiv, ender på -en, flertal -ner (stamme -en fjernes)
+SFX 43 Y 4
+SFX 43 en ner/34 en	+PLUR_UBEK
+SFX 43 en ners/34 en	+GENITIV
+SFX 43 en nerne/34 en	+PLUR_BEK
+SFX 43 en nernes/34 en	+GENITIV
 
 #Substantiv, torso, fælleskøn
 SFX 44 Y 4
@@ -1613,9 +1607,11 @@ SFX 55 e 0/36,33,35 .
 SFX 55 e 0/36,35,32 .
 
 #Sammensætning, fugeelement fjern e tilføj s
-SFX 56 Y 2
+SFX 56 Y 4
 SFX 56 e s/36,32,35 .
 SFX 56 e s/36,33,35 .
+SFX 56 e s-/36,32,35 .
+SFX 56 e s-/36,33,35 .
 
 #Substantiv, konsonantfordobling, intetkøn, torso
 SFX 57 Y 20
@@ -1692,7 +1688,7 @@ SFX 60 0 er/32,35,36 .
 SFX 60 0 er/36,33,35 .
 
 #Sammensætning, fugeelement -kons.f.+e
-SFX 61 Y 40
+SFX 61 Y 80
 SFX 61 0 be/36,32,35 b
 SFX 61 0 ce/36,32,35 c
 SFX 61 0 de/36,32,35 d
@@ -1733,6 +1729,46 @@ SFX 61 0 ve/36,33,35 v
 SFX 61 0 we/36,33,35 w
 SFX 61 0 xe/36,33,35 x
 SFX 61 0 ze/36,33,35 z
+SFX 61 0 be-/36,32,35 b
+SFX 61 0 ce-/36,32,35 c
+SFX 61 0 de-/36,32,35 d
+SFX 61 0 fe-/36,32,35 f
+SFX 61 0 ge-/36,32,35 g
+SFX 61 0 he-/36,32,35 h
+SFX 61 0 je-/36,32,35 j
+SFX 61 0 ke-/36,32,35 k
+SFX 61 0 le-/36,32,35 l
+SFX 61 0 me-/36,32,35 m
+SFX 61 0 ne-/36,32,35 n
+SFX 61 0 pe-/36,32,35 p
+SFX 61 0 qe-/36,32,35 q
+SFX 61 0 re-/36,32,35 r
+SFX 61 0 se-/36,32,35 s
+SFX 61 0 te-/36,32,35 t
+SFX 61 0 ve-/36,32,35 v
+SFX 61 0 we-/36,32,35 w
+SFX 61 0 xe-/36,32,35 x
+SFX 61 0 ze-/36,32,35 z
+SFX 61 0 be-/36,33,35 b
+SFX 61 0 ce-/36,33,35 c
+SFX 61 0 de-/36,33,35 d
+SFX 61 0 fe-/36,33,35 f
+SFX 61 0 ge-/36,33,35 g
+SFX 61 0 he-/36,33,35 h
+SFX 61 0 je-/36,33,35 j
+SFX 61 0 ke-/36,33,35 k
+SFX 61 0 le-/36,33,35 l
+SFX 61 0 me-/36,33,35 m
+SFX 61 0 ne-/36,33,35 n
+SFX 61 0 pe-/36,33,35 p
+SFX 61 0 qe-/36,33,35 q
+SFX 61 0 re-/36,33,35 r
+SFX 61 0 se-/36,33,35 s
+SFX 61 0 te-/36,33,35 t
+SFX 61 0 ve-/36,33,35 v
+SFX 61 0 we-/36,33,35 w
+SFX 61 0 xe-/36,33,35 x
+SFX 61 0 ze-/36,33,35 z
 
 #Sammensætning, fugeelement Ø el. s
 SFX 62 Y 4
@@ -2383,136 +2419,136 @@ SFX 78 vel leres/34 vvel	+GENITIV
 SFX 78 wel leres/34 wwel	+GENITIV
 SFX 78 xel leres/34 xxel	+GENITIV
 SFX 78 zel leres/34 zzel	+GENITIV
-SFX 78 el lerest/34 [^bcdfghjklmnpqrstvwxz]el	+SUPERLATIV
-SFX 78 el leste/34 [^bcdfghjklmnpqrstvwxz]el	+SUPERLATIV_PLURALIS
-SFX 78 el lestes/34 [^bcdfghjklmnpqrstvwxz]el	+GENITIV
-SFX 78 el lest/34 [^b]b	+SUPERLATIV
-SFX 78 el lest/34 [^c]c	+SUPERLATIV
-SFX 78 el lest/34 [^d]d	+SUPERLATIV
-SFX 78 el lest/34 [^f]f	+SUPERLATIV
-SFX 78 el lest/34 [^g]g	+SUPERLATIV
-SFX 78 el lest/34 [^h]h	+SUPERLATIV
-SFX 78 el lest/34 [^j]j	+SUPERLATIV
-SFX 78 el lest/34 [^k]k	+SUPERLATIV
-SFX 78 el lest/34 [^l]l	+SUPERLATIV
-SFX 78 el lest/34 [^m]m	+SUPERLATIV
-SFX 78 el lest/34 [^n]n	+SUPERLATIV
-SFX 78 el lest/34 [^p]p	+SUPERLATIV
-SFX 78 el lest/34 [^q]q	+SUPERLATIV
-SFX 78 el lest/34 [^r]r	+SUPERLATIV
-SFX 78 el lest/34 [^s]s	+SUPERLATIV
-SFX 78 el lest/34 [^t]t	+SUPERLATIV
-SFX 78 el lest/34 [^v]v	+SUPERLATIV
-SFX 78 el lest/34 [^w]w	+SUPERLATIV
-SFX 78 el lest/34 [^x]x	+SUPERLATIV
-SFX 78 el lest/34 [^z]z	+SUPERLATIV
-SFX 78 el leste/34 [^b]bel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^c]cel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^d]del	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^f]fel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^g]gel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^h]hel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^j]jel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^k]kel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^l]lel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^m]mel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^n]nel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^p]pel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^q]qel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^r]rel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^s]sel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^t]tel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^v]vel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^w]wel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^x]xel	+SUPERLATIV_PLURALIS
-SFX 78 el leste/34 [^z]zel	+SUPERLATIV_PLURALIS
-SFX 78 el lestes/34 [^b]bel	+GENITIV
-SFX 78 el lestes/34 [^c]cel	+GENITIV
-SFX 78 el lestes/34 [^d]del	+GENITIV
-SFX 78 el lestes/34 [^f]fel	+GENITIV
-SFX 78 el lestes/34 [^g]gel	+GENITIV
-SFX 78 el lestes/34 [^h]hel	+GENITIV
-SFX 78 el lestes/34 [^j]jel	+GENITIV
-SFX 78 el lestes/34 [^k]kel	+GENITIV
-SFX 78 el lestes/34 [^l]lel	+GENITIV
-SFX 78 el lestes/34 [^m]mel	+GENITIV
-SFX 78 el lestes/34 [^n]nel	+GENITIV
-SFX 78 el lestes/34 [^p]pel	+GENITIV
-SFX 78 el lestes/34 [^q]qel	+GENITIV
-SFX 78 el lestes/34 [^r]rel	+GENITIV
-SFX 78 el lestes/34 [^s]sel	+GENITIV
-SFX 78 el lestes/34 [^t]tel	+GENITIV
-SFX 78 el lestes/34 [^v]vel	+GENITIV
-SFX 78 el lestes/34 [^w]wel	+GENITIV
-SFX 78 el lestes/34 [^x]xel	+GENITIV
-SFX 78 el lestes/34 [^z]zel	+GENITIV
-SFX 78 bel lest/34 bbel	+SUPERLATIV
-SFX 78 cel lest/34 ccel	+SUPERLATIV
-SFX 78 del lest/34 ddel	+SUPERLATIV
-SFX 78 fel lest/34 ffel	+SUPERLATIV
-SFX 78 gel lest/34 ggel	+SUPERLATIV
-SFX 78 hel lest/34 hhel	+SUPERLATIV
-SFX 78 jel lest/34 jjel	+SUPERLATIV
-SFX 78 kel lest/34 kkel	+SUPERLATIV
-SFX 78 lel lest/34 llel	+SUPERLATIV
-SFX 78 mel lest/34 mmel	+SUPERLATIV
-SFX 78 nel lest/34 nnel	+SUPERLATIV
-SFX 78 pel lest/34 ppel	+SUPERLATIV
-SFX 78 qel lest/34 qqel	+SUPERLATIV
-SFX 78 rel lest/34 rrel	+SUPERLATIV
-SFX 78 sel lest/34 ssel	+SUPERLATIV
-SFX 78 tel lest/34 ttel	+SUPERLATIV
-SFX 78 vel lest/34 vvel	+SUPERLATIV
-SFX 78 wel lest/34 wwel	+SUPERLATIV
-SFX 78 xel lest/34 xxel	+SUPERLATIV
-SFX 78 zel lest/34 zzel	+SUPERLATIV
-SFX 78 bel leste/34 bbel	+SUPERLATIV_PLURALIS
-SFX 78 cel leste/34 ccel	+SUPERLATIV_PLURALIS
-SFX 78 del leste/34 ddel	+SUPERLATIV_PLURALIS
-SFX 78 fel leste/34 ffel	+SUPERLATIV_PLURALIS
-SFX 78 gel leste/34 ggel	+SUPERLATIV_PLURALIS
-SFX 78 hel leste/34 hhel	+SUPERLATIV_PLURALIS
-SFX 78 jel leste/34 jjel	+SUPERLATIV_PLURALIS
-SFX 78 kel leste/34 kkel	+SUPERLATIV_PLURALIS
-SFX 78 lel leste/34 llel	+SUPERLATIV_PLURALIS
-SFX 78 mel leste/34 mmel	+SUPERLATIV_PLURALIS
-SFX 78 nel leste/34 nnel	+SUPERLATIV_PLURALIS
-SFX 78 pel leste/34 ppel	+SUPERLATIV_PLURALIS
-SFX 78 qel leste/34 qqel	+SUPERLATIV_PLURALIS
-SFX 78 rel leste/34 rrel	+SUPERLATIV_PLURALIS
-SFX 78 sel leste/34 ssel	+SUPERLATIV_PLURALIS
-SFX 78 tel leste/34 ttel	+SUPERLATIV_PLURALIS
-SFX 78 vel leste/34 vvel	+SUPERLATIV_PLURALIS
-SFX 78 wel leste/34 wwel	+SUPERLATIV_PLURALIS
-SFX 78 xel leste/34 xxel	+SUPERLATIV_PLURALIS
-SFX 78 zel leste/34 zzel	+SUPERLATIV_PLURALIS
-SFX 78 bel lestes/34 bbel	+GENITIV
-SFX 78 cel lestes/34 ccel	+GENITIV
-SFX 78 del lestes/34 ddel	+GENITIV
-SFX 78 fel lestes/34 ffel	+GENITIV
-SFX 78 gel lestes/34 ggel	+GENITIV
-SFX 78 hel lestes/34 hhel	+GENITIV
-SFX 78 jel lestes/34 jjel	+GENITIV
-SFX 78 kel lestes/34 kkel	+GENITIV
-SFX 78 lel lestes/34 llel	+GENITIV
-SFX 78 mel lestes/34 mmel	+GENITIV
-SFX 78 nel lestes/34 nnel	+GENITIV
-SFX 78 pel lestes/34 ppel	+GENITIV
-SFX 78 qel lestes/34 qqel	+GENITIV
-SFX 78 rel lestes/34 rrel	+GENITIV
-SFX 78 sel lestes/34 ssel	+GENITIV
-SFX 78 tel lestes/34 ttel	+GENITIV
-SFX 78 vel lestes/34 vvel	+GENITIV
-SFX 78 wel lestes/34 wwel	+GENITIV
-SFX 78 xel lestes/34 xxel	+GENITIV
-SFX 78 zel lestes/34 zzel	+GENITIV
+SFX 78 el lerest/34,90,89 [^bcdfghjklmnpqrstvwxz]el	+SUPERLATIV
+SFX 78 el leste/34,90,89 [^bcdfghjklmnpqrstvwxz]el	+SUPERLATIV_PLURALIS
+SFX 78 el lestes/34,90,89 [^bcdfghjklmnpqrstvwxz]el	+GENITIV
+SFX 78 el lest/34,90,89 [^b]b	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^c]c	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^d]d	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^f]f	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^g]g	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^h]h	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^j]j	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^k]k	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^l]l	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^m]m	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^n]n	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^p]p	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^q]q	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^r]r	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^s]s	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^t]t	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^v]v	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^w]w	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^x]x	+SUPERLATIV
+SFX 78 el lest/34,90,89 [^z]z	+SUPERLATIV
+SFX 78 el leste/34,90,89 [^b]bel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^c]cel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^d]del	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^f]fel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^g]gel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^h]hel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^j]jel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^k]kel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^l]lel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^m]mel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^n]nel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^p]pel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^q]qel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^r]rel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^s]sel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^t]tel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^v]vel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^w]wel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^x]xel	+SUPERLATIV_PLURALIS
+SFX 78 el leste/34,90,89 [^z]zel	+SUPERLATIV_PLURALIS
+SFX 78 el lestes/34,90,89 [^b]bel	+GENITIV
+SFX 78 el lestes/34,90,89 [^c]cel	+GENITIV
+SFX 78 el lestes/34,90,89 [^d]del	+GENITIV
+SFX 78 el lestes/34,90,89 [^f]fel	+GENITIV
+SFX 78 el lestes/34,90,89 [^g]gel	+GENITIV
+SFX 78 el lestes/34,90,89 [^h]hel	+GENITIV
+SFX 78 el lestes/34,90,89 [^j]jel	+GENITIV
+SFX 78 el lestes/34,90,89 [^k]kel	+GENITIV
+SFX 78 el lestes/34,90,89 [^l]lel	+GENITIV
+SFX 78 el lestes/34,90,89 [^m]mel	+GENITIV
+SFX 78 el lestes/34,90,89 [^n]nel	+GENITIV
+SFX 78 el lestes/34,90,89 [^p]pel	+GENITIV
+SFX 78 el lestes/34,90,89 [^q]qel	+GENITIV
+SFX 78 el lestes/34,90,89 [^r]rel	+GENITIV
+SFX 78 el lestes/34,90,89 [^s]sel	+GENITIV
+SFX 78 el lestes/34,90,89 [^t]tel	+GENITIV
+SFX 78 el lestes/34,90,89 [^v]vel	+GENITIV
+SFX 78 el lestes/34,90,89 [^w]wel	+GENITIV
+SFX 78 el lestes/34,90,89 [^x]xel	+GENITIV
+SFX 78 el lestes/34,90,89 [^z]zel	+GENITIV
+SFX 78 bel lest/34,90,89 bbel	+SUPERLATIV
+SFX 78 cel lest/34,90,89 ccel	+SUPERLATIV
+SFX 78 del lest/34,90,89 ddel	+SUPERLATIV
+SFX 78 fel lest/34,90,89 ffel	+SUPERLATIV
+SFX 78 gel lest/34,90,89 ggel	+SUPERLATIV
+SFX 78 hel lest/34,90,89 hhel	+SUPERLATIV
+SFX 78 jel lest/34,90,89 jjel	+SUPERLATIV
+SFX 78 kel lest/34,90,89 kkel	+SUPERLATIV
+SFX 78 lel lest/34,90,89 llel	+SUPERLATIV
+SFX 78 mel lest/34,90,89 mmel	+SUPERLATIV
+SFX 78 nel lest/34,90,89 nnel	+SUPERLATIV
+SFX 78 pel lest/34,90,89 ppel	+SUPERLATIV
+SFX 78 qel lest/34,90,89 qqel	+SUPERLATIV
+SFX 78 rel lest/34,90,89 rrel	+SUPERLATIV
+SFX 78 sel lest/34,90,89 ssel	+SUPERLATIV
+SFX 78 tel lest/34,90,89 ttel	+SUPERLATIV
+SFX 78 vel lest/34,90,89 vvel	+SUPERLATIV
+SFX 78 wel lest/34,90,89 wwel	+SUPERLATIV
+SFX 78 xel lest/34,90,89 xxel	+SUPERLATIV
+SFX 78 zel lest/34,90,89 zzel	+SUPERLATIV
+SFX 78 bel leste/34,90,89 bbel	+SUPERLATIV_PLURALIS
+SFX 78 cel leste/34,90,89 ccel	+SUPERLATIV_PLURALIS
+SFX 78 del leste/34,90,89 ddel	+SUPERLATIV_PLURALIS
+SFX 78 fel leste/34,90,89 ffel	+SUPERLATIV_PLURALIS
+SFX 78 gel leste/34,90,89 ggel	+SUPERLATIV_PLURALIS
+SFX 78 hel leste/34,90,89 hhel	+SUPERLATIV_PLURALIS
+SFX 78 jel leste/34,90,89 jjel	+SUPERLATIV_PLURALIS
+SFX 78 kel leste/34,90,89 kkel	+SUPERLATIV_PLURALIS
+SFX 78 lel leste/34,90,89 llel	+SUPERLATIV_PLURALIS
+SFX 78 mel leste/34,90,89 mmel	+SUPERLATIV_PLURALIS
+SFX 78 nel leste/34,90,89 nnel	+SUPERLATIV_PLURALIS
+SFX 78 pel leste/34,90,89 ppel	+SUPERLATIV_PLURALIS
+SFX 78 qel leste/34,90,89 qqel	+SUPERLATIV_PLURALIS
+SFX 78 rel leste/34,90,89 rrel	+SUPERLATIV_PLURALIS
+SFX 78 sel leste/34,90,89 ssel	+SUPERLATIV_PLURALIS
+SFX 78 tel leste/34,90,89 ttel	+SUPERLATIV_PLURALIS
+SFX 78 vel leste/34,90,89 vvel	+SUPERLATIV_PLURALIS
+SFX 78 wel leste/34,90,89 wwel	+SUPERLATIV_PLURALIS
+SFX 78 xel leste/34,90,89 xxel	+SUPERLATIV_PLURALIS
+SFX 78 zel leste/34,90,89 zzel	+SUPERLATIV_PLURALIS
+SFX 78 bel lestes/34,90,89 bbel	+GENITIV
+SFX 78 cel lestes/34,90,89 ccel	+GENITIV
+SFX 78 del lestes/34,90,89 ddel	+GENITIV
+SFX 78 fel lestes/34,90,89 ffel	+GENITIV
+SFX 78 gel lestes/34,90,89 ggel	+GENITIV
+SFX 78 hel lestes/34,90,89 hhel	+GENITIV
+SFX 78 jel lestes/34,90,89 jjel	+GENITIV
+SFX 78 kel lestes/34,90,89 kkel	+GENITIV
+SFX 78 lel lestes/34,90,89 llel	+GENITIV
+SFX 78 mel lestes/34,90,89 mmel	+GENITIV
+SFX 78 nel lestes/34,90,89 nnel	+GENITIV
+SFX 78 pel lestes/34,90,89 ppel	+GENITIV
+SFX 78 qel lestes/34,90,89 qqel	+GENITIV
+SFX 78 rel lestes/34,90,89 rrel	+GENITIV
+SFX 78 sel lestes/34,90,89 ssel	+GENITIV
+SFX 78 tel lestes/34,90,89 ttel	+GENITIV
+SFX 78 vel lestes/34,90,89 vvel	+GENITIV
+SFX 78 wel lestes/34,90,89 wwel	+GENITIV
+SFX 78 xel lestes/34,90,89 xxel	+GENITIV
+SFX 78 zel lestes/34,90,89 zzel	+GENITIV
 
 #Verbalsubstantiv
 SFX 79 Y 4
-SFX 79 0 n/34 e
-SFX 79 0 ns/34 e	+GENITIV
-SFX 79 0 en/34 [^e]
-SFX 79 0 ens/34 [^e]	+GENITIV
+SFX 79 0 n e
+SFX 79 0 ns e	+GENITIV
+SFX 79 0 en [^e]
+SFX 79 0 ens [^e]	+GENITIV
 
 #Præfiks uden bindestreg
 SFX 81 Y 1
@@ -2542,3 +2578,21 @@ SFX 85 us ernes/34 us	+GENITIV
 
 #Foreslå ikke
 NOSUGGEST 86
+
+#Substantiv, intetkøn, ender på -en, bestemt form -net (stamme -en fjernes)
+SFX 87 Y 2
+SFX 87 en net/34 en	+BESTEMT_ENTAL
+SFX 87 en nets/34 en	+GENITIV
+
+#Sammensætning, fugeelement -t-
+SFX 88 Y 2
+SFX 88 0 t/32,36,35 .
+SFX 88 0 t/33,36,35 .
+
+#Superlativ næst-
+PFX 89 Y 1
+PFX 89 0 næst .
+
+#Superlativ aller-
+PFX 90 Y 1
+PFX 90 0 aller .
