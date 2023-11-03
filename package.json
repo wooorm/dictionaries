@@ -35,7 +35,7 @@
     "to-vfile": "^8.0.0",
     "type-fest": "^4.0.0",
     "unist-builder": "^4.0.0",
-    "utf-8-validate": "^5.0.0",
+    "utf-8-validate": "^6.0.0",
     "xo": "^0.56.0"
   },
   "scripts": {
