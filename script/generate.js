@@ -228,10 +228,6 @@ function process(file, pkg, info) {
     .replace(/{{SOURCE}}/g, source)
     .replace(/{{SOURCE_NAME}}/g, sourceName)
     .replace(/{{VAR}}/g, info.variable)
-    .replace(
-      /{{VAR_CAP}}/g,
-      info.variable.charAt(0).toUpperCase() + info.variable.slice(1)
-    )
     .replace(/{{CODE}}/g, info.code)
     .replace(/{{LICENSE}}/g, license)
 }

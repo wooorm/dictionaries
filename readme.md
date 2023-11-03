@@ -13,10 +13,10 @@ Collection of normalized and installable [hunspell][] dictionaries.
 *   [List of dictionaries](#list-of-dictionaries)
 *   [Examples](#examples)
     *   [Example: use with `nspell`](#example-use-with-nspell)
-    *   [Example: load files from ESM](#example-load-files-from-esm)
-    *   [Example: load files from CommonJS](#example-load-files-from-commonjs)
+    *   [Example: load files](#example-load-files)
     *   [Example: use with macOS](#example-use-with-macos)
 *   [Types](#types)
+*   [Security](#security)
 *   [Contribute](#contribute)
     *   [Build](#build)
     *   [Updating a dictionary](#updating-a-dictionary)
@@ -26,19 +26,22 @@ Collection of normalized and installable [hunspell][] dictionaries.
 ## What is this?
 
 This monorepo is a bunch of scripts that crawls dictionaries from several
-sources, normalizes them, and packs them so that they can each be installed and
-used in one single way.
+sources,
+normalizes them,
+and packs them so that they can each be installed and used in one single way.
 Dictionaries are not maintained here but they are usable from here.
 
 ## When should I use this?
 
 You can particularly use the packages here as a programmer when integrating with
-other tools (such as [`nodehun`][nodehun], [`nspell`][nspell]) or when making
-such tools.
+other tools (such as [`nodehun`][github-nodehun] or [`nspell`][github-nspell])
+or when making such tools.
 
 ## Install
 
-In Node.js (14.14+, 16.0+), install with [npm][]:
+These packages are [ESM only][github-gist-esm].
+In Node.js (version 16+),
+install with [npm][npm-install]:
 
 ```sh
 npm install dictionary-en
@@ -46,19 +49,16 @@ npm install dictionary-en
 
 > 👉 **Note**: replace `en` with the language code you want.
 >
-> ⚠️ **Important**: this project itself is MIT, but each `index.dic` and
-> `index.aff` file still has its original license!
+> ⚠️ **Important**: this project itself is MIT,
+> but each `index.dic` and `index.aff` file still has its original license!
 
 ## Use
 
 ```js
-import dictionaryEn from 'dictionary-en'
+import en from 'dictionary-en'
 
-dictionaryEn(function (error, en) {
-  if (error) throw error
-  console.log(en)
-  // To do: use `en` somehow
-})
+console.log(en)
+// To do: use `en` somehow
 ```
 
 Yields:
@@ -70,9 +70,10 @@ Yields:
 ## List of dictionaries
 
 > 👉 **Note**: preferred BCP-47 codes are used (according to Unicode CLDR).
-> To illustrate, as American English and Brazilian Portuguese are the most
-> common types of English and Portuguese respectively, they get the codes `en`
-> and `pt`.
+> To illustrate,
+> as American English and Brazilian Portuguese are the most common types of
+> English and Portuguese respectively,
+> they get the codes `en` and `pt`.
 
 <!--support start-->
 
@@ -179,7 +180,8 @@ In total 92 dictionaries are provided.
 
 ### Example: use with `nspell`
 
-This example uses `dictionary-en` in combination with [`nspell`][nspell].
+This example uses `dictionary-en` in combination with
+[`nspell`][github-nspell].
 
 <details><summary>Show install command for this example</summary>
 
@@ -190,15 +192,12 @@ npm install dictionary-en nspell
 </details>
 
 ```js
-import dictionaryEn from 'dictionary-en'
+import en from 'dictionary-en'
 import nspell from 'nspell'
 
-dictionaryEn(function (error, en) {
-  if (error) throw error
-  const spell = nspell(en)
-  console.log(spell.correct('color'))
-  console.log(spell.correct('colour'))
-})
+const spell = nspell(en)
+console.log(spell.correct('color'))
+console.log(spell.correct('colour'))
 ```
 
 Yields:
@@ -208,13 +207,13 @@ true
 false
 ```
 
-### Example: load files from ESM
+### Example: load files
 
 This example loads the `index.dic` and `index.aff` files located in
 `dictionary-hyw` (Western Armenian) from a Node.js JavaScript module (ESM).
 
-It uses a ponyfill ([`import-meta-resolve`][import-meta-resolve]) for an
-experimental Node API.
+It uses a ponyfill ([`import-meta-resolve`][github-import-meta-resolve]) for
+an experimental Node API.
 
 <details><summary>Show install command for this example</summary>
 
@@ -229,32 +228,9 @@ import fs from 'node:fs/promises'
 import {resolve} from 'import-meta-resolve'
 
 const base = await resolve('dictionary-hyw', import.meta.url)
-const dic = await fs.readFile(new URL('index.dic', base))
 const aff = await fs.readFile(new URL('index.aff', base))
-console.log(dic, aff)
-```
-
-### Example: load files from CommonJS
-
-This example loads the `index.dic` and `index.aff` files located in
-`dictionary-tlh` (Klingon) from a Node.js CommonJS script (CJS).
-
-<details><summary>Show install command for this example</summary>
-
-```sh
-npm install dictionary-tlh
-```
-
-</details>
-
-```js
-const fs = require('node:fs')
-const path = require('node:path')
-
-const base = require.resolve('dictionary-tlh')
-const dic = await fs.readFile(path.join(base, 'index.dic'))
-const aff = await fs.readFile(path.join(base, 'index.aff'))
-console.log(dic, aff)
+const dic = await fs.readFile(new URL('index.dic', base))
+console.log(aff, dic)
 ```
 
 <!--Old name of the following section:-->
@@ -265,28 +241,36 @@ console.log(dic, aff)
 
 Follow these steps to use a dictionary on macOS:
 
-1.  Navigate to the dictionary you want on GitHub, such as `dictionaries/$code`
-    (replace `$code` with the language code you want)
-2.  Download the `index.aff` and `index.dic` files (i.e., open them, right-click
-    “Raw”, and “download linked files”)
-3.  Rename the download files to `$code.aff` and `$code.dic`
-4.  Move `$code.aff` and `$code.dic` into the folder `~/Library/Spelling/`
-5.  Go to **System Preferences** > **Keyboard** > **Text** > **Spelling** and
+1.  navigate to the dictionary you want on GitHub,
+    such as `dictionaries/$code` (replace `$code` with the language code you
+    want)
+2.  download the `index.aff` and `index.dic` files (as in open them,
+    right-click “Raw”,
+    and “download linked files”)
+3.  rename the download files to `$code.aff` and `$code.dic`
+4.  move `$code.aff` and `$code.dic` into the folder `~/Library/Spelling/`
+5.  go to **System Preferences** > **Keyboard** > **Text** > **Spelling** and
     select your added language (it should come with the `(Library)` suffix and
     is situated at the bottom)
 
 ## Types
 
-The dictionaries are typed with [TypeScript][].
+The packages are typed with [TypeScript][].
+
+## Security
+
+These packages are safe.
 
 ## Contribute
 
 Yes please!
-See [How to Contribute to Open Source][contribute].
+See [How to Contribute to Open Source][open-source-guide-contribute].
 
 ### Build
 
-To build this project, on macOS, you at least need to install:
+To build this project,
+on macOS,
+you at least need to install:
 
 *   **wget**: `brew install wget` (crawling)
 *   **hunspell**: `brew install hunspell` (many dictionaries)
@@ -317,25 +301,27 @@ Please ask in the issues to request that such a dictionary is included here.
 
 ## License
 
-[MIT][] © [Titus Wormer][author]
+[MIT][file-license] © [Titus Wormer][wooorm]
 
 See `license` files in each dictionary for the licensing of `index.dic` and
 `index.aff` files.
 
-[npm]: https://docs.npmjs.com/cli/install
+[npm-install]: https://docs.npmjs.com/cli/install
 
-[hunspell]: https://hunspell.github.io
+[file-license]: license
 
-[nodehun]: https://github.com/nathanjsweet/nodehun
+[github-import-meta-resolve]: https://github.com/wooorm/import-meta-resolve
 
-[nspell]: https://github.com/wooorm/nspell
+[github-gist-esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 
-[mit]: license
+[github-nodehun]: https://github.com/nathanjsweet/nodehun
 
-[author]: https://wooorm.com
+[github-nspell]: https://github.com/wooorm/nspell
+
+[open-source-guide-contribute]: https://opensource.guide/how-to-contribute/
 
 [typescript]: https://www.typescriptlang.org
 
-[contribute]: https://opensource.guide/how-to-contribute/
+[wooorm]: https://wooorm.com
 
-[import-meta-resolve]: https://github.com/wooorm/import-meta-resolve
+[hunspell]: https://hunspell.github.io

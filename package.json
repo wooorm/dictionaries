@@ -43,7 +43,7 @@
   },
   "scripts": {
     "build": "tsc --build --clean && tsc --build && type-coverage",
-    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
+    "format": "remark . --frail --output --quiet && prettier . -w --log-level warn && xo --fix",
     "generate": "sh script/crawl.sh && node --conditions development script/generate.js",
     "test": "npm run build && npm run format && npm run test-api",
     "test-api": "node --conditions development test.js"
