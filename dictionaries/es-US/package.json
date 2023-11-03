@@ -28,6 +28,7 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "type": "module",
+  "exports": "./index.js",
   "files": [
     "index.aff",
     "index.d.ts",

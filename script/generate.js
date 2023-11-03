@@ -148,6 +148,7 @@ while (++index < dictionaries.length) {
     author: pkg.author,
     contributors: pkg.contributors,
     type: 'module',
+    exports: './index.js',
     files: ['index.aff', 'index.d.ts', 'index.dic', 'index.js', 'index.map']
   }
 
