@@ -4,11 +4,11 @@
   "description": "Norwegian Bokmål spelling dictionary",
   "license": "GPL-2.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
+    "myspell",
     "nb",
+    "spelling",
     "norwegian",
     "bokmål"
   ],
@@ -24,9 +24,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

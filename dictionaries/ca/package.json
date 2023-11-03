@@ -4,11 +4,11 @@
   "description": "Catalan spelling dictionary",
   "license": "(GPL-2.0 OR LGPL-2.1)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
-    "dictionary",
     "ca",
+    "dictionary",
+    "hunspell",
+    "myspell",
+    "spelling",
     "catalan",
     "valencian"
   ],
@@ -24,9 +24,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

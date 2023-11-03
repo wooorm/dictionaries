@@ -4,12 +4,12 @@
   "description": "English (United Kingdom) spelling dictionary",
   "license": "(MIT AND BSD)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "en",
     "gb",
+    "hunspell",
+    "myspell",
+    "spelling",
     "english",
     "united",
     "kingdom"
@@ -26,9 +26,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

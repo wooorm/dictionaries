@@ -4,12 +4,12 @@
   "description": "Spanish (or Castilian; Mexico) spelling dictionary",
   "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "es",
+    "hunspell",
     "mx",
+    "myspell",
+    "spelling",
     "spanish",
     "castilian",
     "mexico"
@@ -26,9 +26,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

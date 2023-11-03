@@ -4,10 +4,10 @@
   "description": "Turkmen spelling dictionary",
   "license": "Apache-2.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
+    "myspell",
+    "spelling",
     "tk",
     "turkmen"
   ],
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

@@ -4,12 +4,12 @@
   "description": "Klingon (or tlhIngan Hol; Latin script) spelling dictionary",
   "license": "Apache-2.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
-    "tlh",
+    "hunspell",
     "latn",
+    "myspell",
+    "spelling",
+    "tlh",
     "klingon",
     "tlhingan",
     "hol",
@@ -27,9 +27,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

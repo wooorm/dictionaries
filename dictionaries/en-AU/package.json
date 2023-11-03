@@ -4,12 +4,12 @@
   "description": "English (Australia) spelling dictionary",
   "license": "(MIT AND BSD)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
+    "au",
     "dictionary",
     "en",
-    "au",
+    "hunspell",
+    "myspell",
+    "spelling",
     "english",
     "australia"
   ],
@@ -25,9 +25,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

@@ -4,11 +4,11 @@
   "description": "Lithuanian spelling dictionary",
   "license": "BSD-3-Clause",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
     "lt",
+    "myspell",
+    "spelling",
     "lithuanian"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/lt",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

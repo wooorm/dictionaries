@@ -4,11 +4,11 @@
   "description": "French spelling dictionary",
   "license": "MPL-2.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "fr",
+    "hunspell",
+    "myspell",
+    "spelling",
     "french"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/fr",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

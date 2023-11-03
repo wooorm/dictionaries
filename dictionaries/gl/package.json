@@ -4,11 +4,11 @@
   "description": "Galician spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "gl",
+    "hunspell",
+    "myspell",
+    "spelling",
     "galician"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/gl",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

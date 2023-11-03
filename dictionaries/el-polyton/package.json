@@ -4,12 +4,12 @@
   "description": "Modern Greek (Polytonic Greek) spelling dictionary",
   "license": "GPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "el",
+    "hunspell",
+    "myspell",
     "polyton",
+    "spelling",
     "modern",
     "polytonic",
     "greek"
@@ -26,9 +26,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

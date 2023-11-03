@@ -92,7 +92,7 @@ while (++index < dictionaries.length) {
     pack = JSON.parse(String(await fs.readFile(new URL('package.json', base))))
   } catch {}
 
-  keywords = keywords.concat(code.toLowerCase().split('-'))
+  keywords = [...keywords, ...code.toLowerCase().split('-')].sort()
   /** @type {keyof Schema} */
   let key
 
@@ -169,7 +169,7 @@ while (++index < dictionaries.length) {
     funding: pkg.funding,
     author: pkg.author,
     contributors: pkg.contributors,
-    files: ['index.js', 'index.aff', 'index.dic', 'index.d.ts']
+    files: ['index.aff', 'index.d.ts', 'index.dic', 'index.js']
   }
 
   let exists = false

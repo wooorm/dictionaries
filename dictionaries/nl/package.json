@@ -4,11 +4,11 @@
   "description": "Dutch (or Flemish) spelling dictionary",
   "license": "(BSD-3-Clause OR CC-BY-3.0)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
+    "myspell",
     "nl",
+    "spelling",
     "dutch",
     "flemish"
   ],
@@ -24,9 +24,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

@@ -4,11 +4,11 @@
   "description": "Hebrew spelling dictionary",
   "license": "AGPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "he",
+    "hunspell",
+    "myspell",
+    "spelling",
     "hebrew"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/he",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

@@ -4,11 +4,11 @@
   "description": "Persian spelling dictionary",
   "license": "Apache-2.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "fa",
+    "hunspell",
+    "myspell",
+    "spelling",
     "persian"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/fa",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

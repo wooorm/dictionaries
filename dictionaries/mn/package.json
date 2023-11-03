@@ -4,11 +4,11 @@
   "description": "Mongolian spelling dictionary",
   "license": "LPPL-1.3c",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
     "mn",
+    "myspell",
+    "spelling",
     "mongolian"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/mn",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

@@ -4,12 +4,12 @@
   "description": "Swedish (Finland) spelling dictionary",
   "license": "LGPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
-    "sv",
     "fi",
+    "hunspell",
+    "myspell",
+    "spelling",
+    "sv",
     "swedish",
     "finland"
   ],
@@ -25,9 +25,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

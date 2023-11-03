@@ -5,10 +5,10 @@
   "description": "Hunspell dictionaries in UTF-8",
   "license": "MIT",
   "keywords": [
-    "spelling",
-    "myspell",
+    "dictionary",
     "hunspell",
-    "dictionary"
+    "myspell",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
@@ -52,33 +52,33 @@
     "semi": false,
     "trailingComma": "none"
   },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-wooorm",
+      [
+        "remark-gfm",
+        {
+          "tablePipeAlign": false
+        }
+      ],
+      [
+        "remark-lint-table-pipe-alignment",
+        false
+      ],
+      "./script/list-of-dictionaries.js"
+    ]
+  },
   "xo": {
-    "prettier": true,
     "ignores": [
       "dictionaries/*/index.d.ts",
       "script/template/index.d.ts"
     ],
+    "prettier": true,
     "rules": {
       "unicorn/prefer-module": "off",
       "unicorn/prefer-node-protocol": "off",
       "unicorn/prefer-string-replace-all": "off",
       "unicorn/prefer-switch": "off"
     }
-  },
-  "remarkConfig": {
-    "plugins": [
-      "preset-wooorm",
-      [
-        "gfm",
-        {
-          "tablePipeAlign": false
-        }
-      ],
-      [
-        "lint-table-pipe-alignment",
-        false
-      ],
-      "./script/list-of-dictionaries.js"
-    ]
   }
 }

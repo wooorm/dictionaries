@@ -4,11 +4,11 @@
   "description": "Croatian spelling dictionary",
   "license": "(LGPL-2.1 OR SISSL)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "hr",
+    "hunspell",
+    "myspell",
+    "spelling",
     "croatian"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/hr",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

@@ -4,11 +4,11 @@
   "description": "Welsh spelling dictionary",
   "license": "LGPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
-    "dictionary",
     "cy",
+    "dictionary",
+    "hunspell",
+    "myspell",
+    "spelling",
     "welsh"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/cy",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }

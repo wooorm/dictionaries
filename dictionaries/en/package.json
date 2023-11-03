@@ -4,11 +4,11 @@
   "description": "English spelling dictionary",
   "license": "(MIT AND BSD)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
     "en",
+    "hunspell",
+    "myspell",
+    "spelling",
     "english"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/en",
@@ -23,9 +23,9 @@
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js"
   ]
 }
