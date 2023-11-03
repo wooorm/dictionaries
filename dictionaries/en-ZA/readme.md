@@ -72,7 +72,7 @@ Rest: [MIT][] © [Titus Wormer][home].
 
 [macos]: https://github.com/wooorm/dictionaries#example-use-with-macos
 
-[source]: http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice
+[source]: https://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice
 
 [npm]: https://docs.npmjs.com/cli/install
 
