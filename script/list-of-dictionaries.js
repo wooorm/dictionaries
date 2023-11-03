@@ -9,7 +9,6 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
 import {u} from 'unist-builder'
 import {zone} from 'mdast-zone'
-import {isHidden} from 'is-hidden'
 
 const root = new URL('../dictionaries/', import.meta.url)
 
@@ -27,7 +26,7 @@ export default function listOfDictionaries() {
   return async function (tree) {
     const files = await fs.readdir(root)
     const rows = await Promise.all(
-      files.filter((d) => !isHidden(d)).map((d) => row(d))
+      files.filter((d) => d.charAt(0) !== '.').map((d) => row(d))
     )
 
     zone(tree, 'support', function (start, nodes, end) {

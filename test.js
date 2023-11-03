@@ -1,103 +1,61 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import assert from 'node:assert'
-import test from 'tape'
-import {readSync} from 'to-vfile'
-import {isHidden} from 'is-hidden'
-import isUtf8 from 'utf-8-validate'
+import assert from 'node:assert/strict'
+import fs from 'node:fs/promises'
+import test from 'node:test'
 import {bcp47Normalize} from 'bcp-47-normalize'
+import isUtf8 from 'utf-8-validate'
 
-const root = 'dictionaries'
-
-/**
- * @param {string} name
- * @returns {undefined}
- */
-function bcp47(name) {
-  assert.strictEqual(
-    name,
-    bcp47Normalize(name, {warning: warn}),
-    name + ' should be a canonical, normal BCP-47 tag'
-  )
-
-  /**
-   * @param {string} reason
-   * @returns {undefined}
-   */
-  function warn(reason) {
-    console.log('warning:%s: %s', name, reason)
-  }
-}
-
-/**
- * @param {string} name
- * @returns {undefined}
- */
-function utf8(name) {
-  const dirname = path.join(root, name)
-  const files = fs.readdirSync(dirname)
+test('dictionaries', async function (t) {
+  const base = new URL('dictionaries/', import.meta.url)
+  const folders = await fs.readdir(base)
   let index = -1
 
-  while (++index < files.length) {
-    const d = files[index]
-    if (isHidden(d)) continue
-    const file = readSync(path.join(dirname, d))
-    assert.ok(
-      // @ts-expect-error: hopefully uint8array is fine for `is-utf-8`.
-      typeof file.value === 'string' || isUtf8(file.value),
-      file.basename + ' should be utf8'
-    )
-  }
-}
+  while (++index < folders.length) {
+    const folder = folders[index]
 
-/**
- * @param {string} name
- * @returns {undefined}
- */
-function requiredFiles(name) {
-  const dirname = path.join(root, name)
-  const files = fs.readdirSync(dirname).filter((d) => !isHidden(d))
-  const paths = [
-    'index.dic',
-    'index.aff',
-    'readme.md',
-    'index.js',
-    'index.d.ts',
-    'package.json'
-  ]
-  let index = -1
+    if (folder.charAt(0) === '.') continue
 
-  while (++index < paths.length) {
-    const d = paths[index]
-    assert.notStrictEqual(files.indexOf(d), -1, 'should have `' + d + '`')
-  }
-}
+    // eslint-disable-next-line no-await-in-loop
+    await t.test(folder, async function (t) {
+      const folderUrl = new URL(folder + '/', base)
 
-test('dictionaries', (t) => {
-  const files = fs.readdirSync(root)
-  let index = -1
+      await t.test('should be a canonical, normal BCP-47 tag', function () {
+        assert.strictEqual(
+          folder,
+          bcp47Normalize(folder, {
+            warning(reason) {
+              console.log('warning:%s: %s', folder, reason)
+            }
+          })
+        )
+      })
 
-  while (++index < files.length) {
-    const d = files[index]
+      await t.test('should contain all required files', async function () {
+        const basenames = [
+          'index.dic',
+          'index.aff',
+          'readme.md',
+          'index.js',
+          'index.d.ts',
+          'package.json'
+        ]
 
-    if (isHidden(d)) continue
+        await Promise.all(
+          basenames.map(async function (d) {
+            return fs.access(new URL(d, folderUrl), fs.constants.F_OK)
+          })
+        )
+      })
 
-    t.test(d, (st) => {
-      st.doesNotThrow(() => {
-        bcp47(d)
-      }, 'Should have a canonical BCP-47 tag')
+      await t.test('should contain UTF-8', async function () {
+        const files = await fs.readdir(folderUrl)
 
-      st.doesNotThrow(() => {
-        requiredFiles(d)
-      }, 'All required files should exist')
-
-      st.doesNotThrow(() => {
-        utf8(d)
-      }, 'All files should be in UTF-8')
-
-      st.end()
+        await Promise.all(
+          files.map(async function (d) {
+            const buf = await fs.readFile(new URL(d, folderUrl))
+            assert(isUtf8(buf))
+          })
+        )
+      })
     })
   }
-
-  t.end()
 })

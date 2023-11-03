@@ -12,7 +12,6 @@
 
 import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
-import {isHidden} from 'is-hidden'
 import {parse} from 'bcp-47'
 import {iso15924} from 'iso-15924'
 import {iso31661} from 'iso-3166'
@@ -33,11 +32,11 @@ const main = String(
 )
 const types = String(
   await fs.readFile(new URL('template/index.d.ts', import.meta.url))
-)
+).replace(/\r?\n\/\/ @ts-expect-error: to do: use ESM\./, '')
 
 const root = new URL('../dictionaries/', import.meta.url)
 const files = await fs.readdir(root)
-const dictionaries = files.filter((d) => !isHidden(d)).sort()
+const dictionaries = files.filter((d) => d.charAt(0) !== '.').sort()
 let index = -1
 
 while (++index < dictionaries.length) {
