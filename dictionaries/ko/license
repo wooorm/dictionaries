@@ -51,3 +51,12 @@ Works under CC BY 4.0 and CC BY-SA 2.0 KR can be adapted under CC BY-SA 4.0.
 And CC BY-SA 4.0 declares the GPL version 3 as an one-way compatible license.
 Therefore, The combined dictionary is licensed under the GPL version 3. See
 https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses
+
+### Note about GPL Compatibility
+
+This dictionary can also be used with GPLv3 incompatible softwares.
+
+The executable program and a hunspell dictionary are considered as seperate
+works, therefore their licenses do not need to be compatible. See
+https://lwn.net/Articles/481386/ and
+https://bz.apache.org/ooo/show_bug.cgi?id=65039#c16 for details.
