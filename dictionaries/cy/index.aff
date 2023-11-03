@@ -19,10 +19,8 @@ TRY -ŷŶŵŴïÏâÂôÔêÊjJëËäÄáÁéÉîÎöÖóÓòÒàÀíÍüÜìÌ�
 
 NEEDAFFIX X
 
-BREAK 3
+BREAK 1
 BREAK -
-BREAK '
-BREAK ’
 
 # Mutations
 PFX M Y 26
