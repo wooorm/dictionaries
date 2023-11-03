@@ -1,4 +1,4 @@
-75767
+75873
 	This is the dictionary file of the de_DE Hunspell dictionary
 	derived from the igerman98 dictionary
 
@@ -950,6 +950,7 @@ Ammonit/EPSm
 Ammonium/Smij
 Amnesie/Nm
 Amnestie/Nmij
+Amnestievorlage/Nm
 Amnesty/S
 Amok/ijm
 Amor/Sm
@@ -973,6 +974,7 @@ Amtmann/STm
 Amts/hij
 Amtschinesisch/m
 Amtseid/EPSTm
+Amtsübernahme/Nm
 Amüsement/Sm
 Amulett/EPSTm
 Anästhesie/m
@@ -2726,6 +2728,7 @@ Beinamen/Sm
 Beipflichten/SJm
 Beiräte/Nm
 Beirat/STm
+Beiratstreffen/Sm
 Beirut/Sm
 Beiruter/NSFm
 Beißring/SEPTm
@@ -3269,6 +3272,7 @@ Bikini/Smij
 Bilanz/Pmij
 Bilanzieren/SJm
 Bilanzierungs/hij
+Bilanzunterlagen/m
 Bild/RTMSmij
 Bilden/SJm
 Bilder/hij
@@ -4967,6 +4971,7 @@ Dokumentar/hij
 Dokumentation/Pm
 Dokumentations/hij
 Dokumenten/hij
+Dokumentvorlage/Nm
 Dolch/EPSTmij
 Dollar/Smij
 Dolly/S
@@ -5150,6 +5155,8 @@ Druckerschwärze/m
 Druckertask/m
 Druckminderer/SNm
 Drucksachengebühren/m
+Druckvorlagen/m
+Druckwerktest/m
 Druide/NFm
 Drummer/NSFm
 Drusen/m
@@ -5639,6 +5646,7 @@ Einsetzbarkeit/m
 Einsetzen/SJm
 Einsicht/Pm
 Einsichtigkeit/m
+Einsichtnahme/Nm
 Einsiedler/FNSm
 Einsitzer/NSm
 Einsortier/hij
@@ -5717,6 +5725,7 @@ Einzeichnen/SJm
 Einzel/Smij
 Einzelbit/Sm
 Einzelbitsteuerung/Pm
+Einzelhaushalten/m
 Einzelheit/Pm
 Einzeller/Nm
 Einziehungs/hij
@@ -6142,6 +6151,10 @@ Erdenken/m
 Erdkundler/NSFm
 Erdöl/m
 Erdölindustriellen/m
+Erdöllager/m
+Erdölquelle/m
+Erdölvorkommen/m
+Erdölwerte/Nm
 Erdogan/S
 Erdräumgerät/EPSTm
 Erdungs/hij
@@ -6684,6 +6697,7 @@ Facette/Nm
 Facetten/hij
 Fach/STmij
 Fachbereichleiter/NSm
+Fachübersetzen/m
 Fackel/Nmij
 Faden/Sm
 Fadenscheinigkeit/m
@@ -6700,6 +6714,8 @@ Fahrlässigkeit/Pm
 Fahrplankonferenz/m
 Fahrräder/Nm
 Fahrrad/Tm
+Fahrradfahren/m
+Fahrradreifen/m
 Fahrt/Pmij
 Fahrten/hij
 Fahrzeit/Pm
@@ -7000,6 +7016,7 @@ Finanz/Pmij
 Finanzier/Sm
 Finanzieren/SJm
 Finanzierungs/hij
+Finanzvorlagen/m
 Findelhaus/Tpm
 Findelkind/TRSm
 Finden/SJm
@@ -7276,6 +7293,7 @@ Folgsamkeit/m
 Folie/Nm
 Folien/hij
 Folienmaß/ETPm
+Folienüberstand/m
 Folklore/m
 Folsäure/Nm
 Folter/Jmij
@@ -8295,6 +8313,7 @@ Geschäftigkeitsdrang/m
 Geschäfts/hij
 Geschäftsanteil/EPTm
 Geschäftsgebaren/Sm
+Geschäftsunterlagen/m
 Geschehen/Sm
 Geschehnis/Qqm
 Gescheitsein/m
@@ -8362,6 +8381,7 @@ Gesetzbuch/STm
 Gesetzentwürfe/Nm
 Gesetzentwurf/STm
 Gesetzes/hij
+Gesetzesvorlage/Nm
 Gesetzgeber/NSm
 Gesetzgebung/Pm
 Gesetzgebungs/hij
@@ -8473,6 +8493,7 @@ Gewinner/FNSm
 Gewinnerzielungsgründen/m
 Gewinnerzielungsmotiv/m
 Gewinnerzielungstrieb/m
+Gewinnmitnahme/Nm
 Gewinnungs/hij
 Gewinsel/Sm
 Gewirr/Sm
@@ -9676,6 +9697,7 @@ Hobelstreb/Pm
 Hoch/Smij
 Hochalpen/m
 Hochrhein/Sm
+Hochschulreife/m
 Hochverratsprozess/EPTm
 Hochzeits/hij
 Hockenheimring/S
@@ -10546,6 +10568,7 @@ Jahr/EPSTm
 Jahrbücher/Nm
 Jahrbuch/STm
 Jahres/hij
+Jahresunterlagen/m
 Jahreswettbewerb/m
 Jahrgang/Spm
 Jahrhundert/EPSmij
@@ -10697,6 +10720,10 @@ Jungenbeine/m
 Jungens/m
 Jungenschaft/m
 Jungfer/Nm
+Jungfernfahrt/Pm
+Jungfernflug/STpm
+Jungfernrede/Nm
+Jungfernreise/m
 Jungfilmer/m
 Junggesellenabschied/EPSm
 Jungspund/SEPm
@@ -10858,6 +10885,7 @@ Kaliumpermanganat/Sm
 Kalk/STmij
 Kalkar/m
 Kalkstein/m
+Kalksteinvorkommen/m
 Kalkül/EPSm
 Kalkulation/Pm
 Kalkulations/hij
@@ -12021,6 +12049,7 @@ Kontamination/Pm
 Kontaminieren/SJm
 Kontemplation/Pm
 Konten/ijm
+Kontenunterlagen/m
 Konteradmiral/SEPm
 Konterangriff/m
 Konterfei/Sm
@@ -12305,6 +12334,7 @@ Kriegsfreiwillige/m
 Kriegstagebücher/m
 Kriegstagebuch/m
 Kriegsverbündete/m
+Kriegsvorlagen/m
 Krim/m
 Krimi/Sm
 Kriminal/hij
@@ -12661,10 +12691,14 @@ Langsam/hij
 Langsamkeit/m
 Langstreb/m
 Langstrecke/Nm
+Langstreckenrennen/m
 Languedoc
 Languste/Nm
 Langwierigkeit/Pm
 Langzeit/m
+Langzeitbetrieb/m
+Langzeitfolgen/m
+Langzeitziele/m
 Lanka/Sm
 Lanthan/Sm
 Lanthanoid/EPSm
@@ -12747,6 +12781,7 @@ Lebendimpfstoff/EPSTm
 Lebendvieh/Sm
 Lebendviehpreis/EPTm
 Lebens/hij
+Lebensunterhalt/EPSTm
 Leber/Nmij
 Lebewesen/Sm
 Lebewohl/m
@@ -13352,6 +13387,7 @@ Machiavelli/S
 Macho/Sm
 Macht/ijm
 Machthabende/NRm
+Machtübernahme/Nm
 Macintosh/S
 Macke/Nm
 Macker/m
@@ -13652,6 +13688,7 @@ Maß/ETPmij
 Maßhaltigkeit
 Maßnahmenkatalog/SEPm
 Maßname/dN
+Maßvorlage/Nm
 Mascarpone/m
 Masche/Nm
 Maschendraht/Sm
@@ -14094,6 +14131,8 @@ Minen/hij
 Mineral/ijm
 Mineralien/m
 Mineralöl/EPSm
+Mineralölsteuern/m
+Mineralölunternehmen/m
 Ming/S
 Mini/Smij
 Miniatur/Pmij
@@ -14984,6 +15023,7 @@ Netscape/S
 Nettigkeit/Pm
 Netto/hij
 Netz/EPTmij
+Netzüberlast/m
 Netzwerkbuffer/Sm
 Neu/hij
 Neueinkleiden/m
@@ -15142,6 +15182,7 @@ Nötigen/SJm
 Noah/S
 Nobel/hij
 Nobelpreis/TPEm
+Nobelpreisträger/NFSm
 Noblesse/m
 Nocken/m
 Nockenrad/Sm
@@ -15812,6 +15853,7 @@ Parallelport/Sm
 Paralympics/m
 Parameter/NSmij
 Parameterbuffer/Sm
+Parameterübergabe/Nm
 Parametrieren/SJm
 Parametriergerät/m
 Parametrierstation/Pm
@@ -16906,6 +16948,7 @@ Programmier/hij
 Programmierbarkeit/m
 Programmieren/SJm
 Programmierer/NSFm
+Programmunterlagen/m
 Progress/TEPm
 Progression/Pm
 Progressionsvorbehalt/m
@@ -20344,6 +20387,7 @@ Staaten/hij
 Staatlichkeit/m
 Staats/hij
 Staatsduma/m
+Staatshaushalt/ESm
 Staatshoheit/Pm
 Stab/STm
 Stabantenne/Nm
@@ -20621,6 +20665,7 @@ Steueroaseneinwohner/m
 Steueroasenländer/m
 Steuersäckel/m
 Steuerungs/hij
+Steuerunterlagen/m
 Steve/S
 Stevens
 Steward/Sm
@@ -21617,12 +21662,14 @@ Texaner/NSFm
 Texas/m
 Texel/Sm
 Text/EPTSmij
+Textblockende/m
 Textbuffer/Sm
 Texter/SNFnm
 Textfile/Sm
 Textil/Smij
 Textilie/Nm
 Textur/Pm
+Textvorlage/Nm
 Thailand/Sm
 Thatcher/S
 Thatcherismus
@@ -23434,6 +23481,7 @@ Verkapseln/SJm
 Verkauf/STpm
 Verkaufs/hij
 Verkaufsorder/Sm
+Verkaufsunterlagen/m
 Verkehr/STm
 Verkehren/SJm
 Verkehrs/hij
@@ -24374,6 +24422,7 @@ Washington/Sm
 Washingtoner/NSFm
 Wasser/SNmij
 Wasserdämpfe/Nm
+Wasserhaushalt/EPSm
 Wasserklosett/Sm
 Wasserrutschbahnen/m
 Wasserscheide/Nm
@@ -24590,6 +24639,7 @@ Wette/Nm
 Wetter/Smij
 Wetterfühligkeit/m
 Wetterstürze/Nm
+Wettervoraussage/m
 Wettrudern/Sm
 Wettsegeln/Sm
 Wetz/hij
@@ -25176,6 +25226,7 @@ Ziehtochter/m
 Ziehvater/Sm
 Ziel/STEPmij
 Zielstrebigkeit/m
+Zielvorgabe/Nm
 Ziemer/NSm
 Zier/ijm
 Zierde/Nm
@@ -25485,6 +25536,8 @@ Zweidrittelmehrheit/Pm
 Zweier/hij
 Zweierbob/Sm
 Zweifel/NSm
+Zweifelsfall/STpm
+Zweifelsfrage/Nm
 Zweifler/FNSm
 Zweig/EPTSmij
 Zweigeschlechtlichkeit/m
@@ -27817,6 +27870,7 @@ amnesie/Nozm
 amnestie/Nozm
 amnestie/hke
 amnestieren/DIOXY
+amnestievorlage/Nozm
 amok/hke
 amok/ozm
 amor/Sozm
@@ -27853,6 +27907,7 @@ amtschinesisch/ozm
 amtsdeutsch/A
 amtseid/EPSTozm
 amtsenthoben/A
+amtsübernahme/Nozm
 amüsant/AC
 amüsement/Sozm
 amüsieren/DIOXY
@@ -32446,6 +32501,7 @@ beipflichten/DIXY
 beipflichten/SJozm
 beiräte/Nozm
 beirat/STozm
+beiratstreffen/Sozm
 beirren/DIXY
 beirut/Sozm
 beiruter/NSFozm
@@ -33621,6 +33677,7 @@ bilanzieren/SJozm
 bilanzierungs/hke
 bilanzmäßig/A
 bilanzsicher/A
+bilanzunterlagen/ozm
 bilateral/A
 bild/RTMSozm
 bild/hke
@@ -36185,6 +36242,7 @@ dokumentation/Pozm
 dokumentations/hke
 dokumenten/hke
 dokumentieren/DIOXY
+dokumentvorlage/Nozm
 dolch/EPSTozm
 dolch/hke
 dollar/Sozm
@@ -36556,7 +36614,9 @@ druckreif/A
 drucksachengebühren/ozm
 drucktechnisch/A
 druckvoll/A
+druckvorlagen/ozm
 druckwasserfrei/A
+druckwerktest/ozm
 druide/NFozm
 drumherum
 drummer/NSFozm
@@ -37990,6 +38050,7 @@ einsetzen/SJozm
 einsicht/Pozm
 einsichtig/ACU
 einsichtigkeit/ozm
+einsichtnahme/Nozm
 einsichtsvoll/AC
 einsickern/DIXY
 einsiedler/FNSozm
@@ -38179,6 +38240,7 @@ einzel/Sozm
 einzel/hke
 einzelbit/Sozm
 einzelbitsteuerung/Pozm
+einzelhaushalten/ozm
 einzelheit/Pozm
 einzeller/Nozm
 einzeln/A
@@ -39237,7 +39299,11 @@ erdnächste/A
 erdnah/A
 erdöl/ozm
 erdölindustriellen/ozm
+erdöllager/ozm
 erdölproduzierend/A
+erdölquelle/ozm
+erdölvorkommen/ozm
+erdölwerte/Nozm
 erdolchen/DIOXY
 erdräumgerät/EPSTozm
 erdreisten/DIXY
@@ -40291,6 +40357,7 @@ fachmännisch/ACU
 fachsimpeln/IXYW
 fachspezifisch/A
 fachsprachlich/A
+fachübersetzen/ozm
 fackel/Nozm
 fackel/hke
 fackelähnlich/A
@@ -40324,6 +40391,8 @@ fahrplankonferenz/ozm
 fahrplanmäßig/A
 fahrräder/Nozm
 fahrrad/Tozm
+fahrradfahren/ozm
+fahrradreifen/ozm
 fahrt/Pozm
 fahrt/hke
 fahrten/hke
@@ -40913,6 +40982,7 @@ finanzökonomisch/A
 finanzpolitisch/A
 finanzstark/A
 finanztechnisch/A
+finanzvorlagen/ozm
 findelhaus/Tpozm
 findelkind/TRSozm
 finden/BDIX
@@ -41336,6 +41406,7 @@ folie/Nozm
 folien/hke
 foliengeschützt/A
 folienmaß/ETPozm
+folienüberstand/ozm
 folklore/ozm
 folkloristisch/A
 folsäure/Nozm
@@ -43832,6 +43903,7 @@ geschäftsmäßig/A
 geschäftspolitisch/A
 geschäftsschädigend/A
 geschäftstüchtig/AC
+geschäftsunterlagen/ozm
 geschähe/N
 geschäkert/A
 geschält/A
@@ -44115,6 +44187,7 @@ gesetzentwürfe/Nozm
 gesetzentwurf/STozm
 gesetzes/hke
 gesetzeskonform/A
+gesetzesvorlage/Nozm
 gesetzgebend/A
 gesetzgeber/NSozm
 gesetzgeberisch/A
@@ -44597,6 +44670,7 @@ gewinner/FNSozm
 gewinnerzielungsgründen/ozm
 gewinnerzielungsmotiv/ozm
 gewinnerzielungstrieb/ozm
+gewinnmitnahme/Nozm
 gewinnmitnehmend/A
 gewinnträchtig/AC
 gewinnungs/hke
@@ -47775,6 +47849,7 @@ hochschießen/IXD
 hochschoss/Z
 hochschulfrei/A
 hochschulpolitisch/A
+hochschulreife/ozm
 hochschulunabhängig/A
 hochschwanger/A
 hochseriös/A
@@ -49171,6 +49246,7 @@ jahrbuch/STozm
 jahrein
 jahrelang/A
 jahres/hke
+jahresunterlagen/ozm
 jahreswettbewerb/ozm
 jahreszeitlich/A
 jahrgang/Spozm
@@ -49365,6 +49441,10 @@ jungenhaft/A
 jungens/ozm
 jungenschaft/ozm
 jungfer/Nozm
+jungfernfahrt/Pozm
+jungfernflug/STpozm
+jungfernrede/Nozm
+jungfernreise/ozm
 jungfilmer/ozm
 jungfräulich/A
 junggeblieben/A
@@ -49566,6 +49646,7 @@ kalkarm/A
 kalkartig/A
 kalkig/A
 kalkstein/ozm
+kalksteinvorkommen/ozm
 kalkül/EPSozm
 kalkulation/Pozm
 kalkulations/hke
@@ -51308,6 +51389,7 @@ kontemplation/Pozm
 kontemplativ/A
 konten/hke
 konten/ozm
+kontenunterlagen/ozm
 konteradmiral/SEPozm
 konterangriff/ozm
 konterfei/Sozm
@@ -51781,6 +51863,7 @@ kriegstagebuch/ozm
 kriegsuntauglich/A
 kriegsverbündete/ozm
 kriegsversehrt/A
+kriegsvorlagen/ozm
 kriegswichtig/A
 kriegswillig/A
 kriegszerstört/A
@@ -52356,6 +52439,7 @@ langsam/ACke
 langsamkeit/ozm
 langstreb/ozm
 langstrecke/Nozm
+langstreckenrennen/ozm
 languste/Nozm
 langwährend/A
 langweilen/DIXY
@@ -52364,6 +52448,9 @@ langwellig/A
 langwierig/A
 langwierigkeit/Pozm
 langzeit/ozm
+langzeitbetrieb/ozm
+langzeitfolgen/ozm
+langzeitziele/ozm
 lanka/Sozm
 lanthan/Sozm
 lanthanoid/EPSozm
@@ -52513,6 +52600,7 @@ lebensnotwendig/A
 lebenspendend/A
 lebensrettend/A
 lebensunfähig/A
+lebensunterhalt/EPSTozm
 lebensuntüchtig/A
 lebensverlängernd/A
 lebensvoll/A
@@ -53435,6 +53523,7 @@ machthaberisch/A
 machtlos/AC
 machtpolitisch/A
 machtsüchtig/A
+machtübernahme/Nozm
 machtvoll/AC
 macke/Nozm
 macker/ozm
@@ -53814,6 +53903,7 @@ maßnahmenkatalog/SEPozm
 maßstäblich/A
 maßstabsgetreu/A
 maßvoll/A
+maßvorlage/Nozm
 mascarpone/ozm
 masche/Nozm
 maschendraht/Sozm
@@ -54464,6 +54554,8 @@ mineral/ozm
 mineralien/ozm
 mineralisch/A
 mineralöl/EPSozm
+mineralölsteuern/ozm
+mineralölunternehmen/ozm
 mini/Sozm
 mini/hke
 miniatur/Pozm
@@ -56139,6 +56231,7 @@ netz/EPTozm
 netz/hke
 netzbasiert/A
 netzpolitisch/A
+netzüberlast/ozm
 netzwerkbuffer/Sozm
 netzwerkfähig/A
 neu/ACke
@@ -56474,6 +56567,7 @@ nötigen/SJozm
 nötigenfalls
 nobel/Ake
 nobelpreis/TPEozm
+nobelpreisträger/NFSozm
 noblesse/ozm
 noch
 nochmal/n
@@ -57422,6 +57516,7 @@ parameter/NSozm
 parameter/hke
 parameterbuffer/Sozm
 parameterlos/A
+parameterübergabe/Nozm
 parametrieren/IXYDOB
 parametrieren/SJozm
 parametriergerät/ozm
@@ -58999,6 +59094,7 @@ programmieren/SJozm
 programmierer/NSFozm
 programmiertechnisch/A
 programmunabhängig/AC
+programmunterlagen/ozm
 progress/TEPozm
 progression/Pozm
 progressionsvorbehalt/ozm
@@ -64422,6 +64518,7 @@ staatsduma/ozm
 staatseigen/A
 staatsfeindlich/A
 staatsgefährdend/A
+staatshaushalt/ESozm
 staatshoheit/Pozm
 staatsklug/A
 staatskritisch/A
@@ -64855,6 +64952,7 @@ steuersäckel/ozm
 steuerungs/hke
 steuerungsseitig/A
 steuerungstechnisch/A
+steuerunterlagen/ozm
 steward/Sozm
 stewardess/Pozm
 stibitzen/DIOXY
@@ -66312,6 +66410,7 @@ texas/ozm
 texel/Sozm
 text/EPTSozm
 text/hke
+textblockende/ozm
 textbuffer/Sozm
 texter/SNFnozm
 textfile/Sozm
@@ -66322,6 +66421,7 @@ textkritisch/A
 textlich/A
 textlinguistisch/A
 textur/Pozm
+textvorlage/Nozm
 thailändisch/A
 thailand/Sozm
 theater/NSozm
@@ -70101,6 +70201,7 @@ verkaufsfördernd/A
 verkaufsoffen/A
 verkaufsorder/Sozm
 verkaufstechnisch/A
+verkaufsunterlagen/ozm
 verkaufswillig/A
 verkehr/STozm
 verkehren/DIOXY
@@ -72346,6 +72447,7 @@ wasserdampfgesättigt/A
 wasserdicht/A
 wasserfest/A
 wasserhaltig/AC
+wasserhaushalt/EPSozm
 wasserklosett/Sozm
 wasserlöslich/AC
 wassern/DIXY
@@ -73010,6 +73112,7 @@ wetterhärteste/A
 wetterhart/A
 wettern/DIXYW
 wetterstürze/Nozm
+wettervoraussage/ozm
 wetterwendisch/AC
 wettgeeifert
 wettgemacht/A
@@ -74241,6 +74344,7 @@ zielorientiert/A
 zielsicher/AC
 zielstrebig/AC
 zielstrebigkeit/ozm
+zielvorgabe/Nozm
 ziemen/DIXY
 ziemer/NSozm
 ziemlich/AU
@@ -75591,6 +75695,8 @@ zweifelhaft/ACU
 zweifellos/AC
 zweifeln/DIVXYW
 zweifelnd/AC
+zweifelsfall/STpozm
+zweifelsfrage/Nozm
 zweifelsfrei/A
 zweifelsohne
 zweifler/FNSozm
