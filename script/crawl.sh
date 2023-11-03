@@ -179,18 +179,18 @@ crawl "basque" \
 crawl "breton" \
   "https://github.com/Drouizig/hunspell-br" \
   "https://github.com/Drouizig/hunspell-br/archive/master.zip"
-# See <http://bgoffice.sourceforge.net/ooo/index.html>, pick the first `тук` (which goes to “Bulgarian language support”)
+# See <http://bgoffice.sourceforge.net/ooo/index.html>, pick the *second* `тук` (which goes to “Bulgarian language support Files”)
 crawl "bulgarian" \
   "http://bgoffice.sourceforge.net" \
   "https://master.dl.sourceforge.net/project/bgoffice/OpenOffice.org%20Full%20Pack/4.3/OOo-full-pack-bg-4.3.zip?viasf=1"
 # See <https://github.com/Softcatala/catalan-dict-tools/releases>, pick the latest.
 crawl "catalan" \
   "https://github.com/Softcatala/catalan-dict-tools" \
-  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.7/ca-hunspell.zip"
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.8/ca-hunspell.zip"
 # Same as `catalan`
 crawl "catalan-valencian" \
   "https://github.com/Softcatala/catalan-dict-tools" \
-  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.7/ca-valencia-hunspell.zip"
+  "https://github.com/Softcatala/catalan-dict-tools/releases/download/v3.0.8/ca-valencia-hunspell.zip"
 # Nothing:
 crawl "croatian" \
   "https://github.com/krunose/hunspell-hr" \
@@ -203,31 +203,31 @@ crawl "czech" \
 # See <https://stavekontrolden.dk/?dictionaries=1>, get the OXT link.
 crawl "danish" \
   "https://stavekontrolden.dk" \
-  "https://stavekontrolden.dk/dictionaries/da_DK/da_DK-2.7.026.oxt"
+  "https://stavekontrolden.dk/dictionaries/da_DK/da_DK-2.8.034.oxt"
 # Nothing:
 crawl "dutch" \
   "https://github.com/OpenTaal/opentaal-hunspell" \
   "https://github.com/OpenTaal/opentaal-hunspell/archive/master.zip"
 # Go to the link, get the latest.
 crawl "english" \
-  "http://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://deac-ams.dl.sourceforge.net/project/aoo-extensions/17102/83/dict-en-20221101_aoo.oxt"
+  "https://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
+  "https://netix.dl.sourceforge.net/project/aoo-extensions/17102/96/dict-en-20231101_aoo.oxt"
 # Go to the link, go to “Additional Hunspell Dictionaries”, go to “Parent folder”.
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_GB-ise-2020.12.07.zip"
+  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_GB-ise-2020.12.07.zip"
 # Same as `english-gb`
 crawl "english-american" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip"
+  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip"
 # Same as `english-gb`
 crawl "english-canadian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_CA-2020.12.07.zip"
+  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_CA-2020.12.07.zip"
 # Same as `english-gb`
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://netcologne.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_AU-2020.12.07.zip"
+  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_AU-2020.12.07.zip"
 # Hasn’t updated in 20 years 🤷‍♂️
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
@@ -240,7 +240,7 @@ crawl "faroese" \
 # Go to <https://grammalecte.net/#download>, copy the url of “GRAMMALECTE pour LibreOffice 5.3+”.
 crawl "french" \
   "https://grammalecte.net" \
-  "https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.1.2.oxt"
+  "https://grammalecte.net/oxt/Grammalecte-fr-v2.1.2.oxt"
 # Nothing:
 crawl "frisian" \
   "https://github.com/PanderMusubi/frisian" \
@@ -277,7 +277,7 @@ crawl "greek" \
 # “Ἐγκατάσταση σὲ OpenOffice / LibreOffice”, and get the latest from sourceforge.
 crawl "greek-polyton" \
   "https://thepolytonicproject.gr/spell" \
-  "https://altushost-swe.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt"
+  "https://deac-ams.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt"
 # Go to <http://hspell.ivrix.org.il/download.html>, copy/paste the URL of the
 # latest release
 crawl "hebrew" \
@@ -288,7 +288,7 @@ crawl "hebrew" \
 # copy/paste the URL of the latest `.zip` file.
 crawl "hungarian" \
   "https://github.com/laszlonemeth/magyarispell" \
-  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2022.02.18.09.36/MagyarIspell_67770a2.zip"
+  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2023.05.22.12.31/MagyarIspell_adf496c.zip"
 # Hasn’t updated in 8 years.
 # Go to <https://addons.thunderbird.net/en-US/thunderbird/addon/dict-ia/>,
 # copy/paste the URL for “Download Now” (but clean it).
@@ -300,7 +300,7 @@ crawl "interlingue" \
   "https://github.com/Carmina16/hunspell-ie" \
   "https://github.com/Carmina16/hunspell-ie/archive/master.zip"
 # Go to <https://github.com/kscanne/gaelspell/releases>, get the latest.
-# Note: hasn’t been a release in 3 years but 5.2 is planned apparently.
+# Note: hasn’t been a release in 4 years but 5.2 is planned apparently.
 crawl "irish" \
   "https://github.com/kscanne/gaelspell" \
   "https://github.com/kscanne/gaelspell/releases/download/v5.1/hunspell-ga-5.1.zip"
@@ -320,7 +320,7 @@ crawl "klingon" \
 # copy/paste the URL of the latest `.zip`.
 crawl "korean" \
   "https://github.com/spellcheck-ko/hunspell-dict-ko" \
-  "https://github.com/spellcheck-ko/hunspell-dict-ko/releases/download/0.7.92/ko-aff-dic-0.7.92.zip"
+  "https://github.com/spellcheck-ko/hunspell-dict-ko/releases/download/0.7.94/ko-aff-dic-0.7.94.zip"
 # Go to <http://dict.dv.lv/download.php?prj=la>, copy the url of the latest `.oxt`.
 crawl "latgalian" \
   "http://dict.dv.lv/home.php?prj=la" \
@@ -389,7 +389,7 @@ crawl "portuguese-pt" \
 crawl "romanian" \
   "https://rospell.wordpress.com" \
   "https://master.dl.sourceforge.net/project/rospell/Romanian%20dictionaries/dict-3.3.10/ro_RO.3.3.10.zip?viasf=1"
-# Not updated in 9 years.
+# Not updated in 10 years.
 # Go to <https://bitbucket.org/Shaman_Alex/russian-dictionary-hunspell/downloads/>,
 # (or find the link to that on <https://code.google.com/archive/p/hunspell-ru/>).
 crawl "russian" \
@@ -408,78 +408,79 @@ crawl "slovak" \
 # get the top “download”.
 crawl "slovenian" \
   "https://extensions.libreoffice.org/extensions/slovenian-dictionary-pack/" \
-  "https://extensions.libreoffice.org/assets/downloads/752/1659538154/pack-sl.oxt"
+  "https://extensions.libreoffice.org/assets/downloads/752/1672786274/pack-sl.oxt"
 # Go to <https://github.com/sbosio/rla-es/releases>,
 # hopefully only the version number changes 😅
 crawl "spanish" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es.oxt"
 crawl "spanish-ar" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_AR.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_AR.oxt"
 crawl "spanish-bo" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_BO.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_BO.oxt"
 crawl "spanish-cl" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CL.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_CL.oxt"
 crawl "spanish-co" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CO.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_CO.oxt"
 crawl "spanish-cr" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CR.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_CR.oxt"
 crawl "spanish-cu" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_CU.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_CU.oxt"
 crawl "spanish-do" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_DO.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_DO.oxt"
 crawl "spanish-ec" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_EC.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_EC.oxt"
 crawl "spanish-es" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_ES.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_ES.oxt"
 crawl "spanish-gt" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_GT.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_GT.oxt"
 crawl "spanish-hn" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_HN.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_HN.oxt"
 crawl "spanish-mx" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_MX.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_MX.oxt"
 crawl "spanish-ni" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_NI.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_NI.oxt"
 crawl "spanish-pa" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PA.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_PA.oxt"
 crawl "spanish-pe" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PE.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_PE.oxt"
 crawl "spanish-ph" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PH.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_PH.oxt"
 crawl "spanish-pr" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PR.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_PR.oxt"
 crawl "spanish-py" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_PY.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_PY.oxt"
 crawl "spanish-sv" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_SV.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_SV.oxt"
 crawl "spanish-us" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_US.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_US.oxt"
 crawl "spanish-uy" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_UY.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_UY.oxt"
 crawl "spanish-ve" \
   "https://github.com/sbosio/rla-es" \
-  "https://github.com/sbosio/rla-es/releases/download/v2.6/es_VE.oxt"
+  "https://github.com/sbosio/rla-es/releases/download/v2.8/es_VE.oxt"
+# Hasn’t been updated in 4 years, but:
 # Go to <https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan>,
 # get the top “download”.
 crawl "swedish" \
@@ -499,8 +500,8 @@ crawl "turkmen" \
 # get the top `hunspell-uk`.
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
-  "https://github.com/brown-uk/dict_uk/releases/download/v5.8.0/hunspell-uk_UA_5.8.0.zip"
-# Hasn’t updated in 8 years, but:
+  "https://github.com/brown-uk/dict_uk/releases/download/v6.1.0/hunspell-uk_UA_6.1.0.zip"
+# Hasn’t updated in 9 years, but:
 # Go to <https://github.com/1ec5/hunspell-vi/releases>.
 crawl "vietnamese" \
   "https://github.com/1ec5/hunspell-vi" \
