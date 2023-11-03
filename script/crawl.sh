@@ -868,8 +868,8 @@ generate "lb" "luxembourgish" \
   "dictionary-lb-lu-master/lb_LU.aff" "UTF-8" \
   "EUPL-1.1" "dictionary-lb-lu-master/LICENSE.txt" "UTF-8"
 generate "lt" "lithuanian" \
-  "myspell-lt-1.3.2/lt_LT.dic" "ISO8859-13" \
-  "myspell-lt-1.3.2/lt_LT.aff" "ISO8859-13" \
+  "myspell-lt-1.3.2/lt_LT.dic" "UTF-8" \
+  "myspell-lt-1.3.2/lt_LT.aff" "UTF-8" \
   "BSD-3-Clause" "myspell-lt-1.3.2/COPYING" "UTF-8"
 generate "ltg" "latgalian" \
   "ltg_LV.dic" "UTF-8" \
