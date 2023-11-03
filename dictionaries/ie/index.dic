@@ -1,4 +1,4 @@
-23566
+23596
 a
 ab
 abandon
@@ -169,7 +169,7 @@ acerb/At
 acere/S
 acesse/S
 acetaldehid
-acetate/S
+acetate/SQ
 acete/Qz
 acetilen
 aceton
@@ -895,6 +895,7 @@ Andes
 Andorra/K
 André
 Andreas
+Andrómeda
 Andromede
 anecdote/SQ
 anell/S
@@ -1762,6 +1763,7 @@ aula/S
 Auli
 aur/AJz
 aurar/Vu
+auratri/A
 aure/S
 aureol/S
 auri/ac
@@ -1808,7 +1810,8 @@ autogramma/S
 automat/S
 automatic/M
 automation/S
-automatisme
+automatisar/VZ
+automatisme/S
 automobil/S
 automobilisme/T
 autonom/AMNt
@@ -1970,6 +1973,7 @@ bai
 Baikal
 bairam
 bakchich
+bakelite/S
 bal
 balaláica/S
 balanciar/Vm
@@ -2331,6 +2335,7 @@ beton
 betonar/Vg
 betrap/S
 betul/S
+bevatron/S
 bey
 beyar/V
 bezoare/S
@@ -2607,6 +2612,7 @@ borstut
 boscage/S
 boscallia
 bosco/Szb
+Bose
 Bosfor
 bosillar/VZgu
 bosillard/S
@@ -2635,6 +2641,7 @@ bottnic
 boullion/S
 Boulos
 Bourbaki
+Bourget
 Boutrex
 bovallia/S
 bove/SXa
@@ -2643,6 +2650,7 @@ bovero/Sb
 bovin/S
 bovo/S
 bovpelicul/S
+Bowden
 box/S
 boxada/S
 boxar/VR
@@ -2918,6 +2926,7 @@ bussol/S
 bussoliere/S
 buste/S
 bustrofedon
+butan/S
 buteo/S
 butíca/S
 buticario/S
@@ -3035,6 +3044,7 @@ calcium
 cálcul
 calcul/S!
 calcular/VBZOR
+Calcutta
 Caldéia
 caldéian/AH
 caldiere/S
@@ -3248,6 +3258,7 @@ cantator/HSA
 cantatressa/S
 cantico/S
 cantilen/S
+cantilever/S
 cantillar/V
 cantine/S
 cantinero/H
@@ -3397,6 +3408,7 @@ cardinal/MSQ
 cardinalatu/S
 cardinalo/S
 cardiogramme/S
+cardiologie/Q
 cardon/S
 cardul/S
 carema/S
@@ -4088,9 +4100,9 @@ cindriere/S
 cinemá/Sb!
 cinema/SQb
 cinematica
-cinematograf/Q
+cinematograf/QS
 cinematografie
-cinematograph/Q!
+cinematograph/QS!
 cinematographie/!
 cinerarie/S!
 cinetic
@@ -5643,7 +5655,7 @@ cuplator/H
 cuple/S
 cuplete/S
 cupol/S
-cupon/S
+cupon/Sb
 cupre/QXay
 cupregravator/S
 cupregravura/S
@@ -5677,6 +5689,7 @@ currero/S
 curriculum/S
 currida/S
 curriero/S
+curry
 curs/S
 cursiv/SMt
 cursu/S
@@ -5744,6 +5757,8 @@ dacian/AH
 dactile/SQ
 dáctilo/S
 dactilograf/H
+dactilografie/Q
+dactilographie/Q!
 dactilologie
 dactiloptero
 dadá/S
@@ -5871,6 +5886,7 @@ deceder/Vb
 decelar/V
 decembre/S
 decen/S
+decennarie/S
 decennie/SL
 decentie/S
 decentral
@@ -6256,6 +6272,7 @@ descense/S
 deschargear/V
 deschiffrar/V
 deschifrar/V
+desclincar/Vm
 descollar/V
 descolorar/V
 descomposir/VZ
@@ -6479,6 +6496,7 @@ detraher/V
 detranchar/V
 detriment/SL
 detrimentar/Vz
+Detroit
 detronar/V
 deuterium
 deuteron/S
@@ -6598,7 +6616,7 @@ dictionarium/S
 didact/S
 didactica/SQ
 didactico/S
-die/S
+die/Sb
 dielectric/S
 diérese/S
 diese/S
@@ -6638,6 +6656,7 @@ difuser/VZOR
 difusi
 digamma/S
 digar/Vbm
+digest/S
 digester/VBZw
 digestibil/S
 digital/S
@@ -6715,7 +6734,7 @@ directressa/S
 diriger/VB
 dirigibile/S
 dirigible/S
-dis
+dis/ac
 disbalayat
 disc/S
 discade/S
@@ -6732,6 +6751,7 @@ discobol/S
 discoid/S
 discomposir/VZ
 discontar/V
+discontinuar/V
 disconto/S
 discordantie
 discordar/VZ
@@ -7191,7 +7211,7 @@ ecumenic
 eczema/QS
 ed
 edelweiss/S
-edema
+edema/Q
 edentat
 eder
 Edgar
@@ -8923,7 +8943,7 @@ frenetico
 frenolog/SQ
 frenologie
 frequent/MN
-frequentar/VZw
+frequentar/VZRw
 frequentie/S
 fres/S
 fresar/V
@@ -9499,7 +9519,7 @@ glorificar/VZ
 glossarium/S
 glosse/S
 glote
-glotir/V
+glotir/VB
 gloton/S
 glotoneríe
 glottal/S
@@ -10345,7 +10365,7 @@ horrid
 horrific/M
 horrificar/V
 horrore/Sza
-hortative/S
+hortativ/AS
 hortensia/S
 horticulter/VR
 horticultura/SL
@@ -10996,7 +11016,7 @@ infiltrar/VZOR
 ínfinit/M
 infinitá/I
 ínfinitesim/L
-infinitive/S
+infinitive/SQ
 infinitum
 ínfirm
 ínfirmar/V
@@ -11322,7 +11342,7 @@ inreconossibilitá/I
 inreffar/V
 ínrefutabil
 inrefutabilitá/I
-inregistrar/VZO
+inregistrar/VZOm
 ínregulari/M
 inregularitá/SI
 ínreligios/A
@@ -12475,7 +12495,7 @@ letargic
 letargie
 letion/S
 letor/HS
-lett/SXab
+lett/SXUab
 lettear/V
 lettiere/S
 letton/H
@@ -12773,7 +12793,7 @@ longevitá
 longform/A
 longitúdine/SL
 longore/Sb
-lontan/SAE
+lontan/SAEt
 lontanie/S
 loop
 loquaci/t
@@ -12860,7 +12880,7 @@ lumination/b
 luminativ
 lúmine/S
 luminiera
-luminosi/t
+luminosi/Mt
 lun/SL
 lunari
 lunatic/H
@@ -13455,6 +13475,7 @@ median/S
 mediar/VZOR
 mediborgesi
 medic/L
+medicamentos/AM
 medicar/VZOm
 medicastro/S
 medicinal
@@ -13633,7 +13654,7 @@ Mersá
 merser/V
 mersí
 mersía/S
-mersiar/Vv
+mersiar/Vvm
 mersion/S
 mersiosi/t
 mesme
@@ -15004,6 +15025,7 @@ Odessa
 odiar/VB
 odie/Sz
 odissé/S
+odontologie/SQ
 odorada
 odorar/V
 odoratu
@@ -15292,6 +15314,8 @@ orvietane
 Osaka
 Oscar
 oscillar/VZOR
+oscillograf/S
+oscillograph/S!
 osculation
 Oslo
 osmium
@@ -16801,6 +16825,7 @@ politico/S
 politisar/V
 politologo/S
 poliuretan
+polivinil/S
 polivinilclorid
 polka/S
 póllen/S
@@ -17531,7 +17556,7 @@ prunelle/S
 prunelliero/S
 pruniera/S
 pruniero/S
-pruntar/VZR
+pruntar/VZRg
 pruntard/S
 pruritar/VZ
 prurite/S
@@ -18283,7 +18308,7 @@ regionalisme/S
 regisser/VR
 register/S
 registrada
-registrar/VZORBmu
+registrar/VZORBmuvb
 registre/S
 regnantie/S
 regnar/V
@@ -18352,6 +18377,7 @@ relrut/S
 relvia/S
 rem/Sa
 remachar/V
+remagnetisar/VZ
 remane
 remanentie/S
 remaner/V
@@ -18512,10 +18538,10 @@ respegular/V
 respirar/VZRBv
 respít
 responder/VZv
+respons/Sa
 responsabil/S
 responsabilitá/S
 responsar/V
-response/S
 responsorie/S
 ressentiment
 ressor/Sa
@@ -19238,7 +19264,7 @@ saracen/S
 Sarah
 Sarajevo
 sarc
-sarcasme
+sarcasme/S
 sarcástic/S!
 sarcastic/SM
 sarclage/S
@@ -19786,6 +19812,7 @@ setul/Sz
 setulage
 setulura
 sever/AMt
+Sevilla/K
 sex
 sexisme/T
 sextant/S
@@ -20215,6 +20242,7 @@ somnion/S
 somnolentie
 somnoler/V
 son/SLUab
+sonada/S
 sonalitá
 sonantie/Sb
 sonar/VZOb
@@ -20301,7 +20329,7 @@ spatul/S
 speaker/S
 special/M
 specialisar/VZO
-specialist/S
+specialist/SQ
 specialitá/S
 specie/S
 specific/M
@@ -21439,7 +21467,7 @@ taverne/SL
 tavernero/H
 taxa/S
 taxametre/S
-taxar/V
+taxar/VB
 taxation/S
 taxator/S
 taxi/S
@@ -21901,6 +21929,7 @@ tónnerar/V
 tonnerear
 tonsill/S
 tonsillite
+tonsuore/Sb
 tonsura/S
 tonsurar/V
 tonus
@@ -22079,6 +22108,7 @@ transacter/VB
 transaction/S
 transalpin
 transatlantic
+transbordar/Vm
 transcendental
 transcendentie
 transcender/V
@@ -22679,7 +22709,7 @@ utensilarium/S
 útere/S
 uterin
 util/ANMEb
-utilisar/VZB
+utilisar/VZRB
 utilitá/SN
 utilitari
 utilitarisme/T
@@ -22791,7 +22821,7 @@ vaporear/V
 vaporere/S
 vaporisar/VZOR
 vapornave/S
-variabil/S
+variabil/SE
 variar/VBZO
 varice/S
 varicelle/S
@@ -22929,7 +22959,7 @@ verge/S
 verger/V
 vergette/S
 vergonia
-verificar/VBZR
+verificar/VBZOR
 verisimil/t
 veritá/SN
 veritabil/M
@@ -23154,7 +23184,7 @@ violent/M
 violentar/VZR
 violentie/S
 violett/SAb
-violine/S
+violin/S
 violinist/S
 violist/S
 violoncellist/S
