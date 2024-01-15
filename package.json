@@ -23,6 +23,7 @@
   ],
   "type": "module",
   "devDependencies": {
+    "@types/leb128": "^0.0.0",
     "@types/node": "^20.0.0",
     "@types/utf-8-validate": "^5.0.0",
     "bcp-47": "^2.0.0",
@@ -31,6 +32,7 @@
     "iso-15924": "^3.0.0",
     "iso-3166": "^4.0.0",
     "iso-639-3": "^3.0.0",
+    "leb128": "^0.0.5",
     "mdast-zone": "^6.0.0",
     "prettier": "^3.0.0",
     "remark-cli": "^11.0.0",
