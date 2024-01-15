@@ -21,22 +21,15 @@
 import {Buffer} from 'node:buffer'
 import fs from 'node:fs/promises'
 import process from 'node:process'
-// @ts-expect-error: untyped.
 import {unsigned, signed} from 'leb128'
 
 const data = await fs.readFile(process.argv[2])
 
-/** @type {Buffer} */
 const size = unsigned.encode(data.length)
-/** @type {Buffer} */
 const length = signed.encode(data.length)
-/** @type {Buffer} */
 const globalL = unsigned.encode(5 + length.length)
-/** @type {Buffer} */
 const dataL = unsigned.encode(5 + size.length + data.length)
-/** @type {Buffer} */
 const memoryPages = unsigned.encode(Math.ceil(data.length / 65_536))
-/** @type {Buffer} */
 const memoryL = unsigned.encode(2 + memoryPages.length)
 
 await fs.writeFile(
