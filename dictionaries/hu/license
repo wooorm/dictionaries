@@ -1,7 +1,7 @@
 * Szabad magyar szótár (Magyar Ispell) –
   Hungarian spelling and morphological dictionary for Hunspell *
 
- Copyright 2008-2023, László Németh & Ferenc Godó
+ Copyright 2008-2024, László Németh & Ferenc Godó
 
  Copyright 2002-2007, László Németh <nemeth@numbertext.org>
 
@@ -191,6 +191,8 @@ http://almos.vein.hu/~vonyoa
 History
 =======
 
+2024-03-27 Magyar Ispell 1.8.1
+2023-05-17 Magyar Ispell 1.8
 2018-05-17 Magyar Ispell 1.7
 2017–18    Magyar Ispell 1.7 beta 2–5
 2015-10-27 Magyar Ispell 1.7 beta
