@@ -497,7 +497,7 @@ crawl "turkmen" \
 # get the top `hunspell-uk`.
 crawl "ukrainian" \
   "https://github.com/brown-uk/dict_uk" \
-  "https://github.com/brown-uk/dict_uk/releases/download/v6.1.0/hunspell-uk_UA_6.1.0.zip"
+  "https://github.com/brown-uk/dict_uk/releases/download/v6.4.4/hunspell-uk_UA_6.4.4.zip"
 # Hasn’t updated in 9 years, but:
 # Go to <https://github.com/1ec5/hunspell-vi/releases>.
 crawl "vietnamese" \
