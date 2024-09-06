@@ -269,10 +269,6 @@ crawl "georgian" \
 crawl "german" \
   "https://www.j3e.de/ispell/igerman98/index_en.html" \
   "https://j3e.de/ispell/igerman98/dict/igerman98-20161207.tar.bz2"
-# Nothing:
-crawl "greek" \
-  "https://github.com/stevestavropoulos/elspell" \
-  "https://github.com/stevestavropoulos/elspell/archive/master.zip"
 # Go to <https://thepolytonicproject.gr/spell/>, click the image/button:
 # “Ἐγκατάσταση σὲ OpenOffice / LibreOffice”, and get the latest from sourceforge.
 crawl "greek-polyton" \
@@ -536,11 +532,6 @@ cd "$SOURCES/german" || exit
 make hunspell-all
 cd ../.. || exit
 
-echo "  greek"
-cd "$SOURCES/greek/elspell-master" || exit
-make
-cd ../../.. || exit
-
 echo "  greek (polyton)"
 cd "$SOURCES/greek-polyton" || exit
 sed -i 's/REP έψ	εύσ/REP έψ εύσ/g' el_GR.aff
@@ -648,10 +639,10 @@ generate "de-CH" "german" \
   "hunspell/de_CH.dic" "ISO8859-1" \
   "hunspell/de_CH.aff" "ISO8859-1" \
   "(GPL-2.0 OR GPL-3.0)" "hunspell/Copyright" "UTF-8"
-generate "el" "greek" \
-  "elspell-master/myspell/el_GR.dic" "UTF-8" \
-  "elspell-master/myspell/el_GR.aff" "UTF-8" \
-  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "elspell-master/myspell/README_el_GR.txt" "UTF-8"
+generate "el" "libreoffice" \
+  "dictionaries-master/el_GR/el_GR.dic" "ISO8859-7" \
+  "dictionaries-master/el_GR/el_GR.aff" "ISO8859-7" \
+  "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)" "dictionaries-master/el_GR/README_el_GR.txt" "UTF-8"
 generate "el-polyton" "greek-polyton" \
   "el_GR.dic" "UTF-8" \
   "el_GR.aff" "UTF-8" \
