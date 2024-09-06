@@ -1,11 +1,11 @@
-Version 5.0, 10-Feb-2016
+Version 5.1.1, 07-Nov-2022
 
 # Estensione linguistica italiana - Italian Writing Aids extension
-# Copyright (C) 2010, 2011, 2012, 2013, 2014, 2015, 2016 Andrea Pescetti
-# Portions Copyright (C) 2001-2008 other authors, see below for details.
+# Copyright (C) 2020-2022, LibreItalia - Marina Latini
+# Portions Copyright (C) 2001-2015 other authors, see below for details.
 # License: GNU GPL 3
-# Home: http://extensions.openoffice.org/project/dict-it
-# E-Mail: pescetti<AT>apache<DOT>org
+# Home: https://libreitalia.org
+# E-Mail: marina.latini<AT>libreoffice<DOT>org
 
 [ Please scroll down for English. ]
 
@@ -13,12 +13,13 @@ ITALIANO
 
 L'estensione linguistica italiana fornisce le funzioni di correzione
 ortografica, dizionario dei sinonimi e sillabazione per la lingua
-italiana in Apache OpenOffice. Il modulo di correzione ortografica è
+italiana in LibreOffice. Il modulo di correzione ortografica è
 utilizzabile anche in altri programmi che offrano supporto per
 dizionari MySpell, ASpell o HunSpell.
 
-L'estensione linguistica italiana è rilasciata da Andrea Pescetti
-pescetti<AT>apache<DOT>org sotto i termini e le condizioni della
+L'estensione linguistica italiana è rilasciata da LibreItalia
+e Marina Latini marina.latini<AT>libreoffice<DOT>org ne è l'attuale
+maintainer. L'estensione è rilasciata sotto i termini e le condizioni della
 GNU General Public License (GPL) 3. Una copia della licenza è
 disponibile in coda al presente file.
 
@@ -35,25 +36,25 @@ su http://tug.ctan.org/pkg/ithyph ; il file README_hyph_it_IT.txt
 contiene le note di copyright applicabili a tale pacchetto.
 
 I volontari elencati di seguito, e in generale la Comunità
-OpenOffice e il PLIO http://www.plio.it hanno aiutato in vari modi
-lo sviluppo e la manutenzione dell'estensione linguistica italiana:
-- Andrea Pescetti, maintainer
+OpenOffice.org e il PLIO http://www.plio.it hanno contribuito
+alla precedente versione dell'estensione linguistica italiana:
+- Andrea Pescetti, precedente maintainer fino alla versione 2015
 - Paolo Mantovani, struttura dell'estensione
+- Carlo Strata, suggerimenti e segnalazione di errori nel dizionario
+- Diego Favaro, suggerimenti e segnalazione di errori nel thesaurus
 - Renzo Bianchi, grafica e QA
-- Hanno contribuito con suggerimenti: Diego Favaro, Carlo Strata,
-  HeLLy33, mezzi, praticamente, The Dude, as7er, crycra, chiarachi,
-  IlDebs, Pilo, Gilberto Beda, Rodolfo R., Paolo Pozzan e molti altri
-  volontari.
 
 ENGLISH
 
 The Italian Writing Aids extension provides spellchecker, theasurus and
-hyphenation functionality in Italian for Apache OpenOffice. The spell
+hyphenation functionality in Italian for LibreOffice. The spell
 checking module can be used in any other programs too that support
 MySpell, ASpell or HunSpell dictionaries.
 
-The Italian Writing Aids extension is distributed by Andrea Pescetti
-pescetti<AT>apache<DOT>org under the terms and conditions of the
+The Italian Writing Aids extension is distributed by LibreItalia
+and Marina Latini marina.latini<AT>libreoffice<DOT>org is the current
+extension's maintainer.
+The extensione is released under the terms and conditions of the
 GNU General Public License (GPL), version 3. A copy of the license is
 at the end of this file.
 
@@ -68,9 +69,14 @@ based on a conversion of the "Hyphenation patterns for the Italian
 language" available at http://tug.ctan.org/pkg/ithyph ; see the
 README_hyph_it_IT.txt file for the relevant copyright notices.
 
-Many volunteers, and in general the OpenOffice Community and PLIO
-http://www.plio.it helped in some way the maintenance of the Italian
-Writing Aids extension. See above for a list.
+The following volunteers, and in general the OpenOffice.org Community
+and PLIO http://www.plio.it contributed to the previous versions of Italian
+Writing Aids extension:
+- Andrea Pescetti, previous maintainer until version 2015
+- Paolo Mantovani, extension structure
+- Carlo Strata, suggestions and bug reports (spellchecker)
+- Diego Favaro, suggestions and bug reports (thesaurus)
+- Renzo Bianchi, graphics and QA
 
 ----------------------------------------------------------------------
 

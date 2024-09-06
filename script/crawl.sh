@@ -304,10 +304,6 @@ crawl "interlingue" \
 crawl "irish" \
   "https://github.com/kscanne/gaelspell" \
   "https://github.com/kscanne/gaelspell/releases/download/v5.1/hunspell-ga-5.1.zip"
-# Down, unfortunately :'(
-# crawl "italian" \
-#   "http://www.plio.it" \
-#   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1204/14/dict-it.oxt"
 # Nothing:
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
@@ -846,11 +842,10 @@ generate "is" "libreoffice" \
   "dictionaries-master/is/is.dic" "UTF-8" \
   "dictionaries-master/is/is.aff" "UTF-8" \
   "CC-BY-SA-3.0" "dictionaries-master/is/license.txt" "UTF-8"
-# Offline...
-# generate "it" "italian" \
-#   "dictionaries/it_IT.dic" "UTF-8" \
-#   "dictionaries/it_IT.aff" "UTF-8" \
-#   "GPL-3.0" "dictionaries/README.txt" "UTF-8"
+generate "it" "libreoffice" \
+  "dictionaries-master/it_IT/it_IT.dic" "UTF-8" \
+  "dictionaries-master/it_IT/it_IT.aff" "UTF-8" \
+  "GPL-3.0" "dictionaries-master/it_IT/README_it_IT.txt" "UTF-8"
 generate "ka" "georgian" \
   "ka_GE.spell-master/dictionaries/ka_GE.dic" "UTF-8" \
   "ka_GE.spell-master/dictionaries/ka_GE.aff" "UTF-8" \

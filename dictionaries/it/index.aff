@@ -3,39 +3,42 @@
 # Copyright (C) 2001, 2002 Gianluca Turconi
 # Copyright (C) 2002, 2003, 2004 Gianluca Turconi and Davide Prina
 # Copyright (C) 2004, 2005, 2006, 2007  Davide Prina
-# Copyright (C) 2013, 2014, 2015 Andrea Pescetti
+# Copyright (C) 2010, 2011, 2013, 2014, 2015 Andrea Pescetti
+# Copyright (C) 2020, LibreItalia - Marina Latini
 #
-# E-Mail: pescetti<AT>apache<DOT>org
-# Home: http://extensions.openoffice.org/project/dict-it
+# E-Mail: marina<dot>latini<AT>libreoffice<dot>org
+# Home: https://libreitalia.org
 # License: GNU GPL 3
 #
-# Version 4.2 (25/09/2015) (DD/MM/YYYY)
+# Version 5.1.0 (13/10/2020) (DD/MM/YYYY)
+#
+# This file is distributed under GPL license.
 #
 # This file is part of the "Estensione linguistica italiana - Italian
 # Writing Aids extension".
 #
 # The "Estensione linguistica italiana - Italian Writing Aids extension"
-# is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License, version 3,
-# as published by the Free Software Foundation.
+# is free software; you can redistribute it and/or modify it under the
+# terms of the GNU General Public License, version 3, as published by
+# the Free Software Foundation.
 #
 # The "Estensione linguistica italiana - Italian Writing Aids extension"
-# is distributed in the hope that it will be
-# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public
-# License along with the "Estensione linguistica italiana - Italian
-# Writing Aids extension"; if not, see <http://www.gnu.org/licenses/>.
+# License along with the "dizionario italiano",
+# if not, see <http://www.gnu.org/licenses/>.
 
 NAME Dizionario italiano
 LANG it_IT
-HOME http://extensions.openoffice.org/project/dict-it
-VERSION 4.2 (25/09/2015)
+HOME https://libreitalia.org
+VERSION 5.1.0 (13/10/2020)
 SET UTF-8
 TRY aioertnsclmdpgubzfvhàq'ACMSkBGPLxEyRTVòIODNwFéùèìjUZKHWJYQXÙÀÒÈÌÉ
-#Nota: non presenti nel dizionario: ÙÀÒÈÌÉ, vanno aggiunte alla TRY rigenerata
+# Nota: non presenti nel dizionario: ÙÀÒÈÌÉ, vanno aggiunte alla TRY rigenerata
 
 MAP 5
 MAP aàAÀ
