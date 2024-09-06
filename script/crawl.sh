@@ -166,11 +166,11 @@ printf "$(bold "Crawling")...\n"
 # eastern: hy-arevela -> BCP now recommends hy (always reformed, except in Iran)
 # See also: https://www.evnreport.com/raw-unfiltered/international-recognition-for-the-western-armenian-language
 crawl "armenian-eastern" \
-  "https://sites.google.com/site/araktransfer/home/spell-checkers" \
-  "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_e_1940_dict-1.1.oxt"
+  "https://extensions.openoffice.org/project/easternarmenianspellcheckerreformed" \
+  "https://master.dl.sourceforge.net/project/aoo-extensions/4837/0/hy_am_e_1940_dict-1.1.oxt?viasf=1"
 crawl "armenian-western" \
-  "https://sites.google.com/site/araktransfer/home/spell-checkers" \
-  "https://sites.google.com/site/araktransfer/home/spell-checkers/hy_AM_western-1.0.oxt"
+  "https://extensions.openoffice.org/project/westernarmenian" \
+  "https://master.dl.sourceforge.net/project/aoo-extensions/4841/0/hy_am_western-1.0.oxt?viasf=1"
 # See: http://xuxen.eus/deskargatu, click “hunspell”, see the yellow thing.
 crawl "basque" \
   "http://xuxen.eus/eu/home" \
