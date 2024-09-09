@@ -6,11 +6,11 @@
 # GPL/LGPL/MPL license as published by the FSF and Mozilla Foundation.
 #
 #
-# Version: May 2023, 1.8
+# Version: March 2024, 1.8.1
 #
 # Home page: http://magyarispell.sourceforge.net
 #
-# 2002-2023 (c) László Németh <nemeth@numbertext.org> and Ferenc Godó
+# 2002-2024 (c) László Németh <nemeth@numbertext.org> and Ferenc Godó
 #
 # Thanks to
 # Tamás Szántó <tszanto@mol.hu>,
@@ -30,7 +30,7 @@
 # amelyet Németh László és Godó Ferenc készített, és a GPL/LGPL/MPL licenc
 # alatt közzétett a http://magyarispell.sourceforge.net oldalon.
 #
-# Magyar Ispell 1.8, 2023-05
+# Magyar Ispell 1.8.1, 2024-03
 #
 # Köszönet illeti a következőket:
 #
@@ -52,7 +52,7 @@
 NAME Magyar Ispell helyesírási szótár
 LANG hu_HU
 HOME http://magyarispell.sourceforge.net
-VERSION Magyar 1.8
+VERSION Magyar 1.8.1
 SET UTF-8
 KEY öüó|qwertzuiopőú|asdfghjkléáű|íyxcvbnm
 TRY íóútaeslzánorhgkiédmyőpvöbucfjüűxwq-.&agrave;
@@ -157,7 +157,7 @@ ICONV &fl; fl
 # - multicharacter suggestions
 # - well-sorted suggestions
 
-REP 170
+REP 171
 REP í i
 REP i í
 REP ó o
@@ -328,6 +328,7 @@ REP ssal$ sszal
 REP ssé$ sszé
 REP ssá$ sszá
 REP ^megfed megfedd
+REP lengépszer legnépszer REP # lengépszerűbb->legnépszerűbb
 
 SFX ˙ Y 3
 SFX ˙ ö ős/ÝňÔŘCWMjcTtx" ö
@@ -6344,13 +6345,16 @@ SFX d eg gett/nňÓ×BVLjcGRt eg
 SFX d eg gett eg
 SFX d eg gesz/& eg
 SFX d eg gek eg
-SFX c Y 34
+SFX c Y 38
 SFX c 0 szerűség/nňÓ×BVLjcTtY@ [^z]
 SFX c 0 szerűség/nňÓ×BVLjcTtY@ [^s]z
 SFX c 0 szerűség/nňÓ×BVLjcTtY@ [^s]sz
 SFX c 0 szerű/ŢÔŘCWMjcHR [^z]
 SFX c 0 szerű/ŢÔŘCWMjcHR [^s]z
 SFX c 0 szerű/ŢÔŘCWMjcHR [^s]sz
+SFX c 0 szerte [^z]
+SFX c 0 szerte [^s]z
+SFX c 0 szerte [^s]sz
 SFX c 0 mentesített/nňÓ×BVLjcGRt% [^m]m
 SFX c 0 mentesített [^m]m
 SFX c 0 mentesített/nňÓ×BVLjcGRt% [^m]
@@ -6379,6 +6383,7 @@ SFX c 0 beli/ĐÓ×BVLjcGR [^b]b
 SFX c 0 beli/ĐÓ×BVLjcGR [^b]
 SFX c 0 -szerűség/nňÓ×BVLjcTtY@ ssz
 SFX c 0 -szerű/ŢÔŘCWMjcHR ssz
+SFX c 0 -szerte ssz
 SFX W Y 134
 SFX W ö őül ö
 SFX W ö őéül ö

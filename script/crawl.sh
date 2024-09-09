@@ -288,7 +288,7 @@ crawl "hebrew" \
 # copy/paste the URL of the latest `.zip` file.
 crawl "hungarian" \
   "https://github.com/laszlonemeth/magyarispell" \
-  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2023.05.22.12.31/MagyarIspell_adf496c.zip"
+  "https://github.com/crash5/mozilla-hungarian-spellchecker/releases/download/2024.03.28.01.14/MagyarIspell_3aa21cc.zip"
 # Hasn’t updated in 8 years.
 # Go to <https://addons.thunderbird.net/en-US/thunderbird/addon/dict-ia/>,
 # copy/paste the URL for “Download Now” (but clean it).
