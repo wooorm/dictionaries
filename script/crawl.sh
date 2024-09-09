@@ -211,23 +211,23 @@ crawl "dutch" \
 # Go to the link, get the latest.
 crawl "english" \
   "https://extensions.openoffice.org/en/project/english-dictionaries-apache-openoffice" \
-  "https://netix.dl.sourceforge.net/project/aoo-extensions/17102/96/dict-en-20231101_aoo.oxt"
+  "https://master.dl.sourceforge.net/project/aoo-extensions/17102/96/dict-en-20231101_aoo.oxt?viasf=1"
 # Go to the link, go to “Additional Hunspell Dictionaries”, go to “Parent folder”.
 crawl "english-gb" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_GB-ise-2020.12.07.zip"
+  "https://master.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_GB-ise-2020.12.07.zip?viasf=1"
 # Same as `english-gb`
 crawl "english-american" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip"
+  "https://master.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_US-2020.12.07.zip?viasf=1"
 # Same as `english-gb`
 crawl "english-canadian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_CA-2020.12.07.zip"
+  "https://master.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_CA-2020.12.07.zip?viasf=1"
 # Same as `english-gb`
 crawl "english-australian" \
   "http://wordlist.aspell.net/dicts/" \
-  "https://altushost-swe.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_AU-2020.12.07.zip"
+  "https://master.dl.sourceforge.net/project/wordlist/speller/2020.12.07/hunspell-en_AU-2020.12.07.zip?viasf=1"
 # Hasn’t updated in 20 years 🤷‍♂️
 crawl "esperanto" \
   "http://www.esperantilo.org/index_en.html" \
@@ -277,7 +277,7 @@ crawl "greek" \
 # “Ἐγκατάσταση σὲ OpenOffice / LibreOffice”, and get the latest from sourceforge.
 crawl "greek-polyton" \
   "https://thepolytonicproject.gr/spell" \
-  "https://deac-ams.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt"
+  "https://master.dl.sourceforge.net/project/greekpolytonicsp/greek_polytonic_2.0.7.oxt?viasf=1"
 # Go to <http://hspell.ivrix.org.il/download.html>, copy/paste the URL of the
 # latest release
 crawl "hebrew" \
@@ -307,7 +307,7 @@ crawl "irish" \
 # Down, unfortunately :'(
 # crawl "italian" \
 #   "http://www.plio.it" \
-#   "https://iweb.dl.sourceforge.net/project/aoo-extensions/1204/14/dict-it.oxt"
+#   "https://master.dl.sourceforge.net/project/aoo-extensions/1204/14/dict-it.oxt?viasf=1"
 # Nothing:
 crawl "kinyarwanda" \
   "https://github.com/kscanne/hunspell-rw" \
@@ -332,7 +332,7 @@ crawl "latvian" \
 # Hasn’t been updates in 10 years.
 crawl "latin" \
   "https://extensions.openoffice.org/project/dict-la" \
-  "https://kumisystems.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt"
+  "https://master.dl.sourceforge.net/project/aoo-extensions/1141/3/dict-la_2013-03-31.oxt?viasf=1"
 # Nothing.
 crawl "libreoffice" \
   "https://github.com/LibreOffice/dictionaries" \
@@ -488,7 +488,7 @@ crawl "swedish" \
 # get the top.
 crawl "turkish" \
   "http://extensions.openoffice.org/en/project/turkish-spellcheck-dictionary" \
-  "https://kumisystems.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt"
+  "https://master.dl.sourceforge.net/project/aoo-extensions/18079/0/oo-turkish-dict-v1.3.oxt?viasf=1"
 # Nothing.
 crawl "turkmen" \
   "https://github.com/nazartm/turkmen-spell-check-dictionary" \
