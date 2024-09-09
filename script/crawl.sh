@@ -360,8 +360,8 @@ crawl "mongolian" \
   "https://github.com/bataak/dict-mn/archive/main.zip"
 # Hasn’t been updated in 10 years.
 crawl "nepali" \
-  "http://ltk.org.np" \
-  "http://ltk.org.np/downloads/ne_NP_dict.zip"
+  "https://ltk.org.np" \
+  "https://ltk.org.np/downloads/ne_NP_dict.zip"
 # Website offline :'(
 crawl "norwegian" \
   "http://no.speling.org" \

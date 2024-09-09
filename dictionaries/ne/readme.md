@@ -124,7 +124,7 @@ Rest: [MIT][file-license] © [Titus Wormer][wooorm].
 
 [npm-install]: https://docs.npmjs.com/cli/install
 
-[source]: http://ltk.org.np
+[source]: https://ltk.org.np
 
 [typescript]: https://www.typescriptlang.org
 
