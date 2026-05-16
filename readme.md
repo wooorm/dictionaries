@@ -29,7 +29,9 @@ This monorepo is a bunch of scripts that crawls dictionaries from several
 sources,
 normalizes them,
 and packs them so that they can each be installed and used in one single way.
-Dictionaries are not maintained here but they are usable from here.
+Dictionaries are not maintained here but they are usable from here. 
+Each dictionary is purely a normalize-and-copy operation
+on one source per output dictionary.
 
 ## When should I use this?
 
@@ -280,6 +282,39 @@ you at least need to install:
 
 > 👉 **Note**: sed and the GNU replacements should be setup in PATH to overwrite
 > macOS defaults.
+
+The `generate` npm script runs two steps in sequence:
+`sh script/crawl.sh && node script/generate.js`.
+
+**Step 1 — `crawl.sh`** downloads each upstream archive into `archive/`,
+unpacks it into `source/`,
+and then calls the `generate` shell function to produce each dictionary package
+under `dictionaries/`.
+Each call maps one BCP-47 tag to exactly one upstream source — no merging of
+upstream dictionaries into a single output.
+
+Taking `dictionary-en` as a concrete example:
+
+1.  The `crawl "english-american"` call downloads the American English Hunspell
+    archive from `wordlist.aspell.net` and unpacks it into `source/english-american/`.
+2.  The `generate "en" "english-american" "en_US.dic" "UTF-8" "en_US.aff" "UTF-8" ...`
+    call converts `source/english-american/en_US.dic` and `en_US.aff` from their
+    declared encoding to UTF-8 (stripping the BOM, trailing whitespace, and
+    carriage returns, and rewriting the `SET` pragma in the `.aff` file), then
+    writes the results to `dictionaries/en/index.dic` and `dictionaries/en/index.aff`.
+    It also writes a `.source` file (the upstream URL) and a `.spdx` file (the
+    SPDX license expression) into `dictionaries/en/`.
+    Both `.source` and `.spdx` are listed in `.gitignore` — they are build
+    artifacts consumed by the next step, never committed to the repository.
+
+**Step 2 — `generate.js`** iterates over every directory under `dictionaries/`,
+reads the `.source` and `.spdx` files written by `crawl.sh`,
+parses the directory name as a BCP-47 tag (resolving language, script, and
+region subtags via `iso-639-3`, `iso-15924`, and `iso-3166`),
+and generates `package.json`, `readme.md`, and `index.js` from the templates in
+`script/template/`.
+For `en`, the BCP-47 parser resolves `en` → "English" (via `iso-639-3`),
+producing the description "English spelling dictionary."
 
 ### Updating a dictionary
 
